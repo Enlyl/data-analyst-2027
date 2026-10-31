@@ -471,13 +471,13 @@ html_content = f"""<!DOCTYPE html>
       </div>
 
       <div class="top-actions">
-        <input type="text" id="github-repo" class="github-repo-input" title="Ваш GitHub username/repo для прямого открытия Colab" placeholder="GitHub: user/repo (Enter)" onchange="saveGithubRepo(this.value)">
-        <button id="download-current-nb" class="action-btn download-btn" onclick="downloadActiveNotebook()" title="Скачать открытый .ipynb файл урока">
-          📥 Скачать .ipynb урока
-        </button>
-        <a id="colab-link" href="#" target="_blank" class="action-btn colab-btn" title="Открыть этот урок в Google Colab">
-          🚀 Открыть в Colab
+        <input type="text" id="github-repo" class="github-repo-input" title="Ваш GitHub username/repo" value="Enlyl/data-analyst-2027" placeholder="Enlyl/data-analyst-2027" onchange="saveGithubRepo(this.value)">
+        <a id="colab-link" href="#" target="_blank" class="action-btn colab-btn" style="padding: 8px 16px; font-size: 0.85rem;" title="Открыть этот урок в Google Colab в 1 клик">
+          🚀 Открыть урок в Colab
         </a>
+        <button id="download-current-nb" class="action-btn download-btn" onclick="downloadActiveNotebook()" title="Скачать открытый .ipynb файл урока">
+          📥 Скачать .ipynb
+        </button>
       </div>
     </div>
 
@@ -506,7 +506,7 @@ html_content = f"""<!DOCTYPE html>
     }}
 
     function getGithubRepo() {{
-      return localStorage.getItem('da_2027_gh_repo') || '';
+      return localStorage.getItem('da_2027_gh_repo') || 'Enlyl/data-analyst-2027';
     }}
 
     function saveGithubRepo(val) {{
