@@ -483,9 +483,6 @@ html_content = f"""<!DOCTYPE html>
 
       <div class="top-actions">
         <input type="text" id="github-repo" class="github-repo-input" title="Ваш GitHub username/repo" value="Enlyl/data-analyst-2027" placeholder="Enlyl/data-analyst-2027" onchange="saveGithubRepo(this.value)">
-        <a id="colab-link" href="#" target="_blank" class="action-btn colab-btn" style="padding: 8px 18px; font-size: 0.85rem;" title="Открыть этот урок в Google Colab в 1 клик">
-          🚀 Открыть урок в Colab
-        </a>
       </div>
     </div>
 
@@ -580,19 +577,7 @@ html_content = f"""<!DOCTYPE html>
     }}
 
     function updateColabLink() {{
-      const mod = courseData[currentModuleIndex];
-      const colabBtn = document.getElementById('colab-link');
-      const ghRepo = getGithubRepo();
-
-      if (mod.notebooks && mod.notebooks.length > 0) {{
-        const activeNb = mod.notebooks[currentNotebookIndex];
-        colabBtn.href = `https://colab.research.google.com/github/${{ghRepo}}/blob/main/${{activeNb.rel_path}}`;
-        colabBtn.title = `Прямое открытие ${{activeNb.filename}} в Colab`;
-        colabBtn.style.display = 'inline-flex';
-      }} else {{
-        colabBtn.href = 'https://colab.research.google.com';
-        colabBtn.style.display = 'none';
-      }}
+      // Colab button is rendered inside the active lesson
     }}
 
     function downloadActiveNotebook() {{
