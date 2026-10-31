@@ -100,6 +100,9 @@ html_content = f"""<!DOCTYPE html>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Data Analyst 2027: Интерактивный портал курса</title>
+  <!-- Favicon: Magnifier & Data Analytics -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='lg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2338bdf8'/%3E%3Cstop offset='100%25' stop-color='%23818cf8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='28' cy='28' r='24' fill='%230f172a'/%3E%3Ccircle cx='28' cy='28' r='19' fill='%231e293b' stroke='url(%23lg)' stroke-width='4'/%3E%3Crect x='18' y='27' width='4' height='13' rx='1.5' fill='%2338bdf8'/%3E%3Crect x='25' y='20' width='4' height='20' rx='1.5' fill='%23818cf8'/%3E%3Crect x='32' y='14' width='4' height='26' rx='1.5' fill='%2334d399'/%3E%3Cpath d='M16 29 L 26 19 L 35 13' stroke='%23f8fafc' stroke-width='2.5' stroke-linecap='round' fill='none'/%3E%3Crect x='42' y='42' width='7' height='20' rx='3.5' transform='rotate(-45 42 42)' fill='%23818cf8'/%3E%3C/svg%3E">
+  <link rel="alternate icon" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap">
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -442,7 +445,15 @@ html_content = f"""<!DOCTYPE html>
   <div id="sidebar">
     <div class="sidebar-header">
       <div class="brand">
-        <span>📊 DATA ANALYST 2027</span>
+        <svg width="22" height="22" viewBox="0 0 64 64" fill="none" style="flex-shrink:0;">
+          <circle cx="28" cy="28" r="19" fill="#1e293b" stroke="#38bdf8" stroke-width="4.5"/>
+          <rect x="18" y="27" width="4" height="13" rx="1.5" fill="#38bdf8"/>
+          <rect x="25" y="20" width="4" height="20" rx="1.5" fill="#818cf8"/>
+          <rect x="32" y="14" width="4" height="26" rx="1.5" fill="#34d399"/>
+          <path d="M16 29 L 26 19 L 35 13" stroke="#f8fafc" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+          <rect x="42" y="42" width="7" height="20" rx="3.5" transform="rotate(-45 42 42)" fill="#818cf8"/>
+        </svg>
+        <span>DATA ANALYST 2027</span>
       </div>
       <div class="progress-bar-container">
         <div id="progress-bar" class="progress-bar-fill"></div>
