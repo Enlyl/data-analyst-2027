@@ -7,24 +7,24 @@ OUTPUT_HTML = r"d:\vibe_app\main_data_analytics\index.html"
 PORTAL_HTML = os.path.join(BASE_DIR, "index.html")
 
 modules = [
-    {"id": "module_00_onboarding", "title": "Модуль 0: Онбординг & Мышление 2027", "category": "Фундамент", "badge": "Старт"},
-    {"id": "module_01_excel", "title": "Модуль 1: Excel & Google Sheets", "category": "Хард-база", "badge": "Таблицы"},
-    {"id": "module_02_sql", "title": "Модуль 2: SQL Master: От SELECT до Оконных функций", "category": "Хард-база", "badge": "SQL"},
-    {"id": "module_03_python", "title": "Модуль 3: Python & Pandas (AI-Assisted)", "category": "Хард-база", "badge": "Python"},
-    {"id": "module_04_data_cleaning", "title": "Модуль 4: Очистка данных & Data Quality", "category": "Хард-база", "badge": "Data Quality"},
-    {"id": "module_05_statistics", "title": "Модуль 5: Статистика & Регрессия", "category": "Математика", "badge": "Статистика"},
-    {"id": "module_06_bi_looker_studio", "title": "Модуль 6: BI-аналитика в Looker Studio", "category": "Визуализация", "badge": "BI"},
-    {"id": "module_07_ab_testing", "title": "Модуль 7: A/B-тестирование & Эксперименты", "category": "Эксперименты", "badge": "A/B"},
-    {"id": "module_08_prompt_engineering", "title": "Модуль 8: Prompt Engineering для аналитика", "category": "AI Стек", "badge": "AI"},
-    {"id": "module_09_ai_tools_daily", "title": "Модуль 9: AI в ежедневной работе (Cursor, Copilot)", "category": "AI Стек", "badge": "AI"},
-    {"id": "module_10_llm_api", "title": "Модуль 10: LLM API & Неструктурированные данные", "category": "AI Стек", "badge": "AI"},
-    {"id": "module_11_rag_vector_db", "title": "Модуль 11: RAG & Векторные базы данных", "category": "AI Стек", "badge": "AI"},
-    {"id": "module_12_ai_agents", "title": "Модуль 12: AI-агенты (Agentic Workflows)", "category": "AI Стек", "badge": "AI"},
-    {"id": "module_13_soft_skills_storytelling", "title": "Модуль 13: Soft Skills, Юнит-экономика & Storytelling", "category": "Бизнес", "badge": "Soft Skills"},
-    {"id": "module_14_portfolio_project_1", "title": "Проект 1: E-Commerce 360° Audit", "category": "Портфолио", "badge": "Проект"},
-    {"id": "module_15_portfolio_project_2", "title": "Проект 2: SaaS Product Analytics & A/B", "category": "Портфолио", "badge": "Проект"},
-    {"id": "module_16_portfolio_project_3", "title": "Проект 3: AI-Driven BI Pipeline & Assistant", "category": "Портфолио", "badge": "Проект"},
-    {"id": "module_17_career", "title": "Модуль 17: Карьера 2027: Резюме & Собеседования", "category": "Карьера", "badge": "Карьера"}
+    {"id": "module_00_onboarding", "title": "Модуль 0. Онбординг и мышление аналитика", "category": "Фундамент", "badge": "Старт"},
+    {"id": "module_01_excel", "title": "Модуль 1. Excel и Google Sheets", "category": "Хард база", "badge": "Таблицы"},
+    {"id": "module_02_sql", "title": "Модуль 2. SQL Master от SELECT до оконных функций", "category": "Хард база", "badge": "SQL"},
+    {"id": "module_03_python", "title": "Модуль 3. Python и Pandas с AI напарником", "category": "Хард база", "badge": "Python"},
+    {"id": "module_04_data_cleaning", "title": "Модуль 4. Очистка данных и Data Quality", "category": "Хард база", "badge": "Качество"},
+    {"id": "module_05_statistics", "title": "Модуль 5. Статистика и гипотезы", "category": "Математика", "badge": "Статистика"},
+    {"id": "module_06_bi_looker_studio", "title": "Модуль 6. BI аналитика в Looker Studio", "category": "Визуализация", "badge": "BI"},
+    {"id": "module_07_ab_testing", "title": "Модуль 7. A/B тестирование и эксперименты", "category": "Эксперименты", "badge": "A/B тесты"},
+    {"id": "module_08_prompt_engineering", "title": "Модуль 8. Prompt Engineering для аналитики", "category": "AI стек", "badge": "Промпты"},
+    {"id": "module_09_ai_tools_daily", "title": "Модуль 9. AI в ежедневной работе аналитика", "category": "AI стек", "badge": "Инструменты"},
+    {"id": "module_10_llm_api", "title": "Модуль 10. LLM API и неструктурированные данные", "category": "AI стек", "badge": "API"},
+    {"id": "module_11_rag_vector_db", "title": "Модуль 11. RAG и векторные базы данных", "category": "AI стек", "badge": "RAG"},
+    {"id": "module_12_ai_agents", "title": "Модуль 12. AI агенты и мониторинг качества", "category": "AI стек", "badge": "Агенты"},
+    {"id": "module_13_soft_skills_storytelling", "title": "Модуль 13. Soft Skills и Data Storytelling", "category": "Бизнес", "badge": "Soft Skills"},
+    {"id": "module_14_portfolio_project_1", "title": "Проект 1. E Commerce 360 аудит", "category": "Портфолио", "badge": "Проект"},
+    {"id": "module_15_portfolio_project_2", "title": "Проект 2. SaaS продуктовая аналитика и A/B", "category": "Портфолио", "badge": "Проект"},
+    {"id": "module_16_portfolio_project_3", "title": "Проект 3. AI Driven аналитический пайплайн", "category": "Портфолио", "badge": "Проект"},
+    {"id": "module_17_career", "title": "Модуль 17. Карьерный трек и портфолио", "category": "Карьера", "badge": "Карьера"}
 ]
 
 course_data = []
@@ -94,367 +94,515 @@ for mod in modules:
         "notebooks": notebooks
     })
 
+# High-polish design compliant with elayadesign/ai-design-skills & redesign-existing-projects
 html_content = f"""<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Data Analyst 2027: Интерактивный портал курса</title>
-  <!-- Favicon: Magnifier & Data Analytics -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='lg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2338bdf8'/%3E%3Cstop offset='100%25' stop-color='%23818cf8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='28' cy='28' r='24' fill='%230f172a'/%3E%3Ccircle cx='28' cy='28' r='19' fill='%231e293b' stroke='url(%23lg)' stroke-width='4'/%3E%3Crect x='18' y='27' width='4' height='13' rx='1.5' fill='%2338bdf8'/%3E%3Crect x='25' y='20' width='4' height='20' rx='1.5' fill='%23818cf8'/%3E%3Crect x='32' y='14' width='4' height='26' rx='1.5' fill='%2334d399'/%3E%3Cpath d='M16 29 L 26 19 L 35 13' stroke='%23f8fafc' stroke-width='2.5' stroke-linecap='round' fill='none'/%3E%3Crect x='42' y='42' width='7' height='20' rx='3.5' transform='rotate(-45 42 42)' fill='%23818cf8'/%3E%3C/svg%3E">
-  <link rel="alternate icon" href="favicon.svg">
+  <title>Data Analyst 2027: Практический курс</title>
+  
+  <!-- Approved Typography: Geist & Geist Mono (Never Inter/Roboto/Arial, no italics) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Favicon: Solar Lens Style -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='28' cy='28' r='20' fill='%23181818' stroke='%23FFFFFF' stroke-width='3.5'/%3E%3Crect x='19' y='27' width='3.5' height='12' rx='1' fill='%239B9B9B'/%3E%3Crect x='26' y='21' width='3.5' height='18' rx='1' fill='%23FFFFFF'/%3E%3Crect x='33' y='16' width='3.5' height='23' rx='1' fill='%23F97316'/%3E%3Crect x='41' y='41' width='6' height='18' rx='3' transform='rotate(-45 41 41)' fill='%23FFFFFF'/%3E%3C/svg%3E">
+  <link rel="alternate icon" href="favicon.svg">
+
+  <!-- Code Highlighting & Markdown Parser -->
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-sql.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
 
   <style>
+    /* DESIGN VALUES: Approved Dark Palette & Strict Spacing/Radius Scale */
     :root {{
-      --bg-dark: #0f172a;
-      --bg-card: #1e293b;
-      --bg-hover: #334155;
-      --text-main: #f8fafc;
-      --text-muted: #94a3b8;
-      --accent: #38bdf8;
-      --accent-gradient: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
-      --accent-green: #34d399;
-      --border: #334155;
-      --code-bg: #090d16;
+      --bg-base: #181818;
+      --bg-surface: #1F1F1F;
+      --bg-card: #272727;
+      --bg-card-hover: #313131;
+      --border: #313131;
+      --border-focus: #9B9B9B;
+      --text-main: #FFFFFF;
+      --text-muted: #9B9B9B;
+      --accent-cta: #F97316;
+      --code-bg: #121212;
+      --ease-base: cubic-bezier(0.22, 1, 0.36, 1);
     }}
-    * {{
+
+    *, *::before, *::after {{
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+      font-style: normal !important; /* No italics */
     }}
+
     body {{
-      font-family: 'Inter', -apple-system, sans-serif;
-      background: var(--bg-dark);
+      font-family: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-base);
       color: var(--text-main);
       display: flex;
+      min-height: 100dvh;
       height: 100vh;
       overflow: hidden;
+      -webkit-font-smoothing: antialiased;
     }}
+
     /* SIDEBAR */
     #sidebar {{
-      width: 380px;
-      background: #111827;
+      width: 360px;
+      background-color: var(--bg-surface);
       border-right: 1px solid var(--border);
       display: flex;
       flex-direction: column;
       flex-shrink: 0;
       height: 100vh;
     }}
+
     .sidebar-header {{
-      padding: 16px 20px;
+      padding: 24px 20px 16px 20px;
       border-bottom: 1px solid var(--border);
-      background: rgba(17, 24, 39, 0.95);
     }}
+
     .brand {{
       display: flex;
       align-items: center;
-      gap: 10px;
-      font-weight: 800;
-      font-size: 1.15rem;
-      background: var(--accent-gradient);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      gap: 12px;
+      font-size: 18px; /* text-lg */
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text-main);
     }}
+
+    .brand-logo {{
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+    }}
+
     .progress-bar-container {{
-      margin-top: 12px;
-      background: #1f2937;
-      border-radius: 999px;
-      height: 7px;
+      margin-top: 16px;
+      background-color: #000000;
+      border-radius: 9999px;
+      height: 6px;
       overflow: hidden;
     }}
+
     .progress-bar-fill {{
-      background: var(--accent-gradient);
+      background-color: var(--text-main);
       height: 100%;
       width: 0%;
-      transition: width 0.3s ease;
+      transition: width 500ms var(--ease-base);
     }}
+
     .progress-text {{
       display: flex;
       justify-content: space-between;
-      font-size: 0.75rem;
+      font-size: 12px; /* text-xs */
+      line-height: 16px;
       color: var(--text-muted);
-      margin-top: 5px;
+      margin-top: 8px;
+      font-variant-numeric: tabular-nums;
     }}
+
     .search-box {{
-      padding: 10px 16px;
+      padding: 12px 16px;
       border-bottom: 1px solid var(--border);
     }}
+
     .search-input {{
       width: 100%;
-      background: #1f2937;
+      background-color: var(--bg-card);
       border: 1px solid var(--border);
-      color: #fff;
+      color: var(--text-main);
       padding: 8px 12px;
-      border-radius: 6px;
-      font-size: 0.85rem;
+      border-radius: 8px; /* rounded-lg */
+      font-size: 14px; /* text-sm */
+      font-family: inherit;
+      transition: border-color 300ms var(--ease-base);
     }}
+
     .search-input:focus {{
-      outline: 1px solid var(--accent);
+      outline: none;
+      border-color: var(--border-focus);
     }}
+
     .module-list {{
       flex: 1;
       overflow-y: auto;
-      padding: 10px;
-    }}
-    .module-card {{
-      background: var(--bg-card);
-      border: 1px solid transparent;
-      border-radius: 8px;
       padding: 12px;
+    }}
+
+    .module-card {{
+      background-color: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px; /* rounded-xl */
+      padding: 12px 16px;
       margin-bottom: 8px;
       cursor: pointer;
-      transition: all 0.2s ease;
+      transition: background-color 300ms var(--ease-base), transform 300ms var(--ease-base), border-color 300ms var(--ease-base);
     }}
+
     .module-card:hover {{
-      background: var(--bg-hover);
-      border-color: var(--accent);
-      transform: translateY(-1px);
+      background-color: var(--bg-card-hover);
+      border-color: #404040;
     }}
+
+    .module-card:active {{
+      transform: scale(0.98);
+    }}
+
     .module-card.active {{
-      background: #1e3a8a;
-      border-color: var(--accent);
+      background-color: #313131;
+      border-color: var(--text-main);
     }}
+
     .module-card-header {{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 4px;
+      margin-bottom: 6px;
     }}
+
     .badge {{
-      font-size: 0.65rem;
-      font-weight: 600;
-      padding: 2px 6px;
+      font-size: 12px; /* text-xs */
+      line-height: 16px;
+      font-weight: 500;
+      padding: 2px 8px;
       border-radius: 4px;
-      background: #374151;
-      color: var(--accent);
+      background-color: #181818;
+      color: var(--text-muted);
+      border: 1px solid var(--border);
     }}
+
     .module-card-title {{
-      font-size: 0.85rem;
+      font-size: 14px; /* text-sm */
+      line-height: 20px;
       font-weight: 600;
-      line-height: 1.3;
+      color: var(--text-main);
+      text-wrap: balance;
     }}
+
     .module-card-footer {{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-top: 6px;
-      font-size: 0.72rem;
+      margin-top: 8px;
+      font-size: 12px; /* text-xs */
       color: var(--text-muted);
+      font-variant-numeric: tabular-nums;
     }}
 
-    /* MAIN CONTENT VIEW */
+    /* MAIN CONTENT VIEWPORT */
     #main-content {{
       flex: 1;
       display: flex;
       flex-direction: column;
       height: 100vh;
       overflow: hidden;
-      background: var(--bg-dark);
+      background-color: var(--bg-base);
     }}
+
     .topbar {{
-      padding: 12px 28px;
+      padding: 12px 32px;
       border-bottom: 1px solid var(--border);
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: #111827;
+      background-color: var(--bg-surface);
       gap: 16px;
     }}
+
     .tabs {{
       display: flex;
       gap: 8px;
     }}
+
     .tab-btn {{
-      background: transparent;
+      background-color: transparent;
       border: 1px solid var(--border);
       color: var(--text-muted);
-      padding: 6px 14px;
-      border-radius: 6px;
-      font-size: 0.85rem;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 14px; /* text-sm */
       font-weight: 500;
       cursor: pointer;
-      transition: all 0.2s ease;
+      font-family: inherit;
+      transition: background-color 300ms var(--ease-base), color 300ms var(--ease-base), border-color 300ms var(--ease-base);
     }}
+
     .tab-btn:hover {{
-      background: var(--bg-hover);
-      color: #fff;
+      background-color: var(--bg-card);
+      color: var(--text-main);
     }}
+
+    .tab-btn:active {{
+      transform: scale(0.98);
+    }}
+
     .tab-btn.active {{
-      background: var(--accent);
-      color: #0f172a;
-      border-color: var(--accent);
+      background-color: var(--text-main);
+      color: #000000;
+      border-color: var(--text-main);
       font-weight: 600;
     }}
+
     .top-actions {{
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
     }}
+
     .github-repo-input {{
-      background: #1f2937;
+      background-color: var(--bg-card);
       border: 1px solid var(--border);
-      color: #94a3b8;
-      padding: 6px 10px;
-      border-radius: 6px;
-      font-size: 0.75rem;
-      width: 220px;
+      color: var(--text-muted);
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-family: 'Geist Mono', monospace;
+      width: 240px;
+      transition: border-color 300ms var(--ease-base);
     }}
+
     .github-repo-input:focus {{
-      outline: 1px solid var(--accent);
-      color: #fff;
+      outline: none;
+      border-color: var(--border-focus);
+      color: var(--text-main);
     }}
-    .action-btn {{
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      padding: 6px 12px;
-      border-radius: 6px;
-      cursor: pointer;
-      text-decoration: none;
-      border: none;
-      transition: opacity 0.2s ease;
-    }}
-    .action-btn:hover {{
-      opacity: 0.88;
-    }}
-    .colab-btn {{
-      background: #f97316;
-      color: #fff;
-    }}
-    .download-btn {{
-      background: #2563eb;
-      color: #fff;
-    }}
+
     .content-body {{
       flex: 1;
       overflow-y: auto;
-      padding: 28px 40px;
-      line-height: 1.6;
+      padding: 40px 48px;
+      line-height: 24px;
+      max-width: 1100px;
     }}
 
-    /* MARKDOWN STYLES */
+    /* TYPOGRAPHY RULES (B1 & Redesign Audit) */
     .markdown-view h1 {{
-      font-size: 1.8rem;
-      margin-bottom: 16px;
-      background: var(--accent-gradient);
+      font-size: 36px; /* text-4xl */
+      line-height: 40px;
+      font-weight: 600;
+      margin-bottom: 24px;
+      letter-spacing: -0.03em;
+      text-wrap: balance;
+      /* Permitted Hero Text Gradient: White -> #9B9B9B */
+      background: linear-gradient(to right, #FFFFFF, #9B9B9B);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }}
+
     .markdown-view h2 {{
-      font-size: 1.4rem;
+      font-size: 24px; /* text-2xl */
+      line-height: 32px;
+      font-weight: 600;
+      margin-top: 32px;
+      margin-bottom: 16px;
+      color: var(--text-main);
+      letter-spacing: -0.02em;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+      text-wrap: balance;
+    }}
+
+    .markdown-view h3 {{
+      font-size: 18px; /* text-lg */
+      line-height: 28px;
+      font-weight: 600;
       margin-top: 24px;
       margin-bottom: 12px;
-      color: #e2e8f0;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 6px;
+      color: var(--text-main);
+      text-wrap: balance;
     }}
-    .markdown-view h3 {{
-      font-size: 1.15rem;
-      margin-top: 18px;
-      margin-bottom: 8px;
-      color: var(--accent);
-    }}
+
     .markdown-view p {{
-      margin-bottom: 12px;
-      color: #cbd5e1;
+      font-size: 16px; /* text-base */
+      line-height: 24px;
+      margin-bottom: 16px;
+      color: #E2E8F0;
+      text-wrap: pretty;
+      max-width: 72ch;
     }}
+
     .markdown-view ul, .markdown-view ol {{
       margin-left: 24px;
-      margin-bottom: 14px;
-      color: #cbd5e1;
+      margin-bottom: 20px;
+      color: #E2E8F0;
     }}
+
     .markdown-view li {{
-      margin-bottom: 6px;
+      margin-bottom: 8px;
+      line-height: 24px;
     }}
+
+    .markdown-view code {{
+      font-family: 'Geist Mono', monospace;
+      font-size: 14px;
+      background-color: var(--bg-card);
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: #F8FAFC;
+      border: 1px solid var(--border);
+    }}
+
     .markdown-view table {{
       width: 100%;
       border-collapse: collapse;
-      margin: 16px 0;
-      font-size: 0.9rem;
-    }}
-    .markdown-view th, .markdown-view td {{
-      border: 1px solid var(--border);
-      padding: 8px 12px;
-      text-align: left;
-    }}
-    .markdown-view th {{
-      background: #1e293b;
-      color: var(--accent);
-    }}
-
-    /* NOTEBOOK CELLS */
-    .cell {{
-      margin-bottom: 20px;
+      margin: 24px 0;
+      font-size: 14px;
       border-radius: 8px;
       overflow: hidden;
       border: 1px solid var(--border);
     }}
+
+    .markdown-view th, .markdown-view td {{
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }}
+
+    .markdown-view th {{
+      background-color: var(--bg-surface);
+      color: var(--text-main);
+      font-weight: 600;
+    }}
+
+    .markdown-view td {{
+      background-color: var(--bg-base);
+      color: #E2E8F0;
+      font-variant-numeric: tabular-nums;
+    }}
+
+    /* INTERACTIVE NOTEBOOK CELLS */
+    .cell {{
+      margin-bottom: 24px;
+      border-radius: 12px; /* rounded-xl */
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background-color: var(--bg-surface);
+    }}
+
     .cell-header {{
-      background: #1e293b;
-      padding: 6px 12px;
-      font-size: 0.75rem;
+      background-color: var(--bg-card);
+      padding: 8px 16px;
+      font-size: 12px;
       color: var(--text-muted);
       display: flex;
       justify-content: space-between;
+      align-items: center;
       border-bottom: 1px solid var(--border);
+      font-family: 'Geist Mono', monospace;
     }}
+
     .cell-markdown {{
-      background: var(--bg-card);
-      padding: 16px;
+      padding: 24px;
+      background-color: var(--bg-surface);
     }}
+
     .cell-code {{
-      background: var(--code-bg);
+      background-color: var(--code-bg);
       padding: 0;
       overflow-x: auto;
     }}
+
     .cell-code pre {{
       margin: 0 !important;
-      padding: 16px !important;
+      padding: 20px !important;
       background: transparent !important;
+      font-family: 'Geist Mono', monospace !important;
+      font-size: 13px !important;
+      line-height: 20px !important;
     }}
 
-    /* NOTICE BANNER */
-    .colab-notice {{
-      background: #1e293b;
-      border-left: 4px solid #f97316;
-      padding: 12px 16px;
-      border-radius: 6px;
-      margin-bottom: 20px;
-      font-size: 0.85rem;
-      color: #e2e8f0;
+    /* PRO-LEVEL ACTION BUTTONS */
+    .action-btn {{
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      border: none;
+      font-family: inherit;
+      transition: transform 200ms var(--ease-base), opacity 200ms var(--ease-base), background-color 200ms var(--ease-base);
+    }}
+
+    .action-btn:active {{
+      transform: scale(0.98);
+    }}
+
+    .colab-cta-btn {{
+      background-color: var(--accent-cta);
+      color: #FFFFFF;
+    }}
+
+    .colab-cta-btn:hover {{
+      background-color: #EA580C;
+    }}
+
+    /* NOTICE BANNER IN LESSON */
+    .colab-banner {{
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent-cta);
+      padding: 16px 20px;
+      border-radius: 12px;
+      margin-bottom: 24px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 16px;
+      gap: 20px;
+    }}
+
+    .colab-banner-title {{
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 4px;
+    }}
+
+    .colab-banner-desc {{
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 18px;
+    }}
+
+    /* REDUCED MOTION PREFERENCE */
+    @media (prefers-reduced-motion: reduce) {{
+      *, *::before, *::after {{
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }}
     }}
   </style>
 </head>
 <body>
 
   <!-- SIDEBAR -->
-  <div id="sidebar">
+  <aside id="sidebar">
     <div class="sidebar-header">
       <div class="brand">
-        <svg width="22" height="22" viewBox="0 0 64 64" fill="none" style="flex-shrink:0;">
-          <circle cx="28" cy="28" r="19" fill="#1e293b" stroke="#38bdf8" stroke-width="4.5"/>
-          <rect x="18" y="27" width="4" height="13" rx="1.5" fill="#38bdf8"/>
-          <rect x="25" y="20" width="4" height="20" rx="1.5" fill="#818cf8"/>
-          <rect x="32" y="14" width="4" height="26" rx="1.5" fill="#34d399"/>
-          <path d="M16 29 L 26 19 L 35 13" stroke="#f8fafc" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-          <rect x="42" y="42" width="7" height="20" rx="3.5" transform="rotate(-45 42 42)" fill="#818cf8"/>
+        <!-- Minimal Solar Lens SVG Icon -->
+        <svg class="brand-logo" viewBox="0 0 64 64" fill="none">
+          <circle cx="28" cy="28" r="20" fill="#181818" stroke="#FFFFFF" stroke-width="4"/>
+          <rect x="19" y="27" width="3.5" height="12" rx="1" fill="#9B9B9B"/>
+          <rect x="26" y="21" width="3.5" height="18" rx="1" fill="#FFFFFF"/>
+          <rect x="33" y="16" width="3.5" height="23" rx="1" fill="#F97316"/>
+          <rect x="41" y="41" width="6" height="18" rx="3" transform="rotate(-45 41 41)" fill="#FFFFFF"/>
         </svg>
-        <span>DATA ANALYST 2027</span>
+        <span>Data Analyst 2027</span>
       </div>
+
       <div class="progress-bar-container">
         <div id="progress-bar" class="progress-bar-fill"></div>
       </div>
@@ -465,29 +613,29 @@ html_content = f"""<!DOCTYPE html>
     </div>
 
     <div class="search-box">
-      <input type="text" id="search-input" class="search-input" placeholder="🔍 Поиск по темам, SQL, Python, AI...">
+      <input type="text" id="search-input" class="search-input" placeholder="Поиск по темам, SQL, Python, AI...">
     </div>
 
     <div id="module-list" class="module-list"></div>
-  </div>
+  </aside>
 
-  <!-- MAIN CONTENT -->
-  <div id="main-content">
-    <div class="topbar">
-      <div class="tabs" id="view-tabs">
-        <button class="tab-btn active" onclick="switchTab('overview')">📖 Обзор модуля</button>
-        <button class="tab-btn" onclick="switchTab('notebooks')">💻 Уроки & Код (.ipynb)</button>
-        <button class="tab-btn" onclick="switchTab('quiz')">🧠 Quiz (Проверка)</button>
-        <button class="tab-btn" id="cheatsheet-tab-btn" onclick="switchTab('cheatsheet')">📋 Шпаргалка</button>
-      </div>
+  <!-- MAIN VIEWPORT -->
+  <main id="main-content">
+    <header class="topbar">
+      <nav class="tabs" id="view-tabs">
+        <button class="tab-btn active" onclick="switchTab('notebooks')">Уроки и код (.ipynb)</button>
+        <button class="tab-btn" onclick="switchTab('overview')">Обзор модуля</button>
+        <button class="tab-btn" onclick="switchTab('quiz')">Quiz проверка</button>
+        <button class="tab-btn" id="cheatsheet-tab-btn" onclick="switchTab('cheatsheet')">Шпаргалка</button>
+      </nav>
 
       <div class="top-actions">
-        <input type="text" id="github-repo" class="github-repo-input" title="Ваш GitHub username/repo" value="Enlyl/data-analyst-2027" placeholder="Enlyl/data-analyst-2027" onchange="saveGithubRepo(this.value)">
+        <input type="text" id="github-repo" class="github-repo-input" title="GitHub username/repo" value="Enlyl/data-analyst-2027" placeholder="Enlyl/data-analyst-2027" onchange="saveGithubRepo(this.value)">
       </div>
-    </div>
+    </header>
 
     <div id="content-body" class="content-body"></div>
-  </div>
+  </main>
 
   <script>
     const courseData = {json.dumps(course_data, ensure_ascii=False)};
@@ -516,7 +664,7 @@ html_content = f"""<!DOCTYPE html>
 
     function saveGithubRepo(val) {{
       localStorage.setItem('da_2027_gh_repo', val.trim());
-      updateColabLink();
+      renderContent();
     }}
 
     function updateProgressBar() {{
@@ -566,7 +714,6 @@ html_content = f"""<!DOCTYPE html>
       currentNotebookIndex = 0;
       renderSidebar();
       renderContent();
-      updateColabLink();
     }}
 
     function switchTab(tab) {{
@@ -574,26 +721,6 @@ html_content = f"""<!DOCTYPE html>
       document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
       event.target.classList.add('active');
       renderContent();
-    }}
-
-    function updateColabLink() {{
-      // Colab button is rendered inside the active lesson
-    }}
-
-    function downloadActiveNotebook() {{
-      const mod = courseData[currentModuleIndex];
-      if (!mod.notebooks || !mod.notebooks[currentNotebookIndex]) return;
-      const nb = mod.notebooks[currentNotebookIndex];
-      
-      const blob = new Blob([nb.raw_json], {{ type: 'application/x-ipynb+json' }});
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = nb.filename;
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-      URL.revokeObjectURL(url);
     }}
 
     function renderContent() {{
@@ -626,22 +753,21 @@ html_content = f"""<!DOCTYPE html>
         renderNotebooksView(mod);
       }}
 
-      updateColabLink();
       Prism.highlightAll();
     }}
 
     function renderNotebooksView(mod) {{
       const body = document.getElementById('content-body');
       if (!mod.notebooks || mod.notebooks.length === 0) {{
-        body.innerHTML = '<p style="color:var(--text-muted)">В этом модуле нет ноутбуков .ipynb</p>';
+        body.innerHTML = '<p style="color:var(--text-muted)">В этом модуле нет уроков в формате .ipynb</p>';
         return;
       }}
 
-      let navHtml = '<div style="display:flex; gap:8px; margin-bottom:20px; flex-wrap:wrap;">';
+      let navHtml = '<div style="display:flex; gap:8px; margin-bottom:24px; flex-wrap:wrap;">';
       mod.notebooks.forEach((nb, i) => {{
         navHtml += `
-          <button class="tab-btn ${{i === currentNotebookIndex ? 'active' : ''}}" onclick="currentNotebookIndex=${{i}}; renderNotebooksView(courseData[currentModuleIndex]); updateColabLink();">
-            📓 ${{nb.filename.replace('.ipynb', '')}}
+          <button class="tab-btn ${{i === currentNotebookIndex ? 'active' : ''}}" onclick="currentNotebookIndex=${{i}}; renderNotebooksView(courseData[currentModuleIndex]);">
+            ${{nb.filename.replace('.ipynb', '')}}
           </button>
         `;
       }});
@@ -649,15 +775,16 @@ html_content = f"""<!DOCTYPE html>
 
       const activeNb = mod.notebooks[currentNotebookIndex];
       const ghRepo = getGithubRepo();
+      const colabDirectUrl = `https://colab.research.google.com/github/${{ghRepo}}/blob/main/${{activeNb.rel_path}}`;
 
-      let noticeHtml = `
-        <div class="colab-notice">
+      let bannerHtml = `
+        <div class="colab-banner">
           <div>
-            <strong>🚀 Интерактивный запуск:</strong><br>
-            Урок готов к исполнению в облаке через Google Colab. Нажмите кнопку справа для запуска в 1 клик.
+            <div class="colab-banner-title">Интерактивный запуск в Google Colab</div>
+            <div class="colab-banner-desc">Откройте урок в облаке для выполнения кода и выполнения практических заданий</div>
           </div>
-          <a class="action-btn colab-btn" target="_blank" href="https://colab.research.google.com/github/${{ghRepo}}/blob/main/${{activeNb.rel_path}}">
-            🚀 Запустить в Colab
+          <a class="action-btn colab-cta-btn" target="_blank" href="${{colabDirectUrl}}">
+            Запустить в Colab
           </a>
         </div>
       `;
@@ -668,7 +795,7 @@ html_content = f"""<!DOCTYPE html>
           cellsHtml += `
             <div class="cell">
               <div class="cell-header">
-                <span>Markdown Block #${{idx+1}}</span>
+                <span>Теория и кейс · Блок #${{idx+1}}</span>
               </div>
               <div class="cell-markdown markdown-view">
                 ${{marked.parse(c.content)}}
@@ -679,8 +806,8 @@ html_content = f"""<!DOCTYPE html>
           cellsHtml += `
             <div class="cell">
               <div class="cell-header">
-                <span>Python Cell #${{idx+1}}</span>
-                <button style="background:transparent; border:none; color:var(--accent); cursor:pointer; font-size:0.75rem;" onclick="navigator.clipboard.writeText(this.parentElement.nextElementSibling.innerText); this.innerText='Скопировано!'; setTimeout(()=>this.innerText='Копировать код', 1500)">Копировать код</button>
+                <span>Python Executable · Блок #${{idx+1}}</span>
+                <button style="background:transparent; border:none; color:var(--text-muted); cursor:pointer; font-size:12px; font-family:inherit;" onclick="navigator.clipboard.writeText(this.parentElement.nextElementSibling.innerText); this.innerText='Скопировано'; setTimeout(()=>this.innerText='Копировать код', 1500)">Копировать код</button>
               </div>
               <div class="cell-code">
                 <pre><code class="language-python">${{escapeHtml(c.content)}}</code></pre>
@@ -691,9 +818,13 @@ html_content = f"""<!DOCTYPE html>
       }});
 
       body.innerHTML = `
-        <h2>${{activeNb.filename}}</h2>
-        <p style="color:var(--text-muted); margin-bottom:12px;">Путь к файлу: <code>${{activeNb.filepath}}</code></p>
-        ${{noticeHtml}}
+        <div class="markdown-view">
+          <h1>${{activeNb.filename.replace('.ipynb', '')}}</h1>
+          <p style="color:var(--text-muted); font-family:'Geist Mono',monospace; font-size:13px; margin-bottom:20px;">
+            ${{activeNb.rel_path}}
+          </p>
+        </div>
+        ${{bannerHtml}}
         ${{navHtml}}
         <div>${{cellsHtml}}</div>
       `;
@@ -730,4 +861,4 @@ with open(OUTPUT_HTML, "w", encoding="utf-8") as f:
 with open(PORTAL_HTML, "w", encoding="utf-8") as f:
     f.write(html_content)
 
-print(f"Interactive portal updated at {OUTPUT_HTML} and {PORTAL_HTML}")
+print(f"Design-polished portal successfully created at {OUTPUT_HTML} and {PORTAL_HTML}")
