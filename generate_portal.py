@@ -483,12 +483,9 @@ html_content = f"""<!DOCTYPE html>
 
       <div class="top-actions">
         <input type="text" id="github-repo" class="github-repo-input" title="Ваш GitHub username/repo" value="Enlyl/data-analyst-2027" placeholder="Enlyl/data-analyst-2027" onchange="saveGithubRepo(this.value)">
-        <a id="colab-link" href="#" target="_blank" class="action-btn colab-btn" style="padding: 8px 16px; font-size: 0.85rem;" title="Открыть этот урок в Google Colab в 1 клик">
+        <a id="colab-link" href="#" target="_blank" class="action-btn colab-btn" style="padding: 8px 18px; font-size: 0.85rem;" title="Открыть этот урок в Google Colab в 1 клик">
           🚀 Открыть урок в Colab
         </a>
-        <button id="download-current-nb" class="action-btn download-btn" onclick="downloadActiveNotebook()" title="Скачать открытый .ipynb файл урока">
-          📥 Скачать .ipynb
-        </button>
       </div>
     </div>
 
@@ -589,17 +586,12 @@ html_content = f"""<!DOCTYPE html>
 
       if (mod.notebooks && mod.notebooks.length > 0) {{
         const activeNb = mod.notebooks[currentNotebookIndex];
-        if (ghRepo) {{
-          colabBtn.href = `https://colab.research.google.com/github/${{ghRepo}}/blob/main/${{activeNb.rel_path}}`;
-          colabBtn.title = `Прямое открытие ${{activeNb.filename}} из GitHub в Colab`;
-        }} else {{
-          colabBtn.href = `https://colab.research.google.com/#create=true`;
-          colabBtn.title = `Нажмите "Скачать .ipynb" и перетащите в открывшееся окно Colab`;
-        }}
-        document.getElementById('download-current-nb').style.display = 'inline-flex';
+        colabBtn.href = `https://colab.research.google.com/github/${{ghRepo}}/blob/main/${{activeNb.rel_path}}`;
+        colabBtn.title = `Прямое открытие ${{activeNb.filename}} в Colab`;
+        colabBtn.style.display = 'inline-flex';
       }} else {{
         colabBtn.href = 'https://colab.research.google.com';
-        document.getElementById('download-current-nb').style.display = 'none';
+        colabBtn.style.display = 'none';
       }}
     }}
 
@@ -676,15 +668,12 @@ html_content = f"""<!DOCTYPE html>
       let noticeHtml = `
         <div class="colab-notice">
           <div>
-            <strong>🚀 Как открыть этот урок в Colab:</strong><br>
-            ${{ghRepo 
-              ? `Подключен репозиторий <code>${{ghRepo}}</code>. Клик по кнопке «Открыть в Colab» сразу загрузит именно этот файл!` 
-              : `1) Нажмите <strong>«📥 Скачать .ipynb урока»</strong>. 2) Нажмите <strong>«🚀 Открыть в Colab»</strong> и перетащите скачанный файл во вкладку Upload. <em>(Либо введите свой <code>user/repo</code> в поле GitHub вверху для открытия в 1 клик).</em>`
-            }}
+            <strong>🚀 Интерактивный запуск:</strong><br>
+            Урок готов к исполнению в облаке через Google Colab. Нажмите кнопку справа для запуска в 1 клик.
           </div>
-          <button class="action-btn download-btn" onclick="downloadActiveNotebook()">
-            📥 Скачать ${{activeNb.filename}}
-          </button>
+          <a class="action-btn colab-btn" target="_blank" href="https://colab.research.google.com/github/${{ghRepo}}/blob/main/${{activeNb.rel_path}}">
+            🚀 Запустить в Colab
+          </a>
         </div>
       `;
 
