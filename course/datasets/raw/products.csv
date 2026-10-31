@@ -1,0 +1,21 @@
+product_id,product_name,category,price,cost
+1,Smartphone,Electronics,772.72,315.85
+2,Laptop,Electronics,340.91,163.0
+3,Wireless Earbuds,Electronics,887.72,565.34
+4,Smartwatch,Electronics,1072.23,461.52
+5,Monitor,Electronics,514.98,211.36
+6,Keyboard,Electronics,274.09,158.12
+7,Coffee Maker,Home & Kitchen,46.45,21.81
+8,Blender,Home & Kitchen,785.11,463.79
+9,Air Fryer,Home & Kitchen,276.22,167.46
+10,Vacuum Cleaner,Home & Kitchen,974.18,391.89
+11,Toaster,Home & Kitchen,969.9,624.95
+12,Sneakers,Fashion,418.2,190.04
+13,Winter Jacket,Fashion,1149.3,595.12
+14,Jeans,Fashion,124.9,54.19
+15,T-Shirt,Fashion,1019.28,623.09
+16,Backpack,Fashion,971.45,636.69
+17,Skincare Set,Beauty,650.43,481.7
+18,Perfume,Beauty,463.56,274.99
+19,Hair Dryer,Beauty,997.84,615.15
+20,Sunscreen,Beauty,1036.12,623.82

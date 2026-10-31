@@ -1,0 +1,2283 @@
+order_id,customer_id,order_date,status,payment_method
+10001,1,2026-01-28 00:00:00,Completed,Apple Pay / Mir Pay
+10002,1,2026-02-17 00:00:00,Completed,Fast Payment (SBP)
+10003,1,2026-03-15 00:00:00,Completed,Credit Card
+10004,2,2025-06-03 00:00:00,Completed,Cash on Delivery
+10005,4,2025-05-29 00:00:00,Completed,Fast Payment (SBP)
+10006,4,2025-06-21 00:00:00,Completed,Credit Card
+10007,4,2025-07-23 00:00:00,Refunded,Fast Payment (SBP)
+10008,4,2025-09-03 00:00:00,Completed,Apple Pay / Mir Pay
+10009,4,2025-09-22 00:00:00,Completed,Fast Payment (SBP)
+10010,5,2025-05-06 00:00:00,Completed,Cash on Delivery
+10011,6,2026-01-15 00:00:00,Completed,Fast Payment (SBP)
+10012,8,2025-04-26 00:00:00,Completed,Cash on Delivery
+10013,9,2025-04-25 00:00:00,Completed,Fast Payment (SBP)
+10014,9,2025-05-20 00:00:00,Completed,Cash on Delivery
+10015,9,2025-06-19 00:00:00,Completed,Fast Payment (SBP)
+10016,9,2025-07-27 00:00:00,Completed,Credit Card
+10017,9,2025-08-27 00:00:00,Completed,Cash on Delivery
+10018,9,2025-09-10 00:00:00,Completed,Apple Pay / Mir Pay
+10019,9,2025-09-23 00:00:00,Cancelled,Apple Pay / Mir Pay
+10020,9,2025-10-19 00:00:00,Completed,Fast Payment (SBP)
+10021,10,2026-05-16 00:00:00,Completed,Apple Pay / Mir Pay
+10022,10,2026-05-23 00:00:00,Completed,Credit Card
+10023,11,2025-05-24 00:00:00,Completed,Fast Payment (SBP)
+10024,11,2025-05-27 00:00:00,Completed,Fast Payment (SBP)
+10025,12,2025-05-30 00:00:00,Completed,Credit Card
+10026,13,2025-08-21 00:00:00,Completed,Fast Payment (SBP)
+10027,13,2025-09-27 00:00:00,Completed,Apple Pay / Mir Pay
+10028,13,2025-10-30 00:00:00,Completed,Credit Card
+10029,13,2025-12-07 00:00:00,Completed,Fast Payment (SBP)
+10030,13,2025-12-26 00:00:00,Completed,Credit Card
+10031,14,2026-05-25 00:00:00,Completed,Apple Pay / Mir Pay
+10032,14,2026-06-25 00:00:00,Refunded,Apple Pay / Mir Pay
+10033,14,2026-07-23 00:00:00,Refunded,Fast Payment (SBP)
+10034,15,2025-05-15 00:00:00,Completed,Credit Card
+10035,15,2025-06-23 00:00:00,Completed,Credit Card
+10036,15,2025-07-11 00:00:00,Completed,Fast Payment (SBP)
+10037,16,2026-05-07 00:00:00,Completed,Fast Payment (SBP)
+10038,16,2026-06-01 00:00:00,Completed,Apple Pay / Mir Pay
+10039,16,2026-07-14 00:00:00,Completed,Fast Payment (SBP)
+10040,17,2025-06-21 00:00:00,Completed,Apple Pay / Mir Pay
+10041,17,2025-07-10 00:00:00,Completed,Credit Card
+10042,19,2025-11-29 00:00:00,Completed,Cash on Delivery
+10043,19,2025-12-08 00:00:00,Cancelled,Fast Payment (SBP)
+10044,19,2025-12-18 00:00:00,Completed,Apple Pay / Mir Pay
+10045,19,2025-12-19 00:00:00,Completed,Apple Pay / Mir Pay
+10046,19,2025-12-28 00:00:00,Completed,Cash on Delivery
+10047,20,2025-07-29 00:00:00,Cancelled,Fast Payment (SBP)
+10048,21,2025-10-03 00:00:00,Completed,Credit Card
+10049,22,2025-04-09 00:00:00,Refunded,Cash on Delivery
+10050,22,2025-05-02 00:00:00,Completed,Apple Pay / Mir Pay
+10051,22,2025-05-10 00:00:00,Completed,Credit Card
+10052,24,2025-08-27 00:00:00,Completed,Credit Card
+10053,24,2025-09-04 00:00:00,Completed,Cash on Delivery
+10054,24,2025-10-14 00:00:00,Completed,Apple Pay / Mir Pay
+10055,24,2025-10-22 00:00:00,Completed,Credit Card
+10056,24,2025-11-25 00:00:00,Cancelled,Fast Payment (SBP)
+10057,24,2025-12-17 00:00:00,Completed,Credit Card
+10058,24,2025-12-22 00:00:00,Completed,Credit Card
+10059,24,2026-01-15 00:00:00,Completed,Fast Payment (SBP)
+10060,24,2026-01-16 00:00:00,Completed,Apple Pay / Mir Pay
+10061,24,2026-01-22 00:00:00,Completed,Fast Payment (SBP)
+10062,24,2026-02-09 00:00:00,Completed,Cash on Delivery
+10063,24,2026-02-16 00:00:00,Completed,Cash on Delivery
+10064,25,2025-06-10 00:00:00,Completed,Cash on Delivery
+10065,27,2026-02-23 00:00:00,Completed,Apple Pay / Mir Pay
+10066,27,2026-02-27 00:00:00,Completed,Apple Pay / Mir Pay
+10067,27,2026-03-04 00:00:00,Completed,Fast Payment (SBP)
+10068,28,2025-03-24 00:00:00,Completed,Apple Pay / Mir Pay
+10069,28,2025-03-30 00:00:00,Completed,Cash on Delivery
+10070,30,2025-06-20 00:00:00,Completed,Credit Card
+10071,31,2026-05-07 00:00:00,Completed,Apple Pay / Mir Pay
+10072,31,2026-06-05 00:00:00,Completed,Apple Pay / Mir Pay
+10073,31,2026-07-11 00:00:00,Completed,Credit Card
+10074,31,2026-07-18 00:00:00,Completed,Apple Pay / Mir Pay
+10075,31,2026-08-09 00:00:00,Completed,Cash on Delivery
+10076,31,2026-09-08 00:00:00,Completed,Apple Pay / Mir Pay
+10077,31,2026-09-15 00:00:00,Completed,Fast Payment (SBP)
+10078,32,2026-03-25 00:00:00,Completed,Fast Payment (SBP)
+10079,32,2026-04-08 00:00:00,Completed,Fast Payment (SBP)
+10080,32,2026-05-14 00:00:00,Completed,Cash on Delivery
+10081,34,2025-10-08 00:00:00,Completed,Apple Pay / Mir Pay
+10082,37,2025-02-13 00:00:00,Completed,Credit Card
+10083,37,2025-02-28 00:00:00,Completed,Cash on Delivery
+10084,37,2025-03-25 00:00:00,Completed,Fast Payment (SBP)
+10085,38,2025-02-26 00:00:00,Completed,Apple Pay / Mir Pay
+10086,38,2025-02-27 00:00:00,Completed,Apple Pay / Mir Pay
+10087,38,2025-04-11 00:00:00,Completed,Fast Payment (SBP)
+10088,39,2026-06-18 00:00:00,Completed,Cash on Delivery
+10089,40,2025-03-26 00:00:00,Completed,Cash on Delivery
+10090,41,2025-04-30 00:00:00,Completed,Credit Card
+10091,42,2025-08-16 00:00:00,Cancelled,Credit Card
+10092,42,2025-09-20 00:00:00,Completed,Cash on Delivery
+10093,42,2025-09-24 00:00:00,Completed,Fast Payment (SBP)
+10094,42,2025-10-22 00:00:00,Completed,Cash on Delivery
+10095,42,2025-10-25 00:00:00,Completed,Credit Card
+10096,43,2026-01-08 00:00:00,Completed,Cash on Delivery
+10097,43,2026-01-23 00:00:00,Completed,Cash on Delivery
+10098,44,2025-07-25 00:00:00,Completed,Apple Pay / Mir Pay
+10099,44,2025-08-29 00:00:00,Completed,Credit Card
+10100,44,2025-09-08 00:00:00,Completed,Apple Pay / Mir Pay
+10101,44,2025-10-08 00:00:00,Completed,Credit Card
+10102,44,2025-11-15 00:00:00,Completed,Fast Payment (SBP)
+10103,44,2025-11-20 00:00:00,Refunded,Fast Payment (SBP)
+10104,44,2026-01-04 00:00:00,Completed,Fast Payment (SBP)
+10105,44,2026-01-22 00:00:00,Completed,Apple Pay / Mir Pay
+10106,45,2025-08-25 00:00:00,Completed,Credit Card
+10107,45,2025-09-27 00:00:00,Completed,Cash on Delivery
+10108,46,2025-05-17 00:00:00,Completed,Apple Pay / Mir Pay
+10109,47,2025-02-20 00:00:00,Completed,Apple Pay / Mir Pay
+10110,47,2025-04-04 00:00:00,Completed,Apple Pay / Mir Pay
+10111,47,2025-04-28 00:00:00,Completed,Apple Pay / Mir Pay
+10112,48,2025-11-01 00:00:00,Cancelled,Fast Payment (SBP)
+10113,48,2025-11-18 00:00:00,Completed,Apple Pay / Mir Pay
+10114,48,2025-12-22 00:00:00,Completed,Apple Pay / Mir Pay
+10115,48,2026-01-23 00:00:00,Completed,Credit Card
+10116,48,2026-01-28 00:00:00,Completed,Fast Payment (SBP)
+10117,49,2026-01-06 00:00:00,Completed,Cash on Delivery
+10118,49,2026-02-17 00:00:00,Completed,Credit Card
+10119,51,2025-10-28 00:00:00,Completed,Apple Pay / Mir Pay
+10120,52,2025-10-13 00:00:00,Completed,Fast Payment (SBP)
+10121,52,2025-10-25 00:00:00,Completed,Fast Payment (SBP)
+10122,53,2026-01-21 00:00:00,Completed,Apple Pay / Mir Pay
+10123,53,2026-03-06 00:00:00,Completed,Apple Pay / Mir Pay
+10124,54,2025-05-13 00:00:00,Completed,Apple Pay / Mir Pay
+10125,55,2025-05-03 00:00:00,Completed,Credit Card
+10126,55,2025-05-09 00:00:00,Completed,Cash on Delivery
+10127,55,2025-06-15 00:00:00,Completed,Credit Card
+10128,56,2025-08-16 00:00:00,Completed,Fast Payment (SBP)
+10129,57,2025-10-11 00:00:00,Completed,Apple Pay / Mir Pay
+10130,57,2025-11-16 00:00:00,Completed,Fast Payment (SBP)
+10131,58,2026-01-02 00:00:00,Completed,Credit Card
+10132,59,2025-03-12 00:00:00,Completed,Credit Card
+10133,60,2026-03-12 00:00:00,Completed,Fast Payment (SBP)
+10134,60,2026-03-13 00:00:00,Completed,Fast Payment (SBP)
+10135,61,2025-05-23 00:00:00,Completed,Apple Pay / Mir Pay
+10136,61,2025-06-18 00:00:00,Completed,Credit Card
+10137,62,2025-03-31 00:00:00,Completed,Apple Pay / Mir Pay
+10138,64,2026-03-26 00:00:00,Completed,Fast Payment (SBP)
+10139,65,2025-03-04 00:00:00,Completed,Cash on Delivery
+10140,65,2025-03-29 00:00:00,Completed,Apple Pay / Mir Pay
+10141,65,2025-05-13 00:00:00,Completed,Apple Pay / Mir Pay
+10142,65,2025-05-18 00:00:00,Completed,Apple Pay / Mir Pay
+10143,65,2025-06-05 00:00:00,Completed,Apple Pay / Mir Pay
+10144,66,2026-05-26 00:00:00,Completed,Apple Pay / Mir Pay
+10145,66,2026-07-05 00:00:00,Completed,Credit Card
+10146,66,2026-07-17 00:00:00,Cancelled,Fast Payment (SBP)
+10147,66,2026-08-14 00:00:00,Completed,Credit Card
+10148,66,2026-09-13 00:00:00,Cancelled,Cash on Delivery
+10149,67,2025-08-04 00:00:00,Completed,Fast Payment (SBP)
+10150,68,2026-04-10 00:00:00,Completed,Cash on Delivery
+10151,68,2026-05-04 00:00:00,Completed,Fast Payment (SBP)
+10152,68,2026-06-17 00:00:00,Completed,Credit Card
+10153,68,2026-07-18 00:00:00,Completed,Apple Pay / Mir Pay
+10154,68,2026-08-22 00:00:00,Completed,Cash on Delivery
+10155,68,2026-09-17 00:00:00,Completed,Apple Pay / Mir Pay
+10156,69,2025-07-31 00:00:00,Completed,Fast Payment (SBP)
+10157,69,2025-08-13 00:00:00,Completed,Apple Pay / Mir Pay
+10158,70,2026-05-31 00:00:00,Completed,Fast Payment (SBP)
+10159,70,2026-06-06 00:00:00,Completed,Apple Pay / Mir Pay
+10160,70,2026-07-18 00:00:00,Completed,Cash on Delivery
+10161,71,2025-08-14 00:00:00,Completed,Fast Payment (SBP)
+10162,71,2025-09-09 00:00:00,Completed,Credit Card
+10163,71,2025-09-29 00:00:00,Completed,Fast Payment (SBP)
+10164,73,2025-04-29 00:00:00,Completed,Cash on Delivery
+10165,73,2025-05-19 00:00:00,Refunded,Cash on Delivery
+10166,74,2025-11-03 00:00:00,Completed,Credit Card
+10167,75,2026-03-04 00:00:00,Refunded,Cash on Delivery
+10168,76,2025-10-28 00:00:00,Completed,Apple Pay / Mir Pay
+10169,78,2026-04-06 00:00:00,Completed,Apple Pay / Mir Pay
+10170,78,2026-05-16 00:00:00,Completed,Fast Payment (SBP)
+10171,83,2025-10-24 00:00:00,Completed,Cash on Delivery
+10172,85,2025-06-04 00:00:00,Completed,Cash on Delivery
+10173,85,2025-06-24 00:00:00,Completed,Cash on Delivery
+10174,85,2025-07-19 00:00:00,Completed,Credit Card
+10175,85,2025-08-09 00:00:00,Completed,Credit Card
+10176,85,2025-09-02 00:00:00,Refunded,Apple Pay / Mir Pay
+10177,85,2025-10-17 00:00:00,Completed,Apple Pay / Mir Pay
+10178,85,2025-10-23 00:00:00,Completed,Fast Payment (SBP)
+10179,85,2025-11-28 00:00:00,Completed,Fast Payment (SBP)
+10180,86,2025-11-30 00:00:00,Completed,Cash on Delivery
+10181,87,2026-05-09 00:00:00,Completed,Apple Pay / Mir Pay
+10182,87,2026-06-13 00:00:00,Completed,Credit Card
+10183,88,2025-09-08 00:00:00,Completed,Credit Card
+10184,88,2025-10-18 00:00:00,Completed,Cash on Delivery
+10185,88,2025-10-30 00:00:00,Completed,Apple Pay / Mir Pay
+10186,89,2025-03-04 00:00:00,Completed,Fast Payment (SBP)
+10187,89,2025-03-05 00:00:00,Refunded,Apple Pay / Mir Pay
+10188,90,2025-05-20 00:00:00,Completed,Fast Payment (SBP)
+10189,90,2025-06-03 00:00:00,Cancelled,Credit Card
+10190,90,2025-06-16 00:00:00,Completed,Apple Pay / Mir Pay
+10191,91,2026-04-26 00:00:00,Completed,Cash on Delivery
+10192,92,2025-04-12 00:00:00,Completed,Fast Payment (SBP)
+10193,92,2025-05-17 00:00:00,Completed,Fast Payment (SBP)
+10194,92,2025-05-18 00:00:00,Completed,Fast Payment (SBP)
+10195,92,2025-06-01 00:00:00,Completed,Credit Card
+10196,92,2025-06-08 00:00:00,Completed,Fast Payment (SBP)
+10197,93,2025-06-21 00:00:00,Completed,Credit Card
+10198,94,2025-02-19 00:00:00,Completed,Credit Card
+10199,95,2026-05-15 00:00:00,Completed,Cash on Delivery
+10200,95,2026-06-26 00:00:00,Completed,Credit Card
+10201,95,2026-07-06 00:00:00,Completed,Apple Pay / Mir Pay
+10202,95,2026-08-12 00:00:00,Completed,Apple Pay / Mir Pay
+10203,95,2026-08-18 00:00:00,Completed,Credit Card
+10204,96,2025-06-30 00:00:00,Completed,Apple Pay / Mir Pay
+10205,98,2025-12-10 00:00:00,Completed,Credit Card
+10206,98,2025-12-16 00:00:00,Completed,Cash on Delivery
+10207,99,2025-04-17 00:00:00,Completed,Apple Pay / Mir Pay
+10208,99,2025-05-03 00:00:00,Refunded,Apple Pay / Mir Pay
+10209,100,2025-09-30 00:00:00,Completed,Fast Payment (SBP)
+10210,100,2025-11-14 00:00:00,Completed,Credit Card
+10211,102,2025-03-09 00:00:00,Completed,Credit Card
+10212,103,2026-01-05 00:00:00,Completed,Credit Card
+10213,103,2026-02-07 00:00:00,Cancelled,Credit Card
+10214,105,2025-11-04 00:00:00,Completed,Cash on Delivery
+10215,105,2025-12-07 00:00:00,Completed,Credit Card
+10216,105,2026-01-02 00:00:00,Completed,Credit Card
+10217,105,2026-02-10 00:00:00,Completed,Apple Pay / Mir Pay
+10218,105,2026-02-19 00:00:00,Completed,Apple Pay / Mir Pay
+10219,106,2026-05-20 00:00:00,Completed,Credit Card
+10220,106,2026-06-16 00:00:00,Cancelled,Fast Payment (SBP)
+10221,106,2026-06-23 00:00:00,Completed,Credit Card
+10222,106,2026-07-08 00:00:00,Completed,Fast Payment (SBP)
+10223,106,2026-08-08 00:00:00,Completed,Fast Payment (SBP)
+10224,108,2025-11-06 00:00:00,Completed,Credit Card
+10225,109,2025-02-21 00:00:00,Refunded,Cash on Delivery
+10226,109,2025-03-14 00:00:00,Completed,Credit Card
+10227,110,2026-04-22 00:00:00,Completed,Cash on Delivery
+10228,110,2026-05-22 00:00:00,Completed,Fast Payment (SBP)
+10229,110,2026-05-28 00:00:00,Completed,Credit Card
+10230,110,2026-06-06 00:00:00,Completed,Fast Payment (SBP)
+10231,110,2026-07-06 00:00:00,Completed,Fast Payment (SBP)
+10232,111,2025-06-02 00:00:00,Completed,Apple Pay / Mir Pay
+10233,112,2026-03-13 00:00:00,Completed,Apple Pay / Mir Pay
+10234,112,2026-04-09 00:00:00,Completed,Cash on Delivery
+10235,112,2026-04-22 00:00:00,Completed,Fast Payment (SBP)
+10236,112,2026-04-23 00:00:00,Completed,Cash on Delivery
+10237,112,2026-05-20 00:00:00,Completed,Credit Card
+10238,113,2026-02-02 00:00:00,Completed,Apple Pay / Mir Pay
+10239,113,2026-03-17 00:00:00,Completed,Fast Payment (SBP)
+10240,113,2026-03-29 00:00:00,Completed,Fast Payment (SBP)
+10241,114,2026-05-18 00:00:00,Completed,Fast Payment (SBP)
+10242,115,2025-01-18 00:00:00,Completed,Apple Pay / Mir Pay
+10243,115,2025-02-21 00:00:00,Completed,Apple Pay / Mir Pay
+10244,115,2025-04-07 00:00:00,Completed,Fast Payment (SBP)
+10245,116,2026-02-28 00:00:00,Refunded,Cash on Delivery
+10246,116,2026-04-09 00:00:00,Completed,Fast Payment (SBP)
+10247,116,2026-05-02 00:00:00,Completed,Apple Pay / Mir Pay
+10248,116,2026-05-07 00:00:00,Completed,Fast Payment (SBP)
+10249,116,2026-05-19 00:00:00,Completed,Fast Payment (SBP)
+10250,116,2026-06-10 00:00:00,Completed,Cash on Delivery
+10251,116,2026-07-03 00:00:00,Completed,Apple Pay / Mir Pay
+10252,116,2026-08-13 00:00:00,Completed,Apple Pay / Mir Pay
+10253,116,2026-08-16 00:00:00,Completed,Credit Card
+10254,116,2026-08-30 00:00:00,Completed,Apple Pay / Mir Pay
+10255,116,2026-09-28 00:00:00,Completed,Cash on Delivery
+10256,117,2026-03-01 00:00:00,Completed,Credit Card
+10257,117,2026-03-04 00:00:00,Completed,Credit Card
+10258,119,2026-05-03 00:00:00,Refunded,Fast Payment (SBP)
+10259,119,2026-06-01 00:00:00,Completed,Fast Payment (SBP)
+10260,119,2026-07-07 00:00:00,Completed,Apple Pay / Mir Pay
+10261,120,2025-05-02 00:00:00,Completed,Apple Pay / Mir Pay
+10262,120,2025-05-31 00:00:00,Completed,Credit Card
+10263,120,2025-06-06 00:00:00,Completed,Apple Pay / Mir Pay
+10264,120,2025-07-19 00:00:00,Completed,Credit Card
+10265,120,2025-07-29 00:00:00,Completed,Fast Payment (SBP)
+10266,121,2025-07-06 00:00:00,Completed,Fast Payment (SBP)
+10267,122,2025-02-24 00:00:00,Completed,Fast Payment (SBP)
+10268,123,2025-07-24 00:00:00,Completed,Cash on Delivery
+10269,123,2025-08-21 00:00:00,Completed,Cash on Delivery
+10270,124,2025-08-05 00:00:00,Completed,Credit Card
+10271,124,2025-08-10 00:00:00,Completed,Cash on Delivery
+10272,125,2026-01-24 00:00:00,Completed,Apple Pay / Mir Pay
+10273,125,2026-02-07 00:00:00,Completed,Fast Payment (SBP)
+10274,125,2026-03-02 00:00:00,Cancelled,Credit Card
+10275,125,2026-03-06 00:00:00,Completed,Fast Payment (SBP)
+10276,125,2026-04-03 00:00:00,Completed,Cash on Delivery
+10277,126,2026-05-09 00:00:00,Completed,Fast Payment (SBP)
+10278,127,2025-04-12 00:00:00,Completed,Cash on Delivery
+10279,127,2025-05-10 00:00:00,Completed,Cash on Delivery
+10280,128,2025-03-09 00:00:00,Completed,Credit Card
+10281,129,2026-02-15 00:00:00,Completed,Fast Payment (SBP)
+10282,129,2026-02-25 00:00:00,Completed,Fast Payment (SBP)
+10283,129,2026-03-03 00:00:00,Completed,Credit Card
+10284,129,2026-03-04 00:00:00,Completed,Cash on Delivery
+10285,129,2026-04-18 00:00:00,Refunded,Fast Payment (SBP)
+10286,129,2026-04-22 00:00:00,Completed,Fast Payment (SBP)
+10287,129,2026-05-10 00:00:00,Completed,Fast Payment (SBP)
+10288,129,2026-06-18 00:00:00,Completed,Apple Pay / Mir Pay
+10289,130,2025-11-29 00:00:00,Cancelled,Apple Pay / Mir Pay
+10290,130,2026-01-11 00:00:00,Completed,Apple Pay / Mir Pay
+10291,130,2026-01-19 00:00:00,Completed,Cash on Delivery
+10292,131,2026-05-20 00:00:00,Completed,Cash on Delivery
+10293,132,2025-02-21 00:00:00,Completed,Fast Payment (SBP)
+10294,133,2025-10-20 00:00:00,Completed,Apple Pay / Mir Pay
+10295,133,2025-12-03 00:00:00,Completed,Credit Card
+10296,134,2026-01-23 00:00:00,Completed,Credit Card
+10297,135,2025-04-25 00:00:00,Cancelled,Credit Card
+10298,135,2025-05-07 00:00:00,Refunded,Apple Pay / Mir Pay
+10299,136,2026-05-19 00:00:00,Completed,Fast Payment (SBP)
+10300,136,2026-06-13 00:00:00,Completed,Credit Card
+10301,137,2025-06-23 00:00:00,Completed,Apple Pay / Mir Pay
+10302,138,2026-04-23 00:00:00,Completed,Credit Card
+10303,138,2026-05-25 00:00:00,Completed,Credit Card
+10304,138,2026-06-25 00:00:00,Completed,Credit Card
+10305,138,2026-07-03 00:00:00,Completed,Fast Payment (SBP)
+10306,138,2026-07-27 00:00:00,Completed,Fast Payment (SBP)
+10307,139,2025-12-20 00:00:00,Completed,Cash on Delivery
+10308,139,2026-01-02 00:00:00,Completed,Apple Pay / Mir Pay
+10309,141,2025-04-29 00:00:00,Completed,Cash on Delivery
+10310,143,2025-10-24 00:00:00,Completed,Apple Pay / Mir Pay
+10311,143,2025-10-27 00:00:00,Completed,Apple Pay / Mir Pay
+10312,144,2026-03-14 00:00:00,Completed,Credit Card
+10313,145,2025-06-01 00:00:00,Completed,Credit Card
+10314,146,2025-12-13 00:00:00,Completed,Apple Pay / Mir Pay
+10315,146,2026-01-23 00:00:00,Completed,Apple Pay / Mir Pay
+10316,146,2026-02-04 00:00:00,Refunded,Fast Payment (SBP)
+10317,148,2025-09-29 00:00:00,Completed,Apple Pay / Mir Pay
+10318,149,2025-12-05 00:00:00,Completed,Apple Pay / Mir Pay
+10319,150,2026-01-10 00:00:00,Completed,Cash on Delivery
+10320,151,2025-02-28 00:00:00,Completed,Credit Card
+10321,152,2025-07-18 00:00:00,Completed,Cash on Delivery
+10322,155,2025-08-06 00:00:00,Refunded,Cash on Delivery
+10323,156,2026-01-10 00:00:00,Completed,Cash on Delivery
+10324,157,2025-08-18 00:00:00,Completed,Cash on Delivery
+10325,160,2025-09-25 00:00:00,Completed,Fast Payment (SBP)
+10326,160,2025-10-06 00:00:00,Completed,Apple Pay / Mir Pay
+10327,160,2025-11-13 00:00:00,Completed,Cash on Delivery
+10328,161,2026-05-13 00:00:00,Completed,Apple Pay / Mir Pay
+10329,162,2025-04-24 00:00:00,Completed,Cash on Delivery
+10330,163,2025-10-26 00:00:00,Refunded,Apple Pay / Mir Pay
+10331,163,2025-10-28 00:00:00,Completed,Fast Payment (SBP)
+10332,165,2026-03-03 00:00:00,Completed,Cash on Delivery
+10333,166,2026-03-07 00:00:00,Completed,Fast Payment (SBP)
+10334,166,2026-04-21 00:00:00,Refunded,Apple Pay / Mir Pay
+10335,166,2026-04-25 00:00:00,Completed,Fast Payment (SBP)
+10336,167,2026-01-21 00:00:00,Completed,Apple Pay / Mir Pay
+10337,167,2026-03-04 00:00:00,Completed,Apple Pay / Mir Pay
+10338,168,2025-05-18 00:00:00,Completed,Cash on Delivery
+10339,169,2025-07-05 00:00:00,Completed,Fast Payment (SBP)
+10340,169,2025-07-18 00:00:00,Refunded,Cash on Delivery
+10341,170,2025-11-22 00:00:00,Completed,Fast Payment (SBP)
+10342,170,2025-12-26 00:00:00,Cancelled,Credit Card
+10343,170,2026-01-18 00:00:00,Completed,Credit Card
+10344,170,2026-02-21 00:00:00,Completed,Cash on Delivery
+10345,170,2026-03-23 00:00:00,Completed,Apple Pay / Mir Pay
+10346,170,2026-04-22 00:00:00,Cancelled,Apple Pay / Mir Pay
+10347,170,2026-04-25 00:00:00,Cancelled,Apple Pay / Mir Pay
+10348,170,2026-04-28 00:00:00,Completed,Fast Payment (SBP)
+10349,171,2025-02-17 00:00:00,Refunded,Cash on Delivery
+10350,172,2025-06-08 00:00:00,Cancelled,Apple Pay / Mir Pay
+10351,173,2025-02-19 00:00:00,Completed,Cash on Delivery
+10352,173,2025-03-29 00:00:00,Completed,Fast Payment (SBP)
+10353,174,2025-07-22 00:00:00,Cancelled,Cash on Delivery
+10354,174,2025-07-26 00:00:00,Refunded,Fast Payment (SBP)
+10355,176,2025-07-09 00:00:00,Cancelled,Credit Card
+10356,177,2025-02-20 00:00:00,Completed,Cash on Delivery
+10357,177,2025-03-12 00:00:00,Completed,Fast Payment (SBP)
+10358,177,2025-03-13 00:00:00,Completed,Fast Payment (SBP)
+10359,178,2026-04-18 00:00:00,Completed,Cash on Delivery
+10360,178,2026-05-26 00:00:00,Completed,Cash on Delivery
+10361,178,2026-07-06 00:00:00,Completed,Cash on Delivery
+10362,179,2025-02-22 00:00:00,Completed,Credit Card
+10363,179,2025-03-22 00:00:00,Completed,Cash on Delivery
+10364,179,2025-04-09 00:00:00,Completed,Fast Payment (SBP)
+10365,179,2025-05-12 00:00:00,Completed,Apple Pay / Mir Pay
+10366,179,2025-05-30 00:00:00,Completed,Fast Payment (SBP)
+10367,181,2026-02-14 00:00:00,Completed,Cash on Delivery
+10368,182,2026-01-31 00:00:00,Completed,Credit Card
+10369,183,2026-05-06 00:00:00,Completed,Fast Payment (SBP)
+10370,183,2026-06-09 00:00:00,Completed,Fast Payment (SBP)
+10371,183,2026-06-24 00:00:00,Completed,Apple Pay / Mir Pay
+10372,183,2026-06-29 00:00:00,Completed,Cash on Delivery
+10373,183,2026-07-07 00:00:00,Refunded,Credit Card
+10374,184,2025-06-03 00:00:00,Completed,Apple Pay / Mir Pay
+10375,184,2025-06-21 00:00:00,Refunded,Fast Payment (SBP)
+10376,184,2025-07-07 00:00:00,Completed,Credit Card
+10377,184,2025-07-21 00:00:00,Completed,Fast Payment (SBP)
+10378,184,2025-08-04 00:00:00,Refunded,Cash on Delivery
+10379,186,2026-03-10 00:00:00,Completed,Apple Pay / Mir Pay
+10380,187,2026-04-08 00:00:00,Completed,Fast Payment (SBP)
+10381,188,2025-10-21 00:00:00,Completed,Cash on Delivery
+10382,188,2025-11-03 00:00:00,Completed,Cash on Delivery
+10383,190,2026-01-10 00:00:00,Completed,Credit Card
+10384,191,2025-04-30 00:00:00,Completed,Cash on Delivery
+10385,191,2025-05-26 00:00:00,Cancelled,Fast Payment (SBP)
+10386,191,2025-06-27 00:00:00,Completed,Apple Pay / Mir Pay
+10387,192,2025-06-29 00:00:00,Completed,Fast Payment (SBP)
+10388,192,2025-08-11 00:00:00,Completed,Cash on Delivery
+10389,193,2025-07-27 00:00:00,Completed,Credit Card
+10390,194,2026-01-30 00:00:00,Completed,Cash on Delivery
+10391,195,2026-04-17 00:00:00,Completed,Cash on Delivery
+10392,195,2026-05-04 00:00:00,Completed,Cash on Delivery
+10393,196,2026-02-11 00:00:00,Completed,Credit Card
+10394,196,2026-03-06 00:00:00,Completed,Apple Pay / Mir Pay
+10395,196,2026-03-26 00:00:00,Completed,Apple Pay / Mir Pay
+10396,197,2025-05-22 00:00:00,Completed,Cash on Delivery
+10397,197,2025-05-29 00:00:00,Completed,Apple Pay / Mir Pay
+10398,199,2025-05-11 00:00:00,Completed,Credit Card
+10399,200,2025-04-04 00:00:00,Completed,Credit Card
+10400,201,2025-12-23 00:00:00,Completed,Credit Card
+10401,202,2025-09-22 00:00:00,Completed,Cash on Delivery
+10402,203,2025-05-09 00:00:00,Cancelled,Cash on Delivery
+10403,204,2026-02-13 00:00:00,Completed,Apple Pay / Mir Pay
+10404,204,2026-03-13 00:00:00,Completed,Credit Card
+10405,204,2026-03-29 00:00:00,Completed,Credit Card
+10406,204,2026-04-28 00:00:00,Completed,Cash on Delivery
+10407,204,2026-05-07 00:00:00,Completed,Fast Payment (SBP)
+10408,205,2025-03-03 00:00:00,Completed,Fast Payment (SBP)
+10409,205,2025-04-06 00:00:00,Completed,Fast Payment (SBP)
+10410,205,2025-04-27 00:00:00,Completed,Cash on Delivery
+10411,206,2025-11-08 00:00:00,Completed,Credit Card
+10412,207,2026-05-26 00:00:00,Completed,Apple Pay / Mir Pay
+10413,208,2025-11-25 00:00:00,Completed,Fast Payment (SBP)
+10414,209,2025-03-10 00:00:00,Completed,Apple Pay / Mir Pay
+10415,210,2025-11-26 00:00:00,Completed,Credit Card
+10416,210,2025-12-17 00:00:00,Completed,Credit Card
+10417,210,2026-01-27 00:00:00,Completed,Credit Card
+10418,210,2026-03-07 00:00:00,Completed,Fast Payment (SBP)
+10419,210,2026-03-28 00:00:00,Completed,Apple Pay / Mir Pay
+10420,211,2026-03-14 00:00:00,Completed,Credit Card
+10421,211,2026-04-11 00:00:00,Completed,Apple Pay / Mir Pay
+10422,211,2026-04-19 00:00:00,Completed,Cash on Delivery
+10423,211,2026-05-08 00:00:00,Completed,Cash on Delivery
+10424,211,2026-06-21 00:00:00,Completed,Apple Pay / Mir Pay
+10425,212,2025-09-06 00:00:00,Refunded,Fast Payment (SBP)
+10426,213,2025-10-12 00:00:00,Completed,Fast Payment (SBP)
+10427,213,2025-10-28 00:00:00,Completed,Fast Payment (SBP)
+10428,217,2026-02-02 00:00:00,Completed,Apple Pay / Mir Pay
+10429,221,2025-06-10 00:00:00,Completed,Cash on Delivery
+10430,221,2025-07-14 00:00:00,Completed,Apple Pay / Mir Pay
+10431,221,2025-08-19 00:00:00,Completed,Cash on Delivery
+10432,221,2025-08-22 00:00:00,Completed,Apple Pay / Mir Pay
+10433,221,2025-09-27 00:00:00,Completed,Cash on Delivery
+10434,222,2025-11-07 00:00:00,Completed,Apple Pay / Mir Pay
+10435,223,2025-07-29 00:00:00,Completed,Credit Card
+10436,225,2026-03-29 00:00:00,Completed,Fast Payment (SBP)
+10437,225,2026-04-28 00:00:00,Completed,Fast Payment (SBP)
+10438,226,2026-05-03 00:00:00,Completed,Credit Card
+10439,226,2026-05-28 00:00:00,Completed,Fast Payment (SBP)
+10440,226,2026-06-08 00:00:00,Completed,Cash on Delivery
+10441,226,2026-07-06 00:00:00,Completed,Fast Payment (SBP)
+10442,226,2026-08-06 00:00:00,Completed,Cash on Delivery
+10443,228,2025-02-19 00:00:00,Completed,Fast Payment (SBP)
+10444,228,2025-04-04 00:00:00,Refunded,Apple Pay / Mir Pay
+10445,232,2025-06-07 00:00:00,Completed,Fast Payment (SBP)
+10446,234,2025-08-07 00:00:00,Completed,Apple Pay / Mir Pay
+10447,234,2025-09-19 00:00:00,Completed,Fast Payment (SBP)
+10448,235,2025-08-04 00:00:00,Completed,Credit Card
+10449,235,2025-08-05 00:00:00,Completed,Cash on Delivery
+10450,236,2025-07-09 00:00:00,Completed,Fast Payment (SBP)
+10451,236,2025-07-11 00:00:00,Completed,Apple Pay / Mir Pay
+10452,237,2025-05-29 00:00:00,Completed,Credit Card
+10453,237,2025-06-30 00:00:00,Completed,Cash on Delivery
+10454,237,2025-07-07 00:00:00,Completed,Cash on Delivery
+10455,238,2025-03-31 00:00:00,Completed,Credit Card
+10456,239,2025-04-14 00:00:00,Completed,Cash on Delivery
+10457,240,2025-04-20 00:00:00,Completed,Fast Payment (SBP)
+10458,241,2025-09-24 00:00:00,Completed,Credit Card
+10459,241,2025-10-26 00:00:00,Completed,Apple Pay / Mir Pay
+10460,242,2026-06-18 00:00:00,Completed,Credit Card
+10461,242,2026-07-24 00:00:00,Completed,Fast Payment (SBP)
+10462,242,2026-07-31 00:00:00,Completed,Credit Card
+10463,244,2025-05-26 00:00:00,Completed,Cash on Delivery
+10464,245,2025-02-06 00:00:00,Cancelled,Credit Card
+10465,245,2025-02-17 00:00:00,Completed,Fast Payment (SBP)
+10466,245,2025-03-16 00:00:00,Completed,Apple Pay / Mir Pay
+10467,246,2025-06-19 00:00:00,Completed,Credit Card
+10468,246,2025-07-17 00:00:00,Completed,Credit Card
+10469,246,2025-08-12 00:00:00,Refunded,Fast Payment (SBP)
+10470,246,2025-08-22 00:00:00,Completed,Cash on Delivery
+10471,246,2025-08-28 00:00:00,Completed,Fast Payment (SBP)
+10472,247,2025-06-05 00:00:00,Completed,Fast Payment (SBP)
+10473,248,2026-04-06 00:00:00,Completed,Fast Payment (SBP)
+10474,248,2026-04-29 00:00:00,Completed,Credit Card
+10475,249,2026-04-08 00:00:00,Completed,Apple Pay / Mir Pay
+10476,250,2025-09-23 00:00:00,Completed,Apple Pay / Mir Pay
+10477,250,2025-10-23 00:00:00,Completed,Cash on Delivery
+10478,252,2025-03-26 00:00:00,Completed,Cash on Delivery
+10479,252,2025-04-28 00:00:00,Completed,Cash on Delivery
+10480,253,2025-10-09 00:00:00,Completed,Apple Pay / Mir Pay
+10481,253,2025-11-02 00:00:00,Completed,Fast Payment (SBP)
+10482,255,2026-02-24 00:00:00,Refunded,Fast Payment (SBP)
+10483,255,2026-03-16 00:00:00,Completed,Fast Payment (SBP)
+10484,256,2025-05-18 00:00:00,Completed,Fast Payment (SBP)
+10485,256,2025-06-12 00:00:00,Completed,Cash on Delivery
+10486,257,2025-12-19 00:00:00,Completed,Apple Pay / Mir Pay
+10487,257,2026-01-01 00:00:00,Cancelled,Credit Card
+10488,258,2026-03-12 00:00:00,Completed,Fast Payment (SBP)
+10489,259,2026-04-23 00:00:00,Completed,Fast Payment (SBP)
+10490,260,2025-08-27 00:00:00,Completed,Fast Payment (SBP)
+10491,262,2026-05-21 00:00:00,Completed,Fast Payment (SBP)
+10492,262,2026-05-25 00:00:00,Completed,Apple Pay / Mir Pay
+10493,263,2025-05-10 00:00:00,Completed,Cash on Delivery
+10494,264,2025-03-24 00:00:00,Completed,Credit Card
+10495,264,2025-04-13 00:00:00,Completed,Cash on Delivery
+10496,264,2025-05-07 00:00:00,Completed,Apple Pay / Mir Pay
+10497,264,2025-06-06 00:00:00,Cancelled,Fast Payment (SBP)
+10498,264,2025-07-20 00:00:00,Completed,Fast Payment (SBP)
+10499,265,2025-02-28 00:00:00,Completed,Credit Card
+10500,265,2025-04-13 00:00:00,Refunded,Fast Payment (SBP)
+10501,266,2025-08-20 00:00:00,Refunded,Apple Pay / Mir Pay
+10502,266,2025-08-26 00:00:00,Completed,Credit Card
+10503,267,2025-06-24 00:00:00,Completed,Fast Payment (SBP)
+10504,267,2025-07-07 00:00:00,Completed,Apple Pay / Mir Pay
+10505,267,2025-07-22 00:00:00,Cancelled,Fast Payment (SBP)
+10506,267,2025-08-05 00:00:00,Completed,Cash on Delivery
+10507,267,2025-08-16 00:00:00,Completed,Apple Pay / Mir Pay
+10508,267,2025-09-02 00:00:00,Refunded,Apple Pay / Mir Pay
+10509,267,2025-09-30 00:00:00,Completed,Credit Card
+10510,267,2025-10-15 00:00:00,Completed,Cash on Delivery
+10511,268,2026-02-03 00:00:00,Completed,Apple Pay / Mir Pay
+10512,269,2025-02-28 00:00:00,Completed,Apple Pay / Mir Pay
+10513,269,2025-03-22 00:00:00,Completed,Apple Pay / Mir Pay
+10514,269,2025-04-12 00:00:00,Refunded,Credit Card
+10515,273,2025-04-13 00:00:00,Completed,Cash on Delivery
+10516,273,2025-04-14 00:00:00,Completed,Cash on Delivery
+10517,273,2025-05-22 00:00:00,Completed,Credit Card
+10518,274,2025-02-09 00:00:00,Completed,Fast Payment (SBP)
+10519,274,2025-02-21 00:00:00,Completed,Credit Card
+10520,274,2025-04-04 00:00:00,Completed,Fast Payment (SBP)
+10521,274,2025-04-28 00:00:00,Cancelled,Apple Pay / Mir Pay
+10522,274,2025-05-02 00:00:00,Completed,Apple Pay / Mir Pay
+10523,275,2026-02-10 00:00:00,Completed,Cash on Delivery
+10524,276,2025-09-04 00:00:00,Completed,Cash on Delivery
+10525,277,2025-06-10 00:00:00,Completed,Credit Card
+10526,278,2025-10-08 00:00:00,Completed,Credit Card
+10527,278,2025-10-20 00:00:00,Completed,Apple Pay / Mir Pay
+10528,278,2025-10-27 00:00:00,Completed,Apple Pay / Mir Pay
+10529,278,2025-11-16 00:00:00,Completed,Fast Payment (SBP)
+10530,278,2025-11-24 00:00:00,Completed,Apple Pay / Mir Pay
+10531,279,2025-02-27 00:00:00,Refunded,Apple Pay / Mir Pay
+10532,279,2025-03-13 00:00:00,Completed,Cash on Delivery
+10533,279,2025-04-06 00:00:00,Completed,Cash on Delivery
+10534,279,2025-05-08 00:00:00,Completed,Cash on Delivery
+10535,279,2025-06-03 00:00:00,Completed,Cash on Delivery
+10536,279,2025-06-26 00:00:00,Completed,Credit Card
+10537,279,2025-07-26 00:00:00,Completed,Fast Payment (SBP)
+10538,279,2025-09-06 00:00:00,Completed,Credit Card
+10539,280,2026-01-27 00:00:00,Completed,Credit Card
+10540,280,2026-03-12 00:00:00,Completed,Fast Payment (SBP)
+10541,280,2026-03-29 00:00:00,Completed,Fast Payment (SBP)
+10542,281,2025-02-21 00:00:00,Completed,Credit Card
+10543,281,2025-03-19 00:00:00,Completed,Apple Pay / Mir Pay
+10544,281,2025-04-18 00:00:00,Completed,Cash on Delivery
+10545,281,2025-05-16 00:00:00,Completed,Cash on Delivery
+10546,281,2025-06-09 00:00:00,Completed,Apple Pay / Mir Pay
+10547,282,2026-04-01 00:00:00,Completed,Cash on Delivery
+10548,283,2026-05-12 00:00:00,Cancelled,Fast Payment (SBP)
+10549,283,2026-05-17 00:00:00,Completed,Apple Pay / Mir Pay
+10550,283,2026-06-27 00:00:00,Refunded,Credit Card
+10551,283,2026-07-29 00:00:00,Completed,Apple Pay / Mir Pay
+10552,283,2026-08-17 00:00:00,Completed,Credit Card
+10553,284,2025-11-19 00:00:00,Completed,Credit Card
+10554,285,2025-10-07 00:00:00,Completed,Apple Pay / Mir Pay
+10555,286,2025-05-11 00:00:00,Completed,Cash on Delivery
+10556,286,2025-05-16 00:00:00,Completed,Apple Pay / Mir Pay
+10557,286,2025-06-15 00:00:00,Completed,Credit Card
+10558,286,2025-07-11 00:00:00,Completed,Apple Pay / Mir Pay
+10559,286,2025-08-10 00:00:00,Completed,Apple Pay / Mir Pay
+10560,287,2026-04-03 00:00:00,Completed,Credit Card
+10561,290,2025-08-20 00:00:00,Completed,Apple Pay / Mir Pay
+10562,290,2025-08-25 00:00:00,Completed,Cash on Delivery
+10563,290,2025-08-28 00:00:00,Completed,Credit Card
+10564,292,2025-09-19 00:00:00,Completed,Fast Payment (SBP)
+10565,292,2025-10-15 00:00:00,Completed,Credit Card
+10566,293,2025-07-30 00:00:00,Completed,Credit Card
+10567,295,2025-09-07 00:00:00,Refunded,Fast Payment (SBP)
+10568,295,2025-09-22 00:00:00,Cancelled,Credit Card
+10569,295,2025-10-13 00:00:00,Completed,Apple Pay / Mir Pay
+10570,296,2025-10-05 00:00:00,Completed,Fast Payment (SBP)
+10571,297,2025-12-05 00:00:00,Completed,Fast Payment (SBP)
+10572,297,2026-01-06 00:00:00,Cancelled,Credit Card
+10573,298,2025-07-01 00:00:00,Completed,Apple Pay / Mir Pay
+10574,298,2025-07-30 00:00:00,Completed,Apple Pay / Mir Pay
+10575,299,2025-08-21 00:00:00,Completed,Cash on Delivery
+10576,299,2025-08-31 00:00:00,Completed,Credit Card
+10577,299,2025-09-22 00:00:00,Completed,Fast Payment (SBP)
+10578,300,2025-01-30 00:00:00,Completed,Fast Payment (SBP)
+10579,300,2025-03-15 00:00:00,Completed,Apple Pay / Mir Pay
+10580,300,2025-04-16 00:00:00,Completed,Apple Pay / Mir Pay
+10581,302,2025-01-22 00:00:00,Completed,Credit Card
+10582,302,2025-02-07 00:00:00,Completed,Apple Pay / Mir Pay
+10583,303,2025-05-27 00:00:00,Completed,Fast Payment (SBP)
+10584,304,2026-05-28 00:00:00,Completed,Cash on Delivery
+10585,305,2025-10-03 00:00:00,Completed,Apple Pay / Mir Pay
+10586,305,2025-11-08 00:00:00,Completed,Credit Card
+10587,305,2025-11-09 00:00:00,Completed,Fast Payment (SBP)
+10588,306,2026-01-17 00:00:00,Completed,Credit Card
+10589,307,2025-10-06 00:00:00,Completed,Cash on Delivery
+10590,308,2025-04-29 00:00:00,Completed,Apple Pay / Mir Pay
+10591,308,2025-05-16 00:00:00,Completed,Apple Pay / Mir Pay
+10592,309,2025-10-26 00:00:00,Cancelled,Credit Card
+10593,310,2025-06-08 00:00:00,Completed,Cash on Delivery
+10594,310,2025-06-18 00:00:00,Completed,Apple Pay / Mir Pay
+10595,310,2025-07-22 00:00:00,Completed,Fast Payment (SBP)
+10596,311,2026-05-02 00:00:00,Completed,Apple Pay / Mir Pay
+10597,312,2026-03-24 00:00:00,Completed,Credit Card
+10598,313,2025-07-16 00:00:00,Completed,Credit Card
+10599,315,2025-10-04 00:00:00,Completed,Fast Payment (SBP)
+10600,316,2025-10-14 00:00:00,Cancelled,Fast Payment (SBP)
+10601,319,2026-04-29 00:00:00,Completed,Apple Pay / Mir Pay
+10602,320,2025-07-25 00:00:00,Completed,Fast Payment (SBP)
+10603,321,2026-04-28 00:00:00,Completed,Cash on Delivery
+10604,321,2026-05-23 00:00:00,Completed,Apple Pay / Mir Pay
+10605,322,2025-12-26 00:00:00,Completed,Cash on Delivery
+10606,322,2026-02-07 00:00:00,Completed,Apple Pay / Mir Pay
+10607,322,2026-02-18 00:00:00,Refunded,Fast Payment (SBP)
+10608,324,2026-05-25 00:00:00,Refunded,Credit Card
+10609,324,2026-06-09 00:00:00,Completed,Credit Card
+10610,325,2026-04-01 00:00:00,Completed,Apple Pay / Mir Pay
+10611,325,2026-04-25 00:00:00,Completed,Apple Pay / Mir Pay
+10612,325,2026-05-21 00:00:00,Completed,Cash on Delivery
+10613,325,2026-07-04 00:00:00,Completed,Fast Payment (SBP)
+10614,325,2026-08-06 00:00:00,Cancelled,Credit Card
+10615,326,2025-10-22 00:00:00,Completed,Fast Payment (SBP)
+10616,327,2025-03-19 00:00:00,Refunded,Apple Pay / Mir Pay
+10617,327,2025-04-14 00:00:00,Completed,Fast Payment (SBP)
+10618,328,2025-02-17 00:00:00,Completed,Credit Card
+10619,329,2025-11-26 00:00:00,Completed,Apple Pay / Mir Pay
+10620,330,2025-03-11 00:00:00,Completed,Apple Pay / Mir Pay
+10621,331,2026-03-26 00:00:00,Completed,Cash on Delivery
+10622,332,2025-12-26 00:00:00,Cancelled,Cash on Delivery
+10623,333,2025-01-27 00:00:00,Completed,Credit Card
+10624,334,2025-12-27 00:00:00,Completed,Credit Card
+10625,334,2026-01-03 00:00:00,Completed,Apple Pay / Mir Pay
+10626,335,2026-02-21 00:00:00,Completed,Credit Card
+10627,335,2026-03-29 00:00:00,Completed,Fast Payment (SBP)
+10628,335,2026-04-04 00:00:00,Completed,Credit Card
+10629,336,2026-02-05 00:00:00,Completed,Credit Card
+10630,336,2026-02-24 00:00:00,Completed,Cash on Delivery
+10631,336,2026-03-19 00:00:00,Completed,Apple Pay / Mir Pay
+10632,336,2026-03-28 00:00:00,Completed,Apple Pay / Mir Pay
+10633,336,2026-04-14 00:00:00,Completed,Apple Pay / Mir Pay
+10634,336,2026-05-29 00:00:00,Completed,Apple Pay / Mir Pay
+10635,336,2026-06-22 00:00:00,Completed,Apple Pay / Mir Pay
+10636,336,2026-07-17 00:00:00,Completed,Apple Pay / Mir Pay
+10637,337,2025-09-07 00:00:00,Completed,Fast Payment (SBP)
+10638,338,2026-04-16 00:00:00,Completed,Fast Payment (SBP)
+10639,338,2026-05-04 00:00:00,Completed,Credit Card
+10640,338,2026-06-09 00:00:00,Completed,Cash on Delivery
+10641,339,2026-03-27 00:00:00,Completed,Cash on Delivery
+10642,339,2026-05-10 00:00:00,Completed,Cash on Delivery
+10643,340,2025-08-08 00:00:00,Completed,Apple Pay / Mir Pay
+10644,341,2025-10-05 00:00:00,Completed,Credit Card
+10645,341,2025-11-06 00:00:00,Completed,Credit Card
+10646,341,2025-12-04 00:00:00,Completed,Fast Payment (SBP)
+10647,342,2026-02-21 00:00:00,Completed,Apple Pay / Mir Pay
+10648,342,2026-03-16 00:00:00,Cancelled,Cash on Delivery
+10649,343,2025-03-26 00:00:00,Completed,Credit Card
+10650,345,2025-04-10 00:00:00,Completed,Fast Payment (SBP)
+10651,345,2025-04-30 00:00:00,Completed,Credit Card
+10652,347,2025-01-11 00:00:00,Completed,Apple Pay / Mir Pay
+10653,348,2026-01-08 00:00:00,Completed,Fast Payment (SBP)
+10654,350,2025-12-23 00:00:00,Completed,Fast Payment (SBP)
+10655,352,2025-08-07 00:00:00,Refunded,Apple Pay / Mir Pay
+10656,353,2025-05-28 00:00:00,Completed,Cash on Delivery
+10657,355,2025-02-25 00:00:00,Completed,Fast Payment (SBP)
+10658,356,2025-06-09 00:00:00,Completed,Cash on Delivery
+10659,357,2026-02-11 00:00:00,Completed,Apple Pay / Mir Pay
+10660,358,2026-01-30 00:00:00,Cancelled,Apple Pay / Mir Pay
+10661,358,2026-02-12 00:00:00,Refunded,Cash on Delivery
+10662,359,2025-12-11 00:00:00,Completed,Apple Pay / Mir Pay
+10663,360,2025-11-26 00:00:00,Completed,Fast Payment (SBP)
+10664,361,2025-12-18 00:00:00,Completed,Credit Card
+10665,362,2026-01-23 00:00:00,Completed,Apple Pay / Mir Pay
+10666,364,2025-07-22 00:00:00,Completed,Apple Pay / Mir Pay
+10667,364,2025-08-25 00:00:00,Completed,Apple Pay / Mir Pay
+10668,366,2025-03-30 00:00:00,Completed,Apple Pay / Mir Pay
+10669,366,2025-04-12 00:00:00,Completed,Apple Pay / Mir Pay
+10670,367,2025-09-06 00:00:00,Cancelled,Fast Payment (SBP)
+10671,367,2025-10-07 00:00:00,Completed,Credit Card
+10672,367,2025-10-26 00:00:00,Completed,Credit Card
+10673,367,2025-11-06 00:00:00,Completed,Cash on Delivery
+10674,367,2025-12-13 00:00:00,Completed,Credit Card
+10675,368,2026-02-18 00:00:00,Completed,Apple Pay / Mir Pay
+10676,368,2026-02-27 00:00:00,Completed,Credit Card
+10677,369,2025-10-05 00:00:00,Completed,Fast Payment (SBP)
+10678,369,2025-10-28 00:00:00,Completed,Fast Payment (SBP)
+10679,369,2025-11-04 00:00:00,Completed,Cash on Delivery
+10680,369,2025-11-14 00:00:00,Completed,Cash on Delivery
+10681,369,2025-12-14 00:00:00,Completed,Apple Pay / Mir Pay
+10682,369,2026-01-25 00:00:00,Completed,Fast Payment (SBP)
+10683,369,2026-02-07 00:00:00,Completed,Credit Card
+10684,369,2026-02-14 00:00:00,Completed,Apple Pay / Mir Pay
+10685,370,2026-05-25 00:00:00,Refunded,Apple Pay / Mir Pay
+10686,370,2026-05-26 00:00:00,Completed,Credit Card
+10687,370,2026-06-11 00:00:00,Completed,Fast Payment (SBP)
+10688,371,2026-02-14 00:00:00,Completed,Apple Pay / Mir Pay
+10689,372,2025-09-12 00:00:00,Refunded,Cash on Delivery
+10690,372,2025-10-05 00:00:00,Completed,Fast Payment (SBP)
+10691,374,2025-08-14 00:00:00,Completed,Cash on Delivery
+10692,375,2025-02-23 00:00:00,Completed,Cash on Delivery
+10693,376,2025-06-10 00:00:00,Completed,Cash on Delivery
+10694,377,2025-07-20 00:00:00,Completed,Fast Payment (SBP)
+10695,377,2025-08-28 00:00:00,Completed,Fast Payment (SBP)
+10696,377,2025-09-29 00:00:00,Completed,Cash on Delivery
+10697,377,2025-10-26 00:00:00,Completed,Apple Pay / Mir Pay
+10698,377,2025-11-04 00:00:00,Refunded,Credit Card
+10699,377,2025-11-08 00:00:00,Completed,Credit Card
+10700,377,2025-11-18 00:00:00,Completed,Credit Card
+10701,377,2025-11-28 00:00:00,Completed,Cash on Delivery
+10702,377,2025-12-17 00:00:00,Completed,Credit Card
+10703,377,2026-01-23 00:00:00,Completed,Apple Pay / Mir Pay
+10704,377,2026-02-26 00:00:00,Completed,Apple Pay / Mir Pay
+10705,377,2026-04-06 00:00:00,Completed,Cash on Delivery
+10706,379,2026-05-25 00:00:00,Completed,Credit Card
+10707,381,2026-05-03 00:00:00,Completed,Apple Pay / Mir Pay
+10708,382,2025-05-31 00:00:00,Completed,Cash on Delivery
+10709,382,2025-06-01 00:00:00,Cancelled,Fast Payment (SBP)
+10710,382,2025-06-03 00:00:00,Completed,Cash on Delivery
+10711,382,2025-07-17 00:00:00,Completed,Credit Card
+10712,382,2025-08-08 00:00:00,Completed,Cash on Delivery
+10713,382,2025-09-16 00:00:00,Completed,Apple Pay / Mir Pay
+10714,382,2025-10-22 00:00:00,Completed,Credit Card
+10715,382,2025-11-02 00:00:00,Completed,Fast Payment (SBP)
+10716,383,2026-03-29 00:00:00,Cancelled,Cash on Delivery
+10717,384,2026-01-08 00:00:00,Refunded,Apple Pay / Mir Pay
+10718,385,2025-03-09 00:00:00,Completed,Cash on Delivery
+10719,386,2025-03-17 00:00:00,Completed,Credit Card
+10720,386,2025-04-23 00:00:00,Completed,Credit Card
+10721,387,2025-04-22 00:00:00,Completed,Cash on Delivery
+10722,388,2025-12-23 00:00:00,Completed,Credit Card
+10723,388,2025-12-31 00:00:00,Completed,Credit Card
+10724,388,2026-01-21 00:00:00,Completed,Cash on Delivery
+10725,389,2025-08-17 00:00:00,Completed,Cash on Delivery
+10726,390,2025-03-27 00:00:00,Completed,Cash on Delivery
+10727,392,2026-05-23 00:00:00,Completed,Apple Pay / Mir Pay
+10728,394,2026-05-12 00:00:00,Completed,Fast Payment (SBP)
+10729,394,2026-06-10 00:00:00,Refunded,Apple Pay / Mir Pay
+10730,394,2026-06-21 00:00:00,Completed,Apple Pay / Mir Pay
+10731,394,2026-06-22 00:00:00,Completed,Fast Payment (SBP)
+10732,394,2026-08-06 00:00:00,Completed,Cash on Delivery
+10733,395,2026-01-09 00:00:00,Completed,Apple Pay / Mir Pay
+10734,397,2025-04-27 00:00:00,Completed,Cash on Delivery
+10735,398,2026-01-02 00:00:00,Completed,Credit Card
+10736,398,2026-01-17 00:00:00,Completed,Cash on Delivery
+10737,399,2025-12-02 00:00:00,Completed,Cash on Delivery
+10738,399,2025-12-21 00:00:00,Completed,Fast Payment (SBP)
+10739,399,2026-01-17 00:00:00,Completed,Credit Card
+10740,399,2026-02-25 00:00:00,Completed,Apple Pay / Mir Pay
+10741,399,2026-03-23 00:00:00,Refunded,Apple Pay / Mir Pay
+10742,399,2026-04-25 00:00:00,Completed,Cash on Delivery
+10743,399,2026-04-27 00:00:00,Completed,Apple Pay / Mir Pay
+10744,399,2026-06-03 00:00:00,Completed,Apple Pay / Mir Pay
+10745,400,2025-06-15 00:00:00,Cancelled,Credit Card
+10746,400,2025-07-04 00:00:00,Completed,Apple Pay / Mir Pay
+10747,401,2025-03-09 00:00:00,Completed,Cash on Delivery
+10748,402,2025-11-18 00:00:00,Completed,Cash on Delivery
+10749,403,2026-02-09 00:00:00,Cancelled,Fast Payment (SBP)
+10750,403,2026-02-20 00:00:00,Completed,Fast Payment (SBP)
+10751,403,2026-03-06 00:00:00,Completed,Apple Pay / Mir Pay
+10752,406,2026-01-16 00:00:00,Completed,Cash on Delivery
+10753,406,2026-01-28 00:00:00,Completed,Fast Payment (SBP)
+10754,408,2025-06-28 00:00:00,Completed,Fast Payment (SBP)
+10755,409,2025-01-29 00:00:00,Completed,Fast Payment (SBP)
+10756,410,2025-10-21 00:00:00,Completed,Fast Payment (SBP)
+10757,411,2025-10-08 00:00:00,Completed,Apple Pay / Mir Pay
+10758,412,2025-12-09 00:00:00,Refunded,Credit Card
+10759,413,2025-05-26 00:00:00,Completed,Fast Payment (SBP)
+10760,413,2025-06-16 00:00:00,Completed,Apple Pay / Mir Pay
+10761,413,2025-07-05 00:00:00,Completed,Cash on Delivery
+10762,414,2026-02-08 00:00:00,Completed,Credit Card
+10763,415,2025-07-06 00:00:00,Completed,Cash on Delivery
+10764,415,2025-07-30 00:00:00,Refunded,Credit Card
+10765,415,2025-08-06 00:00:00,Cancelled,Cash on Delivery
+10766,416,2025-03-08 00:00:00,Cancelled,Credit Card
+10767,416,2025-03-13 00:00:00,Completed,Cash on Delivery
+10768,416,2025-04-12 00:00:00,Completed,Fast Payment (SBP)
+10769,417,2026-01-08 00:00:00,Completed,Cash on Delivery
+10770,417,2026-01-31 00:00:00,Completed,Apple Pay / Mir Pay
+10771,417,2026-03-15 00:00:00,Completed,Cash on Delivery
+10772,417,2026-04-18 00:00:00,Completed,Fast Payment (SBP)
+10773,417,2026-05-03 00:00:00,Refunded,Cash on Delivery
+10774,417,2026-06-02 00:00:00,Completed,Credit Card
+10775,417,2026-07-03 00:00:00,Completed,Cash on Delivery
+10776,417,2026-07-26 00:00:00,Completed,Apple Pay / Mir Pay
+10777,418,2026-05-05 00:00:00,Completed,Cash on Delivery
+10778,419,2025-07-16 00:00:00,Completed,Credit Card
+10779,420,2025-03-11 00:00:00,Completed,Fast Payment (SBP)
+10780,421,2025-11-03 00:00:00,Completed,Fast Payment (SBP)
+10781,422,2025-08-23 00:00:00,Completed,Credit Card
+10782,422,2025-09-23 00:00:00,Completed,Apple Pay / Mir Pay
+10783,423,2025-08-31 00:00:00,Cancelled,Cash on Delivery
+10784,423,2025-09-05 00:00:00,Completed,Credit Card
+10785,423,2025-09-07 00:00:00,Completed,Fast Payment (SBP)
+10786,423,2025-09-27 00:00:00,Completed,Fast Payment (SBP)
+10787,423,2025-11-09 00:00:00,Completed,Fast Payment (SBP)
+10788,424,2025-04-04 00:00:00,Completed,Cash on Delivery
+10789,424,2025-04-14 00:00:00,Cancelled,Apple Pay / Mir Pay
+10790,424,2025-05-08 00:00:00,Completed,Credit Card
+10791,424,2025-06-18 00:00:00,Completed,Cash on Delivery
+10792,424,2025-07-28 00:00:00,Completed,Cash on Delivery
+10793,425,2026-03-23 00:00:00,Completed,Fast Payment (SBP)
+10794,426,2026-01-19 00:00:00,Completed,Credit Card
+10795,427,2025-08-21 00:00:00,Completed,Apple Pay / Mir Pay
+10796,427,2025-10-03 00:00:00,Cancelled,Apple Pay / Mir Pay
+10797,428,2026-03-07 00:00:00,Refunded,Fast Payment (SBP)
+10798,429,2026-01-22 00:00:00,Completed,Cash on Delivery
+10799,429,2026-02-26 00:00:00,Completed,Cash on Delivery
+10800,430,2025-07-24 00:00:00,Completed,Cash on Delivery
+10801,431,2026-06-09 00:00:00,Completed,Cash on Delivery
+10802,432,2025-03-14 00:00:00,Completed,Apple Pay / Mir Pay
+10803,432,2025-04-13 00:00:00,Completed,Cash on Delivery
+10804,432,2025-05-02 00:00:00,Completed,Fast Payment (SBP)
+10805,434,2025-08-20 00:00:00,Completed,Fast Payment (SBP)
+10806,434,2025-08-30 00:00:00,Completed,Credit Card
+10807,434,2025-09-01 00:00:00,Completed,Cash on Delivery
+10808,434,2025-09-13 00:00:00,Completed,Fast Payment (SBP)
+10809,434,2025-09-24 00:00:00,Completed,Apple Pay / Mir Pay
+10810,435,2025-03-04 00:00:00,Completed,Fast Payment (SBP)
+10811,435,2025-03-14 00:00:00,Completed,Cash on Delivery
+10812,435,2025-03-17 00:00:00,Completed,Cash on Delivery
+10813,435,2025-04-16 00:00:00,Completed,Apple Pay / Mir Pay
+10814,435,2025-05-11 00:00:00,Completed,Apple Pay / Mir Pay
+10815,435,2025-06-06 00:00:00,Completed,Cash on Delivery
+10816,435,2025-07-13 00:00:00,Completed,Fast Payment (SBP)
+10817,435,2025-08-05 00:00:00,Completed,Cash on Delivery
+10818,436,2025-07-31 00:00:00,Completed,Cash on Delivery
+10819,438,2026-04-15 00:00:00,Completed,Cash on Delivery
+10820,438,2026-04-27 00:00:00,Completed,Cash on Delivery
+10821,438,2026-05-14 00:00:00,Completed,Fast Payment (SBP)
+10822,438,2026-05-27 00:00:00,Completed,Credit Card
+10823,438,2026-06-23 00:00:00,Completed,Credit Card
+10824,439,2025-12-05 00:00:00,Completed,Fast Payment (SBP)
+10825,439,2025-12-10 00:00:00,Completed,Apple Pay / Mir Pay
+10826,440,2025-11-07 00:00:00,Completed,Fast Payment (SBP)
+10827,441,2026-01-12 00:00:00,Completed,Cash on Delivery
+10828,441,2026-02-03 00:00:00,Completed,Apple Pay / Mir Pay
+10829,441,2026-02-25 00:00:00,Refunded,Credit Card
+10830,442,2025-08-13 00:00:00,Completed,Credit Card
+10831,442,2025-09-22 00:00:00,Refunded,Cash on Delivery
+10832,442,2025-10-07 00:00:00,Completed,Credit Card
+10833,442,2025-11-20 00:00:00,Completed,Credit Card
+10834,442,2025-12-26 00:00:00,Completed,Cash on Delivery
+10835,443,2025-03-22 00:00:00,Completed,Credit Card
+10836,444,2025-05-31 00:00:00,Completed,Credit Card
+10837,445,2026-05-30 00:00:00,Cancelled,Apple Pay / Mir Pay
+10838,445,2026-06-13 00:00:00,Completed,Fast Payment (SBP)
+10839,446,2026-01-16 00:00:00,Completed,Credit Card
+10840,447,2025-11-14 00:00:00,Completed,Apple Pay / Mir Pay
+10841,448,2025-01-25 00:00:00,Completed,Apple Pay / Mir Pay
+10842,448,2025-02-19 00:00:00,Completed,Credit Card
+10843,449,2026-02-20 00:00:00,Completed,Apple Pay / Mir Pay
+10844,449,2026-02-24 00:00:00,Completed,Credit Card
+10845,449,2026-03-18 00:00:00,Refunded,Fast Payment (SBP)
+10846,450,2025-02-01 00:00:00,Completed,Credit Card
+10847,451,2026-01-09 00:00:00,Completed,Fast Payment (SBP)
+10848,454,2025-08-21 00:00:00,Completed,Apple Pay / Mir Pay
+10849,454,2025-09-08 00:00:00,Completed,Credit Card
+10850,454,2025-09-20 00:00:00,Completed,Credit Card
+10851,455,2025-08-14 00:00:00,Completed,Credit Card
+10852,456,2026-02-19 00:00:00,Completed,Fast Payment (SBP)
+10853,458,2026-01-26 00:00:00,Completed,Credit Card
+10854,458,2026-02-16 00:00:00,Completed,Apple Pay / Mir Pay
+10855,459,2025-03-06 00:00:00,Completed,Credit Card
+10856,459,2025-03-22 00:00:00,Completed,Fast Payment (SBP)
+10857,460,2025-08-30 00:00:00,Completed,Cash on Delivery
+10858,460,2025-09-01 00:00:00,Completed,Apple Pay / Mir Pay
+10859,461,2025-08-04 00:00:00,Completed,Apple Pay / Mir Pay
+10860,461,2025-09-10 00:00:00,Completed,Cash on Delivery
+10861,461,2025-09-14 00:00:00,Completed,Cash on Delivery
+10862,462,2025-03-22 00:00:00,Completed,Fast Payment (SBP)
+10863,462,2025-05-06 00:00:00,Completed,Cash on Delivery
+10864,462,2025-05-30 00:00:00,Completed,Apple Pay / Mir Pay
+10865,462,2025-07-04 00:00:00,Completed,Cash on Delivery
+10866,462,2025-07-31 00:00:00,Completed,Apple Pay / Mir Pay
+10867,463,2025-07-01 00:00:00,Completed,Cash on Delivery
+10868,465,2025-02-18 00:00:00,Refunded,Fast Payment (SBP)
+10869,465,2025-02-26 00:00:00,Completed,Fast Payment (SBP)
+10870,465,2025-03-27 00:00:00,Refunded,Cash on Delivery
+10871,466,2025-03-03 00:00:00,Completed,Credit Card
+10872,466,2025-03-21 00:00:00,Refunded,Credit Card
+10873,466,2025-04-24 00:00:00,Refunded,Cash on Delivery
+10874,466,2025-05-04 00:00:00,Completed,Apple Pay / Mir Pay
+10875,466,2025-05-25 00:00:00,Completed,Fast Payment (SBP)
+10876,467,2026-05-11 00:00:00,Completed,Fast Payment (SBP)
+10877,468,2025-06-11 00:00:00,Completed,Credit Card
+10878,469,2025-10-11 00:00:00,Completed,Cash on Delivery
+10879,470,2025-04-05 00:00:00,Completed,Credit Card
+10880,471,2025-06-08 00:00:00,Completed,Credit Card
+10881,472,2026-03-30 00:00:00,Completed,Credit Card
+10882,472,2026-05-13 00:00:00,Completed,Cash on Delivery
+10883,474,2025-01-16 00:00:00,Cancelled,Apple Pay / Mir Pay
+10884,474,2025-01-30 00:00:00,Completed,Credit Card
+10885,475,2025-11-14 00:00:00,Completed,Apple Pay / Mir Pay
+10886,476,2026-01-18 00:00:00,Completed,Cash on Delivery
+10887,477,2025-04-12 00:00:00,Completed,Cash on Delivery
+10888,477,2025-05-15 00:00:00,Completed,Cash on Delivery
+10889,477,2025-06-11 00:00:00,Completed,Cash on Delivery
+10890,477,2025-07-13 00:00:00,Completed,Fast Payment (SBP)
+10891,477,2025-08-17 00:00:00,Completed,Credit Card
+10892,477,2025-09-08 00:00:00,Refunded,Credit Card
+10893,477,2025-10-04 00:00:00,Completed,Apple Pay / Mir Pay
+10894,477,2025-10-31 00:00:00,Completed,Apple Pay / Mir Pay
+10895,479,2026-04-16 00:00:00,Completed,Fast Payment (SBP)
+10896,479,2026-04-21 00:00:00,Completed,Cash on Delivery
+10897,481,2025-09-07 00:00:00,Completed,Fast Payment (SBP)
+10898,481,2025-09-14 00:00:00,Completed,Cash on Delivery
+10899,482,2025-03-13 00:00:00,Completed,Apple Pay / Mir Pay
+10900,482,2025-04-17 00:00:00,Completed,Cash on Delivery
+10901,483,2025-07-24 00:00:00,Completed,Fast Payment (SBP)
+10902,484,2025-03-13 00:00:00,Completed,Credit Card
+10903,485,2025-11-05 00:00:00,Completed,Credit Card
+10904,485,2025-11-26 00:00:00,Completed,Cash on Delivery
+10905,486,2025-07-05 00:00:00,Refunded,Cash on Delivery
+10906,488,2025-04-20 00:00:00,Completed,Cash on Delivery
+10907,489,2026-01-26 00:00:00,Completed,Cash on Delivery
+10908,490,2025-04-18 00:00:00,Completed,Apple Pay / Mir Pay
+10909,492,2025-09-07 00:00:00,Completed,Apple Pay / Mir Pay
+10910,492,2025-09-18 00:00:00,Completed,Apple Pay / Mir Pay
+10911,492,2025-10-07 00:00:00,Completed,Cash on Delivery
+10912,492,2025-11-11 00:00:00,Completed,Apple Pay / Mir Pay
+10913,492,2025-11-29 00:00:00,Completed,Credit Card
+10914,492,2025-12-21 00:00:00,Completed,Fast Payment (SBP)
+10915,492,2026-01-21 00:00:00,Completed,Fast Payment (SBP)
+10916,492,2026-02-18 00:00:00,Completed,Fast Payment (SBP)
+10917,493,2025-12-17 00:00:00,Completed,Fast Payment (SBP)
+10918,494,2025-06-25 00:00:00,Cancelled,Fast Payment (SBP)
+10919,494,2025-07-23 00:00:00,Completed,Apple Pay / Mir Pay
+10920,494,2025-08-20 00:00:00,Completed,Apple Pay / Mir Pay
+10921,494,2025-09-02 00:00:00,Completed,Apple Pay / Mir Pay
+10922,494,2025-09-19 00:00:00,Completed,Credit Card
+10923,495,2025-09-02 00:00:00,Cancelled,Credit Card
+10924,496,2026-02-22 00:00:00,Completed,Apple Pay / Mir Pay
+10925,496,2026-03-12 00:00:00,Cancelled,Apple Pay / Mir Pay
+10926,496,2026-04-19 00:00:00,Completed,Fast Payment (SBP)
+10927,496,2026-04-24 00:00:00,Completed,Apple Pay / Mir Pay
+10928,496,2026-05-21 00:00:00,Completed,Credit Card
+10929,497,2025-08-14 00:00:00,Completed,Cash on Delivery
+10930,499,2025-07-10 00:00:00,Completed,Credit Card
+10931,499,2025-07-30 00:00:00,Completed,Apple Pay / Mir Pay
+10932,500,2025-12-24 00:00:00,Completed,Apple Pay / Mir Pay
+10933,500,2026-01-10 00:00:00,Completed,Fast Payment (SBP)
+10934,501,2025-12-05 00:00:00,Completed,Apple Pay / Mir Pay
+10935,501,2026-01-11 00:00:00,Completed,Cash on Delivery
+10936,501,2026-02-16 00:00:00,Completed,Fast Payment (SBP)
+10937,502,2025-11-02 00:00:00,Completed,Apple Pay / Mir Pay
+10938,503,2025-10-01 00:00:00,Completed,Credit Card
+10939,503,2025-10-12 00:00:00,Completed,Fast Payment (SBP)
+10940,504,2025-05-07 00:00:00,Completed,Credit Card
+10941,505,2025-10-10 00:00:00,Completed,Apple Pay / Mir Pay
+10942,505,2025-11-23 00:00:00,Completed,Credit Card
+10943,506,2025-04-08 00:00:00,Refunded,Apple Pay / Mir Pay
+10944,506,2025-05-04 00:00:00,Completed,Credit Card
+10945,506,2025-06-01 00:00:00,Completed,Apple Pay / Mir Pay
+10946,506,2025-06-02 00:00:00,Completed,Fast Payment (SBP)
+10947,506,2025-07-03 00:00:00,Completed,Cash on Delivery
+10948,507,2025-03-29 00:00:00,Completed,Cash on Delivery
+10949,507,2025-04-10 00:00:00,Completed,Fast Payment (SBP)
+10950,507,2025-05-19 00:00:00,Completed,Credit Card
+10951,507,2025-06-10 00:00:00,Completed,Apple Pay / Mir Pay
+10952,507,2025-06-13 00:00:00,Completed,Cash on Delivery
+10953,508,2025-01-27 00:00:00,Completed,Credit Card
+10954,509,2025-08-14 00:00:00,Completed,Cash on Delivery
+10955,509,2025-09-24 00:00:00,Completed,Cash on Delivery
+10956,510,2025-03-31 00:00:00,Completed,Cash on Delivery
+10957,510,2025-04-10 00:00:00,Completed,Fast Payment (SBP)
+10958,510,2025-05-08 00:00:00,Completed,Fast Payment (SBP)
+10959,510,2025-06-16 00:00:00,Completed,Fast Payment (SBP)
+10960,510,2025-07-21 00:00:00,Completed,Fast Payment (SBP)
+10961,510,2025-08-31 00:00:00,Completed,Credit Card
+10962,510,2025-09-16 00:00:00,Completed,Credit Card
+10963,510,2025-10-04 00:00:00,Completed,Cash on Delivery
+10964,512,2025-12-14 00:00:00,Completed,Credit Card
+10965,512,2026-01-11 00:00:00,Completed,Apple Pay / Mir Pay
+10966,513,2025-06-25 00:00:00,Completed,Cash on Delivery
+10967,513,2025-07-13 00:00:00,Completed,Credit Card
+10968,514,2025-10-31 00:00:00,Completed,Fast Payment (SBP)
+10969,514,2025-11-15 00:00:00,Completed,Fast Payment (SBP)
+10970,515,2025-06-15 00:00:00,Completed,Fast Payment (SBP)
+10971,516,2026-05-08 00:00:00,Completed,Cash on Delivery
+10972,517,2025-12-06 00:00:00,Completed,Fast Payment (SBP)
+10973,517,2025-12-27 00:00:00,Completed,Cash on Delivery
+10974,517,2026-01-19 00:00:00,Completed,Cash on Delivery
+10975,517,2026-02-02 00:00:00,Cancelled,Fast Payment (SBP)
+10976,517,2026-03-10 00:00:00,Completed,Apple Pay / Mir Pay
+10977,517,2026-04-20 00:00:00,Completed,Fast Payment (SBP)
+10978,517,2026-05-22 00:00:00,Completed,Fast Payment (SBP)
+10979,517,2026-06-26 00:00:00,Completed,Cash on Delivery
+10980,520,2026-06-05 00:00:00,Completed,Credit Card
+10981,521,2025-08-05 00:00:00,Completed,Cash on Delivery
+10982,521,2025-08-26 00:00:00,Completed,Credit Card
+10983,522,2025-12-18 00:00:00,Completed,Fast Payment (SBP)
+10984,523,2026-05-14 00:00:00,Completed,Credit Card
+10985,523,2026-05-16 00:00:00,Completed,Credit Card
+10986,523,2026-06-09 00:00:00,Completed,Cash on Delivery
+10987,524,2026-01-17 00:00:00,Completed,Credit Card
+10988,524,2026-01-31 00:00:00,Completed,Fast Payment (SBP)
+10989,524,2026-02-22 00:00:00,Completed,Cash on Delivery
+10990,525,2025-01-13 00:00:00,Completed,Apple Pay / Mir Pay
+10991,526,2026-05-21 00:00:00,Completed,Apple Pay / Mir Pay
+10992,526,2026-05-31 00:00:00,Completed,Cash on Delivery
+10993,527,2025-04-19 00:00:00,Completed,Fast Payment (SBP)
+10994,527,2025-05-15 00:00:00,Completed,Apple Pay / Mir Pay
+10995,528,2025-02-10 00:00:00,Completed,Credit Card
+10996,528,2025-02-28 00:00:00,Completed,Credit Card
+10997,528,2025-03-15 00:00:00,Completed,Fast Payment (SBP)
+10998,528,2025-04-19 00:00:00,Completed,Credit Card
+10999,528,2025-05-07 00:00:00,Completed,Credit Card
+11000,529,2026-03-09 00:00:00,Completed,Credit Card
+11001,529,2026-03-22 00:00:00,Completed,Cash on Delivery
+11002,530,2025-02-21 00:00:00,Completed,Credit Card
+11003,531,2025-03-10 00:00:00,Completed,Cash on Delivery
+11004,531,2025-03-27 00:00:00,Completed,Apple Pay / Mir Pay
+11005,531,2025-04-04 00:00:00,Cancelled,Apple Pay / Mir Pay
+11006,532,2025-04-05 00:00:00,Completed,Cash on Delivery
+11007,533,2026-03-06 00:00:00,Completed,Fast Payment (SBP)
+11008,533,2026-04-15 00:00:00,Completed,Apple Pay / Mir Pay
+11009,533,2026-04-26 00:00:00,Completed,Apple Pay / Mir Pay
+11010,534,2025-02-10 00:00:00,Completed,Fast Payment (SBP)
+11011,534,2025-03-04 00:00:00,Completed,Fast Payment (SBP)
+11012,534,2025-03-05 00:00:00,Completed,Cash on Delivery
+11013,535,2026-01-22 00:00:00,Completed,Apple Pay / Mir Pay
+11014,535,2026-01-24 00:00:00,Completed,Cash on Delivery
+11015,535,2026-03-05 00:00:00,Completed,Fast Payment (SBP)
+11016,535,2026-04-12 00:00:00,Completed,Credit Card
+11017,535,2026-04-19 00:00:00,Completed,Fast Payment (SBP)
+11018,535,2026-04-27 00:00:00,Completed,Credit Card
+11019,535,2026-06-04 00:00:00,Completed,Apple Pay / Mir Pay
+11020,535,2026-07-10 00:00:00,Completed,Fast Payment (SBP)
+11021,536,2025-06-24 00:00:00,Completed,Apple Pay / Mir Pay
+11022,536,2025-07-16 00:00:00,Completed,Fast Payment (SBP)
+11023,536,2025-08-13 00:00:00,Completed,Cash on Delivery
+11024,536,2025-09-10 00:00:00,Cancelled,Fast Payment (SBP)
+11025,536,2025-09-16 00:00:00,Cancelled,Credit Card
+11026,537,2025-05-30 00:00:00,Completed,Apple Pay / Mir Pay
+11027,537,2025-06-11 00:00:00,Completed,Fast Payment (SBP)
+11028,538,2026-05-11 00:00:00,Completed,Cash on Delivery
+11029,538,2026-05-28 00:00:00,Completed,Fast Payment (SBP)
+11030,539,2025-08-14 00:00:00,Completed,Apple Pay / Mir Pay
+11031,539,2025-09-22 00:00:00,Refunded,Credit Card
+11032,539,2025-11-04 00:00:00,Completed,Fast Payment (SBP)
+11033,539,2025-11-27 00:00:00,Completed,Cash on Delivery
+11034,539,2025-12-22 00:00:00,Completed,Cash on Delivery
+11035,540,2025-08-31 00:00:00,Cancelled,Credit Card
+11036,540,2025-10-09 00:00:00,Completed,Fast Payment (SBP)
+11037,540,2025-11-02 00:00:00,Completed,Credit Card
+11038,541,2025-10-13 00:00:00,Refunded,Fast Payment (SBP)
+11039,541,2025-11-13 00:00:00,Completed,Fast Payment (SBP)
+11040,541,2025-11-22 00:00:00,Completed,Apple Pay / Mir Pay
+11041,542,2026-03-22 00:00:00,Completed,Cash on Delivery
+11042,543,2026-03-31 00:00:00,Completed,Credit Card
+11043,544,2025-09-21 00:00:00,Completed,Credit Card
+11044,544,2025-10-18 00:00:00,Completed,Cash on Delivery
+11045,544,2025-10-24 00:00:00,Completed,Credit Card
+11046,544,2025-11-28 00:00:00,Completed,Credit Card
+11047,544,2025-12-07 00:00:00,Completed,Fast Payment (SBP)
+11048,545,2026-06-03 00:00:00,Completed,Apple Pay / Mir Pay
+11049,546,2026-04-15 00:00:00,Completed,Fast Payment (SBP)
+11050,546,2026-05-10 00:00:00,Completed,Apple Pay / Mir Pay
+11051,547,2026-02-09 00:00:00,Completed,Fast Payment (SBP)
+11052,548,2026-05-01 00:00:00,Cancelled,Apple Pay / Mir Pay
+11053,548,2026-06-13 00:00:00,Completed,Fast Payment (SBP)
+11054,548,2026-06-22 00:00:00,Completed,Cash on Delivery
+11055,548,2026-07-21 00:00:00,Completed,Credit Card
+11056,548,2026-08-27 00:00:00,Completed,Credit Card
+11057,551,2025-08-31 00:00:00,Completed,Apple Pay / Mir Pay
+11058,551,2025-09-18 00:00:00,Completed,Cash on Delivery
+11059,552,2025-07-26 00:00:00,Completed,Fast Payment (SBP)
+11060,553,2025-02-24 00:00:00,Completed,Credit Card
+11061,554,2025-12-15 00:00:00,Completed,Apple Pay / Mir Pay
+11062,554,2025-12-24 00:00:00,Refunded,Credit Card
+11063,554,2025-12-25 00:00:00,Completed,Fast Payment (SBP)
+11064,555,2025-01-28 00:00:00,Completed,Cash on Delivery
+11065,556,2026-03-19 00:00:00,Completed,Cash on Delivery
+11066,557,2025-09-02 00:00:00,Completed,Credit Card
+11067,557,2025-09-19 00:00:00,Completed,Fast Payment (SBP)
+11068,557,2025-09-20 00:00:00,Completed,Cash on Delivery
+11069,558,2025-01-17 00:00:00,Cancelled,Cash on Delivery
+11070,558,2025-02-24 00:00:00,Completed,Credit Card
+11071,559,2025-10-11 00:00:00,Completed,Cash on Delivery
+11072,559,2025-10-13 00:00:00,Completed,Fast Payment (SBP)
+11073,560,2025-08-22 00:00:00,Completed,Fast Payment (SBP)
+11074,560,2025-09-12 00:00:00,Completed,Fast Payment (SBP)
+11075,560,2025-10-05 00:00:00,Completed,Apple Pay / Mir Pay
+11076,561,2025-06-24 00:00:00,Completed,Credit Card
+11077,562,2025-09-01 00:00:00,Refunded,Apple Pay / Mir Pay
+11078,563,2025-02-07 00:00:00,Completed,Credit Card
+11079,563,2025-02-16 00:00:00,Refunded,Credit Card
+11080,564,2025-10-18 00:00:00,Completed,Fast Payment (SBP)
+11081,564,2025-11-03 00:00:00,Completed,Cash on Delivery
+11082,564,2025-12-04 00:00:00,Completed,Cash on Delivery
+11083,565,2025-11-16 00:00:00,Completed,Fast Payment (SBP)
+11084,565,2025-11-21 00:00:00,Cancelled,Apple Pay / Mir Pay
+11085,565,2025-11-30 00:00:00,Completed,Cash on Delivery
+11086,565,2025-12-15 00:00:00,Completed,Apple Pay / Mir Pay
+11087,565,2026-01-24 00:00:00,Completed,Cash on Delivery
+11088,566,2025-06-03 00:00:00,Refunded,Cash on Delivery
+11089,566,2025-07-01 00:00:00,Completed,Apple Pay / Mir Pay
+11090,567,2025-07-01 00:00:00,Cancelled,Credit Card
+11091,568,2025-04-17 00:00:00,Completed,Apple Pay / Mir Pay
+11092,569,2025-10-05 00:00:00,Completed,Apple Pay / Mir Pay
+11093,569,2025-10-22 00:00:00,Completed,Apple Pay / Mir Pay
+11094,570,2025-10-13 00:00:00,Completed,Credit Card
+11095,571,2025-01-13 00:00:00,Completed,Fast Payment (SBP)
+11096,572,2025-12-29 00:00:00,Completed,Cash on Delivery
+11097,572,2026-02-02 00:00:00,Refunded,Credit Card
+11098,573,2026-02-19 00:00:00,Completed,Apple Pay / Mir Pay
+11099,573,2026-03-04 00:00:00,Completed,Credit Card
+11100,573,2026-03-11 00:00:00,Completed,Credit Card
+11101,573,2026-04-22 00:00:00,Completed,Fast Payment (SBP)
+11102,573,2026-05-18 00:00:00,Completed,Credit Card
+11103,574,2025-07-21 00:00:00,Completed,Fast Payment (SBP)
+11104,575,2025-12-25 00:00:00,Completed,Fast Payment (SBP)
+11105,575,2026-01-29 00:00:00,Completed,Cash on Delivery
+11106,575,2026-02-28 00:00:00,Refunded,Apple Pay / Mir Pay
+11107,575,2026-03-03 00:00:00,Refunded,Apple Pay / Mir Pay
+11108,575,2026-03-29 00:00:00,Completed,Apple Pay / Mir Pay
+11109,576,2026-03-06 00:00:00,Completed,Fast Payment (SBP)
+11110,577,2025-07-13 00:00:00,Completed,Cash on Delivery
+11111,579,2026-01-01 00:00:00,Completed,Apple Pay / Mir Pay
+11112,579,2026-01-06 00:00:00,Completed,Fast Payment (SBP)
+11113,579,2026-01-25 00:00:00,Completed,Fast Payment (SBP)
+11114,581,2026-03-05 00:00:00,Completed,Credit Card
+11115,581,2026-03-21 00:00:00,Completed,Fast Payment (SBP)
+11116,581,2026-05-03 00:00:00,Refunded,Apple Pay / Mir Pay
+11117,581,2026-05-15 00:00:00,Completed,Apple Pay / Mir Pay
+11118,581,2026-06-06 00:00:00,Completed,Cash on Delivery
+11119,581,2026-07-15 00:00:00,Completed,Apple Pay / Mir Pay
+11120,581,2026-08-11 00:00:00,Completed,Credit Card
+11121,581,2026-08-12 00:00:00,Completed,Credit Card
+11122,581,2026-08-14 00:00:00,Completed,Cash on Delivery
+11123,581,2026-09-14 00:00:00,Refunded,Apple Pay / Mir Pay
+11124,582,2025-05-09 00:00:00,Cancelled,Apple Pay / Mir Pay
+11125,582,2025-05-19 00:00:00,Completed,Cash on Delivery
+11126,583,2025-07-07 00:00:00,Completed,Cash on Delivery
+11127,584,2026-03-16 00:00:00,Completed,Cash on Delivery
+11128,585,2025-02-25 00:00:00,Completed,Fast Payment (SBP)
+11129,585,2025-03-17 00:00:00,Refunded,Cash on Delivery
+11130,586,2025-06-30 00:00:00,Completed,Cash on Delivery
+11131,586,2025-07-18 00:00:00,Cancelled,Apple Pay / Mir Pay
+11132,587,2025-07-21 00:00:00,Completed,Credit Card
+11133,587,2025-08-11 00:00:00,Refunded,Fast Payment (SBP)
+11134,587,2025-08-16 00:00:00,Completed,Fast Payment (SBP)
+11135,588,2025-08-23 00:00:00,Refunded,Apple Pay / Mir Pay
+11136,588,2025-09-19 00:00:00,Completed,Cash on Delivery
+11137,588,2025-09-22 00:00:00,Completed,Cash on Delivery
+11138,589,2026-04-28 00:00:00,Refunded,Apple Pay / Mir Pay
+11139,589,2026-05-21 00:00:00,Refunded,Credit Card
+11140,590,2025-10-03 00:00:00,Completed,Credit Card
+11141,590,2025-10-30 00:00:00,Cancelled,Fast Payment (SBP)
+11142,590,2025-12-14 00:00:00,Completed,Cash on Delivery
+11143,590,2025-12-16 00:00:00,Completed,Apple Pay / Mir Pay
+11144,590,2026-01-13 00:00:00,Completed,Fast Payment (SBP)
+11145,590,2026-01-26 00:00:00,Completed,Fast Payment (SBP)
+11146,590,2026-03-10 00:00:00,Refunded,Credit Card
+11147,590,2026-03-26 00:00:00,Completed,Fast Payment (SBP)
+11148,591,2026-04-20 00:00:00,Completed,Fast Payment (SBP)
+11149,591,2026-05-30 00:00:00,Completed,Apple Pay / Mir Pay
+11150,591,2026-05-31 00:00:00,Completed,Apple Pay / Mir Pay
+11151,593,2025-03-14 00:00:00,Completed,Apple Pay / Mir Pay
+11152,593,2025-04-12 00:00:00,Completed,Credit Card
+11153,593,2025-05-19 00:00:00,Cancelled,Credit Card
+11154,595,2025-03-20 00:00:00,Completed,Cash on Delivery
+11155,595,2025-04-12 00:00:00,Completed,Credit Card
+11156,596,2025-06-10 00:00:00,Completed,Cash on Delivery
+11157,597,2025-08-31 00:00:00,Completed,Credit Card
+11158,598,2025-07-20 00:00:00,Completed,Apple Pay / Mir Pay
+11159,598,2025-08-16 00:00:00,Completed,Cash on Delivery
+11160,598,2025-09-14 00:00:00,Completed,Cash on Delivery
+11161,599,2026-05-02 00:00:00,Completed,Fast Payment (SBP)
+11162,600,2025-05-23 00:00:00,Completed,Apple Pay / Mir Pay
+11163,602,2025-10-26 00:00:00,Completed,Apple Pay / Mir Pay
+11164,602,2025-11-27 00:00:00,Cancelled,Credit Card
+11165,602,2025-12-28 00:00:00,Completed,Apple Pay / Mir Pay
+11166,603,2025-04-12 00:00:00,Completed,Fast Payment (SBP)
+11167,604,2026-01-07 00:00:00,Completed,Apple Pay / Mir Pay
+11168,605,2025-03-22 00:00:00,Completed,Fast Payment (SBP)
+11169,606,2025-07-16 00:00:00,Cancelled,Apple Pay / Mir Pay
+11170,606,2025-07-18 00:00:00,Completed,Credit Card
+11171,607,2025-02-16 00:00:00,Completed,Fast Payment (SBP)
+11172,608,2025-09-12 00:00:00,Completed,Credit Card
+11173,608,2025-10-05 00:00:00,Completed,Cash on Delivery
+11174,609,2026-03-09 00:00:00,Completed,Credit Card
+11175,610,2025-11-01 00:00:00,Completed,Cash on Delivery
+11176,613,2025-10-20 00:00:00,Completed,Cash on Delivery
+11177,613,2025-11-10 00:00:00,Completed,Fast Payment (SBP)
+11178,614,2025-06-22 00:00:00,Completed,Credit Card
+11179,616,2026-01-16 00:00:00,Completed,Cash on Delivery
+11180,616,2026-02-22 00:00:00,Completed,Credit Card
+11181,616,2026-02-28 00:00:00,Completed,Fast Payment (SBP)
+11182,617,2025-04-15 00:00:00,Completed,Cash on Delivery
+11183,619,2026-03-08 00:00:00,Completed,Credit Card
+11184,619,2026-03-23 00:00:00,Completed,Apple Pay / Mir Pay
+11185,619,2026-04-05 00:00:00,Completed,Apple Pay / Mir Pay
+11186,620,2025-07-21 00:00:00,Completed,Apple Pay / Mir Pay
+11187,620,2025-08-09 00:00:00,Completed,Fast Payment (SBP)
+11188,621,2025-10-18 00:00:00,Completed,Fast Payment (SBP)
+11189,622,2026-02-11 00:00:00,Completed,Cash on Delivery
+11190,622,2026-02-25 00:00:00,Completed,Fast Payment (SBP)
+11191,623,2025-04-17 00:00:00,Completed,Credit Card
+11192,623,2025-05-01 00:00:00,Completed,Cash on Delivery
+11193,624,2025-05-14 00:00:00,Completed,Apple Pay / Mir Pay
+11194,624,2025-06-23 00:00:00,Completed,Credit Card
+11195,625,2025-05-30 00:00:00,Completed,Fast Payment (SBP)
+11196,625,2025-06-02 00:00:00,Refunded,Fast Payment (SBP)
+11197,627,2025-10-11 00:00:00,Completed,Cash on Delivery
+11198,627,2025-11-10 00:00:00,Completed,Fast Payment (SBP)
+11199,628,2025-12-06 00:00:00,Completed,Credit Card
+11200,631,2025-03-22 00:00:00,Completed,Fast Payment (SBP)
+11201,631,2025-04-07 00:00:00,Completed,Credit Card
+11202,631,2025-04-18 00:00:00,Completed,Fast Payment (SBP)
+11203,631,2025-05-14 00:00:00,Completed,Fast Payment (SBP)
+11204,631,2025-05-20 00:00:00,Completed,Apple Pay / Mir Pay
+11205,632,2025-03-23 00:00:00,Completed,Credit Card
+11206,632,2025-05-03 00:00:00,Completed,Apple Pay / Mir Pay
+11207,632,2025-06-07 00:00:00,Completed,Credit Card
+11208,633,2025-10-13 00:00:00,Completed,Fast Payment (SBP)
+11209,634,2025-12-17 00:00:00,Completed,Credit Card
+11210,635,2025-09-12 00:00:00,Completed,Cash on Delivery
+11211,635,2025-09-28 00:00:00,Completed,Fast Payment (SBP)
+11212,636,2025-10-07 00:00:00,Completed,Credit Card
+11213,637,2025-05-06 00:00:00,Completed,Fast Payment (SBP)
+11214,637,2025-06-15 00:00:00,Completed,Cash on Delivery
+11215,637,2025-06-17 00:00:00,Completed,Cash on Delivery
+11216,637,2025-06-19 00:00:00,Completed,Cash on Delivery
+11217,637,2025-07-19 00:00:00,Completed,Fast Payment (SBP)
+11218,638,2025-07-26 00:00:00,Completed,Cash on Delivery
+11219,638,2025-08-28 00:00:00,Completed,Apple Pay / Mir Pay
+11220,639,2025-05-13 00:00:00,Completed,Credit Card
+11221,639,2025-06-01 00:00:00,Completed,Cash on Delivery
+11222,641,2025-11-12 00:00:00,Completed,Apple Pay / Mir Pay
+11223,642,2025-12-10 00:00:00,Completed,Credit Card
+11224,642,2026-01-16 00:00:00,Completed,Cash on Delivery
+11225,642,2026-03-02 00:00:00,Completed,Credit Card
+11226,643,2025-03-25 00:00:00,Completed,Fast Payment (SBP)
+11227,643,2025-03-31 00:00:00,Completed,Apple Pay / Mir Pay
+11228,644,2026-02-16 00:00:00,Completed,Cash on Delivery
+11229,645,2025-03-08 00:00:00,Completed,Fast Payment (SBP)
+11230,646,2025-01-25 00:00:00,Completed,Apple Pay / Mir Pay
+11231,646,2025-02-07 00:00:00,Completed,Cash on Delivery
+11232,647,2026-01-04 00:00:00,Completed,Credit Card
+11233,647,2026-01-09 00:00:00,Completed,Credit Card
+11234,648,2025-12-11 00:00:00,Completed,Fast Payment (SBP)
+11235,649,2026-04-16 00:00:00,Completed,Apple Pay / Mir Pay
+11236,649,2026-05-02 00:00:00,Completed,Fast Payment (SBP)
+11237,649,2026-05-29 00:00:00,Completed,Credit Card
+11238,650,2025-12-30 00:00:00,Completed,Fast Payment (SBP)
+11239,652,2025-07-17 00:00:00,Completed,Fast Payment (SBP)
+11240,653,2025-02-18 00:00:00,Completed,Apple Pay / Mir Pay
+11241,653,2025-03-03 00:00:00,Completed,Fast Payment (SBP)
+11242,654,2025-10-14 00:00:00,Completed,Apple Pay / Mir Pay
+11243,655,2025-12-07 00:00:00,Completed,Apple Pay / Mir Pay
+11244,656,2025-07-24 00:00:00,Completed,Apple Pay / Mir Pay
+11245,656,2025-08-10 00:00:00,Completed,Fast Payment (SBP)
+11246,659,2025-09-28 00:00:00,Completed,Fast Payment (SBP)
+11247,659,2025-10-26 00:00:00,Completed,Cash on Delivery
+11248,659,2025-11-19 00:00:00,Completed,Credit Card
+11249,659,2025-12-24 00:00:00,Completed,Credit Card
+11250,659,2026-01-11 00:00:00,Completed,Apple Pay / Mir Pay
+11251,660,2025-05-30 00:00:00,Completed,Apple Pay / Mir Pay
+11252,660,2025-06-10 00:00:00,Completed,Cash on Delivery
+11253,660,2025-06-16 00:00:00,Completed,Fast Payment (SBP)
+11254,660,2025-07-26 00:00:00,Completed,Apple Pay / Mir Pay
+11255,660,2025-08-09 00:00:00,Completed,Credit Card
+11256,661,2025-06-23 00:00:00,Completed,Fast Payment (SBP)
+11257,661,2025-07-15 00:00:00,Completed,Cash on Delivery
+11258,661,2025-07-29 00:00:00,Completed,Credit Card
+11259,662,2025-05-24 00:00:00,Completed,Apple Pay / Mir Pay
+11260,663,2026-06-08 00:00:00,Completed,Credit Card
+11261,664,2025-05-07 00:00:00,Refunded,Credit Card
+11262,665,2025-10-08 00:00:00,Completed,Apple Pay / Mir Pay
+11263,665,2025-11-11 00:00:00,Completed,Credit Card
+11264,665,2025-12-10 00:00:00,Completed,Apple Pay / Mir Pay
+11265,665,2025-12-14 00:00:00,Completed,Apple Pay / Mir Pay
+11266,665,2025-12-30 00:00:00,Completed,Apple Pay / Mir Pay
+11267,666,2025-10-12 00:00:00,Completed,Fast Payment (SBP)
+11268,667,2025-10-04 00:00:00,Completed,Credit Card
+11269,667,2025-10-08 00:00:00,Completed,Apple Pay / Mir Pay
+11270,667,2025-10-26 00:00:00,Completed,Cash on Delivery
+11271,668,2025-10-29 00:00:00,Completed,Cash on Delivery
+11272,668,2025-12-12 00:00:00,Completed,Cash on Delivery
+11273,669,2025-06-05 00:00:00,Completed,Cash on Delivery
+11274,669,2025-06-29 00:00:00,Completed,Credit Card
+11275,669,2025-07-12 00:00:00,Completed,Apple Pay / Mir Pay
+11276,669,2025-07-21 00:00:00,Completed,Fast Payment (SBP)
+11277,669,2025-08-19 00:00:00,Completed,Cash on Delivery
+11278,670,2026-01-07 00:00:00,Cancelled,Apple Pay / Mir Pay
+11279,671,2025-02-07 00:00:00,Completed,Credit Card
+11280,673,2026-02-14 00:00:00,Completed,Apple Pay / Mir Pay
+11281,673,2026-03-09 00:00:00,Completed,Fast Payment (SBP)
+11282,674,2025-08-22 00:00:00,Completed,Credit Card
+11283,674,2025-09-13 00:00:00,Completed,Cash on Delivery
+11284,674,2025-10-01 00:00:00,Completed,Credit Card
+11285,675,2025-04-23 00:00:00,Completed,Apple Pay / Mir Pay
+11286,678,2026-01-01 00:00:00,Completed,Credit Card
+11287,678,2026-01-09 00:00:00,Completed,Cash on Delivery
+11288,678,2026-01-31 00:00:00,Completed,Fast Payment (SBP)
+11289,679,2026-05-31 00:00:00,Completed,Credit Card
+11290,679,2026-06-20 00:00:00,Completed,Cash on Delivery
+11291,679,2026-06-27 00:00:00,Completed,Apple Pay / Mir Pay
+11292,680,2026-03-10 00:00:00,Completed,Cash on Delivery
+11293,681,2026-01-26 00:00:00,Completed,Cash on Delivery
+11294,681,2026-02-19 00:00:00,Completed,Apple Pay / Mir Pay
+11295,681,2026-03-29 00:00:00,Completed,Cash on Delivery
+11296,682,2025-10-13 00:00:00,Completed,Credit Card
+11297,683,2025-01-30 00:00:00,Refunded,Apple Pay / Mir Pay
+11298,684,2025-06-23 00:00:00,Cancelled,Credit Card
+11299,685,2025-08-27 00:00:00,Completed,Fast Payment (SBP)
+11300,686,2025-04-01 00:00:00,Completed,Fast Payment (SBP)
+11301,687,2025-04-10 00:00:00,Completed,Fast Payment (SBP)
+11302,688,2026-03-16 00:00:00,Completed,Cash on Delivery
+11303,688,2026-04-30 00:00:00,Completed,Apple Pay / Mir Pay
+11304,689,2025-10-01 00:00:00,Refunded,Credit Card
+11305,689,2025-10-05 00:00:00,Completed,Fast Payment (SBP)
+11306,689,2025-10-26 00:00:00,Completed,Fast Payment (SBP)
+11307,689,2025-10-27 00:00:00,Completed,Apple Pay / Mir Pay
+11308,689,2025-11-23 00:00:00,Completed,Credit Card
+11309,690,2025-09-18 00:00:00,Completed,Fast Payment (SBP)
+11310,691,2025-09-14 00:00:00,Completed,Credit Card
+11311,691,2025-10-14 00:00:00,Completed,Fast Payment (SBP)
+11312,691,2025-11-14 00:00:00,Completed,Cash on Delivery
+11313,691,2025-11-29 00:00:00,Completed,Fast Payment (SBP)
+11314,691,2025-12-14 00:00:00,Cancelled,Cash on Delivery
+11315,692,2025-07-07 00:00:00,Completed,Cash on Delivery
+11316,692,2025-08-08 00:00:00,Cancelled,Apple Pay / Mir Pay
+11317,692,2025-08-24 00:00:00,Refunded,Cash on Delivery
+11318,694,2025-12-20 00:00:00,Completed,Apple Pay / Mir Pay
+11319,694,2026-01-13 00:00:00,Completed,Fast Payment (SBP)
+11320,698,2026-01-21 00:00:00,Completed,Fast Payment (SBP)
+11321,698,2026-02-13 00:00:00,Completed,Fast Payment (SBP)
+11322,698,2026-02-15 00:00:00,Refunded,Credit Card
+11323,698,2026-02-22 00:00:00,Completed,Cash on Delivery
+11324,698,2026-04-01 00:00:00,Completed,Credit Card
+11325,700,2025-11-14 00:00:00,Completed,Cash on Delivery
+11326,700,2025-12-23 00:00:00,Completed,Credit Card
+11327,702,2025-04-29 00:00:00,Completed,Fast Payment (SBP)
+11328,702,2025-05-03 00:00:00,Refunded,Apple Pay / Mir Pay
+11329,702,2025-05-27 00:00:00,Completed,Fast Payment (SBP)
+11330,703,2025-09-02 00:00:00,Completed,Credit Card
+11331,703,2025-09-23 00:00:00,Refunded,Apple Pay / Mir Pay
+11332,703,2025-10-28 00:00:00,Refunded,Credit Card
+11333,704,2026-03-30 00:00:00,Refunded,Credit Card
+11334,704,2026-04-17 00:00:00,Completed,Apple Pay / Mir Pay
+11335,706,2025-05-13 00:00:00,Completed,Fast Payment (SBP)
+11336,706,2025-05-19 00:00:00,Completed,Apple Pay / Mir Pay
+11337,706,2025-05-30 00:00:00,Completed,Apple Pay / Mir Pay
+11338,707,2025-09-11 00:00:00,Completed,Cash on Delivery
+11339,710,2026-02-17 00:00:00,Completed,Apple Pay / Mir Pay
+11340,710,2026-03-04 00:00:00,Cancelled,Credit Card
+11341,712,2025-11-17 00:00:00,Completed,Credit Card
+11342,714,2026-05-06 00:00:00,Completed,Fast Payment (SBP)
+11343,714,2026-06-03 00:00:00,Completed,Credit Card
+11344,715,2025-05-21 00:00:00,Completed,Cash on Delivery
+11345,715,2025-06-02 00:00:00,Completed,Credit Card
+11346,716,2025-07-24 00:00:00,Completed,Apple Pay / Mir Pay
+11347,717,2026-05-03 00:00:00,Completed,Apple Pay / Mir Pay
+11348,719,2025-11-09 00:00:00,Completed,Credit Card
+11349,719,2025-11-11 00:00:00,Completed,Credit Card
+11350,720,2026-06-16 00:00:00,Refunded,Apple Pay / Mir Pay
+11351,720,2026-07-13 00:00:00,Completed,Credit Card
+11352,720,2026-08-10 00:00:00,Completed,Fast Payment (SBP)
+11353,722,2025-06-30 00:00:00,Completed,Fast Payment (SBP)
+11354,723,2026-02-23 00:00:00,Completed,Credit Card
+11355,724,2026-03-27 00:00:00,Completed,Credit Card
+11356,725,2026-01-06 00:00:00,Completed,Credit Card
+11357,727,2025-06-12 00:00:00,Refunded,Apple Pay / Mir Pay
+11358,728,2025-06-04 00:00:00,Completed,Apple Pay / Mir Pay
+11359,728,2025-07-06 00:00:00,Completed,Apple Pay / Mir Pay
+11360,728,2025-07-24 00:00:00,Completed,Fast Payment (SBP)
+11361,730,2025-09-14 00:00:00,Completed,Apple Pay / Mir Pay
+11362,730,2025-10-14 00:00:00,Completed,Cash on Delivery
+11363,730,2025-11-07 00:00:00,Completed,Fast Payment (SBP)
+11364,734,2025-06-23 00:00:00,Completed,Apple Pay / Mir Pay
+11365,734,2025-07-08 00:00:00,Completed,Apple Pay / Mir Pay
+11366,734,2025-08-15 00:00:00,Refunded,Fast Payment (SBP)
+11367,735,2025-12-02 00:00:00,Completed,Fast Payment (SBP)
+11368,735,2026-01-09 00:00:00,Completed,Apple Pay / Mir Pay
+11369,738,2026-03-14 00:00:00,Completed,Credit Card
+11370,738,2026-03-30 00:00:00,Completed,Credit Card
+11371,738,2026-04-21 00:00:00,Completed,Apple Pay / Mir Pay
+11372,738,2026-04-30 00:00:00,Completed,Apple Pay / Mir Pay
+11373,738,2026-05-06 00:00:00,Completed,Fast Payment (SBP)
+11374,740,2025-01-07 00:00:00,Completed,Credit Card
+11375,740,2025-02-05 00:00:00,Completed,Fast Payment (SBP)
+11376,740,2025-02-28 00:00:00,Completed,Credit Card
+11377,741,2025-04-04 00:00:00,Completed,Cash on Delivery
+11378,741,2025-04-14 00:00:00,Completed,Fast Payment (SBP)
+11379,741,2025-04-17 00:00:00,Completed,Cash on Delivery
+11380,742,2025-12-20 00:00:00,Completed,Fast Payment (SBP)
+11381,742,2026-01-15 00:00:00,Completed,Credit Card
+11382,742,2026-01-30 00:00:00,Cancelled,Fast Payment (SBP)
+11383,742,2026-03-07 00:00:00,Completed,Cash on Delivery
+11384,742,2026-04-16 00:00:00,Completed,Fast Payment (SBP)
+11385,743,2026-04-27 00:00:00,Completed,Credit Card
+11386,743,2026-05-29 00:00:00,Refunded,Apple Pay / Mir Pay
+11387,743,2026-07-02 00:00:00,Completed,Cash on Delivery
+11388,743,2026-08-16 00:00:00,Completed,Fast Payment (SBP)
+11389,743,2026-08-18 00:00:00,Completed,Cash on Delivery
+11390,744,2025-06-06 00:00:00,Completed,Credit Card
+11391,746,2025-06-25 00:00:00,Completed,Apple Pay / Mir Pay
+11392,746,2025-07-20 00:00:00,Completed,Fast Payment (SBP)
+11393,746,2025-09-03 00:00:00,Completed,Apple Pay / Mir Pay
+11394,747,2026-02-04 00:00:00,Completed,Credit Card
+11395,747,2026-03-02 00:00:00,Completed,Apple Pay / Mir Pay
+11396,748,2026-01-20 00:00:00,Cancelled,Apple Pay / Mir Pay
+11397,750,2026-03-03 00:00:00,Completed,Credit Card
+11398,751,2025-03-22 00:00:00,Completed,Credit Card
+11399,751,2025-03-24 00:00:00,Completed,Fast Payment (SBP)
+11400,751,2025-04-09 00:00:00,Completed,Fast Payment (SBP)
+11401,752,2025-05-14 00:00:00,Completed,Cash on Delivery
+11402,752,2025-05-19 00:00:00,Completed,Fast Payment (SBP)
+11403,752,2025-06-22 00:00:00,Completed,Credit Card
+11404,753,2026-05-05 00:00:00,Completed,Cash on Delivery
+11405,753,2026-05-22 00:00:00,Refunded,Fast Payment (SBP)
+11406,754,2025-08-26 00:00:00,Completed,Fast Payment (SBP)
+11407,754,2025-09-29 00:00:00,Completed,Credit Card
+11408,754,2025-11-02 00:00:00,Refunded,Fast Payment (SBP)
+11409,755,2026-06-17 00:00:00,Completed,Fast Payment (SBP)
+11410,756,2026-01-18 00:00:00,Completed,Credit Card
+11411,757,2025-12-11 00:00:00,Completed,Fast Payment (SBP)
+11412,757,2026-01-16 00:00:00,Completed,Cash on Delivery
+11413,760,2025-10-09 00:00:00,Completed,Credit Card
+11414,761,2025-03-06 00:00:00,Completed,Credit Card
+11415,761,2025-03-23 00:00:00,Completed,Apple Pay / Mir Pay
+11416,762,2025-12-08 00:00:00,Completed,Cash on Delivery
+11417,762,2026-01-02 00:00:00,Completed,Apple Pay / Mir Pay
+11418,762,2026-02-04 00:00:00,Refunded,Apple Pay / Mir Pay
+11419,762,2026-03-03 00:00:00,Completed,Credit Card
+11420,762,2026-04-08 00:00:00,Refunded,Apple Pay / Mir Pay
+11421,763,2025-10-14 00:00:00,Completed,Apple Pay / Mir Pay
+11422,763,2025-11-10 00:00:00,Refunded,Credit Card
+11423,763,2025-11-16 00:00:00,Completed,Cash on Delivery
+11424,763,2025-12-14 00:00:00,Completed,Apple Pay / Mir Pay
+11425,763,2026-01-01 00:00:00,Completed,Apple Pay / Mir Pay
+11426,764,2025-11-10 00:00:00,Completed,Apple Pay / Mir Pay
+11427,764,2025-12-08 00:00:00,Completed,Cash on Delivery
+11428,765,2025-10-14 00:00:00,Completed,Apple Pay / Mir Pay
+11429,766,2026-03-17 00:00:00,Completed,Credit Card
+11430,766,2026-04-15 00:00:00,Completed,Apple Pay / Mir Pay
+11431,767,2026-02-23 00:00:00,Completed,Fast Payment (SBP)
+11432,768,2025-09-12 00:00:00,Completed,Cash on Delivery
+11433,768,2025-10-23 00:00:00,Completed,Cash on Delivery
+11434,768,2025-10-28 00:00:00,Cancelled,Apple Pay / Mir Pay
+11435,768,2025-11-18 00:00:00,Completed,Apple Pay / Mir Pay
+11436,768,2025-11-24 00:00:00,Completed,Apple Pay / Mir Pay
+11437,769,2025-03-09 00:00:00,Completed,Fast Payment (SBP)
+11438,770,2026-03-14 00:00:00,Completed,Credit Card
+11439,772,2025-07-06 00:00:00,Completed,Credit Card
+11440,772,2025-08-04 00:00:00,Completed,Fast Payment (SBP)
+11441,772,2025-09-16 00:00:00,Completed,Apple Pay / Mir Pay
+11442,773,2025-04-08 00:00:00,Completed,Apple Pay / Mir Pay
+11443,773,2025-04-19 00:00:00,Completed,Fast Payment (SBP)
+11444,773,2025-05-24 00:00:00,Completed,Credit Card
+11445,773,2025-06-08 00:00:00,Completed,Cash on Delivery
+11446,773,2025-07-12 00:00:00,Completed,Apple Pay / Mir Pay
+11447,774,2025-11-06 00:00:00,Completed,Cash on Delivery
+11448,775,2025-09-12 00:00:00,Completed,Credit Card
+11449,775,2025-09-21 00:00:00,Completed,Cash on Delivery
+11450,776,2025-03-12 00:00:00,Completed,Credit Card
+11451,776,2025-04-14 00:00:00,Completed,Credit Card
+11452,776,2025-05-29 00:00:00,Completed,Credit Card
+11453,776,2025-06-24 00:00:00,Completed,Cash on Delivery
+11454,776,2025-07-23 00:00:00,Completed,Credit Card
+11455,777,2025-10-25 00:00:00,Completed,Apple Pay / Mir Pay
+11456,777,2025-11-15 00:00:00,Completed,Credit Card
+11457,777,2025-12-09 00:00:00,Completed,Fast Payment (SBP)
+11458,779,2025-01-24 00:00:00,Completed,Fast Payment (SBP)
+11459,779,2025-03-05 00:00:00,Completed,Apple Pay / Mir Pay
+11460,779,2025-03-18 00:00:00,Completed,Credit Card
+11461,779,2025-03-30 00:00:00,Completed,Fast Payment (SBP)
+11462,779,2025-04-10 00:00:00,Completed,Apple Pay / Mir Pay
+11463,780,2026-01-19 00:00:00,Cancelled,Cash on Delivery
+11464,781,2025-03-05 00:00:00,Completed,Cash on Delivery
+11465,783,2026-05-27 00:00:00,Completed,Credit Card
+11466,783,2026-05-30 00:00:00,Completed,Fast Payment (SBP)
+11467,784,2025-08-19 00:00:00,Completed,Apple Pay / Mir Pay
+11468,785,2026-06-16 00:00:00,Completed,Credit Card
+11469,785,2026-06-19 00:00:00,Completed,Fast Payment (SBP)
+11470,785,2026-07-20 00:00:00,Completed,Apple Pay / Mir Pay
+11471,786,2025-08-03 00:00:00,Completed,Apple Pay / Mir Pay
+11472,786,2025-09-07 00:00:00,Completed,Fast Payment (SBP)
+11473,787,2025-08-02 00:00:00,Completed,Fast Payment (SBP)
+11474,787,2025-08-10 00:00:00,Cancelled,Cash on Delivery
+11475,787,2025-08-19 00:00:00,Completed,Credit Card
+11476,787,2025-09-22 00:00:00,Completed,Cash on Delivery
+11477,787,2025-11-01 00:00:00,Completed,Cash on Delivery
+11478,787,2025-11-20 00:00:00,Completed,Apple Pay / Mir Pay
+11479,787,2025-12-04 00:00:00,Refunded,Credit Card
+11480,787,2025-12-13 00:00:00,Completed,Credit Card
+11481,788,2026-05-03 00:00:00,Completed,Cash on Delivery
+11482,788,2026-06-08 00:00:00,Completed,Credit Card
+11483,789,2026-03-29 00:00:00,Completed,Fast Payment (SBP)
+11484,789,2026-05-04 00:00:00,Completed,Cash on Delivery
+11485,790,2025-11-12 00:00:00,Completed,Cash on Delivery
+11486,791,2026-02-13 00:00:00,Completed,Cash on Delivery
+11487,792,2026-05-28 00:00:00,Completed,Apple Pay / Mir Pay
+11488,794,2025-08-19 00:00:00,Completed,Apple Pay / Mir Pay
+11489,795,2025-09-25 00:00:00,Completed,Cash on Delivery
+11490,796,2025-04-24 00:00:00,Completed,Cash on Delivery
+11491,796,2025-05-23 00:00:00,Completed,Apple Pay / Mir Pay
+11492,797,2026-03-30 00:00:00,Completed,Cash on Delivery
+11493,797,2026-05-03 00:00:00,Completed,Apple Pay / Mir Pay
+11494,798,2026-02-01 00:00:00,Completed,Apple Pay / Mir Pay
+11495,799,2025-03-20 00:00:00,Refunded,Cash on Delivery
+11496,800,2025-09-09 00:00:00,Completed,Cash on Delivery
+11497,800,2025-10-16 00:00:00,Completed,Cash on Delivery
+11498,801,2026-03-29 00:00:00,Completed,Apple Pay / Mir Pay
+11499,801,2026-04-29 00:00:00,Completed,Apple Pay / Mir Pay
+11500,801,2026-05-26 00:00:00,Cancelled,Credit Card
+11501,801,2026-06-03 00:00:00,Completed,Credit Card
+11502,801,2026-06-30 00:00:00,Completed,Apple Pay / Mir Pay
+11503,803,2025-10-11 00:00:00,Completed,Apple Pay / Mir Pay
+11504,805,2025-11-25 00:00:00,Completed,Apple Pay / Mir Pay
+11505,807,2025-07-02 00:00:00,Completed,Apple Pay / Mir Pay
+11506,807,2025-08-05 00:00:00,Completed,Fast Payment (SBP)
+11507,808,2025-06-04 00:00:00,Completed,Fast Payment (SBP)
+11508,808,2025-06-17 00:00:00,Completed,Fast Payment (SBP)
+11509,809,2025-02-03 00:00:00,Completed,Apple Pay / Mir Pay
+11510,810,2026-04-14 00:00:00,Completed,Credit Card
+11511,811,2025-09-08 00:00:00,Completed,Apple Pay / Mir Pay
+11512,813,2025-07-24 00:00:00,Completed,Credit Card
+11513,814,2026-02-05 00:00:00,Completed,Credit Card
+11514,814,2026-02-13 00:00:00,Completed,Fast Payment (SBP)
+11515,814,2026-03-09 00:00:00,Completed,Apple Pay / Mir Pay
+11516,817,2026-03-24 00:00:00,Completed,Credit Card
+11517,817,2026-04-25 00:00:00,Completed,Credit Card
+11518,817,2026-05-24 00:00:00,Completed,Credit Card
+11519,819,2026-06-02 00:00:00,Completed,Credit Card
+11520,819,2026-06-28 00:00:00,Completed,Apple Pay / Mir Pay
+11521,820,2025-04-13 00:00:00,Completed,Cash on Delivery
+11522,825,2025-11-18 00:00:00,Completed,Apple Pay / Mir Pay
+11523,825,2025-11-24 00:00:00,Completed,Credit Card
+11524,828,2025-05-14 00:00:00,Completed,Fast Payment (SBP)
+11525,829,2026-06-09 00:00:00,Completed,Credit Card
+11526,829,2026-06-30 00:00:00,Completed,Credit Card
+11527,830,2026-06-16 00:00:00,Completed,Cash on Delivery
+11528,831,2026-01-30 00:00:00,Completed,Cash on Delivery
+11529,832,2025-11-25 00:00:00,Cancelled,Cash on Delivery
+11530,833,2026-05-12 00:00:00,Completed,Fast Payment (SBP)
+11531,833,2026-05-23 00:00:00,Refunded,Apple Pay / Mir Pay
+11532,833,2026-06-27 00:00:00,Completed,Credit Card
+11533,834,2026-03-17 00:00:00,Completed,Credit Card
+11534,834,2026-04-19 00:00:00,Refunded,Cash on Delivery
+11535,836,2025-05-19 00:00:00,Cancelled,Cash on Delivery
+11536,836,2025-06-25 00:00:00,Cancelled,Fast Payment (SBP)
+11537,836,2025-06-27 00:00:00,Completed,Credit Card
+11538,837,2025-09-08 00:00:00,Completed,Cash on Delivery
+11539,837,2025-10-10 00:00:00,Completed,Fast Payment (SBP)
+11540,837,2025-11-17 00:00:00,Refunded,Cash on Delivery
+11541,838,2026-01-31 00:00:00,Completed,Cash on Delivery
+11542,839,2025-07-21 00:00:00,Completed,Apple Pay / Mir Pay
+11543,839,2025-08-28 00:00:00,Completed,Cash on Delivery
+11544,840,2025-11-04 00:00:00,Completed,Cash on Delivery
+11545,840,2025-12-02 00:00:00,Completed,Cash on Delivery
+11546,842,2026-05-19 00:00:00,Completed,Fast Payment (SBP)
+11547,843,2025-08-17 00:00:00,Completed,Cash on Delivery
+11548,843,2025-09-14 00:00:00,Completed,Fast Payment (SBP)
+11549,843,2025-10-13 00:00:00,Completed,Credit Card
+11550,843,2025-11-02 00:00:00,Completed,Credit Card
+11551,843,2025-11-16 00:00:00,Completed,Credit Card
+11552,843,2025-12-08 00:00:00,Completed,Apple Pay / Mir Pay
+11553,843,2025-12-15 00:00:00,Completed,Credit Card
+11554,843,2025-12-28 00:00:00,Completed,Fast Payment (SBP)
+11555,844,2025-07-19 00:00:00,Refunded,Credit Card
+11556,845,2026-03-04 00:00:00,Completed,Cash on Delivery
+11557,846,2025-12-09 00:00:00,Completed,Fast Payment (SBP)
+11558,846,2026-01-18 00:00:00,Completed,Apple Pay / Mir Pay
+11559,846,2026-02-12 00:00:00,Completed,Credit Card
+11560,847,2026-01-30 00:00:00,Completed,Apple Pay / Mir Pay
+11561,847,2026-03-16 00:00:00,Refunded,Credit Card
+11562,847,2026-04-29 00:00:00,Completed,Apple Pay / Mir Pay
+11563,848,2026-01-06 00:00:00,Completed,Fast Payment (SBP)
+11564,851,2025-05-12 00:00:00,Completed,Apple Pay / Mir Pay
+11565,851,2025-05-31 00:00:00,Refunded,Cash on Delivery
+11566,852,2025-10-24 00:00:00,Completed,Credit Card
+11567,853,2025-01-27 00:00:00,Completed,Fast Payment (SBP)
+11568,854,2025-04-05 00:00:00,Completed,Cash on Delivery
+11569,855,2025-02-19 00:00:00,Refunded,Credit Card
+11570,855,2025-03-03 00:00:00,Cancelled,Cash on Delivery
+11571,856,2025-05-01 00:00:00,Completed,Credit Card
+11572,857,2025-02-07 00:00:00,Completed,Fast Payment (SBP)
+11573,857,2025-02-08 00:00:00,Completed,Credit Card
+11574,858,2026-05-26 00:00:00,Cancelled,Apple Pay / Mir Pay
+11575,859,2025-09-30 00:00:00,Completed,Credit Card
+11576,859,2025-10-05 00:00:00,Completed,Credit Card
+11577,859,2025-10-30 00:00:00,Completed,Credit Card
+11578,859,2025-11-23 00:00:00,Cancelled,Apple Pay / Mir Pay
+11579,859,2025-12-26 00:00:00,Completed,Fast Payment (SBP)
+11580,860,2025-11-21 00:00:00,Completed,Cash on Delivery
+11581,862,2026-05-26 00:00:00,Refunded,Cash on Delivery
+11582,862,2026-07-09 00:00:00,Refunded,Credit Card
+11583,862,2026-08-21 00:00:00,Completed,Apple Pay / Mir Pay
+11584,862,2026-09-25 00:00:00,Completed,Apple Pay / Mir Pay
+11585,863,2026-03-09 00:00:00,Completed,Fast Payment (SBP)
+11586,863,2026-03-24 00:00:00,Completed,Apple Pay / Mir Pay
+11587,863,2026-04-13 00:00:00,Completed,Credit Card
+11588,864,2026-02-22 00:00:00,Completed,Fast Payment (SBP)
+11589,865,2025-11-05 00:00:00,Completed,Credit Card
+11590,867,2025-06-19 00:00:00,Completed,Fast Payment (SBP)
+11591,869,2025-05-26 00:00:00,Completed,Apple Pay / Mir Pay
+11592,869,2025-05-29 00:00:00,Completed,Cash on Delivery
+11593,869,2025-07-06 00:00:00,Completed,Apple Pay / Mir Pay
+11594,869,2025-08-17 00:00:00,Completed,Cash on Delivery
+11595,869,2025-08-31 00:00:00,Cancelled,Credit Card
+11596,869,2025-09-01 00:00:00,Completed,Apple Pay / Mir Pay
+11597,869,2025-10-12 00:00:00,Completed,Cash on Delivery
+11598,869,2025-10-18 00:00:00,Completed,Apple Pay / Mir Pay
+11599,869,2025-11-14 00:00:00,Completed,Apple Pay / Mir Pay
+11600,869,2025-12-05 00:00:00,Completed,Credit Card
+11601,869,2026-01-04 00:00:00,Completed,Cash on Delivery
+11602,869,2026-02-01 00:00:00,Completed,Cash on Delivery
+11603,870,2026-01-06 00:00:00,Completed,Credit Card
+11604,870,2026-02-01 00:00:00,Completed,Fast Payment (SBP)
+11605,870,2026-02-14 00:00:00,Completed,Apple Pay / Mir Pay
+11606,870,2026-03-23 00:00:00,Completed,Apple Pay / Mir Pay
+11607,870,2026-04-07 00:00:00,Completed,Credit Card
+11608,871,2026-04-09 00:00:00,Completed,Cash on Delivery
+11609,872,2025-08-21 00:00:00,Completed,Apple Pay / Mir Pay
+11610,873,2025-10-12 00:00:00,Completed,Apple Pay / Mir Pay
+11611,874,2026-02-01 00:00:00,Completed,Apple Pay / Mir Pay
+11612,874,2026-03-16 00:00:00,Completed,Cash on Delivery
+11613,874,2026-03-23 00:00:00,Completed,Apple Pay / Mir Pay
+11614,875,2026-04-06 00:00:00,Completed,Apple Pay / Mir Pay
+11615,875,2026-04-11 00:00:00,Completed,Fast Payment (SBP)
+11616,875,2026-05-25 00:00:00,Completed,Cash on Delivery
+11617,875,2026-06-04 00:00:00,Completed,Fast Payment (SBP)
+11618,875,2026-06-08 00:00:00,Completed,Cash on Delivery
+11619,876,2025-10-31 00:00:00,Completed,Fast Payment (SBP)
+11620,879,2025-10-05 00:00:00,Completed,Fast Payment (SBP)
+11621,880,2026-01-10 00:00:00,Completed,Credit Card
+11622,880,2026-01-16 00:00:00,Completed,Fast Payment (SBP)
+11623,880,2026-02-14 00:00:00,Completed,Apple Pay / Mir Pay
+11624,880,2026-03-24 00:00:00,Completed,Credit Card
+11625,880,2026-04-26 00:00:00,Completed,Fast Payment (SBP)
+11626,881,2026-01-10 00:00:00,Completed,Apple Pay / Mir Pay
+11627,882,2025-02-11 00:00:00,Refunded,Cash on Delivery
+11628,882,2025-02-25 00:00:00,Refunded,Credit Card
+11629,882,2025-04-02 00:00:00,Completed,Cash on Delivery
+11630,882,2025-04-16 00:00:00,Cancelled,Fast Payment (SBP)
+11631,882,2025-05-08 00:00:00,Completed,Apple Pay / Mir Pay
+11632,882,2025-06-12 00:00:00,Completed,Cash on Delivery
+11633,882,2025-07-02 00:00:00,Refunded,Apple Pay / Mir Pay
+11634,882,2025-07-27 00:00:00,Refunded,Fast Payment (SBP)
+11635,883,2026-02-19 00:00:00,Completed,Fast Payment (SBP)
+11636,884,2026-05-02 00:00:00,Completed,Apple Pay / Mir Pay
+11637,884,2026-05-09 00:00:00,Completed,Fast Payment (SBP)
+11638,884,2026-06-08 00:00:00,Completed,Cash on Delivery
+11639,884,2026-07-07 00:00:00,Completed,Credit Card
+11640,884,2026-07-22 00:00:00,Completed,Fast Payment (SBP)
+11641,884,2026-08-20 00:00:00,Refunded,Fast Payment (SBP)
+11642,884,2026-09-12 00:00:00,Cancelled,Fast Payment (SBP)
+11643,884,2026-10-01 00:00:00,Completed,Cash on Delivery
+11644,885,2025-11-21 00:00:00,Completed,Fast Payment (SBP)
+11645,887,2026-02-10 00:00:00,Cancelled,Apple Pay / Mir Pay
+11646,887,2026-02-15 00:00:00,Completed,Fast Payment (SBP)
+11647,887,2026-02-27 00:00:00,Cancelled,Fast Payment (SBP)
+11648,887,2026-03-21 00:00:00,Completed,Fast Payment (SBP)
+11649,887,2026-04-27 00:00:00,Refunded,Credit Card
+11650,887,2026-05-22 00:00:00,Completed,Cash on Delivery
+11651,887,2026-06-09 00:00:00,Completed,Apple Pay / Mir Pay
+11652,887,2026-06-24 00:00:00,Completed,Cash on Delivery
+11653,888,2026-01-07 00:00:00,Completed,Fast Payment (SBP)
+11654,889,2026-05-26 00:00:00,Completed,Cash on Delivery
+11655,889,2026-07-08 00:00:00,Refunded,Apple Pay / Mir Pay
+11656,889,2026-07-13 00:00:00,Completed,Credit Card
+11657,889,2026-08-18 00:00:00,Refunded,Fast Payment (SBP)
+11658,889,2026-08-24 00:00:00,Completed,Cash on Delivery
+11659,890,2025-09-25 00:00:00,Completed,Cash on Delivery
+11660,891,2025-12-13 00:00:00,Completed,Credit Card
+11661,894,2025-05-13 00:00:00,Completed,Apple Pay / Mir Pay
+11662,894,2025-06-12 00:00:00,Cancelled,Credit Card
+11663,894,2025-06-23 00:00:00,Completed,Credit Card
+11664,894,2025-06-30 00:00:00,Completed,Apple Pay / Mir Pay
+11665,894,2025-08-06 00:00:00,Refunded,Credit Card
+11666,894,2025-09-10 00:00:00,Completed,Credit Card
+11667,894,2025-10-05 00:00:00,Completed,Credit Card
+11668,894,2025-11-10 00:00:00,Cancelled,Apple Pay / Mir Pay
+11669,895,2025-08-28 00:00:00,Completed,Fast Payment (SBP)
+11670,895,2025-10-07 00:00:00,Completed,Apple Pay / Mir Pay
+11671,895,2025-10-25 00:00:00,Completed,Fast Payment (SBP)
+11672,896,2025-12-18 00:00:00,Completed,Apple Pay / Mir Pay
+11673,896,2026-02-01 00:00:00,Completed,Apple Pay / Mir Pay
+11674,897,2025-06-08 00:00:00,Completed,Apple Pay / Mir Pay
+11675,897,2025-06-30 00:00:00,Refunded,Cash on Delivery
+11676,898,2025-03-18 00:00:00,Completed,Cash on Delivery
+11677,900,2026-01-23 00:00:00,Completed,Credit Card
+11678,901,2025-02-27 00:00:00,Completed,Apple Pay / Mir Pay
+11679,901,2025-03-17 00:00:00,Completed,Cash on Delivery
+11680,901,2025-03-25 00:00:00,Completed,Credit Card
+11681,902,2025-09-12 00:00:00,Completed,Cash on Delivery
+11682,902,2025-09-22 00:00:00,Completed,Cash on Delivery
+11683,902,2025-10-09 00:00:00,Completed,Credit Card
+11684,902,2025-11-22 00:00:00,Completed,Apple Pay / Mir Pay
+11685,902,2025-12-03 00:00:00,Completed,Apple Pay / Mir Pay
+11686,902,2025-12-20 00:00:00,Completed,Cash on Delivery
+11687,902,2026-02-02 00:00:00,Completed,Credit Card
+11688,902,2026-03-18 00:00:00,Completed,Cash on Delivery
+11689,903,2025-04-15 00:00:00,Completed,Fast Payment (SBP)
+11690,903,2025-04-24 00:00:00,Completed,Fast Payment (SBP)
+11691,904,2025-09-03 00:00:00,Completed,Fast Payment (SBP)
+11692,904,2025-09-27 00:00:00,Completed,Cash on Delivery
+11693,904,2025-10-10 00:00:00,Completed,Apple Pay / Mir Pay
+11694,905,2025-09-05 00:00:00,Completed,Cash on Delivery
+11695,906,2025-07-21 00:00:00,Completed,Fast Payment (SBP)
+11696,906,2025-08-14 00:00:00,Completed,Cash on Delivery
+11697,906,2025-08-15 00:00:00,Completed,Fast Payment (SBP)
+11698,906,2025-08-23 00:00:00,Completed,Cash on Delivery
+11699,906,2025-10-04 00:00:00,Completed,Apple Pay / Mir Pay
+11700,907,2025-11-24 00:00:00,Refunded,Apple Pay / Mir Pay
+11701,908,2025-02-20 00:00:00,Refunded,Credit Card
+11702,909,2026-02-14 00:00:00,Completed,Credit Card
+11703,909,2026-03-04 00:00:00,Completed,Apple Pay / Mir Pay
+11704,909,2026-04-01 00:00:00,Refunded,Cash on Delivery
+11705,911,2025-05-09 00:00:00,Refunded,Credit Card
+11706,911,2025-06-08 00:00:00,Completed,Cash on Delivery
+11707,911,2025-07-08 00:00:00,Completed,Fast Payment (SBP)
+11708,911,2025-08-20 00:00:00,Cancelled,Credit Card
+11709,911,2025-08-29 00:00:00,Completed,Apple Pay / Mir Pay
+11710,911,2025-10-07 00:00:00,Completed,Credit Card
+11711,911,2025-10-10 00:00:00,Completed,Apple Pay / Mir Pay
+11712,911,2025-11-13 00:00:00,Completed,Apple Pay / Mir Pay
+11713,912,2025-04-25 00:00:00,Completed,Apple Pay / Mir Pay
+11714,912,2025-05-10 00:00:00,Completed,Apple Pay / Mir Pay
+11715,912,2025-05-19 00:00:00,Completed,Cash on Delivery
+11716,913,2025-09-14 00:00:00,Completed,Cash on Delivery
+11717,914,2025-08-19 00:00:00,Completed,Apple Pay / Mir Pay
+11718,914,2025-09-14 00:00:00,Completed,Apple Pay / Mir Pay
+11719,914,2025-10-19 00:00:00,Completed,Cash on Delivery
+11720,916,2025-05-23 00:00:00,Cancelled,Apple Pay / Mir Pay
+11721,919,2025-01-21 00:00:00,Cancelled,Fast Payment (SBP)
+11722,919,2025-02-16 00:00:00,Completed,Apple Pay / Mir Pay
+11723,920,2025-08-24 00:00:00,Completed,Cash on Delivery
+11724,920,2025-08-25 00:00:00,Completed,Fast Payment (SBP)
+11725,920,2025-10-06 00:00:00,Completed,Apple Pay / Mir Pay
+11726,922,2025-04-13 00:00:00,Completed,Cash on Delivery
+11727,922,2025-04-18 00:00:00,Completed,Fast Payment (SBP)
+11728,923,2026-06-13 00:00:00,Completed,Credit Card
+11729,923,2026-07-27 00:00:00,Completed,Cash on Delivery
+11730,923,2026-09-02 00:00:00,Completed,Apple Pay / Mir Pay
+11731,923,2026-09-11 00:00:00,Completed,Apple Pay / Mir Pay
+11732,924,2025-07-12 00:00:00,Completed,Credit Card
+11733,924,2025-07-28 00:00:00,Completed,Cash on Delivery
+11734,924,2025-08-11 00:00:00,Completed,Cash on Delivery
+11735,925,2025-06-11 00:00:00,Completed,Cash on Delivery
+11736,925,2025-07-21 00:00:00,Completed,Cash on Delivery
+11737,925,2025-09-04 00:00:00,Completed,Apple Pay / Mir Pay
+11738,925,2025-09-26 00:00:00,Completed,Credit Card
+11739,925,2025-10-21 00:00:00,Completed,Fast Payment (SBP)
+11740,925,2025-11-26 00:00:00,Completed,Fast Payment (SBP)
+11741,925,2026-01-02 00:00:00,Completed,Cash on Delivery
+11742,925,2026-01-05 00:00:00,Completed,Apple Pay / Mir Pay
+11743,926,2025-10-04 00:00:00,Cancelled,Cash on Delivery
+11744,926,2025-11-10 00:00:00,Completed,Apple Pay / Mir Pay
+11745,927,2025-07-13 00:00:00,Completed,Fast Payment (SBP)
+11746,928,2025-03-28 00:00:00,Completed,Credit Card
+11747,928,2025-04-16 00:00:00,Completed,Cash on Delivery
+11748,929,2025-10-27 00:00:00,Completed,Credit Card
+11749,929,2025-11-12 00:00:00,Completed,Fast Payment (SBP)
+11750,930,2025-02-10 00:00:00,Completed,Apple Pay / Mir Pay
+11751,930,2025-03-09 00:00:00,Completed,Cash on Delivery
+11752,930,2025-04-16 00:00:00,Completed,Fast Payment (SBP)
+11753,930,2025-05-23 00:00:00,Completed,Credit Card
+11754,930,2025-06-15 00:00:00,Completed,Cash on Delivery
+11755,931,2025-04-27 00:00:00,Completed,Credit Card
+11756,931,2025-05-22 00:00:00,Refunded,Apple Pay / Mir Pay
+11757,931,2025-05-29 00:00:00,Completed,Credit Card
+11758,932,2025-03-11 00:00:00,Completed,Cash on Delivery
+11759,932,2025-03-12 00:00:00,Completed,Cash on Delivery
+11760,932,2025-03-18 00:00:00,Completed,Fast Payment (SBP)
+11761,934,2025-06-16 00:00:00,Completed,Credit Card
+11762,935,2026-02-09 00:00:00,Completed,Cash on Delivery
+11763,935,2026-03-18 00:00:00,Completed,Cash on Delivery
+11764,936,2025-09-06 00:00:00,Completed,Fast Payment (SBP)
+11765,938,2025-08-27 00:00:00,Refunded,Apple Pay / Mir Pay
+11766,939,2026-01-17 00:00:00,Completed,Fast Payment (SBP)
+11767,940,2025-11-24 00:00:00,Completed,Apple Pay / Mir Pay
+11768,940,2025-12-08 00:00:00,Completed,Apple Pay / Mir Pay
+11769,940,2026-01-06 00:00:00,Completed,Credit Card
+11770,942,2026-01-07 00:00:00,Completed,Fast Payment (SBP)
+11771,943,2025-12-03 00:00:00,Refunded,Apple Pay / Mir Pay
+11772,945,2025-03-26 00:00:00,Completed,Credit Card
+11773,946,2025-05-18 00:00:00,Completed,Cash on Delivery
+11774,947,2025-10-30 00:00:00,Completed,Apple Pay / Mir Pay
+11775,948,2025-05-16 00:00:00,Completed,Credit Card
+11776,948,2025-06-30 00:00:00,Completed,Cash on Delivery
+11777,949,2025-09-08 00:00:00,Completed,Credit Card
+11778,950,2025-12-23 00:00:00,Completed,Fast Payment (SBP)
+11779,950,2026-01-31 00:00:00,Completed,Credit Card
+11780,950,2026-03-04 00:00:00,Completed,Apple Pay / Mir Pay
+11781,950,2026-03-20 00:00:00,Completed,Cash on Delivery
+11782,950,2026-03-30 00:00:00,Completed,Cash on Delivery
+11783,950,2026-05-07 00:00:00,Completed,Cash on Delivery
+11784,950,2026-05-20 00:00:00,Cancelled,Fast Payment (SBP)
+11785,950,2026-06-21 00:00:00,Completed,Fast Payment (SBP)
+11786,952,2025-09-14 00:00:00,Completed,Fast Payment (SBP)
+11787,953,2025-04-23 00:00:00,Completed,Apple Pay / Mir Pay
+11788,954,2025-09-18 00:00:00,Completed,Apple Pay / Mir Pay
+11789,954,2025-09-29 00:00:00,Refunded,Apple Pay / Mir Pay
+11790,955,2025-09-15 00:00:00,Completed,Apple Pay / Mir Pay
+11791,957,2025-06-18 00:00:00,Completed,Cash on Delivery
+11792,958,2026-04-05 00:00:00,Completed,Apple Pay / Mir Pay
+11793,958,2026-05-17 00:00:00,Completed,Fast Payment (SBP)
+11794,958,2026-06-26 00:00:00,Completed,Fast Payment (SBP)
+11795,959,2026-03-14 00:00:00,Completed,Apple Pay / Mir Pay
+11796,959,2026-03-21 00:00:00,Refunded,Apple Pay / Mir Pay
+11797,961,2025-06-01 00:00:00,Completed,Cash on Delivery
+11798,963,2026-06-11 00:00:00,Completed,Cash on Delivery
+11799,965,2026-01-09 00:00:00,Refunded,Cash on Delivery
+11800,966,2026-02-07 00:00:00,Completed,Fast Payment (SBP)
+11801,967,2025-11-28 00:00:00,Completed,Apple Pay / Mir Pay
+11802,967,2025-12-01 00:00:00,Completed,Fast Payment (SBP)
+11803,968,2026-02-02 00:00:00,Completed,Credit Card
+11804,968,2026-03-12 00:00:00,Completed,Fast Payment (SBP)
+11805,968,2026-04-17 00:00:00,Completed,Apple Pay / Mir Pay
+11806,968,2026-04-28 00:00:00,Completed,Apple Pay / Mir Pay
+11807,968,2026-05-19 00:00:00,Completed,Fast Payment (SBP)
+11808,969,2026-02-26 00:00:00,Completed,Cash on Delivery
+11809,969,2026-03-02 00:00:00,Completed,Cash on Delivery
+11810,969,2026-03-17 00:00:00,Completed,Apple Pay / Mir Pay
+11811,969,2026-04-27 00:00:00,Cancelled,Cash on Delivery
+11812,969,2026-06-02 00:00:00,Completed,Credit Card
+11813,970,2025-03-07 00:00:00,Refunded,Apple Pay / Mir Pay
+11814,970,2025-03-30 00:00:00,Refunded,Cash on Delivery
+11815,970,2025-05-01 00:00:00,Completed,Credit Card
+11816,972,2025-04-04 00:00:00,Completed,Fast Payment (SBP)
+11817,972,2025-05-13 00:00:00,Completed,Cash on Delivery
+11818,972,2025-06-20 00:00:00,Completed,Apple Pay / Mir Pay
+11819,972,2025-07-02 00:00:00,Completed,Credit Card
+11820,972,2025-07-11 00:00:00,Completed,Apple Pay / Mir Pay
+11821,973,2025-10-13 00:00:00,Completed,Cash on Delivery
+11822,975,2025-03-31 00:00:00,Completed,Cash on Delivery
+11823,976,2025-12-09 00:00:00,Completed,Credit Card
+11824,976,2026-01-22 00:00:00,Completed,Fast Payment (SBP)
+11825,977,2026-03-19 00:00:00,Completed,Credit Card
+11826,977,2026-04-22 00:00:00,Refunded,Fast Payment (SBP)
+11827,977,2026-04-29 00:00:00,Cancelled,Fast Payment (SBP)
+11828,979,2025-03-28 00:00:00,Completed,Fast Payment (SBP)
+11829,979,2025-05-02 00:00:00,Completed,Fast Payment (SBP)
+11830,980,2025-05-09 00:00:00,Completed,Apple Pay / Mir Pay
+11831,980,2025-05-26 00:00:00,Completed,Credit Card
+11832,982,2025-04-25 00:00:00,Completed,Cash on Delivery
+11833,984,2026-01-14 00:00:00,Completed,Credit Card
+11834,984,2026-02-11 00:00:00,Completed,Credit Card
+11835,984,2026-03-25 00:00:00,Completed,Cash on Delivery
+11836,984,2026-04-22 00:00:00,Completed,Credit Card
+11837,984,2026-05-09 00:00:00,Completed,Credit Card
+11838,984,2026-06-14 00:00:00,Refunded,Cash on Delivery
+11839,984,2026-06-22 00:00:00,Completed,Fast Payment (SBP)
+11840,984,2026-07-04 00:00:00,Completed,Credit Card
+11841,985,2025-03-29 00:00:00,Completed,Fast Payment (SBP)
+11842,986,2025-04-27 00:00:00,Completed,Apple Pay / Mir Pay
+11843,986,2025-04-28 00:00:00,Completed,Credit Card
+11844,987,2025-02-28 00:00:00,Completed,Apple Pay / Mir Pay
+11845,987,2025-03-16 00:00:00,Completed,Fast Payment (SBP)
+11846,987,2025-03-27 00:00:00,Completed,Fast Payment (SBP)
+11847,987,2025-04-29 00:00:00,Completed,Fast Payment (SBP)
+11848,987,2025-05-23 00:00:00,Completed,Credit Card
+11849,988,2025-09-30 00:00:00,Completed,Fast Payment (SBP)
+11850,990,2025-10-26 00:00:00,Completed,Cash on Delivery
+11851,990,2025-11-09 00:00:00,Completed,Apple Pay / Mir Pay
+11852,992,2025-04-02 00:00:00,Completed,Credit Card
+11853,993,2026-03-17 00:00:00,Completed,Apple Pay / Mir Pay
+11854,995,2025-07-03 00:00:00,Completed,Fast Payment (SBP)
+11855,996,2026-01-31 00:00:00,Completed,Credit Card
+11856,996,2026-02-28 00:00:00,Completed,Apple Pay / Mir Pay
+11857,996,2026-03-29 00:00:00,Completed,Apple Pay / Mir Pay
+11858,996,2026-04-07 00:00:00,Completed,Fast Payment (SBP)
+11859,996,2026-04-11 00:00:00,Completed,Fast Payment (SBP)
+11860,997,2025-11-02 00:00:00,Completed,Apple Pay / Mir Pay
+11861,997,2025-12-15 00:00:00,Completed,Fast Payment (SBP)
+11862,997,2026-01-18 00:00:00,Completed,Cash on Delivery
+11863,998,2025-06-24 00:00:00,Completed,Apple Pay / Mir Pay
+11864,999,2025-11-17 00:00:00,Completed,Credit Card
+11865,999,2025-11-23 00:00:00,Completed,Fast Payment (SBP)
+11866,1000,2025-08-28 00:00:00,Completed,Apple Pay / Mir Pay
+11867,1000,2025-09-03 00:00:00,Completed,Apple Pay / Mir Pay
+11868,1000,2025-09-09 00:00:00,Completed,Cash on Delivery
+11869,1001,2025-04-03 00:00:00,Completed,Apple Pay / Mir Pay
+11870,1001,2025-05-01 00:00:00,Refunded,Apple Pay / Mir Pay
+11871,1002,2025-07-07 00:00:00,Completed,Cash on Delivery
+11872,1002,2025-07-08 00:00:00,Completed,Apple Pay / Mir Pay
+11873,1003,2025-06-29 00:00:00,Completed,Credit Card
+11874,1003,2025-07-21 00:00:00,Refunded,Cash on Delivery
+11875,1005,2026-03-25 00:00:00,Completed,Cash on Delivery
+11876,1005,2026-05-05 00:00:00,Completed,Fast Payment (SBP)
+11877,1006,2025-07-22 00:00:00,Completed,Credit Card
+11878,1006,2025-07-25 00:00:00,Completed,Apple Pay / Mir Pay
+11879,1007,2025-12-17 00:00:00,Cancelled,Cash on Delivery
+11880,1010,2025-10-17 00:00:00,Completed,Cash on Delivery
+11881,1010,2025-11-07 00:00:00,Completed,Apple Pay / Mir Pay
+11882,1010,2025-11-10 00:00:00,Cancelled,Credit Card
+11883,1011,2025-04-11 00:00:00,Completed,Apple Pay / Mir Pay
+11884,1012,2025-06-15 00:00:00,Completed,Fast Payment (SBP)
+11885,1012,2025-07-23 00:00:00,Completed,Apple Pay / Mir Pay
+11886,1012,2025-08-29 00:00:00,Completed,Fast Payment (SBP)
+11887,1012,2025-10-03 00:00:00,Completed,Cash on Delivery
+11888,1012,2025-10-16 00:00:00,Completed,Cash on Delivery
+11889,1013,2026-04-09 00:00:00,Completed,Apple Pay / Mir Pay
+11890,1013,2026-05-21 00:00:00,Completed,Apple Pay / Mir Pay
+11891,1013,2026-05-28 00:00:00,Completed,Credit Card
+11892,1014,2026-05-20 00:00:00,Completed,Cash on Delivery
+11893,1014,2026-06-06 00:00:00,Completed,Apple Pay / Mir Pay
+11894,1014,2026-06-11 00:00:00,Completed,Cash on Delivery
+11895,1014,2026-07-17 00:00:00,Completed,Credit Card
+11896,1014,2026-08-21 00:00:00,Cancelled,Credit Card
+11897,1014,2026-09-17 00:00:00,Completed,Apple Pay / Mir Pay
+11898,1014,2026-09-29 00:00:00,Completed,Fast Payment (SBP)
+11899,1016,2026-01-29 00:00:00,Completed,Cash on Delivery
+11900,1017,2025-04-30 00:00:00,Completed,Credit Card
+11901,1018,2026-02-07 00:00:00,Completed,Credit Card
+11902,1018,2026-02-09 00:00:00,Completed,Cash on Delivery
+11903,1019,2025-09-10 00:00:00,Completed,Apple Pay / Mir Pay
+11904,1019,2025-09-21 00:00:00,Completed,Apple Pay / Mir Pay
+11905,1019,2025-10-22 00:00:00,Refunded,Cash on Delivery
+11906,1019,2025-11-12 00:00:00,Completed,Fast Payment (SBP)
+11907,1019,2025-12-13 00:00:00,Completed,Cash on Delivery
+11908,1019,2025-12-28 00:00:00,Completed,Fast Payment (SBP)
+11909,1019,2026-01-15 00:00:00,Completed,Apple Pay / Mir Pay
+11910,1019,2026-02-28 00:00:00,Completed,Fast Payment (SBP)
+11911,1020,2025-06-29 00:00:00,Completed,Fast Payment (SBP)
+11912,1021,2025-09-12 00:00:00,Completed,Credit Card
+11913,1021,2025-10-03 00:00:00,Cancelled,Credit Card
+11914,1022,2025-09-09 00:00:00,Completed,Cash on Delivery
+11915,1022,2025-10-23 00:00:00,Completed,Apple Pay / Mir Pay
+11916,1022,2025-11-26 00:00:00,Completed,Cash on Delivery
+11917,1022,2026-01-08 00:00:00,Completed,Credit Card
+11918,1022,2026-01-21 00:00:00,Completed,Apple Pay / Mir Pay
+11919,1022,2026-02-19 00:00:00,Refunded,Credit Card
+11920,1022,2026-03-18 00:00:00,Completed,Cash on Delivery
+11921,1022,2026-03-31 00:00:00,Completed,Cash on Delivery
+11922,1022,2026-04-14 00:00:00,Completed,Credit Card
+11923,1022,2026-05-10 00:00:00,Completed,Credit Card
+11924,1022,2026-05-27 00:00:00,Completed,Credit Card
+11925,1022,2026-06-12 00:00:00,Completed,Cash on Delivery
+11926,1023,2026-01-28 00:00:00,Completed,Credit Card
+11927,1023,2026-02-17 00:00:00,Completed,Credit Card
+11928,1024,2025-07-25 00:00:00,Completed,Apple Pay / Mir Pay
+11929,1024,2025-08-23 00:00:00,Completed,Credit Card
+11930,1024,2025-09-28 00:00:00,Completed,Fast Payment (SBP)
+11931,1027,2026-03-27 00:00:00,Completed,Fast Payment (SBP)
+11932,1027,2026-03-29 00:00:00,Completed,Cash on Delivery
+11933,1029,2025-06-05 00:00:00,Refunded,Credit Card
+11934,1029,2025-07-08 00:00:00,Completed,Fast Payment (SBP)
+11935,1030,2025-10-31 00:00:00,Completed,Apple Pay / Mir Pay
+11936,1031,2026-04-12 00:00:00,Completed,Fast Payment (SBP)
+11937,1032,2026-03-03 00:00:00,Completed,Credit Card
+11938,1032,2026-04-13 00:00:00,Cancelled,Fast Payment (SBP)
+11939,1032,2026-04-25 00:00:00,Completed,Fast Payment (SBP)
+11940,1032,2026-05-31 00:00:00,Completed,Apple Pay / Mir Pay
+11941,1032,2026-06-13 00:00:00,Cancelled,Apple Pay / Mir Pay
+11942,1032,2026-07-18 00:00:00,Completed,Credit Card
+11943,1032,2026-08-02 00:00:00,Cancelled,Fast Payment (SBP)
+11944,1032,2026-09-13 00:00:00,Completed,Apple Pay / Mir Pay
+11945,1033,2025-12-07 00:00:00,Completed,Apple Pay / Mir Pay
+11946,1033,2025-12-13 00:00:00,Completed,Cash on Delivery
+11947,1033,2026-01-26 00:00:00,Completed,Cash on Delivery
+11948,1033,2026-02-20 00:00:00,Refunded,Cash on Delivery
+11949,1033,2026-03-23 00:00:00,Completed,Credit Card
+11950,1033,2026-03-30 00:00:00,Completed,Fast Payment (SBP)
+11951,1033,2026-04-08 00:00:00,Completed,Fast Payment (SBP)
+11952,1033,2026-05-14 00:00:00,Completed,Credit Card
+11953,1034,2025-04-13 00:00:00,Completed,Fast Payment (SBP)
+11954,1034,2025-04-15 00:00:00,Cancelled,Fast Payment (SBP)
+11955,1034,2025-05-20 00:00:00,Completed,Apple Pay / Mir Pay
+11956,1035,2025-09-06 00:00:00,Completed,Fast Payment (SBP)
+11957,1036,2026-01-06 00:00:00,Completed,Cash on Delivery
+11958,1037,2025-03-30 00:00:00,Completed,Credit Card
+11959,1038,2026-01-14 00:00:00,Completed,Credit Card
+11960,1039,2025-08-13 00:00:00,Completed,Apple Pay / Mir Pay
+11961,1040,2025-01-31 00:00:00,Completed,Credit Card
+11962,1042,2025-12-09 00:00:00,Completed,Cash on Delivery
+11963,1042,2025-12-19 00:00:00,Completed,Fast Payment (SBP)
+11964,1043,2025-02-11 00:00:00,Completed,Fast Payment (SBP)
+11965,1043,2025-02-13 00:00:00,Completed,Apple Pay / Mir Pay
+11966,1043,2025-03-24 00:00:00,Completed,Apple Pay / Mir Pay
+11967,1044,2025-04-11 00:00:00,Completed,Cash on Delivery
+11968,1044,2025-05-10 00:00:00,Completed,Credit Card
+11969,1047,2026-01-10 00:00:00,Completed,Apple Pay / Mir Pay
+11970,1048,2025-05-06 00:00:00,Completed,Credit Card
+11971,1048,2025-05-08 00:00:00,Completed,Cash on Delivery
+11972,1048,2025-06-22 00:00:00,Completed,Apple Pay / Mir Pay
+11973,1048,2025-07-12 00:00:00,Completed,Cash on Delivery
+11974,1048,2025-07-25 00:00:00,Completed,Fast Payment (SBP)
+11975,1048,2025-08-29 00:00:00,Completed,Credit Card
+11976,1048,2025-09-26 00:00:00,Completed,Credit Card
+11977,1048,2025-10-21 00:00:00,Completed,Fast Payment (SBP)
+11978,1049,2026-03-29 00:00:00,Completed,Apple Pay / Mir Pay
+11979,1052,2026-01-14 00:00:00,Completed,Apple Pay / Mir Pay
+11980,1052,2026-02-04 00:00:00,Completed,Fast Payment (SBP)
+11981,1052,2026-03-05 00:00:00,Refunded,Fast Payment (SBP)
+11982,1053,2025-11-02 00:00:00,Completed,Credit Card
+11983,1054,2025-04-23 00:00:00,Completed,Fast Payment (SBP)
+11984,1054,2025-04-30 00:00:00,Completed,Apple Pay / Mir Pay
+11985,1054,2025-05-25 00:00:00,Completed,Cash on Delivery
+11986,1055,2025-05-22 00:00:00,Completed,Apple Pay / Mir Pay
+11987,1056,2026-05-06 00:00:00,Completed,Fast Payment (SBP)
+11988,1056,2026-06-01 00:00:00,Completed,Cash on Delivery
+11989,1056,2026-07-15 00:00:00,Completed,Cash on Delivery
+11990,1057,2025-09-18 00:00:00,Completed,Cash on Delivery
+11991,1058,2026-05-13 00:00:00,Completed,Apple Pay / Mir Pay
+11992,1058,2026-05-30 00:00:00,Completed,Credit Card
+11993,1058,2026-06-20 00:00:00,Completed,Cash on Delivery
+11994,1058,2026-07-03 00:00:00,Completed,Fast Payment (SBP)
+11995,1058,2026-08-11 00:00:00,Refunded,Cash on Delivery
+11996,1058,2026-08-27 00:00:00,Completed,Fast Payment (SBP)
+11997,1058,2026-09-05 00:00:00,Completed,Apple Pay / Mir Pay
+11998,1060,2026-06-08 00:00:00,Completed,Cash on Delivery
+11999,1060,2026-07-06 00:00:00,Completed,Fast Payment (SBP)
+12000,1060,2026-07-24 00:00:00,Completed,Cash on Delivery
+12001,1062,2025-05-20 00:00:00,Completed,Apple Pay / Mir Pay
+12002,1062,2025-06-07 00:00:00,Completed,Credit Card
+12003,1063,2026-01-07 00:00:00,Refunded,Credit Card
+12004,1064,2025-02-27 00:00:00,Completed,Credit Card
+12005,1064,2025-03-29 00:00:00,Completed,Fast Payment (SBP)
+12006,1064,2025-04-09 00:00:00,Completed,Cash on Delivery
+12007,1064,2025-05-14 00:00:00,Completed,Credit Card
+12008,1064,2025-06-19 00:00:00,Completed,Apple Pay / Mir Pay
+12009,1066,2025-04-18 00:00:00,Refunded,Credit Card
+12010,1066,2025-05-16 00:00:00,Completed,Cash on Delivery
+12011,1066,2025-06-21 00:00:00,Completed,Fast Payment (SBP)
+12012,1067,2025-12-24 00:00:00,Completed,Credit Card
+12013,1067,2026-01-30 00:00:00,Cancelled,Apple Pay / Mir Pay
+12014,1067,2026-02-15 00:00:00,Completed,Fast Payment (SBP)
+12015,1067,2026-03-02 00:00:00,Completed,Apple Pay / Mir Pay
+12016,1067,2026-03-03 00:00:00,Cancelled,Apple Pay / Mir Pay
+12017,1067,2026-04-14 00:00:00,Completed,Fast Payment (SBP)
+12018,1067,2026-05-22 00:00:00,Completed,Fast Payment (SBP)
+12019,1067,2026-06-10 00:00:00,Completed,Cash on Delivery
+12020,1067,2026-07-22 00:00:00,Completed,Apple Pay / Mir Pay
+12021,1067,2026-08-30 00:00:00,Completed,Apple Pay / Mir Pay
+12022,1067,2026-09-24 00:00:00,Completed,Fast Payment (SBP)
+12023,1069,2025-11-28 00:00:00,Completed,Credit Card
+12024,1070,2026-04-19 00:00:00,Completed,Apple Pay / Mir Pay
+12025,1070,2026-06-03 00:00:00,Completed,Cash on Delivery
+12026,1070,2026-07-11 00:00:00,Completed,Fast Payment (SBP)
+12027,1070,2026-07-22 00:00:00,Completed,Credit Card
+12028,1070,2026-07-23 00:00:00,Completed,Fast Payment (SBP)
+12029,1071,2025-04-21 00:00:00,Completed,Cash on Delivery
+12030,1072,2025-08-15 00:00:00,Cancelled,Fast Payment (SBP)
+12031,1073,2026-02-12 00:00:00,Completed,Fast Payment (SBP)
+12032,1073,2026-03-15 00:00:00,Completed,Cash on Delivery
+12033,1074,2025-11-13 00:00:00,Completed,Cash on Delivery
+12034,1074,2025-11-24 00:00:00,Completed,Fast Payment (SBP)
+12035,1074,2026-01-08 00:00:00,Completed,Cash on Delivery
+12036,1074,2026-01-26 00:00:00,Completed,Apple Pay / Mir Pay
+12037,1074,2026-02-19 00:00:00,Completed,Cash on Delivery
+12038,1074,2026-02-20 00:00:00,Completed,Apple Pay / Mir Pay
+12039,1074,2026-03-21 00:00:00,Completed,Cash on Delivery
+12040,1074,2026-03-27 00:00:00,Completed,Apple Pay / Mir Pay
+12041,1077,2025-10-11 00:00:00,Completed,Cash on Delivery
+12042,1077,2025-11-02 00:00:00,Completed,Credit Card
+12043,1078,2026-01-11 00:00:00,Completed,Apple Pay / Mir Pay
+12044,1078,2026-02-10 00:00:00,Completed,Apple Pay / Mir Pay
+12045,1079,2025-11-05 00:00:00,Completed,Cash on Delivery
+12046,1079,2025-11-09 00:00:00,Completed,Cash on Delivery
+12047,1079,2025-11-21 00:00:00,Completed,Cash on Delivery
+12048,1079,2026-01-04 00:00:00,Completed,Apple Pay / Mir Pay
+12049,1079,2026-02-01 00:00:00,Completed,Apple Pay / Mir Pay
+12050,1079,2026-03-03 00:00:00,Completed,Cash on Delivery
+12051,1079,2026-03-31 00:00:00,Completed,Apple Pay / Mir Pay
+12052,1079,2026-04-05 00:00:00,Completed,Fast Payment (SBP)
+12053,1080,2025-06-24 00:00:00,Completed,Apple Pay / Mir Pay
+12054,1080,2025-07-13 00:00:00,Completed,Cash on Delivery
+12055,1080,2025-07-24 00:00:00,Completed,Fast Payment (SBP)
+12056,1081,2025-10-26 00:00:00,Completed,Credit Card
+12057,1081,2025-11-10 00:00:00,Completed,Apple Pay / Mir Pay
+12058,1081,2025-11-22 00:00:00,Completed,Cash on Delivery
+12059,1082,2025-07-09 00:00:00,Completed,Fast Payment (SBP)
+12060,1083,2026-02-11 00:00:00,Completed,Credit Card
+12061,1083,2026-03-27 00:00:00,Completed,Fast Payment (SBP)
+12062,1084,2025-12-29 00:00:00,Cancelled,Fast Payment (SBP)
+12063,1086,2025-06-17 00:00:00,Cancelled,Fast Payment (SBP)
+12064,1086,2025-07-11 00:00:00,Completed,Credit Card
+12065,1086,2025-07-14 00:00:00,Refunded,Apple Pay / Mir Pay
+12066,1088,2025-06-30 00:00:00,Completed,Cash on Delivery
+12067,1090,2026-01-13 00:00:00,Completed,Cash on Delivery
+12068,1090,2026-01-27 00:00:00,Completed,Cash on Delivery
+12069,1090,2026-03-04 00:00:00,Refunded,Apple Pay / Mir Pay
+12070,1090,2026-03-10 00:00:00,Completed,Cash on Delivery
+12071,1090,2026-04-12 00:00:00,Completed,Credit Card
+12072,1091,2025-04-05 00:00:00,Completed,Cash on Delivery
+12073,1092,2025-11-06 00:00:00,Completed,Cash on Delivery
+12074,1093,2025-04-22 00:00:00,Completed,Credit Card
+12075,1093,2025-06-01 00:00:00,Completed,Apple Pay / Mir Pay
+12076,1093,2025-06-15 00:00:00,Completed,Apple Pay / Mir Pay
+12077,1094,2026-02-24 00:00:00,Completed,Apple Pay / Mir Pay
+12078,1095,2026-05-07 00:00:00,Completed,Apple Pay / Mir Pay
+12079,1095,2026-06-05 00:00:00,Completed,Cash on Delivery
+12080,1096,2026-03-29 00:00:00,Completed,Fast Payment (SBP)
+12081,1097,2025-02-18 00:00:00,Completed,Apple Pay / Mir Pay
+12082,1097,2025-02-19 00:00:00,Completed,Cash on Delivery
+12083,1098,2025-12-31 00:00:00,Completed,Credit Card
+12084,1098,2026-01-08 00:00:00,Completed,Apple Pay / Mir Pay
+12085,1098,2026-01-22 00:00:00,Completed,Credit Card
+12086,1098,2026-02-01 00:00:00,Completed,Cash on Delivery
+12087,1098,2026-03-16 00:00:00,Completed,Cash on Delivery
+12088,1099,2025-10-01 00:00:00,Completed,Cash on Delivery
+12089,1099,2025-11-14 00:00:00,Completed,Cash on Delivery
+12090,1099,2025-11-30 00:00:00,Completed,Cash on Delivery
+12091,1099,2025-12-13 00:00:00,Completed,Fast Payment (SBP)
+12092,1099,2026-01-07 00:00:00,Completed,Apple Pay / Mir Pay
+12093,1099,2026-01-19 00:00:00,Completed,Fast Payment (SBP)
+12094,1099,2026-01-21 00:00:00,Completed,Apple Pay / Mir Pay
+12095,1099,2026-03-04 00:00:00,Completed,Credit Card
+12096,1101,2025-05-06 00:00:00,Completed,Fast Payment (SBP)
+12097,1101,2025-06-20 00:00:00,Completed,Cash on Delivery
+12098,1101,2025-07-23 00:00:00,Completed,Credit Card
+12099,1102,2026-01-05 00:00:00,Completed,Cash on Delivery
+12100,1103,2026-02-09 00:00:00,Completed,Cash on Delivery
+12101,1104,2026-04-22 00:00:00,Completed,Apple Pay / Mir Pay
+12102,1104,2026-05-31 00:00:00,Completed,Apple Pay / Mir Pay
+12103,1106,2026-04-22 00:00:00,Cancelled,Cash on Delivery
+12104,1107,2025-11-19 00:00:00,Completed,Apple Pay / Mir Pay
+12105,1107,2025-12-15 00:00:00,Completed,Cash on Delivery
+12106,1107,2025-12-31 00:00:00,Completed,Apple Pay / Mir Pay
+12107,1107,2026-01-07 00:00:00,Completed,Apple Pay / Mir Pay
+12108,1107,2026-02-02 00:00:00,Completed,Credit Card
+12109,1108,2025-12-12 00:00:00,Refunded,Cash on Delivery
+12110,1109,2025-06-20 00:00:00,Completed,Apple Pay / Mir Pay
+12111,1109,2025-06-24 00:00:00,Completed,Apple Pay / Mir Pay
+12112,1110,2025-06-16 00:00:00,Completed,Credit Card
+12113,1110,2025-07-21 00:00:00,Refunded,Credit Card
+12114,1110,2025-08-06 00:00:00,Completed,Credit Card
+12115,1110,2025-09-03 00:00:00,Completed,Cash on Delivery
+12116,1110,2025-09-23 00:00:00,Completed,Fast Payment (SBP)
+12117,1110,2025-10-08 00:00:00,Cancelled,Apple Pay / Mir Pay
+12118,1110,2025-10-15 00:00:00,Completed,Cash on Delivery
+12119,1110,2025-11-16 00:00:00,Cancelled,Fast Payment (SBP)
+12120,1110,2025-12-29 00:00:00,Completed,Credit Card
+12121,1110,2026-02-06 00:00:00,Completed,Apple Pay / Mir Pay
+12122,1110,2026-02-19 00:00:00,Completed,Apple Pay / Mir Pay
+12123,1110,2026-03-09 00:00:00,Completed,Credit Card
+12124,1111,2025-07-31 00:00:00,Cancelled,Credit Card
+12125,1111,2025-09-10 00:00:00,Completed,Fast Payment (SBP)
+12126,1111,2025-10-15 00:00:00,Completed,Credit Card
+12127,1113,2026-03-24 00:00:00,Completed,Credit Card
+12128,1113,2026-04-14 00:00:00,Refunded,Cash on Delivery
+12129,1113,2026-04-30 00:00:00,Completed,Credit Card
+12130,1114,2025-02-26 00:00:00,Refunded,Credit Card
+12131,1114,2025-04-06 00:00:00,Refunded,Apple Pay / Mir Pay
+12132,1115,2025-07-13 00:00:00,Completed,Credit Card
+12133,1115,2025-08-18 00:00:00,Completed,Fast Payment (SBP)
+12134,1117,2025-10-22 00:00:00,Cancelled,Cash on Delivery
+12135,1117,2025-11-05 00:00:00,Completed,Fast Payment (SBP)
+12136,1118,2025-11-17 00:00:00,Completed,Credit Card
+12137,1119,2025-11-02 00:00:00,Cancelled,Credit Card
+12138,1119,2025-11-08 00:00:00,Completed,Apple Pay / Mir Pay
+12139,1120,2026-04-29 00:00:00,Completed,Cash on Delivery
+12140,1120,2026-05-02 00:00:00,Completed,Cash on Delivery
+12141,1121,2025-02-04 00:00:00,Completed,Fast Payment (SBP)
+12142,1121,2025-03-11 00:00:00,Completed,Apple Pay / Mir Pay
+12143,1122,2025-10-21 00:00:00,Completed,Cash on Delivery
+12144,1123,2026-03-27 00:00:00,Completed,Credit Card
+12145,1124,2026-02-02 00:00:00,Completed,Cash on Delivery
+12146,1125,2026-01-12 00:00:00,Completed,Credit Card
+12147,1126,2025-10-08 00:00:00,Completed,Credit Card
+12148,1128,2025-05-27 00:00:00,Completed,Apple Pay / Mir Pay
+12149,1129,2026-04-07 00:00:00,Completed,Fast Payment (SBP)
+12150,1130,2026-01-31 00:00:00,Completed,Fast Payment (SBP)
+12151,1130,2026-02-26 00:00:00,Completed,Cash on Delivery
+12152,1130,2026-03-17 00:00:00,Completed,Fast Payment (SBP)
+12153,1131,2025-03-04 00:00:00,Refunded,Apple Pay / Mir Pay
+12154,1133,2025-11-25 00:00:00,Completed,Fast Payment (SBP)
+12155,1134,2026-01-01 00:00:00,Cancelled,Apple Pay / Mir Pay
+12156,1134,2026-01-02 00:00:00,Completed,Cash on Delivery
+12157,1134,2026-02-06 00:00:00,Completed,Cash on Delivery
+12158,1135,2025-06-09 00:00:00,Completed,Apple Pay / Mir Pay
+12159,1135,2025-06-11 00:00:00,Completed,Apple Pay / Mir Pay
+12160,1135,2025-07-02 00:00:00,Completed,Fast Payment (SBP)
+12161,1137,2025-06-26 00:00:00,Completed,Fast Payment (SBP)
+12162,1138,2025-03-04 00:00:00,Completed,Fast Payment (SBP)
+12163,1138,2025-04-15 00:00:00,Refunded,Cash on Delivery
+12164,1138,2025-05-23 00:00:00,Completed,Fast Payment (SBP)
+12165,1138,2025-06-13 00:00:00,Completed,Cash on Delivery
+12166,1138,2025-06-14 00:00:00,Completed,Cash on Delivery
+12167,1138,2025-07-15 00:00:00,Completed,Credit Card
+12168,1138,2025-08-21 00:00:00,Completed,Credit Card
+12169,1138,2025-10-05 00:00:00,Completed,Cash on Delivery
+12170,1139,2025-02-28 00:00:00,Completed,Apple Pay / Mir Pay
+12171,1140,2025-09-26 00:00:00,Completed,Fast Payment (SBP)
+12172,1141,2025-03-14 00:00:00,Completed,Fast Payment (SBP)
+12173,1141,2025-03-31 00:00:00,Completed,Credit Card
+12174,1141,2025-05-04 00:00:00,Completed,Apple Pay / Mir Pay
+12175,1141,2025-06-12 00:00:00,Completed,Apple Pay / Mir Pay
+12176,1141,2025-07-07 00:00:00,Completed,Cash on Delivery
+12177,1143,2026-03-28 00:00:00,Completed,Credit Card
+12178,1143,2026-04-25 00:00:00,Cancelled,Apple Pay / Mir Pay
+12179,1144,2026-02-21 00:00:00,Cancelled,Cash on Delivery
+12180,1144,2026-03-15 00:00:00,Completed,Apple Pay / Mir Pay
+12181,1145,2026-01-12 00:00:00,Completed,Apple Pay / Mir Pay
+12182,1145,2026-02-05 00:00:00,Completed,Credit Card
+12183,1147,2025-03-11 00:00:00,Completed,Cash on Delivery
+12184,1148,2025-08-25 00:00:00,Refunded,Cash on Delivery
+12185,1149,2025-07-06 00:00:00,Completed,Fast Payment (SBP)
+12186,1149,2025-08-03 00:00:00,Completed,Apple Pay / Mir Pay
+12187,1150,2026-05-10 00:00:00,Completed,Apple Pay / Mir Pay
+12188,1150,2026-06-01 00:00:00,Completed,Fast Payment (SBP)
+12189,1150,2026-06-13 00:00:00,Completed,Cash on Delivery
+12190,1150,2026-07-15 00:00:00,Completed,Apple Pay / Mir Pay
+12191,1150,2026-07-20 00:00:00,Completed,Apple Pay / Mir Pay
+12192,1151,2026-02-07 00:00:00,Completed,Credit Card
+12193,1151,2026-03-24 00:00:00,Completed,Fast Payment (SBP)
+12194,1151,2026-05-02 00:00:00,Completed,Fast Payment (SBP)
+12195,1151,2026-06-11 00:00:00,Completed,Cash on Delivery
+12196,1151,2026-07-21 00:00:00,Completed,Cash on Delivery
+12197,1151,2026-08-25 00:00:00,Completed,Apple Pay / Mir Pay
+12198,1151,2026-09-01 00:00:00,Completed,Fast Payment (SBP)
+12199,1151,2026-09-22 00:00:00,Completed,Fast Payment (SBP)
+12200,1152,2025-09-28 00:00:00,Completed,Cash on Delivery
+12201,1153,2025-01-28 00:00:00,Completed,Apple Pay / Mir Pay
+12202,1154,2025-05-09 00:00:00,Refunded,Cash on Delivery
+12203,1155,2025-12-23 00:00:00,Completed,Apple Pay / Mir Pay
+12204,1155,2026-01-10 00:00:00,Completed,Apple Pay / Mir Pay
+12205,1155,2026-02-24 00:00:00,Completed,Credit Card
+12206,1156,2025-11-13 00:00:00,Completed,Apple Pay / Mir Pay
+12207,1156,2025-12-24 00:00:00,Completed,Cash on Delivery
+12208,1156,2026-01-29 00:00:00,Completed,Apple Pay / Mir Pay
+12209,1157,2025-01-15 00:00:00,Completed,Fast Payment (SBP)
+12210,1158,2025-09-17 00:00:00,Completed,Apple Pay / Mir Pay
+12211,1158,2025-09-18 00:00:00,Completed,Fast Payment (SBP)
+12212,1159,2026-05-13 00:00:00,Completed,Apple Pay / Mir Pay
+12213,1160,2025-02-11 00:00:00,Completed,Apple Pay / Mir Pay
+12214,1161,2026-05-17 00:00:00,Completed,Fast Payment (SBP)
+12215,1162,2025-07-31 00:00:00,Completed,Fast Payment (SBP)
+12216,1162,2025-08-11 00:00:00,Completed,Apple Pay / Mir Pay
+12217,1162,2025-09-16 00:00:00,Completed,Fast Payment (SBP)
+12218,1163,2025-12-30 00:00:00,Completed,Cash on Delivery
+12219,1163,2026-02-06 00:00:00,Completed,Credit Card
+12220,1163,2026-03-08 00:00:00,Completed,Apple Pay / Mir Pay
+12221,1163,2026-03-30 00:00:00,Completed,Cash on Delivery
+12222,1163,2026-04-09 00:00:00,Completed,Cash on Delivery
+12223,1167,2025-07-08 00:00:00,Completed,Cash on Delivery
+12224,1168,2025-10-02 00:00:00,Completed,Fast Payment (SBP)
+12225,1168,2025-10-29 00:00:00,Completed,Fast Payment (SBP)
+12226,1169,2025-08-29 00:00:00,Completed,Cash on Delivery
+12227,1170,2026-01-01 00:00:00,Completed,Fast Payment (SBP)
+12228,1170,2026-01-12 00:00:00,Completed,Apple Pay / Mir Pay
+12229,1171,2025-11-21 00:00:00,Completed,Credit Card
+12230,1173,2025-10-16 00:00:00,Completed,Fast Payment (SBP)
+12231,1173,2025-11-19 00:00:00,Completed,Credit Card
+12232,1173,2025-12-31 00:00:00,Completed,Credit Card
+12233,1173,2026-02-05 00:00:00,Completed,Apple Pay / Mir Pay
+12234,1173,2026-03-20 00:00:00,Completed,Cash on Delivery
+12235,1174,2026-04-28 00:00:00,Cancelled,Apple Pay / Mir Pay
+12236,1174,2026-05-27 00:00:00,Completed,Credit Card
+12237,1174,2026-06-25 00:00:00,Completed,Credit Card
+12238,1175,2025-08-02 00:00:00,Completed,Fast Payment (SBP)
+12239,1175,2025-09-06 00:00:00,Completed,Credit Card
+12240,1176,2025-07-28 00:00:00,Completed,Apple Pay / Mir Pay
+12241,1176,2025-09-05 00:00:00,Completed,Credit Card
+12242,1177,2026-04-24 00:00:00,Completed,Fast Payment (SBP)
+12243,1178,2026-03-28 00:00:00,Completed,Credit Card
+12244,1178,2026-04-18 00:00:00,Completed,Cash on Delivery
+12245,1178,2026-05-26 00:00:00,Refunded,Fast Payment (SBP)
+12246,1178,2026-07-08 00:00:00,Completed,Credit Card
+12247,1178,2026-07-11 00:00:00,Completed,Credit Card
+12248,1178,2026-08-22 00:00:00,Completed,Apple Pay / Mir Pay
+12249,1178,2026-08-27 00:00:00,Completed,Fast Payment (SBP)
+12250,1178,2026-08-29 00:00:00,Refunded,Apple Pay / Mir Pay
+12251,1179,2026-02-05 00:00:00,Completed,Fast Payment (SBP)
+12252,1180,2025-04-02 00:00:00,Completed,Credit Card
+12253,1181,2025-05-22 00:00:00,Completed,Credit Card
+12254,1181,2025-05-29 00:00:00,Completed,Fast Payment (SBP)
+12255,1181,2025-07-04 00:00:00,Completed,Cash on Delivery
+12256,1181,2025-08-08 00:00:00,Completed,Apple Pay / Mir Pay
+12257,1181,2025-09-04 00:00:00,Completed,Cash on Delivery
+12258,1182,2026-02-01 00:00:00,Completed,Fast Payment (SBP)
+12259,1184,2025-05-17 00:00:00,Completed,Credit Card
+12260,1184,2025-06-22 00:00:00,Completed,Cash on Delivery
+12261,1185,2026-01-22 00:00:00,Completed,Fast Payment (SBP)
+12262,1187,2025-11-25 00:00:00,Completed,Apple Pay / Mir Pay
+12263,1188,2026-03-14 00:00:00,Completed,Cash on Delivery
+12264,1188,2026-03-28 00:00:00,Completed,Fast Payment (SBP)
+12265,1188,2026-05-11 00:00:00,Completed,Fast Payment (SBP)
+12266,1188,2026-06-02 00:00:00,Completed,Apple Pay / Mir Pay
+12267,1188,2026-07-03 00:00:00,Completed,Apple Pay / Mir Pay
+12268,1189,2025-07-23 00:00:00,Completed,Cash on Delivery
+12269,1191,2025-05-31 00:00:00,Completed,Cash on Delivery
+12270,1191,2025-06-21 00:00:00,Completed,Cash on Delivery
+12271,1193,2026-03-13 00:00:00,Completed,Credit Card
+12272,1193,2026-03-19 00:00:00,Completed,Credit Card
+12273,1194,2025-04-28 00:00:00,Completed,Credit Card
+12274,1195,2025-02-01 00:00:00,Completed,Cash on Delivery
+12275,1196,2026-05-28 00:00:00,Completed,Credit Card
+12276,1196,2026-05-29 00:00:00,Completed,Credit Card
+12277,1196,2026-06-26 00:00:00,Completed,Fast Payment (SBP)
+12278,1197,2026-03-24 00:00:00,Completed,Fast Payment (SBP)
+12279,1199,2025-03-21 00:00:00,Refunded,Apple Pay / Mir Pay
+12280,1199,2025-04-11 00:00:00,Completed,Apple Pay / Mir Pay
+12281,1199,2025-04-20 00:00:00,Completed,Credit Card
+12282,1200,2025-04-14 00:00:00,Completed,Credit Card

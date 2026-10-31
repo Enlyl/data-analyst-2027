@@ -1,0 +1,2001 @@
+user_id,company_name,industry,plan,mrr,signup_date,is_churned,churn_date,active_seats,nps_score,feature_a_usage,feature_b_usage
+1,Company_1,SaaS B2B,Professional,99.0,2025-10-25,0,,12,9,344,64
+2,Company_2,E-commerce,Professional,99.0,2025-04-20,0,,23,7,173,56
+3,Company_3,Marketing Agency,Starter,29.0,2025-02-06,1,2025-10-05,18,9,246,41
+4,Company_4,Healthtech,Professional,99.0,2025-05-03,0,,3,9,160,27
+5,Company_5,Edtech,Professional,99.0,2025-02-26,0,,22,6,141,50
+6,Company_6,E-commerce,Starter,29.0,2026-02-05,0,,24,8,8,59
+7,Company_7,Fintech,Starter,29.0,2025-04-21,0,,12,8,9,33
+8,Company_8,E-commerce,Professional,99.0,2025-10-16,0,,6,10,395,19
+9,Company_9,Edtech,Professional,99.0,2025-07-27,0,,21,9,90,63
+10,Company_10,Marketing Agency,Professional,99.0,2026-03-09,0,,6,8,354,0
+11,Company_11,SaaS B2B,Starter,29.0,2025-02-13,0,,23,6,434,15
+12,Company_12,Marketing Agency,Professional,99.0,2025-12-13,0,,15,7,76,22
+13,Company_13,SaaS B2B,Professional,99.0,2026-04-19,0,,15,3,500,17
+14,Company_14,Edtech,Enterprise,299.0,2025-02-11,0,,13,10,285,70
+15,Company_15,Healthtech,Enterprise,299.0,2025-12-19,0,,9,8,172,11
+16,Company_16,Healthtech,Enterprise,299.0,2025-05-24,0,,14,10,414,40
+17,Company_17,Healthtech,Starter,29.0,2025-05-06,0,,1,10,207,78
+18,Company_18,Healthtech,Professional,99.0,2025-08-23,1,2026-02-25,9,9,105,70
+19,Company_19,Healthtech,Starter,29.0,2025-10-31,0,,10,9,191,51
+20,Company_20,SaaS B2B,Professional,99.0,2025-07-25,0,,3,10,345,15
+21,Company_21,E-commerce,Starter,29.0,2025-03-16,0,,22,10,348,46
+22,Company_22,Healthtech,Professional,99.0,2025-09-20,0,,15,9,167,38
+23,Company_23,E-commerce,Starter,29.0,2025-12-13,0,,7,9,157,5
+24,Company_24,Logistics,Starter,29.0,2025-05-06,0,,15,9,31,34
+25,Company_25,Marketing Agency,Professional,99.0,2025-10-11,0,,15,3,321,7
+26,Company_26,Edtech,Starter,29.0,2025-01-07,0,,25,8,78,62
+27,Company_27,Fintech,Professional,99.0,2026-01-18,0,,23,6,314,15
+28,Company_28,E-commerce,Starter,29.0,2025-12-20,0,,11,9,42,18
+29,Company_29,Edtech,Professional,99.0,2025-08-29,0,,1,10,115,68
+30,Company_30,Logistics,Enterprise,299.0,2025-02-19,0,,6,10,474,75
+31,Company_31,E-commerce,Professional,99.0,2026-02-05,0,,5,10,101,66
+32,Company_32,Healthtech,Professional,99.0,2026-01-02,0,,4,9,483,1
+33,Company_33,Healthtech,Enterprise,299.0,2025-06-20,0,,19,8,469,16
+34,Company_34,Edtech,Starter,29.0,2025-02-26,1,2025-04-27,13,7,363,7
+35,Company_35,Fintech,Starter,29.0,2025-03-01,0,,10,10,89,49
+36,Company_36,Logistics,Starter,29.0,2025-12-02,1,2026-06-04,2,10,204,30
+37,Company_37,SaaS B2B,Starter,29.0,2025-08-29,0,,6,9,254,24
+38,Company_38,Edtech,Starter,29.0,2026-03-29,1,2026-07-18,25,10,164,67
+39,Company_39,Healthtech,Starter,29.0,2025-05-16,0,,9,9,344,78
+40,Company_40,E-commerce,Professional,99.0,2025-07-09,0,,20,5,140,7
+41,Company_41,Edtech,Professional,99.0,2025-08-21,1,2025-09-14,16,6,27,49
+42,Company_42,Healthtech,Starter,29.0,2025-01-23,1,2025-08-19,16,3,432,13
+43,Company_43,Logistics,Professional,99.0,2026-04-15,0,,24,8,143,47
+44,Company_44,Edtech,Professional,99.0,2026-02-25,0,,13,10,89,66
+45,Company_45,E-commerce,Starter,29.0,2025-12-06,0,,17,10,276,13
+46,Company_46,E-commerce,Professional,99.0,2026-01-01,0,,10,9,195,79
+47,Company_47,Healthtech,Starter,29.0,2025-05-28,0,,25,10,231,8
+48,Company_48,Fintech,Starter,29.0,2025-07-18,0,,18,10,351,58
+49,Company_49,Healthtech,Professional,99.0,2025-05-20,0,,25,10,406,29
+50,Company_50,SaaS B2B,Professional,99.0,2026-03-20,0,,17,7,218,53
+51,Company_51,Edtech,Starter,29.0,2026-01-26,0,,24,7,57,1
+52,Company_52,SaaS B2B,Starter,29.0,2025-03-29,0,,5,9,152,67
+53,Company_53,Healthtech,Starter,29.0,2025-10-18,0,,18,9,358,11
+54,Company_54,Marketing Agency,Starter,29.0,2025-04-09,0,,16,10,80,61
+55,Company_55,Healthtech,Enterprise,299.0,2025-09-13,0,,6,9,251,7
+56,Company_56,SaaS B2B,Starter,29.0,2025-03-29,0,,9,10,7,0
+57,Company_57,Logistics,Starter,29.0,2025-06-14,0,,6,3,447,52
+58,Company_58,Healthtech,Professional,99.0,2025-05-06,0,,25,6,176,44
+59,Company_59,Healthtech,Professional,99.0,2026-03-30,0,,19,9,495,36
+60,Company_60,Healthtech,Enterprise,299.0,2025-09-22,0,,22,6,370,1
+61,Company_61,Marketing Agency,Starter,29.0,2025-07-13,0,,6,10,233,63
+62,Company_62,E-commerce,Starter,29.0,2026-04-19,1,2026-06-13,22,7,207,1
+63,Company_63,Fintech,Starter,29.0,2025-06-05,1,2026-01-12,23,8,319,10
+64,Company_64,SaaS B2B,Starter,29.0,2025-12-18,0,,22,7,405,0
+65,Company_65,Logistics,Enterprise,299.0,2025-03-30,0,,17,10,449,67
+66,Company_66,Edtech,Professional,99.0,2025-09-05,0,,6,10,243,30
+67,Company_67,E-commerce,Professional,99.0,2025-06-08,0,,22,9,364,4
+68,Company_68,Marketing Agency,Professional,99.0,2025-12-23,0,,3,9,297,41
+69,Company_69,E-commerce,Starter,29.0,2025-02-05,0,,13,10,145,27
+70,Company_70,Healthtech,Professional,99.0,2025-03-31,0,,17,9,142,74
+71,Company_71,Logistics,Professional,99.0,2025-02-22,0,,20,10,98,78
+72,Company_72,Edtech,Professional,99.0,2025-08-01,0,,19,9,79,53
+73,Company_73,Healthtech,Starter,29.0,2025-12-10,0,,14,3,17,39
+74,Company_74,Marketing Agency,Enterprise,299.0,2025-07-09,0,,11,7,43,39
+75,Company_75,Edtech,Starter,29.0,2025-02-11,0,,1,8,128,4
+76,Company_76,E-commerce,Starter,29.0,2025-09-28,0,,3,9,393,12
+77,Company_77,Logistics,Professional,99.0,2025-07-25,0,,11,8,40,73
+78,Company_78,Marketing Agency,Starter,29.0,2025-02-25,0,,24,10,106,19
+79,Company_79,SaaS B2B,Starter,29.0,2025-01-11,1,2025-03-09,6,6,308,36
+80,Company_80,Marketing Agency,Professional,99.0,2025-04-07,0,,15,10,87,36
+81,Company_81,Healthtech,Professional,99.0,2025-06-21,0,,3,7,356,78
+82,Company_82,Marketing Agency,Professional,99.0,2026-01-16,0,,24,8,183,77
+83,Company_83,Logistics,Professional,99.0,2026-01-11,0,,6,9,276,5
+84,Company_84,Fintech,Starter,29.0,2026-03-29,0,,24,9,221,22
+85,Company_85,Edtech,Professional,99.0,2025-07-14,0,,17,6,396,12
+86,Company_86,Logistics,Starter,29.0,2025-09-21,1,2026-05-28,22,8,85,32
+87,Company_87,Fintech,Starter,29.0,2025-09-27,0,,6,10,235,23
+88,Company_88,Healthtech,Professional,99.0,2025-04-13,1,2025-04-30,10,10,126,61
+89,Company_89,SaaS B2B,Starter,29.0,2025-02-12,0,,25,8,258,71
+90,Company_90,Marketing Agency,Starter,29.0,2025-08-18,0,,23,6,397,8
+91,Company_91,Marketing Agency,Starter,29.0,2025-05-05,1,2026-01-01,6,5,312,9
+92,Company_92,Fintech,Starter,29.0,2026-02-14,1,2026-04-03,5,3,371,79
+93,Company_93,Edtech,Starter,29.0,2026-02-08,0,,21,10,416,7
+94,Company_94,Fintech,Professional,99.0,2026-04-04,0,,16,9,144,14
+95,Company_95,Logistics,Starter,29.0,2026-02-02,0,,11,7,300,77
+96,Company_96,Healthtech,Enterprise,299.0,2026-01-06,0,,6,8,222,32
+97,Company_97,Healthtech,Starter,29.0,2025-12-06,0,,7,7,24,23
+98,Company_98,SaaS B2B,Starter,29.0,2025-08-17,0,,10,10,240,35
+99,Company_99,E-commerce,Starter,29.0,2025-07-01,0,,11,10,356,43
+100,Company_100,Edtech,Starter,29.0,2026-04-22,0,,8,10,391,76
+101,Company_101,E-commerce,Professional,99.0,2025-09-27,0,,6,3,497,42
+102,Company_102,Fintech,Starter,29.0,2025-05-09,0,,23,9,116,54
+103,Company_103,Marketing Agency,Professional,99.0,2025-09-23,0,,6,9,379,35
+104,Company_104,Marketing Agency,Professional,99.0,2025-03-13,0,,19,8,404,36
+105,Company_105,Logistics,Starter,29.0,2025-10-02,1,2026-03-12,5,9,373,0
+106,Company_106,Edtech,Professional,99.0,2025-04-03,1,2025-04-25,9,7,407,63
+107,Company_107,Logistics,Starter,29.0,2025-02-04,0,,14,10,494,35
+108,Company_108,SaaS B2B,Starter,29.0,2025-10-07,0,,21,6,321,43
+109,Company_109,E-commerce,Enterprise,299.0,2025-12-19,0,,22,10,458,46
+110,Company_110,Marketing Agency,Starter,29.0,2026-03-20,0,,4,10,226,61
+111,Company_111,SaaS B2B,Enterprise,299.0,2025-06-12,0,,19,9,96,41
+112,Company_112,Marketing Agency,Professional,99.0,2025-03-09,0,,4,9,319,71
+113,Company_113,SaaS B2B,Enterprise,299.0,2025-10-14,0,,18,9,395,60
+114,Company_114,Fintech,Starter,29.0,2025-05-10,0,,18,10,36,29
+115,Company_115,Healthtech,Starter,29.0,2025-07-11,0,,25,7,238,32
+116,Company_116,Edtech,Professional,99.0,2026-04-05,0,,23,9,432,59
+117,Company_117,SaaS B2B,Starter,29.0,2026-02-26,0,,13,8,83,54
+118,Company_118,Logistics,Starter,29.0,2025-05-26,0,,13,9,252,65
+119,Company_119,SaaS B2B,Professional,99.0,2026-01-21,0,,13,10,365,14
+120,Company_120,Healthtech,Starter,29.0,2025-01-04,1,2025-09-21,11,7,35,0
+121,Company_121,E-commerce,Professional,99.0,2026-01-16,1,2026-06-19,9,6,135,56
+122,Company_122,Marketing Agency,Enterprise,299.0,2025-02-07,1,2025-11-21,2,9,429,8
+123,Company_123,Marketing Agency,Starter,29.0,2026-03-06,0,,5,8,28,26
+124,Company_124,SaaS B2B,Starter,29.0,2025-11-09,0,,10,9,106,37
+125,Company_125,E-commerce,Professional,99.0,2025-08-03,0,,8,8,490,77
+126,Company_126,Edtech,Starter,29.0,2025-11-20,0,,11,6,157,70
+127,Company_127,Edtech,Starter,29.0,2026-03-05,0,,12,10,254,66
+128,Company_128,E-commerce,Starter,29.0,2025-05-14,1,2026-02-24,7,9,215,80
+129,Company_129,Marketing Agency,Starter,29.0,2025-02-06,1,2025-08-27,25,8,176,51
+130,Company_130,Fintech,Enterprise,299.0,2025-04-25,1,2025-09-02,20,3,108,27
+131,Company_131,SaaS B2B,Enterprise,299.0,2026-02-16,0,,24,9,327,28
+132,Company_132,SaaS B2B,Starter,29.0,2025-09-21,1,2026-03-02,12,9,411,24
+133,Company_133,Fintech,Professional,99.0,2025-12-03,0,,12,3,261,45
+134,Company_134,Edtech,Starter,29.0,2025-06-17,1,2025-09-12,21,9,70,28
+135,Company_135,Fintech,Professional,99.0,2025-09-20,0,,22,5,61,61
+136,Company_136,Logistics,Professional,99.0,2025-01-09,0,,13,7,276,72
+137,Company_137,Logistics,Starter,29.0,2025-11-10,1,2026-07-15,15,8,55,12
+138,Company_138,Logistics,Starter,29.0,2025-10-20,0,,12,6,100,78
+139,Company_139,Marketing Agency,Starter,29.0,2025-06-16,0,,20,7,425,75
+140,Company_140,Logistics,Professional,99.0,2025-02-23,1,2025-04-25,24,7,444,52
+141,Company_141,Logistics,Professional,99.0,2026-02-25,0,,3,10,366,15
+142,Company_142,Marketing Agency,Professional,99.0,2025-06-28,0,,4,10,286,43
+143,Company_143,Marketing Agency,Starter,29.0,2026-01-13,1,2026-02-14,25,9,14,65
+144,Company_144,Fintech,Starter,29.0,2026-01-03,0,,18,8,422,31
+145,Company_145,Logistics,Starter,29.0,2025-05-28,0,,4,7,122,13
+146,Company_146,Healthtech,Starter,29.0,2025-11-09,1,2026-04-05,5,10,285,57
+147,Company_147,Fintech,Starter,29.0,2025-01-08,0,,22,8,119,49
+148,Company_148,Edtech,Enterprise,299.0,2025-12-03,0,,12,9,474,76
+149,Company_149,Edtech,Professional,99.0,2025-07-23,0,,21,9,252,7
+150,Company_150,Healthtech,Professional,99.0,2025-08-13,1,2025-11-08,1,9,139,68
+151,Company_151,Healthtech,Starter,29.0,2025-11-08,0,,13,9,62,40
+152,Company_152,Edtech,Starter,29.0,2025-06-17,0,,22,7,325,70
+153,Company_153,Edtech,Professional,99.0,2025-08-05,0,,1,6,359,39
+154,Company_154,Logistics,Professional,99.0,2025-08-27,0,,5,10,205,69
+155,Company_155,Healthtech,Starter,29.0,2025-07-21,0,,15,10,251,14
+156,Company_156,Fintech,Starter,29.0,2026-03-22,0,,2,9,132,47
+157,Company_157,Logistics,Starter,29.0,2026-01-30,1,2026-04-12,22,9,101,56
+158,Company_158,Edtech,Professional,99.0,2025-04-15,0,,11,10,451,30
+159,Company_159,SaaS B2B,Starter,29.0,2026-03-02,0,,23,10,213,8
+160,Company_160,Marketing Agency,Starter,29.0,2026-02-18,0,,18,9,30,59
+161,Company_161,Logistics,Starter,29.0,2026-03-06,0,,21,9,282,35
+162,Company_162,E-commerce,Starter,29.0,2025-09-20,0,,17,9,491,42
+163,Company_163,Healthtech,Enterprise,299.0,2025-03-16,0,,15,7,150,63
+164,Company_164,Logistics,Professional,99.0,2026-01-05,0,,14,9,379,45
+165,Company_165,Marketing Agency,Starter,29.0,2026-01-20,0,,22,3,130,73
+166,Company_166,E-commerce,Professional,99.0,2025-07-10,0,,16,10,449,31
+167,Company_167,Marketing Agency,Starter,29.0,2026-03-29,0,,4,9,42,9
+168,Company_168,Edtech,Starter,29.0,2025-08-10,0,,23,3,356,73
+169,Company_169,Fintech,Professional,99.0,2025-07-26,0,,24,10,63,24
+170,Company_170,Logistics,Starter,29.0,2025-08-30,1,2026-05-24,18,10,25,46
+171,Company_171,Logistics,Starter,29.0,2025-08-16,0,,11,10,228,68
+172,Company_172,Edtech,Starter,29.0,2025-02-06,0,,24,10,98,13
+173,Company_173,Logistics,Starter,29.0,2025-07-23,0,,6,10,313,0
+174,Company_174,Marketing Agency,Starter,29.0,2025-04-17,0,,9,8,430,31
+175,Company_175,E-commerce,Starter,29.0,2026-04-14,0,,25,9,471,11
+176,Company_176,SaaS B2B,Starter,29.0,2025-07-01,0,,5,10,268,66
+177,Company_177,Edtech,Professional,99.0,2026-01-06,0,,11,5,346,44
+178,Company_178,Logistics,Starter,29.0,2025-10-05,0,,12,5,31,55
+179,Company_179,Edtech,Professional,99.0,2026-03-16,0,,5,10,248,78
+180,Company_180,Marketing Agency,Starter,29.0,2025-02-20,0,,24,9,343,60
+181,Company_181,Fintech,Starter,29.0,2026-03-25,0,,3,9,452,6
+182,Company_182,Logistics,Starter,29.0,2025-07-09,1,2025-10-10,19,9,496,13
+183,Company_183,E-commerce,Professional,99.0,2026-01-27,1,2026-07-03,5,10,252,29
+184,Company_184,Logistics,Starter,29.0,2025-09-11,1,2026-02-05,7,10,216,11
+185,Company_185,Fintech,Professional,99.0,2025-10-10,0,,17,7,115,34
+186,Company_186,Edtech,Starter,29.0,2025-02-18,1,2025-09-05,20,9,406,22
+187,Company_187,Logistics,Starter,29.0,2025-12-14,0,,13,10,197,24
+188,Company_188,Marketing Agency,Professional,99.0,2026-03-13,0,,23,5,160,59
+189,Company_189,Edtech,Starter,29.0,2025-06-19,0,,15,9,248,50
+190,Company_190,E-commerce,Professional,99.0,2026-01-10,0,,18,10,456,51
+191,Company_191,Edtech,Professional,99.0,2026-02-01,0,,4,9,171,29
+192,Company_192,Healthtech,Starter,29.0,2026-04-16,0,,3,10,167,41
+193,Company_193,Marketing Agency,Starter,29.0,2025-03-01,0,,8,8,130,40
+194,Company_194,Edtech,Starter,29.0,2025-12-19,1,2026-09-14,11,10,220,67
+195,Company_195,Fintech,Starter,29.0,2025-06-17,0,,10,10,492,46
+196,Company_196,Edtech,Professional,99.0,2025-02-22,0,,19,10,302,77
+197,Company_197,Logistics,Starter,29.0,2025-10-21,0,,1,9,57,9
+198,Company_198,Marketing Agency,Professional,99.0,2026-04-20,0,,6,6,334,4
+199,Company_199,SaaS B2B,Starter,29.0,2026-03-20,0,,10,10,45,54
+200,Company_200,Healthtech,Starter,29.0,2026-02-21,0,,19,9,11,39
+201,Company_201,Logistics,Professional,99.0,2026-03-02,0,,24,9,358,63
+202,Company_202,Marketing Agency,Starter,29.0,2025-01-25,0,,21,7,372,66
+203,Company_203,E-commerce,Professional,99.0,2026-01-21,0,,7,9,101,64
+204,Company_204,E-commerce,Enterprise,299.0,2026-03-03,0,,22,7,154,15
+205,Company_205,Healthtech,Starter,29.0,2025-07-13,0,,19,8,234,24
+206,Company_206,E-commerce,Starter,29.0,2025-05-15,1,2025-06-21,19,8,132,12
+207,Company_207,SaaS B2B,Professional,99.0,2025-03-30,0,,8,6,201,80
+208,Company_208,Healthtech,Starter,29.0,2025-01-28,1,2025-10-20,14,10,460,63
+209,Company_209,Marketing Agency,Starter,29.0,2025-08-17,0,,14,9,229,58
+210,Company_210,Marketing Agency,Enterprise,299.0,2025-01-12,0,,25,8,234,66
+211,Company_211,Healthtech,Starter,29.0,2025-04-20,0,,23,10,324,13
+212,Company_212,Logistics,Professional,99.0,2025-02-27,0,,18,9,341,66
+213,Company_213,E-commerce,Professional,99.0,2026-01-05,1,2026-03-27,12,8,127,52
+214,Company_214,Healthtech,Starter,29.0,2025-01-08,0,,13,10,244,18
+215,Company_215,Fintech,Starter,29.0,2026-04-24,0,,8,7,417,63
+216,Company_216,Logistics,Enterprise,299.0,2025-11-26,0,,11,9,23,73
+217,Company_217,Healthtech,Enterprise,299.0,2025-07-09,0,,24,9,40,30
+218,Company_218,Healthtech,Starter,29.0,2025-09-25,0,,21,10,475,47
+219,Company_219,E-commerce,Professional,99.0,2025-07-02,0,,11,8,445,29
+220,Company_220,Healthtech,Professional,99.0,2025-08-13,0,,21,10,183,55
+221,Company_221,Healthtech,Enterprise,299.0,2025-03-15,0,,5,6,198,10
+222,Company_222,Edtech,Professional,99.0,2025-07-24,0,,8,10,45,51
+223,Company_223,Edtech,Starter,29.0,2026-03-19,0,,2,9,210,45
+224,Company_224,Logistics,Starter,29.0,2025-01-11,0,,25,10,94,55
+225,Company_225,Healthtech,Starter,29.0,2025-12-24,1,2026-02-11,2,10,422,20
+226,Company_226,Logistics,Starter,29.0,2025-10-07,0,,16,9,74,38
+227,Company_227,E-commerce,Starter,29.0,2026-04-08,1,2026-08-18,13,9,397,19
+228,Company_228,Healthtech,Professional,99.0,2025-12-22,0,,20,8,485,53
+229,Company_229,Edtech,Enterprise,299.0,2025-10-07,0,,23,9,43,1
+230,Company_230,Healthtech,Starter,29.0,2025-04-19,1,2026-01-08,14,9,479,15
+231,Company_231,E-commerce,Starter,29.0,2026-04-20,0,,12,5,293,19
+232,Company_232,Marketing Agency,Starter,29.0,2026-03-16,0,,14,8,492,70
+233,Company_233,Fintech,Professional,99.0,2025-08-08,0,,18,6,241,32
+234,Company_234,E-commerce,Starter,29.0,2025-01-29,0,,9,9,217,43
+235,Company_235,Marketing Agency,Starter,29.0,2025-06-02,1,2026-01-18,14,9,329,78
+236,Company_236,E-commerce,Professional,99.0,2025-11-28,0,,18,10,458,64
+237,Company_237,Fintech,Professional,99.0,2025-03-14,0,,11,5,92,12
+238,Company_238,Edtech,Starter,29.0,2025-04-08,0,,18,10,368,33
+239,Company_239,SaaS B2B,Professional,99.0,2025-01-09,0,,25,9,68,48
+240,Company_240,Marketing Agency,Starter,29.0,2025-11-08,0,,3,9,370,9
+241,Company_241,Healthtech,Professional,99.0,2026-01-10,0,,20,10,305,75
+242,Company_242,Logistics,Starter,29.0,2025-04-13,0,,4,10,471,31
+243,Company_243,Fintech,Starter,29.0,2025-02-12,1,2025-10-24,5,10,198,54
+244,Company_244,Marketing Agency,Starter,29.0,2026-03-16,0,,1,9,71,10
+245,Company_245,Healthtech,Starter,29.0,2025-12-01,0,,12,9,287,23
+246,Company_246,Edtech,Professional,99.0,2026-04-13,0,,5,6,431,31
+247,Company_247,SaaS B2B,Professional,99.0,2025-05-10,1,2025-09-09,25,10,446,11
+248,Company_248,Marketing Agency,Enterprise,299.0,2025-10-16,0,,16,6,365,49
+249,Company_249,Healthtech,Starter,29.0,2025-07-17,0,,25,10,168,9
+250,Company_250,Logistics,Professional,99.0,2025-03-26,1,2025-09-23,24,9,275,40
+251,Company_251,Marketing Agency,Professional,99.0,2025-09-10,0,,1,9,499,54
+252,Company_252,SaaS B2B,Starter,29.0,2025-03-19,0,,3,9,218,42
+253,Company_253,Fintech,Starter,29.0,2025-05-26,0,,23,8,228,43
+254,Company_254,Healthtech,Starter,29.0,2025-06-19,0,,10,10,77,48
+255,Company_255,Logistics,Professional,99.0,2025-04-10,0,,24,7,412,62
+256,Company_256,Edtech,Professional,99.0,2025-03-13,0,,15,9,410,39
+257,Company_257,Healthtech,Starter,29.0,2025-08-14,1,2025-10-25,24,9,414,57
+258,Company_258,Marketing Agency,Starter,29.0,2026-04-19,0,,18,10,120,49
+259,Company_259,SaaS B2B,Starter,29.0,2026-03-17,0,,8,6,373,77
+260,Company_260,Marketing Agency,Starter,29.0,2026-03-20,0,,1,6,434,42
+261,Company_261,Marketing Agency,Enterprise,299.0,2025-11-06,0,,5,9,145,34
+262,Company_262,Edtech,Professional,99.0,2026-03-22,0,,13,3,120,60
+263,Company_263,E-commerce,Starter,29.0,2025-08-13,0,,15,7,470,1
+264,Company_264,Edtech,Professional,99.0,2026-04-13,0,,11,10,135,7
+265,Company_265,Fintech,Professional,99.0,2025-02-08,0,,8,6,330,49
+266,Company_266,SaaS B2B,Starter,29.0,2025-07-24,0,,13,6,157,54
+267,Company_267,Marketing Agency,Starter,29.0,2025-11-08,0,,8,8,246,4
+268,Company_268,Logistics,Professional,99.0,2025-10-19,0,,22,10,123,30
+269,Company_269,Logistics,Professional,99.0,2025-09-01,0,,13,9,270,33
+270,Company_270,Fintech,Starter,29.0,2025-10-21,1,2026-04-26,22,9,278,44
+271,Company_271,Edtech,Starter,29.0,2025-10-23,0,,8,9,228,75
+272,Company_272,E-commerce,Enterprise,299.0,2026-01-23,0,,18,9,46,6
+273,Company_273,Logistics,Starter,29.0,2025-02-09,1,2025-04-27,14,3,295,58
+274,Company_274,E-commerce,Starter,29.0,2025-12-13,0,,23,10,432,44
+275,Company_275,Logistics,Starter,29.0,2026-04-13,1,2026-06-20,13,9,291,55
+276,Company_276,Fintech,Professional,99.0,2025-01-26,0,,8,9,291,52
+277,Company_277,Logistics,Starter,29.0,2025-01-18,0,,12,8,227,53
+278,Company_278,Marketing Agency,Professional,99.0,2025-03-17,1,2025-11-06,16,5,368,49
+279,Company_279,Edtech,Enterprise,299.0,2025-03-23,0,,10,5,80,24
+280,Company_280,Fintech,Starter,29.0,2025-03-16,0,,23,9,128,34
+281,Company_281,Marketing Agency,Starter,29.0,2026-04-11,0,,2,9,131,9
+282,Company_282,Healthtech,Professional,99.0,2025-05-13,0,,6,9,404,9
+283,Company_283,E-commerce,Professional,99.0,2025-08-12,1,2026-02-18,3,9,458,69
+284,Company_284,Marketing Agency,Professional,99.0,2026-02-02,0,,22,9,141,43
+285,Company_285,SaaS B2B,Enterprise,299.0,2025-11-04,0,,23,10,401,71
+286,Company_286,SaaS B2B,Professional,99.0,2025-12-21,0,,3,10,255,51
+287,Company_287,Edtech,Enterprise,299.0,2026-03-27,0,,14,8,305,22
+288,Company_288,Fintech,Starter,29.0,2025-04-30,1,2025-07-10,21,10,442,37
+289,Company_289,SaaS B2B,Starter,29.0,2025-10-21,1,2025-11-17,13,10,468,68
+290,Company_290,E-commerce,Starter,29.0,2025-02-25,0,,24,10,214,5
+291,Company_291,Logistics,Professional,99.0,2025-05-14,0,,24,8,18,66
+292,Company_292,E-commerce,Enterprise,299.0,2025-10-27,0,,15,10,252,53
+293,Company_293,E-commerce,Starter,29.0,2025-05-04,1,2025-05-23,17,8,448,70
+294,Company_294,Fintech,Professional,99.0,2026-01-10,1,2026-08-07,13,10,389,71
+295,Company_295,Healthtech,Starter,29.0,2025-11-12,0,,16,10,294,31
+296,Company_296,Edtech,Starter,29.0,2026-03-06,0,,25,9,405,10
+297,Company_297,Healthtech,Starter,29.0,2026-04-25,0,,24,8,38,29
+298,Company_298,Fintech,Starter,29.0,2025-09-19,0,,4,10,447,48
+299,Company_299,Fintech,Professional,99.0,2025-01-21,0,,8,9,413,22
+300,Company_300,Edtech,Starter,29.0,2026-01-13,0,,24,8,460,35
+301,Company_301,Edtech,Starter,29.0,2025-03-11,0,,7,9,228,43
+302,Company_302,Edtech,Enterprise,299.0,2025-05-13,0,,2,9,227,31
+303,Company_303,SaaS B2B,Professional,99.0,2025-12-18,0,,8,6,177,25
+304,Company_304,Logistics,Starter,29.0,2025-05-04,1,2025-07-21,23,9,95,53
+305,Company_305,Logistics,Starter,29.0,2025-11-08,0,,20,6,14,57
+306,Company_306,SaaS B2B,Professional,99.0,2026-02-19,1,2026-04-28,4,8,394,14
+307,Company_307,Logistics,Starter,29.0,2025-11-05,0,,19,10,172,79
+308,Company_308,Edtech,Professional,99.0,2025-01-02,1,2025-04-02,22,7,203,13
+309,Company_309,E-commerce,Starter,29.0,2025-05-31,0,,11,8,234,36
+310,Company_310,Healthtech,Professional,99.0,2025-01-10,0,,23,9,446,61
+311,Company_311,E-commerce,Enterprise,299.0,2025-01-25,0,,9,10,6,33
+312,Company_312,SaaS B2B,Starter,29.0,2025-09-13,0,,7,3,357,63
+313,Company_313,Logistics,Starter,29.0,2025-02-20,1,2025-07-03,23,9,180,77
+314,Company_314,Edtech,Starter,29.0,2026-02-17,1,2026-04-23,5,3,29,34
+315,Company_315,Healthtech,Professional,99.0,2025-11-18,0,,14,10,195,72
+316,Company_316,E-commerce,Starter,29.0,2026-02-03,0,,12,6,6,70
+317,Company_317,Logistics,Starter,29.0,2026-04-17,0,,13,9,24,12
+318,Company_318,Fintech,Enterprise,299.0,2025-07-10,0,,5,10,303,10
+319,Company_319,Healthtech,Professional,99.0,2025-05-25,0,,3,7,105,42
+320,Company_320,Healthtech,Enterprise,299.0,2025-06-26,0,,1,9,7,47
+321,Company_321,Fintech,Starter,29.0,2025-07-11,0,,21,9,100,36
+322,Company_322,E-commerce,Starter,29.0,2026-01-22,0,,15,8,125,2
+323,Company_323,SaaS B2B,Professional,99.0,2025-06-19,0,,19,5,200,70
+324,Company_324,Marketing Agency,Professional,99.0,2025-09-23,0,,25,9,382,58
+325,Company_325,Healthtech,Professional,99.0,2025-09-28,0,,2,6,477,16
+326,Company_326,Fintech,Starter,29.0,2025-12-23,0,,15,9,210,58
+327,Company_327,SaaS B2B,Professional,99.0,2025-01-25,1,2025-07-24,24,8,341,62
+328,Company_328,Healthtech,Professional,99.0,2025-10-11,1,2026-05-07,15,9,6,7
+329,Company_329,Healthtech,Starter,29.0,2025-07-05,0,,19,5,436,78
+330,Company_330,Edtech,Enterprise,299.0,2025-12-27,0,,3,9,232,47
+331,Company_331,Edtech,Starter,29.0,2025-02-15,1,2025-07-25,8,10,292,61
+332,Company_332,E-commerce,Starter,29.0,2025-05-29,0,,22,9,106,30
+333,Company_333,Edtech,Starter,29.0,2025-06-10,0,,20,10,304,1
+334,Company_334,Edtech,Starter,29.0,2025-11-09,0,,5,8,352,50
+335,Company_335,Marketing Agency,Professional,99.0,2026-03-10,0,,24,10,31,37
+336,Company_336,Edtech,Professional,99.0,2025-12-02,0,,4,8,279,26
+337,Company_337,Healthtech,Starter,29.0,2025-06-03,0,,23,10,374,78
+338,Company_338,Healthtech,Professional,99.0,2025-07-23,1,2025-09-17,9,8,66,63
+339,Company_339,Marketing Agency,Starter,29.0,2025-11-16,0,,24,9,174,33
+340,Company_340,Fintech,Starter,29.0,2025-12-27,0,,25,7,333,21
+341,Company_341,Marketing Agency,Professional,99.0,2026-03-18,0,,13,8,440,53
+342,Company_342,Logistics,Professional,99.0,2025-03-28,1,2025-04-11,11,10,300,73
+343,Company_343,Logistics,Professional,99.0,2025-09-16,0,,24,10,32,1
+344,Company_344,Marketing Agency,Starter,29.0,2026-04-12,0,,11,8,212,44
+345,Company_345,Healthtech,Starter,29.0,2025-11-25,0,,7,10,350,20
+346,Company_346,Healthtech,Enterprise,299.0,2026-01-15,0,,23,7,125,13
+347,Company_347,Logistics,Enterprise,299.0,2026-02-01,0,,22,9,261,66
+348,Company_348,Logistics,Starter,29.0,2026-03-19,0,,8,5,163,13
+349,Company_349,Fintech,Starter,29.0,2025-03-21,0,,6,10,164,60
+350,Company_350,Logistics,Starter,29.0,2025-08-31,0,,11,10,461,72
+351,Company_351,E-commerce,Professional,99.0,2025-01-07,0,,2,10,149,53
+352,Company_352,Logistics,Starter,29.0,2025-04-12,0,,13,7,388,80
+353,Company_353,E-commerce,Starter,29.0,2025-10-04,0,,19,6,421,48
+354,Company_354,Healthtech,Starter,29.0,2025-09-25,0,,24,9,69,10
+355,Company_355,Marketing Agency,Starter,29.0,2025-06-09,0,,22,8,73,30
+356,Company_356,Fintech,Professional,99.0,2025-11-06,0,,20,8,261,44
+357,Company_357,Marketing Agency,Starter,29.0,2025-07-22,0,,16,9,231,2
+358,Company_358,SaaS B2B,Starter,29.0,2025-04-16,0,,21,10,153,75
+359,Company_359,Edtech,Professional,99.0,2025-08-16,1,2026-02-10,22,9,192,17
+360,Company_360,Marketing Agency,Starter,29.0,2025-04-17,0,,10,7,215,57
+361,Company_361,E-commerce,Starter,29.0,2025-12-17,0,,19,9,85,52
+362,Company_362,Healthtech,Enterprise,299.0,2025-06-22,0,,11,9,202,48
+363,Company_363,Marketing Agency,Enterprise,299.0,2025-05-08,0,,25,9,200,67
+364,Company_364,Logistics,Starter,29.0,2025-11-15,0,,12,7,29,58
+365,Company_365,Edtech,Starter,29.0,2025-10-06,0,,21,8,195,12
+366,Company_366,Fintech,Starter,29.0,2025-11-03,1,2026-05-23,11,8,259,17
+367,Company_367,SaaS B2B,Professional,99.0,2026-04-18,1,2026-07-21,14,8,71,10
+368,Company_368,SaaS B2B,Starter,29.0,2025-10-14,1,2026-03-06,8,3,37,50
+369,Company_369,E-commerce,Starter,29.0,2026-04-23,1,2026-09-09,14,10,351,69
+370,Company_370,E-commerce,Professional,99.0,2025-03-13,0,,11,10,324,65
+371,Company_371,E-commerce,Starter,29.0,2025-07-22,0,,20,8,70,60
+372,Company_372,Edtech,Starter,29.0,2025-04-19,0,,18,8,169,23
+373,Company_373,E-commerce,Starter,29.0,2025-03-12,0,,22,9,198,6
+374,Company_374,E-commerce,Enterprise,299.0,2025-05-02,0,,19,10,67,75
+375,Company_375,Healthtech,Starter,29.0,2025-08-08,1,2025-11-02,20,6,240,48
+376,Company_376,Logistics,Professional,99.0,2025-03-26,0,,24,10,131,19
+377,Company_377,Logistics,Professional,99.0,2025-09-02,0,,7,7,262,40
+378,Company_378,SaaS B2B,Starter,29.0,2025-08-02,0,,23,9,484,65
+379,Company_379,Marketing Agency,Professional,99.0,2025-05-15,0,,25,10,281,3
+380,Company_380,Fintech,Starter,29.0,2025-05-24,0,,17,9,183,70
+381,Company_381,Logistics,Starter,29.0,2025-03-21,0,,11,10,335,67
+382,Company_382,Edtech,Professional,99.0,2025-04-05,0,,17,10,120,69
+383,Company_383,Marketing Agency,Professional,99.0,2025-12-08,0,,5,10,137,46
+384,Company_384,Marketing Agency,Professional,99.0,2025-06-19,0,,22,10,56,38
+385,Company_385,Fintech,Professional,99.0,2025-12-10,0,,9,6,133,2
+386,Company_386,Fintech,Starter,29.0,2025-04-09,0,,12,10,13,75
+387,Company_387,Fintech,Professional,99.0,2025-06-04,0,,25,8,270,4
+388,Company_388,E-commerce,Professional,99.0,2026-01-21,0,,7,9,397,4
+389,Company_389,Edtech,Starter,29.0,2025-05-08,1,2025-08-26,14,9,50,46
+390,Company_390,Marketing Agency,Starter,29.0,2025-09-28,0,,15,10,267,76
+391,Company_391,Edtech,Starter,29.0,2025-03-01,1,2025-07-25,20,10,154,75
+392,Company_392,Healthtech,Starter,29.0,2025-12-29,0,,1,6,143,10
+393,Company_393,E-commerce,Professional,99.0,2026-03-24,0,,9,8,374,65
+394,Company_394,Logistics,Professional,99.0,2025-05-17,0,,7,5,130,7
+395,Company_395,Healthtech,Starter,29.0,2025-08-31,0,,21,6,100,20
+396,Company_396,Edtech,Starter,29.0,2025-11-08,0,,10,7,190,62
+397,Company_397,SaaS B2B,Starter,29.0,2025-12-17,0,,16,3,389,7
+398,Company_398,Logistics,Professional,99.0,2025-10-27,0,,25,5,409,80
+399,Company_399,Fintech,Professional,99.0,2026-01-23,0,,18,6,210,12
+400,Company_400,Fintech,Professional,99.0,2025-09-05,0,,20,8,206,50
+401,Company_401,E-commerce,Professional,99.0,2026-02-21,0,,3,10,66,29
+402,Company_402,Logistics,Enterprise,299.0,2026-01-14,0,,21,8,158,57
+403,Company_403,E-commerce,Professional,99.0,2026-01-05,0,,15,9,217,0
+404,Company_404,Edtech,Professional,99.0,2025-06-28,0,,1,9,275,51
+405,Company_405,Logistics,Professional,99.0,2026-03-16,1,2026-05-30,13,7,405,80
+406,Company_406,Fintech,Starter,29.0,2025-01-09,0,,24,6,118,4
+407,Company_407,Logistics,Starter,29.0,2026-01-05,0,,15,10,376,2
+408,Company_408,Edtech,Starter,29.0,2025-04-27,0,,5,9,209,29
+409,Company_409,Marketing Agency,Starter,29.0,2025-02-22,1,2025-09-16,10,9,172,6
+410,Company_410,Fintech,Professional,99.0,2025-02-04,1,2025-07-24,7,9,414,24
+411,Company_411,E-commerce,Starter,29.0,2025-03-22,1,2025-07-13,15,9,355,55
+412,Company_412,Logistics,Starter,29.0,2025-03-01,0,,1,10,456,53
+413,Company_413,E-commerce,Starter,29.0,2025-12-02,0,,19,6,227,57
+414,Company_414,Fintech,Starter,29.0,2026-03-13,0,,4,10,453,8
+415,Company_415,Healthtech,Professional,99.0,2025-11-22,0,,22,9,409,48
+416,Company_416,Logistics,Starter,29.0,2025-12-09,1,2026-09-11,16,10,224,5
+417,Company_417,Marketing Agency,Starter,29.0,2025-03-04,1,2025-07-12,13,10,234,18
+418,Company_418,E-commerce,Enterprise,299.0,2026-04-17,0,,14,10,399,51
+419,Company_419,Edtech,Starter,29.0,2025-02-12,0,,25,8,402,49
+420,Company_420,Edtech,Starter,29.0,2025-06-01,0,,7,6,23,60
+421,Company_421,Logistics,Starter,29.0,2025-09-19,1,2026-03-23,20,6,45,74
+422,Company_422,E-commerce,Starter,29.0,2025-12-26,0,,4,10,143,76
+423,Company_423,Marketing Agency,Professional,99.0,2025-12-31,0,,14,8,15,43
+424,Company_424,Marketing Agency,Professional,99.0,2025-12-26,0,,17,9,120,49
+425,Company_425,Marketing Agency,Starter,29.0,2025-03-10,0,,24,9,204,10
+426,Company_426,E-commerce,Professional,99.0,2025-03-24,0,,12,6,194,15
+427,Company_427,E-commerce,Starter,29.0,2026-04-05,0,,24,8,143,71
+428,Company_428,Marketing Agency,Starter,29.0,2026-03-20,0,,16,3,48,30
+429,Company_429,SaaS B2B,Starter,29.0,2025-02-11,1,2025-11-12,24,10,416,43
+430,Company_430,Fintech,Professional,99.0,2025-11-21,0,,3,7,402,19
+431,Company_431,Fintech,Starter,29.0,2025-07-24,0,,18,8,74,28
+432,Company_432,Fintech,Starter,29.0,2025-06-17,1,2025-09-30,1,10,67,38
+433,Company_433,Edtech,Professional,99.0,2025-07-25,0,,5,6,94,52
+434,Company_434,Marketing Agency,Professional,99.0,2026-03-23,0,,24,9,226,47
+435,Company_435,Marketing Agency,Starter,29.0,2025-11-29,0,,18,8,222,29
+436,Company_436,SaaS B2B,Professional,99.0,2026-03-31,0,,24,9,177,51
+437,Company_437,Logistics,Professional,99.0,2026-01-17,0,,16,10,473,22
+438,Company_438,Healthtech,Starter,29.0,2025-01-11,0,,22,10,361,54
+439,Company_439,Edtech,Professional,99.0,2025-02-26,0,,5,8,374,43
+440,Company_440,Fintech,Starter,29.0,2025-01-30,1,2025-06-17,8,6,91,53
+441,Company_441,Marketing Agency,Starter,29.0,2025-11-03,0,,4,3,47,3
+442,Company_442,Fintech,Professional,99.0,2026-03-12,0,,7,10,274,66
+443,Company_443,Logistics,Enterprise,299.0,2025-06-30,0,,21,7,385,4
+444,Company_444,Healthtech,Starter,29.0,2026-01-23,0,,12,6,329,7
+445,Company_445,Fintech,Starter,29.0,2026-01-30,1,2026-05-02,13,10,275,57
+446,Company_446,Logistics,Professional,99.0,2025-05-30,0,,8,5,491,29
+447,Company_447,E-commerce,Enterprise,299.0,2025-06-18,1,2026-02-03,18,8,189,72
+448,Company_448,E-commerce,Starter,29.0,2026-04-22,0,,23,9,364,57
+449,Company_449,Healthtech,Starter,29.0,2025-12-03,0,,13,8,396,61
+450,Company_450,Fintech,Starter,29.0,2025-07-16,0,,23,10,56,77
+451,Company_451,SaaS B2B,Professional,99.0,2026-01-22,0,,14,9,478,2
+452,Company_452,Marketing Agency,Enterprise,299.0,2025-11-16,0,,10,10,215,32
+453,Company_453,Edtech,Starter,29.0,2025-10-12,0,,23,9,228,78
+454,Company_454,Marketing Agency,Professional,99.0,2025-02-08,0,,11,9,268,38
+455,Company_455,Marketing Agency,Starter,29.0,2025-08-12,0,,23,9,130,68
+456,Company_456,Edtech,Starter,29.0,2026-01-05,0,,3,6,442,14
+457,Company_457,Logistics,Enterprise,299.0,2026-03-07,0,,11,10,487,64
+458,Company_458,SaaS B2B,Starter,29.0,2025-04-01,0,,1,9,437,50
+459,Company_459,SaaS B2B,Starter,29.0,2026-01-29,0,,11,8,471,0
+460,Company_460,E-commerce,Starter,29.0,2025-06-13,0,,25,6,484,28
+461,Company_461,E-commerce,Enterprise,299.0,2025-10-03,0,,9,9,129,57
+462,Company_462,Marketing Agency,Professional,99.0,2026-01-06,1,2026-09-11,3,9,432,26
+463,Company_463,Healthtech,Starter,29.0,2025-09-06,0,,24,6,479,13
+464,Company_464,Healthtech,Starter,29.0,2026-01-28,1,2026-02-13,3,9,299,76
+465,Company_465,Fintech,Starter,29.0,2025-06-19,1,2025-11-17,18,8,71,56
+466,Company_466,SaaS B2B,Starter,29.0,2025-06-16,0,,20,10,310,73
+467,Company_467,Edtech,Enterprise,299.0,2025-06-23,0,,9,10,472,48
+468,Company_468,SaaS B2B,Starter,29.0,2025-07-07,0,,20,8,291,79
+469,Company_469,Healthtech,Professional,99.0,2025-10-10,0,,8,10,289,41
+470,Company_470,SaaS B2B,Starter,29.0,2025-05-05,0,,22,5,495,37
+471,Company_471,Marketing Agency,Professional,99.0,2025-08-23,0,,7,6,233,28
+472,Company_472,Healthtech,Starter,29.0,2026-03-31,0,,22,5,471,3
+473,Company_473,E-commerce,Starter,29.0,2025-03-13,1,2025-06-19,24,8,374,64
+474,Company_474,SaaS B2B,Starter,29.0,2025-12-19,1,2026-08-07,15,10,280,79
+475,Company_475,Fintech,Professional,99.0,2025-08-03,0,,25,9,96,0
+476,Company_476,Healthtech,Starter,29.0,2025-09-02,0,,19,10,328,15
+477,Company_477,Edtech,Starter,29.0,2025-10-04,1,2026-03-25,1,10,421,62
+478,Company_478,SaaS B2B,Professional,99.0,2025-04-25,0,,13,9,63,48
+479,Company_479,Edtech,Professional,99.0,2026-02-11,0,,3,10,224,79
+480,Company_480,SaaS B2B,Enterprise,299.0,2025-01-06,0,,14,10,141,9
+481,Company_481,Marketing Agency,Enterprise,299.0,2026-02-13,0,,10,6,104,60
+482,Company_482,Healthtech,Starter,29.0,2025-01-28,0,,22,6,487,54
+483,Company_483,E-commerce,Starter,29.0,2025-12-09,1,2026-07-02,22,7,446,23
+484,Company_484,E-commerce,Starter,29.0,2025-07-09,0,,15,6,395,2
+485,Company_485,Edtech,Starter,29.0,2025-05-29,0,,22,8,175,36
+486,Company_486,Logistics,Starter,29.0,2025-03-02,0,,10,10,465,40
+487,Company_487,Marketing Agency,Starter,29.0,2026-01-20,0,,6,10,165,22
+488,Company_488,SaaS B2B,Starter,29.0,2025-06-30,0,,21,7,143,42
+489,Company_489,Marketing Agency,Starter,29.0,2025-08-12,0,,2,10,232,73
+490,Company_490,Logistics,Starter,29.0,2025-05-15,0,,19,8,367,62
+491,Company_491,Logistics,Starter,29.0,2025-06-19,0,,16,7,185,47
+492,Company_492,SaaS B2B,Starter,29.0,2025-02-02,0,,23,8,72,49
+493,Company_493,SaaS B2B,Enterprise,299.0,2025-12-17,0,,13,9,421,75
+494,Company_494,SaaS B2B,Starter,29.0,2025-08-25,1,2025-09-20,25,10,196,75
+495,Company_495,Logistics,Professional,99.0,2025-03-19,0,,14,9,143,46
+496,Company_496,SaaS B2B,Starter,29.0,2026-04-26,0,,21,9,168,42
+497,Company_497,Edtech,Enterprise,299.0,2026-03-22,0,,1,8,109,71
+498,Company_498,Healthtech,Starter,29.0,2025-05-24,0,,25,8,204,2
+499,Company_499,Healthtech,Professional,99.0,2025-02-27,0,,20,8,228,40
+500,Company_500,Marketing Agency,Starter,29.0,2025-04-09,0,,10,5,392,45
+501,Company_501,Marketing Agency,Enterprise,299.0,2025-02-15,0,,24,7,259,65
+502,Company_502,Logistics,Starter,29.0,2026-01-30,0,,17,9,432,72
+503,Company_503,Logistics,Starter,29.0,2025-05-03,0,,15,9,423,50
+504,Company_504,SaaS B2B,Starter,29.0,2025-01-14,0,,21,5,278,29
+505,Company_505,E-commerce,Starter,29.0,2026-01-05,0,,3,10,307,15
+506,Company_506,Marketing Agency,Professional,99.0,2025-01-25,0,,21,6,309,70
+507,Company_507,Marketing Agency,Starter,29.0,2025-06-23,0,,1,8,62,23
+508,Company_508,Fintech,Starter,29.0,2025-03-14,0,,10,5,236,63
+509,Company_509,E-commerce,Enterprise,299.0,2025-03-13,0,,15,10,204,76
+510,Company_510,Logistics,Starter,29.0,2025-11-23,1,2026-03-12,10,10,319,10
+511,Company_511,Logistics,Starter,29.0,2025-01-09,0,,1,8,436,29
+512,Company_512,Edtech,Starter,29.0,2025-02-28,0,,9,9,222,18
+513,Company_513,E-commerce,Starter,29.0,2025-02-10,0,,15,8,362,52
+514,Company_514,E-commerce,Enterprise,299.0,2025-05-30,0,,2,5,491,10
+515,Company_515,Logistics,Starter,29.0,2025-09-24,0,,14,8,187,0
+516,Company_516,Logistics,Starter,29.0,2025-08-20,0,,16,9,154,42
+517,Company_517,Healthtech,Professional,99.0,2025-11-06,0,,6,8,45,29
+518,Company_518,Fintech,Starter,29.0,2025-07-04,0,,25,9,139,78
+519,Company_519,Logistics,Starter,29.0,2025-06-03,0,,25,6,139,2
+520,Company_520,Fintech,Starter,29.0,2025-08-15,0,,4,3,39,50
+521,Company_521,Edtech,Starter,29.0,2025-08-11,1,2025-08-31,3,10,14,26
+522,Company_522,Healthtech,Professional,99.0,2025-06-29,0,,19,10,445,13
+523,Company_523,Fintech,Enterprise,299.0,2026-04-07,0,,7,10,112,6
+524,Company_524,Healthtech,Enterprise,299.0,2025-11-09,0,,13,9,49,14
+525,Company_525,Fintech,Starter,29.0,2025-01-18,0,,21,9,42,36
+526,Company_526,Healthtech,Starter,29.0,2025-01-05,0,,13,9,417,52
+527,Company_527,SaaS B2B,Enterprise,299.0,2025-11-19,0,,20,9,321,64
+528,Company_528,Healthtech,Professional,99.0,2025-06-26,0,,16,10,258,25
+529,Company_529,SaaS B2B,Starter,29.0,2025-05-06,0,,6,9,94,71
+530,Company_530,E-commerce,Starter,29.0,2025-10-16,0,,7,10,350,61
+531,Company_531,SaaS B2B,Professional,99.0,2025-06-23,0,,18,9,424,8
+532,Company_532,Edtech,Starter,29.0,2025-06-06,0,,25,9,99,16
+533,Company_533,SaaS B2B,Professional,99.0,2025-11-24,0,,17,9,245,7
+534,Company_534,Logistics,Professional,99.0,2025-08-03,0,,12,8,323,23
+535,Company_535,Logistics,Starter,29.0,2025-02-01,0,,25,9,438,64
+536,Company_536,Marketing Agency,Starter,29.0,2025-01-09,0,,23,9,257,41
+537,Company_537,Fintech,Enterprise,299.0,2026-03-15,0,,19,8,443,24
+538,Company_538,Marketing Agency,Starter,29.0,2025-11-05,0,,14,6,205,61
+539,Company_539,Fintech,Starter,29.0,2025-07-19,1,2025-12-12,2,7,124,1
+540,Company_540,Fintech,Professional,99.0,2025-10-06,0,,24,6,210,24
+541,Company_541,E-commerce,Starter,29.0,2026-02-26,0,,25,8,24,39
+542,Company_542,Fintech,Professional,99.0,2026-01-18,0,,9,9,152,39
+543,Company_543,Logistics,Starter,29.0,2025-01-24,1,2025-11-03,18,9,393,74
+544,Company_544,Healthtech,Starter,29.0,2026-03-26,0,,11,7,215,70
+545,Company_545,Edtech,Professional,99.0,2026-02-05,0,,10,9,146,65
+546,Company_546,E-commerce,Professional,99.0,2025-01-01,0,,18,6,447,10
+547,Company_547,Marketing Agency,Starter,29.0,2025-06-27,0,,22,10,109,75
+548,Company_548,Edtech,Enterprise,299.0,2026-01-22,0,,14,6,103,7
+549,Company_549,Healthtech,Starter,29.0,2026-04-03,1,2026-05-04,4,6,432,54
+550,Company_550,Logistics,Starter,29.0,2026-04-13,0,,10,10,350,25
+551,Company_551,Edtech,Starter,29.0,2025-07-29,1,2025-09-10,2,7,161,42
+552,Company_552,E-commerce,Professional,99.0,2026-02-10,1,2026-09-19,7,8,88,4
+553,Company_553,SaaS B2B,Professional,99.0,2026-02-02,0,,16,6,301,72
+554,Company_554,Healthtech,Starter,29.0,2025-03-10,0,,10,10,208,64
+555,Company_555,Marketing Agency,Starter,29.0,2025-02-04,0,,23,10,498,51
+556,Company_556,Edtech,Professional,99.0,2025-01-19,0,,16,8,252,35
+557,Company_557,E-commerce,Starter,29.0,2026-02-21,0,,19,7,307,79
+558,Company_558,Logistics,Starter,29.0,2025-07-09,0,,18,7,374,67
+559,Company_559,Healthtech,Enterprise,299.0,2025-11-22,0,,24,6,66,74
+560,Company_560,Edtech,Professional,99.0,2026-02-26,0,,10,10,462,61
+561,Company_561,E-commerce,Starter,29.0,2025-04-10,1,2025-07-07,19,5,374,23
+562,Company_562,Fintech,Starter,29.0,2026-04-03,0,,13,10,371,37
+563,Company_563,Fintech,Enterprise,299.0,2026-02-09,0,,12,6,68,12
+564,Company_564,Marketing Agency,Starter,29.0,2025-01-29,1,2025-05-24,12,10,136,17
+565,Company_565,Edtech,Starter,29.0,2026-03-15,0,,1,7,97,71
+566,Company_566,Marketing Agency,Starter,29.0,2025-08-07,0,,25,6,38,35
+567,Company_567,Marketing Agency,Starter,29.0,2025-02-07,1,2025-06-25,5,8,129,17
+568,Company_568,Edtech,Enterprise,299.0,2026-01-24,0,,23,9,345,73
+569,Company_569,E-commerce,Professional,99.0,2026-03-03,0,,17,9,129,32
+570,Company_570,Fintech,Starter,29.0,2025-07-17,1,2026-02-17,4,9,233,28
+571,Company_571,Healthtech,Starter,29.0,2025-04-14,0,,20,10,208,20
+572,Company_572,Logistics,Starter,29.0,2025-03-06,1,2025-12-08,19,9,483,80
+573,Company_573,Fintech,Starter,29.0,2025-12-13,0,,19,7,80,25
+574,Company_574,Logistics,Starter,29.0,2025-03-25,0,,7,10,268,37
+575,Company_575,Healthtech,Professional,99.0,2026-03-14,0,,5,9,385,30
+576,Company_576,Logistics,Starter,29.0,2025-05-09,0,,4,10,460,9
+577,Company_577,SaaS B2B,Professional,99.0,2025-03-16,1,2025-11-16,7,9,74,33
+578,Company_578,E-commerce,Starter,29.0,2025-07-22,0,,8,8,228,28
+579,Company_579,Healthtech,Starter,29.0,2026-03-06,0,,21,10,197,6
+580,Company_580,Fintech,Starter,29.0,2025-03-23,0,,25,9,479,11
+581,Company_581,SaaS B2B,Starter,29.0,2025-10-15,0,,4,10,393,74
+582,Company_582,Healthtech,Professional,99.0,2026-03-05,0,,25,8,38,30
+583,Company_583,Marketing Agency,Starter,29.0,2025-04-04,0,,6,7,147,39
+584,Company_584,Logistics,Starter,29.0,2026-04-01,0,,12,9,340,76
+585,Company_585,Logistics,Starter,29.0,2025-08-07,0,,25,9,135,80
+586,Company_586,Logistics,Starter,29.0,2025-05-25,0,,5,8,230,61
+587,Company_587,SaaS B2B,Starter,29.0,2025-12-04,0,,24,9,213,20
+588,Company_588,Marketing Agency,Starter,29.0,2026-01-03,0,,17,6,28,53
+589,Company_589,SaaS B2B,Professional,99.0,2025-01-18,0,,14,6,38,72
+590,Company_590,Marketing Agency,Starter,29.0,2025-02-28,1,2025-09-25,19,7,490,38
+591,Company_591,Edtech,Starter,29.0,2025-03-28,0,,14,6,32,60
+592,Company_592,Marketing Agency,Starter,29.0,2025-10-24,0,,8,10,376,52
+593,Company_593,Fintech,Starter,29.0,2025-10-14,0,,14,10,153,4
+594,Company_594,Logistics,Starter,29.0,2025-01-27,0,,19,6,105,74
+595,Company_595,Edtech,Starter,29.0,2025-11-10,0,,22,6,93,51
+596,Company_596,Edtech,Starter,29.0,2025-07-23,1,2026-05-13,13,3,179,35
+597,Company_597,Logistics,Starter,29.0,2025-09-05,0,,20,10,423,49
+598,Company_598,SaaS B2B,Starter,29.0,2025-08-11,1,2025-09-26,19,8,251,50
+599,Company_599,Edtech,Professional,99.0,2025-01-25,0,,23,6,33,45
+600,Company_600,Healthtech,Enterprise,299.0,2025-12-24,0,,9,9,399,18
+601,Company_601,Logistics,Enterprise,299.0,2026-01-20,0,,9,10,471,74
+602,Company_602,E-commerce,Starter,29.0,2025-07-18,0,,15,9,49,40
+603,Company_603,E-commerce,Starter,29.0,2025-09-24,1,2025-10-22,1,8,215,28
+604,Company_604,Healthtech,Professional,99.0,2025-06-12,0,,12,6,384,63
+605,Company_605,Logistics,Starter,29.0,2025-07-11,0,,15,9,428,29
+606,Company_606,Fintech,Starter,29.0,2025-07-21,0,,6,9,106,34
+607,Company_607,Logistics,Starter,29.0,2025-07-22,0,,14,8,467,44
+608,Company_608,Fintech,Starter,29.0,2025-09-10,0,,12,10,409,52
+609,Company_609,Healthtech,Professional,99.0,2025-10-24,0,,19,8,444,56
+610,Company_610,Healthtech,Professional,99.0,2025-11-25,1,2026-07-28,16,7,346,43
+611,Company_611,SaaS B2B,Starter,29.0,2025-08-17,0,,19,8,273,18
+612,Company_612,Marketing Agency,Starter,29.0,2025-08-26,0,,16,9,169,35
+613,Company_613,Edtech,Starter,29.0,2026-04-09,0,,6,5,280,19
+614,Company_614,Fintech,Starter,29.0,2025-10-23,1,2026-07-24,20,9,175,62
+615,Company_615,Logistics,Professional,99.0,2025-09-15,0,,24,10,491,75
+616,Company_616,Fintech,Starter,29.0,2025-03-11,0,,2,5,185,76
+617,Company_617,Logistics,Professional,99.0,2025-10-12,0,,24,9,273,24
+618,Company_618,Edtech,Enterprise,299.0,2025-08-18,0,,10,10,74,9
+619,Company_619,Healthtech,Starter,29.0,2025-07-08,1,2026-04-09,22,9,384,10
+620,Company_620,Marketing Agency,Starter,29.0,2025-07-02,0,,23,10,389,39
+621,Company_621,Fintech,Professional,99.0,2025-06-15,0,,20,9,214,54
+622,Company_622,E-commerce,Enterprise,299.0,2025-09-23,0,,5,9,391,77
+623,Company_623,Fintech,Starter,29.0,2025-05-31,1,2025-10-23,17,5,465,2
+624,Company_624,Edtech,Starter,29.0,2025-05-29,1,2025-09-05,22,7,113,59
+625,Company_625,SaaS B2B,Starter,29.0,2026-02-24,0,,9,7,245,56
+626,Company_626,Edtech,Starter,29.0,2025-12-14,0,,21,10,245,77
+627,Company_627,Logistics,Professional,99.0,2025-08-26,0,,24,9,476,56
+628,Company_628,Edtech,Professional,99.0,2025-01-16,0,,23,9,319,58
+629,Company_629,Marketing Agency,Professional,99.0,2026-03-20,0,,6,6,36,78
+630,Company_630,Edtech,Starter,29.0,2025-11-19,0,,12,7,253,31
+631,Company_631,Healthtech,Professional,99.0,2025-06-25,1,2025-11-19,8,8,282,13
+632,Company_632,Marketing Agency,Starter,29.0,2025-09-24,0,,25,10,364,48
+633,Company_633,Healthtech,Starter,29.0,2025-01-10,0,,13,10,141,30
+634,Company_634,Logistics,Starter,29.0,2025-03-19,1,2025-04-25,24,10,266,73
+635,Company_635,SaaS B2B,Starter,29.0,2025-10-26,0,,7,5,468,7
+636,Company_636,Logistics,Enterprise,299.0,2025-08-10,0,,18,8,113,47
+637,Company_637,Fintech,Professional,99.0,2025-05-19,0,,8,8,214,3
+638,Company_638,Edtech,Enterprise,299.0,2025-08-12,0,,25,10,191,28
+639,Company_639,Marketing Agency,Starter,29.0,2025-04-14,0,,8,7,499,75
+640,Company_640,E-commerce,Starter,29.0,2025-04-05,0,,11,6,240,41
+641,Company_641,Edtech,Starter,29.0,2025-01-13,0,,22,9,428,76
+642,Company_642,Marketing Agency,Starter,29.0,2025-11-24,0,,5,10,129,78
+643,Company_643,E-commerce,Starter,29.0,2025-11-13,0,,24,10,35,26
+644,Company_644,Marketing Agency,Starter,29.0,2025-08-08,0,,22,3,491,46
+645,Company_645,Fintech,Starter,29.0,2026-04-20,0,,17,6,404,0
+646,Company_646,Logistics,Professional,99.0,2025-07-23,0,,25,9,387,70
+647,Company_647,Fintech,Starter,29.0,2026-04-14,0,,18,9,101,26
+648,Company_648,Marketing Agency,Enterprise,299.0,2025-07-06,0,,9,9,471,42
+649,Company_649,E-commerce,Starter,29.0,2025-11-22,0,,22,6,401,1
+650,Company_650,Logistics,Starter,29.0,2025-08-23,0,,1,9,286,73
+651,Company_651,E-commerce,Enterprise,299.0,2025-06-16,0,,16,9,129,69
+652,Company_652,Edtech,Starter,29.0,2025-12-22,0,,20,9,405,0
+653,Company_653,Marketing Agency,Enterprise,299.0,2026-02-05,0,,5,9,439,39
+654,Company_654,Marketing Agency,Starter,29.0,2025-01-24,0,,2,10,390,77
+655,Company_655,Marketing Agency,Professional,99.0,2025-07-22,0,,12,10,301,4
+656,Company_656,Fintech,Starter,29.0,2025-09-11,0,,13,8,271,54
+657,Company_657,Logistics,Starter,29.0,2025-10-26,0,,25,3,452,49
+658,Company_658,SaaS B2B,Starter,29.0,2025-02-06,1,2025-11-06,11,10,112,62
+659,Company_659,SaaS B2B,Starter,29.0,2026-02-24,0,,3,10,97,37
+660,Company_660,Logistics,Enterprise,299.0,2025-09-11,0,,13,10,67,34
+661,Company_661,Edtech,Starter,29.0,2026-02-23,0,,7,9,339,60
+662,Company_662,Marketing Agency,Starter,29.0,2025-07-25,0,,10,8,155,40
+663,Company_663,Logistics,Starter,29.0,2025-04-12,0,,16,9,72,3
+664,Company_664,SaaS B2B,Starter,29.0,2026-04-10,0,,15,10,48,20
+665,Company_665,Logistics,Starter,29.0,2025-12-15,1,2026-02-21,10,6,380,0
+666,Company_666,Logistics,Starter,29.0,2025-11-15,0,,10,9,497,41
+667,Company_667,SaaS B2B,Enterprise,299.0,2025-11-26,0,,22,3,75,48
+668,Company_668,Marketing Agency,Professional,99.0,2025-05-20,0,,1,8,197,45
+669,Company_669,Edtech,Starter,29.0,2025-03-11,0,,7,10,310,1
+670,Company_670,Fintech,Enterprise,299.0,2025-10-02,0,,22,6,146,55
+671,Company_671,Healthtech,Professional,99.0,2025-03-06,0,,1,10,26,18
+672,Company_672,E-commerce,Starter,29.0,2025-10-17,0,,5,10,183,36
+673,Company_673,Fintech,Professional,99.0,2025-07-30,0,,4,10,66,56
+674,Company_674,E-commerce,Starter,29.0,2025-09-28,0,,21,5,436,41
+675,Company_675,Logistics,Professional,99.0,2025-08-15,0,,12,8,118,18
+676,Company_676,SaaS B2B,Professional,99.0,2025-07-02,0,,2,9,237,22
+677,Company_677,Fintech,Starter,29.0,2025-03-13,0,,9,8,135,45
+678,Company_678,Healthtech,Starter,29.0,2025-04-07,0,,13,9,490,24
+679,Company_679,SaaS B2B,Starter,29.0,2025-01-04,0,,21,10,356,68
+680,Company_680,Fintech,Professional,99.0,2025-02-20,0,,18,8,432,57
+681,Company_681,Fintech,Starter,29.0,2026-04-18,0,,20,5,328,39
+682,Company_682,Marketing Agency,Professional,99.0,2025-03-16,0,,13,7,131,41
+683,Company_683,Edtech,Starter,29.0,2026-04-02,0,,12,5,180,24
+684,Company_684,Marketing Agency,Starter,29.0,2026-04-06,0,,11,10,83,17
+685,Company_685,SaaS B2B,Starter,29.0,2025-12-12,0,,25,8,98,19
+686,Company_686,Fintech,Starter,29.0,2025-11-12,0,,15,10,385,58
+687,Company_687,Marketing Agency,Professional,99.0,2025-09-28,0,,24,10,217,66
+688,Company_688,Logistics,Starter,29.0,2026-04-22,0,,1,10,70,13
+689,Company_689,SaaS B2B,Starter,29.0,2026-03-27,0,,17,8,165,63
+690,Company_690,Fintech,Starter,29.0,2025-09-08,0,,19,10,52,77
+691,Company_691,Fintech,Starter,29.0,2025-06-15,1,2026-03-14,4,10,337,23
+692,Company_692,Healthtech,Enterprise,299.0,2025-04-07,0,,17,10,335,4
+693,Company_693,Healthtech,Enterprise,299.0,2026-04-15,0,,12,9,154,58
+694,Company_694,Fintech,Starter,29.0,2026-02-02,0,,12,5,58,49
+695,Company_695,Logistics,Starter,29.0,2025-07-09,1,2025-12-20,25,10,48,9
+696,Company_696,Edtech,Professional,99.0,2025-04-24,1,2026-01-13,2,8,230,23
+697,Company_697,Logistics,Professional,99.0,2026-04-07,0,,15,9,205,57
+698,Company_698,Healthtech,Starter,29.0,2025-12-30,0,,1,6,42,14
+699,Company_699,Edtech,Starter,29.0,2025-09-29,0,,7,8,369,39
+700,Company_700,Healthtech,Starter,29.0,2026-04-03,0,,17,8,132,72
+701,Company_701,Logistics,Professional,99.0,2025-01-06,0,,25,7,282,36
+702,Company_702,Logistics,Starter,29.0,2026-01-24,0,,8,9,75,22
+703,Company_703,E-commerce,Professional,99.0,2026-04-21,0,,25,10,421,13
+704,Company_704,Logistics,Starter,29.0,2025-12-12,1,2026-01-13,20,10,494,45
+705,Company_705,Marketing Agency,Starter,29.0,2025-08-11,0,,17,8,59,24
+706,Company_706,E-commerce,Professional,99.0,2025-04-23,0,,22,8,416,1
+707,Company_707,Edtech,Enterprise,299.0,2025-02-08,0,,10,9,274,36
+708,Company_708,Logistics,Starter,29.0,2025-07-30,0,,23,8,333,70
+709,Company_709,Edtech,Starter,29.0,2026-04-25,0,,10,7,352,42
+710,Company_710,Healthtech,Enterprise,299.0,2026-02-16,0,,6,5,252,49
+711,Company_711,Logistics,Starter,29.0,2026-02-26,0,,1,8,248,52
+712,Company_712,Healthtech,Starter,29.0,2025-04-11,0,,3,6,110,51
+713,Company_713,Marketing Agency,Starter,29.0,2025-10-17,1,2025-12-11,6,6,261,63
+714,Company_714,SaaS B2B,Starter,29.0,2025-02-16,1,2025-07-14,4,10,321,73
+715,Company_715,Fintech,Starter,29.0,2026-04-08,0,,3,9,297,40
+716,Company_716,E-commerce,Starter,29.0,2026-03-24,0,,25,3,30,33
+717,Company_717,Marketing Agency,Professional,99.0,2025-12-28,0,,19,10,458,29
+718,Company_718,Healthtech,Professional,99.0,2025-04-15,1,2025-05-12,21,10,443,37
+719,Company_719,Healthtech,Starter,29.0,2025-07-03,0,,18,9,400,58
+720,Company_720,Marketing Agency,Starter,29.0,2025-07-23,1,2026-01-08,6,6,226,40
+721,Company_721,Healthtech,Starter,29.0,2025-01-15,0,,6,7,365,12
+722,Company_722,Edtech,Enterprise,299.0,2025-02-11,1,2025-06-11,2,9,20,45
+723,Company_723,Logistics,Starter,29.0,2025-07-11,0,,1,7,289,27
+724,Company_724,SaaS B2B,Professional,99.0,2025-08-03,0,,14,8,220,70
+725,Company_725,Marketing Agency,Professional,99.0,2026-03-10,0,,11,6,122,0
+726,Company_726,Fintech,Professional,99.0,2025-04-20,0,,7,8,81,74
+727,Company_727,Marketing Agency,Starter,29.0,2025-04-11,0,,21,7,211,38
+728,Company_728,E-commerce,Starter,29.0,2025-09-01,0,,17,10,118,10
+729,Company_729,E-commerce,Starter,29.0,2026-04-21,0,,1,8,179,21
+730,Company_730,Marketing Agency,Professional,99.0,2025-02-05,0,,24,8,416,69
+731,Company_731,SaaS B2B,Starter,29.0,2025-01-25,0,,15,7,101,43
+732,Company_732,Marketing Agency,Starter,29.0,2026-01-16,0,,4,3,492,76
+733,Company_733,Healthtech,Starter,29.0,2026-01-21,0,,20,7,177,51
+734,Company_734,SaaS B2B,Starter,29.0,2026-02-11,0,,3,10,353,64
+735,Company_735,SaaS B2B,Starter,29.0,2025-07-07,1,2025-10-24,3,9,303,37
+736,Company_736,Logistics,Professional,99.0,2025-04-06,0,,15,3,303,69
+737,Company_737,SaaS B2B,Starter,29.0,2025-05-20,0,,16,9,133,31
+738,Company_738,Healthtech,Professional,99.0,2025-01-14,0,,5,9,124,47
+739,Company_739,Edtech,Starter,29.0,2026-03-30,0,,21,9,350,1
+740,Company_740,Healthtech,Professional,99.0,2025-10-21,0,,24,6,192,3
+741,Company_741,Logistics,Professional,99.0,2025-11-19,0,,10,10,361,47
+742,Company_742,Healthtech,Starter,29.0,2025-09-20,1,2025-12-24,25,5,188,41
+743,Company_743,Healthtech,Professional,99.0,2025-04-26,0,,12,10,473,58
+744,Company_744,Edtech,Starter,29.0,2025-01-23,0,,22,10,104,58
+745,Company_745,Fintech,Starter,29.0,2025-09-15,0,,1,9,391,35
+746,Company_746,Marketing Agency,Starter,29.0,2026-03-01,1,2026-04-27,16,10,74,72
+747,Company_747,Healthtech,Starter,29.0,2025-04-13,0,,11,10,307,29
+748,Company_748,Marketing Agency,Starter,29.0,2025-08-28,0,,21,10,364,8
+749,Company_749,Healthtech,Professional,99.0,2025-10-19,0,,9,6,444,5
+750,Company_750,E-commerce,Starter,29.0,2025-03-16,1,2025-11-26,18,8,353,70
+751,Company_751,Edtech,Professional,99.0,2026-04-09,0,,8,10,426,39
+752,Company_752,E-commerce,Starter,29.0,2026-03-19,0,,1,9,158,72
+753,Company_753,Marketing Agency,Starter,29.0,2026-02-07,1,2026-03-31,21,9,20,33
+754,Company_754,Marketing Agency,Starter,29.0,2025-06-28,0,,16,7,105,10
+755,Company_755,Healthtech,Starter,29.0,2025-11-13,0,,4,3,57,58
+756,Company_756,Healthtech,Enterprise,299.0,2025-12-15,0,,18,3,283,38
+757,Company_757,Edtech,Starter,29.0,2025-10-29,0,,4,9,29,60
+758,Company_758,Healthtech,Starter,29.0,2025-04-29,1,2025-11-23,13,10,33,77
+759,Company_759,E-commerce,Professional,99.0,2025-01-03,0,,23,9,179,1
+760,Company_760,Logistics,Starter,29.0,2026-03-30,1,2026-06-29,6,9,41,9
+761,Company_761,Marketing Agency,Professional,99.0,2025-11-13,0,,17,7,187,38
+762,Company_762,Fintech,Starter,29.0,2025-12-02,0,,1,5,323,23
+763,Company_763,Fintech,Starter,29.0,2025-01-25,0,,2,9,121,44
+764,Company_764,Fintech,Starter,29.0,2025-06-04,0,,23,10,463,23
+765,Company_765,Marketing Agency,Starter,29.0,2025-06-03,0,,15,10,179,61
+766,Company_766,Healthtech,Starter,29.0,2025-02-09,0,,7,9,92,11
+767,Company_767,SaaS B2B,Professional,99.0,2025-11-12,0,,10,10,306,1
+768,Company_768,E-commerce,Starter,29.0,2026-03-24,0,,11,8,437,11
+769,Company_769,E-commerce,Professional,99.0,2025-06-23,0,,8,7,128,79
+770,Company_770,Edtech,Starter,29.0,2026-04-08,0,,17,10,21,68
+771,Company_771,Logistics,Starter,29.0,2025-06-20,1,2025-08-04,17,9,153,12
+772,Company_772,Fintech,Professional,99.0,2025-04-20,1,2025-12-23,22,7,315,13
+773,Company_773,SaaS B2B,Professional,99.0,2026-03-08,0,,8,10,486,18
+774,Company_774,Marketing Agency,Professional,99.0,2025-10-22,0,,16,9,196,78
+775,Company_775,SaaS B2B,Starter,29.0,2025-11-06,0,,12,10,196,17
+776,Company_776,Edtech,Professional,99.0,2025-11-30,0,,22,10,54,12
+777,Company_777,Marketing Agency,Starter,29.0,2025-12-10,0,,6,8,407,52
+778,Company_778,Marketing Agency,Enterprise,299.0,2025-07-02,0,,5,9,425,3
+779,Company_779,Marketing Agency,Starter,29.0,2026-03-04,0,,15,10,328,0
+780,Company_780,Fintech,Professional,99.0,2026-04-25,0,,18,5,359,1
+781,Company_781,Fintech,Professional,99.0,2025-11-04,0,,16,10,499,31
+782,Company_782,Logistics,Professional,99.0,2025-05-19,0,,16,10,357,9
+783,Company_783,E-commerce,Professional,99.0,2025-12-11,0,,12,7,242,46
+784,Company_784,SaaS B2B,Starter,29.0,2026-02-14,1,2026-08-10,6,9,165,56
+785,Company_785,Fintech,Starter,29.0,2025-10-25,0,,18,6,487,1
+786,Company_786,SaaS B2B,Starter,29.0,2026-03-23,0,,13,8,72,79
+787,Company_787,Fintech,Starter,29.0,2025-10-07,0,,11,9,377,10
+788,Company_788,Marketing Agency,Professional,99.0,2025-07-23,0,,21,10,263,4
+789,Company_789,Edtech,Starter,29.0,2025-04-15,0,,24,9,191,76
+790,Company_790,E-commerce,Professional,99.0,2025-08-21,0,,21,9,175,40
+791,Company_791,Fintech,Starter,29.0,2025-12-23,1,2026-01-07,23,10,75,57
+792,Company_792,Fintech,Starter,29.0,2026-03-18,0,,4,8,272,30
+793,Company_793,E-commerce,Starter,29.0,2025-09-13,0,,23,6,373,79
+794,Company_794,Fintech,Professional,99.0,2026-03-27,0,,12,9,114,53
+795,Company_795,Healthtech,Starter,29.0,2026-02-23,1,2026-05-19,6,10,457,14
+796,Company_796,Edtech,Starter,29.0,2026-03-29,0,,23,9,292,79
+797,Company_797,Fintech,Professional,99.0,2025-10-23,0,,14,8,171,3
+798,Company_798,Marketing Agency,Starter,29.0,2025-01-03,0,,17,10,437,12
+799,Company_799,Edtech,Starter,29.0,2025-04-01,0,,12,6,465,68
+800,Company_800,E-commerce,Starter,29.0,2026-02-10,1,2026-07-01,9,10,258,27
+801,Company_801,Marketing Agency,Starter,29.0,2026-04-12,0,,11,9,236,28
+802,Company_802,Marketing Agency,Starter,29.0,2025-11-08,0,,15,8,78,10
+803,Company_803,Fintech,Starter,29.0,2025-04-21,0,,20,10,424,14
+804,Company_804,Edtech,Professional,99.0,2025-03-26,0,,15,9,93,14
+805,Company_805,Marketing Agency,Starter,29.0,2026-04-25,0,,14,10,10,35
+806,Company_806,Edtech,Starter,29.0,2025-08-15,1,2026-05-02,2,10,228,27
+807,Company_807,E-commerce,Starter,29.0,2025-05-24,0,,21,7,72,69
+808,Company_808,E-commerce,Starter,29.0,2025-04-26,0,,9,6,38,23
+809,Company_809,Healthtech,Professional,99.0,2025-03-07,0,,21,6,412,68
+810,Company_810,Logistics,Starter,29.0,2025-01-01,0,,12,3,435,62
+811,Company_811,Healthtech,Professional,99.0,2025-05-05,0,,22,6,158,62
+812,Company_812,Edtech,Starter,29.0,2026-03-12,0,,25,7,46,53
+813,Company_813,SaaS B2B,Starter,29.0,2025-07-13,0,,10,8,381,1
+814,Company_814,Marketing Agency,Professional,99.0,2025-01-27,0,,20,7,301,64
+815,Company_815,SaaS B2B,Starter,29.0,2025-03-28,0,,5,10,80,60
+816,Company_816,Logistics,Starter,29.0,2026-01-13,0,,10,10,110,6
+817,Company_817,Marketing Agency,Enterprise,299.0,2025-04-09,0,,25,10,279,18
+818,Company_818,Fintech,Professional,99.0,2026-02-27,0,,18,9,137,70
+819,Company_819,Edtech,Starter,29.0,2025-06-14,0,,3,9,134,62
+820,Company_820,Fintech,Professional,99.0,2025-03-14,1,2025-03-29,22,10,202,34
+821,Company_821,Logistics,Professional,99.0,2025-04-25,0,,11,10,17,28
+822,Company_822,Edtech,Starter,29.0,2025-12-11,0,,8,5,78,72
+823,Company_823,Healthtech,Starter,29.0,2025-07-12,1,2025-12-06,24,10,133,65
+824,Company_824,Fintech,Starter,29.0,2025-02-05,0,,3,10,194,53
+825,Company_825,Healthtech,Starter,29.0,2025-02-21,0,,13,8,230,37
+826,Company_826,Logistics,Starter,29.0,2026-03-31,0,,17,5,104,75
+827,Company_827,Edtech,Starter,29.0,2025-05-03,1,2026-02-05,11,6,352,80
+828,Company_828,Fintech,Starter,29.0,2025-01-01,0,,11,8,95,32
+829,Company_829,E-commerce,Starter,29.0,2025-10-12,0,,24,7,458,50
+830,Company_830,Edtech,Starter,29.0,2025-04-14,0,,10,10,487,61
+831,Company_831,E-commerce,Professional,99.0,2025-05-04,0,,7,10,313,41
+832,Company_832,Healthtech,Starter,29.0,2025-05-31,0,,19,9,474,70
+833,Company_833,Healthtech,Starter,29.0,2025-04-29,0,,10,10,329,45
+834,Company_834,Edtech,Starter,29.0,2025-10-15,0,,9,7,302,18
+835,Company_835,Edtech,Starter,29.0,2025-11-12,0,,4,5,305,67
+836,Company_836,Healthtech,Starter,29.0,2025-08-06,0,,11,7,409,10
+837,Company_837,Healthtech,Starter,29.0,2026-01-27,1,2026-03-12,20,9,55,65
+838,Company_838,E-commerce,Starter,29.0,2026-04-23,0,,23,6,154,4
+839,Company_839,SaaS B2B,Starter,29.0,2026-03-27,1,2026-07-25,16,7,167,51
+840,Company_840,Logistics,Starter,29.0,2025-11-12,0,,19,9,241,34
+841,Company_841,Edtech,Starter,29.0,2026-01-01,0,,14,10,289,12
+842,Company_842,Fintech,Starter,29.0,2025-03-16,0,,5,3,392,36
+843,Company_843,E-commerce,Starter,29.0,2025-03-13,0,,22,10,152,9
+844,Company_844,SaaS B2B,Enterprise,299.0,2025-02-20,0,,8,3,63,34
+845,Company_845,SaaS B2B,Starter,29.0,2025-07-04,1,2025-12-31,25,10,243,77
+846,Company_846,SaaS B2B,Starter,29.0,2025-12-24,1,2026-05-20,14,9,115,38
+847,Company_847,Fintech,Starter,29.0,2025-05-01,0,,10,9,129,17
+848,Company_848,E-commerce,Starter,29.0,2025-09-13,1,2026-05-27,12,9,374,60
+849,Company_849,E-commerce,Starter,29.0,2025-09-29,0,,18,6,94,77
+850,Company_850,Marketing Agency,Starter,29.0,2025-06-14,0,,19,8,462,80
+851,Company_851,Edtech,Enterprise,299.0,2026-04-04,1,2026-09-18,24,7,35,58
+852,Company_852,Healthtech,Enterprise,299.0,2025-08-25,0,,13,10,428,9
+853,Company_853,Marketing Agency,Starter,29.0,2025-12-09,0,,24,6,173,61
+854,Company_854,Edtech,Starter,29.0,2025-09-27,0,,10,9,74,70
+855,Company_855,Logistics,Starter,29.0,2026-02-10,0,,4,9,471,57
+856,Company_856,E-commerce,Professional,99.0,2025-06-12,0,,11,8,210,10
+857,Company_857,Fintech,Enterprise,299.0,2025-10-31,0,,16,10,200,77
+858,Company_858,Fintech,Starter,29.0,2026-04-15,0,,6,7,494,21
+859,Company_859,Marketing Agency,Professional,99.0,2026-01-10,0,,22,10,352,55
+860,Company_860,Fintech,Professional,99.0,2025-07-23,0,,18,9,116,9
+861,Company_861,Marketing Agency,Starter,29.0,2025-09-20,0,,13,7,462,3
+862,Company_862,Edtech,Enterprise,299.0,2026-03-02,0,,3,7,173,71
+863,Company_863,Fintech,Starter,29.0,2025-12-18,0,,20,10,114,5
+864,Company_864,SaaS B2B,Starter,29.0,2025-05-12,0,,17,10,274,70
+865,Company_865,SaaS B2B,Enterprise,299.0,2025-11-29,0,,3,7,433,61
+866,Company_866,Logistics,Starter,29.0,2025-03-13,0,,17,8,451,64
+867,Company_867,Marketing Agency,Starter,29.0,2025-07-09,0,,17,3,243,7
+868,Company_868,Fintech,Starter,29.0,2025-07-05,1,2025-11-18,14,8,304,39
+869,Company_869,Healthtech,Professional,99.0,2025-02-28,0,,16,9,120,49
+870,Company_870,Healthtech,Starter,29.0,2025-12-13,1,2026-07-23,17,7,394,18
+871,Company_871,Fintech,Starter,29.0,2025-02-08,0,,16,8,340,65
+872,Company_872,E-commerce,Starter,29.0,2026-04-17,0,,21,10,287,16
+873,Company_873,Logistics,Enterprise,299.0,2025-05-28,0,,7,9,286,60
+874,Company_874,SaaS B2B,Starter,29.0,2025-02-23,1,2025-06-30,8,8,17,50
+875,Company_875,Healthtech,Starter,29.0,2025-11-28,0,,9,3,358,24
+876,Company_876,Healthtech,Starter,29.0,2026-03-08,0,,3,5,62,18
+877,Company_877,Marketing Agency,Starter,29.0,2026-01-04,0,,25,8,386,27
+878,Company_878,Fintech,Starter,29.0,2025-12-09,0,,17,10,473,8
+879,Company_879,Marketing Agency,Professional,99.0,2026-02-27,0,,17,10,352,24
+880,Company_880,Edtech,Starter,29.0,2025-05-15,0,,9,6,380,42
+881,Company_881,Logistics,Enterprise,299.0,2025-11-14,0,,5,9,157,71
+882,Company_882,Logistics,Starter,29.0,2026-04-16,1,2026-06-27,9,10,438,79
+883,Company_883,E-commerce,Professional,99.0,2025-10-10,0,,21,9,323,70
+884,Company_884,Logistics,Starter,29.0,2025-06-08,0,,22,9,97,79
+885,Company_885,Marketing Agency,Professional,99.0,2026-01-26,0,,2,10,253,22
+886,Company_886,Logistics,Starter,29.0,2025-06-22,0,,23,8,125,1
+887,Company_887,Fintech,Starter,29.0,2025-12-10,1,2026-06-20,10,10,416,77
+888,Company_888,Marketing Agency,Professional,99.0,2025-08-04,0,,18,9,306,24
+889,Company_889,Edtech,Starter,29.0,2026-04-01,0,,9,6,422,62
+890,Company_890,E-commerce,Starter,29.0,2026-02-02,0,,13,9,414,53
+891,Company_891,Marketing Agency,Professional,99.0,2026-01-02,0,,18,7,251,38
+892,Company_892,E-commerce,Starter,29.0,2025-05-03,0,,7,10,344,79
+893,Company_893,Edtech,Starter,29.0,2025-08-17,0,,9,10,462,18
+894,Company_894,Healthtech,Starter,29.0,2025-08-16,0,,8,9,298,54
+895,Company_895,Edtech,Starter,29.0,2025-01-04,1,2025-06-07,8,9,49,70
+896,Company_896,Logistics,Starter,29.0,2025-05-23,0,,18,10,54,41
+897,Company_897,Marketing Agency,Enterprise,299.0,2025-08-26,0,,7,10,124,14
+898,Company_898,Fintech,Enterprise,299.0,2026-03-14,0,,3,8,234,56
+899,Company_899,Fintech,Starter,29.0,2025-10-09,1,2026-07-07,10,8,252,73
+900,Company_900,SaaS B2B,Starter,29.0,2025-10-15,0,,15,9,58,28
+901,Company_901,Edtech,Starter,29.0,2025-07-08,0,,3,9,50,27
+902,Company_902,Logistics,Professional,99.0,2025-07-22,0,,23,9,294,22
+903,Company_903,Fintech,Professional,99.0,2025-08-13,0,,12,9,461,5
+904,Company_904,SaaS B2B,Enterprise,299.0,2026-04-20,0,,25,9,461,78
+905,Company_905,E-commerce,Starter,29.0,2025-07-10,1,2026-03-01,16,8,484,10
+906,Company_906,SaaS B2B,Starter,29.0,2026-04-15,0,,21,9,101,41
+907,Company_907,Fintech,Professional,99.0,2025-11-29,0,,16,10,63,37
+908,Company_908,Marketing Agency,Starter,29.0,2025-02-23,0,,14,8,371,65
+909,Company_909,Healthtech,Starter,29.0,2026-01-22,0,,17,7,123,24
+910,Company_910,SaaS B2B,Starter,29.0,2025-06-13,0,,4,9,330,69
+911,Company_911,Fintech,Starter,29.0,2025-12-04,0,,9,7,15,13
+912,Company_912,Fintech,Starter,29.0,2026-03-07,0,,23,8,85,66
+913,Company_913,Marketing Agency,Professional,99.0,2025-01-11,1,2025-03-05,22,8,423,53
+914,Company_914,Logistics,Starter,29.0,2025-06-29,0,,15,6,141,66
+915,Company_915,Fintech,Starter,29.0,2025-11-08,0,,10,9,478,13
+916,Company_916,Healthtech,Professional,99.0,2026-03-05,1,2026-03-29,19,3,88,1
+917,Company_917,Logistics,Professional,99.0,2025-06-27,0,,25,9,169,61
+918,Company_918,Edtech,Starter,29.0,2025-09-29,0,,7,9,324,49
+919,Company_919,E-commerce,Professional,99.0,2025-07-18,0,,19,10,389,35
+920,Company_920,Fintech,Starter,29.0,2025-06-12,1,2025-08-06,18,9,176,49
+921,Company_921,Edtech,Enterprise,299.0,2025-04-29,0,,14,8,359,28
+922,Company_922,Fintech,Starter,29.0,2025-03-07,0,,10,8,140,24
+923,Company_923,Logistics,Enterprise,299.0,2025-12-29,0,,7,7,377,27
+924,Company_924,Logistics,Starter,29.0,2026-02-09,0,,15,9,161,25
+925,Company_925,Marketing Agency,Starter,29.0,2025-09-16,0,,17,6,413,76
+926,Company_926,Fintech,Starter,29.0,2026-02-21,0,,24,9,329,25
+927,Company_927,E-commerce,Starter,29.0,2026-02-21,0,,3,7,331,9
+928,Company_928,Edtech,Professional,99.0,2026-03-27,0,,21,7,56,55
+929,Company_929,Logistics,Enterprise,299.0,2025-07-08,0,,21,9,450,46
+930,Company_930,Marketing Agency,Starter,29.0,2025-02-08,0,,5,10,40,77
+931,Company_931,SaaS B2B,Starter,29.0,2025-08-31,0,,25,7,38,72
+932,Company_932,SaaS B2B,Professional,99.0,2025-08-10,0,,16,10,230,77
+933,Company_933,Fintech,Professional,99.0,2025-09-04,0,,20,10,426,42
+934,Company_934,E-commerce,Professional,99.0,2025-09-13,0,,14,9,205,14
+935,Company_935,Marketing Agency,Professional,99.0,2025-04-03,0,,8,9,40,25
+936,Company_936,E-commerce,Professional,99.0,2025-09-09,0,,19,10,265,71
+937,Company_937,Logistics,Professional,99.0,2025-05-08,0,,7,10,350,45
+938,Company_938,Marketing Agency,Professional,99.0,2025-05-23,0,,9,3,65,42
+939,Company_939,E-commerce,Professional,99.0,2025-11-12,0,,22,10,267,31
+940,Company_940,E-commerce,Starter,29.0,2026-04-20,0,,19,10,280,80
+941,Company_941,E-commerce,Enterprise,299.0,2025-07-18,0,,6,10,394,49
+942,Company_942,Fintech,Starter,29.0,2025-03-07,1,2025-10-07,25,7,349,11
+943,Company_943,Logistics,Professional,99.0,2025-01-26,0,,4,9,373,39
+944,Company_944,Logistics,Starter,29.0,2026-01-17,0,,21,8,264,26
+945,Company_945,Logistics,Starter,29.0,2025-07-23,0,,21,7,372,7
+946,Company_946,Marketing Agency,Starter,29.0,2025-11-09,0,,15,7,341,2
+947,Company_947,Fintech,Starter,29.0,2025-01-03,1,2025-08-14,4,9,428,30
+948,Company_948,E-commerce,Professional,99.0,2025-04-20,0,,18,5,180,20
+949,Company_949,E-commerce,Starter,29.0,2026-01-12,0,,16,9,58,72
+950,Company_950,Marketing Agency,Starter,29.0,2026-03-30,0,,21,9,64,16
+951,Company_951,Healthtech,Professional,99.0,2025-04-16,0,,8,10,255,28
+952,Company_952,Marketing Agency,Starter,29.0,2025-12-31,0,,16,9,342,10
+953,Company_953,SaaS B2B,Starter,29.0,2025-01-16,1,2025-04-20,21,10,307,39
+954,Company_954,Logistics,Starter,29.0,2026-02-06,0,,11,6,448,31
+955,Company_955,Marketing Agency,Starter,29.0,2025-05-06,0,,8,8,238,62
+956,Company_956,Edtech,Professional,99.0,2026-03-07,0,,7,8,117,74
+957,Company_957,Logistics,Starter,29.0,2025-09-04,0,,13,10,421,55
+958,Company_958,Healthtech,Starter,29.0,2025-09-12,0,,15,10,63,8
+959,Company_959,Healthtech,Professional,99.0,2025-08-10,0,,2,10,236,48
+960,Company_960,Healthtech,Enterprise,299.0,2025-07-13,0,,22,10,77,22
+961,Company_961,Marketing Agency,Professional,99.0,2025-06-07,0,,11,6,399,0
+962,Company_962,Fintech,Professional,99.0,2025-03-02,0,,1,10,457,2
+963,Company_963,Logistics,Starter,29.0,2025-10-31,0,,4,10,11,9
+964,Company_964,SaaS B2B,Enterprise,299.0,2025-12-31,0,,16,10,423,9
+965,Company_965,Marketing Agency,Enterprise,299.0,2025-08-06,0,,25,8,300,38
+966,Company_966,Marketing Agency,Starter,29.0,2025-10-22,1,2026-03-13,19,10,399,72
+967,Company_967,E-commerce,Professional,99.0,2025-12-30,0,,25,9,332,18
+968,Company_968,E-commerce,Starter,29.0,2025-06-18,0,,19,9,195,79
+969,Company_969,Healthtech,Enterprise,299.0,2025-10-02,0,,3,9,454,73
+970,Company_970,Logistics,Starter,29.0,2025-06-08,0,,17,10,488,70
+971,Company_971,Healthtech,Starter,29.0,2025-01-15,0,,15,10,438,38
+972,Company_972,SaaS B2B,Enterprise,299.0,2025-06-30,0,,15,6,93,80
+973,Company_973,E-commerce,Enterprise,299.0,2025-06-11,0,,4,10,354,3
+974,Company_974,SaaS B2B,Starter,29.0,2025-05-05,0,,25,10,412,80
+975,Company_975,Marketing Agency,Starter,29.0,2025-03-05,0,,20,8,415,65
+976,Company_976,Marketing Agency,Enterprise,299.0,2025-08-10,0,,19,10,379,35
+977,Company_977,Fintech,Starter,29.0,2025-08-12,0,,8,8,189,44
+978,Company_978,Logistics,Starter,29.0,2025-01-10,0,,6,10,233,70
+979,Company_979,Marketing Agency,Professional,99.0,2025-09-29,0,,8,10,88,59
+980,Company_980,Logistics,Professional,99.0,2025-08-11,0,,21,9,261,13
+981,Company_981,SaaS B2B,Starter,29.0,2026-03-13,0,,13,5,63,7
+982,Company_982,Logistics,Professional,99.0,2025-11-10,0,,4,8,423,1
+983,Company_983,Logistics,Professional,99.0,2025-07-26,0,,17,7,456,24
+984,Company_984,Edtech,Starter,29.0,2025-08-02,0,,12,8,466,8
+985,Company_985,Fintech,Enterprise,299.0,2025-12-20,0,,11,10,492,40
+986,Company_986,SaaS B2B,Professional,99.0,2025-10-25,0,,22,10,390,61
+987,Company_987,E-commerce,Starter,29.0,2025-04-18,0,,7,9,452,71
+988,Company_988,Fintech,Professional,99.0,2025-06-13,0,,18,10,34,73
+989,Company_989,E-commerce,Starter,29.0,2025-01-06,1,2025-09-14,14,10,107,39
+990,Company_990,Logistics,Professional,99.0,2026-01-08,0,,3,10,53,57
+991,Company_991,SaaS B2B,Starter,29.0,2025-05-20,1,2025-09-03,14,10,411,71
+992,Company_992,Logistics,Professional,99.0,2025-01-01,0,,24,9,353,2
+993,Company_993,Logistics,Starter,29.0,2025-07-26,0,,25,9,453,14
+994,Company_994,E-commerce,Starter,29.0,2025-10-15,0,,8,9,27,32
+995,Company_995,E-commerce,Starter,29.0,2026-04-14,0,,9,9,188,28
+996,Company_996,Marketing Agency,Starter,29.0,2025-12-11,1,2026-07-17,12,8,152,26
+997,Company_997,Marketing Agency,Starter,29.0,2026-03-17,0,,25,3,105,34
+998,Company_998,Healthtech,Starter,29.0,2025-10-20,1,2026-03-11,6,7,402,19
+999,Company_999,Edtech,Starter,29.0,2026-03-12,1,2026-06-25,14,7,106,48
+1000,Company_1000,Healthtech,Starter,29.0,2026-03-04,0,,13,8,30,66
+1001,Company_1001,Healthtech,Starter,29.0,2025-01-22,1,2025-07-03,22,10,437,43
+1002,Company_1002,Marketing Agency,Starter,29.0,2025-11-22,0,,6,5,483,43
+1003,Company_1003,Edtech,Starter,29.0,2025-01-28,0,,5,7,345,17
+1004,Company_1004,Healthtech,Starter,29.0,2025-04-12,0,,20,8,164,70
+1005,Company_1005,Edtech,Professional,99.0,2025-07-18,0,,12,7,498,13
+1006,Company_1006,Healthtech,Starter,29.0,2025-02-08,0,,6,9,473,49
+1007,Company_1007,Healthtech,Starter,29.0,2026-02-03,1,2026-05-17,20,8,125,15
+1008,Company_1008,SaaS B2B,Professional,99.0,2026-01-04,0,,14,9,80,23
+1009,Company_1009,Healthtech,Starter,29.0,2025-06-05,0,,10,7,481,22
+1010,Company_1010,Logistics,Starter,29.0,2026-01-07,0,,14,9,182,3
+1011,Company_1011,Logistics,Enterprise,299.0,2025-03-10,0,,12,9,203,50
+1012,Company_1012,E-commerce,Starter,29.0,2025-05-23,0,,1,10,135,18
+1013,Company_1013,Edtech,Starter,29.0,2026-03-24,0,,12,7,109,9
+1014,Company_1014,SaaS B2B,Professional,99.0,2025-05-01,0,,7,5,206,74
+1015,Company_1015,Healthtech,Starter,29.0,2025-08-09,1,2026-02-20,1,9,91,73
+1016,Company_1016,Fintech,Professional,99.0,2025-07-03,0,,5,6,204,0
+1017,Company_1017,E-commerce,Professional,99.0,2025-07-14,0,,22,9,417,17
+1018,Company_1018,Healthtech,Starter,29.0,2025-12-30,1,2026-03-09,6,9,76,15
+1019,Company_1019,SaaS B2B,Starter,29.0,2026-03-26,0,,19,6,56,13
+1020,Company_1020,Edtech,Starter,29.0,2026-01-18,1,2026-08-18,12,10,73,38
+1021,Company_1021,Fintech,Starter,29.0,2025-12-03,0,,15,8,383,16
+1022,Company_1022,Edtech,Starter,29.0,2025-01-29,0,,19,10,118,63
+1023,Company_1023,Logistics,Starter,29.0,2025-08-21,1,2025-11-20,14,9,281,62
+1024,Company_1024,Fintech,Enterprise,299.0,2025-07-10,0,,25,9,76,20
+1025,Company_1025,Marketing Agency,Starter,29.0,2026-01-23,0,,7,7,67,58
+1026,Company_1026,Healthtech,Starter,29.0,2025-05-26,0,,4,10,354,36
+1027,Company_1027,Healthtech,Professional,99.0,2025-12-07,0,,13,8,467,28
+1028,Company_1028,Logistics,Starter,29.0,2025-05-18,0,,22,5,303,79
+1029,Company_1029,Logistics,Enterprise,299.0,2025-07-13,0,,8,9,38,31
+1030,Company_1030,SaaS B2B,Starter,29.0,2025-03-16,0,,11,9,103,59
+1031,Company_1031,Healthtech,Professional,99.0,2026-04-26,0,,22,9,283,80
+1032,Company_1032,Marketing Agency,Professional,99.0,2025-10-08,0,,25,5,426,20
+1033,Company_1033,Edtech,Professional,99.0,2025-05-13,0,,7,8,241,14
+1034,Company_1034,E-commerce,Professional,99.0,2026-04-17,0,,19,9,373,35
+1035,Company_1035,E-commerce,Starter,29.0,2025-03-26,0,,12,10,88,5
+1036,Company_1036,Edtech,Starter,29.0,2025-06-29,0,,22,9,419,16
+1037,Company_1037,Marketing Agency,Starter,29.0,2025-03-29,0,,18,9,197,47
+1038,Company_1038,Logistics,Starter,29.0,2025-12-21,0,,7,8,405,70
+1039,Company_1039,Logistics,Starter,29.0,2025-07-21,0,,1,7,254,48
+1040,Company_1040,E-commerce,Starter,29.0,2025-10-12,0,,6,9,103,80
+1041,Company_1041,Fintech,Professional,99.0,2026-02-18,0,,25,8,337,32
+1042,Company_1042,Logistics,Starter,29.0,2026-02-27,0,,13,6,369,10
+1043,Company_1043,Edtech,Starter,29.0,2026-03-07,0,,3,10,392,77
+1044,Company_1044,SaaS B2B,Professional,99.0,2026-04-01,0,,20,8,435,45
+1045,Company_1045,Marketing Agency,Starter,29.0,2025-02-13,0,,24,9,400,58
+1046,Company_1046,Logistics,Starter,29.0,2026-04-04,0,,9,10,365,9
+1047,Company_1047,Healthtech,Starter,29.0,2025-09-21,1,2025-10-21,12,7,408,34
+1048,Company_1048,Marketing Agency,Professional,99.0,2025-11-01,0,,6,9,475,28
+1049,Company_1049,Edtech,Starter,29.0,2025-05-23,0,,2,10,278,45
+1050,Company_1050,Logistics,Starter,29.0,2025-02-16,0,,17,6,206,75
+1051,Company_1051,SaaS B2B,Starter,29.0,2025-08-18,0,,4,9,281,76
+1052,Company_1052,Fintech,Professional,99.0,2026-02-23,0,,11,7,233,42
+1053,Company_1053,Healthtech,Professional,99.0,2026-02-09,0,,24,10,222,26
+1054,Company_1054,Fintech,Starter,29.0,2025-07-11,0,,23,8,65,29
+1055,Company_1055,Logistics,Starter,29.0,2025-04-13,1,2025-08-20,16,9,496,50
+1056,Company_1056,SaaS B2B,Starter,29.0,2025-04-14,1,2025-09-19,16,9,269,63
+1057,Company_1057,E-commerce,Enterprise,299.0,2025-12-22,0,,1,8,255,6
+1058,Company_1058,Fintech,Professional,99.0,2025-02-08,0,,8,10,445,49
+1059,Company_1059,Healthtech,Starter,29.0,2025-04-23,0,,6,8,165,43
+1060,Company_1060,Fintech,Starter,29.0,2025-12-04,0,,4,10,67,42
+1061,Company_1061,Marketing Agency,Starter,29.0,2025-03-01,0,,25,6,34,57
+1062,Company_1062,SaaS B2B,Starter,29.0,2025-10-08,0,,3,6,240,28
+1063,Company_1063,E-commerce,Starter,29.0,2026-04-11,0,,23,9,90,40
+1064,Company_1064,Logistics,Starter,29.0,2025-09-22,0,,14,9,194,3
+1065,Company_1065,Marketing Agency,Enterprise,299.0,2026-04-20,0,,12,10,93,75
+1066,Company_1066,E-commerce,Professional,99.0,2026-02-25,1,2026-08-21,21,10,464,76
+1067,Company_1067,Healthtech,Starter,29.0,2026-02-25,0,,11,8,242,53
+1068,Company_1068,E-commerce,Starter,29.0,2025-12-03,0,,3,10,8,75
+1069,Company_1069,Logistics,Starter,29.0,2026-03-24,0,,10,9,482,40
+1070,Company_1070,Edtech,Starter,29.0,2025-10-01,0,,4,9,130,13
+1071,Company_1071,Logistics,Starter,29.0,2025-09-26,0,,15,5,52,5
+1072,Company_1072,Marketing Agency,Starter,29.0,2026-04-13,1,2026-07-29,18,10,484,68
+1073,Company_1073,Logistics,Professional,99.0,2025-12-07,0,,22,9,451,55
+1074,Company_1074,Healthtech,Starter,29.0,2025-11-27,0,,12,8,208,11
+1075,Company_1075,Healthtech,Starter,29.0,2025-04-05,0,,12,9,478,66
+1076,Company_1076,Healthtech,Starter,29.0,2025-09-21,0,,4,7,444,60
+1077,Company_1077,SaaS B2B,Starter,29.0,2025-03-25,0,,13,9,198,53
+1078,Company_1078,SaaS B2B,Starter,29.0,2025-12-26,0,,13,10,285,9
+1079,Company_1079,E-commerce,Starter,29.0,2026-02-26,0,,11,10,154,35
+1080,Company_1080,SaaS B2B,Starter,29.0,2025-09-10,0,,1,10,227,4
+1081,Company_1081,Healthtech,Starter,29.0,2025-03-07,0,,15,10,202,57
+1082,Company_1082,Healthtech,Starter,29.0,2026-03-04,0,,25,9,475,24
+1083,Company_1083,Edtech,Professional,99.0,2026-04-24,0,,8,10,472,35
+1084,Company_1084,Healthtech,Professional,99.0,2025-11-30,0,,2,9,370,39
+1085,Company_1085,E-commerce,Professional,99.0,2025-04-29,0,,3,8,302,72
+1086,Company_1086,Marketing Agency,Starter,29.0,2026-02-18,0,,2,10,186,64
+1087,Company_1087,Healthtech,Professional,99.0,2026-04-20,0,,5,9,247,29
+1088,Company_1088,Marketing Agency,Enterprise,299.0,2025-11-11,1,2026-05-01,10,8,163,51
+1089,Company_1089,Fintech,Enterprise,299.0,2025-11-13,0,,15,7,93,53
+1090,Company_1090,Logistics,Enterprise,299.0,2025-10-28,0,,1,9,229,24
+1091,Company_1091,Marketing Agency,Professional,99.0,2025-10-30,0,,11,9,480,65
+1092,Company_1092,Edtech,Enterprise,299.0,2025-03-17,0,,15,9,277,32
+1093,Company_1093,SaaS B2B,Starter,29.0,2025-04-11,0,,16,9,269,7
+1094,Company_1094,Fintech,Starter,29.0,2025-04-12,0,,24,8,282,76
+1095,Company_1095,Edtech,Professional,99.0,2025-01-26,0,,22,8,412,0
+1096,Company_1096,Marketing Agency,Starter,29.0,2025-02-04,1,2025-11-15,4,5,404,7
+1097,Company_1097,SaaS B2B,Professional,99.0,2025-03-16,0,,6,7,147,80
+1098,Company_1098,Logistics,Enterprise,299.0,2025-11-14,1,2026-08-24,7,9,157,72
+1099,Company_1099,Healthtech,Professional,99.0,2025-01-30,0,,10,10,147,21
+1100,Company_1100,E-commerce,Professional,99.0,2025-09-14,0,,9,8,371,9
+1101,Company_1101,Fintech,Starter,29.0,2026-02-18,0,,2,5,236,57
+1102,Company_1102,SaaS B2B,Professional,99.0,2025-01-21,0,,7,6,55,4
+1103,Company_1103,Edtech,Starter,29.0,2025-01-16,0,,13,3,133,9
+1104,Company_1104,Healthtech,Starter,29.0,2026-02-05,1,2026-04-02,8,10,85,42
+1105,Company_1105,Fintech,Professional,99.0,2026-02-12,0,,7,10,186,7
+1106,Company_1106,Fintech,Enterprise,299.0,2025-02-25,0,,15,9,372,14
+1107,Company_1107,SaaS B2B,Starter,29.0,2025-04-28,0,,9,6,32,50
+1108,Company_1108,E-commerce,Starter,29.0,2026-01-03,0,,15,9,197,70
+1109,Company_1109,Healthtech,Professional,99.0,2025-04-03,0,,3,10,499,7
+1110,Company_1110,Edtech,Starter,29.0,2025-05-01,1,2025-06-16,13,10,63,39
+1111,Company_1111,E-commerce,Enterprise,299.0,2025-06-11,0,,23,5,367,78
+1112,Company_1112,SaaS B2B,Professional,99.0,2026-01-15,0,,22,9,448,30
+1113,Company_1113,Fintech,Starter,29.0,2025-05-03,0,,3,9,222,63
+1114,Company_1114,Logistics,Starter,29.0,2026-02-20,0,,12,6,393,75
+1115,Company_1115,Edtech,Starter,29.0,2025-12-27,0,,19,10,345,36
+1116,Company_1116,Edtech,Starter,29.0,2025-10-06,0,,15,10,167,78
+1117,Company_1117,SaaS B2B,Enterprise,299.0,2025-02-16,0,,2,10,123,52
+1118,Company_1118,Marketing Agency,Enterprise,299.0,2025-09-14,0,,25,10,373,76
+1119,Company_1119,Fintech,Enterprise,299.0,2026-01-08,0,,5,9,306,69
+1120,Company_1120,Fintech,Professional,99.0,2025-01-13,0,,18,10,144,25
+1121,Company_1121,Marketing Agency,Professional,99.0,2026-04-06,0,,3,9,245,72
+1122,Company_1122,E-commerce,Enterprise,299.0,2025-07-19,0,,19,10,300,5
+1123,Company_1123,Logistics,Starter,29.0,2026-02-20,0,,10,10,95,67
+1124,Company_1124,Fintech,Starter,29.0,2026-03-13,0,,14,10,25,16
+1125,Company_1125,Marketing Agency,Starter,29.0,2025-08-03,0,,16,8,315,55
+1126,Company_1126,Healthtech,Starter,29.0,2025-07-28,0,,18,7,250,76
+1127,Company_1127,Logistics,Enterprise,299.0,2025-01-24,0,,21,7,203,15
+1128,Company_1128,Fintech,Enterprise,299.0,2025-04-19,0,,24,10,250,30
+1129,Company_1129,Edtech,Professional,99.0,2025-11-24,1,2026-06-07,17,9,409,56
+1130,Company_1130,Edtech,Enterprise,299.0,2025-04-04,0,,2,7,296,50
+1131,Company_1131,Logistics,Starter,29.0,2025-04-28,0,,19,7,190,34
+1132,Company_1132,Marketing Agency,Starter,29.0,2026-02-17,0,,7,8,109,47
+1133,Company_1133,SaaS B2B,Starter,29.0,2025-06-06,1,2026-01-14,19,10,341,30
+1134,Company_1134,Fintech,Starter,29.0,2026-01-04,1,2026-07-31,10,8,15,49
+1135,Company_1135,E-commerce,Professional,99.0,2025-03-10,0,,5,8,156,69
+1136,Company_1136,E-commerce,Starter,29.0,2025-08-08,1,2025-09-10,6,10,145,69
+1137,Company_1137,Fintech,Starter,29.0,2026-03-08,0,,24,6,143,36
+1138,Company_1138,Edtech,Professional,99.0,2025-03-27,0,,4,10,460,29
+1139,Company_1139,Marketing Agency,Enterprise,299.0,2025-08-07,0,,16,9,241,46
+1140,Company_1140,Fintech,Starter,29.0,2025-05-08,0,,16,9,133,15
+1141,Company_1141,Logistics,Starter,29.0,2026-01-05,0,,22,5,444,30
+1142,Company_1142,E-commerce,Professional,99.0,2025-08-29,0,,13,9,313,71
+1143,Company_1143,SaaS B2B,Starter,29.0,2025-09-19,0,,23,9,102,13
+1144,Company_1144,E-commerce,Starter,29.0,2026-01-04,0,,19,3,494,63
+1145,Company_1145,SaaS B2B,Starter,29.0,2025-08-23,0,,3,10,472,62
+1146,Company_1146,SaaS B2B,Starter,29.0,2025-11-08,0,,23,9,452,56
+1147,Company_1147,Healthtech,Professional,99.0,2025-05-07,0,,15,7,425,58
+1148,Company_1148,Healthtech,Starter,29.0,2026-01-08,0,,8,8,103,50
+1149,Company_1149,Fintech,Starter,29.0,2026-03-29,0,,14,10,472,28
+1150,Company_1150,Marketing Agency,Starter,29.0,2025-04-01,0,,12,10,9,18
+1151,Company_1151,Marketing Agency,Professional,99.0,2025-05-21,0,,25,6,274,49
+1152,Company_1152,Marketing Agency,Starter,29.0,2025-01-09,0,,22,8,171,28
+1153,Company_1153,Logistics,Starter,29.0,2025-11-13,0,,11,5,192,67
+1154,Company_1154,SaaS B2B,Starter,29.0,2025-12-05,0,,2,5,200,5
+1155,Company_1155,E-commerce,Professional,99.0,2025-04-16,0,,4,9,33,64
+1156,Company_1156,SaaS B2B,Starter,29.0,2025-05-19,1,2025-11-08,13,7,223,36
+1157,Company_1157,Fintech,Professional,99.0,2025-09-01,1,2026-01-23,9,10,270,24
+1158,Company_1158,SaaS B2B,Starter,29.0,2026-02-03,0,,12,9,10,2
+1159,Company_1159,SaaS B2B,Professional,99.0,2026-02-23,1,2026-05-21,3,9,396,54
+1160,Company_1160,Healthtech,Professional,99.0,2025-08-27,1,2026-03-17,3,10,361,23
+1161,Company_1161,Healthtech,Professional,99.0,2026-02-19,0,,5,10,335,32
+1162,Company_1162,Edtech,Starter,29.0,2025-12-05,0,,12,8,248,64
+1163,Company_1163,SaaS B2B,Professional,99.0,2026-04-11,0,,4,3,483,1
+1164,Company_1164,Edtech,Starter,29.0,2025-11-20,0,,3,9,486,59
+1165,Company_1165,Healthtech,Starter,29.0,2025-03-01,0,,9,7,463,52
+1166,Company_1166,Marketing Agency,Starter,29.0,2025-07-17,0,,21,6,335,14
+1167,Company_1167,E-commerce,Professional,99.0,2025-12-11,1,2026-05-29,16,5,401,1
+1168,Company_1168,Healthtech,Starter,29.0,2025-10-25,0,,16,9,310,55
+1169,Company_1169,SaaS B2B,Starter,29.0,2026-01-31,0,,19,8,219,46
+1170,Company_1170,Marketing Agency,Professional,99.0,2025-06-13,0,,11,9,278,49
+1171,Company_1171,Marketing Agency,Professional,99.0,2025-09-19,0,,12,10,398,11
+1172,Company_1172,Edtech,Professional,99.0,2025-06-19,0,,21,3,111,72
+1173,Company_1173,Edtech,Starter,29.0,2025-04-02,1,2025-04-21,4,5,219,70
+1174,Company_1174,Healthtech,Starter,29.0,2026-02-14,0,,11,9,444,48
+1175,Company_1175,Healthtech,Starter,29.0,2025-01-08,0,,10,10,63,70
+1176,Company_1176,Marketing Agency,Professional,99.0,2025-02-09,1,2025-11-11,8,9,163,8
+1177,Company_1177,Logistics,Starter,29.0,2025-08-16,0,,13,5,39,37
+1178,Company_1178,Fintech,Professional,99.0,2025-08-06,1,2026-05-26,17,10,395,63
+1179,Company_1179,Edtech,Professional,99.0,2025-09-13,0,,23,9,291,49
+1180,Company_1180,SaaS B2B,Enterprise,299.0,2025-03-11,0,,13,10,237,77
+1181,Company_1181,Healthtech,Starter,29.0,2025-03-17,0,,9,9,301,39
+1182,Company_1182,SaaS B2B,Starter,29.0,2025-07-15,0,,16,10,283,59
+1183,Company_1183,Fintech,Starter,29.0,2025-01-14,0,,6,9,242,20
+1184,Company_1184,Logistics,Starter,29.0,2025-02-23,0,,10,8,148,39
+1185,Company_1185,Marketing Agency,Starter,29.0,2025-04-28,0,,1,6,119,70
+1186,Company_1186,Edtech,Starter,29.0,2026-04-18,1,2026-08-10,16,6,15,11
+1187,Company_1187,E-commerce,Starter,29.0,2025-02-09,0,,23,9,466,63
+1188,Company_1188,SaaS B2B,Starter,29.0,2025-01-30,0,,23,9,288,20
+1189,Company_1189,Edtech,Enterprise,299.0,2026-03-24,0,,16,6,364,29
+1190,Company_1190,Logistics,Starter,29.0,2025-10-11,1,2026-05-02,14,5,362,54
+1191,Company_1191,Marketing Agency,Starter,29.0,2025-04-23,0,,2,9,47,19
+1192,Company_1192,E-commerce,Enterprise,299.0,2025-01-01,0,,21,7,231,72
+1193,Company_1193,Logistics,Starter,29.0,2026-02-25,0,,1,9,255,60
+1194,Company_1194,Marketing Agency,Starter,29.0,2025-06-28,1,2026-03-10,24,10,288,38
+1195,Company_1195,Logistics,Starter,29.0,2025-12-22,1,2026-07-14,21,6,319,46
+1196,Company_1196,E-commerce,Professional,99.0,2026-01-10,0,,19,8,28,11
+1197,Company_1197,Edtech,Starter,29.0,2026-04-20,0,,9,9,352,17
+1198,Company_1198,Edtech,Professional,99.0,2025-07-04,0,,4,7,400,44
+1199,Company_1199,Edtech,Starter,29.0,2025-01-13,0,,21,10,428,36
+1200,Company_1200,Fintech,Starter,29.0,2026-04-08,0,,2,9,12,80
+1201,Company_1201,Fintech,Starter,29.0,2025-12-14,0,,23,5,297,74
+1202,Company_1202,SaaS B2B,Starter,29.0,2025-06-14,0,,9,7,164,22
+1203,Company_1203,E-commerce,Professional,99.0,2026-03-29,0,,9,3,268,16
+1204,Company_1204,E-commerce,Professional,99.0,2026-03-02,0,,18,9,215,22
+1205,Company_1205,Marketing Agency,Professional,99.0,2025-02-10,0,,15,9,330,23
+1206,Company_1206,Fintech,Professional,99.0,2025-05-13,0,,13,10,221,12
+1207,Company_1207,Marketing Agency,Starter,29.0,2025-07-22,1,2026-03-02,14,9,110,66
+1208,Company_1208,SaaS B2B,Professional,99.0,2025-01-29,0,,19,9,97,6
+1209,Company_1209,Logistics,Enterprise,299.0,2026-04-06,0,,16,9,304,45
+1210,Company_1210,Fintech,Professional,99.0,2025-03-23,0,,23,10,335,32
+1211,Company_1211,Fintech,Starter,29.0,2025-09-07,0,,4,6,54,21
+1212,Company_1212,SaaS B2B,Starter,29.0,2025-03-13,0,,20,6,407,13
+1213,Company_1213,SaaS B2B,Professional,99.0,2025-07-30,0,,9,7,52,7
+1214,Company_1214,Healthtech,Starter,29.0,2025-04-07,0,,19,6,328,39
+1215,Company_1215,SaaS B2B,Starter,29.0,2025-11-17,0,,3,10,329,45
+1216,Company_1216,E-commerce,Starter,29.0,2025-01-30,0,,11,8,29,32
+1217,Company_1217,Logistics,Starter,29.0,2025-12-14,0,,11,10,226,46
+1218,Company_1218,Edtech,Starter,29.0,2025-10-16,0,,1,10,287,52
+1219,Company_1219,Edtech,Starter,29.0,2026-03-09,0,,10,10,105,26
+1220,Company_1220,Healthtech,Starter,29.0,2026-02-12,0,,17,10,452,69
+1221,Company_1221,SaaS B2B,Enterprise,299.0,2025-09-24,0,,23,9,387,3
+1222,Company_1222,Healthtech,Starter,29.0,2026-03-28,0,,18,9,463,13
+1223,Company_1223,Healthtech,Starter,29.0,2025-09-12,1,2026-04-24,13,8,246,73
+1224,Company_1224,Marketing Agency,Professional,99.0,2025-01-31,0,,24,7,355,40
+1225,Company_1225,Healthtech,Professional,99.0,2026-01-08,0,,16,9,21,30
+1226,Company_1226,SaaS B2B,Enterprise,299.0,2025-04-20,0,,3,10,64,41
+1227,Company_1227,Marketing Agency,Starter,29.0,2025-02-06,1,2025-11-22,1,9,63,65
+1228,Company_1228,Edtech,Starter,29.0,2025-10-22,0,,21,10,219,36
+1229,Company_1229,E-commerce,Starter,29.0,2026-01-06,0,,16,8,435,17
+1230,Company_1230,Edtech,Starter,29.0,2026-02-11,0,,13,9,488,1
+1231,Company_1231,SaaS B2B,Professional,99.0,2025-10-09,0,,5,9,188,21
+1232,Company_1232,E-commerce,Professional,99.0,2025-06-02,0,,3,9,113,64
+1233,Company_1233,E-commerce,Starter,29.0,2025-05-09,0,,11,9,263,51
+1234,Company_1234,Marketing Agency,Starter,29.0,2025-11-09,0,,25,7,483,66
+1235,Company_1235,Edtech,Starter,29.0,2025-09-17,0,,9,10,450,80
+1236,Company_1236,Marketing Agency,Professional,99.0,2026-01-07,0,,21,9,406,53
+1237,Company_1237,E-commerce,Starter,29.0,2025-02-10,0,,8,6,452,36
+1238,Company_1238,E-commerce,Starter,29.0,2025-11-14,0,,19,9,97,18
+1239,Company_1239,E-commerce,Starter,29.0,2025-02-22,0,,18,10,403,23
+1240,Company_1240,Healthtech,Starter,29.0,2025-02-11,0,,11,10,28,22
+1241,Company_1241,SaaS B2B,Professional,99.0,2025-08-25,0,,22,9,84,31
+1242,Company_1242,SaaS B2B,Enterprise,299.0,2025-11-29,0,,21,9,261,5
+1243,Company_1243,Healthtech,Starter,29.0,2025-07-25,0,,8,10,128,68
+1244,Company_1244,Edtech,Starter,29.0,2025-03-06,0,,21,3,237,43
+1245,Company_1245,Logistics,Professional,99.0,2026-04-04,0,,12,9,165,30
+1246,Company_1246,SaaS B2B,Starter,29.0,2025-07-29,0,,10,8,451,26
+1247,Company_1247,Edtech,Starter,29.0,2025-06-22,0,,1,6,202,39
+1248,Company_1248,Fintech,Starter,29.0,2026-03-14,0,,9,10,333,79
+1249,Company_1249,SaaS B2B,Professional,99.0,2025-11-06,0,,12,7,445,18
+1250,Company_1250,Logistics,Starter,29.0,2026-02-03,0,,2,10,496,80
+1251,Company_1251,Logistics,Starter,29.0,2025-07-12,0,,13,9,243,27
+1252,Company_1252,Fintech,Professional,99.0,2025-09-25,0,,12,5,422,38
+1253,Company_1253,Healthtech,Professional,99.0,2025-10-02,0,,20,9,461,54
+1254,Company_1254,Fintech,Starter,29.0,2025-10-26,1,2026-05-23,8,9,148,62
+1255,Company_1255,Edtech,Starter,29.0,2025-11-07,0,,15,10,135,47
+1256,Company_1256,SaaS B2B,Starter,29.0,2026-01-05,0,,6,9,345,32
+1257,Company_1257,Marketing Agency,Enterprise,299.0,2026-04-01,0,,24,8,304,16
+1258,Company_1258,Healthtech,Starter,29.0,2025-08-18,1,2026-06-04,6,7,451,65
+1259,Company_1259,Edtech,Professional,99.0,2026-01-09,0,,1,9,274,76
+1260,Company_1260,E-commerce,Starter,29.0,2025-03-28,0,,6,8,29,39
+1261,Company_1261,E-commerce,Starter,29.0,2025-09-18,0,,11,10,376,19
+1262,Company_1262,E-commerce,Professional,99.0,2025-05-13,0,,5,9,116,67
+1263,Company_1263,Marketing Agency,Starter,29.0,2025-08-13,1,2025-12-15,20,10,70,53
+1264,Company_1264,Logistics,Starter,29.0,2025-04-28,0,,7,9,279,20
+1265,Company_1265,Logistics,Professional,99.0,2025-03-09,0,,18,5,130,50
+1266,Company_1266,Marketing Agency,Professional,99.0,2025-08-04,0,,7,9,60,71
+1267,Company_1267,Marketing Agency,Starter,29.0,2025-07-19,0,,23,9,478,19
+1268,Company_1268,Edtech,Starter,29.0,2025-01-14,0,,24,9,46,10
+1269,Company_1269,E-commerce,Professional,99.0,2025-07-12,0,,22,5,20,73
+1270,Company_1270,Fintech,Enterprise,299.0,2025-02-05,0,,2,9,245,73
+1271,Company_1271,SaaS B2B,Starter,29.0,2026-02-16,0,,1,10,31,78
+1272,Company_1272,E-commerce,Professional,99.0,2025-06-26,1,2025-08-22,16,5,322,41
+1273,Company_1273,Logistics,Professional,99.0,2025-12-12,0,,12,5,153,69
+1274,Company_1274,E-commerce,Starter,29.0,2026-04-08,0,,14,10,289,40
+1275,Company_1275,Edtech,Professional,99.0,2026-02-02,0,,18,10,386,75
+1276,Company_1276,Marketing Agency,Professional,99.0,2025-09-12,0,,18,10,438,1
+1277,Company_1277,Healthtech,Starter,29.0,2026-03-03,0,,16,9,47,67
+1278,Company_1278,Fintech,Starter,29.0,2025-09-12,0,,6,10,312,2
+1279,Company_1279,Marketing Agency,Starter,29.0,2025-11-28,0,,6,10,479,44
+1280,Company_1280,Logistics,Starter,29.0,2025-06-05,1,2025-09-07,14,10,387,32
+1281,Company_1281,Edtech,Starter,29.0,2025-12-17,1,2026-07-19,22,9,164,48
+1282,Company_1282,E-commerce,Professional,99.0,2025-07-17,0,,20,9,386,54
+1283,Company_1283,Fintech,Starter,29.0,2026-02-05,1,2026-06-27,20,7,371,44
+1284,Company_1284,E-commerce,Professional,99.0,2025-11-05,0,,16,9,384,68
+1285,Company_1285,Edtech,Starter,29.0,2025-08-30,0,,7,10,114,14
+1286,Company_1286,Marketing Agency,Professional,99.0,2025-04-24,1,2025-08-31,25,8,403,55
+1287,Company_1287,Fintech,Starter,29.0,2025-02-24,0,,16,7,286,13
+1288,Company_1288,Healthtech,Starter,29.0,2026-03-16,0,,19,7,296,22
+1289,Company_1289,Edtech,Starter,29.0,2025-02-26,0,,11,10,359,80
+1290,Company_1290,Fintech,Starter,29.0,2025-06-30,0,,18,9,133,73
+1291,Company_1291,Marketing Agency,Starter,29.0,2025-05-22,0,,20,8,231,3
+1292,Company_1292,Healthtech,Starter,29.0,2025-01-04,0,,5,9,164,72
+1293,Company_1293,Edtech,Enterprise,299.0,2025-08-19,0,,8,6,181,56
+1294,Company_1294,E-commerce,Professional,99.0,2025-04-03,0,,25,6,429,54
+1295,Company_1295,E-commerce,Professional,99.0,2025-01-15,0,,14,10,322,40
+1296,Company_1296,Fintech,Starter,29.0,2026-02-07,0,,25,9,490,36
+1297,Company_1297,SaaS B2B,Starter,29.0,2025-06-13,0,,8,9,360,45
+1298,Company_1298,E-commerce,Starter,29.0,2025-11-23,1,2026-01-26,18,10,473,68
+1299,Company_1299,Fintech,Starter,29.0,2025-05-02,0,,24,7,51,36
+1300,Company_1300,Fintech,Starter,29.0,2025-11-16,1,2026-01-15,17,10,196,65
+1301,Company_1301,Marketing Agency,Starter,29.0,2025-01-10,0,,4,9,435,17
+1302,Company_1302,SaaS B2B,Starter,29.0,2025-07-16,0,,8,3,309,9
+1303,Company_1303,Edtech,Professional,99.0,2026-02-07,0,,7,8,20,45
+1304,Company_1304,E-commerce,Professional,99.0,2026-01-10,0,,15,10,68,80
+1305,Company_1305,Fintech,Starter,29.0,2026-04-10,0,,3,9,462,37
+1306,Company_1306,Logistics,Starter,29.0,2026-03-02,0,,24,6,201,48
+1307,Company_1307,Marketing Agency,Professional,99.0,2025-06-26,0,,21,9,376,13
+1308,Company_1308,SaaS B2B,Professional,99.0,2025-04-21,0,,1,10,389,35
+1309,Company_1309,Marketing Agency,Professional,99.0,2025-12-09,0,,22,8,386,55
+1310,Company_1310,Fintech,Professional,99.0,2025-01-28,0,,9,7,82,44
+1311,Company_1311,E-commerce,Starter,29.0,2025-09-20,0,,15,9,301,6
+1312,Company_1312,Logistics,Starter,29.0,2026-02-14,0,,15,5,295,53
+1313,Company_1313,Edtech,Starter,29.0,2025-09-06,1,2025-09-23,3,8,165,77
+1314,Company_1314,Edtech,Enterprise,299.0,2025-12-12,0,,14,10,494,72
+1315,Company_1315,Logistics,Professional,99.0,2026-02-28,1,2026-09-06,18,9,404,46
+1316,Company_1316,E-commerce,Starter,29.0,2025-06-14,0,,12,10,444,61
+1317,Company_1317,Logistics,Starter,29.0,2025-04-01,1,2025-08-17,1,7,19,52
+1318,Company_1318,E-commerce,Professional,99.0,2026-04-09,1,2026-04-23,12,8,43,39
+1319,Company_1319,Fintech,Professional,99.0,2025-03-08,0,,9,9,330,30
+1320,Company_1320,SaaS B2B,Enterprise,299.0,2025-01-02,0,,17,7,348,37
+1321,Company_1321,Fintech,Enterprise,299.0,2026-03-24,0,,12,9,25,61
+1322,Company_1322,SaaS B2B,Starter,29.0,2025-03-27,0,,7,9,316,21
+1323,Company_1323,Healthtech,Professional,99.0,2026-03-27,0,,12,10,74,62
+1324,Company_1324,Edtech,Starter,29.0,2025-07-05,0,,16,8,351,6
+1325,Company_1325,Healthtech,Professional,99.0,2025-05-15,0,,8,10,158,10
+1326,Company_1326,Edtech,Professional,99.0,2025-02-26,0,,3,9,380,40
+1327,Company_1327,Marketing Agency,Enterprise,299.0,2026-01-25,0,,4,8,21,25
+1328,Company_1328,SaaS B2B,Professional,99.0,2026-03-01,0,,17,9,432,26
+1329,Company_1329,Logistics,Starter,29.0,2025-10-19,0,,13,10,226,80
+1330,Company_1330,Healthtech,Starter,29.0,2026-03-01,0,,5,8,68,9
+1331,Company_1331,E-commerce,Starter,29.0,2025-11-05,0,,16,8,123,31
+1332,Company_1332,Fintech,Starter,29.0,2025-02-27,0,,18,9,285,34
+1333,Company_1333,SaaS B2B,Starter,29.0,2025-05-27,0,,13,10,412,48
+1334,Company_1334,SaaS B2B,Starter,29.0,2026-01-09,1,2026-04-17,15,7,477,77
+1335,Company_1335,Healthtech,Professional,99.0,2025-07-22,0,,23,10,123,21
+1336,Company_1336,SaaS B2B,Starter,29.0,2025-04-27,0,,10,10,201,32
+1337,Company_1337,Logistics,Professional,99.0,2025-07-18,0,,6,8,89,43
+1338,Company_1338,Logistics,Starter,29.0,2026-03-26,0,,11,8,397,74
+1339,Company_1339,Logistics,Professional,99.0,2026-04-22,0,,23,8,422,69
+1340,Company_1340,Healthtech,Starter,29.0,2026-03-15,0,,16,10,440,69
+1341,Company_1341,Marketing Agency,Starter,29.0,2025-01-28,0,,25,8,101,7
+1342,Company_1342,Logistics,Professional,99.0,2025-07-15,0,,19,7,369,2
+1343,Company_1343,Marketing Agency,Enterprise,299.0,2025-10-26,0,,13,7,431,10
+1344,Company_1344,Healthtech,Professional,99.0,2025-01-09,0,,4,9,451,30
+1345,Company_1345,Logistics,Professional,99.0,2026-01-29,0,,6,8,408,61
+1346,Company_1346,Healthtech,Starter,29.0,2025-12-01,0,,11,5,365,19
+1347,Company_1347,Marketing Agency,Professional,99.0,2025-10-11,0,,12,10,345,37
+1348,Company_1348,Marketing Agency,Professional,99.0,2026-04-24,0,,20,6,187,39
+1349,Company_1349,Fintech,Starter,29.0,2025-02-10,1,2025-12-03,18,9,75,44
+1350,Company_1350,Fintech,Starter,29.0,2025-01-26,0,,6,9,173,16
+1351,Company_1351,E-commerce,Starter,29.0,2025-09-14,0,,17,10,332,73
+1352,Company_1352,Marketing Agency,Enterprise,299.0,2025-04-18,0,,5,9,165,31
+1353,Company_1353,Marketing Agency,Starter,29.0,2025-04-09,0,,20,6,199,7
+1354,Company_1354,Marketing Agency,Professional,99.0,2025-03-11,0,,15,10,491,15
+1355,Company_1355,Edtech,Starter,29.0,2026-02-27,1,2026-04-27,17,7,411,8
+1356,Company_1356,Marketing Agency,Starter,29.0,2025-07-26,0,,18,10,18,31
+1357,Company_1357,Logistics,Professional,99.0,2025-10-06,0,,6,9,392,64
+1358,Company_1358,E-commerce,Starter,29.0,2026-01-12,0,,8,6,323,52
+1359,Company_1359,Healthtech,Starter,29.0,2025-07-09,0,,4,10,113,6
+1360,Company_1360,E-commerce,Professional,99.0,2025-08-26,0,,25,9,341,63
+1361,Company_1361,Healthtech,Starter,29.0,2025-09-17,0,,21,10,497,76
+1362,Company_1362,Fintech,Starter,29.0,2025-07-13,0,,9,9,214,22
+1363,Company_1363,SaaS B2B,Starter,29.0,2026-04-16,0,,13,10,143,5
+1364,Company_1364,E-commerce,Starter,29.0,2025-12-04,0,,21,10,491,6
+1365,Company_1365,E-commerce,Starter,29.0,2025-06-14,1,2025-10-05,22,10,418,27
+1366,Company_1366,Healthtech,Starter,29.0,2025-08-18,0,,11,6,329,64
+1367,Company_1367,Marketing Agency,Enterprise,299.0,2025-02-21,0,,14,10,238,60
+1368,Company_1368,E-commerce,Starter,29.0,2025-09-12,0,,14,6,489,20
+1369,Company_1369,Healthtech,Enterprise,299.0,2026-01-15,0,,20,8,205,34
+1370,Company_1370,Fintech,Starter,29.0,2025-10-19,1,2026-02-03,9,3,430,10
+1371,Company_1371,Edtech,Starter,29.0,2025-11-06,0,,15,9,171,66
+1372,Company_1372,Healthtech,Starter,29.0,2025-12-14,0,,22,8,187,75
+1373,Company_1373,SaaS B2B,Professional,99.0,2026-03-08,0,,16,9,48,56
+1374,Company_1374,Healthtech,Professional,99.0,2025-10-31,0,,13,10,7,6
+1375,Company_1375,Fintech,Starter,29.0,2025-06-26,1,2025-11-21,10,9,45,35
+1376,Company_1376,Fintech,Professional,99.0,2025-08-22,0,,13,10,232,65
+1377,Company_1377,Fintech,Professional,99.0,2025-05-15,0,,21,6,162,79
+1378,Company_1378,Logistics,Starter,29.0,2025-03-20,0,,13,8,42,50
+1379,Company_1379,Marketing Agency,Professional,99.0,2026-03-07,0,,10,10,467,45
+1380,Company_1380,Healthtech,Professional,99.0,2025-11-15,0,,8,10,196,74
+1381,Company_1381,Fintech,Starter,29.0,2025-12-13,0,,1,8,335,52
+1382,Company_1382,Edtech,Starter,29.0,2025-09-02,0,,21,10,204,46
+1383,Company_1383,Healthtech,Professional,99.0,2026-02-10,0,,21,10,492,26
+1384,Company_1384,Edtech,Professional,99.0,2026-03-29,0,,15,8,372,59
+1385,Company_1385,Fintech,Professional,99.0,2026-01-05,0,,11,10,397,51
+1386,Company_1386,Logistics,Professional,99.0,2025-12-06,0,,9,9,446,11
+1387,Company_1387,Healthtech,Starter,29.0,2026-03-13,0,,23,10,100,9
+1388,Company_1388,E-commerce,Starter,29.0,2026-04-07,0,,21,9,413,10
+1389,Company_1389,Healthtech,Starter,29.0,2025-04-27,0,,2,10,378,68
+1390,Company_1390,Logistics,Professional,99.0,2025-05-08,0,,15,9,405,36
+1391,Company_1391,Fintech,Starter,29.0,2025-12-31,0,,7,8,488,38
+1392,Company_1392,E-commerce,Starter,29.0,2026-01-06,0,,20,9,10,54
+1393,Company_1393,E-commerce,Professional,99.0,2026-04-10,0,,23,6,218,70
+1394,Company_1394,Edtech,Professional,99.0,2026-01-25,0,,24,9,220,8
+1395,Company_1395,Logistics,Enterprise,299.0,2025-02-11,0,,17,9,67,31
+1396,Company_1396,Healthtech,Starter,29.0,2025-10-26,0,,19,9,144,49
+1397,Company_1397,Logistics,Starter,29.0,2025-06-15,0,,14,10,308,58
+1398,Company_1398,Healthtech,Professional,99.0,2025-08-22,1,2026-06-05,19,5,37,71
+1399,Company_1399,SaaS B2B,Enterprise,299.0,2026-02-20,0,,11,10,112,75
+1400,Company_1400,SaaS B2B,Professional,99.0,2026-02-26,0,,8,8,272,47
+1401,Company_1401,Logistics,Starter,29.0,2025-03-30,0,,12,8,323,7
+1402,Company_1402,Logistics,Professional,99.0,2026-02-11,0,,19,8,269,60
+1403,Company_1403,Logistics,Starter,29.0,2025-06-28,0,,15,8,194,60
+1404,Company_1404,Marketing Agency,Starter,29.0,2025-01-19,0,,19,10,157,13
+1405,Company_1405,SaaS B2B,Professional,99.0,2025-12-21,0,,11,10,404,50
+1406,Company_1406,Fintech,Starter,29.0,2026-02-06,0,,14,10,102,49
+1407,Company_1407,Fintech,Professional,99.0,2025-10-13,0,,17,5,276,53
+1408,Company_1408,Edtech,Starter,29.0,2025-08-28,0,,8,10,69,10
+1409,Company_1409,Healthtech,Starter,29.0,2025-11-08,0,,25,9,444,73
+1410,Company_1410,Logistics,Starter,29.0,2025-10-20,0,,24,8,314,14
+1411,Company_1411,Marketing Agency,Starter,29.0,2025-04-23,0,,5,10,77,46
+1412,Company_1412,SaaS B2B,Enterprise,299.0,2025-05-06,0,,6,5,314,22
+1413,Company_1413,Logistics,Starter,29.0,2026-03-08,0,,24,10,401,43
+1414,Company_1414,Marketing Agency,Professional,99.0,2025-09-22,0,,20,10,273,24
+1415,Company_1415,Logistics,Starter,29.0,2025-12-04,1,2025-12-22,7,10,404,35
+1416,Company_1416,Logistics,Starter,29.0,2025-05-22,0,,5,8,72,17
+1417,Company_1417,Fintech,Starter,29.0,2025-12-12,0,,17,10,201,18
+1418,Company_1418,Fintech,Starter,29.0,2025-01-31,0,,4,5,67,24
+1419,Company_1419,Marketing Agency,Professional,99.0,2025-04-09,0,,16,8,121,24
+1420,Company_1420,E-commerce,Starter,29.0,2025-07-11,0,,14,7,242,56
+1421,Company_1421,E-commerce,Starter,29.0,2025-05-04,1,2025-10-13,6,10,344,18
+1422,Company_1422,Logistics,Starter,29.0,2025-01-28,1,2025-10-20,25,3,76,58
+1423,Company_1423,Healthtech,Professional,99.0,2025-08-19,0,,3,10,103,5
+1424,Company_1424,Healthtech,Starter,29.0,2026-04-06,0,,5,8,466,46
+1425,Company_1425,Healthtech,Starter,29.0,2025-01-27,0,,9,10,159,61
+1426,Company_1426,Fintech,Starter,29.0,2025-08-09,0,,25,6,86,13
+1427,Company_1427,E-commerce,Enterprise,299.0,2025-01-29,0,,16,9,364,15
+1428,Company_1428,E-commerce,Starter,29.0,2025-06-21,0,,9,8,138,19
+1429,Company_1429,Edtech,Professional,99.0,2025-06-28,0,,6,7,125,39
+1430,Company_1430,Healthtech,Professional,99.0,2025-12-26,0,,4,9,215,18
+1431,Company_1431,E-commerce,Starter,29.0,2025-11-09,0,,19,7,361,36
+1432,Company_1432,SaaS B2B,Starter,29.0,2025-08-31,0,,14,9,36,68
+1433,Company_1433,Marketing Agency,Enterprise,299.0,2025-12-01,0,,11,9,86,11
+1434,Company_1434,Healthtech,Starter,29.0,2026-03-24,0,,20,10,135,29
+1435,Company_1435,Marketing Agency,Starter,29.0,2025-02-14,1,2025-05-27,1,9,24,23
+1436,Company_1436,SaaS B2B,Starter,29.0,2025-09-15,0,,20,9,367,36
+1437,Company_1437,Fintech,Professional,99.0,2026-04-11,0,,15,10,122,59
+1438,Company_1438,Marketing Agency,Enterprise,299.0,2026-03-20,0,,5,9,258,2
+1439,Company_1439,Healthtech,Starter,29.0,2026-03-13,0,,17,8,122,16
+1440,Company_1440,Marketing Agency,Starter,29.0,2025-01-23,0,,17,7,89,25
+1441,Company_1441,Marketing Agency,Enterprise,299.0,2025-03-11,0,,24,9,348,32
+1442,Company_1442,SaaS B2B,Starter,29.0,2025-06-26,0,,9,10,330,1
+1443,Company_1443,Logistics,Professional,99.0,2026-04-08,0,,9,8,138,36
+1444,Company_1444,Edtech,Professional,99.0,2025-05-03,0,,6,10,34,64
+1445,Company_1445,Edtech,Starter,29.0,2026-03-01,0,,6,8,27,35
+1446,Company_1446,Healthtech,Starter,29.0,2026-04-08,1,2026-05-15,21,9,465,56
+1447,Company_1447,Marketing Agency,Starter,29.0,2025-09-09,0,,21,8,217,34
+1448,Company_1448,SaaS B2B,Professional,99.0,2026-02-25,1,2026-05-22,7,9,332,65
+1449,Company_1449,E-commerce,Professional,99.0,2025-11-01,1,2026-01-26,19,7,395,11
+1450,Company_1450,Marketing Agency,Starter,29.0,2025-03-24,1,2025-08-27,4,9,243,45
+1451,Company_1451,Marketing Agency,Enterprise,299.0,2025-01-04,0,,22,9,169,13
+1452,Company_1452,Logistics,Starter,29.0,2025-05-25,0,,9,6,406,25
+1453,Company_1453,E-commerce,Starter,29.0,2026-03-03,0,,16,10,24,53
+1454,Company_1454,Healthtech,Starter,29.0,2026-02-28,0,,7,10,500,42
+1455,Company_1455,Edtech,Starter,29.0,2025-01-06,0,,23,8,108,67
+1456,Company_1456,Healthtech,Professional,99.0,2026-02-27,0,,11,9,231,42
+1457,Company_1457,Fintech,Professional,99.0,2025-11-13,0,,16,10,158,58
+1458,Company_1458,Edtech,Professional,99.0,2025-08-18,0,,16,10,462,9
+1459,Company_1459,Healthtech,Starter,29.0,2025-01-08,0,,16,9,494,25
+1460,Company_1460,Marketing Agency,Professional,99.0,2025-05-08,0,,10,9,75,49
+1461,Company_1461,Marketing Agency,Professional,99.0,2025-10-24,0,,14,9,338,22
+1462,Company_1462,SaaS B2B,Professional,99.0,2026-03-30,0,,17,6,144,52
+1463,Company_1463,Marketing Agency,Professional,99.0,2026-03-17,0,,5,9,425,70
+1464,Company_1464,SaaS B2B,Professional,99.0,2025-06-15,0,,20,10,74,45
+1465,Company_1465,Logistics,Starter,29.0,2025-11-30,0,,4,10,394,64
+1466,Company_1466,Edtech,Starter,29.0,2025-07-17,0,,13,9,467,24
+1467,Company_1467,E-commerce,Professional,99.0,2025-02-24,0,,23,9,324,60
+1468,Company_1468,Edtech,Starter,29.0,2025-01-25,1,2025-02-10,4,10,311,6
+1469,Company_1469,Marketing Agency,Starter,29.0,2025-01-08,0,,6,8,68,34
+1470,Company_1470,SaaS B2B,Starter,29.0,2025-12-07,1,2026-06-16,9,9,22,47
+1471,Company_1471,E-commerce,Professional,99.0,2026-04-01,0,,18,10,157,51
+1472,Company_1472,Fintech,Starter,29.0,2025-03-21,0,,16,9,343,14
+1473,Company_1473,Healthtech,Starter,29.0,2025-11-20,0,,18,7,487,22
+1474,Company_1474,Edtech,Enterprise,299.0,2025-11-19,0,,20,9,210,2
+1475,Company_1475,Healthtech,Starter,29.0,2025-02-16,0,,1,10,74,73
+1476,Company_1476,Fintech,Professional,99.0,2026-04-12,0,,11,9,256,55
+1477,Company_1477,Marketing Agency,Starter,29.0,2026-02-20,0,,21,10,325,79
+1478,Company_1478,Logistics,Professional,99.0,2025-09-16,1,2026-04-30,1,9,375,56
+1479,Company_1479,E-commerce,Professional,99.0,2025-01-24,0,,11,10,279,46
+1480,Company_1480,Healthtech,Professional,99.0,2025-07-29,0,,3,7,171,11
+1481,Company_1481,Marketing Agency,Professional,99.0,2026-02-02,0,,13,7,406,32
+1482,Company_1482,Edtech,Starter,29.0,2025-01-16,0,,23,8,275,8
+1483,Company_1483,E-commerce,Starter,29.0,2025-06-13,0,,13,10,396,48
+1484,Company_1484,SaaS B2B,Starter,29.0,2026-02-25,0,,17,9,468,74
+1485,Company_1485,Fintech,Professional,99.0,2025-12-20,0,,11,7,492,63
+1486,Company_1486,Edtech,Starter,29.0,2025-01-16,0,,9,10,51,24
+1487,Company_1487,Fintech,Starter,29.0,2025-03-19,0,,11,10,189,70
+1488,Company_1488,Edtech,Starter,29.0,2026-02-12,0,,6,8,75,59
+1489,Company_1489,Fintech,Enterprise,299.0,2025-07-24,1,2025-12-01,15,10,188,41
+1490,Company_1490,Healthtech,Starter,29.0,2025-10-07,0,,1,8,179,25
+1491,Company_1491,Marketing Agency,Professional,99.0,2026-03-23,0,,18,9,139,37
+1492,Company_1492,Edtech,Professional,99.0,2025-02-18,0,,18,9,72,16
+1493,Company_1493,Marketing Agency,Starter,29.0,2025-03-28,0,,21,9,465,11
+1494,Company_1494,Edtech,Starter,29.0,2025-05-02,0,,25,3,171,41
+1495,Company_1495,Marketing Agency,Starter,29.0,2025-01-08,0,,4,9,85,29
+1496,Company_1496,Healthtech,Enterprise,299.0,2025-05-03,0,,18,6,257,60
+1497,Company_1497,Fintech,Starter,29.0,2025-12-25,1,2026-08-08,7,6,378,64
+1498,Company_1498,SaaS B2B,Starter,29.0,2025-08-24,1,2026-06-09,2,10,63,4
+1499,Company_1499,Marketing Agency,Professional,99.0,2025-04-24,0,,16,8,262,39
+1500,Company_1500,Healthtech,Professional,99.0,2025-03-04,0,,9,6,138,73
+1501,Company_1501,Logistics,Professional,99.0,2025-06-03,0,,13,10,291,74
+1502,Company_1502,Logistics,Starter,29.0,2026-02-26,0,,10,6,444,60
+1503,Company_1503,Fintech,Starter,29.0,2025-04-09,0,,20,10,346,39
+1504,Company_1504,Healthtech,Professional,99.0,2026-02-05,0,,23,8,400,12
+1505,Company_1505,Edtech,Professional,99.0,2025-02-22,0,,12,6,457,56
+1506,Company_1506,E-commerce,Enterprise,299.0,2026-04-01,0,,6,8,301,61
+1507,Company_1507,SaaS B2B,Professional,99.0,2025-10-24,0,,10,10,348,51
+1508,Company_1508,Logistics,Starter,29.0,2026-04-25,0,,1,10,286,44
+1509,Company_1509,Logistics,Starter,29.0,2025-10-12,0,,25,9,375,9
+1510,Company_1510,E-commerce,Professional,99.0,2025-08-02,1,2026-04-14,10,9,20,19
+1511,Company_1511,Marketing Agency,Professional,99.0,2025-12-11,0,,16,10,147,70
+1512,Company_1512,E-commerce,Starter,29.0,2025-01-15,0,,10,10,119,48
+1513,Company_1513,Fintech,Starter,29.0,2025-07-26,0,,15,7,70,29
+1514,Company_1514,Edtech,Starter,29.0,2025-06-11,0,,5,10,80,31
+1515,Company_1515,Edtech,Starter,29.0,2025-09-30,0,,12,10,437,59
+1516,Company_1516,Marketing Agency,Starter,29.0,2025-12-25,0,,5,8,85,9
+1517,Company_1517,Healthtech,Professional,99.0,2025-05-15,0,,11,9,384,80
+1518,Company_1518,Fintech,Professional,99.0,2026-01-31,0,,18,8,397,60
+1519,Company_1519,Logistics,Starter,29.0,2025-04-14,0,,18,10,173,38
+1520,Company_1520,Fintech,Starter,29.0,2025-06-22,0,,23,10,239,45
+1521,Company_1521,Marketing Agency,Starter,29.0,2025-07-19,1,2025-12-16,8,6,77,66
+1522,Company_1522,Edtech,Starter,29.0,2025-02-22,0,,13,3,134,75
+1523,Company_1523,Logistics,Starter,29.0,2025-03-21,0,,19,8,27,24
+1524,Company_1524,Edtech,Starter,29.0,2026-04-13,0,,23,7,240,78
+1525,Company_1525,Healthtech,Starter,29.0,2025-10-28,0,,10,10,482,69
+1526,Company_1526,Edtech,Starter,29.0,2026-03-11,0,,21,7,248,75
+1527,Company_1527,SaaS B2B,Starter,29.0,2025-09-26,0,,6,9,270,41
+1528,Company_1528,SaaS B2B,Professional,99.0,2025-08-26,0,,16,10,445,59
+1529,Company_1529,Healthtech,Starter,29.0,2025-12-12,0,,2,9,239,24
+1530,Company_1530,E-commerce,Professional,99.0,2025-09-09,0,,2,10,292,18
+1531,Company_1531,Fintech,Professional,99.0,2025-10-31,0,,5,9,260,45
+1532,Company_1532,Edtech,Starter,29.0,2025-06-10,0,,24,3,402,55
+1533,Company_1533,Edtech,Starter,29.0,2025-11-19,1,2026-05-23,14,10,64,30
+1534,Company_1534,E-commerce,Starter,29.0,2025-05-15,1,2025-09-03,25,9,210,14
+1535,Company_1535,Fintech,Starter,29.0,2026-04-08,0,,12,10,144,26
+1536,Company_1536,Edtech,Professional,99.0,2025-11-24,0,,4,9,94,26
+1537,Company_1537,Marketing Agency,Enterprise,299.0,2025-04-04,0,,3,10,114,69
+1538,Company_1538,Logistics,Starter,29.0,2026-04-08,0,,18,10,89,31
+1539,Company_1539,Fintech,Starter,29.0,2025-05-30,0,,11,6,125,68
+1540,Company_1540,Edtech,Professional,99.0,2025-11-25,0,,8,7,198,43
+1541,Company_1541,Edtech,Starter,29.0,2025-08-16,0,,4,10,51,58
+1542,Company_1542,SaaS B2B,Professional,99.0,2025-01-21,0,,5,5,210,29
+1543,Company_1543,SaaS B2B,Professional,99.0,2025-10-08,0,,24,9,57,79
+1544,Company_1544,SaaS B2B,Professional,99.0,2026-02-08,0,,24,3,83,75
+1545,Company_1545,Logistics,Starter,29.0,2025-11-23,0,,10,7,79,68
+1546,Company_1546,Edtech,Starter,29.0,2025-09-05,0,,20,9,152,78
+1547,Company_1547,Marketing Agency,Starter,29.0,2025-06-12,1,2025-10-17,19,8,439,24
+1548,Company_1548,SaaS B2B,Starter,29.0,2025-01-24,0,,4,10,473,25
+1549,Company_1549,SaaS B2B,Starter,29.0,2025-07-22,0,,19,9,447,70
+1550,Company_1550,Edtech,Professional,99.0,2025-11-17,0,,20,10,453,77
+1551,Company_1551,Logistics,Starter,29.0,2026-03-05,0,,10,10,149,32
+1552,Company_1552,Fintech,Professional,99.0,2025-07-08,0,,23,9,298,50
+1553,Company_1553,Fintech,Starter,29.0,2025-12-29,0,,1,9,259,20
+1554,Company_1554,Healthtech,Professional,99.0,2025-08-26,0,,19,9,64,19
+1555,Company_1555,Logistics,Professional,99.0,2025-11-10,0,,6,6,362,48
+1556,Company_1556,Fintech,Professional,99.0,2026-01-31,0,,16,5,392,46
+1557,Company_1557,Marketing Agency,Professional,99.0,2025-11-24,1,2026-06-19,7,7,323,4
+1558,Company_1558,Edtech,Starter,29.0,2025-12-16,0,,17,10,221,3
+1559,Company_1559,Healthtech,Starter,29.0,2026-02-28,1,2026-08-04,22,6,146,57
+1560,Company_1560,Fintech,Starter,29.0,2026-03-19,0,,23,10,109,67
+1561,Company_1561,SaaS B2B,Starter,29.0,2026-03-26,0,,3,7,110,3
+1562,Company_1562,SaaS B2B,Starter,29.0,2025-02-08,1,2025-05-05,3,10,35,74
+1563,Company_1563,Marketing Agency,Starter,29.0,2026-02-20,0,,19,3,63,56
+1564,Company_1564,Logistics,Enterprise,299.0,2025-01-02,0,,9,6,80,34
+1565,Company_1565,Healthtech,Enterprise,299.0,2025-08-31,0,,24,10,323,70
+1566,Company_1566,Marketing Agency,Professional,99.0,2025-08-30,0,,9,9,121,65
+1567,Company_1567,Healthtech,Starter,29.0,2025-06-02,0,,20,10,61,1
+1568,Company_1568,Edtech,Starter,29.0,2025-05-14,0,,24,5,272,58
+1569,Company_1569,Marketing Agency,Professional,99.0,2025-02-11,0,,15,9,217,73
+1570,Company_1570,Edtech,Starter,29.0,2025-01-14,0,,1,5,208,67
+1571,Company_1571,Edtech,Starter,29.0,2025-06-28,0,,20,9,344,61
+1572,Company_1572,Edtech,Starter,29.0,2026-01-05,1,2026-06-05,12,3,157,75
+1573,Company_1573,Healthtech,Enterprise,299.0,2026-02-27,0,,22,9,118,3
+1574,Company_1574,Fintech,Enterprise,299.0,2025-05-27,0,,12,10,181,22
+1575,Company_1575,Healthtech,Enterprise,299.0,2025-03-30,0,,9,6,478,37
+1576,Company_1576,Logistics,Enterprise,299.0,2026-03-16,0,,8,9,192,3
+1577,Company_1577,Healthtech,Professional,99.0,2025-10-23,0,,11,9,41,70
+1578,Company_1578,Logistics,Starter,29.0,2025-07-12,0,,4,9,24,49
+1579,Company_1579,Healthtech,Starter,29.0,2025-08-03,1,2025-11-28,13,10,306,57
+1580,Company_1580,Edtech,Starter,29.0,2026-01-12,0,,15,10,200,60
+1581,Company_1581,E-commerce,Starter,29.0,2025-06-13,0,,16,9,79,40
+1582,Company_1582,Healthtech,Starter,29.0,2025-06-11,0,,8,6,323,61
+1583,Company_1583,Healthtech,Starter,29.0,2026-02-10,1,2026-04-03,5,7,62,65
+1584,Company_1584,Healthtech,Professional,99.0,2025-01-05,0,,24,9,7,64
+1585,Company_1585,Healthtech,Professional,99.0,2025-03-11,0,,25,9,229,31
+1586,Company_1586,Fintech,Starter,29.0,2025-11-01,0,,17,10,165,11
+1587,Company_1587,Healthtech,Starter,29.0,2025-01-26,0,,19,9,473,26
+1588,Company_1588,Healthtech,Professional,99.0,2026-04-04,0,,18,9,319,5
+1589,Company_1589,Marketing Agency,Starter,29.0,2025-08-06,1,2026-01-27,14,9,373,2
+1590,Company_1590,Logistics,Professional,99.0,2025-04-30,0,,21,7,430,5
+1591,Company_1591,Healthtech,Starter,29.0,2025-05-05,0,,3,9,242,9
+1592,Company_1592,Marketing Agency,Starter,29.0,2025-01-26,1,2025-11-16,17,9,456,35
+1593,Company_1593,E-commerce,Starter,29.0,2025-02-17,0,,20,9,288,36
+1594,Company_1594,SaaS B2B,Starter,29.0,2025-02-25,0,,21,8,405,64
+1595,Company_1595,Logistics,Starter,29.0,2026-04-16,0,,4,10,213,54
+1596,Company_1596,Marketing Agency,Professional,99.0,2025-02-08,0,,11,6,203,76
+1597,Company_1597,E-commerce,Enterprise,299.0,2025-08-02,0,,9,9,317,60
+1598,Company_1598,Logistics,Starter,29.0,2026-02-14,0,,18,10,381,41
+1599,Company_1599,Healthtech,Professional,99.0,2025-02-25,0,,14,10,481,56
+1600,Company_1600,Healthtech,Starter,29.0,2026-04-15,0,,22,5,60,66
+1601,Company_1601,E-commerce,Starter,29.0,2026-04-06,0,,25,9,398,21
+1602,Company_1602,SaaS B2B,Professional,99.0,2025-04-15,1,2025-04-30,17,10,47,28
+1603,Company_1603,E-commerce,Professional,99.0,2026-01-24,1,2026-07-21,6,8,500,24
+1604,Company_1604,Marketing Agency,Professional,99.0,2025-07-30,0,,20,9,79,45
+1605,Company_1605,SaaS B2B,Professional,99.0,2025-08-24,0,,13,10,240,67
+1606,Company_1606,SaaS B2B,Starter,29.0,2025-10-16,1,2026-06-13,20,8,393,31
+1607,Company_1607,E-commerce,Starter,29.0,2025-01-25,0,,9,10,475,64
+1608,Company_1608,Edtech,Starter,29.0,2025-03-03,0,,21,8,307,41
+1609,Company_1609,E-commerce,Starter,29.0,2025-07-08,0,,2,9,325,27
+1610,Company_1610,Logistics,Professional,99.0,2025-01-23,0,,15,10,324,14
+1611,Company_1611,Edtech,Starter,29.0,2026-01-09,0,,3,10,284,12
+1612,Company_1612,E-commerce,Starter,29.0,2025-09-19,1,2026-06-26,7,6,120,35
+1613,Company_1613,Logistics,Professional,99.0,2026-01-09,0,,20,7,262,69
+1614,Company_1614,Marketing Agency,Starter,29.0,2026-01-26,0,,12,10,246,33
+1615,Company_1615,E-commerce,Starter,29.0,2025-03-11,1,2025-05-28,24,10,370,48
+1616,Company_1616,Fintech,Enterprise,299.0,2025-02-11,0,,22,9,184,25
+1617,Company_1617,Logistics,Professional,99.0,2025-10-16,0,,21,10,304,76
+1618,Company_1618,Healthtech,Starter,29.0,2025-08-05,0,,4,9,161,26
+1619,Company_1619,Healthtech,Professional,99.0,2025-01-08,0,,1,7,129,62
+1620,Company_1620,E-commerce,Enterprise,299.0,2025-01-20,0,,13,9,488,68
+1621,Company_1621,E-commerce,Starter,29.0,2025-02-10,0,,6,10,146,75
+1622,Company_1622,Logistics,Starter,29.0,2026-03-23,0,,8,3,420,23
+1623,Company_1623,Marketing Agency,Starter,29.0,2025-02-28,1,2025-08-20,11,10,253,38
+1624,Company_1624,Healthtech,Professional,99.0,2025-04-12,0,,21,9,64,71
+1625,Company_1625,Healthtech,Starter,29.0,2026-02-11,0,,3,10,481,69
+1626,Company_1626,SaaS B2B,Professional,99.0,2026-04-24,0,,19,9,364,73
+1627,Company_1627,Marketing Agency,Starter,29.0,2025-01-07,1,2025-09-29,22,9,395,65
+1628,Company_1628,Edtech,Professional,99.0,2026-02-09,0,,4,10,286,68
+1629,Company_1629,Edtech,Starter,29.0,2026-02-10,0,,1,8,249,49
+1630,Company_1630,Logistics,Professional,99.0,2025-03-28,1,2025-07-15,21,9,404,43
+1631,Company_1631,Edtech,Starter,29.0,2025-06-12,0,,15,9,299,47
+1632,Company_1632,SaaS B2B,Professional,99.0,2025-04-28,0,,18,7,462,34
+1633,Company_1633,Edtech,Enterprise,299.0,2025-09-19,0,,18,9,276,26
+1634,Company_1634,E-commerce,Starter,29.0,2025-10-10,0,,1,7,277,71
+1635,Company_1635,E-commerce,Professional,99.0,2025-12-03,0,,17,9,172,73
+1636,Company_1636,Edtech,Starter,29.0,2025-08-29,1,2026-03-03,2,7,13,19
+1637,Company_1637,Fintech,Professional,99.0,2026-04-14,0,,3,9,107,36
+1638,Company_1638,Fintech,Starter,29.0,2025-02-03,0,,23,7,444,78
+1639,Company_1639,Marketing Agency,Professional,99.0,2025-01-12,0,,17,6,89,57
+1640,Company_1640,Marketing Agency,Starter,29.0,2025-06-30,0,,7,10,59,8
+1641,Company_1641,E-commerce,Starter,29.0,2025-08-08,0,,22,7,435,47
+1642,Company_1642,E-commerce,Starter,29.0,2025-07-12,1,2026-03-12,20,10,304,76
+1643,Company_1643,Healthtech,Starter,29.0,2025-02-15,0,,21,8,115,11
+1644,Company_1644,SaaS B2B,Professional,99.0,2026-03-03,0,,21,9,304,33
+1645,Company_1645,SaaS B2B,Starter,29.0,2025-03-24,0,,10,3,327,18
+1646,Company_1646,SaaS B2B,Starter,29.0,2026-01-28,0,,17,9,70,67
+1647,Company_1647,Logistics,Enterprise,299.0,2025-11-27,0,,5,7,16,23
+1648,Company_1648,SaaS B2B,Starter,29.0,2025-05-19,0,,22,5,421,77
+1649,Company_1649,E-commerce,Starter,29.0,2025-08-13,0,,4,10,472,77
+1650,Company_1650,Fintech,Starter,29.0,2025-08-13,0,,10,8,222,66
+1651,Company_1651,Fintech,Professional,99.0,2025-08-18,0,,18,9,95,34
+1652,Company_1652,Marketing Agency,Starter,29.0,2025-03-08,0,,17,8,86,37
+1653,Company_1653,E-commerce,Starter,29.0,2026-01-22,0,,14,10,297,59
+1654,Company_1654,E-commerce,Starter,29.0,2025-03-07,0,,13,9,138,22
+1655,Company_1655,Healthtech,Professional,99.0,2026-04-12,0,,23,10,370,80
+1656,Company_1656,Fintech,Starter,29.0,2025-05-22,0,,8,10,352,17
+1657,Company_1657,Logistics,Starter,29.0,2025-05-28,0,,17,10,427,63
+1658,Company_1658,Marketing Agency,Professional,99.0,2025-06-16,0,,10,8,316,73
+1659,Company_1659,Fintech,Starter,29.0,2025-08-31,1,2026-04-07,6,10,395,77
+1660,Company_1660,Logistics,Professional,99.0,2025-10-02,1,2026-04-09,9,8,438,46
+1661,Company_1661,Healthtech,Starter,29.0,2025-04-07,1,2025-09-03,2,5,420,55
+1662,Company_1662,Fintech,Starter,29.0,2025-10-14,1,2026-08-08,19,9,258,41
+1663,Company_1663,E-commerce,Professional,99.0,2025-12-29,0,,2,10,43,2
+1664,Company_1664,E-commerce,Professional,99.0,2025-10-09,0,,1,9,338,63
+1665,Company_1665,Fintech,Starter,29.0,2025-12-10,1,2026-03-31,1,6,321,8
+1666,Company_1666,E-commerce,Starter,29.0,2026-02-28,1,2026-05-09,13,9,295,51
+1667,Company_1667,Fintech,Professional,99.0,2025-07-31,1,2025-10-31,8,3,152,47
+1668,Company_1668,E-commerce,Starter,29.0,2025-07-16,0,,14,10,475,30
+1669,Company_1669,Edtech,Enterprise,299.0,2025-09-19,1,2026-04-22,16,9,346,62
+1670,Company_1670,Marketing Agency,Starter,29.0,2026-01-08,0,,19,5,294,54
+1671,Company_1671,SaaS B2B,Enterprise,299.0,2025-01-24,0,,21,7,272,70
+1672,Company_1672,Marketing Agency,Enterprise,299.0,2026-04-12,0,,3,10,298,48
+1673,Company_1673,SaaS B2B,Starter,29.0,2025-09-05,0,,19,8,351,65
+1674,Company_1674,Edtech,Enterprise,299.0,2025-05-22,0,,11,6,308,40
+1675,Company_1675,Edtech,Starter,29.0,2025-02-14,1,2025-06-15,12,8,395,58
+1676,Company_1676,Edtech,Starter,29.0,2025-03-24,1,2025-07-31,16,8,293,71
+1677,Company_1677,SaaS B2B,Professional,99.0,2025-05-21,1,2025-06-27,7,6,377,27
+1678,Company_1678,Edtech,Starter,29.0,2025-02-14,0,,6,6,63,59
+1679,Company_1679,SaaS B2B,Enterprise,299.0,2026-03-25,0,,14,10,437,45
+1680,Company_1680,E-commerce,Starter,29.0,2025-11-10,1,2026-09-04,6,8,461,68
+1681,Company_1681,Fintech,Professional,99.0,2026-03-12,0,,17,9,8,60
+1682,Company_1682,Marketing Agency,Starter,29.0,2025-09-28,1,2026-02-17,7,10,52,56
+1683,Company_1683,SaaS B2B,Starter,29.0,2025-07-24,0,,12,10,423,62
+1684,Company_1684,Fintech,Starter,29.0,2026-01-02,0,,15,8,108,76
+1685,Company_1685,Marketing Agency,Enterprise,299.0,2025-05-19,0,,7,9,286,40
+1686,Company_1686,Fintech,Professional,99.0,2025-09-13,0,,13,10,365,25
+1687,Company_1687,SaaS B2B,Starter,29.0,2026-04-14,0,,22,6,273,54
+1688,Company_1688,Edtech,Professional,99.0,2025-08-25,1,2025-12-30,3,9,396,66
+1689,Company_1689,Marketing Agency,Enterprise,299.0,2025-10-12,0,,3,10,465,62
+1690,Company_1690,Fintech,Starter,29.0,2026-04-14,0,,11,10,207,37
+1691,Company_1691,E-commerce,Starter,29.0,2025-10-17,1,2026-08-06,18,10,307,44
+1692,Company_1692,Fintech,Professional,99.0,2025-08-03,0,,19,9,163,56
+1693,Company_1693,Logistics,Starter,29.0,2025-04-29,0,,10,9,102,23
+1694,Company_1694,Logistics,Starter,29.0,2025-06-03,1,2025-08-24,15,8,243,62
+1695,Company_1695,Logistics,Professional,99.0,2025-08-03,0,,4,7,289,21
+1696,Company_1696,SaaS B2B,Enterprise,299.0,2025-11-13,0,,8,10,412,3
+1697,Company_1697,E-commerce,Professional,99.0,2026-02-03,0,,9,9,430,62
+1698,Company_1698,Healthtech,Professional,99.0,2026-04-23,0,,21,7,408,36
+1699,Company_1699,SaaS B2B,Professional,99.0,2025-05-30,0,,24,8,496,75
+1700,Company_1700,Marketing Agency,Starter,29.0,2025-08-27,0,,24,9,343,4
+1701,Company_1701,Fintech,Enterprise,299.0,2026-02-27,0,,9,9,102,30
+1702,Company_1702,SaaS B2B,Professional,99.0,2025-08-31,0,,25,7,109,35
+1703,Company_1703,Logistics,Professional,99.0,2025-08-14,0,,18,8,353,80
+1704,Company_1704,SaaS B2B,Starter,29.0,2026-02-18,0,,3,9,317,14
+1705,Company_1705,Marketing Agency,Professional,99.0,2026-04-21,0,,8,6,5,44
+1706,Company_1706,E-commerce,Starter,29.0,2025-07-03,0,,2,8,288,46
+1707,Company_1707,Healthtech,Starter,29.0,2025-09-18,1,2026-04-29,5,9,28,29
+1708,Company_1708,Logistics,Starter,29.0,2025-08-15,0,,15,3,129,34
+1709,Company_1709,Logistics,Starter,29.0,2025-11-01,0,,25,10,207,40
+1710,Company_1710,Marketing Agency,Professional,99.0,2025-06-20,0,,20,9,256,8
+1711,Company_1711,Edtech,Professional,99.0,2026-02-19,0,,13,6,9,67
+1712,Company_1712,Logistics,Starter,29.0,2025-07-22,0,,1,10,188,72
+1713,Company_1713,Fintech,Starter,29.0,2026-01-15,0,,17,9,313,9
+1714,Company_1714,Healthtech,Starter,29.0,2025-05-20,0,,9,9,94,60
+1715,Company_1715,Logistics,Professional,99.0,2025-01-09,0,,5,9,234,62
+1716,Company_1716,Marketing Agency,Starter,29.0,2025-08-28,0,,21,9,234,74
+1717,Company_1717,SaaS B2B,Starter,29.0,2025-09-09,1,2025-10-07,2,9,38,79
+1718,Company_1718,E-commerce,Starter,29.0,2025-01-26,1,2025-03-06,9,10,181,51
+1719,Company_1719,Healthtech,Professional,99.0,2025-03-07,1,2025-10-12,11,10,276,7
+1720,Company_1720,Edtech,Professional,99.0,2025-12-23,0,,3,6,424,17
+1721,Company_1721,E-commerce,Professional,99.0,2026-01-09,0,,4,9,103,67
+1722,Company_1722,Marketing Agency,Starter,29.0,2026-01-07,0,,24,8,348,54
+1723,Company_1723,Logistics,Starter,29.0,2026-02-20,0,,15,5,272,23
+1724,Company_1724,Healthtech,Starter,29.0,2025-09-13,0,,16,10,13,70
+1725,Company_1725,Logistics,Professional,99.0,2026-02-07,0,,5,9,484,64
+1726,Company_1726,SaaS B2B,Professional,99.0,2025-10-26,0,,20,9,492,40
+1727,Company_1727,SaaS B2B,Starter,29.0,2025-10-08,0,,4,8,11,24
+1728,Company_1728,Logistics,Starter,29.0,2026-03-02,0,,23,9,302,69
+1729,Company_1729,Logistics,Starter,29.0,2025-11-08,0,,1,9,27,67
+1730,Company_1730,Healthtech,Starter,29.0,2026-02-28,0,,25,9,57,71
+1731,Company_1731,Marketing Agency,Starter,29.0,2025-11-17,0,,1,8,128,32
+1732,Company_1732,Healthtech,Professional,99.0,2025-09-14,0,,17,9,341,52
+1733,Company_1733,SaaS B2B,Starter,29.0,2025-01-22,1,2025-05-09,23,9,178,68
+1734,Company_1734,E-commerce,Starter,29.0,2026-03-17,0,,25,8,346,71
+1735,Company_1735,Edtech,Professional,99.0,2025-07-26,0,,18,7,390,80
+1736,Company_1736,Healthtech,Starter,29.0,2025-08-28,0,,16,9,86,59
+1737,Company_1737,SaaS B2B,Starter,29.0,2025-03-23,0,,18,9,12,37
+1738,Company_1738,Healthtech,Enterprise,299.0,2025-10-28,0,,9,8,114,54
+1739,Company_1739,E-commerce,Starter,29.0,2025-03-25,0,,9,10,475,58
+1740,Company_1740,Healthtech,Enterprise,299.0,2025-07-26,0,,13,8,153,60
+1741,Company_1741,E-commerce,Starter,29.0,2025-04-13,0,,11,5,229,75
+1742,Company_1742,Marketing Agency,Starter,29.0,2025-12-20,0,,9,8,139,37
+1743,Company_1743,SaaS B2B,Professional,99.0,2025-09-05,0,,3,9,115,52
+1744,Company_1744,Fintech,Professional,99.0,2026-01-16,1,2026-05-28,10,9,261,68
+1745,Company_1745,Healthtech,Starter,29.0,2025-02-25,0,,18,8,20,61
+1746,Company_1746,Marketing Agency,Enterprise,299.0,2025-04-20,0,,7,8,438,27
+1747,Company_1747,E-commerce,Starter,29.0,2025-11-21,0,,5,9,206,31
+1748,Company_1748,Fintech,Starter,29.0,2026-01-01,0,,2,8,56,78
+1749,Company_1749,Edtech,Professional,99.0,2025-07-25,0,,18,8,44,25
+1750,Company_1750,Marketing Agency,Starter,29.0,2026-02-06,1,2026-07-02,21,7,285,76
+1751,Company_1751,E-commerce,Starter,29.0,2025-05-22,0,,22,6,21,21
+1752,Company_1752,Fintech,Starter,29.0,2025-07-27,0,,8,9,213,67
+1753,Company_1753,Logistics,Starter,29.0,2025-10-01,0,,2,10,285,1
+1754,Company_1754,SaaS B2B,Starter,29.0,2026-02-09,0,,21,10,271,46
+1755,Company_1755,Marketing Agency,Professional,99.0,2026-01-19,0,,18,8,95,11
+1756,Company_1756,E-commerce,Starter,29.0,2026-02-17,0,,2,10,35,57
+1757,Company_1757,E-commerce,Professional,99.0,2025-06-01,0,,7,6,45,54
+1758,Company_1758,Marketing Agency,Professional,99.0,2025-01-16,1,2025-03-07,12,5,475,5
+1759,Company_1759,Healthtech,Starter,29.0,2025-02-04,1,2025-10-31,12,9,346,37
+1760,Company_1760,Fintech,Enterprise,299.0,2025-05-07,0,,22,10,372,60
+1761,Company_1761,SaaS B2B,Professional,99.0,2025-06-28,0,,7,8,371,15
+1762,Company_1762,Healthtech,Starter,29.0,2025-12-10,0,,23,9,347,42
+1763,Company_1763,SaaS B2B,Professional,99.0,2025-06-14,0,,23,9,118,77
+1764,Company_1764,Logistics,Starter,29.0,2025-12-12,0,,19,6,256,21
+1765,Company_1765,SaaS B2B,Starter,29.0,2025-04-05,0,,12,5,270,6
+1766,Company_1766,SaaS B2B,Starter,29.0,2025-04-20,0,,15,9,214,48
+1767,Company_1767,Fintech,Starter,29.0,2025-06-12,0,,11,8,414,43
+1768,Company_1768,Edtech,Starter,29.0,2025-08-18,0,,9,10,130,69
+1769,Company_1769,Marketing Agency,Starter,29.0,2026-02-24,0,,2,10,263,51
+1770,Company_1770,SaaS B2B,Starter,29.0,2025-03-15,0,,23,6,480,3
+1771,Company_1771,Logistics,Starter,29.0,2025-01-08,0,,17,8,198,14
+1772,Company_1772,Healthtech,Professional,99.0,2025-04-06,0,,23,10,273,75
+1773,Company_1773,E-commerce,Starter,29.0,2025-06-14,0,,25,10,93,67
+1774,Company_1774,E-commerce,Professional,99.0,2026-02-17,0,,22,7,121,68
+1775,Company_1775,SaaS B2B,Starter,29.0,2025-07-26,0,,24,10,485,3
+1776,Company_1776,Edtech,Starter,29.0,2025-01-20,1,2025-03-23,6,7,182,10
+1777,Company_1777,Healthtech,Starter,29.0,2026-03-18,0,,2,9,75,8
+1778,Company_1778,E-commerce,Starter,29.0,2026-02-05,0,,1,8,317,7
+1779,Company_1779,E-commerce,Professional,99.0,2025-11-12,1,2025-12-24,8,10,336,44
+1780,Company_1780,SaaS B2B,Professional,99.0,2025-03-23,0,,10,10,116,69
+1781,Company_1781,E-commerce,Enterprise,299.0,2025-06-28,0,,7,10,33,26
+1782,Company_1782,Fintech,Starter,29.0,2025-08-06,1,2025-08-31,20,9,283,5
+1783,Company_1783,Fintech,Starter,29.0,2025-10-26,0,,18,7,82,6
+1784,Company_1784,Healthtech,Professional,99.0,2025-07-11,0,,14,9,375,79
+1785,Company_1785,Marketing Agency,Starter,29.0,2026-04-25,0,,15,9,166,23
+1786,Company_1786,E-commerce,Starter,29.0,2026-03-05,0,,11,6,136,67
+1787,Company_1787,Logistics,Starter,29.0,2025-07-31,0,,20,9,486,27
+1788,Company_1788,Healthtech,Professional,99.0,2025-02-25,0,,9,9,267,79
+1789,Company_1789,Marketing Agency,Starter,29.0,2026-01-22,0,,4,8,148,37
+1790,Company_1790,Healthtech,Starter,29.0,2025-04-28,0,,1,9,438,80
+1791,Company_1791,SaaS B2B,Starter,29.0,2026-02-23,1,2026-09-22,3,9,359,10
+1792,Company_1792,Fintech,Starter,29.0,2025-02-10,1,2025-03-01,18,6,448,44
+1793,Company_1793,E-commerce,Starter,29.0,2025-04-26,1,2025-12-04,5,8,168,19
+1794,Company_1794,E-commerce,Starter,29.0,2025-08-23,1,2026-06-14,20,10,161,67
+1795,Company_1795,Marketing Agency,Starter,29.0,2026-03-19,0,,7,10,324,0
+1796,Company_1796,Marketing Agency,Professional,99.0,2025-07-26,0,,14,9,208,12
+1797,Company_1797,SaaS B2B,Starter,29.0,2025-05-01,0,,12,10,484,24
+1798,Company_1798,Healthtech,Professional,99.0,2025-01-13,0,,11,6,273,59
+1799,Company_1799,Logistics,Professional,99.0,2025-01-17,1,2025-10-25,2,10,79,28
+1800,Company_1800,Logistics,Starter,29.0,2025-05-04,0,,4,9,436,38
+1801,Company_1801,Healthtech,Starter,29.0,2025-10-15,0,,4,3,301,58
+1802,Company_1802,Fintech,Starter,29.0,2025-05-21,0,,25,10,311,35
+1803,Company_1803,Edtech,Professional,99.0,2025-06-04,0,,2,3,196,20
+1804,Company_1804,Healthtech,Starter,29.0,2025-12-14,0,,24,6,206,13
+1805,Company_1805,Logistics,Professional,99.0,2025-12-31,1,2026-07-24,4,8,320,12
+1806,Company_1806,Marketing Agency,Professional,99.0,2026-03-12,0,,20,10,285,51
+1807,Company_1807,Edtech,Starter,29.0,2025-10-13,0,,16,9,349,8
+1808,Company_1808,Marketing Agency,Starter,29.0,2025-05-17,0,,12,10,350,39
+1809,Company_1809,Healthtech,Starter,29.0,2025-11-24,1,2026-05-24,13,10,10,72
+1810,Company_1810,Marketing Agency,Professional,99.0,2025-12-09,0,,18,10,109,39
+1811,Company_1811,Logistics,Starter,29.0,2025-01-25,0,,17,9,421,47
+1812,Company_1812,Healthtech,Professional,99.0,2026-02-14,1,2026-04-07,20,9,361,7
+1813,Company_1813,Marketing Agency,Starter,29.0,2025-12-06,1,2026-08-19,4,10,93,61
+1814,Company_1814,SaaS B2B,Professional,99.0,2026-02-18,0,,13,10,352,73
+1815,Company_1815,SaaS B2B,Professional,99.0,2025-03-03,1,2025-12-04,19,6,387,26
+1816,Company_1816,Marketing Agency,Enterprise,299.0,2025-07-23,0,,15,10,28,78
+1817,Company_1817,SaaS B2B,Starter,29.0,2025-04-15,0,,9,9,66,34
+1818,Company_1818,Fintech,Starter,29.0,2025-08-06,0,,8,8,45,33
+1819,Company_1819,Logistics,Starter,29.0,2026-03-23,0,,18,8,407,63
+1820,Company_1820,Edtech,Professional,99.0,2026-04-23,0,,12,10,485,1
+1821,Company_1821,E-commerce,Professional,99.0,2026-01-09,0,,10,8,486,8
+1822,Company_1822,Healthtech,Starter,29.0,2026-02-16,0,,8,8,88,33
+1823,Company_1823,E-commerce,Enterprise,299.0,2025-02-15,0,,25,8,122,23
+1824,Company_1824,Logistics,Professional,99.0,2026-04-24,0,,5,9,392,27
+1825,Company_1825,E-commerce,Professional,99.0,2026-01-28,0,,13,3,328,75
+1826,Company_1826,Edtech,Professional,99.0,2025-09-17,0,,10,10,260,49
+1827,Company_1827,Logistics,Starter,29.0,2025-11-16,0,,19,8,499,11
+1828,Company_1828,Logistics,Starter,29.0,2025-07-28,0,,2,9,392,37
+1829,Company_1829,Edtech,Professional,99.0,2025-03-18,1,2025-12-07,17,9,340,70
+1830,Company_1830,Edtech,Starter,29.0,2025-07-30,0,,5,10,440,50
+1831,Company_1831,Edtech,Starter,29.0,2025-03-26,0,,1,9,174,47
+1832,Company_1832,Edtech,Professional,99.0,2026-03-07,0,,19,9,91,48
+1833,Company_1833,Marketing Agency,Professional,99.0,2025-04-21,0,,19,8,397,20
+1834,Company_1834,Marketing Agency,Starter,29.0,2025-11-01,0,,14,5,160,5
+1835,Company_1835,Fintech,Starter,29.0,2025-04-10,0,,9,10,445,9
+1836,Company_1836,E-commerce,Starter,29.0,2026-03-05,0,,6,10,198,66
+1837,Company_1837,Marketing Agency,Starter,29.0,2025-11-25,0,,9,10,184,68
+1838,Company_1838,Marketing Agency,Starter,29.0,2026-01-31,0,,15,9,289,11
+1839,Company_1839,Fintech,Professional,99.0,2025-05-29,1,2025-07-31,20,9,221,68
+1840,Company_1840,Healthtech,Starter,29.0,2025-12-07,0,,3,9,491,49
+1841,Company_1841,E-commerce,Professional,99.0,2026-01-24,0,,2,9,156,45
+1842,Company_1842,Fintech,Enterprise,299.0,2025-01-21,0,,19,10,40,51
+1843,Company_1843,Fintech,Enterprise,299.0,2025-11-25,0,,13,9,172,64
+1844,Company_1844,E-commerce,Professional,99.0,2025-09-17,1,2026-01-25,23,7,134,39
+1845,Company_1845,Fintech,Starter,29.0,2025-04-16,1,2025-05-30,21,9,373,3
+1846,Company_1846,SaaS B2B,Enterprise,299.0,2025-06-04,0,,11,10,467,70
+1847,Company_1847,Healthtech,Professional,99.0,2025-12-03,1,2026-08-20,17,9,294,16
+1848,Company_1848,Edtech,Starter,29.0,2025-06-25,0,,7,6,282,24
+1849,Company_1849,Logistics,Professional,99.0,2026-04-12,0,,24,8,120,66
+1850,Company_1850,Healthtech,Professional,99.0,2026-02-28,0,,10,10,40,31
+1851,Company_1851,Edtech,Starter,29.0,2026-02-22,0,,8,10,273,50
+1852,Company_1852,SaaS B2B,Professional,99.0,2025-04-03,0,,13,10,243,29
+1853,Company_1853,Healthtech,Starter,29.0,2025-01-08,0,,13,3,419,36
+1854,Company_1854,Fintech,Professional,99.0,2025-03-20,0,,8,7,10,15
+1855,Company_1855,Marketing Agency,Starter,29.0,2025-05-26,1,2025-10-19,10,10,259,21
+1856,Company_1856,Logistics,Professional,99.0,2025-12-02,0,,24,8,343,22
+1857,Company_1857,Fintech,Starter,29.0,2026-01-21,1,2026-09-26,1,9,262,49
+1858,Company_1858,Marketing Agency,Starter,29.0,2025-11-27,0,,2,6,240,8
+1859,Company_1859,Edtech,Starter,29.0,2026-03-23,0,,15,7,209,32
+1860,Company_1860,Logistics,Starter,29.0,2025-01-06,0,,10,10,233,31
+1861,Company_1861,SaaS B2B,Professional,99.0,2026-04-24,0,,15,5,451,72
+1862,Company_1862,Healthtech,Starter,29.0,2026-01-21,0,,17,3,212,80
+1863,Company_1863,SaaS B2B,Professional,99.0,2026-02-14,0,,21,9,363,47
+1864,Company_1864,Edtech,Professional,99.0,2025-09-22,1,2025-12-22,18,6,46,64
+1865,Company_1865,Fintech,Professional,99.0,2025-07-28,0,,8,9,114,7
+1866,Company_1866,SaaS B2B,Starter,29.0,2025-06-25,0,,13,6,364,57
+1867,Company_1867,Marketing Agency,Starter,29.0,2025-03-10,1,2025-04-12,18,8,389,25
+1868,Company_1868,SaaS B2B,Professional,99.0,2025-12-10,1,2026-04-23,12,9,97,10
+1869,Company_1869,SaaS B2B,Starter,29.0,2025-12-13,1,2026-06-25,13,9,476,49
+1870,Company_1870,Healthtech,Enterprise,299.0,2025-09-06,0,,22,8,103,28
+1871,Company_1871,E-commerce,Starter,29.0,2025-10-24,0,,5,10,463,38
+1872,Company_1872,Logistics,Professional,99.0,2025-03-26,1,2025-05-23,4,5,176,32
+1873,Company_1873,Fintech,Starter,29.0,2026-04-05,0,,1,8,120,41
+1874,Company_1874,Healthtech,Starter,29.0,2026-02-05,0,,18,9,74,37
+1875,Company_1875,Logistics,Enterprise,299.0,2025-05-26,0,,13,9,457,68
+1876,Company_1876,Edtech,Professional,99.0,2025-11-11,0,,9,9,344,6
+1877,Company_1877,SaaS B2B,Professional,99.0,2025-06-10,1,2025-11-19,25,9,302,70
+1878,Company_1878,Fintech,Starter,29.0,2025-11-20,0,,20,9,53,69
+1879,Company_1879,Fintech,Professional,99.0,2026-01-17,0,,25,6,149,56
+1880,Company_1880,Edtech,Enterprise,299.0,2025-09-03,0,,17,10,416,36
+1881,Company_1881,SaaS B2B,Starter,29.0,2025-05-01,1,2025-07-21,15,10,329,8
+1882,Company_1882,Marketing Agency,Professional,99.0,2025-08-15,0,,11,10,366,80
+1883,Company_1883,Fintech,Professional,99.0,2025-01-02,0,,24,10,279,3
+1884,Company_1884,Fintech,Starter,29.0,2025-06-29,0,,18,7,395,35
+1885,Company_1885,SaaS B2B,Professional,99.0,2025-11-04,1,2026-01-11,13,10,407,45
+1886,Company_1886,Edtech,Enterprise,299.0,2025-12-24,0,,22,9,16,39
+1887,Company_1887,Marketing Agency,Enterprise,299.0,2026-01-15,0,,12,10,310,14
+1888,Company_1888,Logistics,Starter,29.0,2025-06-10,0,,15,10,97,1
+1889,Company_1889,SaaS B2B,Starter,29.0,2026-04-18,0,,14,10,158,74
+1890,Company_1890,Edtech,Starter,29.0,2025-04-15,0,,20,10,282,1
+1891,Company_1891,Logistics,Starter,29.0,2026-03-11,0,,23,10,64,16
+1892,Company_1892,Marketing Agency,Professional,99.0,2025-09-04,0,,7,9,263,44
+1893,Company_1893,SaaS B2B,Starter,29.0,2025-03-22,1,2025-07-19,3,9,35,68
+1894,Company_1894,SaaS B2B,Starter,29.0,2026-01-08,1,2026-09-08,13,7,318,75
+1895,Company_1895,Marketing Agency,Starter,29.0,2025-02-14,1,2025-08-03,19,8,419,3
+1896,Company_1896,Healthtech,Starter,29.0,2025-07-17,0,,15,10,76,50
+1897,Company_1897,Logistics,Enterprise,299.0,2025-11-27,0,,15,10,306,16
+1898,Company_1898,Healthtech,Enterprise,299.0,2026-02-06,0,,21,5,185,23
+1899,Company_1899,E-commerce,Starter,29.0,2025-12-09,0,,13,10,136,27
+1900,Company_1900,Logistics,Starter,29.0,2026-01-07,0,,10,10,168,18
+1901,Company_1901,Edtech,Professional,99.0,2025-07-29,0,,1,9,45,49
+1902,Company_1902,E-commerce,Starter,29.0,2025-11-27,1,2026-08-10,4,10,235,64
+1903,Company_1903,Fintech,Enterprise,299.0,2026-04-01,0,,1,8,90,49
+1904,Company_1904,Edtech,Professional,99.0,2025-07-14,0,,6,8,388,57
+1905,Company_1905,Healthtech,Professional,99.0,2025-01-05,0,,18,5,11,23
+1906,Company_1906,Logistics,Starter,29.0,2026-04-25,0,,7,8,453,46
+1907,Company_1907,Healthtech,Professional,99.0,2026-04-07,0,,22,10,243,54
+1908,Company_1908,Healthtech,Enterprise,299.0,2025-11-13,0,,5,10,208,17
+1909,Company_1909,SaaS B2B,Starter,29.0,2025-01-19,1,2025-03-23,13,9,28,64
+1910,Company_1910,Logistics,Starter,29.0,2026-01-02,0,,11,10,106,7
+1911,Company_1911,E-commerce,Starter,29.0,2025-03-29,1,2026-01-01,6,8,442,41
+1912,Company_1912,Marketing Agency,Enterprise,299.0,2025-04-01,0,,6,9,491,36
+1913,Company_1913,Fintech,Starter,29.0,2026-01-02,0,,18,10,122,75
+1914,Company_1914,Healthtech,Starter,29.0,2025-12-05,0,,16,9,10,53
+1915,Company_1915,Edtech,Professional,99.0,2025-05-03,0,,12,9,295,37
+1916,Company_1916,Marketing Agency,Starter,29.0,2025-06-28,0,,6,9,463,66
+1917,Company_1917,Fintech,Starter,29.0,2025-11-26,0,,12,9,16,55
+1918,Company_1918,Logistics,Starter,29.0,2025-04-15,0,,13,7,45,35
+1919,Company_1919,Healthtech,Starter,29.0,2025-03-04,1,2025-04-01,22,10,195,29
+1920,Company_1920,Marketing Agency,Starter,29.0,2026-04-06,0,,7,10,187,66
+1921,Company_1921,Edtech,Professional,99.0,2026-04-09,1,2026-09-09,21,10,333,63
+1922,Company_1922,E-commerce,Starter,29.0,2025-10-13,0,,8,10,432,1
+1923,Company_1923,Fintech,Professional,99.0,2026-04-14,0,,12,9,333,23
+1924,Company_1924,SaaS B2B,Starter,29.0,2025-01-04,0,,2,9,406,77
+1925,Company_1925,E-commerce,Starter,29.0,2026-03-03,1,2026-04-07,10,8,102,44
+1926,Company_1926,Marketing Agency,Enterprise,299.0,2025-04-02,0,,22,9,119,47
+1927,Company_1927,Marketing Agency,Starter,29.0,2026-02-21,0,,13,7,404,1
+1928,Company_1928,Marketing Agency,Enterprise,299.0,2025-09-21,0,,21,7,469,7
+1929,Company_1929,E-commerce,Starter,29.0,2025-10-14,0,,24,9,133,75
+1930,Company_1930,Edtech,Starter,29.0,2025-02-25,1,2025-03-27,12,5,308,70
+1931,Company_1931,Fintech,Starter,29.0,2026-04-06,0,,7,10,15,7
+1932,Company_1932,Logistics,Professional,99.0,2025-11-12,0,,23,9,376,0
+1933,Company_1933,Marketing Agency,Starter,29.0,2025-09-12,1,2025-11-10,16,10,247,70
+1934,Company_1934,Healthtech,Enterprise,299.0,2025-12-14,0,,7,7,116,47
+1935,Company_1935,Edtech,Enterprise,299.0,2026-01-20,0,,2,9,369,37
+1936,Company_1936,E-commerce,Professional,99.0,2025-11-18,0,,22,10,229,1
+1937,Company_1937,Fintech,Starter,29.0,2025-12-31,0,,8,10,349,69
+1938,Company_1938,E-commerce,Starter,29.0,2026-02-19,1,2026-04-06,20,9,115,53
+1939,Company_1939,E-commerce,Starter,29.0,2025-04-13,0,,20,7,397,3
+1940,Company_1940,Edtech,Starter,29.0,2025-10-15,0,,4,10,241,20
+1941,Company_1941,Fintech,Enterprise,299.0,2025-11-25,0,,8,10,36,47
+1942,Company_1942,Fintech,Starter,29.0,2025-09-18,0,,4,10,261,58
+1943,Company_1943,Logistics,Starter,29.0,2025-01-12,0,,15,10,404,0
+1944,Company_1944,Healthtech,Starter,29.0,2025-12-26,1,2026-08-11,3,10,470,39
+1945,Company_1945,Edtech,Professional,99.0,2025-09-08,0,,9,9,349,71
+1946,Company_1946,SaaS B2B,Professional,99.0,2025-10-04,0,,2,10,58,31
+1947,Company_1947,Healthtech,Enterprise,299.0,2025-03-04,0,,18,10,34,27
+1948,Company_1948,Marketing Agency,Starter,29.0,2025-09-02,1,2025-12-27,3,10,362,15
+1949,Company_1949,Edtech,Starter,29.0,2026-03-15,0,,10,9,185,43
+1950,Company_1950,Logistics,Starter,29.0,2025-06-17,1,2026-03-01,3,8,278,67
+1951,Company_1951,Marketing Agency,Starter,29.0,2025-01-31,0,,2,10,157,67
+1952,Company_1952,Edtech,Professional,99.0,2025-07-16,0,,5,9,18,33
+1953,Company_1953,Marketing Agency,Professional,99.0,2025-08-26,0,,11,6,345,51
+1954,Company_1954,SaaS B2B,Starter,29.0,2025-08-17,1,2026-01-05,3,10,222,13
+1955,Company_1955,Fintech,Starter,29.0,2026-01-21,0,,18,7,488,52
+1956,Company_1956,SaaS B2B,Starter,29.0,2026-01-12,0,,25,8,478,41
+1957,Company_1957,Fintech,Professional,99.0,2025-03-25,0,,18,3,88,25
+1958,Company_1958,Logistics,Enterprise,299.0,2025-04-12,0,,21,9,333,32
+1959,Company_1959,SaaS B2B,Professional,99.0,2026-02-02,0,,20,7,268,20
+1960,Company_1960,E-commerce,Professional,99.0,2025-12-15,0,,22,5,274,2
+1961,Company_1961,Logistics,Starter,29.0,2025-12-08,0,,2,10,208,30
+1962,Company_1962,Healthtech,Starter,29.0,2025-04-12,0,,1,7,8,27
+1963,Company_1963,SaaS B2B,Starter,29.0,2025-09-20,0,,15,6,202,44
+1964,Company_1964,Healthtech,Starter,29.0,2025-08-08,0,,6,9,193,40
+1965,Company_1965,Fintech,Enterprise,299.0,2025-01-11,0,,17,10,303,37
+1966,Company_1966,Edtech,Professional,99.0,2025-07-01,0,,4,10,313,19
+1967,Company_1967,E-commerce,Enterprise,299.0,2025-08-06,0,,20,9,172,27
+1968,Company_1968,Healthtech,Starter,29.0,2026-03-22,0,,21,9,185,50
+1969,Company_1969,Logistics,Professional,99.0,2025-06-19,0,,15,8,439,9
+1970,Company_1970,Logistics,Professional,99.0,2025-11-14,0,,5,6,318,9
+1971,Company_1971,Logistics,Enterprise,299.0,2025-04-25,0,,23,10,85,33
+1972,Company_1972,E-commerce,Enterprise,299.0,2025-11-03,0,,22,8,360,48
+1973,Company_1973,Marketing Agency,Starter,29.0,2025-09-04,1,2025-10-03,5,9,114,63
+1974,Company_1974,Logistics,Professional,99.0,2025-08-18,0,,5,10,362,30
+1975,Company_1975,Fintech,Professional,99.0,2025-07-28,1,2026-01-19,2,10,72,34
+1976,Company_1976,Edtech,Starter,29.0,2025-03-28,0,,18,3,310,13
+1977,Company_1977,Marketing Agency,Starter,29.0,2026-03-24,0,,16,10,188,50
+1978,Company_1978,SaaS B2B,Starter,29.0,2025-04-16,0,,7,10,112,33
+1979,Company_1979,SaaS B2B,Starter,29.0,2025-03-20,0,,12,8,59,77
+1980,Company_1980,Marketing Agency,Professional,99.0,2025-01-22,0,,7,8,226,47
+1981,Company_1981,E-commerce,Professional,99.0,2025-04-25,0,,7,10,380,59
+1982,Company_1982,Marketing Agency,Starter,29.0,2025-12-02,0,,19,10,441,42
+1983,Company_1983,Healthtech,Professional,99.0,2025-06-25,0,,13,8,294,1
+1984,Company_1984,SaaS B2B,Professional,99.0,2026-03-05,0,,2,10,79,17
+1985,Company_1985,Fintech,Enterprise,299.0,2026-03-13,0,,5,8,473,78
+1986,Company_1986,Edtech,Starter,29.0,2025-05-16,0,,10,10,109,51
+1987,Company_1987,Healthtech,Starter,29.0,2025-10-08,0,,13,6,416,19
+1988,Company_1988,Fintech,Professional,99.0,2025-04-29,0,,25,10,383,37
+1989,Company_1989,E-commerce,Starter,29.0,2025-02-04,0,,25,7,162,27
+1990,Company_1990,SaaS B2B,Starter,29.0,2025-01-17,0,,14,6,264,46
+1991,Company_1991,Logistics,Starter,29.0,2025-04-11,0,,23,8,441,75
+1992,Company_1992,Logistics,Enterprise,299.0,2025-04-07,0,,21,8,12,51
+1993,Company_1993,SaaS B2B,Enterprise,299.0,2025-11-07,0,,4,7,7,43
+1994,Company_1994,SaaS B2B,Starter,29.0,2026-02-14,0,,11,9,305,66
+1995,Company_1995,Edtech,Professional,99.0,2025-12-21,0,,22,9,73,79
+1996,Company_1996,SaaS B2B,Starter,29.0,2025-01-17,0,,3,8,86,31
+1997,Company_1997,Edtech,Starter,29.0,2025-01-17,0,,21,10,500,53
+1998,Company_1998,Logistics,Professional,99.0,2025-07-19,0,,1,9,61,63
+1999,Company_1999,Edtech,Professional,99.0,2026-01-17,0,,19,10,39,42
+2000,Company_2000,E-commerce,Starter,29.0,2025-06-14,0,,12,8,190,78

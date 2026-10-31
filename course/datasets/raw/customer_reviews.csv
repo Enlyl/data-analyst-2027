@@ -1,0 +1,801 @@
+review_id,date,customer_id,rating,text,sentiment_label,platform
+1,2026-02-10,495,3,Функционал стандартный. Хотелось бы больше шаблонов отчётов.,Neutral,Google Play
+2,2026-06-12,153,1,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,Trustpilot
+3,2026-01-28,902,2,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,Google Play
+4,2026-07-25,658,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Google Play
+5,2026-04-06,169,3,"Decent tool, does the job. Would appreciate more documentation on webhooks.",Neutral,App Store
+6,2026-08-27,133,3,"Decent tool, does the job. Would appreciate more documentation on webhooks.",Neutral,Internal Feedback
+7,2026-08-27,115,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Google Play
+8,2026-07-26,44,2,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,Google Play
+9,2026-08-21,215,1,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,Google Play
+10,2026-02-22,531,1,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,Trustpilot
+11,2026-03-17,881,5,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Internal Feedback
+12,2026-02-20,420,3,"Обычный продукт, ничего особенного. Работает нормально, но цена высоковата.",Neutral,App Store
+13,2026-07-13,390,2,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,Trustpilot
+14,2026-09-10,47,5,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,App Store
+15,2026-08-23,258,1,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,App Store
+16,2026-02-21,445,1,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,Internal Feedback
+17,2026-03-27,630,5,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,App Store
+18,2026-06-06,144,3,"Обычный продукт, ничего особенного. Работает нормально, но цена высоковата.",Neutral,Internal Feedback
+19,2026-05-23,362,3,"Доставили вовремя. Пока тестирую, есть пара непонятных моментов в интерфейсе.",Neutral,App Store
+20,2026-09-08,425,5,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Internal Feedback
+21,2026-09-14,358,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,App Store
+22,2026-04-21,9,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Trustpilot
+23,2026-09-10,277,5,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Internal Feedback
+24,2026-02-24,402,5,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Trustpilot
+25,2026-07-24,860,1,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,App Store
+26,2026-05-06,301,2,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,Internal Feedback
+27,2026-06-14,887,5,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Google Play
+28,2026-02-25,4,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Internal Feedback
+29,2026-04-21,599,5,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Google Play
+30,2026-06-22,137,2,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,App Store
+31,2026-08-05,52,1,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,Internal Feedback
+32,2026-05-23,73,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Google Play
+33,2026-07-16,58,3,"Decent tool, does the job. Would appreciate more documentation on webhooks.",Neutral,Google Play
+34,2026-03-05,455,2,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,Google Play
+35,2026-07-21,924,3,"Обычный продукт, ничего особенного. Работает нормально, но цена высоковата.",Neutral,Google Play
+36,2026-05-08,745,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Internal Feedback
+37,2026-05-22,794,3,"Decent tool, does the job. Would appreciate more documentation on webhooks.",Neutral,Internal Feedback
+38,2026-09-10,784,1,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,Google Play
+39,2026-05-12,494,5,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Google Play
+40,2026-08-13,289,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Internal Feedback
+41,2026-09-24,512,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,App Store
+42,2026-06-08,568,5,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Internal Feedback
+43,2026-01-03,341,3,"Decent tool, does the job. Would appreciate more documentation on webhooks.",Neutral,App Store
+44,2026-05-26,662,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Internal Feedback
+45,2026-05-13,175,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Google Play
+46,2026-06-10,974,2,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,App Store
+47,2026-08-16,92,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,App Store
+48,2026-05-05,848,2,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,Trustpilot
+49,2026-04-24,726,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Trustpilot
+50,2026-09-21,458,5,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Trustpilot
+51,2026-06-09,507,3,"Обычный продукт, ничего особенного. Работает нормально, но цена высоковата.",Neutral,Google Play
+52,2026-06-20,571,3,Функционал стандартный. Хотелось бы больше шаблонов отчётов.,Neutral,App Store
+53,2026-07-08,542,3,Функционал стандартный. Хотелось бы больше шаблонов отчётов.,Neutral,Google Play
+54,2026-05-03,852,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,App Store
+55,2026-09-19,310,1,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,Internal Feedback
+56,2026-09-01,332,1,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,Trustpilot
+57,2026-08-27,217,2,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,App Store
+58,2026-04-27,286,1,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,Google Play
+59,2026-01-16,213,1,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,Google Play
+60,2026-09-16,798,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Internal Feedback
+61,2026-03-06,357,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,App Store
+62,2026-09-06,189,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Google Play
+63,2026-09-05,860,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,App Store
+64,2026-09-23,398,3,Функционал стандартный. Хотелось бы больше шаблонов отчётов.,Neutral,App Store
+65,2026-07-20,54,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Internal Feedback
+66,2026-09-28,238,2,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,Google Play
+67,2026-09-17,687,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Trustpilot
+68,2026-06-28,262,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Google Play
+69,2026-08-31,788,3,"Decent tool, does the job. Would appreciate more documentation on webhooks.",Neutral,Google Play
+70,2026-09-21,822,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,App Store
+71,2026-03-23,500,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,App Store
+72,2026-06-08,390,3,Функционал стандартный. Хотелось бы больше шаблонов отчётов.,Neutral,App Store
+73,2026-08-08,217,3,"Доставили вовремя. Пока тестирую, есть пара непонятных моментов в интерфейсе.",Neutral,App Store
+74,2026-03-26,728,1,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,App Store
+75,2026-02-07,112,3,"Доставили вовремя. Пока тестирую, есть пара непонятных моментов в интерфейсе.",Neutral,App Store
+76,2026-04-25,299,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,App Store
+77,2026-02-26,569,2,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,Google Play
+78,2026-01-01,502,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Google Play
+79,2026-10-05,837,3,"Обычный продукт, ничего особенного. Работает нормально, но цена высоковата.",Neutral,Internal Feedback
+80,2026-08-25,940,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,App Store
+81,2026-02-14,48,5,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Google Play
+82,2026-07-19,339,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Google Play
+83,2026-05-09,788,3,"Доставили вовремя. Пока тестирую, есть пара непонятных моментов в интерфейсе.",Neutral,Trustpilot
+84,2026-05-24,83,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,App Store
+85,2026-03-12,408,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Internal Feedback
+86,2026-02-17,872,2,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,App Store
+87,2026-01-02,468,3,"Доставили вовремя. Пока тестирую, есть пара непонятных моментов в интерфейсе.",Neutral,Google Play
+88,2026-01-27,966,3,"Обычный продукт, ничего особенного. Работает нормально, но цена высоковата.",Neutral,Trustpilot
+89,2026-01-25,628,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Internal Feedback
+90,2026-06-08,385,5,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Internal Feedback
+91,2026-02-20,247,2,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,App Store
+92,2026-02-11,414,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Internal Feedback
+93,2026-01-14,8,2,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,Trustpilot
+94,2026-04-05,548,3,"Доставили вовремя. Пока тестирую, есть пара непонятных моментов в интерфейсе.",Neutral,Google Play
+95,2026-01-30,179,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Trustpilot
+96,2026-03-10,453,1,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,Trustpilot
+97,2026-06-13,775,1,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,Trustpilot
+98,2026-01-30,961,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Internal Feedback
+99,2026-04-05,807,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Trustpilot
+100,2026-10-03,270,3,"Обычный продукт, ничего особенного. Работает нормально, но цена высоковата.",Neutral,Google Play
+101,2026-05-30,188,5,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,App Store
+102,2026-05-31,290,3,"Обычный продукт, ничего особенного. Работает нормально, но цена высоковата.",Neutral,Internal Feedback
+103,2026-09-27,84,3,"Decent tool, does the job. Would appreciate more documentation on webhooks.",Neutral,Google Play
+104,2026-02-09,916,1,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,App Store
+105,2026-04-12,710,4,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Trustpilot
+106,2026-07-24,550,1,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,Internal Feedback
+107,2026-02-26,225,5,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Internal Feedback
+108,2026-04-29,522,1,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,Trustpilot
+109,2026-06-19,54,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,App Store
+110,2026-06-09,777,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Trustpilot
+111,2026-02-24,681,4,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,App Store
+112,2026-07-30,347,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,App Store
+113,2026-08-15,754,5,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Google Play
+114,2026-09-13,51,3,"Доставили вовремя. Пока тестирую, есть пара непонятных моментов в интерфейсе.",Neutral,Internal Feedback
+115,2026-01-12,974,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Internal Feedback
+116,2026-02-17,314,5,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Trustpilot
+117,2026-01-10,818,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Google Play
+118,2026-02-01,319,3,"Доставили вовремя. Пока тестирую, есть пара непонятных моментов в интерфейсе.",Neutral,Internal Feedback
+119,2026-03-27,477,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,App Store
+120,2026-09-23,219,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,App Store
+121,2026-03-08,70,3,Функционал стандартный. Хотелось бы больше шаблонов отчётов.,Neutral,Trustpilot
+122,2026-07-11,716,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,App Store
+123,2026-09-02,681,3,Функционал стандартный. Хотелось бы больше шаблонов отчётов.,Neutral,App Store
+124,2026-07-12,156,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Google Play
+125,2026-09-14,536,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Google Play
+126,2026-07-19,318,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Trustpilot
+127,2026-10-02,738,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,App Store
+128,2026-08-20,182,5,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Trustpilot
+129,2026-06-26,652,4,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Internal Feedback
+130,2026-08-08,880,5,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Internal Feedback
+131,2026-05-29,333,1,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,Internal Feedback
+132,2026-03-21,391,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Google Play
+133,2026-06-08,989,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,App Store
+134,2026-02-11,888,2,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,Google Play
+135,2026-07-12,207,4,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,App Store
+136,2026-08-23,431,5,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Google Play
+137,2026-03-07,980,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,App Store
+138,2026-04-11,231,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Trustpilot
+139,2026-07-28,743,4,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Trustpilot
+140,2026-08-05,363,3,"Доставили вовремя. Пока тестирую, есть пара непонятных моментов в интерфейсе.",Neutral,Trustpilot
+141,2026-03-11,113,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Trustpilot
+142,2026-07-10,123,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,App Store
+143,2026-07-22,17,3,"Доставили вовремя. Пока тестирую, есть пара непонятных моментов в интерфейсе.",Neutral,Trustpilot
+144,2026-02-09,730,2,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,Google Play
+145,2026-01-25,305,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Trustpilot
+146,2026-02-19,197,5,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Trustpilot
+147,2026-02-18,206,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Google Play
+148,2026-04-11,855,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Google Play
+149,2026-01-14,383,1,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,App Store
+150,2026-08-13,293,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Trustpilot
+151,2026-02-02,17,2,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,App Store
+152,2026-04-01,462,1,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,Trustpilot
+153,2026-03-21,26,1,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,Google Play
+154,2026-06-30,487,1,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,Internal Feedback
+155,2026-01-13,180,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Trustpilot
+156,2026-08-25,545,3,"Обычный продукт, ничего особенного. Работает нормально, но цена высоковата.",Neutral,Google Play
+157,2026-01-28,452,4,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Internal Feedback
+158,2026-01-22,900,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Google Play
+159,2026-04-08,593,3,"Обычный продукт, ничего особенного. Работает нормально, но цена высоковата.",Neutral,Trustpilot
+160,2026-01-14,13,2,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,Internal Feedback
+161,2026-07-05,116,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Trustpilot
+162,2026-08-10,468,4,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,App Store
+163,2026-02-16,997,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,App Store
+164,2026-06-02,266,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Internal Feedback
+165,2026-05-28,410,3,"Обычный продукт, ничего особенного. Работает нормально, но цена высоковата.",Neutral,App Store
+166,2026-06-29,675,2,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,Internal Feedback
+167,2026-02-04,238,2,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,Internal Feedback
+168,2026-06-01,983,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Trustpilot
+169,2026-01-26,823,3,"Доставили вовремя. Пока тестирую, есть пара непонятных моментов в интерфейсе.",Neutral,App Store
+170,2026-03-16,214,4,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,App Store
+171,2026-05-24,582,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Google Play
+172,2026-05-19,675,3,Функционал стандартный. Хотелось бы больше шаблонов отчётов.,Neutral,Internal Feedback
+173,2026-04-07,306,5,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Trustpilot
+174,2026-10-01,379,2,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,App Store
+175,2026-06-11,870,1,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,Google Play
+176,2026-07-08,610,2,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,Google Play
+177,2026-01-20,356,5,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Trustpilot
+178,2026-01-27,30,1,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,Trustpilot
+179,2026-03-02,990,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Google Play
+180,2026-08-28,503,3,"Decent tool, does the job. Would appreciate more documentation on webhooks.",Neutral,App Store
+181,2026-09-22,917,1,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,Internal Feedback
+182,2026-08-29,454,3,"Обычный продукт, ничего особенного. Работает нормально, но цена высоковата.",Neutral,Trustpilot
+183,2026-10-03,890,5,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Google Play
+184,2026-03-26,113,2,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,Trustpilot
+185,2026-04-19,89,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,App Store
+186,2026-04-24,544,1,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,Trustpilot
+187,2026-09-09,267,3,"Decent tool, does the job. Would appreciate more documentation on webhooks.",Neutral,Trustpilot
+188,2026-04-22,737,2,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,App Store
+189,2026-01-07,912,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Google Play
+190,2026-05-31,273,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Google Play
+191,2026-06-18,870,1,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,Google Play
+192,2026-02-16,236,3,"Decent tool, does the job. Would appreciate more documentation on webhooks.",Neutral,Trustpilot
+193,2026-02-17,282,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Internal Feedback
+194,2026-10-01,938,2,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,Google Play
+195,2026-07-16,206,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Google Play
+196,2026-02-14,357,3,Функционал стандартный. Хотелось бы больше шаблонов отчётов.,Neutral,Trustpilot
+197,2026-06-24,730,2,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,App Store
+198,2026-02-01,901,3,"Decent tool, does the job. Would appreciate more documentation on webhooks.",Neutral,Internal Feedback
+199,2026-08-09,667,2,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,Internal Feedback
+200,2026-04-01,905,3,Функционал стандартный. Хотелось бы больше шаблонов отчётов.,Neutral,App Store
+201,2026-02-03,591,5,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,App Store
+202,2026-07-18,477,2,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,Internal Feedback
+203,2026-03-16,979,2,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,Internal Feedback
+204,2026-04-24,73,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Internal Feedback
+205,2026-01-11,952,4,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Google Play
+206,2026-01-15,897,1,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,App Store
+207,2026-07-04,843,5,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Trustpilot
+208,2026-02-21,768,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Trustpilot
+209,2026-03-16,626,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Internal Feedback
+210,2026-06-18,344,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Trustpilot
+211,2026-02-23,456,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Internal Feedback
+212,2026-05-08,734,2,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,Internal Feedback
+213,2026-08-15,43,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,App Store
+214,2026-08-13,845,5,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Internal Feedback
+215,2026-01-24,407,1,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,App Store
+216,2026-04-12,236,5,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Google Play
+217,2026-10-01,23,2,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,Google Play
+218,2026-08-03,976,2,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,App Store
+219,2026-09-26,575,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Internal Feedback
+220,2026-03-28,249,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Trustpilot
+221,2026-05-28,826,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Internal Feedback
+222,2026-07-11,209,4,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,App Store
+223,2026-08-03,66,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Internal Feedback
+224,2026-08-27,633,2,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,Google Play
+225,2026-01-27,902,5,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,App Store
+226,2026-01-18,819,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Google Play
+227,2026-06-11,195,5,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Google Play
+228,2026-05-13,157,5,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Trustpilot
+229,2026-07-25,844,2,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,App Store
+230,2026-02-05,288,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Internal Feedback
+231,2026-01-28,642,3,"Доставили вовремя. Пока тестирую, есть пара непонятных моментов в интерфейсе.",Neutral,Trustpilot
+232,2026-06-06,410,1,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,Google Play
+233,2026-02-06,366,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,App Store
+234,2026-03-08,841,2,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,App Store
+235,2026-02-18,798,2,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,Google Play
+236,2026-05-02,589,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Trustpilot
+237,2026-08-26,554,4,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Google Play
+238,2026-06-27,352,2,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,Internal Feedback
+239,2026-08-09,591,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,App Store
+240,2026-01-26,639,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,App Store
+241,2026-03-21,417,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,App Store
+242,2026-08-18,285,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,App Store
+243,2026-07-17,841,5,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Trustpilot
+244,2026-07-22,32,2,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,Google Play
+245,2026-09-09,816,2,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,App Store
+246,2026-03-08,89,3,"Обычный продукт, ничего особенного. Работает нормально, но цена высоковата.",Neutral,App Store
+247,2026-06-05,997,1,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,Trustpilot
+248,2026-04-15,583,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,App Store
+249,2026-10-08,806,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,App Store
+250,2026-07-25,793,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Trustpilot
+251,2026-10-08,408,1,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,Internal Feedback
+252,2026-03-05,785,2,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,App Store
+253,2026-09-23,53,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Internal Feedback
+254,2026-03-20,822,1,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,Trustpilot
+255,2026-08-13,316,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,App Store
+256,2026-05-22,743,1,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,Internal Feedback
+257,2026-06-22,119,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Trustpilot
+258,2026-01-25,546,5,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,App Store
+259,2026-05-30,465,3,"Обычный продукт, ничего особенного. Работает нормально, но цена высоковата.",Neutral,Trustpilot
+260,2026-07-07,61,5,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Internal Feedback
+261,2026-07-03,42,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Google Play
+262,2026-03-28,184,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,App Store
+263,2026-02-23,151,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Trustpilot
+264,2026-06-15,194,3,"Обычный продукт, ничего особенного. Работает нормально, но цена высоковата.",Neutral,App Store
+265,2026-09-18,780,2,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,Google Play
+266,2026-04-13,574,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,App Store
+267,2026-04-19,292,3,"Доставили вовремя. Пока тестирую, есть пара непонятных моментов в интерфейсе.",Neutral,Google Play
+268,2026-05-30,773,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Trustpilot
+269,2026-03-10,535,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Internal Feedback
+270,2026-02-28,964,3,"Decent tool, does the job. Would appreciate more documentation on webhooks.",Neutral,Google Play
+271,2026-04-05,970,2,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,Google Play
+272,2026-03-15,806,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Internal Feedback
+273,2026-04-27,534,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Google Play
+274,2026-05-01,300,5,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Trustpilot
+275,2026-07-26,52,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,App Store
+276,2026-05-11,827,1,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,Google Play
+277,2026-03-12,65,5,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,App Store
+278,2026-08-05,364,2,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,Trustpilot
+279,2026-06-21,585,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Trustpilot
+280,2026-09-01,410,2,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,Trustpilot
+281,2026-09-03,732,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Google Play
+282,2026-02-10,918,3,"Decent tool, does the job. Would appreciate more documentation on webhooks.",Neutral,Trustpilot
+283,2026-02-18,374,2,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,Internal Feedback
+284,2026-07-07,163,5,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Internal Feedback
+285,2026-09-10,324,1,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,Trustpilot
+286,2026-05-18,940,3,Функционал стандартный. Хотелось бы больше шаблонов отчётов.,Neutral,Trustpilot
+287,2026-08-06,237,5,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Trustpilot
+288,2026-08-12,257,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,App Store
+289,2026-08-13,146,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Internal Feedback
+290,2026-03-02,112,2,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,App Store
+291,2026-01-27,454,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Internal Feedback
+292,2026-07-13,568,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Google Play
+293,2026-06-26,584,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,App Store
+294,2026-01-07,363,3,"Доставили вовремя. Пока тестирую, есть пара непонятных моментов в интерфейсе.",Neutral,App Store
+295,2026-03-16,257,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Trustpilot
+296,2026-09-02,63,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,App Store
+297,2026-09-22,565,4,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Google Play
+298,2026-03-29,382,3,Функционал стандартный. Хотелось бы больше шаблонов отчётов.,Neutral,Google Play
+299,2026-08-21,98,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,App Store
+300,2026-04-14,363,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Google Play
+301,2026-07-20,258,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Trustpilot
+302,2026-08-29,422,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Internal Feedback
+303,2026-01-28,945,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Internal Feedback
+304,2026-06-28,777,5,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,App Store
+305,2026-01-19,411,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Google Play
+306,2026-05-22,78,3,"Обычный продукт, ничего особенного. Работает нормально, но цена высоковата.",Neutral,Internal Feedback
+307,2026-07-25,400,1,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,Trustpilot
+308,2026-10-08,646,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Google Play
+309,2026-08-15,783,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Google Play
+310,2026-05-11,817,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Trustpilot
+311,2026-09-02,233,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Internal Feedback
+312,2026-09-04,440,5,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Internal Feedback
+313,2026-06-10,84,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Google Play
+314,2026-04-04,276,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Google Play
+315,2026-04-06,459,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Trustpilot
+316,2026-05-02,579,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Trustpilot
+317,2026-01-03,995,4,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Trustpilot
+318,2026-05-05,134,2,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,Internal Feedback
+319,2026-09-27,475,2,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,Google Play
+320,2026-02-28,403,1,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,Google Play
+321,2026-10-08,421,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,App Store
+322,2026-05-31,972,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Internal Feedback
+323,2026-03-02,238,3,"Decent tool, does the job. Would appreciate more documentation on webhooks.",Neutral,Trustpilot
+324,2026-01-31,377,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Internal Feedback
+325,2026-01-05,740,4,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Google Play
+326,2026-06-12,197,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,App Store
+327,2026-06-25,97,5,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Trustpilot
+328,2026-04-06,841,1,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,App Store
+329,2026-04-26,505,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Trustpilot
+330,2026-08-27,393,5,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Internal Feedback
+331,2026-04-25,16,3,"Доставили вовремя. Пока тестирую, есть пара непонятных моментов в интерфейсе.",Neutral,Internal Feedback
+332,2026-05-02,754,5,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,App Store
+333,2026-05-12,905,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Internal Feedback
+334,2026-07-25,213,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Trustpilot
+335,2026-04-07,757,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Trustpilot
+336,2026-08-27,217,2,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,App Store
+337,2026-09-11,458,1,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,Trustpilot
+338,2026-06-17,368,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Trustpilot
+339,2026-01-28,424,3,Функционал стандартный. Хотелось бы больше шаблонов отчётов.,Neutral,App Store
+340,2026-03-05,266,5,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Internal Feedback
+341,2026-03-23,878,5,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Trustpilot
+342,2026-01-09,169,4,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Google Play
+343,2026-06-25,962,3,"Decent tool, does the job. Would appreciate more documentation on webhooks.",Neutral,App Store
+344,2026-02-09,543,5,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Trustpilot
+345,2026-02-17,466,1,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,Trustpilot
+346,2026-09-30,783,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Trustpilot
+347,2026-02-23,522,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Internal Feedback
+348,2026-01-15,651,1,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,Trustpilot
+349,2026-01-20,436,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,App Store
+350,2026-06-17,554,1,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,Trustpilot
+351,2026-07-30,699,2,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,Google Play
+352,2026-03-29,778,5,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,App Store
+353,2026-01-05,175,5,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Trustpilot
+354,2026-07-02,284,1,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,App Store
+355,2026-08-14,418,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Internal Feedback
+356,2026-05-13,353,2,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,Trustpilot
+357,2026-06-12,683,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Trustpilot
+358,2026-05-25,263,2,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,Trustpilot
+359,2026-04-25,570,5,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Trustpilot
+360,2026-08-23,97,2,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,Google Play
+361,2026-08-20,546,1,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,App Store
+362,2026-08-01,703,2,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,Google Play
+363,2026-06-25,259,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Trustpilot
+364,2026-01-12,794,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Trustpilot
+365,2026-07-21,899,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Trustpilot
+366,2026-02-28,129,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Internal Feedback
+367,2026-06-09,24,4,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,App Store
+368,2026-05-15,788,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Internal Feedback
+369,2026-02-07,6,1,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,Trustpilot
+370,2026-02-15,189,5,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Internal Feedback
+371,2026-09-13,93,3,"Обычный продукт, ничего особенного. Работает нормально, но цена высоковата.",Neutral,Google Play
+372,2026-02-19,480,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,App Store
+373,2026-01-11,642,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Trustpilot
+374,2026-06-06,687,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Internal Feedback
+375,2026-06-14,48,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Trustpilot
+376,2026-04-18,663,3,"Decent tool, does the job. Would appreciate more documentation on webhooks.",Neutral,App Store
+377,2026-04-29,398,2,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,Google Play
+378,2026-09-20,334,4,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Google Play
+379,2026-03-22,246,2,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,App Store
+380,2026-02-18,846,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Trustpilot
+381,2026-05-07,512,5,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Trustpilot
+382,2026-03-29,578,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,App Store
+383,2026-05-11,460,5,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Internal Feedback
+384,2026-02-01,185,5,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Trustpilot
+385,2026-06-15,831,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Trustpilot
+386,2026-05-14,143,3,Функционал стандартный. Хотелось бы больше шаблонов отчётов.,Neutral,App Store
+387,2026-05-08,985,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Google Play
+388,2026-01-04,793,4,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Internal Feedback
+389,2026-07-01,264,1,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,Google Play
+390,2026-09-02,338,5,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,App Store
+391,2026-08-28,544,3,Функционал стандартный. Хотелось бы больше шаблонов отчётов.,Neutral,Internal Feedback
+392,2026-04-11,127,2,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,App Store
+393,2026-07-31,793,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Google Play
+394,2026-03-23,817,3,Функционал стандартный. Хотелось бы больше шаблонов отчётов.,Neutral,Google Play
+395,2026-06-21,856,1,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,Google Play
+396,2026-07-14,52,3,Функционал стандартный. Хотелось бы больше шаблонов отчётов.,Neutral,Trustpilot
+397,2026-01-01,263,3,Функционал стандартный. Хотелось бы больше шаблонов отчётов.,Neutral,Internal Feedback
+398,2026-01-03,975,3,"Decent tool, does the job. Would appreciate more documentation on webhooks.",Neutral,Google Play
+399,2026-05-03,624,1,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,App Store
+400,2026-05-30,231,4,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,App Store
+401,2026-08-16,155,5,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Google Play
+402,2026-02-07,794,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,App Store
+403,2026-08-07,720,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Internal Feedback
+404,2026-01-03,492,1,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,Google Play
+405,2026-05-07,203,1,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,App Store
+406,2026-05-04,359,4,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Google Play
+407,2026-07-26,650,3,Функционал стандартный. Хотелось бы больше шаблонов отчётов.,Neutral,Internal Feedback
+408,2026-08-18,22,5,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,App Store
+409,2026-07-15,362,3,"Обычный продукт, ничего особенного. Работает нормально, но цена высоковата.",Neutral,Trustpilot
+410,2026-06-22,760,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Trustpilot
+411,2026-07-03,91,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Google Play
+412,2026-04-18,5,5,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Internal Feedback
+413,2026-03-05,911,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,App Store
+414,2026-03-21,556,2,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,Google Play
+415,2026-01-28,477,5,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Trustpilot
+416,2026-01-23,403,2,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,Internal Feedback
+417,2026-05-04,346,5,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,App Store
+418,2026-03-06,975,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Internal Feedback
+419,2026-01-02,252,5,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Internal Feedback
+420,2026-04-28,485,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,App Store
+421,2026-06-09,68,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,App Store
+422,2026-09-28,7,2,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,Internal Feedback
+423,2026-09-19,119,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Google Play
+424,2026-01-12,347,1,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,App Store
+425,2026-03-13,503,2,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,Trustpilot
+426,2026-05-23,453,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Google Play
+427,2026-07-08,345,1,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,Trustpilot
+428,2026-06-29,643,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Trustpilot
+429,2026-09-01,721,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Google Play
+430,2026-04-25,380,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Google Play
+431,2026-05-09,469,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Trustpilot
+432,2026-09-15,361,1,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,Google Play
+433,2026-04-10,909,3,"Обычный продукт, ничего особенного. Работает нормально, но цена высоковата.",Neutral,Google Play
+434,2026-09-22,811,5,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Internal Feedback
+435,2026-06-23,490,2,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,App Store
+436,2026-10-06,470,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Google Play
+437,2026-08-25,439,3,Функционал стандартный. Хотелось бы больше шаблонов отчётов.,Neutral,Internal Feedback
+438,2026-07-20,43,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Internal Feedback
+439,2026-10-06,322,5,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Google Play
+440,2026-05-28,287,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,App Store
+441,2026-07-24,15,2,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,Internal Feedback
+442,2026-05-02,283,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Trustpilot
+443,2026-09-17,144,5,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Trustpilot
+444,2026-06-18,18,2,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,Trustpilot
+445,2026-09-22,286,5,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Google Play
+446,2026-03-14,6,5,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,App Store
+447,2026-01-07,181,3,Функционал стандартный. Хотелось бы больше шаблонов отчётов.,Neutral,Trustpilot
+448,2026-08-13,355,1,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,Google Play
+449,2026-06-27,117,3,"Доставили вовремя. Пока тестирую, есть пара непонятных моментов в интерфейсе.",Neutral,Google Play
+450,2026-01-07,740,3,"Доставили вовремя. Пока тестирую, есть пара непонятных моментов в интерфейсе.",Neutral,Trustpilot
+451,2026-05-30,775,5,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,App Store
+452,2026-03-04,761,1,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,Google Play
+453,2026-07-12,434,2,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,Internal Feedback
+454,2026-06-05,707,2,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,Google Play
+455,2026-05-28,191,3,"Decent tool, does the job. Would appreciate more documentation on webhooks.",Neutral,Trustpilot
+456,2026-04-17,626,1,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,App Store
+457,2026-04-27,153,2,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,App Store
+458,2026-09-09,714,2,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,Internal Feedback
+459,2026-07-18,746,2,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,App Store
+460,2026-10-08,71,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Trustpilot
+461,2026-04-09,77,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Google Play
+462,2026-02-02,686,1,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,App Store
+463,2026-03-20,501,2,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,Internal Feedback
+464,2026-01-10,754,2,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,Google Play
+465,2026-07-08,818,2,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,Google Play
+466,2026-09-05,426,3,Функционал стандартный. Хотелось бы больше шаблонов отчётов.,Neutral,Trustpilot
+467,2026-09-30,423,3,"Обычный продукт, ничего особенного. Работает нормально, но цена высоковата.",Neutral,Google Play
+468,2026-03-28,913,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Google Play
+469,2026-04-12,630,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Google Play
+470,2026-01-08,576,3,"Доставили вовремя. Пока тестирую, есть пара непонятных моментов в интерфейсе.",Neutral,Google Play
+471,2026-07-03,80,1,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,App Store
+472,2026-04-22,962,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,App Store
+473,2026-06-06,782,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Trustpilot
+474,2026-04-23,348,5,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Trustpilot
+475,2026-09-21,475,5,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Internal Feedback
+476,2026-08-23,872,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Internal Feedback
+477,2026-06-14,841,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Google Play
+478,2026-07-21,54,3,"Обычный продукт, ничего особенного. Работает нормально, но цена высоковата.",Neutral,Google Play
+479,2026-09-10,383,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Internal Feedback
+480,2026-07-03,375,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,App Store
+481,2026-10-07,910,1,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,Trustpilot
+482,2026-09-28,766,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Google Play
+483,2026-04-18,786,2,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,Trustpilot
+484,2026-09-08,477,4,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,App Store
+485,2026-03-18,927,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Internal Feedback
+486,2026-08-24,622,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Google Play
+487,2026-07-21,385,5,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,App Store
+488,2026-06-12,492,3,"Доставили вовремя. Пока тестирую, есть пара непонятных моментов в интерфейсе.",Neutral,App Store
+489,2026-06-02,555,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Internal Feedback
+490,2026-02-22,951,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Trustpilot
+491,2026-03-25,462,2,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,Internal Feedback
+492,2026-08-19,204,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Internal Feedback
+493,2026-03-25,369,1,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,Internal Feedback
+494,2026-06-27,211,3,"Доставили вовремя. Пока тестирую, есть пара непонятных моментов в интерфейсе.",Neutral,Google Play
+495,2026-07-21,618,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Internal Feedback
+496,2026-01-17,586,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,App Store
+497,2026-07-06,420,5,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Trustpilot
+498,2026-03-06,901,5,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Trustpilot
+499,2026-02-08,570,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Internal Feedback
+500,2026-07-08,651,1,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,Google Play
+501,2026-08-24,222,2,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,Google Play
+502,2026-06-29,65,1,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,Internal Feedback
+503,2026-02-09,161,3,"Обычный продукт, ничего особенного. Работает нормально, но цена высоковата.",Neutral,App Store
+504,2026-07-06,73,3,Функционал стандартный. Хотелось бы больше шаблонов отчётов.,Neutral,Internal Feedback
+505,2026-06-16,560,4,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Internal Feedback
+506,2026-03-06,984,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Trustpilot
+507,2026-06-21,340,3,Функционал стандартный. Хотелось бы больше шаблонов отчётов.,Neutral,Trustpilot
+508,2026-09-04,268,5,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Internal Feedback
+509,2026-09-03,294,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Google Play
+510,2026-04-16,42,2,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,Trustpilot
+511,2026-01-18,513,1,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,Trustpilot
+512,2026-06-18,897,3,Функционал стандартный. Хотелось бы больше шаблонов отчётов.,Neutral,Trustpilot
+513,2026-02-02,26,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Trustpilot
+514,2026-06-30,457,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Google Play
+515,2026-09-02,77,3,"Обычный продукт, ничего особенного. Работает нормально, но цена высоковата.",Neutral,App Store
+516,2026-01-29,144,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Google Play
+517,2026-02-08,63,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Google Play
+518,2026-08-20,520,4,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Google Play
+519,2026-02-21,177,2,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,Google Play
+520,2026-06-25,37,5,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,App Store
+521,2026-05-11,407,2,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,Google Play
+522,2026-02-07,405,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Internal Feedback
+523,2026-09-12,548,3,"Доставили вовремя. Пока тестирую, есть пара непонятных моментов в интерфейсе.",Neutral,App Store
+524,2026-07-06,208,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,App Store
+525,2026-07-12,112,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,App Store
+526,2026-05-04,887,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Trustpilot
+527,2026-01-17,79,3,"Доставили вовремя. Пока тестирую, есть пара непонятных моментов в интерфейсе.",Neutral,Internal Feedback
+528,2026-06-09,365,3,"Обычный продукт, ничего особенного. Работает нормально, но цена высоковата.",Neutral,Trustpilot
+529,2026-02-15,554,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Trustpilot
+530,2026-05-25,75,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Internal Feedback
+531,2026-04-05,527,2,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,Internal Feedback
+532,2026-10-08,294,3,"Доставили вовремя. Пока тестирую, есть пара непонятных моментов в интерфейсе.",Neutral,Internal Feedback
+533,2026-04-10,268,5,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Google Play
+534,2026-08-16,727,3,"Decent tool, does the job. Would appreciate more documentation on webhooks.",Neutral,Internal Feedback
+535,2026-09-20,686,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Internal Feedback
+536,2026-09-28,626,3,"Доставили вовремя. Пока тестирую, есть пара непонятных моментов в интерфейсе.",Neutral,Google Play
+537,2026-09-08,949,5,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Google Play
+538,2026-06-25,630,1,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,App Store
+539,2026-03-02,324,2,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,Trustpilot
+540,2026-01-05,523,3,"Доставили вовремя. Пока тестирую, есть пара непонятных моментов в интерфейсе.",Neutral,App Store
+541,2026-09-24,982,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,App Store
+542,2026-04-27,106,1,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,Google Play
+543,2026-06-11,441,1,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,App Store
+544,2026-07-15,722,5,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Internal Feedback
+545,2026-03-30,123,3,Функционал стандартный. Хотелось бы больше шаблонов отчётов.,Neutral,Trustpilot
+546,2026-01-26,284,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,App Store
+547,2026-01-14,673,3,"Decent tool, does the job. Would appreciate more documentation on webhooks.",Neutral,Trustpilot
+548,2026-07-27,911,1,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,Trustpilot
+549,2026-08-24,653,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Internal Feedback
+550,2026-08-14,500,1,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,Trustpilot
+551,2026-08-30,859,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Internal Feedback
+552,2026-03-06,967,5,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Trustpilot
+553,2026-03-19,150,4,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Google Play
+554,2026-10-05,150,1,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,Trustpilot
+555,2026-08-12,222,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Google Play
+556,2026-03-20,641,1,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,Internal Feedback
+557,2026-03-17,283,5,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Internal Feedback
+558,2026-06-28,332,4,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Trustpilot
+559,2026-06-25,19,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Trustpilot
+560,2026-03-09,376,2,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,Trustpilot
+561,2026-05-09,314,4,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Google Play
+562,2026-08-25,146,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Google Play
+563,2026-06-22,779,5,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,App Store
+564,2026-02-14,931,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,App Store
+565,2026-03-13,341,3,"Обычный продукт, ничего особенного. Работает нормально, но цена высоковата.",Neutral,App Store
+566,2026-05-23,675,2,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,App Store
+567,2026-05-18,337,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,App Store
+568,2026-01-25,354,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,App Store
+569,2026-06-20,652,3,"Обычный продукт, ничего особенного. Работает нормально, но цена высоковата.",Neutral,Trustpilot
+570,2026-01-26,615,2,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,Trustpilot
+571,2026-09-28,932,1,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,Trustpilot
+572,2026-02-17,162,5,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Trustpilot
+573,2026-08-26,959,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,App Store
+574,2026-02-06,748,1,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,App Store
+575,2026-10-02,116,1,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,Trustpilot
+576,2026-01-31,700,1,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,Trustpilot
+577,2026-06-23,66,5,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Google Play
+578,2026-02-04,820,5,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,App Store
+579,2026-09-22,579,5,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Internal Feedback
+580,2026-05-20,385,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Google Play
+581,2026-01-26,320,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Google Play
+582,2026-10-03,609,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,App Store
+583,2026-08-05,848,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,App Store
+584,2026-09-15,773,1,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,Trustpilot
+585,2026-08-12,357,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Internal Feedback
+586,2026-05-19,327,3,"Обычный продукт, ничего особенного. Работает нормально, но цена высоковата.",Neutral,Trustpilot
+587,2026-06-12,839,3,"Decent tool, does the job. Would appreciate more documentation on webhooks.",Neutral,App Store
+588,2026-03-14,9,5,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Internal Feedback
+589,2026-01-28,662,3,Функционал стандартный. Хотелось бы больше шаблонов отчётов.,Neutral,Google Play
+590,2026-04-15,145,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Google Play
+591,2026-02-27,830,1,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,Internal Feedback
+592,2026-02-01,578,1,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,App Store
+593,2026-09-15,461,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Trustpilot
+594,2026-05-26,199,1,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,Internal Feedback
+595,2026-07-28,927,1,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,Google Play
+596,2026-01-27,171,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Google Play
+597,2026-07-08,640,1,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,App Store
+598,2026-07-25,929,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,App Store
+599,2026-07-24,796,5,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Internal Feedback
+600,2026-10-04,946,2,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,App Store
+601,2026-09-28,651,1,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,Internal Feedback
+602,2026-03-16,452,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Internal Feedback
+603,2026-02-18,679,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Internal Feedback
+604,2026-08-31,411,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,App Store
+605,2026-03-30,478,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Internal Feedback
+606,2026-05-17,34,1,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,Trustpilot
+607,2026-05-08,549,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,App Store
+608,2026-01-02,170,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Internal Feedback
+609,2026-06-06,587,2,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,Google Play
+610,2026-09-23,93,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Internal Feedback
+611,2026-04-15,129,1,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,Google Play
+612,2026-04-10,343,3,Функционал стандартный. Хотелось бы больше шаблонов отчётов.,Neutral,App Store
+613,2026-09-14,335,2,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,Internal Feedback
+614,2026-05-07,127,1,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,Trustpilot
+615,2026-08-17,891,1,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,Trustpilot
+616,2026-07-20,837,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Internal Feedback
+617,2026-05-14,633,1,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,Trustpilot
+618,2026-01-21,539,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Google Play
+619,2026-01-17,735,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Internal Feedback
+620,2026-05-03,212,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Trustpilot
+621,2026-09-25,137,1,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,Internal Feedback
+622,2026-02-02,210,2,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,Internal Feedback
+623,2026-09-19,708,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,App Store
+624,2026-04-10,669,1,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,Internal Feedback
+625,2026-09-29,454,3,"Обычный продукт, ничего особенного. Работает нормально, но цена высоковата.",Neutral,App Store
+626,2026-01-12,384,3,"Обычный продукт, ничего особенного. Работает нормально, но цена высоковата.",Neutral,Internal Feedback
+627,2026-08-02,239,5,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Google Play
+628,2026-01-30,399,2,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,Trustpilot
+629,2026-09-10,942,1,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,App Store
+630,2026-07-08,202,4,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Google Play
+631,2026-09-11,254,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,App Store
+632,2026-09-06,24,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Trustpilot
+633,2026-02-10,70,3,"Доставили вовремя. Пока тестирую, есть пара непонятных моментов в интерфейсе.",Neutral,Internal Feedback
+634,2026-05-14,798,1,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,Internal Feedback
+635,2026-02-02,461,5,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Trustpilot
+636,2026-09-18,583,3,"Доставили вовремя. Пока тестирую, есть пара непонятных моментов в интерфейсе.",Neutral,Trustpilot
+637,2026-06-29,435,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Internal Feedback
+638,2026-04-22,437,2,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,Google Play
+639,2026-08-15,227,1,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,Internal Feedback
+640,2026-03-03,267,3,"Обычный продукт, ничего особенного. Работает нормально, но цена высоковата.",Neutral,Google Play
+641,2026-01-04,360,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,App Store
+642,2026-08-04,379,2,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,Google Play
+643,2026-01-30,898,1,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,App Store
+644,2026-03-19,620,2,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,Trustpilot
+645,2026-01-08,21,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Trustpilot
+646,2026-03-01,162,1,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,Trustpilot
+647,2026-03-04,194,5,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Google Play
+648,2026-07-29,729,1,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,Trustpilot
+649,2026-10-08,678,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Trustpilot
+650,2026-04-15,891,3,"Доставили вовремя. Пока тестирую, есть пара непонятных моментов в интерфейсе.",Neutral,App Store
+651,2026-02-04,654,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Google Play
+652,2026-10-06,399,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Internal Feedback
+653,2026-07-16,925,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Trustpilot
+654,2026-08-17,909,3,"Обычный продукт, ничего особенного. Работает нормально, но цена высоковата.",Neutral,Trustpilot
+655,2026-07-13,547,5,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Trustpilot
+656,2026-09-03,26,3,"Доставили вовремя. Пока тестирую, есть пара непонятных моментов в интерфейсе.",Neutral,App Store
+657,2026-06-23,904,3,"Обычный продукт, ничего особенного. Работает нормально, но цена высоковата.",Neutral,Trustpilot
+658,2026-09-29,520,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Internal Feedback
+659,2026-06-14,507,4,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Google Play
+660,2026-08-15,630,2,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,Internal Feedback
+661,2026-01-20,406,2,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,Trustpilot
+662,2026-01-06,898,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Google Play
+663,2026-06-30,102,1,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,App Store
+664,2026-09-21,734,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Google Play
+665,2026-02-15,269,1,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,App Store
+666,2026-07-21,646,2,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,App Store
+667,2026-10-06,59,1,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,Trustpilot
+668,2026-08-16,452,5,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Google Play
+669,2026-02-28,988,3,Функционал стандартный. Хотелось бы больше шаблонов отчётов.,Neutral,App Store
+670,2026-04-04,414,3,Функционал стандартный. Хотелось бы больше шаблонов отчётов.,Neutral,Internal Feedback
+671,2026-08-12,961,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Trustpilot
+672,2026-08-27,463,1,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,Trustpilot
+673,2026-07-23,56,3,"Доставили вовремя. Пока тестирую, есть пара непонятных моментов в интерфейсе.",Neutral,Internal Feedback
+674,2026-05-14,153,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,App Store
+675,2026-02-01,925,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Trustpilot
+676,2026-09-17,492,3,Функционал стандартный. Хотелось бы больше шаблонов отчётов.,Neutral,App Store
+677,2026-02-17,423,4,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Google Play
+678,2026-03-19,440,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,App Store
+679,2026-09-07,281,5,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Google Play
+680,2026-09-07,562,5,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Trustpilot
+681,2026-03-27,770,5,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Internal Feedback
+682,2026-07-17,713,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Google Play
+683,2026-07-20,342,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Google Play
+684,2026-07-08,868,3,"Доставили вовремя. Пока тестирую, есть пара непонятных моментов в интерфейсе.",Neutral,App Store
+685,2026-03-19,376,3,"Обычный продукт, ничего особенного. Работает нормально, но цена высоковата.",Neutral,App Store
+686,2026-01-27,812,1,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,App Store
+687,2026-09-03,406,4,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Google Play
+688,2026-04-09,331,2,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,Internal Feedback
+689,2026-01-21,993,5,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Internal Feedback
+690,2026-10-08,353,1,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,Internal Feedback
+691,2026-08-09,773,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Internal Feedback
+692,2026-06-22,948,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Google Play
+693,2026-09-15,159,4,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Google Play
+694,2026-09-26,33,3,"Decent tool, does the job. Would appreciate more documentation on webhooks.",Neutral,Google Play
+695,2026-06-21,280,5,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Internal Feedback
+696,2026-09-15,919,5,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Internal Feedback
+697,2026-06-21,714,3,"Доставили вовремя. Пока тестирую, есть пара непонятных моментов в интерфейсе.",Neutral,Google Play
+698,2026-09-24,549,2,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,Trustpilot
+699,2026-08-19,211,2,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,App Store
+700,2026-09-14,602,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Internal Feedback
+701,2026-08-29,91,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Google Play
+702,2026-05-15,416,1,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,App Store
+703,2026-04-08,326,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,App Store
+704,2026-05-25,691,1,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,App Store
+705,2026-06-12,167,3,"Доставили вовремя. Пока тестирую, есть пара непонятных моментов в интерфейсе.",Neutral,Google Play
+706,2026-09-07,905,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Internal Feedback
+707,2026-07-26,376,1,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,Google Play
+708,2026-03-11,861,5,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Internal Feedback
+709,2026-01-17,600,2,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,App Store
+710,2026-07-31,623,5,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Trustpilot
+711,2026-07-09,866,3,"Обычный продукт, ничего особенного. Работает нормально, но цена высоковата.",Neutral,Google Play
+712,2026-01-29,168,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Trustpilot
+713,2026-06-02,286,4,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Google Play
+714,2026-07-22,801,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,App Store
+715,2026-06-09,484,3,"Обычный продукт, ничего особенного. Работает нормально, но цена высоковата.",Neutral,App Store
+716,2026-03-10,784,5,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Google Play
+717,2026-06-22,740,3,"Доставили вовремя. Пока тестирую, есть пара непонятных моментов в интерфейсе.",Neutral,Trustpilot
+718,2026-01-03,996,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Trustpilot
+719,2026-05-24,467,5,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Google Play
+720,2026-07-11,413,1,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,Internal Feedback
+721,2026-09-12,391,1,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,Trustpilot
+722,2026-08-02,176,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,App Store
+723,2026-09-13,981,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Google Play
+724,2026-08-04,778,5,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Trustpilot
+725,2026-02-24,571,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Google Play
+726,2026-07-28,478,2,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,Google Play
+727,2026-05-25,862,5,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Google Play
+728,2026-08-16,745,4,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Internal Feedback
+729,2026-05-26,973,5,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,App Store
+730,2026-06-07,308,5,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Google Play
+731,2026-08-19,677,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Google Play
+732,2026-04-26,362,1,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,Internal Feedback
+733,2026-04-29,506,2,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,Trustpilot
+734,2026-08-17,423,5,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Google Play
+735,2026-03-06,567,5,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Trustpilot
+736,2026-06-22,417,2,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,Internal Feedback
+737,2026-06-06,331,3,"Обычный продукт, ничего особенного. Работает нормально, но цена высоковата.",Neutral,Internal Feedback
+738,2026-04-29,304,2,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,Google Play
+739,2026-05-09,209,4,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Trustpilot
+740,2026-04-21,34,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Google Play
+741,2026-08-19,723,2,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,Trustpilot
+742,2026-07-20,21,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Google Play
+743,2026-09-05,81,2,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,Trustpilot
+744,2026-03-21,224,2,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,Google Play
+745,2026-01-18,268,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Trustpilot
+746,2026-01-23,21,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Google Play
+747,2026-02-27,286,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Internal Feedback
+748,2026-03-30,521,5,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,App Store
+749,2026-02-15,886,5,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,App Store
+750,2026-05-25,538,4,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Trustpilot
+751,2026-07-04,1000,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Trustpilot
+752,2026-02-19,645,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,App Store
+753,2026-10-01,150,4,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Trustpilot
+754,2026-05-18,532,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Google Play
+755,2026-06-24,331,3,"Доставили вовремя. Пока тестирую, есть пара непонятных моментов в интерфейсе.",Neutral,Internal Feedback
+756,2026-10-06,348,3,Функционал стандартный. Хотелось бы больше шаблонов отчётов.,Neutral,App Store
+757,2026-05-09,853,2,"Постоянные баги при экспорте в CSV. Ничего не работает, верните подписку!",Negative,Internal Feedback
+758,2026-02-28,414,1,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,Trustpilot
+759,2026-01-10,443,5,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,App Store
+760,2026-06-09,252,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Internal Feedback
+761,2026-09-11,944,2,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,Google Play
+762,2026-02-22,1000,1,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,Internal Feedback
+763,2026-09-04,650,1,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,App Store
+764,2026-05-12,257,1,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,Internal Feedback
+765,2026-09-01,225,2,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,App Store
+766,2026-06-14,206,3,"Decent tool, does the job. Would appreciate more documentation on webhooks.",Neutral,Trustpilot
+767,2026-08-22,982,1,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,Internal Feedback
+768,2026-05-06,84,1,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,Google Play
+769,2026-01-17,751,3,"Decent tool, does the job. Would appreciate more documentation on webhooks.",Neutral,Internal Feedback
+770,2026-09-30,576,3,"Обычный продукт, ничего особенного. Работает нормально, но цена высоковата.",Neutral,App Store
+771,2026-06-25,411,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Trustpilot
+772,2026-08-21,620,4,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Trustpilot
+773,2026-08-15,655,5,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Trustpilot
+774,2026-08-03,29,2,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,Google Play
+775,2026-08-23,433,1,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,Internal Feedback
+776,2026-08-18,969,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Internal Feedback
+777,2026-01-20,444,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Google Play
+778,2026-04-06,545,3,Функционал стандартный. Хотелось бы больше шаблонов отчётов.,Neutral,Google Play
+779,2026-08-19,39,2,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,Internal Feedback
+780,2026-01-02,559,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Trustpilot
+781,2026-06-10,187,5,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Trustpilot
+782,2026-05-02,144,2,"Деньги списали дважды, вернуть не могу уже неделю. Буду писать претензию.",Negative,Internal Feedback
+783,2026-05-26,574,2,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,Trustpilot
+784,2026-03-28,6,3,Функционал стандартный. Хотелось бы больше шаблонов отчётов.,Neutral,Google Play
+785,2026-04-24,714,5,"Прекрасное качество товара. Пользуюсь каждый день уже месяц, нареканий ноль.",Positive,Trustpilot
+786,2026-09-08,672,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Trustpilot
+787,2026-01-09,131,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Trustpilot
+788,2026-08-30,863,3,"Decent tool, does the job. Would appreciate more documentation on webhooks.",Neutral,Google Play
+789,2026-02-04,582,2,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,Trustpilot
+790,2026-07-23,940,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,App Store
+791,2026-03-08,173,1,App crashes whenever I load large datasets. Customer service gave generic replies.,Negative,Google Play
+792,2026-09-28,143,3,Функционал стандартный. Хотелось бы больше шаблонов отчётов.,Neutral,Internal Feedback
+793,2026-04-07,45,1,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,Google Play
+794,2026-07-20,320,1,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,Google Play
+795,2026-06-18,149,1,"Интерфейс тормозит, цены подняли без предупреждения. Уходим к конкурентам.",Negative,Internal Feedback
+796,2026-09-03,523,4,Супер! Интеграция с API прошла без запинки. Документация понятная.,Positive,Internal Feedback
+797,2026-05-22,804,4,"Отличный сервис, доставка пришла за 2 часа! Менеджер помог разобраться с настройками.",Positive,Trustpilot
+798,2026-05-30,308,4,"Быстрая поддержка в чате, решили проблему за 5 минут. Рекомендую!",Positive,Google Play
+799,2026-05-11,643,5,Very intuitive dashboard and responsive UI. Loving the new export features.,Positive,Internal Feedback
+800,2026-09-16,53,1,"Ужасная доставка! Курьер опоздал на 4 часа, коробка помята, поддержка молчит.",Negative,Internal Feedback

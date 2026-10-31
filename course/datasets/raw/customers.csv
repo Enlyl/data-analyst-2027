@@ -1,0 +1,1201 @@
+customer_id,first_name,city,acquisition_channel,registration_date,device
+1,User_1,Moscow,Organic Search,2025-12-27,Desktop Web
+2,User_2,Samara,Social Media,2025-04-27,Mobile iOS
+3,User_3,Saint Petersburg,Organic Search,2026-03-14,Mobile Android
+4,User_4,Yekaterinburg,Direct,2025-05-23,Mobile Android
+5,User_5,Novosibirsk,Social Media,2025-03-25,Mobile iOS
+6,User_6,Novosibirsk,Direct,2025-12-10,Desktop Web
+7,User_7,Moscow,Referral,2025-11-28,Desktop Web
+8,User_8,Kazan,Direct,2025-03-29,Mobile iOS
+9,User_9,Yekaterinburg,Email Newsletter,2025-03-25,Mobile Android
+10,User_10,Nizhny Novgorod,Direct,2026-04-19,Desktop Web
+11,User_11,Nizhny Novgorod,Social Media,2025-04-23,Mobile iOS
+12,User_12,Samara,Organic Search,2025-04-28,Mobile Android
+13,User_13,Novosibirsk,Organic Search,2025-07-25,Mobile iOS
+14,User_14,Kazan,Direct,2026-04-13,Mobile Android
+15,User_15,Nizhny Novgorod,Email Newsletter,2025-04-19,Mobile Android
+16,User_16,Nizhny Novgorod,Email Newsletter,2026-03-29,Mobile iOS
+17,User_17,Saint Petersburg,Paid Ads,2025-05-16,Desktop Web
+18,User_18,Kazan,Social Media,2025-10-15,Desktop Web
+19,User_19,Yekaterinburg,Referral,2025-10-27,Mobile Android
+20,User_20,Saint Petersburg,Paid Ads,2025-07-05,Desktop Web
+21,User_21,Moscow,Organic Search,2025-09-10,Mobile iOS
+22,User_22,Nizhny Novgorod,Paid Ads,2025-03-20,Desktop Web
+23,User_23,Kazan,Organic Search,2025-08-05,Mobile Android
+24,User_24,Kazan,Email Newsletter,2025-07-15,Desktop Web
+25,User_25,Kazan,Organic Search,2025-05-09,Desktop Web
+26,User_26,Moscow,Direct,2026-01-05,Desktop Web
+27,User_27,Novosibirsk,Direct,2026-01-20,Mobile Android
+28,User_28,Novosibirsk,Email Newsletter,2025-02-27,Mobile iOS
+29,User_29,Moscow,Direct,2025-08-21,Desktop Web
+30,User_30,Kazan,Paid Ads,2025-05-15,Desktop Web
+31,User_31,Moscow,Direct,2026-04-13,Mobile Android
+32,User_32,Nizhny Novgorod,Referral,2026-03-07,Desktop Web
+33,User_33,Saint Petersburg,Social Media,2025-04-12,Mobile iOS
+34,User_34,Samara,Referral,2025-10-04,Mobile iOS
+35,User_35,Novosibirsk,Email Newsletter,2025-11-03,Mobile iOS
+36,User_36,Novosibirsk,Social Media,2025-02-27,Mobile iOS
+37,User_37,Saint Petersburg,Referral,2025-01-30,Mobile iOS
+38,User_38,Nizhny Novgorod,Email Newsletter,2025-02-13,Mobile iOS
+39,User_39,Samara,Referral,2026-05-16,Mobile iOS
+40,User_40,Nizhny Novgorod,Email Newsletter,2025-03-07,Desktop Web
+41,User_41,Novosibirsk,Referral,2025-03-26,Desktop Web
+42,User_42,Saint Petersburg,Referral,2025-08-05,Desktop Web
+43,User_43,Saint Petersburg,Direct,2025-12-20,Mobile Android
+44,User_44,Nizhny Novgorod,Direct,2025-07-24,Mobile Android
+45,User_45,Kazan,Email Newsletter,2025-08-13,Mobile iOS
+46,User_46,Saint Petersburg,Organic Search,2025-05-07,Mobile Android
+47,User_47,Kazan,Referral,2025-01-11,Mobile iOS
+48,User_48,Saint Petersburg,Organic Search,2025-10-29,Mobile iOS
+49,User_49,Nizhny Novgorod,Organic Search,2025-12-29,Mobile iOS
+50,User_50,Moscow,Social Media,2025-02-04,Mobile iOS
+51,User_51,Saint Petersburg,Social Media,2025-09-21,Desktop Web
+52,User_52,Saint Petersburg,Referral,2025-09-06,Mobile iOS
+53,User_53,Kazan,Referral,2026-01-06,Mobile Android
+54,User_54,Samara,Email Newsletter,2025-05-05,Mobile Android
+55,User_55,Moscow,Organic Search,2025-04-08,Desktop Web
+56,User_56,Novosibirsk,Email Newsletter,2025-08-09,Mobile Android
+57,User_57,Samara,Direct,2025-08-28,Mobile iOS
+58,User_58,Nizhny Novgorod,Direct,2025-12-11,Mobile iOS
+59,User_59,Yekaterinburg,Direct,2025-02-01,Mobile Android
+60,User_60,Samara,Organic Search,2026-02-14,Mobile iOS
+61,User_61,Saint Petersburg,Referral,2025-04-09,Mobile Android
+62,User_62,Yekaterinburg,Paid Ads,2025-03-13,Mobile Android
+63,User_63,Saint Petersburg,Organic Search,2025-08-25,Mobile Android
+64,User_64,Samara,Referral,2026-02-18,Mobile iOS
+65,User_65,Nizhny Novgorod,Referral,2025-01-26,Mobile iOS
+66,User_66,Moscow,Paid Ads,2026-05-12,Mobile iOS
+67,User_67,Yekaterinburg,Email Newsletter,2025-07-28,Mobile iOS
+68,User_68,Yekaterinburg,Organic Search,2026-03-19,Mobile iOS
+69,User_69,Moscow,Email Newsletter,2025-07-14,Mobile Android
+70,User_70,Samara,Email Newsletter,2026-04-20,Mobile Android
+71,User_71,Nizhny Novgorod,Direct,2025-08-05,Desktop Web
+72,User_72,Nizhny Novgorod,Email Newsletter,2025-12-05,Mobile iOS
+73,User_73,Novosibirsk,Paid Ads,2025-04-08,Mobile iOS
+74,User_74,Nizhny Novgorod,Referral,2025-10-24,Mobile iOS
+75,User_75,Novosibirsk,Organic Search,2026-01-18,Mobile iOS
+76,User_76,Yekaterinburg,Referral,2025-10-27,Desktop Web
+77,User_77,Moscow,Referral,2025-03-22,Mobile iOS
+78,User_78,Saint Petersburg,Organic Search,2026-03-12,Desktop Web
+79,User_79,Nizhny Novgorod,Paid Ads,2025-02-04,Mobile Android
+80,User_80,Kazan,Paid Ads,2025-03-03,Desktop Web
+81,User_81,Moscow,Referral,2025-11-01,Mobile iOS
+82,User_82,Nizhny Novgorod,Referral,2025-08-03,Desktop Web
+83,User_83,Novosibirsk,Social Media,2025-09-25,Mobile iOS
+84,User_84,Nizhny Novgorod,Social Media,2025-12-09,Mobile iOS
+85,User_85,Yekaterinburg,Paid Ads,2025-05-16,Desktop Web
+86,User_86,Novosibirsk,Email Newsletter,2025-11-27,Mobile Android
+87,User_87,Samara,Organic Search,2026-04-21,Mobile iOS
+88,User_88,Kazan,Referral,2025-08-23,Mobile iOS
+89,User_89,Kazan,Paid Ads,2025-02-07,Desktop Web
+90,User_90,Saint Petersburg,Social Media,2025-05-16,Mobile iOS
+91,User_91,Saint Petersburg,Social Media,2026-03-27,Mobile Android
+92,User_92,Yekaterinburg,Referral,2025-03-22,Desktop Web
+93,User_93,Kazan,Direct,2025-06-04,Desktop Web
+94,User_94,Nizhny Novgorod,Referral,2025-01-05,Mobile Android
+95,User_95,Nizhny Novgorod,Organic Search,2026-04-23,Mobile iOS
+96,User_96,Moscow,Organic Search,2025-05-16,Desktop Web
+97,User_97,Saint Petersburg,Social Media,2025-10-11,Mobile Android
+98,User_98,Saint Petersburg,Direct,2025-11-06,Mobile Android
+99,User_99,Nizhny Novgorod,Direct,2025-04-15,Mobile Android
+100,User_100,Yekaterinburg,Social Media,2025-09-16,Mobile iOS
+101,User_101,Nizhny Novgorod,Email Newsletter,2025-02-17,Mobile Android
+102,User_102,Moscow,Social Media,2025-01-23,Mobile iOS
+103,User_103,Novosibirsk,Paid Ads,2025-11-23,Desktop Web
+104,User_104,Kazan,Direct,2025-08-15,Mobile Android
+105,User_105,Moscow,Organic Search,2025-10-15,Mobile iOS
+106,User_106,Nizhny Novgorod,Paid Ads,2026-04-29,Desktop Web
+107,User_107,Samara,Social Media,2025-01-19,Desktop Web
+108,User_108,Saint Petersburg,Email Newsletter,2025-10-10,Mobile iOS
+109,User_109,Novosibirsk,Social Media,2025-01-22,Mobile iOS
+110,User_110,Novosibirsk,Paid Ads,2026-04-06,Desktop Web
+111,User_111,Nizhny Novgorod,Organic Search,2025-05-08,Mobile Android
+112,User_112,Kazan,Email Newsletter,2026-02-04,Desktop Web
+113,User_113,Saint Petersburg,Paid Ads,2026-01-19,Mobile iOS
+114,User_114,Samara,Paid Ads,2026-05-15,Mobile Android
+115,User_115,Saint Petersburg,Direct,2025-01-13,Mobile Android
+116,User_116,Yekaterinburg,Direct,2026-02-05,Desktop Web
+117,User_117,Saint Petersburg,Social Media,2026-02-20,Mobile iOS
+118,User_118,Nizhny Novgorod,Organic Search,2026-02-08,Mobile Android
+119,User_119,Moscow,Email Newsletter,2026-03-23,Mobile iOS
+120,User_120,Samara,Email Newsletter,2025-04-13,Mobile Android
+121,User_121,Samara,Paid Ads,2025-06-06,Mobile iOS
+122,User_122,Nizhny Novgorod,Paid Ads,2025-01-13,Mobile Android
+123,User_123,Novosibirsk,Organic Search,2025-06-18,Mobile Android
+124,User_124,Nizhny Novgorod,Referral,2025-06-29,Mobile Android
+125,User_125,Samara,Referral,2025-12-14,Mobile Android
+126,User_126,Moscow,Organic Search,2026-04-26,Mobile Android
+127,User_127,Kazan,Social Media,2025-04-02,Mobile iOS
+128,User_128,Kazan,Email Newsletter,2025-02-25,Mobile Android
+129,User_129,Samara,Social Media,2026-01-09,Mobile Android
+130,User_130,Kazan,Organic Search,2025-11-07,Mobile Android
+131,User_131,Kazan,Paid Ads,2026-04-06,Mobile Android
+132,User_132,Nizhny Novgorod,Email Newsletter,2025-01-23,Mobile iOS
+133,User_133,Samara,Referral,2025-09-24,Desktop Web
+134,User_134,Nizhny Novgorod,Direct,2026-01-04,Desktop Web
+135,User_135,Novosibirsk,Email Newsletter,2025-04-11,Mobile iOS
+136,User_136,Nizhny Novgorod,Social Media,2026-05-01,Desktop Web
+137,User_137,Nizhny Novgorod,Organic Search,2025-06-10,Desktop Web
+138,User_138,Novosibirsk,Referral,2026-04-06,Mobile Android
+139,User_139,Yekaterinburg,Social Media,2025-12-08,Mobile Android
+140,User_140,Novosibirsk,Referral,2025-12-23,Mobile iOS
+141,User_141,Yekaterinburg,Direct,2025-04-09,Mobile Android
+142,User_142,Nizhny Novgorod,Paid Ads,2025-12-13,Desktop Web
+143,User_143,Novosibirsk,Email Newsletter,2025-10-19,Desktop Web
+144,User_144,Moscow,Social Media,2026-03-03,Mobile Android
+145,User_145,Yekaterinburg,Referral,2025-04-18,Desktop Web
+146,User_146,Novosibirsk,Email Newsletter,2025-12-02,Mobile Android
+147,User_147,Nizhny Novgorod,Paid Ads,2025-08-15,Desktop Web
+148,User_148,Samara,Direct,2025-08-31,Mobile iOS
+149,User_149,Moscow,Social Media,2025-12-04,Desktop Web
+150,User_150,Nizhny Novgorod,Referral,2025-12-06,Mobile Android
+151,User_151,Samara,Paid Ads,2025-02-17,Desktop Web
+152,User_152,Saint Petersburg,Paid Ads,2025-06-08,Mobile iOS
+153,User_153,Moscow,Paid Ads,2025-01-13,Mobile Android
+154,User_154,Samara,Organic Search,2025-11-09,Mobile Android
+155,User_155,Nizhny Novgorod,Referral,2025-08-01,Mobile iOS
+156,User_156,Nizhny Novgorod,Email Newsletter,2026-01-03,Mobile Android
+157,User_157,Saint Petersburg,Paid Ads,2025-07-24,Desktop Web
+158,User_158,Moscow,Organic Search,2025-12-19,Mobile Android
+159,User_159,Saint Petersburg,Direct,2025-04-23,Desktop Web
+160,User_160,Moscow,Referral,2025-08-26,Mobile iOS
+161,User_161,Samara,Organic Search,2026-04-15,Mobile Android
+162,User_162,Samara,Email Newsletter,2025-03-10,Desktop Web
+163,User_163,Kazan,Referral,2025-09-29,Mobile Android
+164,User_164,Samara,Email Newsletter,2026-05-02,Desktop Web
+165,User_165,Nizhny Novgorod,Referral,2026-02-22,Mobile Android
+166,User_166,Kazan,Email Newsletter,2026-03-02,Mobile iOS
+167,User_167,Samara,Email Newsletter,2026-01-16,Mobile Android
+168,User_168,Samara,Paid Ads,2025-05-13,Desktop Web
+169,User_169,Samara,Referral,2025-05-22,Mobile Android
+170,User_170,Saint Petersburg,Social Media,2025-11-17,Mobile Android
+171,User_171,Nizhny Novgorod,Social Media,2025-02-09,Mobile iOS
+172,User_172,Novosibirsk,Social Media,2025-05-20,Desktop Web
+173,User_173,Saint Petersburg,Paid Ads,2025-02-11,Mobile iOS
+174,User_174,Nizhny Novgorod,Paid Ads,2025-07-16,Desktop Web
+175,User_175,Moscow,Email Newsletter,2025-04-20,Mobile Android
+176,User_176,Kazan,Email Newsletter,2025-06-19,Mobile Android
+177,User_177,Saint Petersburg,Email Newsletter,2025-02-01,Mobile Android
+178,User_178,Samara,Referral,2026-04-09,Desktop Web
+179,User_179,Samara,Referral,2025-01-11,Mobile Android
+180,User_180,Moscow,Social Media,2025-09-02,Mobile Android
+181,User_181,Yekaterinburg,Email Newsletter,2026-01-21,Desktop Web
+182,User_182,Nizhny Novgorod,Referral,2026-01-18,Desktop Web
+183,User_183,Saint Petersburg,Email Newsletter,2026-04-05,Mobile iOS
+184,User_184,Yekaterinburg,Email Newsletter,2025-05-20,Mobile iOS
+185,User_185,Novosibirsk,Direct,2025-07-19,Desktop Web
+186,User_186,Yekaterinburg,Direct,2026-02-13,Mobile iOS
+187,User_187,Yekaterinburg,Paid Ads,2026-03-07,Desktop Web
+188,User_188,Moscow,Email Newsletter,2025-10-01,Desktop Web
+189,User_189,Nizhny Novgorod,Organic Search,2025-10-16,Mobile iOS
+190,User_190,Yekaterinburg,Paid Ads,2025-11-26,Mobile Android
+191,User_191,Moscow,Social Media,2025-04-04,Mobile Android
+192,User_192,Saint Petersburg,Email Newsletter,2025-06-17,Mobile Android
+193,User_193,Samara,Email Newsletter,2025-06-22,Mobile Android
+194,User_194,Samara,Email Newsletter,2026-01-21,Mobile Android
+195,User_195,Moscow,Email Newsletter,2026-03-04,Mobile iOS
+196,User_196,Kazan,Organic Search,2026-01-19,Mobile Android
+197,User_197,Nizhny Novgorod,Organic Search,2025-04-25,Desktop Web
+198,User_198,Samara,Organic Search,2025-01-21,Mobile iOS
+199,User_199,Samara,Organic Search,2025-04-13,Desktop Web
+200,User_200,Saint Petersburg,Paid Ads,2025-03-20,Mobile Android
+201,User_201,Moscow,Referral,2025-12-09,Mobile iOS
+202,User_202,Nizhny Novgorod,Social Media,2025-08-27,Mobile Android
+203,User_203,Kazan,Referral,2025-03-27,Desktop Web
+204,User_204,Moscow,Paid Ads,2026-01-03,Mobile Android
+205,User_205,Kazan,Organic Search,2025-02-25,Mobile Android
+206,User_206,Nizhny Novgorod,Email Newsletter,2025-10-22,Mobile Android
+207,User_207,Nizhny Novgorod,Paid Ads,2026-04-28,Mobile iOS
+208,User_208,Nizhny Novgorod,Direct,2025-10-31,Mobile iOS
+209,User_209,Nizhny Novgorod,Social Media,2025-02-22,Desktop Web
+210,User_210,Samara,Organic Search,2025-11-04,Desktop Web
+211,User_211,Moscow,Social Media,2026-02-05,Desktop Web
+212,User_212,Nizhny Novgorod,Social Media,2025-08-08,Mobile iOS
+213,User_213,Nizhny Novgorod,Social Media,2025-09-17,Mobile iOS
+214,User_214,Yekaterinburg,Email Newsletter,2026-03-11,Mobile iOS
+215,User_215,Novosibirsk,Direct,2025-08-10,Mobile Android
+216,User_216,Saint Petersburg,Email Newsletter,2025-12-29,Mobile iOS
+217,User_217,Kazan,Direct,2026-01-11,Mobile Android
+218,User_218,Samara,Referral,2025-11-12,Mobile Android
+219,User_219,Yekaterinburg,Direct,2025-08-27,Desktop Web
+220,User_220,Novosibirsk,Paid Ads,2025-05-18,Mobile iOS
+221,User_221,Yekaterinburg,Paid Ads,2025-05-23,Mobile Android
+222,User_222,Kazan,Direct,2025-10-19,Mobile Android
+223,User_223,Moscow,Email Newsletter,2025-06-22,Mobile Android
+224,User_224,Yekaterinburg,Paid Ads,2025-04-04,Mobile Android
+225,User_225,Novosibirsk,Social Media,2026-02-13,Mobile Android
+226,User_226,Kazan,Direct,2026-03-27,Mobile Android
+227,User_227,Moscow,Referral,2025-10-12,Mobile iOS
+228,User_228,Saint Petersburg,Direct,2025-02-13,Mobile Android
+229,User_229,Kazan,Paid Ads,2025-09-08,Desktop Web
+230,User_230,Nizhny Novgorod,Direct,2025-09-01,Mobile Android
+231,User_231,Samara,Organic Search,2025-08-18,Mobile iOS
+232,User_232,Saint Petersburg,Email Newsletter,2025-05-31,Desktop Web
+233,User_233,Novosibirsk,Direct,2025-05-05,Desktop Web
+234,User_234,Yekaterinburg,Referral,2025-07-08,Desktop Web
+235,User_235,Yekaterinburg,Direct,2025-06-26,Desktop Web
+236,User_236,Novosibirsk,Direct,2025-06-19,Mobile Android
+237,User_237,Novosibirsk,Social Media,2025-05-19,Mobile iOS
+238,User_238,Nizhny Novgorod,Paid Ads,2025-03-03,Mobile Android
+239,User_239,Nizhny Novgorod,Referral,2025-03-03,Desktop Web
+240,User_240,Saint Petersburg,Paid Ads,2025-04-05,Desktop Web
+241,User_241,Novosibirsk,Direct,2025-09-05,Desktop Web
+242,User_242,Samara,Referral,2026-05-16,Desktop Web
+243,User_243,Moscow,Paid Ads,2025-05-25,Mobile Android
+244,User_244,Novosibirsk,Paid Ads,2025-04-27,Mobile Android
+245,User_245,Nizhny Novgorod,Referral,2025-01-08,Mobile iOS
+246,User_246,Moscow,Organic Search,2025-05-21,Desktop Web
+247,User_247,Nizhny Novgorod,Paid Ads,2025-05-30,Desktop Web
+248,User_248,Samara,Email Newsletter,2026-03-21,Mobile iOS
+249,User_249,Moscow,Referral,2026-03-23,Mobile Android
+250,User_250,Yekaterinburg,Email Newsletter,2025-08-29,Mobile Android
+251,User_251,Moscow,Social Media,2025-04-05,Mobile Android
+252,User_252,Samara,Organic Search,2025-02-28,Mobile Android
+253,User_253,Moscow,Referral,2025-09-09,Desktop Web
+254,User_254,Moscow,Paid Ads,2025-12-18,Mobile iOS
+255,User_255,Kazan,Social Media,2026-02-20,Mobile iOS
+256,User_256,Moscow,Referral,2025-05-08,Mobile Android
+257,User_257,Kazan,Referral,2025-11-07,Mobile iOS
+258,User_258,Kazan,Email Newsletter,2026-02-02,Mobile Android
+259,User_259,Yekaterinburg,Social Media,2026-04-11,Desktop Web
+260,User_260,Novosibirsk,Referral,2025-08-08,Desktop Web
+261,User_261,Kazan,Direct,2025-01-31,Mobile iOS
+262,User_262,Samara,Paid Ads,2026-05-01,Desktop Web
+263,User_263,Novosibirsk,Direct,2025-04-19,Mobile iOS
+264,User_264,Saint Petersburg,Paid Ads,2025-03-22,Desktop Web
+265,User_265,Saint Petersburg,Organic Search,2025-02-08,Mobile Android
+266,User_266,Nizhny Novgorod,Referral,2025-08-19,Mobile Android
+267,User_267,Moscow,Paid Ads,2025-05-30,Mobile Android
+268,User_268,Novosibirsk,Direct,2025-12-28,Mobile Android
+269,User_269,Nizhny Novgorod,Paid Ads,2025-02-06,Mobile Android
+270,User_270,Samara,Direct,2026-02-08,Desktop Web
+271,User_271,Samara,Paid Ads,2025-12-05,Mobile Android
+272,User_272,Kazan,Paid Ads,2025-02-28,Desktop Web
+273,User_273,Novosibirsk,Paid Ads,2025-03-18,Mobile iOS
+274,User_274,Saint Petersburg,Social Media,2025-01-31,Desktop Web
+275,User_275,Samara,Referral,2026-01-19,Mobile Android
+276,User_276,Moscow,Email Newsletter,2025-08-13,Desktop Web
+277,User_277,Nizhny Novgorod,Email Newsletter,2025-06-05,Mobile Android
+278,User_278,Kazan,Email Newsletter,2025-09-14,Mobile Android
+279,User_279,Kazan,Organic Search,2025-02-11,Mobile Android
+280,User_280,Novosibirsk,Referral,2026-01-12,Mobile Android
+281,User_281,Moscow,Paid Ads,2025-01-14,Desktop Web
+282,User_282,Samara,Referral,2026-03-05,Desktop Web
+283,User_283,Moscow,Direct,2026-05-02,Mobile Android
+284,User_284,Moscow,Paid Ads,2025-10-23,Mobile Android
+285,User_285,Nizhny Novgorod,Email Newsletter,2025-09-23,Mobile Android
+286,User_286,Kazan,Email Newsletter,2025-04-03,Desktop Web
+287,User_287,Yekaterinburg,Organic Search,2026-02-21,Mobile Android
+288,User_288,Yekaterinburg,Social Media,2025-06-28,Mobile Android
+289,User_289,Moscow,Paid Ads,2025-12-10,Mobile Android
+290,User_290,Nizhny Novgorod,Email Newsletter,2025-07-30,Mobile Android
+291,User_291,Yekaterinburg,Referral,2025-12-06,Mobile iOS
+292,User_292,Moscow,Social Media,2025-08-21,Mobile Android
+293,User_293,Moscow,Email Newsletter,2025-06-15,Desktop Web
+294,User_294,Moscow,Direct,2026-02-27,Desktop Web
+295,User_295,Yekaterinburg,Organic Search,2025-08-25,Mobile iOS
+296,User_296,Novosibirsk,Referral,2025-09-23,Mobile Android
+297,User_297,Yekaterinburg,Organic Search,2025-11-17,Mobile iOS
+298,User_298,Kazan,Paid Ads,2025-05-17,Mobile Android
+299,User_299,Nizhny Novgorod,Email Newsletter,2025-08-13,Mobile iOS
+300,User_300,Nizhny Novgorod,Referral,2025-01-15,Mobile iOS
+301,User_301,Saint Petersburg,Social Media,2025-12-30,Desktop Web
+302,User_302,Kazan,Email Newsletter,2025-01-08,Mobile iOS
+303,User_303,Samara,Organic Search,2025-04-26,Mobile Android
+304,User_304,Moscow,Direct,2026-04-30,Mobile iOS
+305,User_305,Nizhny Novgorod,Social Media,2025-09-13,Desktop Web
+306,User_306,Novosibirsk,Email Newsletter,2025-12-28,Mobile Android
+307,User_307,Saint Petersburg,Email Newsletter,2025-08-30,Desktop Web
+308,User_308,Yekaterinburg,Paid Ads,2025-03-16,Desktop Web
+309,User_309,Nizhny Novgorod,Paid Ads,2025-09-18,Mobile iOS
+310,User_310,Samara,Email Newsletter,2025-05-22,Mobile Android
+311,User_311,Samara,Referral,2026-04-24,Mobile Android
+312,User_312,Moscow,Social Media,2026-02-25,Desktop Web
+313,User_313,Samara,Referral,2025-06-02,Desktop Web
+314,User_314,Yekaterinburg,Paid Ads,2025-12-04,Mobile Android
+315,User_315,Yekaterinburg,Social Media,2025-10-03,Mobile Android
+316,User_316,Samara,Referral,2025-10-10,Mobile Android
+317,User_317,Novosibirsk,Paid Ads,2025-08-22,Desktop Web
+318,User_318,Kazan,Email Newsletter,2025-05-03,Mobile iOS
+319,User_319,Samara,Email Newsletter,2026-03-15,Mobile iOS
+320,User_320,Nizhny Novgorod,Email Newsletter,2025-06-12,Desktop Web
+321,User_321,Samara,Email Newsletter,2026-04-13,Mobile Android
+322,User_322,Samara,Direct,2025-12-06,Mobile iOS
+323,User_323,Moscow,Paid Ads,2025-09-11,Desktop Web
+324,User_324,Kazan,Social Media,2026-05-10,Mobile iOS
+325,User_325,Samara,Email Newsletter,2026-03-24,Mobile iOS
+326,User_326,Yekaterinburg,Organic Search,2025-09-27,Desktop Web
+327,User_327,Yekaterinburg,Direct,2025-03-15,Mobile iOS
+328,User_328,Yekaterinburg,Social Media,2025-02-08,Mobile Android
+329,User_329,Nizhny Novgorod,Email Newsletter,2025-11-16,Desktop Web
+330,User_330,Samara,Social Media,2025-02-11,Desktop Web
+331,User_331,Kazan,Email Newsletter,2026-03-16,Mobile Android
+332,User_332,Nizhny Novgorod,Email Newsletter,2025-11-17,Desktop Web
+333,User_333,Kazan,Organic Search,2025-01-19,Mobile iOS
+334,User_334,Nizhny Novgorod,Social Media,2025-11-20,Mobile iOS
+335,User_335,Moscow,Email Newsletter,2026-01-18,Mobile iOS
+336,User_336,Nizhny Novgorod,Direct,2026-01-25,Mobile iOS
+337,User_337,Saint Petersburg,Direct,2025-08-16,Mobile Android
+338,User_338,Moscow,Organic Search,2026-04-08,Mobile Android
+339,User_339,Moscow,Social Media,2026-02-12,Mobile Android
+340,User_340,Yekaterinburg,Paid Ads,2025-07-11,Mobile iOS
+341,User_341,Yekaterinburg,Referral,2025-09-29,Desktop Web
+342,User_342,Saint Petersburg,Paid Ads,2026-02-10,Mobile iOS
+343,User_343,Kazan,Email Newsletter,2025-02-10,Desktop Web
+344,User_344,Saint Petersburg,Email Newsletter,2025-12-16,Desktop Web
+345,User_345,Saint Petersburg,Email Newsletter,2025-03-15,Desktop Web
+346,User_346,Yekaterinburg,Social Media,2025-05-11,Desktop Web
+347,User_347,Samara,Email Newsletter,2025-01-05,Mobile Android
+348,User_348,Kazan,Paid Ads,2025-12-13,Mobile iOS
+349,User_349,Novosibirsk,Referral,2025-08-15,Mobile Android
+350,User_350,Yekaterinburg,Direct,2025-11-24,Mobile Android
+351,User_351,Samara,Social Media,2025-08-22,Mobile iOS
+352,User_352,Samara,Email Newsletter,2025-07-16,Mobile iOS
+353,User_353,Yekaterinburg,Referral,2025-05-02,Mobile Android
+354,User_354,Novosibirsk,Direct,2025-10-22,Mobile Android
+355,User_355,Samara,Direct,2025-01-12,Mobile Android
+356,User_356,Moscow,Referral,2025-05-21,Desktop Web
+357,User_357,Nizhny Novgorod,Organic Search,2026-02-03,Desktop Web
+358,User_358,Yekaterinburg,Social Media,2026-01-17,Mobile iOS
+359,User_359,Samara,Social Media,2025-11-07,Mobile iOS
+360,User_360,Saint Petersburg,Referral,2025-11-22,Mobile Android
+361,User_361,Samara,Direct,2025-12-14,Desktop Web
+362,User_362,Samara,Paid Ads,2025-12-15,Desktop Web
+363,User_363,Nizhny Novgorod,Direct,2025-02-19,Mobile iOS
+364,User_364,Samara,Email Newsletter,2025-06-08,Mobile iOS
+365,User_365,Novosibirsk,Direct,2025-10-24,Mobile iOS
+366,User_366,Novosibirsk,Social Media,2025-02-16,Desktop Web
+367,User_367,Saint Petersburg,Paid Ads,2025-08-01,Mobile iOS
+368,User_368,Kazan,Social Media,2026-02-07,Desktop Web
+369,User_369,Novosibirsk,Paid Ads,2025-09-14,Mobile Android
+370,User_370,Samara,Email Newsletter,2026-04-13,Mobile Android
+371,User_371,Samara,Social Media,2026-01-18,Mobile iOS
+372,User_372,Moscow,Paid Ads,2025-08-28,Mobile iOS
+373,User_373,Nizhny Novgorod,Direct,2026-03-17,Desktop Web
+374,User_374,Samara,Referral,2025-07-23,Mobile Android
+375,User_375,Samara,Email Newsletter,2025-02-16,Mobile iOS
+376,User_376,Kazan,Organic Search,2025-05-16,Mobile Android
+377,User_377,Nizhny Novgorod,Direct,2025-07-08,Desktop Web
+378,User_378,Kazan,Email Newsletter,2025-05-15,Desktop Web
+379,User_379,Novosibirsk,Organic Search,2026-04-27,Desktop Web
+380,User_380,Yekaterinburg,Organic Search,2025-04-30,Desktop Web
+381,User_381,Kazan,Social Media,2026-03-29,Desktop Web
+382,User_382,Nizhny Novgorod,Organic Search,2025-04-24,Desktop Web
+383,User_383,Yekaterinburg,Direct,2026-02-26,Mobile Android
+384,User_384,Yekaterinburg,Organic Search,2025-11-29,Mobile iOS
+385,User_385,Moscow,Social Media,2025-01-24,Mobile Android
+386,User_386,Moscow,Paid Ads,2025-03-01,Desktop Web
+387,User_387,Yekaterinburg,Email Newsletter,2025-03-11,Mobile Android
+388,User_388,Nizhny Novgorod,Direct,2025-12-10,Desktop Web
+389,User_389,Kazan,Direct,2025-08-03,Desktop Web
+390,User_390,Yekaterinburg,Direct,2025-03-21,Mobile iOS
+391,User_391,Yekaterinburg,Referral,2026-03-03,Mobile Android
+392,User_392,Novosibirsk,Organic Search,2026-04-26,Desktop Web
+393,User_393,Saint Petersburg,Email Newsletter,2025-07-09,Mobile Android
+394,User_394,Saint Petersburg,Social Media,2026-05-02,Mobile iOS
+395,User_395,Novosibirsk,Referral,2025-12-18,Desktop Web
+396,User_396,Moscow,Email Newsletter,2025-07-03,Mobile Android
+397,User_397,Moscow,Email Newsletter,2025-04-08,Mobile iOS
+398,User_398,Saint Petersburg,Direct,2025-12-06,Desktop Web
+399,User_399,Moscow,Organic Search,2025-11-02,Mobile Android
+400,User_400,Saint Petersburg,Referral,2025-05-05,Mobile iOS
+401,User_401,Samara,Referral,2025-02-05,Mobile iOS
+402,User_402,Saint Petersburg,Paid Ads,2025-10-28,Mobile Android
+403,User_403,Saint Petersburg,Referral,2026-02-01,Mobile iOS
+404,User_404,Samara,Paid Ads,2025-05-22,Mobile iOS
+405,User_405,Novosibirsk,Paid Ads,2025-10-04,Mobile iOS
+406,User_406,Samara,Organic Search,2025-12-05,Mobile iOS
+407,User_407,Novosibirsk,Paid Ads,2025-01-08,Desktop Web
+408,User_408,Moscow,Paid Ads,2025-06-15,Mobile Android
+409,User_409,Saint Petersburg,Direct,2025-01-27,Mobile Android
+410,User_410,Moscow,Direct,2025-09-27,Mobile iOS
+411,User_411,Yekaterinburg,Social Media,2025-09-01,Desktop Web
+412,User_412,Moscow,Email Newsletter,2025-10-31,Desktop Web
+413,User_413,Kazan,Organic Search,2025-04-24,Desktop Web
+414,User_414,Samara,Direct,2026-02-06,Desktop Web
+415,User_415,Yekaterinburg,Direct,2025-06-04,Mobile iOS
+416,User_416,Yekaterinburg,Email Newsletter,2025-02-01,Mobile Android
+417,User_417,Moscow,Email Newsletter,2025-12-18,Desktop Web
+418,User_418,Yekaterinburg,Organic Search,2026-04-11,Mobile iOS
+419,User_419,Kazan,Paid Ads,2025-06-14,Mobile iOS
+420,User_420,Novosibirsk,Referral,2025-03-06,Desktop Web
+421,User_421,Kazan,Direct,2025-10-27,Mobile Android
+422,User_422,Kazan,Referral,2025-07-15,Mobile Android
+423,User_423,Kazan,Referral,2025-08-21,Mobile Android
+424,User_424,Samara,Direct,2025-02-20,Mobile iOS
+425,User_425,Nizhny Novgorod,Direct,2026-03-13,Desktop Web
+426,User_426,Samara,Paid Ads,2026-01-05,Mobile Android
+427,User_427,Saint Petersburg,Email Newsletter,2025-08-20,Mobile Android
+428,User_428,Yekaterinburg,Email Newsletter,2026-02-28,Mobile Android
+429,User_429,Moscow,Social Media,2026-01-09,Mobile Android
+430,User_430,Nizhny Novgorod,Social Media,2025-06-10,Mobile Android
+431,User_431,Saint Petersburg,Direct,2026-05-04,Mobile Android
+432,User_432,Moscow,Organic Search,2025-02-04,Mobile iOS
+433,User_433,Moscow,Direct,2025-08-10,Desktop Web
+434,User_434,Samara,Paid Ads,2025-07-10,Desktop Web
+435,User_435,Kazan,Referral,2025-01-31,Desktop Web
+436,User_436,Nizhny Novgorod,Organic Search,2025-06-18,Mobile Android
+437,User_437,Samara,Direct,2025-07-01,Mobile Android
+438,User_438,Nizhny Novgorod,Organic Search,2026-03-21,Mobile Android
+439,User_439,Novosibirsk,Social Media,2025-11-04,Mobile iOS
+440,User_440,Kazan,Paid Ads,2025-10-23,Mobile iOS
+441,User_441,Yekaterinburg,Paid Ads,2025-12-03,Mobile iOS
+442,User_442,Samara,Referral,2025-06-29,Mobile Android
+443,User_443,Samara,Social Media,2025-02-28,Desktop Web
+444,User_444,Samara,Email Newsletter,2025-04-26,Desktop Web
+445,User_445,Samara,Referral,2026-05-14,Desktop Web
+446,User_446,Nizhny Novgorod,Referral,2025-12-12,Mobile iOS
+447,User_447,Nizhny Novgorod,Direct,2025-11-08,Mobile Android
+448,User_448,Saint Petersburg,Social Media,2025-01-15,Desktop Web
+449,User_449,Novosibirsk,Social Media,2026-01-26,Mobile Android
+450,User_450,Saint Petersburg,Paid Ads,2025-01-04,Desktop Web
+451,User_451,Yekaterinburg,Organic Search,2025-12-03,Mobile iOS
+452,User_452,Nizhny Novgorod,Organic Search,2026-01-15,Mobile iOS
+453,User_453,Kazan,Paid Ads,2026-01-18,Mobile Android
+454,User_454,Yekaterinburg,Social Media,2025-08-03,Mobile iOS
+455,User_455,Novosibirsk,Direct,2025-07-09,Mobile Android
+456,User_456,Kazan,Referral,2026-02-02,Mobile iOS
+457,User_457,Moscow,Paid Ads,2026-03-29,Mobile iOS
+458,User_458,Kazan,Organic Search,2026-01-22,Desktop Web
+459,User_459,Novosibirsk,Email Newsletter,2025-02-11,Desktop Web
+460,User_460,Yekaterinburg,Referral,2025-08-06,Mobile Android
+461,User_461,Novosibirsk,Paid Ads,2025-08-01,Desktop Web
+462,User_462,Novosibirsk,Email Newsletter,2025-02-28,Mobile iOS
+463,User_463,Nizhny Novgorod,Direct,2025-05-26,Desktop Web
+464,User_464,Kazan,Direct,2025-09-07,Mobile Android
+465,User_465,Saint Petersburg,Email Newsletter,2025-01-24,Desktop Web
+466,User_466,Moscow,Paid Ads,2025-01-29,Mobile Android
+467,User_467,Saint Petersburg,Paid Ads,2026-04-30,Mobile Android
+468,User_468,Novosibirsk,Organic Search,2025-05-29,Mobile iOS
+469,User_469,Nizhny Novgorod,Email Newsletter,2025-09-12,Mobile iOS
+470,User_470,Yekaterinburg,Referral,2025-03-08,Desktop Web
+471,User_471,Kazan,Referral,2025-04-28,Desktop Web
+472,User_472,Novosibirsk,Organic Search,2026-02-17,Mobile Android
+473,User_473,Nizhny Novgorod,Organic Search,2026-03-18,Mobile Android
+474,User_474,Yekaterinburg,Organic Search,2025-01-10,Mobile Android
+475,User_475,Yekaterinburg,Referral,2025-10-22,Mobile Android
+476,User_476,Nizhny Novgorod,Email Newsletter,2025-12-30,Mobile Android
+477,User_477,Yekaterinburg,Organic Search,2025-02-28,Mobile Android
+478,User_478,Samara,Referral,2025-03-29,Mobile Android
+479,User_479,Nizhny Novgorod,Social Media,2026-03-02,Mobile iOS
+480,User_480,Samara,Organic Search,2025-08-12,Mobile iOS
+481,User_481,Kazan,Email Newsletter,2025-08-12,Desktop Web
+482,User_482,Yekaterinburg,Social Media,2025-02-10,Desktop Web
+483,User_483,Saint Petersburg,Social Media,2025-06-23,Mobile iOS
+484,User_484,Kazan,Direct,2025-02-09,Mobile iOS
+485,User_485,Kazan,Paid Ads,2025-09-29,Mobile Android
+486,User_486,Nizhny Novgorod,Direct,2025-06-29,Mobile iOS
+487,User_487,Moscow,Paid Ads,2025-05-01,Mobile Android
+488,User_488,Saint Petersburg,Referral,2025-04-12,Mobile iOS
+489,User_489,Samara,Direct,2026-01-25,Mobile iOS
+490,User_490,Samara,Direct,2025-04-01,Mobile Android
+491,User_491,Samara,Referral,2025-08-26,Desktop Web
+492,User_492,Nizhny Novgorod,Referral,2025-08-18,Desktop Web
+493,User_493,Kazan,Social Media,2025-11-22,Desktop Web
+494,User_494,Saint Petersburg,Email Newsletter,2025-06-11,Mobile iOS
+495,User_495,Yekaterinburg,Direct,2025-08-29,Mobile Android
+496,User_496,Novosibirsk,Referral,2026-02-12,Mobile iOS
+497,User_497,Kazan,Organic Search,2025-06-30,Mobile Android
+498,User_498,Yekaterinburg,Organic Search,2025-08-25,Mobile iOS
+499,User_499,Samara,Social Media,2025-07-08,Mobile iOS
+500,User_500,Samara,Organic Search,2025-11-27,Desktop Web
+501,User_501,Kazan,Email Newsletter,2025-11-01,Mobile Android
+502,User_502,Kazan,Direct,2025-10-25,Mobile iOS
+503,User_503,Samara,Referral,2025-08-19,Desktop Web
+504,User_504,Novosibirsk,Referral,2025-04-07,Mobile Android
+505,User_505,Saint Petersburg,Organic Search,2025-09-14,Mobile Android
+506,User_506,Samara,Social Media,2025-02-22,Desktop Web
+507,User_507,Kazan,Direct,2025-02-13,Mobile iOS
+508,User_508,Saint Petersburg,Direct,2025-01-21,Mobile Android
+509,User_509,Kazan,Referral,2025-08-13,Desktop Web
+510,User_510,Novosibirsk,Social Media,2025-03-23,Mobile Android
+511,User_511,Yekaterinburg,Social Media,2025-07-18,Desktop Web
+512,User_512,Moscow,Direct,2025-11-03,Desktop Web
+513,User_513,Moscow,Social Media,2025-06-21,Mobile iOS
+514,User_514,Nizhny Novgorod,Email Newsletter,2025-10-13,Mobile Android
+515,User_515,Nizhny Novgorod,Direct,2025-05-10,Desktop Web
+516,User_516,Saint Petersburg,Social Media,2026-03-24,Mobile iOS
+517,User_517,Nizhny Novgorod,Paid Ads,2025-10-26,Mobile Android
+518,User_518,Nizhny Novgorod,Direct,2025-06-08,Desktop Web
+519,User_519,Saint Petersburg,Referral,2025-07-20,Desktop Web
+520,User_520,Moscow,Social Media,2026-04-26,Desktop Web
+521,User_521,Nizhny Novgorod,Social Media,2025-07-12,Mobile iOS
+522,User_522,Nizhny Novgorod,Direct,2025-12-10,Desktop Web
+523,User_523,Kazan,Organic Search,2026-04-13,Desktop Web
+524,User_524,Yekaterinburg,Referral,2025-12-10,Mobile Android
+525,User_525,Novosibirsk,Social Media,2025-01-10,Mobile iOS
+526,User_526,Saint Petersburg,Social Media,2026-05-02,Mobile Android
+527,User_527,Saint Petersburg,Paid Ads,2025-04-09,Mobile iOS
+528,User_528,Novosibirsk,Organic Search,2025-02-09,Desktop Web
+529,User_529,Kazan,Direct,2026-01-30,Desktop Web
+530,User_530,Nizhny Novgorod,Social Media,2025-01-20,Desktop Web
+531,User_531,Kazan,Email Newsletter,2025-03-09,Mobile iOS
+532,User_532,Saint Petersburg,Direct,2025-03-25,Desktop Web
+533,User_533,Saint Petersburg,Direct,2026-02-19,Mobile Android
+534,User_534,Yekaterinburg,Social Media,2025-01-23,Desktop Web
+535,User_535,Saint Petersburg,Email Newsletter,2026-01-04,Desktop Web
+536,User_536,Samara,Direct,2025-05-26,Mobile Android
+537,User_537,Kazan,Paid Ads,2025-04-30,Mobile Android
+538,User_538,Samara,Email Newsletter,2026-05-10,Mobile iOS
+539,User_539,Nizhny Novgorod,Referral,2025-07-08,Mobile Android
+540,User_540,Samara,Social Media,2025-08-25,Mobile Android
+541,User_541,Kazan,Email Newsletter,2025-09-15,Mobile iOS
+542,User_542,Saint Petersburg,Referral,2026-02-23,Mobile iOS
+543,User_543,Novosibirsk,Organic Search,2026-03-23,Desktop Web
+544,User_544,Samara,Social Media,2025-09-04,Desktop Web
+545,User_545,Moscow,Direct,2026-04-24,Desktop Web
+546,User_546,Moscow,Social Media,2026-03-12,Mobile iOS
+547,User_547,Saint Petersburg,Social Media,2026-01-26,Mobile Android
+548,User_548,Kazan,Paid Ads,2026-04-09,Mobile Android
+549,User_549,Saint Petersburg,Email Newsletter,2025-02-16,Mobile Android
+550,User_550,Moscow,Email Newsletter,2026-04-22,Mobile iOS
+551,User_551,Kazan,Social Media,2025-07-22,Mobile iOS
+552,User_552,Moscow,Social Media,2025-07-17,Mobile iOS
+553,User_553,Novosibirsk,Organic Search,2025-01-15,Desktop Web
+554,User_554,Novosibirsk,Paid Ads,2025-11-29,Mobile iOS
+555,User_555,Novosibirsk,Email Newsletter,2025-01-20,Desktop Web
+556,User_556,Saint Petersburg,Direct,2026-03-02,Mobile Android
+557,User_557,Kazan,Organic Search,2025-08-18,Mobile iOS
+558,User_558,Novosibirsk,Paid Ads,2025-01-10,Mobile iOS
+559,User_559,Nizhny Novgorod,Referral,2025-10-08,Desktop Web
+560,User_560,Moscow,Social Media,2025-08-05,Mobile iOS
+561,User_561,Moscow,Organic Search,2025-06-04,Mobile iOS
+562,User_562,Nizhny Novgorod,Referral,2025-08-03,Mobile Android
+563,User_563,Moscow,Email Newsletter,2025-02-02,Desktop Web
+564,User_564,Moscow,Direct,2025-10-02,Desktop Web
+565,User_565,Saint Petersburg,Direct,2025-10-22,Mobile iOS
+566,User_566,Yekaterinburg,Organic Search,2025-05-30,Desktop Web
+567,User_567,Saint Petersburg,Referral,2025-06-30,Mobile Android
+568,User_568,Nizhny Novgorod,Direct,2025-04-06,Mobile iOS
+569,User_569,Novosibirsk,Organic Search,2025-09-26,Desktop Web
+570,User_570,Kazan,Referral,2025-10-06,Desktop Web
+571,User_571,Yekaterinburg,Email Newsletter,2025-01-11,Mobile iOS
+572,User_572,Yekaterinburg,Social Media,2025-11-22,Mobile Android
+573,User_573,Moscow,Social Media,2026-01-18,Mobile iOS
+574,User_574,Saint Petersburg,Direct,2025-06-26,Desktop Web
+575,User_575,Moscow,Referral,2025-11-18,Desktop Web
+576,User_576,Novosibirsk,Paid Ads,2026-01-23,Mobile iOS
+577,User_577,Kazan,Social Media,2025-06-30,Desktop Web
+578,User_578,Samara,Direct,2025-03-31,Mobile Android
+579,User_579,Yekaterinburg,Direct,2025-12-23,Mobile iOS
+580,User_580,Saint Petersburg,Organic Search,2026-02-20,Desktop Web
+581,User_581,Yekaterinburg,Organic Search,2026-02-02,Mobile Android
+582,User_582,Moscow,Paid Ads,2025-04-14,Mobile iOS
+583,User_583,Novosibirsk,Referral,2025-06-11,Mobile Android
+584,User_584,Kazan,Email Newsletter,2026-02-22,Mobile Android
+585,User_585,Samara,Direct,2025-01-19,Mobile iOS
+586,User_586,Novosibirsk,Organic Search,2025-05-27,Desktop Web
+587,User_587,Novosibirsk,Organic Search,2025-06-19,Mobile Android
+588,User_588,Yekaterinburg,Direct,2025-08-12,Mobile Android
+589,User_589,Yekaterinburg,Social Media,2026-04-04,Mobile iOS
+590,User_590,Nizhny Novgorod,Email Newsletter,2025-09-12,Mobile Android
+591,User_591,Samara,Referral,2026-04-19,Mobile Android
+592,User_592,Moscow,Direct,2026-02-15,Mobile Android
+593,User_593,Yekaterinburg,Referral,2025-02-10,Mobile iOS
+594,User_594,Novosibirsk,Social Media,2025-10-07,Mobile iOS
+595,User_595,Novosibirsk,Direct,2025-02-10,Mobile Android
+596,User_596,Yekaterinburg,Referral,2025-06-06,Desktop Web
+597,User_597,Saint Petersburg,Direct,2025-08-07,Mobile Android
+598,User_598,Yekaterinburg,Organic Search,2025-06-29,Desktop Web
+599,User_599,Novosibirsk,Referral,2026-03-22,Mobile Android
+600,User_600,Nizhny Novgorod,Organic Search,2025-05-21,Mobile iOS
+601,User_601,Nizhny Novgorod,Email Newsletter,2025-12-10,Mobile Android
+602,User_602,Samara,Direct,2025-09-20,Desktop Web
+603,User_603,Moscow,Paid Ads,2025-03-23,Desktop Web
+604,User_604,Samara,Email Newsletter,2025-12-14,Mobile iOS
+605,User_605,Moscow,Paid Ads,2025-03-06,Desktop Web
+606,User_606,Novosibirsk,Email Newsletter,2025-07-07,Desktop Web
+607,User_607,Kazan,Paid Ads,2025-01-17,Desktop Web
+608,User_608,Novosibirsk,Social Media,2025-08-19,Mobile Android
+609,User_609,Moscow,Referral,2026-01-26,Mobile iOS
+610,User_610,Novosibirsk,Email Newsletter,2025-09-29,Mobile Android
+611,User_611,Novosibirsk,Paid Ads,2025-11-29,Mobile iOS
+612,User_612,Nizhny Novgorod,Paid Ads,2025-01-14,Mobile Android
+613,User_613,Yekaterinburg,Referral,2025-09-23,Mobile iOS
+614,User_614,Samara,Social Media,2025-05-15,Desktop Web
+615,User_615,Saint Petersburg,Referral,2025-08-17,Mobile Android
+616,User_616,Yekaterinburg,Paid Ads,2025-12-22,Mobile iOS
+617,User_617,Samara,Organic Search,2025-03-11,Mobile Android
+618,User_618,Nizhny Novgorod,Email Newsletter,2025-03-30,Mobile iOS
+619,User_619,Nizhny Novgorod,Social Media,2026-02-19,Desktop Web
+620,User_620,Nizhny Novgorod,Organic Search,2025-06-27,Desktop Web
+621,User_621,Novosibirsk,Social Media,2025-10-05,Mobile iOS
+622,User_622,Nizhny Novgorod,Direct,2025-12-31,Desktop Web
+623,User_623,Samara,Social Media,2025-03-31,Desktop Web
+624,User_624,Moscow,Paid Ads,2025-04-25,Mobile iOS
+625,User_625,Samara,Email Newsletter,2025-05-02,Mobile iOS
+626,User_626,Kazan,Referral,2025-07-04,Mobile Android
+627,User_627,Samara,Referral,2025-08-28,Mobile iOS
+628,User_628,Moscow,Organic Search,2025-11-10,Mobile Android
+629,User_629,Nizhny Novgorod,Direct,2025-07-23,Mobile Android
+630,User_630,Yekaterinburg,Email Newsletter,2025-09-27,Desktop Web
+631,User_631,Saint Petersburg,Social Media,2025-02-07,Desktop Web
+632,User_632,Yekaterinburg,Email Newsletter,2025-02-07,Desktop Web
+633,User_633,Novosibirsk,Paid Ads,2025-09-22,Desktop Web
+634,User_634,Kazan,Paid Ads,2025-11-24,Mobile iOS
+635,User_635,Kazan,Organic Search,2025-08-10,Mobile iOS
+636,User_636,Saint Petersburg,Social Media,2025-09-23,Mobile iOS
+637,User_637,Novosibirsk,Direct,2025-03-24,Mobile iOS
+638,User_638,Kazan,Social Media,2025-06-27,Mobile iOS
+639,User_639,Saint Petersburg,Direct,2025-05-09,Desktop Web
+640,User_640,Saint Petersburg,Direct,2025-05-21,Mobile Android
+641,User_641,Kazan,Organic Search,2025-11-11,Desktop Web
+642,User_642,Saint Petersburg,Referral,2025-11-25,Desktop Web
+643,User_643,Saint Petersburg,Direct,2025-03-20,Desktop Web
+644,User_644,Kazan,Social Media,2026-01-04,Desktop Web
+645,User_645,Samara,Organic Search,2025-01-22,Mobile iOS
+646,User_646,Nizhny Novgorod,Referral,2025-01-24,Mobile Android
+647,User_647,Saint Petersburg,Referral,2025-11-30,Mobile Android
+648,User_648,Nizhny Novgorod,Organic Search,2025-11-13,Mobile Android
+649,User_649,Nizhny Novgorod,Referral,2026-04-01,Mobile Android
+650,User_650,Novosibirsk,Email Newsletter,2025-11-25,Mobile iOS
+651,User_651,Samara,Direct,2026-02-17,Mobile Android
+652,User_652,Yekaterinburg,Organic Search,2025-06-02,Desktop Web
+653,User_653,Saint Petersburg,Email Newsletter,2025-01-31,Mobile Android
+654,User_654,Yekaterinburg,Paid Ads,2025-09-05,Mobile Android
+655,User_655,Saint Petersburg,Social Media,2025-11-07,Desktop Web
+656,User_656,Nizhny Novgorod,Social Media,2025-06-13,Mobile Android
+657,User_657,Samara,Social Media,2025-03-08,Desktop Web
+658,User_658,Moscow,Social Media,2025-10-15,Mobile iOS
+659,User_659,Moscow,Social Media,2025-08-27,Mobile Android
+660,User_660,Saint Petersburg,Organic Search,2025-05-07,Mobile iOS
+661,User_661,Yekaterinburg,Referral,2025-05-29,Mobile Android
+662,User_662,Samara,Paid Ads,2025-05-08,Mobile Android
+663,User_663,Kazan,Direct,2026-04-24,Mobile Android
+664,User_664,Samara,Paid Ads,2025-04-08,Mobile Android
+665,User_665,Yekaterinburg,Email Newsletter,2025-09-21,Mobile Android
+666,User_666,Moscow,Organic Search,2025-09-12,Mobile Android
+667,User_667,Yekaterinburg,Paid Ads,2025-09-16,Mobile iOS
+668,User_668,Novosibirsk,Organic Search,2025-10-26,Mobile iOS
+669,User_669,Yekaterinburg,Referral,2025-05-25,Desktop Web
+670,User_670,Yekaterinburg,Social Media,2025-12-11,Desktop Web
+671,User_671,Samara,Organic Search,2025-01-05,Mobile Android
+672,User_672,Novosibirsk,Direct,2025-03-10,Mobile Android
+673,User_673,Yekaterinburg,Social Media,2026-01-27,Mobile iOS
+674,User_674,Moscow,Referral,2025-07-25,Desktop Web
+675,User_675,Novosibirsk,Referral,2025-04-10,Mobile Android
+676,User_676,Yekaterinburg,Referral,2025-02-07,Mobile Android
+677,User_677,Kazan,Social Media,2026-01-27,Desktop Web
+678,User_678,Kazan,Organic Search,2025-12-15,Mobile iOS
+679,User_679,Moscow,Email Newsletter,2026-05-15,Mobile Android
+680,User_680,Novosibirsk,Referral,2026-02-11,Mobile Android
+681,User_681,Saint Petersburg,Paid Ads,2026-01-22,Desktop Web
+682,User_682,Yekaterinburg,Referral,2025-09-18,Mobile iOS
+683,User_683,Moscow,Paid Ads,2025-01-24,Desktop Web
+684,User_684,Samara,Email Newsletter,2025-06-20,Desktop Web
+685,User_685,Saint Petersburg,Referral,2025-08-22,Desktop Web
+686,User_686,Novosibirsk,Referral,2025-03-13,Mobile Android
+687,User_687,Yekaterinburg,Referral,2025-03-25,Desktop Web
+688,User_688,Novosibirsk,Referral,2026-03-08,Mobile Android
+689,User_689,Samara,Referral,2025-09-17,Desktop Web
+690,User_690,Nizhny Novgorod,Referral,2025-09-08,Mobile Android
+691,User_691,Samara,Organic Search,2025-09-01,Mobile Android
+692,User_692,Nizhny Novgorod,Organic Search,2025-06-19,Mobile Android
+693,User_693,Novosibirsk,Direct,2025-10-26,Desktop Web
+694,User_694,Moscow,Referral,2025-11-19,Mobile Android
+695,User_695,Nizhny Novgorod,Referral,2025-05-16,Desktop Web
+696,User_696,Nizhny Novgorod,Organic Search,2025-04-27,Desktop Web
+697,User_697,Saint Petersburg,Referral,2025-09-03,Desktop Web
+698,User_698,Kazan,Email Newsletter,2026-01-05,Mobile iOS
+699,User_699,Nizhny Novgorod,Paid Ads,2026-02-25,Mobile iOS
+700,User_700,Nizhny Novgorod,Organic Search,2025-10-21,Mobile iOS
+701,User_701,Yekaterinburg,Social Media,2025-01-10,Mobile Android
+702,User_702,Yekaterinburg,Direct,2025-03-19,Mobile iOS
+703,User_703,Kazan,Referral,2025-07-30,Mobile Android
+704,User_704,Samara,Direct,2026-03-23,Desktop Web
+705,User_705,Nizhny Novgorod,Paid Ads,2025-02-01,Desktop Web
+706,User_706,Kazan,Social Media,2025-04-17,Desktop Web
+707,User_707,Kazan,Email Newsletter,2025-09-02,Mobile Android
+708,User_708,Saint Petersburg,Email Newsletter,2026-05-05,Desktop Web
+709,User_709,Kazan,Social Media,2025-06-25,Desktop Web
+710,User_710,Samara,Direct,2026-01-31,Desktop Web
+711,User_711,Samara,Direct,2025-11-26,Mobile Android
+712,User_712,Yekaterinburg,Paid Ads,2025-11-09,Mobile iOS
+713,User_713,Kazan,Social Media,2025-05-23,Mobile iOS
+714,User_714,Novosibirsk,Social Media,2026-04-28,Desktop Web
+715,User_715,Nizhny Novgorod,Direct,2025-04-17,Mobile Android
+716,User_716,Yekaterinburg,Social Media,2025-06-12,Desktop Web
+717,User_717,Samara,Direct,2026-04-24,Mobile Android
+718,User_718,Moscow,Referral,2025-05-28,Desktop Web
+719,User_719,Yekaterinburg,Email Newsletter,2025-10-06,Mobile Android
+720,User_720,Samara,Paid Ads,2026-05-04,Mobile Android
+721,User_721,Novosibirsk,Direct,2025-01-22,Mobile iOS
+722,User_722,Yekaterinburg,Direct,2025-06-27,Mobile Android
+723,User_723,Yekaterinburg,Paid Ads,2026-01-18,Mobile iOS
+724,User_724,Kazan,Social Media,2026-02-28,Desktop Web
+725,User_725,Novosibirsk,Paid Ads,2025-12-23,Mobile iOS
+726,User_726,Nizhny Novgorod,Referral,2025-11-12,Mobile iOS
+727,User_727,Moscow,Direct,2025-05-05,Desktop Web
+728,User_728,Nizhny Novgorod,Paid Ads,2025-04-26,Mobile iOS
+729,User_729,Yekaterinburg,Social Media,2025-02-21,Desktop Web
+730,User_730,Moscow,Direct,2025-08-30,Mobile iOS
+731,User_731,Kazan,Paid Ads,2025-01-03,Mobile Android
+732,User_732,Yekaterinburg,Email Newsletter,2025-12-01,Desktop Web
+733,User_733,Samara,Social Media,2025-04-13,Mobile Android
+734,User_734,Nizhny Novgorod,Organic Search,2025-05-27,Mobile iOS
+735,User_735,Kazan,Paid Ads,2025-11-30,Desktop Web
+736,User_736,Nizhny Novgorod,Organic Search,2026-01-14,Mobile iOS
+737,User_737,Samara,Paid Ads,2025-08-02,Mobile iOS
+738,User_738,Yekaterinburg,Email Newsletter,2026-03-05,Mobile iOS
+739,User_739,Nizhny Novgorod,Social Media,2026-04-25,Mobile iOS
+740,User_740,Novosibirsk,Referral,2025-01-05,Desktop Web
+741,User_741,Novosibirsk,Social Media,2025-02-24,Mobile Android
+742,User_742,Kazan,Referral,2025-11-25,Mobile Android
+743,User_743,Saint Petersburg,Referral,2026-04-01,Mobile Android
+744,User_744,Saint Petersburg,Organic Search,2025-05-20,Mobile Android
+745,User_745,Nizhny Novgorod,Email Newsletter,2025-03-25,Desktop Web
+746,User_746,Nizhny Novgorod,Paid Ads,2025-05-12,Mobile iOS
+747,User_747,Novosibirsk,Social Media,2026-01-13,Desktop Web
+748,User_748,Samara,Paid Ads,2025-12-12,Mobile iOS
+749,User_749,Samara,Direct,2025-11-09,Mobile Android
+750,User_750,Yekaterinburg,Referral,2026-02-28,Mobile Android
+751,User_751,Yekaterinburg,Direct,2025-02-14,Mobile iOS
+752,User_752,Saint Petersburg,Email Newsletter,2025-04-05,Mobile Android
+753,User_753,Saint Petersburg,Organic Search,2026-04-25,Mobile Android
+754,User_754,Saint Petersburg,Email Newsletter,2025-07-16,Mobile Android
+755,User_755,Novosibirsk,Social Media,2026-05-04,Desktop Web
+756,User_756,Kazan,Organic Search,2026-01-06,Mobile Android
+757,User_757,Novosibirsk,Direct,2025-12-01,Mobile iOS
+758,User_758,Nizhny Novgorod,Organic Search,2025-02-01,Mobile Android
+759,User_759,Saint Petersburg,Email Newsletter,2025-06-07,Desktop Web
+760,User_760,Nizhny Novgorod,Social Media,2025-09-15,Desktop Web
+761,User_761,Nizhny Novgorod,Social Media,2025-03-02,Mobile Android
+762,User_762,Saint Petersburg,Paid Ads,2025-11-11,Mobile iOS
+763,User_763,Saint Petersburg,Email Newsletter,2025-09-02,Desktop Web
+764,User_764,Novosibirsk,Email Newsletter,2025-11-07,Desktop Web
+765,User_765,Yekaterinburg,Referral,2025-10-09,Desktop Web
+766,User_766,Saint Petersburg,Paid Ads,2026-02-27,Desktop Web
+767,User_767,Kazan,Organic Search,2026-01-22,Desktop Web
+768,User_768,Kazan,Direct,2025-08-17,Mobile Android
+769,User_769,Kazan,Organic Search,2025-02-09,Mobile iOS
+770,User_770,Kazan,Referral,2026-03-01,Mobile iOS
+771,User_771,Kazan,Paid Ads,2025-10-21,Mobile iOS
+772,User_772,Samara,Referral,2025-06-17,Mobile Android
+773,User_773,Nizhny Novgorod,Paid Ads,2025-03-01,Desktop Web
+774,User_774,Yekaterinburg,Organic Search,2025-10-26,Desktop Web
+775,User_775,Samara,Organic Search,2025-08-17,Mobile Android
+776,User_776,Kazan,Email Newsletter,2025-03-09,Mobile Android
+777,User_777,Moscow,Referral,2025-10-16,Mobile Android
+778,User_778,Samara,Social Media,2025-12-11,Desktop Web
+779,User_779,Yekaterinburg,Social Media,2025-01-12,Mobile iOS
+780,User_780,Saint Petersburg,Referral,2026-01-17,Mobile iOS
+781,User_781,Yekaterinburg,Social Media,2025-01-24,Desktop Web
+782,User_782,Kazan,Organic Search,2025-02-02,Mobile iOS
+783,User_783,Yekaterinburg,Organic Search,2026-04-24,Mobile Android
+784,User_784,Saint Petersburg,Paid Ads,2025-07-29,Desktop Web
+785,User_785,Nizhny Novgorod,Direct,2026-05-16,Mobile Android
+786,User_786,Yekaterinburg,Email Newsletter,2025-07-11,Mobile Android
+787,User_787,Moscow,Direct,2025-07-12,Desktop Web
+788,User_788,Kazan,Paid Ads,2026-03-24,Desktop Web
+789,User_789,Novosibirsk,Organic Search,2026-03-17,Mobile iOS
+790,User_790,Yekaterinburg,Referral,2025-10-03,Mobile iOS
+791,User_791,Saint Petersburg,Organic Search,2026-01-08,Mobile iOS
+792,User_792,Novosibirsk,Email Newsletter,2026-05-16,Desktop Web
+793,User_793,Kazan,Email Newsletter,2026-01-04,Desktop Web
+794,User_794,Samara,Paid Ads,2025-07-14,Mobile iOS
+795,User_795,Novosibirsk,Paid Ads,2025-08-24,Mobile Android
+796,User_796,Nizhny Novgorod,Organic Search,2025-04-07,Mobile iOS
+797,User_797,Nizhny Novgorod,Email Newsletter,2026-02-19,Desktop Web
+798,User_798,Moscow,Paid Ads,2026-01-28,Mobile iOS
+799,User_799,Moscow,Referral,2025-02-04,Mobile iOS
+800,User_800,Kazan,Direct,2025-08-17,Desktop Web
+801,User_801,Moscow,Paid Ads,2026-03-23,Desktop Web
+802,User_802,Yekaterinburg,Email Newsletter,2025-01-23,Mobile iOS
+803,User_803,Saint Petersburg,Organic Search,2025-10-04,Mobile iOS
+804,User_804,Novosibirsk,Paid Ads,2025-09-15,Desktop Web
+805,User_805,Novosibirsk,Referral,2025-10-22,Desktop Web
+806,User_806,Nizhny Novgorod,Social Media,2026-01-31,Mobile iOS
+807,User_807,Saint Petersburg,Direct,2025-06-04,Desktop Web
+808,User_808,Yekaterinburg,Social Media,2025-04-24,Mobile Android
+809,User_809,Kazan,Referral,2025-02-01,Desktop Web
+810,User_810,Saint Petersburg,Direct,2026-04-12,Desktop Web
+811,User_811,Kazan,Email Newsletter,2025-08-07,Mobile iOS
+812,User_812,Novosibirsk,Direct,2026-05-13,Desktop Web
+813,User_813,Samara,Referral,2025-07-15,Mobile Android
+814,User_814,Yekaterinburg,Email Newsletter,2025-12-23,Mobile iOS
+815,User_815,Yekaterinburg,Paid Ads,2025-06-03,Desktop Web
+816,User_816,Saint Petersburg,Paid Ads,2025-08-31,Mobile Android
+817,User_817,Nizhny Novgorod,Paid Ads,2026-03-16,Mobile Android
+818,User_818,Moscow,Referral,2026-04-14,Mobile Android
+819,User_819,Yekaterinburg,Referral,2026-05-11,Desktop Web
+820,User_820,Yekaterinburg,Paid Ads,2025-03-10,Mobile Android
+821,User_821,Novosibirsk,Direct,2025-04-15,Mobile iOS
+822,User_822,Yekaterinburg,Social Media,2026-04-18,Mobile iOS
+823,User_823,Nizhny Novgorod,Paid Ads,2025-10-02,Mobile iOS
+824,User_824,Yekaterinburg,Direct,2025-05-18,Desktop Web
+825,User_825,Moscow,Organic Search,2025-11-05,Mobile iOS
+826,User_826,Samara,Referral,2026-02-16,Desktop Web
+827,User_827,Kazan,Paid Ads,2025-12-10,Mobile Android
+828,User_828,Samara,Social Media,2025-04-17,Mobile Android
+829,User_829,Moscow,Paid Ads,2026-05-05,Mobile iOS
+830,User_830,Nizhny Novgorod,Organic Search,2026-05-08,Desktop Web
+831,User_831,Yekaterinburg,Paid Ads,2026-01-22,Desktop Web
+832,User_832,Nizhny Novgorod,Paid Ads,2025-11-06,Mobile Android
+833,User_833,Saint Petersburg,Referral,2026-04-14,Mobile Android
+834,User_834,Novosibirsk,Email Newsletter,2026-02-02,Mobile Android
+835,User_835,Nizhny Novgorod,Social Media,2025-10-01,Mobile Android
+836,User_836,Novosibirsk,Referral,2025-05-14,Mobile Android
+837,User_837,Moscow,Direct,2025-08-27,Mobile Android
+838,User_838,Samara,Social Media,2026-01-25,Mobile iOS
+839,User_839,Novosibirsk,Email Newsletter,2025-07-09,Mobile iOS
+840,User_840,Samara,Paid Ads,2025-10-16,Desktop Web
+841,User_841,Moscow,Social Media,2025-03-16,Desktop Web
+842,User_842,Kazan,Referral,2026-04-24,Desktop Web
+843,User_843,Novosibirsk,Paid Ads,2025-08-02,Mobile iOS
+844,User_844,Saint Petersburg,Email Newsletter,2025-06-18,Desktop Web
+845,User_845,Saint Petersburg,Email Newsletter,2026-03-03,Desktop Web
+846,User_846,Nizhny Novgorod,Social Media,2025-12-02,Mobile Android
+847,User_847,Samara,Email Newsletter,2026-01-26,Desktop Web
+848,User_848,Nizhny Novgorod,Email Newsletter,2025-11-25,Mobile Android
+849,User_849,Nizhny Novgorod,Social Media,2025-03-28,Mobile iOS
+850,User_850,Nizhny Novgorod,Referral,2025-03-13,Mobile Android
+851,User_851,Kazan,Direct,2025-04-05,Mobile iOS
+852,User_852,Moscow,Organic Search,2025-09-26,Desktop Web
+853,User_853,Samara,Organic Search,2025-01-25,Mobile Android
+854,User_854,Samara,Direct,2025-03-12,Mobile iOS
+855,User_855,Nizhny Novgorod,Paid Ads,2025-02-04,Mobile iOS
+856,User_856,Kazan,Email Newsletter,2025-04-22,Mobile Android
+857,User_857,Kazan,Direct,2025-01-31,Desktop Web
+858,User_858,Kazan,Email Newsletter,2026-04-24,Desktop Web
+859,User_859,Moscow,Organic Search,2025-09-07,Desktop Web
+860,User_860,Yekaterinburg,Organic Search,2025-10-10,Mobile iOS
+861,User_861,Nizhny Novgorod,Social Media,2025-09-29,Desktop Web
+862,User_862,Novosibirsk,Organic Search,2026-05-16,Desktop Web
+863,User_863,Nizhny Novgorod,Direct,2026-02-21,Mobile Android
+864,User_864,Saint Petersburg,Organic Search,2026-02-17,Mobile iOS
+865,User_865,Saint Petersburg,Paid Ads,2025-09-26,Mobile iOS
+866,User_866,Kazan,Social Media,2025-11-14,Mobile Android
+867,User_867,Samara,Email Newsletter,2025-05-17,Mobile iOS
+868,User_868,Yekaterinburg,Email Newsletter,2025-07-11,Desktop Web
+869,User_869,Nizhny Novgorod,Paid Ads,2025-05-05,Mobile Android
+870,User_870,Samara,Organic Search,2025-12-17,Desktop Web
+871,User_871,Nizhny Novgorod,Organic Search,2026-03-16,Mobile iOS
+872,User_872,Yekaterinburg,Email Newsletter,2025-07-27,Desktop Web
+873,User_873,Moscow,Direct,2025-09-01,Mobile iOS
+874,User_874,Saint Petersburg,Organic Search,2025-12-26,Mobile Android
+875,User_875,Yekaterinburg,Direct,2026-03-09,Mobile Android
+876,User_876,Samara,Organic Search,2025-10-17,Desktop Web
+877,User_877,Moscow,Paid Ads,2026-04-16,Mobile iOS
+878,User_878,Samara,Direct,2026-04-07,Desktop Web
+879,User_879,Novosibirsk,Organic Search,2025-09-01,Mobile iOS
+880,User_880,Novosibirsk,Referral,2025-12-17,Desktop Web
+881,User_881,Moscow,Paid Ads,2025-12-03,Mobile Android
+882,User_882,Saint Petersburg,Referral,2025-01-09,Mobile iOS
+883,User_883,Samara,Direct,2026-01-21,Mobile Android
+884,User_884,Moscow,Social Media,2026-04-21,Mobile iOS
+885,User_885,Saint Petersburg,Referral,2025-10-16,Mobile Android
+886,User_886,Kazan,Social Media,2025-12-13,Mobile Android
+887,User_887,Nizhny Novgorod,Paid Ads,2026-01-22,Desktop Web
+888,User_888,Moscow,Referral,2026-01-06,Desktop Web
+889,User_889,Novosibirsk,Organic Search,2026-05-14,Mobile iOS
+890,User_890,Saint Petersburg,Organic Search,2025-08-12,Mobile Android
+891,User_891,Samara,Referral,2025-11-06,Desktop Web
+892,User_892,Samara,Social Media,2025-07-23,Mobile iOS
+893,User_893,Novosibirsk,Email Newsletter,2025-11-21,Mobile Android
+894,User_894,Novosibirsk,Referral,2025-04-27,Mobile Android
+895,User_895,Saint Petersburg,Direct,2025-08-10,Desktop Web
+896,User_896,Yekaterinburg,Organic Search,2025-12-05,Desktop Web
+897,User_897,Samara,Paid Ads,2025-06-01,Desktop Web
+898,User_898,Moscow,Social Media,2025-02-07,Mobile iOS
+899,User_899,Nizhny Novgorod,Direct,2025-07-14,Mobile iOS
+900,User_900,Yekaterinburg,Social Media,2026-01-14,Mobile Android
+901,User_901,Moscow,Organic Search,2025-02-24,Mobile Android
+902,User_902,Novosibirsk,Social Media,2025-08-16,Mobile iOS
+903,User_903,Moscow,Paid Ads,2025-03-09,Mobile Android
+904,User_904,Kazan,Referral,2025-08-18,Desktop Web
+905,User_905,Moscow,Organic Search,2025-07-28,Mobile iOS
+906,User_906,Kazan,Organic Search,2025-07-01,Desktop Web
+907,User_907,Samara,Social Media,2025-11-03,Mobile Android
+908,User_908,Novosibirsk,Email Newsletter,2025-01-07,Mobile Android
+909,User_909,Moscow,Direct,2026-02-03,Desktop Web
+910,User_910,Saint Petersburg,Referral,2026-04-09,Desktop Web
+911,User_911,Nizhny Novgorod,Email Newsletter,2025-03-28,Mobile iOS
+912,User_912,Novosibirsk,Social Media,2025-03-13,Mobile Android
+913,User_913,Saint Petersburg,Organic Search,2025-09-10,Mobile iOS
+914,User_914,Novosibirsk,Email Newsletter,2025-08-11,Mobile Android
+915,User_915,Samara,Organic Search,2025-09-05,Mobile Android
+916,User_916,Saint Petersburg,Direct,2025-05-09,Desktop Web
+917,User_917,Kazan,Referral,2025-09-11,Mobile iOS
+918,User_918,Moscow,Paid Ads,2025-08-23,Mobile Android
+919,User_919,Yekaterinburg,Social Media,2025-01-04,Desktop Web
+920,User_920,Samara,Social Media,2025-07-14,Mobile Android
+921,User_921,Yekaterinburg,Direct,2025-06-21,Desktop Web
+922,User_922,Novosibirsk,Social Media,2025-03-11,Desktop Web
+923,User_923,Nizhny Novgorod,Paid Ads,2026-05-01,Mobile Android
+924,User_924,Saint Petersburg,Email Newsletter,2025-06-10,Mobile Android
+925,User_925,Nizhny Novgorod,Direct,2025-05-30,Desktop Web
+926,User_926,Kazan,Paid Ads,2025-09-09,Mobile Android
+927,User_927,Novosibirsk,Email Newsletter,2025-07-12,Mobile Android
+928,User_928,Kazan,Paid Ads,2025-02-28,Desktop Web
+929,User_929,Saint Petersburg,Direct,2025-10-07,Desktop Web
+930,User_930,Nizhny Novgorod,Email Newsletter,2025-01-14,Desktop Web
+931,User_931,Yekaterinburg,Social Media,2025-04-18,Desktop Web
+932,User_932,Samara,Email Newsletter,2025-02-05,Desktop Web
+933,User_933,Saint Petersburg,Direct,2025-09-13,Mobile Android
+934,User_934,Novosibirsk,Direct,2025-05-04,Mobile iOS
+935,User_935,Yekaterinburg,Email Newsletter,2026-01-02,Mobile iOS
+936,User_936,Kazan,Email Newsletter,2025-08-18,Desktop Web
+937,User_937,Kazan,Referral,2025-07-25,Desktop Web
+938,User_938,Kazan,Organic Search,2025-08-03,Mobile Android
+939,User_939,Samara,Referral,2025-12-26,Desktop Web
+940,User_940,Moscow,Organic Search,2025-11-23,Mobile iOS
+941,User_941,Nizhny Novgorod,Social Media,2025-12-03,Mobile iOS
+942,User_942,Kazan,Organic Search,2025-11-28,Desktop Web
+943,User_943,Nizhny Novgorod,Direct,2025-11-27,Mobile Android
+944,User_944,Samara,Social Media,2026-05-11,Mobile Android
+945,User_945,Moscow,Organic Search,2025-02-24,Mobile Android
+946,User_946,Kazan,Direct,2025-04-24,Desktop Web
+947,User_947,Kazan,Direct,2025-10-13,Desktop Web
+948,User_948,Yekaterinburg,Social Media,2025-04-24,Mobile Android
+949,User_949,Samara,Direct,2025-08-26,Desktop Web
+950,User_950,Kazan,Paid Ads,2025-12-20,Mobile Android
+951,User_951,Yekaterinburg,Organic Search,2025-01-13,Mobile Android
+952,User_952,Moscow,Organic Search,2025-08-01,Desktop Web
+953,User_953,Novosibirsk,Social Media,2025-03-14,Mobile Android
+954,User_954,Samara,Paid Ads,2025-08-22,Desktop Web
+955,User_955,Novosibirsk,Email Newsletter,2025-09-05,Mobile iOS
+956,User_956,Nizhny Novgorod,Direct,2025-08-13,Mobile Android
+957,User_957,Moscow,Social Media,2025-06-13,Mobile iOS
+958,User_958,Nizhny Novgorod,Organic Search,2026-02-19,Mobile iOS
+959,User_959,Novosibirsk,Direct,2026-03-11,Mobile iOS
+960,User_960,Samara,Paid Ads,2025-12-13,Desktop Web
+961,User_961,Kazan,Paid Ads,2025-05-05,Desktop Web
+962,User_962,Novosibirsk,Referral,2025-03-23,Mobile Android
+963,User_963,Yekaterinburg,Paid Ads,2026-05-06,Mobile Android
+964,User_964,Saint Petersburg,Paid Ads,2025-11-19,Desktop Web
+965,User_965,Yekaterinburg,Email Newsletter,2025-12-03,Mobile iOS
+966,User_966,Kazan,Paid Ads,2026-01-13,Mobile Android
+967,User_967,Yekaterinburg,Email Newsletter,2025-10-31,Mobile iOS
+968,User_968,Saint Petersburg,Paid Ads,2025-12-27,Mobile Android
+969,User_969,Nizhny Novgorod,Organic Search,2026-01-21,Desktop Web
+970,User_970,Samara,Referral,2025-02-22,Mobile iOS
+971,User_971,Novosibirsk,Paid Ads,2025-07-07,Mobile Android
+972,User_972,Novosibirsk,Direct,2025-02-28,Mobile Android
+973,User_973,Nizhny Novgorod,Social Media,2025-09-28,Desktop Web
+974,User_974,Kazan,Email Newsletter,2025-07-18,Desktop Web
+975,User_975,Novosibirsk,Social Media,2025-02-28,Mobile Android
+976,User_976,Saint Petersburg,Direct,2025-11-13,Desktop Web
+977,User_977,Novosibirsk,Referral,2026-02-14,Desktop Web
+978,User_978,Nizhny Novgorod,Paid Ads,2025-02-13,Mobile Android
+979,User_979,Saint Petersburg,Social Media,2025-03-02,Mobile iOS
+980,User_980,Novosibirsk,Direct,2025-04-04,Mobile iOS
+981,User_981,Yekaterinburg,Email Newsletter,2025-09-19,Desktop Web
+982,User_982,Kazan,Email Newsletter,2025-03-12,Mobile Android
+983,User_983,Yekaterinburg,Direct,2025-04-06,Desktop Web
+984,User_984,Nizhny Novgorod,Paid Ads,2025-12-22,Desktop Web
+985,User_985,Yekaterinburg,Social Media,2025-03-27,Mobile iOS
+986,User_986,Novosibirsk,Email Newsletter,2025-04-06,Desktop Web
+987,User_987,Samara,Social Media,2025-01-28,Mobile iOS
+988,User_988,Saint Petersburg,Paid Ads,2025-09-06,Mobile Android
+989,User_989,Kazan,Referral,2026-05-09,Desktop Web
+990,User_990,Yekaterinburg,Direct,2025-09-11,Mobile Android
+991,User_991,Nizhny Novgorod,Email Newsletter,2025-08-01,Mobile Android
+992,User_992,Moscow,Referral,2025-03-27,Mobile iOS
+993,User_993,Samara,Paid Ads,2026-02-12,Mobile Android
+994,User_994,Novosibirsk,Paid Ads,2025-01-17,Desktop Web
+995,User_995,Saint Petersburg,Email Newsletter,2025-05-28,Desktop Web
+996,User_996,Samara,Email Newsletter,2026-01-16,Desktop Web
+997,User_997,Moscow,Referral,2025-09-19,Mobile iOS
+998,User_998,Samara,Referral,2025-05-18,Mobile Android
+999,User_999,Samara,Organic Search,2025-10-05,Desktop Web
+1000,User_1000,Kazan,Paid Ads,2025-08-14,Mobile Android
+1001,User_1001,Nizhny Novgorod,Direct,2025-02-22,Mobile iOS
+1002,User_1002,Samara,Organic Search,2025-06-02,Mobile Android
+1003,User_1003,Novosibirsk,Organic Search,2025-05-15,Mobile Android
+1004,User_1004,Moscow,Paid Ads,2026-03-20,Mobile iOS
+1005,User_1005,Nizhny Novgorod,Referral,2026-02-20,Desktop Web
+1006,User_1006,Samara,Direct,2025-06-29,Desktop Web
+1007,User_1007,Yekaterinburg,Paid Ads,2025-11-20,Desktop Web
+1008,User_1008,Samara,Paid Ads,2025-03-13,Mobile iOS
+1009,User_1009,Moscow,Referral,2026-02-17,Mobile Android
+1010,User_1010,Novosibirsk,Referral,2025-09-30,Desktop Web
+1011,User_1011,Novosibirsk,Direct,2025-03-28,Mobile Android
+1012,User_1012,Kazan,Social Media,2025-05-29,Desktop Web
+1013,User_1013,Nizhny Novgorod,Organic Search,2026-04-06,Mobile iOS
+1014,User_1014,Samara,Email Newsletter,2026-05-08,Mobile iOS
+1015,User_1015,Samara,Direct,2025-05-22,Mobile iOS
+1016,User_1016,Samara,Paid Ads,2025-12-26,Mobile iOS
+1017,User_1017,Nizhny Novgorod,Social Media,2025-03-16,Mobile iOS
+1018,User_1018,Samara,Direct,2026-01-25,Mobile Android
+1019,User_1019,Saint Petersburg,Referral,2025-09-08,Desktop Web
+1020,User_1020,Nizhny Novgorod,Email Newsletter,2025-05-18,Mobile Android
+1021,User_1021,Moscow,Direct,2025-08-20,Mobile iOS
+1022,User_1022,Kazan,Direct,2025-07-26,Mobile Android
+1023,User_1023,Novosibirsk,Email Newsletter,2025-12-22,Mobile Android
+1024,User_1024,Kazan,Organic Search,2025-06-17,Desktop Web
+1025,User_1025,Nizhny Novgorod,Email Newsletter,2025-02-17,Desktop Web
+1026,User_1026,Nizhny Novgorod,Social Media,2025-12-07,Mobile iOS
+1027,User_1027,Kazan,Email Newsletter,2026-02-12,Mobile iOS
+1028,User_1028,Yekaterinburg,Paid Ads,2026-05-11,Mobile Android
+1029,User_1029,Novosibirsk,Social Media,2025-05-18,Mobile Android
+1030,User_1030,Kazan,Paid Ads,2025-10-08,Desktop Web
+1031,User_1031,Yekaterinburg,Social Media,2026-03-13,Desktop Web
+1032,User_1032,Moscow,Organic Search,2026-01-26,Mobile iOS
+1033,User_1033,Samara,Email Newsletter,2025-11-17,Mobile iOS
+1034,User_1034,Samara,Paid Ads,2025-03-05,Mobile Android
+1035,User_1035,Moscow,Email Newsletter,2025-08-22,Mobile iOS
+1036,User_1036,Saint Petersburg,Direct,2025-12-19,Mobile Android
+1037,User_1037,Samara,Social Media,2025-03-23,Mobile iOS
+1038,User_1038,Novosibirsk,Social Media,2025-12-02,Mobile iOS
+1039,User_1039,Nizhny Novgorod,Direct,2025-07-10,Mobile iOS
+1040,User_1040,Yekaterinburg,Direct,2025-01-27,Mobile Android
+1041,User_1041,Nizhny Novgorod,Paid Ads,2026-01-07,Mobile Android
+1042,User_1042,Moscow,Direct,2025-12-02,Mobile iOS
+1043,User_1043,Saint Petersburg,Email Newsletter,2025-01-01,Mobile iOS
+1044,User_1044,Kazan,Paid Ads,2025-03-09,Desktop Web
+1045,User_1045,Yekaterinburg,Organic Search,2025-12-15,Mobile iOS
+1046,User_1046,Novosibirsk,Organic Search,2025-12-23,Mobile Android
+1047,User_1047,Saint Petersburg,Email Newsletter,2025-12-22,Mobile iOS
+1048,User_1048,Yekaterinburg,Organic Search,2025-04-28,Desktop Web
+1049,User_1049,Moscow,Organic Search,2026-02-17,Mobile Android
+1050,User_1050,Novosibirsk,Paid Ads,2025-07-08,Mobile Android
+1051,User_1051,Samara,Paid Ads,2026-02-01,Desktop Web
+1052,User_1052,Saint Petersburg,Organic Search,2025-12-13,Desktop Web
+1053,User_1053,Moscow,Referral,2025-10-16,Desktop Web
+1054,User_1054,Yekaterinburg,Social Media,2025-03-26,Desktop Web
+1055,User_1055,Nizhny Novgorod,Direct,2025-04-20,Mobile iOS
+1056,User_1056,Yekaterinburg,Referral,2026-04-16,Desktop Web
+1057,User_1057,Samara,Paid Ads,2025-08-15,Mobile iOS
+1058,User_1058,Moscow,Paid Ads,2026-04-05,Mobile iOS
+1059,User_1059,Nizhny Novgorod,Email Newsletter,2025-10-29,Mobile Android
+1060,User_1060,Yekaterinburg,Social Media,2026-05-09,Mobile iOS
+1061,User_1061,Novosibirsk,Direct,2025-05-07,Mobile iOS
+1062,User_1062,Kazan,Referral,2025-05-08,Desktop Web
+1063,User_1063,Kazan,Social Media,2026-01-05,Desktop Web
+1064,User_1064,Samara,Direct,2025-01-14,Mobile Android
+1065,User_1065,Kazan,Referral,2025-04-16,Desktop Web
+1066,User_1066,Nizhny Novgorod,Email Newsletter,2025-04-07,Mobile Android
+1067,User_1067,Moscow,Paid Ads,2025-11-27,Mobile Android
+1068,User_1068,Moscow,Paid Ads,2025-07-17,Mobile Android
+1069,User_1069,Kazan,Organic Search,2025-11-23,Desktop Web
+1070,User_1070,Moscow,Social Media,2026-04-01,Mobile Android
+1071,User_1071,Yekaterinburg,Referral,2025-03-09,Mobile Android
+1072,User_1072,Kazan,Direct,2025-07-07,Mobile iOS
+1073,User_1073,Yekaterinburg,Organic Search,2026-01-26,Mobile iOS
+1074,User_1074,Moscow,Organic Search,2025-10-28,Mobile Android
+1075,User_1075,Moscow,Organic Search,2025-04-21,Mobile Android
+1076,User_1076,Novosibirsk,Direct,2025-09-17,Desktop Web
+1077,User_1077,Samara,Email Newsletter,2025-09-14,Mobile Android
+1078,User_1078,Yekaterinburg,Organic Search,2025-12-26,Desktop Web
+1079,User_1079,Kazan,Referral,2025-10-02,Mobile iOS
+1080,User_1080,Moscow,Social Media,2025-05-23,Mobile iOS
+1081,User_1081,Saint Petersburg,Paid Ads,2025-09-19,Desktop Web
+1082,User_1082,Yekaterinburg,Referral,2025-06-17,Desktop Web
+1083,User_1083,Samara,Direct,2026-01-26,Desktop Web
+1084,User_1084,Moscow,Social Media,2025-11-26,Desktop Web
+1085,User_1085,Nizhny Novgorod,Paid Ads,2025-08-12,Mobile iOS
+1086,User_1086,Moscow,Email Newsletter,2025-05-06,Mobile iOS
+1087,User_1087,Kazan,Referral,2025-08-21,Mobile iOS
+1088,User_1088,Nizhny Novgorod,Direct,2025-06-08,Desktop Web
+1089,User_1089,Saint Petersburg,Organic Search,2026-01-15,Mobile iOS
+1090,User_1090,Saint Petersburg,Direct,2025-12-29,Mobile iOS
+1091,User_1091,Yekaterinburg,Social Media,2025-03-25,Desktop Web
+1092,User_1092,Samara,Direct,2025-09-22,Mobile Android
+1093,User_1093,Novosibirsk,Paid Ads,2025-03-27,Desktop Web
+1094,User_1094,Samara,Social Media,2026-02-04,Desktop Web
+1095,User_1095,Moscow,Organic Search,2026-03-30,Mobile Android
+1096,User_1096,Yekaterinburg,Social Media,2026-02-18,Desktop Web
+1097,User_1097,Novosibirsk,Direct,2025-02-02,Desktop Web
+1098,User_1098,Moscow,Email Newsletter,2025-11-18,Mobile Android
+1099,User_1099,Novosibirsk,Organic Search,2025-09-19,Mobile Android
+1100,User_1100,Kazan,Paid Ads,2026-03-16,Mobile Android
+1101,User_1101,Novosibirsk,Organic Search,2025-03-22,Desktop Web
+1102,User_1102,Nizhny Novgorod,Organic Search,2025-12-12,Mobile iOS
+1103,User_1103,Kazan,Organic Search,2026-01-15,Mobile iOS
+1104,User_1104,Samara,Organic Search,2026-03-16,Mobile iOS
+1105,User_1105,Yekaterinburg,Social Media,2025-01-24,Mobile Android
+1106,User_1106,Saint Petersburg,Paid Ads,2026-04-17,Mobile iOS
+1107,User_1107,Samara,Direct,2025-10-11,Desktop Web
+1108,User_1108,Yekaterinburg,Paid Ads,2025-12-02,Mobile Android
+1109,User_1109,Yekaterinburg,Direct,2025-05-08,Mobile Android
+1110,User_1110,Samara,Organic Search,2025-05-19,Desktop Web
+1111,User_1111,Moscow,Referral,2025-07-10,Desktop Web
+1112,User_1112,Moscow,Paid Ads,2026-04-07,Mobile iOS
+1113,User_1113,Kazan,Organic Search,2026-02-16,Mobile Android
+1114,User_1114,Yekaterinburg,Social Media,2025-02-05,Mobile Android
+1115,User_1115,Moscow,Referral,2025-06-17,Mobile Android
+1116,User_1116,Novosibirsk,Paid Ads,2025-01-05,Mobile Android
+1117,User_1117,Samara,Social Media,2025-10-16,Desktop Web
+1118,User_1118,Saint Petersburg,Email Newsletter,2025-11-15,Mobile Android
+1119,User_1119,Yekaterinburg,Paid Ads,2025-10-30,Desktop Web
+1120,User_1120,Kazan,Paid Ads,2026-04-07,Mobile iOS
+1121,User_1121,Yekaterinburg,Organic Search,2025-01-04,Mobile iOS
+1122,User_1122,Novosibirsk,Direct,2025-10-05,Desktop Web
+1123,User_1123,Moscow,Social Media,2026-03-26,Mobile iOS
+1124,User_1124,Nizhny Novgorod,Email Newsletter,2026-01-24,Desktop Web
+1125,User_1125,Novosibirsk,Organic Search,2026-01-08,Mobile iOS
+1126,User_1126,Saint Petersburg,Email Newsletter,2025-09-29,Mobile Android
+1127,User_1127,Moscow,Paid Ads,2026-05-08,Desktop Web
+1128,User_1128,Moscow,Organic Search,2025-05-24,Mobile iOS
+1129,User_1129,Samara,Referral,2026-04-05,Mobile Android
+1130,User_1130,Novosibirsk,Email Newsletter,2025-12-25,Desktop Web
+1131,User_1131,Kazan,Organic Search,2025-02-13,Desktop Web
+1132,User_1132,Nizhny Novgorod,Email Newsletter,2025-03-10,Mobile iOS
+1133,User_1133,Kazan,Organic Search,2025-10-31,Mobile Android
+1134,User_1134,Saint Petersburg,Paid Ads,2025-12-06,Mobile Android
+1135,User_1135,Samara,Social Media,2025-05-14,Mobile Android
+1136,User_1136,Samara,Direct,2025-12-25,Mobile Android
+1137,User_1137,Yekaterinburg,Social Media,2025-06-12,Mobile iOS
+1138,User_1138,Saint Petersburg,Paid Ads,2025-02-08,Desktop Web
+1139,User_1139,Saint Petersburg,Organic Search,2025-02-25,Mobile iOS
+1140,User_1140,Yekaterinburg,Social Media,2025-08-19,Mobile Android
+1141,User_1141,Kazan,Social Media,2025-03-03,Mobile iOS
+1142,User_1142,Novosibirsk,Email Newsletter,2025-08-20,Mobile Android
+1143,User_1143,Moscow,Organic Search,2026-03-13,Mobile iOS
+1144,User_1144,Nizhny Novgorod,Social Media,2026-02-18,Desktop Web
+1145,User_1145,Kazan,Organic Search,2025-12-23,Mobile iOS
+1146,User_1146,Samara,Social Media,2026-03-04,Mobile iOS
+1147,User_1147,Nizhny Novgorod,Paid Ads,2025-02-16,Mobile Android
+1148,User_1148,Kazan,Organic Search,2025-07-22,Desktop Web
+1149,User_1149,Novosibirsk,Paid Ads,2025-06-03,Mobile iOS
+1150,User_1150,Yekaterinburg,Email Newsletter,2026-05-03,Desktop Web
+1151,User_1151,Kazan,Paid Ads,2026-01-19,Mobile iOS
+1152,User_1152,Moscow,Paid Ads,2025-08-25,Mobile iOS
+1153,User_1153,Moscow,Paid Ads,2025-01-07,Mobile iOS
+1154,User_1154,Samara,Email Newsletter,2025-04-12,Mobile Android
+1155,User_1155,Nizhny Novgorod,Direct,2025-12-18,Mobile iOS
+1156,User_1156,Kazan,Social Media,2025-10-26,Mobile iOS
+1157,User_1157,Moscow,Paid Ads,2025-01-12,Desktop Web
+1158,User_1158,Samara,Paid Ads,2025-08-16,Mobile iOS
+1159,User_1159,Samara,Social Media,2026-04-09,Mobile iOS
+1160,User_1160,Yekaterinburg,Organic Search,2025-01-22,Mobile iOS
+1161,User_1161,Kazan,Email Newsletter,2026-04-19,Desktop Web
+1162,User_1162,Yekaterinburg,Organic Search,2025-07-22,Mobile Android
+1163,User_1163,Yekaterinburg,Paid Ads,2025-12-16,Mobile Android
+1164,User_1164,Saint Petersburg,Social Media,2025-04-20,Mobile Android
+1165,User_1165,Saint Petersburg,Organic Search,2025-08-17,Desktop Web
+1166,User_1166,Kazan,Paid Ads,2025-11-14,Desktop Web
+1167,User_1167,Yekaterinburg,Email Newsletter,2025-06-01,Desktop Web
+1168,User_1168,Moscow,Organic Search,2025-09-03,Mobile Android
+1169,User_1169,Saint Petersburg,Email Newsletter,2025-07-16,Mobile iOS
+1170,User_1170,Samara,Referral,2025-11-26,Mobile iOS
+1171,User_1171,Samara,Referral,2025-11-19,Mobile iOS
+1172,User_1172,Samara,Direct,2025-07-15,Mobile Android
+1173,User_1173,Kazan,Email Newsletter,2025-09-03,Mobile Android
+1174,User_1174,Kazan,Referral,2026-04-13,Mobile Android
+1175,User_1175,Novosibirsk,Paid Ads,2025-07-18,Mobile iOS
+1176,User_1176,Kazan,Paid Ads,2025-06-13,Mobile iOS
+1177,User_1177,Samara,Social Media,2026-04-04,Mobile iOS
+1178,User_1178,Yekaterinburg,Referral,2026-02-19,Mobile Android
+1179,User_1179,Kazan,Paid Ads,2026-01-28,Mobile iOS
+1180,User_1180,Saint Petersburg,Direct,2025-02-21,Mobile iOS
+1181,User_1181,Kazan,Direct,2025-05-17,Mobile iOS
+1182,User_1182,Saint Petersburg,Referral,2026-01-27,Mobile Android
+1183,User_1183,Samara,Paid Ads,2025-07-01,Mobile iOS
+1184,User_1184,Kazan,Social Media,2025-05-02,Desktop Web
+1185,User_1185,Novosibirsk,Referral,2025-12-24,Mobile iOS
+1186,User_1186,Nizhny Novgorod,Social Media,2025-12-27,Desktop Web
+1187,User_1187,Saint Petersburg,Referral,2025-10-16,Mobile iOS
+1188,User_1188,Samara,Email Newsletter,2026-03-05,Desktop Web
+1189,User_1189,Saint Petersburg,Email Newsletter,2025-06-08,Mobile iOS
+1190,User_1190,Moscow,Paid Ads,2025-02-16,Desktop Web
+1191,User_1191,Moscow,Referral,2025-04-23,Mobile Android
+1192,User_1192,Novosibirsk,Referral,2025-01-01,Mobile iOS
+1193,User_1193,Saint Petersburg,Social Media,2026-02-17,Desktop Web
+1194,User_1194,Samara,Social Media,2025-04-01,Mobile iOS
+1195,User_1195,Saint Petersburg,Referral,2025-01-12,Desktop Web
+1196,User_1196,Saint Petersburg,Organic Search,2026-04-15,Desktop Web
+1197,User_1197,Novosibirsk,Organic Search,2026-03-17,Mobile Android
+1198,User_1198,Nizhny Novgorod,Email Newsletter,2025-12-27,Desktop Web
+1199,User_1199,Novosibirsk,Social Media,2025-02-21,Mobile Android
+1200,User_1200,Saint Petersburg,Direct,2025-03-11,Mobile Android
