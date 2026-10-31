@@ -12,3 +12,19 @@ env/
 
 # Local screenshots
 *.png
+
+# Build scripts (one-time generators)
+generate_batch_*.py
+generate_datasets.py
+generate_portal.py
+build_portal_v2.py
+inject_lieflat.py
+apply_foundation.py
+add_random_quiz.py
+update_logo_click.py
+sync_portal_data.py
+dump_schema.py
+notebook_helper.py
+deepen_group*.py
+gen_group*.py
+generate_batch_1_fixed.py
