@@ -11,111 +11,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='28' cy='28' r='20' fill='%23181818' stroke='%23FFFFFF' stroke-width='3.5'/%3E%3Crect x='19' y='27' width='3.5' height='12' rx='1' fill='%239B9B9B'/%3E%3Crect x='26' y='21' width='3.5' height='18' rx='1' fill='%23FFFFFF'/%3E%3Crect x='33' y='16' width='3.5' height='23' rx='1' fill='%23F97316'/%3E%3Crect x='41' y='41' width='6' height='18' rx='3' transform='rotate(-45 41 41)' fill='%23FFFFFF'/%3E%3C/svg%3E">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='4' y='4' width='56' height='56' rx='4' fill='%231779ba'/%3E%3Cline x1='12' y1='50' x2='52' y2='50' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' opacity='0.5'/%3E%3Crect x='14' y='34' width='8' height='16' rx='2' fill='%23ffffff' opacity='0.75'/%3E%3Crect x='25' y='24' width='8' height='26' rx='2' fill='%23ffffff' opacity='0.9'/%3E%3Crect x='36' y='14' width='8' height='36' rx='2' fill='%23ffffff'/%3E%3Cpath d='M18 32 L29 20 L40 10 L49 18' stroke='%23ffae00' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='49' cy='18' r='5' fill='%233adb76' stroke='%23ffffff' stroke-width='1.5'/%3E%3C/svg%3E">
 
   <!-- Marked + Prism -->
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js">
-// ===== RANDOM COMPREHENSIVE QUIZ (5 QUESTIONS ACROSS ALL MODULES) =====
-function startRandomQuiz() {
-  currentModIdx = -1;
-  currentTab = "quiz";
-  document.getElementById("topbarTitle").textContent = "Экспресс-тестирование: 5 вопросов по всему курсу";
-  
-  // Deactivate sidebar items
-  document.querySelectorAll(".mod-item").forEach(el => el.classList.remove("active"));
-  
-  // Tabs bar on topbar
-  document.getElementById("tabsBar").innerHTML = `
-    <div class="tab active" onclick="startRandomQuiz()">Случайный квиз</div>
-    <div class="tab" onclick="showHero()">← На главную</div>
-  `;
-
-  // Aggregate all questions from all modules with module title attached
-  const allQuestions = [];
-  COURSE.forEach(mod => {
-    if (mod.quiz) {
-      const qList = parseQuiz(mod.quiz);
-      qList.forEach(q => {
-        allQuestions.push({
-          ...q,
-          moduleTitle: mod.title
-        });
-      });
-    }
-  });
-
-  if (allQuestions.length === 0) {
-    document.getElementById("content-area").innerHTML = '<div class="md-view"><p>Квизы не найдены.</p></div>';
-    return;
-  }
-
-  // Shuffle array using Fisher-Yates and pick 5
-  const shuffled = [...allQuestions];
-  for (let i = shuffled.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-  }
-  const selectedQuestions = shuffled.slice(0, 5);
-
-  quizAnswered = {};
-  const area = document.getElementById("content-area");
-
-  let html = `
-    <div style="max-width: 860px; margin: 0 auto;">
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-        <button class="colab-btn" onclick="showHero()" style="margin-bottom: 0; padding: 8px 14px; background: var(--foundation-secondary);">
-          ← На главную
-        </button>
-        <button class="colab-btn" onclick="startRandomQuiz()" style="margin-bottom: 0; padding: 8px 14px; background: var(--foundation-primary);">
-          🔄 Новые 5 вопросов
-        </button>
-      </div>
-
-      <div class="quiz-score">
-        <div class="quiz-score-num" id="quizScore">0/5</div>
-        <div class="quiz-score-label">Правильных ответов</div>
-      </div>
-  `;
-
-  selectedQuestions.forEach((q, qi) => {
-    html += `
-      <div class="quiz-question" id="q${qi}">
-        <div style="font-size: 11px; font-weight: 700; color: var(--foundation-primary); text-transform: uppercase; margin-bottom: 6px; letter-spacing: 0.05em;">
-          ${escapeHtml(q.moduleTitle)}
-        </div>
-        <h3>Вопрос ${qi + 1}: ${escapeHtml(q.question)}</h3>
-    `;
-
-    q.options.forEach((opt, oi) => {
-      html += `
-        <div class="quiz-option" data-q="${qi}" data-o="${oi}" data-correct="${opt.correct}" onclick="answerQuiz(this)">
-          <div class="radio"></div>
-          <span>${escapeHtml(opt.text)}</span>
-        </div>
-      `;
-    });
-
-    if (q.explanation) {
-      html += `<div class="quiz-explanation" id="expl${qi}"><b>Объяснение:</b> ${escapeHtml(q.explanation)}</div>`;
-    }
-
-    html += '</div>';
-  });
-
-  html += `
-      <div style="text-align: center; margin-top: 32px; margin-bottom: 48px;">
-        <button class="colab-btn" onclick="startRandomQuiz()" style="font-size: 15px; padding: 12px 24px; background: var(--foundation-primary);">
-          🔄 Пройти еще раз (другие 5 вопросов)
-        </button>
-      </div>
-    </div>
-  `;
-
-  area.innerHTML = html;
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
-</script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
@@ -946,8 +845,17 @@ function startRandomQuiz() {
   <div class="sidebar-header">
     <div class="brand" onclick="showHero()" style="cursor: pointer;" title="На главную">
       <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="6" y="6" width="52" height="52" rx="3" fill="#1779ba"/>
-        <path d="M20 22H44V28H28V33H40V39H28V46H20V22Z" fill="#fefefe"/>
+        <rect x="4" y="4" width="56" height="56" rx="4" fill="#1779ba"/>
+        <line x1="12" y1="50" x2="52" y2="50" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+        <!-- 3 Ascending Bar Chart Columns (Data Analytics) -->
+        <rect x="14" y="34" width="8" height="16" rx="2" fill="#ffffff" opacity="0.75"/>
+        <rect x="25" y="24" width="8" height="26" rx="2" fill="#ffffff" opacity="0.9"/>
+        <rect x="36" y="14" width="8" height="36" rx="2" fill="#ffffff"/>
+        <!-- AI Prediction Line & Spark Node -->
+        <path d="M18 32 L29 20 L40 10 L49 18" stroke="#ffae00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="49" cy="18" r="5" fill="#3adb76" stroke="#ffffff" stroke-width="1.5"/>
+        <circle cx="40" cy="10" r="2.5" fill="#ffffff"/>
+        <circle cx="29" cy="20" r="2" fill="#ffffff"/>
       </svg>
       Data Analyst 2027
     </div>
@@ -1464,14 +1372,17 @@ function renderQuiz(mod) {
 let quizAnswered = {};
 function answerQuiz(el) {
   const qi = el.dataset.q;
-  if (quizAnswered[qi]) return;
-  quizAnswered[qi] = true;
+  if (quizAnswered[qi] !== undefined) return;
   const isCorrect = el.dataset.correct === "true";
+  quizAnswered[qi] = isCorrect;
 
   // Mark all options in this question
   document.querySelectorAll(`.quiz-option[data-q="${qi}"]`).forEach(opt => {
-    if (opt.dataset.correct === "true") opt.classList.add("correct");
-    else if (opt === el) opt.classList.add("wrong");
+    if (opt.dataset.correct === "true") {
+      opt.classList.add("correct");
+    } else if (opt === el) {
+      opt.classList.add("wrong");
+    }
     opt.style.pointerEvents = "none";
   });
 
@@ -1479,24 +1390,13 @@ function answerQuiz(el) {
   const expl = document.getElementById("expl" + qi);
   if (expl) expl.classList.add("show");
 
-  // Update score
+  // Recalculate score
   const total = document.querySelectorAll(".quiz-question").length;
-  const correct = document.querySelectorAll(".quiz-option.correct").length;
-  // Count unique correct answers
-  const answered = Object.keys(quizAnswered).length;
-  let score = 0;
-  Object.keys(quizAnswered).forEach(k => {
-    const chosen = document.querySelector(`.quiz-option[data-q="${k}"].correct`);
-    // Check if user clicked the correct one
-    const userClicked = document.querySelector(`.quiz-option[data-q="${k}"].wrong`);
-    if (chosen && !userClicked) score++;
-    else if (chosen) {
-      // correct was highlighted but user may have clicked wrong
-      const userEl = document.querySelector(`.quiz-option[data-q="${k}"].wrong`);
-      if (!userEl) score++;
-    }
-  });
-  document.getElementById("quizScore").textContent = score + "/" + total;
+  const correctCount = Object.values(quizAnswered).filter(v => v === true).length;
+  const scoreEl = document.getElementById("quizScore");
+  if (scoreEl) {
+    scoreEl.textContent = correctCount + "/" + total;
+  }
 }
 
 function parseQuiz(text) {
@@ -1580,6 +1480,109 @@ function toggleComplete(modId, btn) {
   updateProgress();
   buildSidebar();
 }
+
+
+// ===== RANDOM COMPREHENSIVE QUIZ (5 QUESTIONS ACROSS ALL 18 MODULES) =====
+function startRandomQuiz() {
+  currentModIdx = -1;
+  currentTab = "quiz";
+  document.getElementById("topbarTitle").textContent = "Экспресс-тест: 5 случайных вопросов по курсу";
+  
+  // Deactivate sidebar items
+  document.querySelectorAll(".mod-item").forEach(el => el.classList.remove("active"));
+  
+  // Tabs bar
+  document.getElementById("tabsBar").innerHTML = `
+    <div class="tab active" onclick="startRandomQuiz()">🎯 Экспресс-квиз</div>
+    <div class="tab" onclick="showHero()">← На главную</div>
+  `;
+
+  // Aggregate questions across all modules
+  const allQuestions = [];
+  COURSE.forEach(mod => {
+    if (mod.quiz) {
+      const qList = parseQuiz(mod.quiz);
+      qList.forEach(q => {
+        allQuestions.push({
+          ...q,
+          moduleTitle: mod.title
+        });
+      });
+    }
+  });
+
+  const area = document.getElementById("content-area");
+
+  if (allQuestions.length === 0) {
+    area.innerHTML = '<div class="md-view"><p>Квизы загружаются...</p></div>';
+    return;
+  }
+
+  // Shuffle array using Fisher-Yates and pick 5
+  const shuffled = [...allQuestions];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  const selectedQuestions = shuffled.slice(0, 5);
+
+  quizAnswered = {};
+
+  let htmlContent = `
+    <div style="max-width: 860px; margin: 0 auto;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+        <button class="colab-btn" onclick="showHero()" style="margin-bottom: 0; padding: 8px 16px; background: var(--foundation-secondary); border-color: var(--foundation-secondary);">
+          ← На главную
+        </button>
+        <button class="colab-btn" onclick="startRandomQuiz()" style="margin-bottom: 0; padding: 8px 16px; background: var(--foundation-primary);">
+          🔄 Новые 5 вопросов
+        </button>
+      </div>
+
+      <div class="quiz-score">
+        <div class="quiz-score-num" id="quizScore">0/5</div>
+        <div class="quiz-score-label">Правильных ответов</div>
+      </div>
+  `;
+
+  selectedQuestions.forEach((q, qi) => {
+    htmlContent += `
+      <div class="quiz-question" id="q${qi}">
+        <div style="font-size: 11px; font-weight: 700; color: var(--foundation-primary); text-transform: uppercase; margin-bottom: 8px; letter-spacing: 0.05em;">
+          ${escapeHtml(q.moduleTitle)}
+        </div>
+        <h3>Вопрос ${qi + 1}: ${escapeHtml(q.question)}</h3>
+    `;
+
+    q.options.forEach((opt, oi) => {
+      htmlContent += `
+        <div class="quiz-option" data-q="${qi}" data-o="${oi}" data-correct="${opt.correct}" onclick="answerQuiz(this)">
+          <div class="radio"></div>
+          <span>${escapeHtml(opt.text)}</span>
+        </div>
+      `;
+    });
+
+    if (q.explanation) {
+      htmlContent += `<div class="quiz-explanation" id="expl${qi}"><b>Объяснение:</b> ${escapeHtml(q.explanation)}</div>`;
+    }
+
+    htmlContent += '</div>';
+  });
+
+  htmlContent += `
+      <div style="text-align: center; margin-top: 32px; margin-bottom: 48px;">
+        <button class="colab-btn" onclick="startRandomQuiz()" style="font-size: 15px; padding: 12px 24px; background: var(--foundation-primary);">
+          🔄 Пройти еще раз (другие 5 вопросов)
+        </button>
+      </div>
+    </div>
+  `;
+
+  area.innerHTML = htmlContent;
+  area.scrollTop = 0;
+}
+
 </script>
 </body>
 </html>
