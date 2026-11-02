@@ -28,3 +28,6 @@ notebook_helper.py
 deepen_group*.py
 gen_group*.py
 generate_batch_1_fixed.py
+
+enrich_*.py
+inspect_projects.py
