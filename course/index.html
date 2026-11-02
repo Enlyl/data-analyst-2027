@@ -839,98 +839,90 @@
   
     
     /* ===== THEORETICAL ANIMATED EXPLANATIONS (LIEFLAT CHARTS) ===== */
-    .theory-anim-card {
+        /* ===== THEORETICAL LIEFLAT ANIMATIONS (EXACT HERO STYLE) ===== */
+    .theory-viz-block {
       background: var(--foundation-white);
       border: 1px solid var(--border);
-      border-left: 4px solid var(--foundation-primary);
       border-radius: var(--radius-default);
-      padding: 24px;
+      padding: 24px 24px 20px;
       margin-bottom: 28px;
-      box-shadow: 0 2px 8px rgba(10, 10, 10, 0.04);
+      box-shadow: 0 1px 4px rgba(10, 10, 10, 0.04);
     }
-    .theory-anim-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      margin-bottom: 16px;
-      gap: 16px;
+    .theory-viz-header {
+      margin-bottom: 18px;
     }
-    .theory-anim-badge {
+    .theory-viz-badge {
       display: inline-block;
       font-size: 11px;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.06em;
       color: var(--foundation-primary);
-      background: rgba(23, 121, 186, 0.1);
+      background: rgba(23, 121, 186, 0.08);
       padding: 3px 8px;
       border-radius: var(--radius-default);
       margin-bottom: 6px;
     }
-    .theory-anim-title {
-      font-size: 16px;
+    .theory-viz-title {
+      font-size: 18px;
       font-weight: 700;
+      letter-spacing: -0.01em;
       color: var(--foundation-black);
-      margin-bottom: 4px;
+      margin: 0 0 4px 0;
     }
-    .theory-anim-sub {
+    .theory-viz-sub {
       font-size: 13px;
       color: var(--foundation-secondary);
       line-height: 1.4;
     }
-    .theory-replay-btn {
+    .theory-lf-grid {
+      display: grid !important;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+      gap: 16px !important;
+      margin: 16px 0 0 !important;
+      max-width: 100% !important;
+    }
+    .theory-lf-grid .lf-card {
       background: var(--bg-surface);
       border: 1px solid var(--border);
-      color: var(--foundation-primary);
-      padding: 6px 14px;
       border-radius: var(--radius-default);
-      font-size: 12px;
-      font-weight: 600;
+      padding: 18px 18px 12px;
       cursor: pointer;
+      box-shadow: 0 1px 3px rgba(10, 10, 10, 0.03);
       transition: all 150ms var(--ease);
-      white-space: nowrap;
-      display: flex;
-      align-items: center;
-      gap: 6px;
     }
-    .theory-replay-btn:hover {
-      background: var(--foundation-primary);
-      color: #ffffff;
+    .theory-lf-grid .lf-card:hover {
       border-color: var(--foundation-primary);
+      box-shadow: 0 3px 8px rgba(23, 121, 186, 0.15);
+      transform: translateY(-1px);
     }
-    .theory-svg-wrap {
-      width: 100%;
-      max-width: 760px;
-      margin: 12px auto 0;
-      background: var(--bg-surface);
-      border-radius: var(--radius-default);
-      padding: 16px;
-      border: 1px solid var(--border);
+    .theory-lf-grid .lf-card h3 {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--foundation-black);
+      margin: 0 0 3px 0;
     }
-    .theory-svg-wrap svg {
+    .theory-lf-grid .lf-card .lf-sub {
+      font-size: 11px;
+      color: var(--foundation-secondary);
+      margin-bottom: 10px;
+    }
+    .theory-lf-grid .lf-card svg {
       width: 100%;
       height: auto;
       display: block;
+      background: var(--foundation-white);
+      border-radius: var(--radius-default);
+      border: 1px solid var(--border);
+      padding: 6px;
     }
-    .theory-metrics-row {
-      display: flex;
-      gap: 16px;
-      margin-top: 14px;
-      padding-top: 12px;
-      border-top: 1px solid var(--border);
-    }
-    .theory-metric-item {
-      flex: 1;
-    }
-    .theory-metric-val {
-      font-size: 15px;
-      font-weight: 700;
-      color: var(--foundation-black);
-      font-family: var(--font-mono);
-    }
-    .theory-metric-lbl {
-      font-size: 11px;
+    .theory-lf-grid .lf-card .lf-src {
+      font-size: 9px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
       color: var(--foundation-secondary);
+      margin-top: 8px;
     }
 </style>
 </head>
@@ -1690,425 +1682,1146 @@ function startRandomQuiz() {
 
 
 // ===== THEORETICAL ANIMATIONS ENGINE (LIEFLAT CHARTS) =====
-function getTheoryAnimationHtml(modId) {
-  const configs = {
-    "module_05_statistics": {
-      badge: "Теоретическая модель",
-      title: "Центральная предельная теорема (ЦПТ) и нормальное распределение Гаусса",
-      sub: "При увеличении размера выборки n выборочные средние сходятся к колоколообразному распределению N(μ, σ²/n) с критической областью p < 0.05",
-      metrics: [
-        { val: "μ = 0.0, σ = 1.0", lbl: "Стандартизованный Z-базис" },
-        { val: "α = 0.05 (Критическая зона)", lbl: "Порог отвержения H₀ (p-value)" },
-        { val: "95% CI: [μ - 1.96σ, μ + 1.96σ]", lbl: "Доверительный интервал" }
-      ]
-    },
-    "module_07_ab_testing": {
-      badge: "Теоретическая модель",
-      title: "Ловушка подглядывания (Peeking Problem) и эскалация ошибки I рода (FPR)",
-      sub: "Ежедневная проверка p-value раздувает реальную ошибку с 5% до 36.2% за 30 дней",
-      metrics: [
-        { val: "Target α = 5.0%", lbl: "Допустимый уровень ошибки I рода" },
-        { val: "FPR(Day 30) = 36.2%", lbl: "Фактическая ошибка при ежедневном подглядывании" },
-        { val: "Решение: Sequential Testing", lbl: "Границы О'Брайена-Флеминга / mSPRT" }
-      ]
-    },
-    "module_02_sql": {
-      badge: "Теоретическая модель",
-      title: "Оконные функции: 7-дневное скользящее среднее vs Дневной шум",
-      sub: "Аналитическое окно ROWS BETWEEN 6 PRECEDING AND CURRENT ROW сглаживает всплески выходных и выявляет истинный тренд",
-      metrics: [
-        { val: "7-Day Moving Average", lbl: "Сглаживание недельной сезонности" },
-        { val: "Running Total", lbl: "Кумулятивная выручка (Cumulative Run-Rate)" },
-        { val: "Без схлопывания строк", lbl: "Сохранение детализации транзакций" }
-      ]
-    },
-    "module_03_python": {
-      badge: "Теоретическая модель",
-      title: "Векторизация SIMD против итеративных циклов Python",
-      sub: "Векторные операции NumPy/Pandas в C-контуре выполняются параллельно на регистрах CPU с ускорением до 200x",
-      metrics: [
-        { val: "For-loop: O(N) Overhead", lbl: "Накладные расходы динамической типизации" },
-        { val: "NumPy: SIMD 200x Speedup", lbl: "Пакетная обработка в непрерывной памяти" },
-        { val: "Zero-copy Slicing", lbl: "Эффективная работа с оперативной памятью" }
-      ]
-    },
-    "module_04_data_cleaning": {
-      badge: "Теоретическая модель",
-      title: "Детектирование аномалий: Интерквартильный размах (IQR) и Isolation Forest",
-      sub: "Многомерная граница решений изолирует выбросы и защищает витрину от эффекта 'Garbage In, Garbage Out'",
-      metrics: [
-        { val: "IQR = Q₃ - Q₁", lbl: "Межквартильный размах распределения" },
-        { val: "Границы: [Q₁ - 1.5·IQR, Q₃ + 1.5·IQR]", lbl: "Классический фильтр Тьюки" },
-        { val: "Isolation Trees", lbl: "Древовидная изоляция редких аномалий" }
-      ]
-    },
-    "module_06_bi_looker_studio": {
-      badge: "Теоретическая модель",
-      title: "Архитектура Modern Data Stack и Data Blending",
-      sub: "Сквозное смешивание рекламных расходов и выручки CRM для сквозного расчета ROAS и маржинальности",
-      metrics: [
-        { val: "ELT -> Warehouse -> BI", lbl: "Денормализованная витрина данных" },
-        { val: "Blended ROAS: 3.4x", lbl: "Окупаемость инвестиций в маркетинг" },
-        { val: "5-Second SLA", lbl: "Максимальное время отклика дашборда" }
-      ]
-    },
-    "module_08_prompt_engineering": {
-      badge: "Теоретическая модель",
-      title: "Chain-of-Thought (CoT) и алгоритмические рассуждения",
-      sub: "Генерация промежуточных токенов рассуждений снижает математическую погрешность LLM в 16 раз",
-      metrics: [
-        { val: "Direct: 68% Ошибок", lbl: "Сбои при прямом расчете юнит-экономики" },
-        { val: "CoT: 4.2% Ошибок", lbl: "Пошаговая декомпозиция формул" },
-        { val: "Self-Consistency", lbl: "Мажоритарное голосование путей рассуждений" }
-      ]
-    },
-    "module_10_llm_api": {
-      badge: "Теоретическая модель",
-      title: "Микроэкономика LLM API и Structured Outputs (Pydantic)",
-      sub: "Принудительное маскирование токенов по грамматике JSON-схемы дает 100% гарантию валидности в прод-пайплайнах",
-      metrics: [
-        { val: "100% Valid JSON", lbl: "Нулевой процент сбоев в ETL конвейере" },
-        { val: "Flash Routing: $0.10/1M", lbl: "Экономия до 95% бюджета на инференс" },
-        { val: "Batch API: -50% Cost", lbl: "Скидка на асинхронную ночную обработку" }
-      ]
-    },
-    "module_11_rag_vector_db": {
-      badge: "Теоретическая модель",
-      title: "Семантическое векторное пространство и Cosine Similarity",
-      sub: "Плотные векторы эмбеддингов проецируют смысл запросов в N-мерное пространство: cos(θ) = (u·v)/(||u||·||v||)",
-      metrics: [
-        { val: "HNSW / ANN Indexing", lbl: "Быстрый поиск ближайших соседей" },
-        { val: "Hybrid Search (Dense + BM25)", lbl: "Комбинация семантики и точных ключей" },
-        { val: "Context Re-ranking", lbl: "Cross-Encoder переранжирование фрагментов" }
-      ]
-    },
-    "module_12_ai_agents": {
-      badge: "Теоретическая модель",
-      title: "Автономный ReAct цикл (Reasoning + Action + Observation)",
-      sub: "Агент декомпозирует аналитическую задачу, вызывает инструменты SQL/Python и проверяет результаты на инварианты",
-      metrics: [
-        { val: "Thought -> Action -> Observe", lbl: "Классический цикл Яо и соавторов" },
-        { val: "Tool Calling Protocol", lbl: "Безопасное исполнение кода в песочнице" },
-        { val: "Loop Guard (max 10)", lbl: "Защита от бесконечного зацикливания" }
-      ]
-    },
-    "module_13_soft_skills_storytelling": {
-      badge: "Теоретическая модель",
-      title: "Пирамида Минто и инвертированная коммуникация (BLUF)",
-      sub: "Управленческая подача: Главный вывод и рекомендация в первые 30 секунд -> 3 аргумента -> Цифровые доказательства",
-      metrics: [
-        { val: "BLUF (Bottom Line First)", lbl: "Действие в заголовке слайда" },
-        { val: "MECE Декомпозиция", lbl: "Взаимоисключающие и исчерпывающие ветви" },
-        { val: "SCR Framework", lbl: "Situation -> Complication -> Resolution" }
-      ]
-    },
-    "module_00_onboarding": {
-      badge: "Теоретическая модель",
-      title: "Жизненный цикл аналитического исследования CRISP-DM",
-      sub: "Итеративный конвейер от Business Understanding до Deployment: 80% времени инвестируется в понимание и подготовку данных",
-      metrics: [
-        { val: "Business Understanding", lbl: "Формулирование ТЗ и критериев успеха" },
-        { val: "Data Prep: 55% времени", lbl: "Очистка, нормализация, витрины" },
-        { val: "Feedback Loops", lbl: "Возврат к гипотезам при валидации" }
-      ]
-    },
-    "module_01_excel": {
-      badge: "Теоретическая модель",
-      title: "Каскадная P&L модель SaaS и архитектура XLOOKUP",
-      sub: "Финансовая декомпозиция выручки ARR, себестоимости COGS, расходов на маркетинг и маржинальности EBITDA",
-      metrics: [
-        { val: "FAST Modeling Standard", lbl: "Flexible, Appropriate, Structured, Transparent" },
-        { val: "XLOOKUP vs VLOOKUP", lbl: "Отказоустойчивость при изменении колонок" },
-        { val: "EBITDA Margin %", lbl: "Операционная рентабельность бизнеса" }
-      ]
-    }
-  };
+// =================================================================
+// LIEFLAT THEORY ANIMATIONS FOR COURSE MODULES (EXACT HERO STYLE)
+// =================================================================
 
-  const cfg = configs[modId] || {
-    badge: "Теоретическая концепция",
-    title: "Архитектурная модель модуля: Data Analyst 2027",
-    sub: "Концептуальная визуализация прикладных инструментов и аналитических закономерностей",
-    metrics: [
-      { val: "Industry Standard", lbl: "Стандарт ведущих технологических компаний" },
-      { val: "AI-Augmented", lbl: "Интеграция передовых практик 2027 года" },
-      { val: "Production Ready", lbl: "Готовность к внедрению в реальный бизнес" }
+const THEORY_MODULES = {
+  "module_00_onboarding": {
+    badge: "Методология",
+    title: "Онбординг: CRISP-DM и бюджет времени аналитика",
+    charts: [
+      {
+        id: "th_00_crisp",
+        title: "CRISP-DM: Итеративный цикл",
+        sub: "6 фаз с обратными связями",
+        src: "CRISP-DM FRAMEWORK · КУРС 2027",
+        draw: (svg) => {
+          // Flow: Business -> Data -> Prep -> Model -> Eval -> Deploy
+          const nodes = [
+            { l: "Бизнес", x: 40, y: 55, c: LF.PRIMARY },
+            { l: "Данные", x: 140, y: 55, c: LF.PRIMARY },
+            { l: "Очистка", x: 240, y: 55, c: LF.PRIMARY },
+            { l: "Модель", x: 240, y: 135, c: LF.WARNING },
+            { l: "Оценка", x: 140, y: 135, c: LF.SUCCESS },
+            { l: "Деплой", x: 40, y: 135, c: LF.SUCCESS }
+          ];
+          // Connecting arrows
+          const p1 = LF.el(svg, "path", {
+            d: "M 75 55 L 105 55 M 175 55 L 205 55 M 240 80 L 240 110 M 205 135 L 175 135 M 105 135 L 75 135 M 40 110 L 40 80",
+            stroke: LF.MUTED, "stroke-width": 1.5, "stroke-dasharray": "3 3", fill: "none", class: "lf-draw"
+          });
+          nodes.forEach((n, idx) => {
+            LF.el(svg, "rect", {
+              x: n.x - 30, y: n.y - 18, width: 60, height: 36, rx: 6,
+              fill: n.c, opacity: "0.15", stroke: n.c, "stroke-width": 1.5,
+              class: "lf-pop", style: `animation-delay: ${idx * 90}ms; transform-origin: ${n.x}px ${n.y}px;`
+            });
+            LF.txt(svg, {
+              x: n.x, y: n.y + 4, "text-anchor": "middle",
+              "font-size": "10", "font-weight": "700", fill: "currentColor"
+            }, n.l);
+          });
+          // Loopback feedback annotation
+          LF.txt(svg, { x: 140, y: 100, "text-anchor": "middle", "font-size": "9", fill: LF.ALERT, "font-weight": "600" }, "↺ Возврат к гипотезам");
+        }
+      },
+      {
+        id: "th_00_time",
+        title: "Бюджет времени аналитика",
+        sub: "где проходит 80% реальной работы",
+        src: "TIME ALLOCATION · КУРС 2027",
+        draw: (svg) => {
+          const items = [
+            { l: "Подготовка данных", v: 55, c: LF.PRIMARY, t: "55%" },
+            { l: "Бизнес-контекст", v: 20, c: LF.L[1], t: "20%" },
+            { l: "Моделирование", v: 15, c: LF.WARNING, t: "15%" },
+            { l: "Презентация выводов", v: 10, c: LF.SUCCESS, t: "10%" }
+          ];
+          const startY = 32, rowH = 34, maxW = 160;
+          items.forEach((it, idx) => {
+            const y = startY + idx * rowH;
+            LF.txt(svg, { x: 18, y: y + 12, "font-size": "10", "font-weight": "600", fill: "currentColor" }, it.l);
+            // background bar
+            LF.el(svg, "rect", { x: 18, y: y + 17, width: maxW + 20, height: 10, rx: 3, fill: LF.GRID, opacity: "0.4" });
+            // active bar
+            const w = (it.v / 100) * (maxW + 20);
+            LF.el(svg, "rect", {
+              x: 18, y: y + 17, width: w, height: 10, rx: 3,
+              fill: it.c, class: "lf-pop",
+              style: `animation-delay: ${idx * 110}ms; transform-origin: 18px ${y+22}px;`
+            });
+            LF.txt(svg, { x: 205, y: y + 26, "font-size": "11", "font-weight": "700", fill: it.c }, it.t);
+          });
+        }
+      }
     ]
-  };
+  },
 
-  let metricsHtml = "";
-  if (cfg.metrics && cfg.metrics.length > 0) {
-    metricsHtml = '<div class="theory-metrics-row">' + 
-      cfg.metrics.map(m => `
-        <div class="theory-metric-item">
-          <div class="theory-metric-val">${m.val}</div>
-          <div class="theory-metric-lbl">${m.lbl}</div>
-        </div>
-      `).join("") + '</div>';
+  "module_01_excel": {
+    badge: "Финансовая юнит-экономика",
+    title: "Excel: Каскадный P&L и отказоустойчивый XLOOKUP",
+    charts: [
+      {
+        id: "th_01_waterfall",
+        title: "Каскадный SaaS P&L",
+        sub: "ARR → Себестоимость → EBITDA",
+        src: "WATERFALL P&L · КУРС 2027",
+        draw: (svg) => {
+          // Bars: ARR 100 -> COGS -25 -> Mkt -35 -> R&D -15 -> EBITDA 25
+          const steps = [
+            { l: "ARR", y: 35, h: 110, c: LF.PRIMARY, v: "+$100k" },
+            { l: "COGS", y: 35, h: 28, c: LF.ALERT, v: "-$25k" },
+            { l: "Mkt", y: 63, h: 38, c: LF.ALERT, v: "-$35k" },
+            { l: "R&D", y: 101, h: 16, c: LF.ALERT, v: "-$15k" },
+            { l: "EBITDA", y: 117, h: 28, c: LF.SUCCESS, v: "+$25k" }
+          ];
+          const barW = 36, gap = 14, startX = 22;
+          // Zero base line
+          LF.el(svg, "line", { x1: 15, y1: 145, x2: 265, y2: 145, stroke: LF.GRID, "stroke-width": 1.5 });
+          steps.forEach((s, idx) => {
+            const x = startX + idx * (barW + gap);
+            LF.el(svg, "rect", {
+              x: x, y: s.y, width: barW, height: s.h, rx: 3,
+              fill: s.c, class: "lf-pop",
+              style: `animation-delay: ${idx * 90}ms; transform-origin: ${x}px ${s.y + s.h}px;`
+            });
+            LF.txt(svg, { x: x + barW/2, y: s.y - 5, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: s.c }, s.v);
+            LF.txt(svg, { x: x + barW/2, y: 160, "text-anchor": "middle", "font-size": "10", "font-weight": "600", fill: "currentColor" }, s.l);
+          });
+        }
+      },
+      {
+        id: "th_01_xlookup",
+        title: "XLOOKUP vs VLOOKUP",
+        sub: "прямой вектор без сдвига индексов",
+        src: "LOOKUP ARCHITECTURE · КУРС 2027",
+        draw: (svg) => {
+          // Schema: Lookup vector pointing directly to Result vector
+          LF.el(svg, "rect", { x: 25, y: 35, width: 90, height: 110, rx: 4, fill: LF.PRIMARY, opacity: "0.1", stroke: LF.PRIMARY, "stroke-width": 1.5 });
+          LF.txt(svg, { x: 70, y: 26, "text-anchor": "middle", "font-size": "10", "font-weight": "700", fill: LF.PRIMARY }, "Ключи ID");
+
+          LF.el(svg, "rect", { x: 165, y: 35, width: 90, height: 110, rx: 4, fill: LF.SUCCESS, opacity: "0.1", stroke: LF.SUCCESS, "stroke-width": 1.5 });
+          LF.txt(svg, { x: 210, y: 26, "text-anchor": "middle", "font-size": "10", "font-weight": "700", fill: LF.SUCCESS }, "Значения $");
+
+          // Row bars inside
+          [50, 75, 100, 125].forEach((y, i) => {
+            const active = i === 1;
+            LF.el(svg, "rect", { x: 32, y: y, width: 76, height: 16, rx: 2, fill: active ? LF.PRIMARY : LF.GRID, opacity: active ? "0.9" : "0.5" });
+            LF.el(svg, "rect", { x: 172, y: y, width: 76, height: 16, rx: 2, fill: active ? LF.SUCCESS : LF.GRID, opacity: active ? "0.9" : "0.5" });
+          });
+          // Connection arrow
+          LF.el(svg, "path", {
+            d: "M 108 83 C 135 83, 145 83, 172 83",
+            stroke: LF.WARNING, "stroke-width": 3, fill: "none", class: "lf-draw",
+            "stroke-dasharray": "80", "stroke-dashoffset": "80"
+          });
+          LF.txt(svg, { x: 140, y: 72, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: LF.WARNING }, "1-к-1");
+          LF.txt(svg, { x: 140, y: 165, "text-anchor": "middle", "font-size": "10", "font-weight": "600", fill: LF.MUTED }, "Безопасен к вставке колонок");
+        }
+      }
+    ]
+  },
+
+  "module_02_sql": {
+    badge: "Аналитический SQL",
+    title: "SQL: Скользящее окно 7D и когортное удержание",
+    charts: [
+      {
+        id: "th_02_rolling",
+        title: "7-Day Moving Average",
+        sub: "ROWS BETWEEN 6 PRECEDING убирает шум",
+        src: "WINDOW FUNCTIONS · КУРС 2027",
+        draw: (svg) => {
+          // Noisy daily bars + smooth moving average line
+          const daily = [28, 45, 32, 68, 85, 42, 35, 52, 78, 65, 88, 95, 72, 80];
+          const rolling = [28, 36, 35, 43, 51, 50, 48, 51, 56, 61, 65, 71, 74, 77];
+          const barW = 12, gap = 5, startX = 25, baseY = 150;
+          LF.el(svg, "line", { x1: 20, y1: baseY, x2: 265, y2: baseY, stroke: LF.GRID, "stroke-width": 1.5 });
+
+          daily.forEach((v, idx) => {
+            const h = v * 1.1;
+            const x = startX + idx * (barW + gap);
+            LF.el(svg, "rect", {
+              x: x, y: baseY - h, width: barW, height: h, rx: 2,
+              fill: LF.PRIMARY, opacity: "0.35", class: "lf-pop",
+              style: `animation-delay: ${idx * 40}ms; transform-origin: ${x}px ${baseY}px;`
+            });
+          });
+
+          // Draw rolling path
+          let d = "";
+          rolling.forEach((v, idx) => {
+            const x = startX + idx * (barW + gap) + barW / 2;
+            const y = baseY - v * 1.1;
+            d += (idx === 0 ? `M ${x} ${y}` : ` L ${x} ${y}`);
+          });
+          LF.el(svg, "path", {
+            d: d, stroke: LF.ALERT, "stroke-width": 2.8, fill: "none",
+            class: "lf-draw", "stroke-dasharray": "400", "stroke-dashoffset": "400",
+            style: "animation: lfDraw 1.2s forwards;"
+          });
+          LF.txt(svg, { x: 265, y: 45, "text-anchor": "end", "font-size": "10", "font-weight": "700", fill: LF.ALERT }, "7D Тренд");
+        }
+      },
+      {
+        id: "th_02_cohort",
+        title: "Когортное удержание (Retention)",
+        sub: "динамика возвращаемости M0-M4",
+        src: "COHORT MATRIX · КУРС 2027",
+        draw: (svg) => {
+          // Cohort matrix cells (3 rows)
+          const cohorts = [
+            { name: "Янв", vals: [100, 48, 34, 28, 24] },
+            { name: "Фев", vals: [100, 52, 38, 31] },
+            { name: "Мар", vals: [100, 56, 42] }
+          ];
+          const cellW = 38, cellH = 26, startX = 55, startY = 40;
+          cohorts.forEach((c, r) => {
+            LF.txt(svg, { x: 45, y: startY + r * 35 + 17, "text-anchor": "end", "font-size": "10", "font-weight": "600", fill: "currentColor" }, c.name);
+            c.vals.forEach((val, col) => {
+              const x = startX + col * (cellW + 6);
+              const y = startY + r * 35;
+              const alpha = (val / 100);
+              LF.el(svg, "rect", {
+                x: x, y: y, width: cellW, height: cellH, rx: 3,
+                fill: LF.PRIMARY, opacity: alpha.toFixed(2), class: "lf-fade",
+                style: `animation-delay: ${(r * 3 + col) * 60}ms;`
+              });
+              LF.txt(svg, {
+                x: x + cellW / 2, y: y + 17, "text-anchor": "middle",
+                "font-size": "10", "font-weight": "700",
+                fill: alpha > 0.45 ? "#ffffff" : "currentColor"
+              }, val + "%");
+            });
+          });
+          // Headers
+          ["M0", "M1", "M2", "M3", "M4"].forEach((m, col) => {
+            LF.txt(svg, { x: startX + col * (cellW + 6) + cellW/2, y: 28, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: LF.MUTED }, m);
+          });
+        }
+      }
+    ]
+  },
+
+  "module_03_python": {
+    badge: "Векторизация и память",
+    title: "Python: SIMD векторизация и нулевое копирование",
+    charts: [
+      {
+        id: "th_03_simd",
+        title: "NumPy SIMD vs Python Loop",
+        sub: "ускорение 200x на регистрах процессора",
+        src: "BENCHMARK EXECUTION · КУРС 2027",
+        draw: (svg) => {
+          // Race bars: Python loop 4.85s vs NumPy 0.02s
+          LF.txt(svg, { x: 25, y: 48, "font-size": "11", "font-weight": "600", fill: "currentColor" }, "Python for-loop (динамическая типизация)");
+          LF.el(svg, "rect", { x: 25, y: 56, width: 220, height: 18, rx: 3, fill: LF.ALERT, class: "lf-pop", style: "animation-delay: 50ms;" });
+          LF.txt(svg, { x: 215, y: 70, "font-size": "10", "font-weight": "700", fill: "#ffffff", "text-anchor": "end" }, "4.85 сек");
+
+          LF.txt(svg, { x: 25, y: 104, "font-size": "11", "font-weight": "600", fill: "currentColor" }, "NumPy SIMD C-контур (параллельно)");
+          LF.el(svg, "rect", { x: 25, y: 112, width: 14, height: 18, rx: 3, fill: LF.SUCCESS, class: "lf-pop", style: "animation-delay: 250ms;" });
+          LF.txt(svg, { x: 48, y: 126, "font-size": "11", "font-weight": "700", fill: LF.SUCCESS }, "0.02 сек (240x быстрее)");
+
+          LF.el(svg, "line", { x1: 25, y1: 148, x2: 255, y2: 148, stroke: LF.GRID, "stroke-width": 1.5 });
+          LF.txt(svg, { x: 140, y: 166, "text-anchor": "middle", "font-size": "10", "font-weight": "600", fill: LF.PRIMARY }, "Векторные инструкции AVX-512 / NEON");
+        }
+      },
+      {
+        id: "th_03_memory",
+        title: "Zero-Copy Memory Slicing",
+        sub: "слайс — это легковесный view, а не копия",
+        src: "MEMORY POINTER VIEW · КУРС 2027",
+        draw: (svg) => {
+          // Master array 8 cells
+          LF.txt(svg, { x: 25, y: 35, "font-size": "10", "font-weight": "700", fill: LF.MUTED }, "Базовый массив памяти np.ndarray (RAM)");
+          const cellW = 26, cellH = 26, startX = 25, startY = 45;
+          for (let i = 0; i < 8; i++) {
+            const active = i >= 2 && i <= 5;
+            LF.el(svg, "rect", {
+              x: startX + i * cellW, y: startY, width: cellW - 2, height: cellH, rx: 2,
+              fill: active ? LF.PRIMARY : LF.GRID, opacity: active ? "0.85" : "0.35"
+            });
+            LF.txt(svg, { x: startX + i * cellW + cellW/2 - 1, y: startY + 17, "text-anchor": "middle", "font-size": "10", fill: active ? "#fff" : LF.MUTED, "font-weight": "600" }, i);
+          }
+          // Pointer bracket below
+          LF.el(svg, "path", {
+            d: `M ${startX + 2*cellW} 80 L ${startX + 2*cellW} 95 L ${startX + 4*cellW} 95 L ${startX + 4*cellW} 115 M ${startX + 4*cellW} 95 L ${startX + 6*cellW} 95 L ${startX + 6*cellW} 80`,
+            stroke: LF.WARNING, "stroke-width": 2, fill: "none", class: "lf-draw"
+          });
+          LF.el(svg, "rect", { x: startX + 2*cellW, y: 122, width: 4*cellW - 2, height: 26, rx: 3, fill: LF.WARNING, opacity: "0.2", stroke: LF.WARNING, "stroke-width": 1.5 });
+          LF.txt(svg, { x: startX + 4*cellW - 1, y: 139, "text-anchor": "middle", "font-size": "10", "font-weight": "700", fill: LF.WARNING }, "View: arr[2:6] (0 байт копий)");
+          LF.txt(svg, { x: 140, y: 168, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Модификация view меняет исходный буфер");
+        }
+      }
+    ]
+  },
+
+  "module_04_data_cleaning": {
+    badge: "Предобработка данных",
+    title: "Очистка данных: Фильтр Тьюки IQR и восстановление пропусков",
+    charts: [
+      {
+        id: "th_04_iqr",
+        title: "Детектирование выбросов (IQR)",
+        sub: "интерквартильный размах Q₁ - 1.5·IQR",
+        src: "TUKEY BOXPLOT · КУРС 2027",
+        draw: (svg) => {
+          // Boxplot: Min whisker -> Q1 -> Median -> Q3 -> Max whisker + Outliers
+          const baseY = 85;
+          LF.el(svg, "line", { x1: 50, y1: baseY, x2: 220, y2: baseY, stroke: LF.MUTED, "stroke-width": 2 });
+          // Whisker bounds
+          LF.el(svg, "line", { x1: 50, y1: baseY - 18, x2: 50, y2: baseY + 18, stroke: LF.MUTED, "stroke-width": 2 });
+          LF.el(svg, "line", { x1: 220, y1: baseY - 18, x2: 220, y2: baseY + 18, stroke: LF.MUTED, "stroke-width": 2 });
+          // Box (Q1=90, Q3=175)
+          LF.el(svg, "rect", { x: 90, y: baseY - 28, width: 85, height: 56, rx: 3, fill: LF.PRIMARY, opacity: "0.25", stroke: LF.PRIMARY, "stroke-width": 2, class: "lf-pop" });
+          // Median
+          LF.el(svg, "line", { x1: 130, y1: baseY - 28, x2: 130, y2: baseY + 28, stroke: LF.PRIMARY, "stroke-width": 3 });
+          // Outliers
+          [240, 258].forEach((ox, idx) => {
+            LF.el(svg, "circle", { cx: ox, cy: baseY, r: 5, fill: LF.ALERT, stroke: "#fff", "stroke-width": 1.5, class: "lf-dot-pop", style: `animation-delay: ${200 + idx * 100}ms;` });
+          });
+          LF.txt(svg, { x: 90, y: 132, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: LF.PRIMARY }, "Q₁ (25%)");
+          LF.txt(svg, { x: 130, y: 48, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: LF.PRIMARY }, "Медиана");
+          LF.txt(svg, { x: 175, y: 132, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: LF.PRIMARY }, "Q₃ (75%)");
+          LF.txt(svg, { x: 250, y: 132, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: LF.ALERT }, "Выбросы");
+          LF.txt(svg, { x: 140, y: 165, "text-anchor": "middle", "font-size": "10", "font-weight": "600", fill: LF.MUTED }, "IQR = Q₃ - Q₁ (устойчив к экстремумам)");
+        }
+      },
+      {
+        id: "th_04_missing",
+        title: "Стратегии заполнения пропусков",
+        sub: "Mean vs KNN сохранение дисперсии",
+        src: "IMPUTATION STRATEGY · КУРС 2027",
+        draw: (svg) => {
+          // Bars: Mean fill (distorts) vs KNN / Iterative (preserves covariance)
+          const metrics = [
+            { l: "Drop Rows (Удаление)", score: 45, c: LF.ALERT, note: "Потеря 35% выборки" },
+            { l: "Mean/Median Fill", score: 62, c: LF.WARNING, note: "Сжимает дисперсию" },
+            { l: "KNN / Iterative Imputer", score: 94, c: LF.SUCCESS, note: "Сохраняет ковариацию" }
+          ];
+          metrics.forEach((m, idx) => {
+            const y = 35 + idx * 42;
+            LF.txt(svg, { x: 20, y: y + 10, "font-size": "10", "font-weight": "700", fill: "currentColor" }, m.l);
+            LF.el(svg, "rect", { x: 20, y: y + 16, width: 220, height: 12, rx: 3, fill: LF.GRID, opacity: "0.4" });
+            LF.el(svg, "rect", {
+              x: 20, y: y + 16, width: (m.score / 100) * 220, height: 12, rx: 3,
+              fill: m.c, class: "lf-pop", style: `animation-delay: ${idx * 120}ms;`
+            });
+            LF.txt(svg, { x: 20, y: y + 36, "font-size": "9", "font-weight": "600", fill: m.c }, m.note);
+          });
+        }
+      }
+    ]
+  },
+
+  "module_05_statistics": {
+    badge: "Прикладная статистика",
+    title: "Статистика: Центральная предельная теорема и p-value",
+    charts: [
+      {
+        id: "th_05_clt",
+        title: "Центральная предельная теорема",
+        sub: "сходимость средних к колоколу Гаусса",
+        src: "GAUSSIAN CLT · КУРС 2027",
+        draw: (svg) => {
+          // Bell curve + sample histogram bars
+          LF.el(svg, "line", { x1: 20, y1: 150, x2: 260, y2: 150, stroke: LF.GRID, "stroke-width": 1.5 });
+          const barH = [4, 10, 20, 38, 62, 88, 105, 110, 105, 88, 62, 38, 20, 10, 4];
+          barH.forEach((h, i) => {
+            const bx = 30 + i * 15;
+            const by = 150 - h;
+            const isTail = i <= 1 || i >= barH.length - 2;
+            LF.el(svg, "rect", {
+              x: bx, y: by, width: 12, height: h, rx: 2,
+              fill: isTail ? LF.ALERT : LF.PRIMARY, opacity: isTail ? "0.85" : "0.55",
+              class: "lf-pop", style: `animation-delay: ${i * 35}ms;`
+            });
+          });
+          // Normal curve line
+          let d = "M 20 148 ";
+          for (let x = 20; x <= 260; x += 6) {
+            const z = (x - 140) / 38;
+            const y = 150 - (115 * Math.exp(-0.5 * z * z));
+            d += `L ${x.toFixed(1)} ${y.toFixed(1)} `;
+          }
+          LF.el(svg, "path", {
+            d, fill: "none", stroke: LF.PRIMARY, "stroke-width": 2.5,
+            class: "lf-draw", "stroke-dasharray": "600", "stroke-dashoffset": "600",
+            style: "animation: lfDraw 1.2s forwards;"
+          });
+          LF.txt(svg, { x: 140, y: 22, "text-anchor": "middle", "font-size": "10", "font-weight": "700", fill: LF.PRIMARY }, "μ = 0 (Выборочное среднее)");
+        }
+      },
+      {
+        id: "th_05_zscore",
+        title: "Критические зоны p-value",
+        sub: "порог отвержения H₀ при α = 0.05",
+        src: "HYPOTHESIS TESTING · КУРС 2027",
+        draw: (svg) => {
+          // Rejection tails at -1.96 and +1.96
+          LF.el(svg, "line", { x1: 20, y1: 145, x2: 260, y2: 145, stroke: LF.GRID, "stroke-width": 1.5 });
+          // Tails shaded
+          LF.el(svg, "polygon", { points: "20,145 60,145 60,128 20,144", fill: LF.ALERT, opacity: "0.25", class: "lf-fade" });
+          LF.el(svg, "polygon", { points: "220,128 220,145 260,145 260,144", fill: LF.ALERT, opacity: "0.25", class: "lf-fade" });
+
+          let d = "M 20 145 ";
+          for (let x = 20; x <= 260; x += 6) {
+            const z = (x - 140) / 38;
+            const y = 145 - (110 * Math.exp(-0.5 * z * z));
+            d += `L ${x.toFixed(1)} ${y.toFixed(1)} `;
+          }
+          LF.el(svg, "path", { d, fill: "none", stroke: LF.PRIMARY, "stroke-width": 2, class: "lf-draw", "stroke-dasharray": "600", "stroke-dashoffset": "600" });
+
+          // Threshold lines
+          LF.el(svg, "line", { x1: 65, y1: 35, x2: 65, y2: 145, stroke: LF.ALERT, "stroke-width": 1.5, "stroke-dasharray": "3 3" });
+          LF.el(svg, "line", { x1: 215, y1: 35, x2: 215, y2: 145, stroke: LF.ALERT, "stroke-width": 1.5, "stroke-dasharray": "3 3" });
+          LF.txt(svg, { x: 65, y: 28, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: LF.ALERT }, "-1.96σ");
+          LF.txt(svg, { x: 215, y: 28, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: LF.ALERT }, "+1.96σ");
+          LF.txt(svg, { x: 140, y: 90, "text-anchor": "middle", "font-size": "11", "font-weight": "700", fill: LF.SUCCESS }, "95% Доверия (H₀)");
+          LF.txt(svg, { x: 140, y: 165, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Область отвержения: p < 0.05");
+        }
+      }
+    ]
+  },
+
+  "module_06_bi_looker_studio": {
+    badge: "BI и визуализация данных",
+    title: "BI: Маркетинговая воронка и окупаемость CAC",
+    charts: [
+      {
+        id: "th_06_funnel",
+        title: "Маркетинговая воронка",
+        sub: "конверсия этапов от показа до оплаты",
+        src: "CONVERSION FUNNEL · КУРС 2027",
+        draw: (svg) => {
+          // Funnel bars centered
+          const stages = [
+            { l: "Визиты", w: 220, v: "100k (100%)", c: LF.PRIMARY },
+            { l: "Регистрации", w: 140, v: "12k (12%)", c: LF.L[1] },
+            { l: "Активация", w: 80, v: "2.4k (2.4%)", c: LF.WARNING },
+            { l: "Оплата", w: 35, v: "480 (0.48%)", c: LF.SUCCESS }
+          ];
+          const startY = 32, rowH = 32;
+          stages.forEach((st, idx) => {
+            const y = startY + idx * rowH;
+            const x = 140 - st.w / 2;
+            LF.el(svg, "rect", {
+              x: x, y: y, width: st.w, height: 20, rx: 3,
+              fill: st.c, class: "lf-pop", style: `animation-delay: ${idx * 90}ms;`
+            });
+            LF.txt(svg, { x: 20, y: y + 14, "font-size": "10", "font-weight": "600", fill: "currentColor" }, st.l);
+            LF.txt(svg, { x: 260, y: y + 14, "text-anchor": "end", "font-size": "10", "font-weight": "700", fill: st.c }, st.v);
+          });
+          LF.txt(svg, { x: 140, y: 165, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Главная точка утечки: Визит → Регистрация");
+        }
+      },
+      {
+        id: "th_06_payback",
+        title: "LTV к CAC Payback",
+        sub: "точка возврата инвестиций в трафик",
+        src: "UNIT ECONOMICS · КУРС 2027",
+        draw: (svg) => {
+          // Axis
+          LF.el(svg, "line", { x1: 30, y1: 145, x2: 255, y2: 145, stroke: LF.GRID, "stroke-width": 1.5 });
+          // CAC horizontal line
+          LF.el(svg, "line", { x1: 30, y1: 95, x2: 255, y2: 95, stroke: LF.ALERT, "stroke-width": 1.5, "stroke-dasharray": "4 4" });
+          LF.txt(svg, { x: 255, y: 90, "text-anchor": "end", "font-size": "9", "font-weight": "700", fill: LF.ALERT }, "CAC $120");
+
+          // Cumulative LTV curve crossing CAC at month 4.2
+          const pts = [[30, 140], [70, 125], [115, 108], [155, 88], [200, 65], [245, 45]];
+          let d = "M " + pts.map(p => `${p[0]} ${p[1]}`).join(" L ");
+          LF.el(svg, "path", { d, stroke: LF.SUCCESS, "stroke-width": 2.8, fill: "none", class: "lf-draw", "stroke-dasharray": "350", "stroke-dashoffset": "350" });
+
+          // Crossing point
+          LF.el(svg, "circle", { cx: 140, cy: 95, r: 5, fill: LF.SUCCESS, stroke: "#fff", "stroke-width": 1.5, class: "lf-dot-pop", style: "animation-delay: 600ms;" });
+          LF.txt(svg, { x: 140, y: 82, "text-anchor": "middle", "font-size": "10", "font-weight": "700", fill: LF.SUCCESS }, "Payback 4.2 мес.");
+          LF.txt(svg, { x: 140, y: 165, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Здоровый бенчмарк: LTV / CAC ≥ 3.0x");
+        }
+      }
+    ]
+  },
+
+  "module_07_ab_testing": {
+    badge: "Эксперименты и гипотезы",
+    title: "A/B тестирование: Ошибка подглядывания и мощность",
+    charts: [
+      {
+        id: "th_07_peeking",
+        title: "Ловушка подглядывания (Peeking)",
+        sub: "раздувание ошибки I рода с 5% до 36%",
+        src: "ALPHA INFLATION · КУРС 2027",
+        draw: (svg) => {
+          // Axis
+          LF.el(svg, "line", { x1: 30, y1: 145, x2: 255, y2: 145, stroke: LF.GRID, "stroke-width": 1.5 });
+          // Target alpha line 5%
+          LF.el(svg, "line", { x1: 30, y1: 130, x2: 255, y2: 130, stroke: LF.SUCCESS, "stroke-width": 1.5, "stroke-dasharray": "4 4" });
+          LF.txt(svg, { x: 30, y: 122, "font-size": "9", "font-weight": "700", fill: LF.SUCCESS }, "Номинальная α = 5%");
+
+          // Peeking FPR curve exploding
+          const pts = [[30,130],[65,118],[100,102],[140,84],[180,64],[220,44],[250,30]];
+          let d = "M " + pts.map(p => `${p[0]} ${p[1]}`).join(" L ");
+          LF.el(svg, "path", { d, stroke: LF.ALERT, "stroke-width": 2.8, fill: "none", class: "lf-draw", "stroke-dasharray": "350", "stroke-dashoffset": "350" });
+
+          pts.forEach((p, idx) => {
+            LF.el(svg, "circle", { cx: p[0], cy: p[1], r: 3.5, fill: LF.ALERT, stroke: "#fff", "stroke-width": 1, class: "lf-dot-pop", style: `animation-delay: ${idx * 60}ms;` });
+          });
+          LF.txt(svg, { x: 250, y: 22, "text-anchor": "end", "font-size": "11", "font-weight": "700", fill: LF.ALERT }, "FPR: 36.2% (День 30)");
+          LF.txt(svg, { x: 140, y: 165, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Решение: mSPRT или фиксация sample size");
+        }
+      },
+      {
+        id: "th_07_power",
+        title: "Мощность теста (Power: 1-β)",
+        sub: "вероятность обнаружить реальный эффект",
+        src: "STATISTICAL POWER · КУРС 2027",
+        draw: (svg) => {
+          // Two bell curves: H0 and H1
+          LF.el(svg, "line", { x1: 20, y1: 145, x2: 260, y2: 145, stroke: LF.GRID, "stroke-width": 1.5 });
+          // H0 curve
+          let d0 = "M 20 145 ";
+          for (let x = 20; x <= 180; x += 5) {
+            const z = (x - 90) / 26;
+            const y = 145 - (85 * Math.exp(-0.5 * z * z));
+            d0 += `L ${x.toFixed(1)} ${y.toFixed(1)} `;
+          }
+          LF.el(svg, "path", { d: d0, stroke: LF.MUTED, "stroke-width": 1.5, fill: "none" });
+
+          // H1 curve
+          let d1 = "M 80 145 ";
+          for (let x = 80; x <= 250; x += 5) {
+            const z = (x - 170) / 26;
+            const y = 145 - (85 * Math.exp(-0.5 * z * z));
+            d1 += `L ${x.toFixed(1)} ${y.toFixed(1)} `;
+          }
+          LF.el(svg, "path", { d: d1, stroke: LF.PRIMARY, "stroke-width": 2.2, fill: "none", class: "lf-draw", "stroke-dasharray": "350", "stroke-dashoffset": "350" });
+
+          // Power shaded area under H1 past threshold 135
+          LF.el(svg, "line", { x1: 135, y1: 30, x2: 135, y2: 145, stroke: LF.ALERT, "stroke-width": 1.5, "stroke-dasharray": "3 3" });
+          LF.txt(svg, { x: 88, y: 55, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: LF.MUTED }, "H₀ (База)");
+          LF.txt(svg, { x: 175, y: 55, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: LF.PRIMARY }, "H₁ (Вариант)");
+          LF.txt(svg, { x: 185, y: 105, "text-anchor": "middle", "font-size": "10", "font-weight": "700", fill: LF.SUCCESS }, "Power 80%");
+          LF.txt(svg, { x: 140, y: 165, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "β = 0.20 (Риск не заметить эффект)");
+        }
+      }
+    ]
+  },
+
+  "module_08_prompt_engineering": {
+    badge: "Промпт-инжиниринг",
+    title: "Промпты: Цепочки рассуждений CoT и кривая внимания",
+    charts: [
+      {
+        id: "th_08_cot",
+        title: "Точность рассуждений: Zero vs CoT",
+        sub: "пошаговая декомпозиция снижает сбои",
+        src: "REASONING BENCHMARK · КУРС 2027",
+        draw: (svg) => {
+          const bars = [
+            { l: "Zero-Shot (Прямой)", v: 38, c: LF.ALERT },
+            { l: "Few-Shot (Примеры)", v: 64, c: LF.WARNING },
+            { l: "Chain-of-Thought (CoT)", v: 94, c: LF.SUCCESS }
+          ];
+          bars.forEach((b, idx) => {
+            const y = 35 + idx * 40;
+            LF.txt(svg, { x: 20, y: y + 10, "font-size": "10", "font-weight": "600", fill: "currentColor" }, b.l);
+            LF.el(svg, "rect", { x: 20, y: y + 16, width: 220, height: 14, rx: 3, fill: LF.GRID, opacity: "0.4" });
+            LF.el(svg, "rect", {
+              x: 20, y: y + 16, width: (b.v / 100) * 220, height: 14, rx: 3,
+              fill: b.c, class: "lf-pop", style: `animation-delay: ${idx * 110}ms;`
+            });
+            LF.txt(svg, { x: 250, y: y + 27, "text-anchor": "end", "font-size": "10", "font-weight": "700", fill: b.c }, b.v + "%");
+          });
+          LF.txt(svg, { x: 140, y: 165, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "CoT заставляет модель генерировать скрытые рассуждения");
+        }
+      },
+      {
+        id: "th_08_middle",
+        title: "Эффект 'Lost in the Middle'",
+        sub: "внимание LLM проседает в центре промпта",
+        src: "ATTENTION DISTRIBUTION · КУРС 2027",
+        draw: (svg) => {
+          // U-curve: high at edges, low in center
+          LF.el(svg, "line", { x1: 25, y1: 145, x2: 255, y2: 145, stroke: LF.GRID, "stroke-width": 1.5 });
+          const pts = [[25, 45], [60, 55], [105, 115], [140, 125], [175, 115], [220, 55], [255, 45]];
+          let d = "M " + pts.map(p => `${p[0]} ${p[1]}`).join(" L ");
+          LF.el(svg, "path", { d, stroke: LF.ALERT, "stroke-width": 2.8, fill: "none", class: "lf-draw", "stroke-dasharray": "350", "stroke-dashoffset": "350" });
+          pts.forEach((p, idx) => {
+            LF.el(svg, "circle", { cx: p[0], cy: p[1], r: 3.5, fill: LF.ALERT, stroke: "#fff", "stroke-width": 1, class: "lf-dot-pop", style: `animation-delay: ${idx * 50}ms;` });
+          });
+          LF.txt(svg, { x: 25, y: 35, "font-size": "9", "font-weight": "700", fill: LF.SUCCESS }, "98% Топ");
+          LF.txt(svg, { x: 140, y: 140, "text-anchor": "middle", "font-size": "10", "font-weight": "700", fill: LF.ALERT }, "52% Провал в центре");
+          LF.txt(svg, { x: 255, y: 35, "text-anchor": "end", "font-size": "9", "font-weight": "700", fill: LF.SUCCESS }, "95% Финал");
+          LF.txt(svg, { x: 140, y: 165, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Ключевые инструкции размещайте в начале или в конце");
+        }
+      }
+    ]
+  },
+
+  "module_09_ai_tools_daily": {
+    badge: "AI ассистенты аналитика",
+    title: "AI Tools: Сдвиг трудозатрат и проверочный контур",
+    charts: [
+      {
+        id: "th_09_shift",
+        title: "Трансформация рабочего дня",
+        sub: "сдвиг с написания бойлерплейта к решениям",
+        src: "WORKFLOW EVOLUTION · КУРС 2027",
+        draw: (svg) => {
+          // Before AI vs With AI stacked bars
+          LF.txt(svg, { x: 25, y: 40, "font-size": "10", "font-weight": "700", fill: "currentColor" }, "До внедрения AI:");
+          LF.el(svg, "rect", { x: 25, y: 48, width: 160, height: 18, rx: 2, fill: LF.ALERT, opacity: "0.8" });
+          LF.el(svg, "rect", { x: 187, y: 48, width: 68, height: 18, rx: 2, fill: LF.SUCCESS, opacity: "0.8" });
+          LF.txt(svg, { x: 100, y: 61, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: "#fff" }, "Рутина 70%");
+          LF.txt(svg, { x: 221, y: 61, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: "#fff" }, "30%");
+
+          LF.txt(svg, { x: 25, y: 95, "font-size": "10", "font-weight": "700", fill: "currentColor" }, "С AI-ассистентом 2027:");
+          LF.el(svg, "rect", { x: 25, y: 103, width: 35, height: 18, rx: 2, fill: LF.ALERT, opacity: "0.8" });
+          LF.el(svg, "rect", { x: 62, y: 103, width: 193, height: 18, rx: 2, fill: LF.SUCCESS, opacity: "0.8" });
+          LF.txt(svg, { x: 42, y: 116, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: "#fff" }, "15%");
+          LF.txt(svg, { x: 160, y: 116, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: "#fff" }, "Инсайты и стратегия 85%");
+
+          LF.txt(svg, { x: 140, y: 165, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "AI берет на себя синтаксис, аналитик — валидацию");
+        }
+      },
+      {
+        id: "th_09_loop",
+        title: "Контур валидации (AI Pair)",
+        sub: "цикл генерации и инвариантных тестов",
+        src: "VALIDATION LOOP · КУРС 2027",
+        draw: (svg) => {
+          // Flow: Prompt -> AI Code -> Unit Tests -> Approval
+          const steps = [
+            { l: "Промпт / ТЗ", x: 40, y: 80, c: LF.PRIMARY },
+            { l: "Генерация кода", x: 110, y: 80, c: LF.WARNING },
+            { l: "Тест инвариантов", x: 180, y: 80, c: LF.ALERT },
+            { l: "Прод", x: 245, y: 80, c: LF.SUCCESS }
+          ];
+          LF.el(svg, "path", { d: "M 40 80 L 245 80", stroke: LF.MUTED, "stroke-width": 1.5, "stroke-dasharray": "3 3", fill: "none" });
+          steps.forEach((s, idx) => {
+            LF.el(svg, "circle", { cx: s.x, cy: s.y, r: 16, fill: s.c, opacity: "0.2", stroke: s.c, "stroke-width": 1.5, class: "lf-pop", style: `animation-delay: ${idx * 80}ms;` });
+            LF.txt(svg, { x: s.x, y: s.y + 4, "text-anchor": "middle", "font-size": "10", "font-weight": "700", fill: s.c }, idx + 1);
+            LF.txt(svg, { x: s.x, y: s.y + 32, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: "currentColor" }, s.l);
+          });
+          LF.txt(svg, { x: 140, y: 165, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Ни строчки AI-кода без проверки на граничные случаи");
+        }
+      }
+    ]
+  },
+
+  "module_10_llm_api": {
+    badge: "LLM API и микроэкономика",
+    title: "LLM API: Structured Outputs и матрица затрат",
+    charts: [
+      {
+        id: "th_10_structured",
+        title: "Structured Outputs (Pydantic)",
+        sub: "100% валидный JSON через маскирование токенов",
+        src: "CONSTRAINED DECODING · КУРС 2027",
+        draw: (svg) => {
+          const bars = [
+            { l: "Raw Prompting (Парсинг regex)", err: 18.5, c: LF.ALERT },
+            { l: "JSON Mode (Подсказка в промпте)", err: 6.2, c: LF.WARNING },
+            { l: "Grammar / Pydantic Masking", err: 0.0, c: LF.SUCCESS }
+          ];
+          bars.forEach((b, idx) => {
+            const y = 35 + idx * 40;
+            LF.txt(svg, { x: 20, y: y + 10, "font-size": "10", "font-weight": "600", fill: "currentColor" }, b.l);
+            LF.el(svg, "rect", { x: 20, y: y + 16, width: 220, height: 14, rx: 3, fill: LF.GRID, opacity: "0.4" });
+            const w = (b.err / 20) * 220;
+            LF.el(svg, "rect", {
+              x: 20, y: y + 16, width: Math.max(w, 4), height: 14, rx: 3,
+              fill: b.c, class: "lf-pop", style: `animation-delay: ${idx * 100}ms;`
+            });
+            LF.txt(svg, { x: 250, y: y + 27, "text-anchor": "end", "font-size": "10", "font-weight": "700", fill: b.c }, b.err + "% сбоев");
+          });
+          LF.txt(svg, { x: 140, y: 165, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Grammar-constrained: сбой схемы невозможен математически");
+        }
+      },
+      {
+        id: "th_10_cost",
+        title: "Экономика инференса: Flash vs Pro",
+        sub: "маршрутизация снижает бюджет API на 90%",
+        src: "COST-LATENCY TRADEOFF · КУРС 2027",
+        draw: (svg) => {
+          // Quadrant: X latency, Y cost
+          LF.el(svg, "line", { x1: 40, y1: 140, x2: 250, y2: 140, stroke: LF.GRID, "stroke-width": 1.5 });
+          LF.el(svg, "line", { x1: 40, y1: 140, x2: 40, y2: 30, stroke: LF.GRID, "stroke-width": 1.5 });
+          LF.txt(svg, { x: 250, y: 154, "text-anchor": "end", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Задержка →");
+          LF.txt(svg, { x: 35, y: 25, "text-anchor": "start", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Цена / 1M токенов ↑");
+
+          // Points
+          const models = [
+            { l: "Flash ($0.10)", x: 70, y: 125, c: LF.SUCCESS },
+            { l: "Batch API (-50%)", x: 180, y: 115, c: LF.PRIMARY },
+            { l: "Pro Reasoning ($2.50)", x: 210, y: 45, c: LF.ALERT }
+          ];
+          models.forEach((m, idx) => {
+            LF.el(svg, "circle", { cx: m.x, cy: m.y, r: 6, fill: m.c, stroke: "#fff", "stroke-width": 1.5, class: "lf-dot-pop", style: `animation-delay: ${idx * 90}ms;` });
+            LF.txt(svg, { x: m.x + 8, y: m.y + 4, "font-size": "9", "font-weight": "700", fill: m.c }, m.l);
+          });
+          LF.txt(svg, { x: 140, y: 168, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "90% аналитических задач закрывает Flash");
+        }
+      }
+    ]
+  },
+
+  "module_11_rag_vector_db": {
+    badge: "RAG и векторные базы данных",
+    title: "RAG: Cosine Similarity и гибридный поиск",
+    charts: [
+      {
+        id: "th_11_cosine",
+        title: "Векторный поиск (Cosine Similarity)",
+        sub: "семантическое расстояние cos(θ) в эмбеддингах",
+        src: "VECTOR SPACE · КУРС 2027",
+        draw: (svg) => {
+          // 2D vector coordinate origin
+          const ox = 40, oy = 140;
+          LF.el(svg, "line", { x1: ox, y1: oy, x2: 250, y2: oy, stroke: LF.GRID, "stroke-width": 1.5 });
+          LF.el(svg, "line", { x1: ox, y1: oy, x2: ox, y2: 30, stroke: LF.GRID, "stroke-width": 1.5 });
+
+          // Vector Query (u)
+          LF.el(svg, "line", { x1: ox, y1: oy, x2: 170, y2: 60, stroke: LF.PRIMARY, "stroke-width": 2.5, class: "lf-draw" });
+          LF.txt(svg, { x: 175, y: 58, "font-size": "10", "font-weight": "700", fill: LF.PRIMARY }, "Запрос q");
+
+          // Vector Doc Match (v1 - close)
+          LF.el(svg, "line", { x1: ox, y1: oy, x2: 195, y2: 75, stroke: LF.SUCCESS, "stroke-width": 2, class: "lf-draw" });
+          LF.txt(svg, { x: 200, y: 80, "font-size": "9", "font-weight": "700", fill: LF.SUCCESS }, "Чанк A (cos=0.92)");
+
+          // Vector Doc Irrelevant (v2 - far)
+          LF.el(svg, "line", { x1: ox, y1: oy, x2: 85, y2: 50, stroke: LF.ALERT, "stroke-width": 1.5, "stroke-dasharray": "3 3" });
+          LF.txt(svg, { x: 85, y: 42, "font-size": "9", "font-weight": "600", fill: LF.ALERT }, "Чанк B (cos=0.28)");
+
+          // Arc between u and v1
+          LF.txt(svg, { x: 105, y: 105, "font-size": "10", "font-weight": "700", fill: LF.PRIMARY }, "θ ≈ 15°");
+          LF.txt(svg, { x: 140, y: 165, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "cos(θ) = (u·v) / (||u||·||v||)");
+        }
+      },
+      {
+        id: "th_11_hybrid",
+        title: "Гибридный поиск: BM25 + Dense",
+        sub: "комбинация ключевых слов и семантики",
+        src: "HYBRID RETRIEVAL · КУРС 2027",
+        draw: (svg) => {
+          // Pipeline: Dual branch into Reciprocal Rank Fusion
+          LF.el(svg, "rect", { x: 20, y: 40, width: 85, height: 32, rx: 3, fill: LF.PRIMARY, opacity: "0.15", stroke: LF.PRIMARY, "stroke-width": 1.5 });
+          LF.txt(svg, { x: 62, y: 60, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: LF.PRIMARY }, "BM25 Ключевики");
+
+          LF.el(svg, "rect", { x: 20, y: 90, width: 85, height: 32, rx: 3, fill: LF.WARNING, opacity: "0.15", stroke: LF.WARNING, "stroke-width": 1.5 });
+          LF.txt(svg, { x: 62, y: 110, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: LF.WARNING }, "Dense Векторы");
+
+          // Confluence to RRF
+          LF.el(svg, "path", { d: "M 105 56 L 155 80 M 105 106 L 155 80", stroke: LF.MUTED, "stroke-width": 1.5, fill: "none" });
+
+          LF.el(svg, "rect", { x: 155, y: 60, width: 105, height: 40, rx: 4, fill: LF.SUCCESS, opacity: "0.2", stroke: LF.SUCCESS, "stroke-width": 1.5, class: "lf-pop" });
+          LF.txt(svg, { x: 207, y: 78, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: LF.SUCCESS }, "RRF Слияние");
+          LF.txt(svg, { x: 207, y: 92, "text-anchor": "middle", "font-size": "8", "font-weight": "600", fill: LF.SUCCESS }, "+ Cross-Encoder");
+
+          LF.txt(svg, { x: 140, y: 165, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Идеально для номеров заказов, SKU и терминов");
+        }
+      }
+    ]
+  },
+
+  "module_12_ai_agents": {
+    badge: "Автономные AI агенты",
+    title: "AI Агенты: ReAct цикл и мульти-агентные системы",
+    charts: [
+      {
+        id: "th_12_react",
+        title: "ReAct: Reasoning + Action Loop",
+        sub: "автономный цикл вызова инструментов аналитика",
+        src: "AUTONOMOUS REACT · КУРС 2027",
+        draw: (svg) => {
+          // Circular nodes: Thought -> Action -> Observe
+          const nodes = [
+            { l: "1. Thought (Рассуждение)", x: 140, y: 40, c: LF.PRIMARY },
+            { l: "2. Action (SQL/Python)", x: 215, y: 105, c: LF.WARNING },
+            { l: "3. Observation (Данные)", x: 65, y: 105, c: LF.SUCCESS }
+          ];
+          LF.el(svg, "path", {
+            d: "M 140 55 C 190 55, 215 80, 215 95 M 215 120 C 215 145, 65 145, 65 120 M 65 95 C 65 80, 90 55, 140 55",
+            stroke: LF.MUTED, "stroke-width": 1.5, "stroke-dasharray": "3 3", fill: "none"
+          });
+          nodes.forEach((n, idx) => {
+            LF.el(svg, "rect", {
+              x: n.x - 55, y: n.y - 14, width: 110, height: 28, rx: 4,
+              fill: n.c, opacity: "0.15", stroke: n.c, "stroke-width": 1.5,
+              class: "lf-pop", style: `animation-delay: ${idx * 90}ms;`
+            });
+            LF.txt(svg, { x: n.x, y: n.y + 4, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: n.c }, n.l);
+          });
+          LF.txt(svg, { x: 140, y: 165, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Guardrail: ограничение глубины цикла (max 10 шагов)");
+        }
+      },
+      {
+        id: "th_12_swarm",
+        title: "Мульти-агентная специализация",
+        sub: "разделение ролей исключает галлюцинации",
+        src: "SWARM ARCHITECTURE · КУРС 2027",
+        draw: (svg) => {
+          // Orchestrator in center dispatching to 3 specialists
+          const cx = 140, cy = 60;
+          LF.el(svg, "circle", { cx, cy, r: 24, fill: LF.PRIMARY, opacity: "0.2", stroke: LF.PRIMARY, "stroke-width": 1.5 });
+          LF.txt(svg, { x: cx, y: cy + 4, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: LF.PRIMARY }, "Маршрутизатор");
+
+          const subs = [
+            { l: "SQL Агент", x: 45, y: 125, c: LF.WARNING },
+            { l: "Data Auditor", x: 140, y: 125, c: LF.ALERT },
+            { l: "Storyteller", x: 235, y: 125, c: LF.SUCCESS }
+          ];
+          subs.forEach((s, idx) => {
+            LF.el(svg, "line", { x1: cx, y1: cy + 24, x2: s.x, y2: s.y - 14, stroke: LF.MUTED, "stroke-width": 1.5, "stroke-dasharray": "2 2" });
+            LF.el(svg, "rect", { x: s.x - 38, y: s.y - 12, width: 76, height: 24, rx: 3, fill: s.c, opacity: "0.15", stroke: s.c, "stroke-width": 1.5 });
+            LF.txt(svg, { x: s.x, y: s.y + 4, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: s.c }, s.l);
+          });
+          LF.txt(svg, { x: 140, y: 165, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Каждый агент имеет строгий system prompt и набор tools");
+        }
+      }
+    ]
+  },
+
+  "module_13_soft_skills_storytelling": {
+    badge: "Soft Skills и презентация данных",
+    title: "Data Storytelling: Пирамида Минто и Data-Ink Ratio",
+    charts: [
+      {
+        id: "th_13_minto",
+        title: "Пирамида Минто (Принцип BLUF)",
+        sub: "главный вывод в первые 30 секунд",
+        src: "EXECUTIVE STORYTELLING · КУРС 2027",
+        draw: (svg) => {
+          // Inverted pyramid layers
+          const layers = [
+            { l: "1. Главный вывод и рекомендация бизнеса", w: 230, c: LF.PRIMARY, v: "BLUF" },
+            { l: "2. Три ключевых аргумента / драйвера", w: 165, c: LF.L[1], v: "MECE" },
+            { l: "3. Детализированные данные и факты", w: 100, c: LF.MUTED, v: "Data" }
+          ];
+          layers.forEach((ly, idx) => {
+            const y = 35 + idx * 36;
+            const x = 140 - ly.w / 2;
+            LF.el(svg, "rect", {
+              x: x, y: y, width: ly.w, height: 26, rx: 3,
+              fill: ly.c, opacity: "0.2", stroke: ly.c, "stroke-width": 1.5,
+              class: "lf-pop", style: `animation-delay: ${idx * 90}ms;`
+            });
+            LF.txt(svg, { x: 140, y: y + 16, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: "currentColor" }, ly.l);
+          });
+          LF.txt(svg, { x: 140, y: 165, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Никаких 'интриг': руководителю нужно решение сразу");
+        }
+      },
+      {
+        id: "th_13_dataink",
+        title: "Коэффициент Data-Ink (Э. Тафти)",
+        sub: "устранение визуального шума графика",
+        src: "DATA-INK RATIO · КУРС 2027",
+        draw: (svg) => {
+          // Comparison: Cluttered chart (50% noise) vs Lieflat clean (90% data)
+          LF.txt(svg, { x: 25, y: 40, "font-size": "10", "font-weight": "600", fill: "currentColor" }, "Шумный дашборд (сетки, 3D, рамки):");
+          LF.el(svg, "rect", { x: 25, y: 48, width: 120, height: 16, rx: 2, fill: LF.ALERT, opacity: "0.8" });
+          LF.el(svg, "rect", { x: 147, y: 48, width: 108, height: 16, rx: 2, fill: LF.GRID, opacity: "0.6" });
+          LF.txt(svg, { x: 85, y: 60, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: "#fff" }, "Полезно 45%");
+          LF.txt(svg, { x: 201, y: 60, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: LF.MUTED }, "Шум 55%");
+
+          LF.txt(svg, { x: 25, y: 95, "font-size": "10", "font-weight": "600", fill: "currentColor" }, "Стандарт Lieflat (только суть):");
+          LF.el(svg, "rect", { x: 25, y: 103, width: 215, height: 16, rx: 2, fill: LF.SUCCESS, opacity: "0.85" });
+          LF.el(svg, "rect", { x: 242, y: 103, width: 13, height: 16, rx: 2, fill: LF.GRID, opacity: "0.4" });
+          LF.txt(svg, { x: 132, y: 115, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: "#fff" }, "Data-Ink Ratio: 94%");
+
+          LF.txt(svg, { x: 140, y: 165, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Каждый пиксель должен нести смысл");
+        }
+      }
+    ]
+  },
+
+  "module_14_portfolio_project_1": {
+    badge: "Портфолио проект 1",
+    title: "E-Commerce аудит: Data Lineage и найденный рост",
+    charts: [
+      {
+        id: "th_14_lineage",
+        title: "Сквозной пайплайн проекта",
+        sub: "от 15k сырых заказов до витрины BI",
+        src: "DATA LINEAGE · КУРС 2027",
+        draw: (svg) => {
+          // Flow: PostgreSQL -> dbt Models -> Marts -> BI Looker
+          const steps = [
+            { l: "Postgres", x: 40, y: 80, c: LF.PRIMARY },
+            { l: "dbt Clean", x: 105, y: 80, c: LF.WARNING },
+            { l: "Витрина LTV", x: 175, y: 80, c: LF.L[1] },
+            { l: "BI Отчет", x: 245, y: 80, c: LF.SUCCESS }
+          ];
+          LF.el(svg, "path", { d: "M 40 80 L 245 80", stroke: LF.MUTED, "stroke-width": 1.5, "stroke-dasharray": "3 3", fill: "none" });
+          steps.forEach((s, idx) => {
+            LF.el(svg, "rect", {
+              x: s.x - 30, y: s.y - 16, width: 60, height: 32, rx: 3,
+              fill: s.c, opacity: "0.15", stroke: s.c, "stroke-width": 1.5,
+              class: "lf-pop", style: `animation-delay: ${idx * 80}ms;`
+            });
+            LF.txt(svg, { x: s.x, y: s.y + 4, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: s.c }, s.l);
+          });
+          LF.txt(svg, { x: 140, y: 165, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "15,000+ транзакций обработаны в единый источник правды");
+        }
+      },
+      {
+        id: "th_14_recovery",
+        title: "Бизнес-эффект: Восстановление MRR",
+        sub: "устранение когортной утечки дало +14.2%",
+        src: "FINANCIAL IMPACT · КУРС 2027",
+        draw: (svg) => {
+          // MRR trendline with dip and recovery
+          LF.el(svg, "line", { x1: 25, y1: 145, x2: 255, y2: 145, stroke: LF.GRID, "stroke-width": 1.5 });
+          const pts = [[25, 95], [70, 92], [115, 125], [155, 120], [195, 65], [245, 50]];
+          let d = "M " + pts.map(p => `${p[0]} ${p[1]}`).join(" L ");
+          LF.el(svg, "path", { d, stroke: LF.SUCCESS, "stroke-width": 2.8, fill: "none", class: "lf-draw", "stroke-dasharray": "350", "stroke-dashoffset": "350" });
+
+          // Anomaly label
+          LF.txt(svg, { x: 135, y: 138, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: LF.ALERT }, "Утечка в чекауте");
+          LF.txt(svg, { x: 245, y: 38, "text-anchor": "end", "font-size": "11", "font-weight": "700", fill: LF.SUCCESS }, "+14.2% MRR");
+          LF.txt(svg, { x: 140, y: 165, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Реальный кейс: защита инвестиций портфолио");
+        }
+      }
+    ]
+  },
+
+  "module_15_portfolio_project_2": {
+    badge: "Портфолио проект 2",
+    title: "SaaS & Churn: Модель оттока и SHAP факторы",
+    charts: [
+      {
+        id: "th_15_matrix",
+        title: "Матрица ошибок (Confusion Matrix)",
+        sub: "баланс Precision 88% и Recall 82%",
+        src: "MODEL VALIDATION · КУРС 2027",
+        draw: (svg) => {
+          // 2x2 grid
+          const cells = [
+            { l: "TP: 420", sub: "Верно ушли", c: LF.SUCCESS, x: 50, y: 40 },
+            { l: "FP: 45", sub: "Ложная тревога", c: LF.WARNING, x: 155, y: 40 },
+            { l: "FN: 60", sub: "Пропуск оттока", c: LF.ALERT, x: 50, y: 92 },
+            { l: "TN: 1475", sub: "Верно лояльны", c: LF.PRIMARY, x: 155, y: 92 }
+          ];
+          cells.forEach((cl, idx) => {
+            LF.el(svg, "rect", {
+              x: cl.x, y: cl.y, width: 95, height: 44, rx: 3,
+              fill: cl.c, opacity: "0.15", stroke: cl.c, "stroke-width": 1.5,
+              class: "lf-pop", style: `animation-delay: ${idx * 60}ms;`
+            });
+            LF.txt(svg, { x: cl.x + 47, y: cl.y + 18, "text-anchor": "middle", "font-size": "11", "font-weight": "700", fill: cl.c }, cl.l);
+            LF.txt(svg, { x: cl.x + 47, y: cl.y + 34, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, cl.sub);
+          });
+          LF.txt(svg, { x: 140, y: 165, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "ROC-AUC: 0.89 на отложенной тестовой выборке");
+        }
+      },
+      {
+        id: "th_15_shap",
+        title: "SHAP Values: Драйверы оттока",
+        sub: "вклад признаков в риск ухода пользователя",
+        src: "FEATURE IMPORTANCE · КУРС 2027",
+        draw: (svg) => {
+          const feats = [
+            { l: "Дни без активности > 14", v: 42, c: LF.ALERT, sign: "+0.42" },
+            { l: "Спад сессий за 30 дней", v: 31, c: LF.ALERT, sign: "+0.31" },
+            { l: "Жалобы в техподдержку", v: 18, c: LF.WARNING, sign: "+0.18" },
+            { l: "Годовой тариф (Annual)", v: -24, c: LF.SUCCESS, sign: "-0.24" }
+          ];
+          const startY = 32, rowH = 28;
+          feats.forEach((f, idx) => {
+            const y = startY + idx * rowH;
+            LF.txt(svg, { x: 20, y: y + 12, "font-size": "9", "font-weight": "600", fill: "currentColor" }, f.l);
+            const w = Math.abs(f.v) * 2;
+            LF.el(svg, "rect", {
+              x: 150, y: y + 3, width: w, height: 12, rx: 2,
+              fill: f.c, class: "lf-pop", style: `animation-delay: ${idx * 80}ms;`
+            });
+            LF.txt(svg, { x: 255, y: y + 13, "text-anchor": "end", "font-size": "9", "font-weight": "700", fill: f.c }, f.sign);
+          });
+          LF.txt(svg, { x: 140, y: 165, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Интерпретируемый ML для бизнес-команды");
+        }
+      }
+    ]
+  },
+
+  "module_16_portfolio_project_3": {
+    badge: "Портфолио проект 3",
+    title: "AI-Driven Analytics: Автономный конвейер и SLA",
+    charts: [
+      {
+        id: "th_16_pipeline",
+        title: "Архитектура Text-to-Insight",
+        sub: "естественный язык → SQL → проверка → витрина",
+        src: "AUTONOMOUS PIPELINE · КУРС 2027",
+        draw: (svg) => {
+          // Linear blocks
+          const blocks = [
+            { l: "User Prompt", x: 40, c: LF.PRIMARY },
+            { l: "LLM + Schema", x: 105, c: LF.WARNING },
+            { l: "Sandbox Exec", x: 175, c: LF.ALERT },
+            { l: "Chart Output", x: 245, c: LF.SUCCESS }
+          ];
+          LF.el(svg, "line", { x1: 40, y1: 80, x2: 245, y2: 80, stroke: LF.MUTED, "stroke-width": 1.5, "stroke-dasharray": "3 3" });
+          blocks.forEach((b, idx) => {
+            LF.el(svg, "circle", { cx: b.x, cy: 80, r: 18, fill: b.c, opacity: "0.2", stroke: b.c, "stroke-width": 1.5, class: "lf-pop", style: `animation-delay: ${idx * 70}ms;` });
+            LF.txt(svg, { x: b.x, y: 84, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: b.c }, idx + 1);
+            LF.txt(svg, { x: b.x, y: 114, "text-anchor": "middle", "font-size": "8", "font-weight": "600", fill: "currentColor" }, b.l);
+          });
+          LF.txt(svg, { x: 140, y: 165, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Безопасный Read-Only контур выполнения запросов");
+        }
+      },
+      {
+        id: "th_16_sla",
+        title: "Скорость Ad-Hoc аналитики",
+        sub: "45 минут ручной работы vs 12 секунд AI",
+        src: "EFFICIENCY BENCHMARK · КУРС 2027",
+        draw: (svg) => {
+          // Comparison bars
+          LF.txt(svg, { x: 25, y: 45, "font-size": "10", "font-weight": "600", fill: "currentColor" }, "Ручной ad-hoc запрос в SQL:");
+          LF.el(svg, "rect", { x: 25, y: 53, width: 220, height: 16, rx: 2, fill: LF.ALERT, class: "lf-pop" });
+          LF.txt(svg, { x: 215, y: 65, "font-size": "9", "font-weight": "700", fill: "#fff", "text-anchor": "end" }, "45 минут");
+
+          LF.txt(svg, { x: 25, y: 95, "font-size": "10", "font-weight": "600", fill: "currentColor" }, "AI-агент пайплайн (Colab):");
+          LF.el(svg, "rect", { x: 25, y: 103, width: 12, height: 16, rx: 2, fill: LF.SUCCESS, class: "lf-pop", style: "animation-delay: 200ms;" });
+          LF.txt(svg, { x: 45, y: 115, "font-size": "10", "font-weight": "700", fill: LF.SUCCESS }, "12 секунд (225x ускорение)");
+
+          LF.txt(svg, { x: 140, y: 165, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Готовое резюме инсайтов с расчетом метрик");
+        }
+      }
+    ]
+  },
+
+  "module_17_career": {
+    badge: "Карьерный трек 2027",
+    title: "Карьера: Воронка найма и радар компетенций",
+    charts: [
+      {
+        id: "th_17_funnel",
+        title: "Воронка откликов в оффер",
+        sub: "сильное портфолио утраивает конверсию",
+        src: "HIRING FUNNEL · КУРС 2027",
+        draw: (svg) => {
+          const steps = [
+            { l: "Отклики", w: 220, v: "100 (100%)", c: LF.PRIMARY },
+            { l: "HR Скрининг", w: 130, v: "25 (25%)", c: LF.L[1] },
+            { l: "Тех. интервью", w: 75, v: "10 (10%)", c: LF.WARNING },
+            { l: "Офферы", w: 32, v: "3 (3%)", c: LF.SUCCESS }
+          ];
+          const startY = 32, rowH = 32;
+          steps.forEach((st, idx) => {
+            const y = startY + idx * rowH;
+            const x = 140 - st.w / 2;
+            LF.el(svg, "rect", {
+              x: x, y: y, width: st.w, height: 20, rx: 3,
+              fill: st.c, class: "lf-pop", style: `animation-delay: ${idx * 90}ms;`
+            });
+            LF.txt(svg, { x: 20, y: y + 14, "font-size": "9", "font-weight": "600", fill: "currentColor" }, st.l);
+            LF.txt(svg, { x: 260, y: y + 14, "text-anchor": "end", "font-size": "9", "font-weight": "700", fill: st.c }, st.v);
+          });
+          LF.txt(svg, { x: 140, y: 165, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "3 рабочих проекта выделяют кандидата из 90% резюме");
+        }
+      },
+      {
+        id: "th_17_radar",
+        title: "Радар компетенций 2027",
+        sub: "баланс 5 ключевых навыков аналитика",
+        src: "SKILLS MATRIX · КУРС 2027",
+        draw: (svg) => {
+          // 5-axes radar polygon
+          const cx = 140, cy = 90, r = 55;
+          // Background circles
+          [0.33, 0.66, 1.0].forEach(sc => {
+            LF.el(svg, "circle", { cx, cy, r: r * sc, fill: "none", stroke: LF.GRID, "stroke-width": 1 });
+          });
+          // 5 Axes
+          const axes = [
+            { l: "SQL", a: -Math.PI/2, v: 0.95 },
+            { l: "Python", a: -Math.PI/2 + 2*Math.PI/5, v: 0.90 },
+            { l: "AI/LLM", a: -Math.PI/2 + 4*Math.PI/5, v: 0.85 },
+            { l: "Статы", a: -Math.PI/2 + 6*Math.PI/5, v: 0.80 },
+            { l: "Бизнес", a: -Math.PI/2 + 8*Math.PI/5, v: 0.90 }
+          ];
+          const polyPts = [];
+          axes.forEach((ax, idx) => {
+            const x2 = cx + r * Math.cos(ax.a);
+            const y2 = cy + r * Math.sin(ax.a);
+            LF.el(svg, "line", { x1: cx, y1: cy, x2, y2, stroke: LF.GRID, "stroke-width": 1 });
+            // Label
+            const lx = cx + (r + 14) * Math.cos(ax.a);
+            const ly = cy + (r + 14) * Math.sin(ax.a) + 4;
+            LF.txt(svg, { x: lx, y: ly, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: LF.PRIMARY }, ax.l);
+            // Skill vertex
+            const vx = cx + (r * ax.v) * Math.cos(ax.a);
+            const vy = cy + (r * ax.v) * Math.sin(ax.a);
+            polyPts.push(`${vx.toFixed(1)},${vy.toFixed(1)}`);
+          });
+          // Radar polygon
+          LF.el(svg, "polygon", {
+            points: polyPts.join(" "), fill: LF.PRIMARY, opacity: "0.25",
+            stroke: LF.PRIMARY, "stroke-width": 2, class: "lf-pop"
+          });
+          LF.txt(svg, { x: 140, y: 168, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Профиль выпускника Data Analyst 2027");
+        }
+      }
+    ]
   }
+};
+
+function getTheoryAnimationHtml(modId) {
+  const modData = THEORY_MODULES[modId];
+  if (!modData || !modData.charts) return "";
+
+  let cardsHtml = "";
+  modData.charts.forEach(ch => {
+    cardsHtml += `
+      <div class="lf-card" onclick="replayTheoryChart('${ch.id}')" title="Кликните для повтора анимации">
+        <h3>${ch.title}</h3>
+        <div class="lf-sub">${ch.sub} · клик — переиграть</div>
+        <svg id="${ch.id}" viewBox="0 0 280 190" preserveAspectRatio="xMidYMid meet" role="img" aria-label="${ch.title}"></svg>
+        <div class="lf-src">${ch.src}</div>
+      </div>
+    `;
+  });
 
   return `
-    <div class="theory-anim-card">
-      <div class="theory-anim-header">
-        <div>
-          <div class="theory-anim-badge">${cfg.badge}</div>
-          <div class="theory-anim-title">${cfg.title}</div>
-          <div class="theory-anim-sub">${cfg.sub}</div>
-        </div>
-        <button class="theory-replay-btn" onclick="replayTheoryAnimation('${modId}')">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="23 4 23 10 17 10"></polyline>
-            <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
-          </svg>
-          Переиграть
-        </button>
+    <div class="theory-viz-block">
+      <div class="theory-viz-header">
+        <span class="theory-viz-badge">${modData.badge}</span>
+        <h2 class="theory-viz-title">${modData.title}</h2>
+        <div class="theory-viz-sub">Интерактивные анимации ключевых теоретических концепций модуля в формате Lieflat Charts</div>
       </div>
-      <div class="theory-svg-wrap">
-        <svg id="theorySvg_${modId}" viewBox="0 0 720 260" preserveAspectRatio="xMidYMid meet"></svg>
+      <div class="lf-charts-row theory-lf-grid">
+        ${cardsHtml}
       </div>
-      ${metricsHtml}
     </div>
   `;
 }
 
 function initTheoryAnimation(modId) {
-  const svg = document.getElementById("theorySvg_" + modId);
-  if (!svg) return;
-  svg.innerHTML = "";
-  drawTheoryModuleSvg(modId, svg);
+  const modData = THEORY_MODULES[modId];
+  if (!modData || !modData.charts) return;
+  modData.charts.forEach(ch => {
+    const svg = document.getElementById(ch.id);
+    if (!svg) return;
+    svg.innerHTML = "";
+    try {
+      ch.draw(svg);
+    } catch (e) {
+      console.error("Error drawing theory chart " + ch.id + ":", e);
+    }
+  });
 }
 
-function replayTheoryAnimation(modId) {
-  initTheoryAnimation(modId);
-}
-
-function drawTheoryModuleSvg(modId, svg) {
-  const P = "#1779ba"; // Primary blue
-  const S = "#3adb76"; // Success green
-  const A = "#cc4b37"; // Alert red
-  const W = "#ffae00"; // Warning amber
-  const G = "#767676"; // Secondary gray
-  const B = "#333333"; // Text dark
-  const BG = "#ffffff";
-
-  const el = (type, attrs) => {
-    const n = document.createElementNS("http://www.w3.org/2000/svg", type);
-    for (const k in attrs) n.setAttribute(k, attrs[k]);
-    svg.appendChild(n);
-    return n;
-  };
-  const txt = (x, y, str, attrs={}) => {
-    const t = el("text", { x, y, "font-family": "var(--font-body)", "font-size": attrs.size || "12", "font-weight": attrs.weight || "normal", fill: attrs.fill || B, ...attrs });
-    t.textContent = str;
-    return t;
-  };
-
-  if (modId === "module_05_statistics") {
-    el("line", { x1: 40, y1: 220, x2: 680, y2: 220, stroke: "#e0e0e0", "stroke-width": 1.5 });
-    const barData = [6, 12, 22, 38, 62, 95, 138, 172, 185, 172, 138, 95, 62, 38, 22, 12, 6];
-    barData.forEach((h, i) => {
-      const bx = 160 + i * 24;
-      const by = 220 - h;
-      const isRejection = (i <= 2 || i >= barData.length - 3);
-      el("rect", { 
-        x: bx, y: by, width: 18, height: h, rx: 2, 
-        fill: isRejection ? A : P, opacity: isRejection ? "0.85" : "0.55",
-        class: "lf-pop",
-        style: `animation-delay: ${i * 40}ms; transform-origin: ${bx + 9}px 220px;`
-      });
-    });
-
-    let d = "M 80 218 ";
-    for (let x = 80; x <= 640; x += 10) {
-      const z = (x - 360) / 75;
-      const y = 220 - (195 * Math.exp(-0.5 * z * z));
-      d += `L ${x.toFixed(1)} ${y.toFixed(1)} `;
+function replayTheoryChart(chartId) {
+  for (const mId in THEORY_MODULES) {
+    const mod = THEORY_MODULES[mId];
+    const ch = mod.charts.find(c => c.id === chartId);
+    if (ch) {
+      const svg = document.getElementById(chartId);
+      if (!svg) return;
+      svg.innerHTML = "";
+      ch.draw(svg);
+      return;
     }
-    el("path", { d, fill: "none", stroke: P, "stroke-width": 3.2, class: "lf-draw", "stroke-dasharray": "1200", "stroke-dashoffset": "1200", style: "animation: lfDraw 1.3s cubic-bezier(0.4,0,0.2,1) forwards;" });
-    el("line", { x1: 360, y1: 20, x2: 360, y2: 220, stroke: S, "stroke-width": 2, "stroke-dasharray": "4 4" });
-    txt(360, 18, "Медиана / Среднее μ = 0", { size: "11", weight: "bold", fill: S, "text-anchor": "middle" });
-    txt(160, 125, "Критическая зона α = 0.025", { size: "10", weight: "bold", fill: A, "text-anchor": "middle" });
-    txt(560, 125, "Критическая зона α = 0.025", { size: "10", weight: "bold", fill: A, "text-anchor": "middle" });
-    txt(208, 235, "-1.96σ", { size: "11", weight: "bold", fill: A, "text-anchor": "middle" });
-    txt(512, 235, "+1.96σ", { size: "11", weight: "bold", fill: A, "text-anchor": "middle" });
-
-  } else if (modId === "module_07_ab_testing") {
-    el("line", { x1: 60, y1: 220, x2: 660, y2: 220, stroke: "#e0e0e0", "stroke-width": 1.5 });
-    el("line", { x1: 60, y1: 20, x2: 60, y2: 220, stroke: "#e0e0e0", "stroke-width": 1.5 });
-    el("line", { x1: 60, y1: 185, x2: 660, y2: 185, stroke: S, "stroke-width": 2, "stroke-dasharray": "6 4" });
-    txt(665, 188, "Допустимая α = 5%", { size: "11", weight: "bold", fill: S, "text-anchor": "start" });
-    el("polygon", { points: "60,185 60,220 640,220 640,40", fill: A, opacity: "0.12", class: "lf-fade", style: "animation-delay: 0.4s;" });
-
-    const pts = [[60,185],[120,172],[180,155],[240,138],[300,122],[360,105],[420,88],[480,72],[540,56],[640,40]];
-    let d = "M " + pts.map(p => `${p[0]} ${p[1]}`).join(" L ");
-    el("path", { d, fill: "none", stroke: A, "stroke-width": 3.5, class: "lf-draw", "stroke-dasharray": "1000", "stroke-dashoffset": "1000", style: "animation: lfDraw 1.2s forwards;" });
-    pts.forEach((p, idx) => {
-      el("circle", { cx: p[0], cy: p[1], r: 4.5, fill: A, stroke: BG, "stroke-width": 2, class: "lf-dot-pop", style: `animation-delay: ${idx * 80}ms;` });
-    });
-    txt(640, 25, "FPR: 36.2% (Ловушка подглядывания)", { size: "11", weight: "bold", fill: A, "text-anchor": "end" });
-    txt(350, 242, "Дни непрерывного эксперимента (1 -> 30 дней)", { size: "11", weight: "bold", fill: G, "text-anchor": "middle" });
-
-  } else if (modId === "module_02_sql") {
-    el("line", { x1: 50, y1: 220, x2: 670, y2: 220, stroke: "#e0e0e0", "stroke-width": 1.5 });
-    const rawRev = [45, 95, 30, 120, 50, 160, 70, 130, 85, 170, 90, 140, 110, 190, 125, 180, 135];
-    rawRev.forEach((v, i) => {
-      const bx = 70 + i * 36;
-      el("rect", { x: bx, y: 220 - v, width: 14, height: v, fill: "#d0d9e0", rx: 2, class: "lf-pop", style: `animation-delay: ${i * 35}ms; transform-origin: ${bx+7}px 220px;` });
-    });
-    let d = "M 77 150 ";
-    const rolling = [70, 75, 78, 85, 90, 98, 105, 112, 118, 126, 132, 139, 144, 150, 155, 160, 165];
-    rolling.forEach((v, i) => { d += `L ${77 + i * 36} ${220 - v} `; });
-    el("path", { d, fill: "none", stroke: P, "stroke-width": 3.5, class: "lf-draw", "stroke-dasharray": "800", "stroke-dashoffset": "800", style: "animation: lfDraw 1.3s ease forwards;" });
-    txt(580, 45, "7-Day Rolling Avg (SQL Window)", { size: "11", weight: "bold", fill: P, "text-anchor": "middle" });
-    txt(140, 75, "Сырые транзакции", { size: "10", weight: "bold", fill: G });
-
-  } else if (modId === "module_03_python") {
-    el("line", { x1: 180, y1: 40, x2: 180, y2: 210, stroke: "#e0e0e0", "stroke-width": 1.5 });
-    txt(170, 85, "Python For-Loop", { size: "12", weight: "bold", fill: A, "text-anchor": "end" });
-    el("rect", { x: 180, y: 65, width: 440, height: 32, fill: A, rx: 4, class: "lf-pop", style: "transform-origin: 180px 81px;" });
-    txt(630, 86, "4.82 сек (Медленно)", { size: "11", weight: "bold", fill: A });
-    txt(170, 165, "NumPy Vectorized", { size: "12", weight: "bold", fill: S, "text-anchor": "end" });
-    el("rect", { x: 180, y: 145, width: 22, height: 32, fill: S, rx: 4, class: "lf-pop", style: "animation-delay: 0.3s; transform-origin: 180px 161px;" });
-    txt(215, 166, "0.024 сек (200x ускорение!)", { size: "12", weight: "bold", fill: S });
-
-  } else if (modId === "module_04_data_cleaning") {
-    el("rect", { x: 80, y: 30, width: 560, height: 190, rx: 6, fill: "#f8f9fa", stroke: "#e9ecef" });
-    el("rect", { x: 200, y: 55, width: 320, height: 140, rx: 50, fill: "rgba(23,121,186,0.08)", stroke: P, "stroke-width": 2, "stroke-dasharray": "6 4", class: "lf-draw", "stroke-dasharray": "1200", "stroke-dashoffset": "1200", style: "animation: lfDraw 1.2s forwards;" });
-    txt(360, 45, "Граница нормальных данных (IQR & Isolation Forest)", { size: "11", weight: "bold", fill: P, "text-anchor": "middle" });
-    for (let i = 0; i < 28; i++) {
-      const cx = 240 + Math.random() * 240;
-      const cy = 80 + Math.random() * 90;
-      el("circle", { cx, cy, r: 3.5, fill: S, opacity: "0.8", class: "lf-fade", style: `animation-delay: ${i*20}ms;` });
-    }
-    const outliers = [[130, 65], [160, 195], [580, 75], [610, 180]];
-    outliers.forEach((pt, idx) => {
-      el("circle", { cx: pt[0], cy: pt[1], r: 6, fill: A, stroke: BG, "stroke-width": 2, class: "lf-dot-pop", style: `animation-delay: ${idx * 150}ms;` });
-      txt(pt[0], pt[1] - 10, "Аномалия", { size: "9", weight: "bold", fill: A, "text-anchor": "middle" });
-    });
-
-  } else if (modId === "module_00_onboarding") {
-    const phases = ["1. Business", "2. Data Underst.", "3. Data Prep", "4. Modeling", "5. Evaluation", "6. Deployment"];
-    const colors = [P, W, A, P, S, P];
-    phases.forEach((p, i) => {
-      const angle = (i / 6) * 2 * Math.PI - Math.PI / 2;
-      const cx = 360 + Math.cos(angle) * 125;
-      const cy = 130 + Math.sin(angle) * 80;
-      el("rect", { x: cx - 55, y: cy - 20, width: 110, height: 40, rx: 6, fill: colors[i], stroke: B, "stroke-width": 1.2, class: "lf-pop", style: `animation-delay: ${i*100}ms; transform-origin: ${cx}px ${cy}px;` });
-      txt(cx, cy + 5, p, { size: "10.5", weight: "bold", fill: BG, "text-anchor": "middle" });
-    });
-    txt(360, 134, "CRISP-DM Cycle", { size: "12", weight: "bold", fill: B, "text-anchor": "middle" });
-
-  } else if (modId === "module_01_excel") {
-    el("line", { x1: 60, y1: 220, x2: 660, y2: 220, stroke: "#e0e0e0", "stroke-width": 1.5 });
-    const steps = [
-      { l: "ARR Выручка", h: 180, y: 40, col: P },
-      { l: "COGS Себест.", h: -45, y: 85, col: A },
-      { l: "Gross Profit", h: 135, y: 85, col: S },
-      { l: "CAC Маркетинг", h: -60, y: 145, col: A },
-      { l: "R&D Разработка", h: -35, y: 180, col: A },
-      { l: "EBITDA Чистая", h: 40, y: 180, col: S }
-    ];
-    steps.forEach((s, i) => {
-      const bx = 90 + i * 95;
-      const h = Math.abs(s.h);
-      el("rect", { x: bx, y: s.y, width: 48, height: h, rx: 3, fill: s.col, stroke: B, "stroke-width": 0.8, class: "lf-pop", style: `animation-delay: ${i * 80}ms; transform-origin: ${bx+24}px ${s.y+h}px;` });
-      txt(bx + 24, 235, s.l, { size: "9.5", weight: "bold", fill: B, "text-anchor": "middle" });
-    });
-
-  } else if (modId === "module_06_bi_looker_studio") {
-    const tiers = [
-      { l: "OLTP Data\n(Postgres/Stripe)", x: 80, col: G },
-      { l: "ELT Pipeline\n(Airbyte/dbt)", x: 260, col: W },
-      { l: "DWH Warehouse\n(BigQuery/ClickHouse)", x: 440, col: P },
-      { l: "BI Dashboard\n(Looker Studio)", x: 620, col: S }
-    ];
-    tiers.forEach((t, i) => {
-      el("rect", { x: t.x - 60, y: 90, width: 120, height: 60, rx: 6, fill: t.col, stroke: B, "stroke-width": 1.2, class: "lf-pop", style: `animation-delay: ${i*120}ms; transform-origin: ${t.x}px 120px;` });
-      txt(t.x, 124, t.l.split("\n")[0], { size: "10", weight: "bold", fill: BG, "text-anchor": "middle" });
-      txt(t.x, 138, t.l.split("\n")[1], { size: "9", weight: "normal", fill: BG, "text-anchor": "middle" });
-      if (i < 3) {
-        el("line", { x1: t.x + 60, y1: 120, x2: t.x + 120, y2: 120, stroke: B, "stroke-width": 2, "stroke-dasharray": "4 4", class: "lf-draw", style: `animation-delay: ${i*150}ms;` });
-      }
-    });
-
-  } else if (modId === "module_08_prompt_engineering") {
-    el("rect", { x: 50, y: 90, width: 120, height: 50, rx: 6, fill: P, stroke: B, "stroke-width": 1.2, class: "lf-pop" });
-    txt(110, 118, "Бизнес-задача", { size: "11", weight: "bold", fill: BG, "text-anchor": "middle" });
-
-    const cotSteps = [
-      { l: "1. Анализ условий", y: 45 },
-      { l: "2. Расчет LTV/CAC", y: 115 },
-      { l: "3. Проверка граничных условий", y: 185 }
-    ];
-    cotSteps.forEach((s, idx) => {
-      el("line", { x1: 170, y1: 115, x2: 240, y2: s.y, stroke: W, "stroke-width": 2, class: "lf-draw" });
-      el("rect", { x: 240, y: s.y - 20, width: 220, height: 40, rx: 4, fill: W, stroke: B, "stroke-width": 1, class: "lf-pop", style: `animation-delay: ${idx*120}ms;` });
-      txt(350, s.y + 5, s.l, { size: "10.5", weight: "bold", fill: BG, "text-anchor": "middle" });
-      el("line", { x1: 460, y1: s.y, x2: 520, y2: 115, stroke: S, "stroke-width": 2, class: "lf-draw" });
-    });
-
-    el("rect", { x: 520, y: 90, width: 150, height: 50, rx: 6, fill: S, stroke: B, "stroke-width": 1.2, class: "lf-pop", style: "animation-delay: 0.5s;" });
-    txt(595, 118, "Точный вывод 98%", { size: "11", weight: "bold", fill: BG, "text-anchor": "middle" });
-
-  } else if (modId === "module_10_llm_api") {
-    txt(360, 45, "Гарантия схемы: Structured Outputs vs Unconstrained JSON", { size: "12", weight: "bold", fill: B, "text-anchor": "middle" });
-    el("rect", { x: 120, y: 75, width: 220, height: 110, rx: 6, fill: "rgba(204,75,55,0.08)", stroke: A, "stroke-width": 1.5 });
-    txt(230, 105, "Unconstrained Regex", { size: "11", weight: "bold", fill: A, "text-anchor": "middle" });
-    txt(230, 135, "18% Сбоев синтаксиса", { size: "12", weight: "bold", fill: A, "text-anchor": "middle" });
-    txt(230, 160, "Сломанные ETL витрины", { size: "9.5", fill: G, "text-anchor": "middle" });
-
-    el("rect", { x: 380, y: 75, width: 220, height: 110, rx: 6, fill: "rgba(58,219,118,0.08)", stroke: S, "stroke-width": 1.5 });
-    txt(490, 105, "Pydantic CFG Decoder", { size: "11", weight: "bold", fill: S, "text-anchor": "middle" });
-    txt(490, 135, "100% Валидный JSON", { size: "12", weight: "bold", fill: S, "text-anchor": "middle" });
-    txt(490, 160, "Промышленная надежность", { size: "9.5", fill: G, "text-anchor": "middle" });
-
-  } else if (modId === "module_11_rag_vector_db") {
-    el("line", { x1: 100, y1: 220, x2: 600, y2: 220, stroke: "#dcdcdc", "stroke-width": 1.5 });
-    el("line", { x1: 100, y1: 220, x2: 100, y2: 40, stroke: "#dcdcdc", "stroke-width": 1.5 });
-    el("line", { x1: 100, y1: 220, x2: 380, y2: 70, stroke: P, "stroke-width": 3.5, class: "lf-draw", "stroke-dasharray": "400", "stroke-dashoffset": "400", style: "animation: lfDraw 1s forwards;" });
-    txt(390, 65, "Query Vector (Вопрос пользователя)", { size: "11", weight: "bold", fill: P });
-    el("line", { x1: 100, y1: 220, x2: 430, y2: 85, stroke: S, "stroke-width": 3, "stroke-dasharray": "4 4", class: "lf-draw", "stroke-dasharray": "400", "stroke-dashoffset": "400", style: "animation: lfDraw 1.2s forwards;" });
-    txt(440, 88, "Doc Chunk (cos θ = 0.96 Релевантно)", { size: "11", weight: "bold", fill: S });
-    el("line", { x1: 100, y1: 220, x2: 200, y2: 195, stroke: G, "stroke-width": 2, class: "lf-fade", style: "animation-delay: 0.5s;" });
-    txt(210, 195, "Шум / Другой домен (cos θ = 0.12)", { size: "10", fill: G });
-
-  } else if (modId === "module_12_ai_agents") {
-    const steps = [
-      { l: "1. Thought (План)", x: 140, y: 120, col: W },
-      { l: "2. Action (SQL Tool)", x: 280, y: 60, col: P },
-      { l: "3. Observation (БД)", x: 440, y: 60, col: S },
-      { l: "4. Verification", x: 580, y: 120, col: P }
-    ];
-    steps.forEach((st, i) => {
-      el("rect", { x: st.x - 55, y: st.y - 25, width: 110, height: 50, rx: 6, fill: st.col, stroke: B, "stroke-width": 1.2, class: "lf-pop", style: `animation-delay: ${i*120}ms;` });
-      txt(st.x, st.y + 4, st.l, { size: "10.5", weight: "bold", fill: BG, "text-anchor": "middle" });
-    });
-    el("path", { d: "M 200 120 L 225 65 M 335 60 L 385 60 M 495 65 L 525 120 M 525 140 Q 360 210 200 135", fill: "none", stroke: B, "stroke-width": 2, "stroke-dasharray": "4 4", class: "lf-draw" });
-    txt(360, 205, "ReAct Feedback Loop (Самоисправление)", { size: "11", weight: "bold", fill: P, "text-anchor": "middle" });
-
-  } else if (modId === "module_13_soft_skills_storytelling") {
-    el("polygon", { points: "360,30 200,210 520,210", fill: "rgba(23,121,186,0.06)", stroke: P, "stroke-width": 1.5 });
-    el("rect", { x: 260, y: 40, width: 200, height: 38, rx: 4, fill: A, stroke: B, "stroke-width": 1, class: "lf-pop" });
-    txt(360, 63, "1. Главный вывод (BLUF)", { size: "11", weight: "bold", fill: BG, "text-anchor": "middle" });
-    const pils = [{ l: "Аргумент 1", x: 230 }, { l: "Аргумент 2", x: 360 }, { l: "Аргумент 3", x: 490 }];
-    pils.forEach((p, i) => {
-      el("rect", { x: p.x - 55, y: 105, width: 110, height: 34, rx: 3, fill: W, stroke: B, "stroke-width": 0.8, class: "lf-pop", style: `animation-delay: ${i*100}ms;` });
-      txt(p.x, 126, p.l, { size: "10", weight: "bold", fill: BG, "text-anchor": "middle" });
-    });
-    el("rect", { x: 210, y: 165, width: 300, height: 34, rx: 3, fill: S, stroke: B, "stroke-width": 0.8, class: "lf-pop", style: "animation-delay: 0.4s;" });
-    txt(360, 186, "3. Данные и доказательства (SQL логи)", { size: "10", weight: "bold", fill: BG, "text-anchor": "middle" });
-
-  } else {
-    const stages = [
-      { l: "Входные данные", w: 500, col: P },
-      { l: "Аналитическое ядро", w: 380, col: W },
-      { l: "Бизнес-метрики", w: 260, col: S },
-      { l: "C-Level Решения", w: 140, col: P }
-    ];
-    stages.forEach((st, idx) => {
-      const y = 50 + idx * 45;
-      txt(150, y + 17, st.l, { size: "11", weight: "bold", fill: B, "text-anchor": "end" });
-      el("rect", { x: 170, y, width: st.w, height: 26, rx: 3, fill: st.col, class: "lf-pop", style: `animation-delay: ${idx * 80}ms;` });
-    });
   }
 }
 
