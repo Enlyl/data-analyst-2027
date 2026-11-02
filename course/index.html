@@ -14,7 +14,453 @@
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='4' y='4' width='56' height='56' rx='4' fill='%231779ba'/%3E%3Cline x1='12' y1='50' x2='52' y2='50' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' opacity='0.5'/%3E%3Crect x='14' y='34' width='8' height='16' rx='2' fill='%23ffffff' opacity='0.75'/%3E%3Crect x='25' y='24' width='8' height='26' rx='2' fill='%23ffffff' opacity='0.9'/%3E%3Crect x='36' y='14' width='8' height='36' rx='2' fill='%23ffffff'/%3E%3Cpath d='M18 32 L29 20 L40 10 L49 18' stroke='%23ffae00' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='49' cy='18' r='5' fill='%233adb76' stroke='%23ffffff' stroke-width='1.5'/%3E%3C/svg%3E">
 
   <!-- Marked + Prism -->
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js">
+// ===== THEORETICAL ANIMATIONS ENGINE (LIEFLAT CHARTS) =====
+function getTheoryAnimationHtml(modId) {
+  const configs = {
+    "module_05_statistics": {
+      badge: "Теоретическая модель",
+      title: "Центральная предельная теорема (ЦПТ) и нормальное распределение Гаусса",
+      sub: "При увеличении размера выборки n средние выборок сходятся к колоколу N(μ, σ²/n) с критической областью p < 0.05",
+      metrics: [
+        { val: "μ = 0.0, σ = 1.0", lbl: "Стандартизованный Z-базис" },
+        { val: "α = 0.05 (Критическая зона)", lbl: "Порог отвержения H₀ (p-value)" },
+        { val: "95% CI: [μ - 1.96σ, μ + 1.96σ]", lbl: "Доверительный интервал" }
+      ]
+    },
+    "module_07_ab_testing": {
+      badge: "Теоретическая модель",
+      title: "Ловушка подглядывания (Peeking Problem) и эскалация FPR",
+      sub: "Непрерывный расчет p-value без поправки раздувает вероятность ложноположительного вывода (Type I Error) с 5% до 36%",
+      metrics: [
+        { val: "Target α = 5.0%", lbl: "Допустимый уровень ошибки I рода" },
+        { val: "FPR(Day 30) = 36.2%", lbl: "Фактическая ошибка при ежедневном подглядывании" },
+        { val: "Решение: Sequential Testing", lbl: "Границы О'Брайена-Флеминга / mSPRT" }
+      ]
+    },
+    "module_02_sql": {
+      badge: "Теоретическая модель",
+      title: "Оконные функции: 7-дневное скользящее среднее vs Дневной шум",
+      sub: "Аналитическое окно ROWS BETWEEN 6 PRECEDING AND CURRENT ROW сглаживает всплески выходных и выявляет истинный тренд",
+      metrics: [
+        { val: "7-Day Moving Average", lbl: "Сглаживание недельной сезонности" },
+        { val: "Running Total", lbl: "Кумулятивная выручка (Cumulative Run-Rate)" },
+        { val: "Без схлопывания строк", lbl: "Сохранение детализации транзакций" }
+      ]
+    },
+    "module_03_python": {
+      badge: "Теоретическая модель",
+      title: "Векторизация SIMD против итеративных циклов Python",
+      sub: "Векторные операции NumPy/Pandas в C-контуре выполняются параллельно на регистрах CPU с ускорением до 200x",
+      metrics: [
+        { val: "For-loop: O(N) Overhead", lbl: "Накладные расходы динамической типизации" },
+        { val: "NumPy: SIMD 200x Speedup", lbl: "Пакетная обработка в непрерывной памяти" },
+        { val: "Zero-copy Slicing", lbl: "Эффективная работа с оперативной памятью" }
+      ]
+    },
+    "module_04_data_cleaning": {
+      badge: "Теоретическая модель",
+      title: "Детектирование аномалий: Интерквартильный размах (IQR) и Isolation Forest",
+      sub: "Многомерная граница решений изолирует выбросы и защищает витрину от эффекта 'Garbage In, Garbage Out'",
+      metrics: [
+        { val: "IQR = Q₃ - Q₁", lbl: "Межквартильный размах распределения" },
+        { val: "Границы: [Q₁ - 1.5·IQR, Q₃ + 1.5·IQR]", lbl: "Классический фильтр Тьюки" },
+        { val: "Isolation Trees", lbl: "Древовидная изоляция редких аномалий" }
+      ]
+    },
+    "module_06_bi_looker_studio": {
+      badge: "Теоретическая модель",
+      title: "Архитектура Modern Data Stack и Data Blending",
+      sub: "Сквозное смешивание рекламных расходов и выручки CRM для сквозного расчета ROAS и маржинальности",
+      metrics: [
+        { val: "ELT -> Warehouse -> BI", lbl: "Денормализованная витрина данных" },
+        { val: "Blended ROAS: 3.4x", lbl: "Окупаемость инвестиций в маркетинг" },
+        { val: "5-Second SLA", lbl: "Максимальное время отклика дашборда" }
+      ]
+    },
+    "module_08_prompt_engineering": {
+      badge: "Теоретическая модель",
+      title: "Chain-of-Thought (CoT) и алгоритмические рассуждения",
+      sub: "Генерация промежуточных токенов рассуждений снижает математическую погрешность LLM в 16 раз",
+      metrics: [
+        { val: "Direct: 68% Ошибок", lbl: "Сбои при прямом расчете юнит-экономики" },
+        { val: "CoT: 4.2% Ошибок", lbl: "Пошаговая декомпозиция формул" },
+        { val: "Self-Consistency", lbl: "Мажоритарное голосование путей рассуждений" }
+      ]
+    },
+    "module_10_llm_api": {
+      badge: "Теоретическая модель",
+      title: "Микроэкономика LLM API и Structured Outputs (Pydantic)",
+      sub: "Принудительное маскирование токенов по грамматике JSON-схемы дает 100% гарантию валидности в прод-пайплайнах",
+      metrics: [
+        { val: "100% Valid JSON", lbl: "Нулевой процент сбоев в ETL конвейере" },
+        { val: "Flash Routing: $0.10/1M", lbl: "Экономия до 95% бюджета на инференс" },
+        { val: "Batch API: -50% Cost", lbl: "Скидка на асинхронную ночную обработку" }
+      ]
+    },
+    "module_11_rag_vector_db": {
+      badge: "Теоретическая модель",
+      title: "Семантическое векторное пространство и Cosine Similarity",
+      sub: "Плотные векторы эмбеддингов проецируют смысл запросов в N-мерное пространство: cos(θ) = (u·v)/(||u||·||v||)",
+      metrics: [
+        { val: "HNSW / ANN Indexing", lbl: "Быстрый поиск ближайших соседей" },
+        { val: "Hybrid Search (Dense + BM25)", lbl: "Комбинация семантики и точных ключей" },
+        { val: "Context Re-ranking", lbl: "Cross-Encoder переранжирование фрагментов" }
+      ]
+    },
+    "module_12_ai_agents": {
+      badge: "Теоретическая модель",
+      title: "Автономный ReAct цикл (Reasoning + Action + Observation)",
+      sub: "Агент декомпозирует аналитическую задачу, вызывает инструменты SQL/Python и проверяет результаты на инварианты",
+      metrics: [
+        { val: "Thought -> Action -> Observe", lbl: "Классический цикл Яо и соавторов" },
+        { val: "Tool Calling Protocol", lbl: "Безопасное исполнение кода в песочнице" },
+        { val: "Loop Guard (max 10)", lbl: "Защита от бесконечного зацикливания" }
+      ]
+    },
+    "module_13_soft_skills_storytelling": {
+      badge: "Теоретическая модель",
+      title: "Пирамида Минто и инвертированная коммуникация (BLUF)",
+      sub: "Управленческая подача: Главный вывод и рекомендация в первые 30 секунд -> 3 аргумента -> Цифровые доказательства",
+      metrics: [
+        { val: "BLUF (Bottom Line First)", lbl: "Действие в заголовке слайда" },
+        { val: "MECE Декомпозиция", lbl: "Взаимоисключающие и исчерпывающие ветви" },
+        { val: "SCR Framework", lbl: "Situation -> Complication -> Resolution" }
+      ]
+    },
+    "module_00_onboarding": {
+      badge: "Теоретическая модель",
+      title: "Жизненный цикл аналитического исследования CRISP-DM",
+      sub: "Итеративный конвейер от Business Understanding до Deployment: 80% времени инвестируется в понимание и подготовку данных",
+      metrics: [
+        { val: "Business Understanding", lbl: "Формулирование ТЗ и критериев успеха" },
+        { val: "Data Prep: 55% времени", lbl: "Очистка, нормализация, витрины" },
+        { val: "Feedback Loops", lbl: "Возврат к гипотезам при валидации" }
+      ]
+    },
+    "module_01_excel": {
+      badge: "Теоретическая модель",
+      title: "Каскадная P&L модель SaaS и архитектура XLOOKUP",
+      sub: "Финансовая декомпозиция выручки ARR, себестоимости COGS, расходов на маркетинг и маржинальности EBITDA",
+      metrics: [
+        { val: "FAST Modeling Standard", lbl: "Flexible, Appropriate, Structured, Transparent" },
+        { val: "XLOOKUP vs VLOOKUP", lbl: "Отказоустойчивость при изменении колонок" },
+        { val: "EBITDA Margin %", lbl: "Операционная рентабельность бизнеса" }
+      ]
+    }
+  };
+
+  const cfg = configs[modId] || {
+    badge: "Теоретическая концепция",
+    title: "Архитектурная модель модуля: Data Analyst 2027",
+    sub: "Концептуальная визуализация прикладных инструментов и аналитических закономерностей",
+    metrics: [
+      { val: "Industry Standard", lbl: "Стандарт ведущих технологических компаний" },
+      { val: "AI-Augmented", lbl: "Интеграция передовых практик 2027 года" },
+      { val: "Production Ready", lbl: "Готовность к внедрению в реальный бизнес" }
+    ]
+  };
+
+  let metricsHtml = "";
+  if (cfg.metrics && cfg.metrics.length > 0) {
+    metricsHtml = '<div class="theory-metrics-row">' + 
+      cfg.metrics.map(m => `
+        <div class="theory-metric-item">
+          <div class="theory-metric-val">${m.val}</div>
+          <div class="theory-metric-lbl">${m.lbl}</div>
+        </div>
+      `).join("") + '</div>';
+  }
+
+  return `
+    <div class="theory-anim-card">
+      <div class="theory-anim-header">
+        <div>
+          <div class="theory-anim-badge">${cfg.badge}</div>
+          <div class="theory-anim-title">${cfg.title}</div>
+          <div class="theory-anim-sub">${cfg.sub}</div>
+        </div>
+        <button class="theory-replay-btn" onclick="replayTheoryAnimation('${modId}')">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="23 4 23 10 17 10"></polyline>
+            <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+          </svg>
+          Переиграть
+        </button>
+      </div>
+      <div class="theory-svg-wrap">
+        <svg id="theorySvg_${modId}" viewBox="0 0 720 260" preserveAspectRatio="xMidYMid meet"></svg>
+      </div>
+      ${metricsHtml}
+    </div>
+  `;
+}
+
+function initTheoryAnimation(modId) {
+  const svg = document.getElementById('theorySvg_' + modId);
+  if (!svg) return;
+  svg.innerHTML = '';
+  drawTheoryModuleSvg(modId, svg);
+}
+
+
+// ===== DEDICATED MODULE VISUALIZERS =====
+function drawTheoryModuleSvg(modId, svg) {
+  const P = "#1779ba"; // Primary blue
+  const S = "#3adb76"; // Success green
+  const A = "#cc4b37"; // Alert red
+  const W = "#ffae00"; // Warning amber
+  const G = "#767676"; // Secondary gray
+  const B = "#333333"; // Text dark
+  const BG = "#ffffff";
+
+  const el = (type, attrs) => {
+    const n = document.createElementNS("http://www.w3.org/2000/svg", type);
+    for (const k in attrs) n.setAttribute(k, attrs[k]);
+    svg.appendChild(n);
+    return n;
+  };
+  const txt = (x, y, str, attrs={}) => {
+    const t = el("text", { x, y, "font-family": "var(--font-body)", "font-size": attrs.size || "12", "font-weight": attrs.weight || "normal", fill: attrs.fill || B, ...attrs });
+    t.textContent = str;
+    return t;
+  };
+
+  if (modId === "module_05_statistics") {
+    // 1. CLT & GAUSSIAN BELL CURVE
+    el("line", { x1: 40, y1: 220, x2: 680, y2: 220, stroke: "#e0e0e0", "stroke-width": 1.5 });
+    const barData = [6, 12, 22, 38, 62, 95, 138, 172, 185, 172, 138, 95, 62, 38, 22, 12, 6];
+    barData.forEach((h, i) => {
+      const bx = 160 + i * 24;
+      const by = 220 - h;
+      const isRejection = (i <= 2 || i >= barData.length - 3);
+      el("rect", { 
+        x: bx, y: by, width: 18, height: h, rx: 2, 
+        fill: isRejection ? A : P, opacity: isRejection ? "0.85" : "0.55",
+        class: "lf-pop",
+        style: `animation-delay: ${i * 40}ms; transform-origin: ${bx + 9}px 220px;`
+      });
+    });
+
+    let d = "M 80 218 ";
+    for (let x = 80; x <= 640; x += 10) {
+      const z = (x - 360) / 75;
+      const y = 220 - (195 * Math.exp(-0.5 * z * z));
+      d += `L ${x.toFixed(1)} ${y.toFixed(1)} `;
+    }
+    el("path", { d, fill: "none", stroke: P, "stroke-width": 3.2, class: "lf-draw", "stroke-dasharray": "1200", "stroke-dashoffset": "1200", style: "animation: lfDraw 1.3s cubic-bezier(0.4,0,0.2,1) forwards;" });
+    el("line", { x1: 360, y1: 20, x2: 360, y2: 220, stroke: S, "stroke-width": 2, "stroke-dasharray": "4 4" });
+    txt(360, 18, "Медиана / Среднее μ = 0", { size: "11", weight: "bold", fill: S, "text-anchor": "middle" });
+    txt(160, 125, "Критическая зона α = 0.025", { size: "10", weight: "bold", fill: A, "text-anchor": "middle" });
+    txt(560, 125, "Критическая зона α = 0.025", { size: "10", weight: "bold", fill: A, "text-anchor": "middle" });
+    txt(208, 235, "-1.96σ", { size: "11", weight: "bold", fill: A, "text-anchor": "middle" });
+    txt(512, 235, "+1.96σ", { size: "11", weight: "bold", fill: A, "text-anchor": "middle" });
+
+  } else if (modId === "module_07_ab_testing") {
+    // 2. PEEKING PROBLEM
+    el("line", { x1: 60, y1: 220, x2: 660, y2: 220, stroke: "#e0e0e0", "stroke-width": 1.5 });
+    el("line", { x1: 60, y1: 20, x2: 60, y2: 220, stroke: "#e0e0e0", "stroke-width": 1.5 });
+    el("line", { x1: 60, y1: 185, x2: 660, y2: 185, stroke: S, "stroke-width": 2, "stroke-dasharray": "6 4" });
+    txt(665, 188, "Допустимая α = 5%", { size: "11", weight: "bold", fill: S, "text-anchor": "start" });
+    el("polygon", { points: "60,185 60,220 640,220 640,40", fill: A, opacity: "0.12", class: "lf-fade", style: "animation-delay: 0.4s;" });
+
+    const pts = [[60,185],[120,172],[180,155],[240,138],[300,122],[360,105],[420,88],[480,72],[540,56],[640,40]];
+    let d = "M " + pts.map(p => `${p[0]} ${p[1]}`).join(" L ");
+    el("path", { d, fill: "none", stroke: A, "stroke-width": 3.5, class: "lf-draw", "stroke-dasharray": "1000", "stroke-dashoffset": "1000", style: "animation: lfDraw 1.2s forwards;" });
+    pts.forEach((p, idx) => {
+      el("circle", { cx: p[0], cy: p[1], r: 4.5, fill: A, stroke: BG, "stroke-width": 2, class: "lf-dot-pop", style: `animation-delay: ${idx * 80}ms;` });
+    });
+    txt(640, 25, "FPR: 36.2% (Ловушка подглядывания)", { size: "11", weight: "bold", fill: A, "text-anchor": "end" });
+    txt(350, 242, "Дни непрерывного эксперимента (1 -> 30 дней)", { size: "11", weight: "bold", fill: G, "text-anchor": "middle" });
+
+  } else if (modId === "module_02_sql") {
+    // 3. SQL WINDOW FUNCTIONS
+    el("line", { x1: 50, y1: 220, x2: 670, y2: 220, stroke: "#e0e0e0", "stroke-width": 1.5 });
+    const rawRev = [45, 95, 30, 120, 50, 160, 70, 130, 85, 170, 90, 140, 110, 190, 125, 180, 135];
+    rawRev.forEach((v, i) => {
+      const bx = 70 + i * 36;
+      el("rect", { x: bx, y: 220 - v, width: 14, height: v, fill: "#d0d9e0", rx: 2, class: "lf-pop", style: `animation-delay: ${i * 35}ms; transform-origin: ${bx+7}px 220px;` });
+    });
+    let d = "M 77 150 ";
+    const rolling = [70, 75, 78, 85, 90, 98, 105, 112, 118, 126, 132, 139, 144, 150, 155, 160, 165];
+    rolling.forEach((v, i) => { d += `L ${77 + i * 36} ${220 - v} `; });
+    el("path", { d, fill: "none", stroke: P, "stroke-width": 3.5, class: "lf-draw", "stroke-dasharray": "800", "stroke-dashoffset": "800", style: "animation: lfDraw 1.3s ease forwards;" });
+    txt(580, 45, "7-Day Rolling Avg (SQL Window)", { size: "11", weight: "bold", fill: P, "text-anchor": "middle" });
+    txt(140, 75, "Сырые транзакции", { size: "10", weight: "bold", fill: G });
+
+  } else if (modId === "module_03_python") {
+    // 4. PYTHON VECTORIZATION
+    el("line", { x1: 180, y1: 40, x2: 180, y2: 210, stroke: "#e0e0e0", "stroke-width": 1.5 });
+    txt(170, 85, "Python For-Loop", { size: "12", weight: "bold", fill: A, "text-anchor": "end" });
+    el("rect", { x: 180, y: 65, width: 440, height: 32, fill: A, rx: 4, class: "lf-pop", style: "transform-origin: 180px 81px;" });
+    txt(630, 86, "4.82 сек (Медленно)", { size: "11", weight: "bold", fill: A });
+    txt(170, 165, "NumPy Vectorized", { size: "12", weight: "bold", fill: S, "text-anchor": "end" });
+    el("rect", { x: 180, y: 145, width: 22, height: 32, fill: S, rx: 4, class: "lf-pop", style: "animation-delay: 0.3s; transform-origin: 180px 161px;" });
+    txt(215, 166, "0.024 сек (200x ускорение!)", { size: "12", weight: "bold", fill: S });
+
+  } else if (modId === "module_04_data_cleaning") {
+    // 5. ANOMALY DETECTION BOUNDARY
+    el("rect", { x: 80, y: 30, width: 560, height: 190, rx: 6, fill: "#f8f9fa", stroke: "#e9ecef" });
+    el("rect", { x: 200, y: 55, width: 320, height: 140, rx: 50, fill: "rgba(23,121,186,0.08)", stroke: P, "stroke-width": 2, "stroke-dasharray": "6 4", class: "lf-draw", "stroke-dasharray": "1200", "stroke-dashoffset": "1200", style: "animation: lfDraw 1.2s forwards;" });
+    txt(360, 45, "Граница нормальных данных (IQR & Isolation Forest)", { size: "11", weight: "bold", fill: P, "text-anchor": "middle" });
+    // Inliers
+    for (let i = 0; i < 28; i++) {
+      const cx = 240 + Math.random() * 240;
+      const cy = 80 + Math.random() * 90;
+      el("circle", { cx, cy, r: 3.5, fill: S, opacity: "0.8", class: "lf-fade", style: `animation-delay: ${i*20}ms;` });
+    }
+    // Outliers
+    const outliers = [[130, 65], [160, 195], [580, 75], [610, 180]];
+    outliers.forEach((pt, idx) => {
+      el("circle", { cx: pt[0], cy: pt[1], r: 6, fill: A, stroke: BG, "stroke-width": 2, class: "lf-dot-pop", style: `animation-delay: ${idx * 150}ms;` });
+      txt(pt[0], pt[1] - 10, "Аномалия", { size: "9", weight: "bold", fill: A, "text-anchor": "middle" });
+    });
+
+  } else if (modId === "module_00_onboarding") {
+    // 6. CRISP-DM CIRCLE
+    const phases = ["1. Business", "2. Data Underst.", "3. Data Prep", "4. Modeling", "5. Evaluation", "6. Deployment"];
+    const colors = [P, W, A, P, S, P];
+    phases.forEach((p, i) => {
+      const angle = (i / 6) * 2 * Math.PI - Math.PI / 2;
+      const cx = 360 + Math.cos(angle) * 125;
+      const cy = 130 + Math.sin(angle) * 80;
+      el("rect", { x: cx - 55, y: cy - 20, width: 110, height: 40, rx: 6, fill: colors[i], stroke: B, "stroke-width": 1.2, class: "lf-pop", style: `animation-delay: ${i*100}ms; transform-origin: ${cx}px ${cy}px;` });
+      txt(cx, cy + 5, p, { size: "10.5", weight: "bold", fill: BG, "text-anchor": "middle" });
+    });
+    txt(360, 134, "CRISP-DM Cycle", { size: "12", weight: "bold", fill: B, "text-anchor": "middle" });
+
+  } else if (modId === "module_01_excel") {
+    // 7. P&L WATERFALL
+    el("line", { x1: 60, y1: 220, x2: 660, y2: 220, stroke: "#e0e0e0", "stroke-width": 1.5 });
+    const steps = [
+      { l: "ARR Выручка", h: 180, y: 40, col: P },
+      { l: "COGS Себест.", h: -45, y: 85, col: A },
+      { l: "Gross Profit", h: 135, y: 85, col: S },
+      { l: "CAC Маркетинг", h: -60, y: 145, col: A },
+      { l: "R&D Разработка", h: -35, y: 180, col: A },
+      { l: "EBITDA Чистая", h: 40, y: 180, col: S }
+    ];
+    steps.forEach((s, i) => {
+      const bx = 90 + i * 95;
+      const h = Math.abs(s.h);
+      el("rect", { x: bx, y: s.y, width: 48, height: h, rx: 3, fill: s.col, stroke: B, "stroke-width": 0.8, class: "lf-pop", style: `animation-delay: ${i * 80}ms; transform-origin: ${bx+24}px ${s.y+h}px;` });
+      txt(bx + 24, 235, s.l, { size: "9.5", weight: "bold", fill: B, "text-anchor": "middle" });
+    });
+
+  } else if (modId === "module_06_bi_looker_studio") {
+    // 8. BI ARCHITECTURE FLOW
+    const tiers = [
+      { l: "OLTP Data\n(Postgres/Stripe)", x: 80, col: G },
+      { l: "ELT Pipeline\n(Airbyte/dbt)", x: 260, col: W },
+      { l: "DWH Warehouse\n(BigQuery/ClickHouse)", x: 440, col: P },
+      { l: "BI Dashboard\n(Looker Studio)", x: 620, col: S }
+    ];
+    tiers.forEach((t, i) => {
+      el("rect", { x: t.x - 60, y: 90, width: 120, height: 60, rx: 6, fill: t.col, stroke: B, "stroke-width": 1.2, class: "lf-pop", style: `animation-delay: ${i*120}ms; transform-origin: ${t.x}px 120px;` });
+      txt(t.x, 124, t.l.split("\n")[0], { size: "10", weight: "bold", fill: BG, "text-anchor": "middle" });
+      txt(t.x, 138, t.l.split("\n")[1], { size: "9", weight: "normal", fill: BG, "text-anchor": "middle" });
+      if (i < 3) {
+        el("line", { x1: t.x + 60, y1: 120, x2: t.x + 120, y2: 120, stroke: B, "stroke-width": 2, "stroke-dasharray": "4 4", class: "lf-draw", style: `animation-delay: ${i*150}ms;` });
+      }
+    });
+
+  } else if (modId === "module_08_prompt_engineering") {
+    // 9. CHAIN OF THOUGHT TREE
+    el("rect", { x: 50, y: 90, width: 120, height: 50, rx: 6, fill: P, stroke: B, "stroke-width": 1.2, class: "lf-pop" });
+    txt(110, 118, "Бизнес-задача", { size: "11", weight: "bold", fill: BG, "text-anchor": "middle" });
+
+    const cotSteps = [
+      { l: "1. Анализ условий", y: 45 },
+      { l: "2. Расчет LTV/CAC", y: 115 },
+      { l: "3. Проверка граничных условий", y: 185 }
+    ];
+    cotSteps.forEach((s, idx) => {
+      el("line", { x1: 170, y1: 115, x2: 240, y2: s.y, stroke: W, "stroke-width": 2, class: "lf-draw" });
+      el("rect", { x: 240, y: s.y - 20, width: 220, height: 40, rx: 4, fill: W, stroke: B, "stroke-width": 1, class: "lf-pop", style: `animation-delay: ${idx*120}ms;` });
+      txt(350, s.y + 5, s.l, { size: "10.5", weight: "bold", fill: BG, "text-anchor": "middle" });
+      el("line", { x1: 460, y1: s.y, x2: 520, y2: 115, stroke: S, "stroke-width": 2, class: "lf-draw" });
+    });
+
+    el("rect", { x: 520, y: 90, width: 150, height: 50, rx: 6, fill: S, stroke: B, "stroke-width": 1.2, class: "lf-pop", style: "animation-delay: 0.5s;" });
+    txt(595, 118, "Точный вывод 98%", { size: "11", weight: "bold", fill: BG, "text-anchor": "middle" });
+
+  } else if (modId === "module_10_llm_api") {
+    // 10. STRUCTURED OUTPUTS PYDANTIC
+    txt(360, 45, "Гарантия схемы: Structured Outputs vs Unconstrained JSON", { size: "12", weight: "bold", fill: B, "text-anchor": "middle" });
+    el("rect", { x: 120, y: 75, width: 220, height: 110, rx: 6, fill: "rgba(204,75,55,0.08)", stroke: A, "stroke-width": 1.5 });
+    txt(230, 105, "Unconstrained Regex", { size: "11", weight: "bold", fill: A, "text-anchor": "middle" });
+    txt(230, 135, "18% Сбоев синтаксиса", { size: "12", weight: "bold", fill: A, "text-anchor": "middle" });
+    txt(230, 160, "Сломанные ETL витрины", { size: "9.5", fill: G, "text-anchor": "middle" });
+
+    el("rect", { x: 380, y: 75, width: 220, height: 110, rx: 6, fill: "rgba(58,219,118,0.08)", stroke: S, "stroke-width": 1.5 });
+    txt(490, 105, "Pydantic CFG Decoder", { size: "11", weight: "bold", fill: S, "text-anchor": "middle" });
+    txt(490, 135, "100% Валидный JSON", { size: "12", weight: "bold", fill: S, "text-anchor": "middle" });
+    txt(490, 160, "Промышленная надежность", { size: "9.5", fill: G, "text-anchor": "middle" });
+
+  } else if (modId === "module_11_rag_vector_db") {
+    // 11. VECTOR SIMILARITY COSINE
+    el("line", { x1: 100, y1: 220, x2: 600, y2: 220, stroke: "#dcdcdc", "stroke-width": 1.5 });
+    el("line", { x1: 100, y1: 220, x2: 100, y2: 40, stroke: "#dcdcdc", "stroke-width": 1.5 });
+    el("line", { x1: 100, y1: 220, x2: 380, y2: 70, stroke: P, "stroke-width": 3.5, class: "lf-draw", "stroke-dasharray": "400", "stroke-dashoffset": "400", style: "animation: lfDraw 1s forwards;" });
+    txt(390, 65, "Query Vector (Вопрос пользователя)", { size: "11", weight: "bold", fill: P });
+    el("line", { x1: 100, y1: 220, x2: 430, y2: 85, stroke: S, "stroke-width": 3, "stroke-dasharray": "4 4", class: "lf-draw", "stroke-dasharray": "400", "stroke-dashoffset": "400", style: "animation: lfDraw 1.2s forwards;" });
+    txt(440, 88, "Doc Chunk (cos θ = 0.96 Релевантно)", { size: "11", weight: "bold", fill: S });
+    el("line", { x1: 100, y1: 220, x2: 200, y2: 195, stroke: G, "stroke-width": 2, class: "lf-fade", style: "animation-delay: 0.5s;" });
+    txt(210, 195, "Шум / Другой домен (cos θ = 0.12)", { size: "10", fill: G });
+
+  } else if (modId === "module_12_ai_agents") {
+    // 12. REACT CYCLE
+    const steps = [
+      { l: "1. Thought (План)", x: 140, y: 120, col: W },
+      { l: "2. Action (SQL Tool)", x: 280, y: 60, col: P },
+      { l: "3. Observation (БД)", x: 440, y: 60, col: S },
+      { l: "4. Verification", x: 580, y: 120, col: P }
+    ];
+    steps.forEach((st, i) => {
+      el("rect", { x: st.x - 55, y: st.y - 25, width: 110, height: 50, rx: 6, fill: st.col, stroke: B, "stroke-width": 1.2, class: "lf-pop", style: `animation-delay: ${i*120}ms;` });
+      txt(st.x, st.y + 4, st.l, { size: "10.5", weight: "bold", fill: BG, "text-anchor": "middle" });
+    });
+    el("path", { d: "M 200 120 L 225 65 M 335 60 L 385 60 M 495 65 L 525 120 M 525 140 Q 360 210 200 135", fill: "none", stroke: B, "stroke-width": 2, "stroke-dasharray": "4 4", class: "lf-draw" });
+    txt(360, 205, "ReAct Feedback Loop (Самоисправление)", { size: "11", weight: "bold", fill: P, "text-anchor": "middle" });
+
+  } else if (modId === "module_13_soft_skills_storytelling") {
+    // 13. MINTO PYRAMID
+    el("polygon", { points: "360,30 200,210 520,210", fill: "rgba(23,121,186,0.06)", stroke: P, "stroke-width": 1.5 });
+    // Tier 1 (BLUF)
+    el("rect", { x: 260, y: 40, width: 200, height: 38, rx: 4, fill: A, stroke: B, "stroke-width": 1, class: "lf-pop" });
+    txt(360, 63, "1. Главный вывод (BLUF)", { size: "11", weight: "bold", fill: BG, "text-anchor": "middle" });
+    // Tier 2 (3 Pillars)
+    const pils = [{ l: "Аргумент 1", x: 230 }, { l: "Аргумент 2", x: 360 }, { l: "Аргумент 3", x: 490 }];
+    pils.forEach((p, i) => {
+      el("rect", { x: p.x - 55, y: 105, width: 110, height: 34, rx: 3, fill: W, stroke: B, "stroke-width": 0.8, class: "lf-pop", style: `animation-delay: ${i*100}ms;` });
+      txt(p.x, 126, p.l, { size: "10", weight: "bold", fill: BG, "text-anchor": "middle" });
+    });
+    // Tier 3 (Data Evidence)
+    el("rect", { x: 210, y: 165, width: 300, height: 34, rx: 3, fill: S, stroke: B, "stroke-width": 0.8, class: "lf-pop", style: "animation-delay: 0.4s;" });
+    txt(360, 186, "3. Данные и доказательства (SQL логи)", { size: "10", weight: "bold", fill: BG, "text-anchor": "middle" });
+
+  } else {
+    // 14. DEFAULT ANALYTICS RADAR / METRIC PIPELINE
+    const stages = [
+      { l: "Входные данные", w: 500, col: P },
+      { l: "Аналитическое ядро", w: 380, col: W },
+      { l: "Бизнес-метрики", w: 260, col: S },
+      { l: "C-Level Решения", w: 140, col: P }
+    ];
+    stages.forEach((st, idx) => {
+      const y = 50 + idx * 45;
+      txt(150, y + 17, st.l, { size: "11", weight: "bold", fill: B, "text-anchor": "end" });
+      el("rect", { x: 170, y, width: st.w, height: 26, rx: 3, fill: st.col, class: "lf-pop", style: `animation-delay: ${idx * 80}ms;` });
+    });
+  }
+}
+
+
+function replayTheoryAnimation(modId) {
+  initTheoryAnimation(modId);
+}
+
+</script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
@@ -836,7 +1282,103 @@
       .lf-pop, .lf-fade, .lf-dot-pop { animation: none; }
       .lf-draw { animation: none; stroke-dasharray: none; stroke-dashoffset: 0; }
     }
-  </style>
+  
+    /* ===== THEORETICAL ANIMATED EXPLANATIONS (LIEFLAT CHARTS) ===== */
+    .theory-anim-card {
+      background: var(--foundation-white);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--foundation-primary);
+      border-radius: var(--radius-default);
+      padding: 24px;
+      margin-bottom: 28px;
+      box-shadow: 0 2px 8px rgba(10, 10, 10, 0.04);
+    }
+    .theory-anim-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 16px;
+      gap: 16px;
+    }
+    .theory-anim-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--foundation-primary);
+      background: rgba(23, 121, 186, 0.1);
+      padding: 3px 8px;
+      border-radius: var(--radius-default);
+      margin-bottom: 6px;
+    }
+    .theory-anim-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--foundation-black);
+      margin-bottom: 4px;
+    }
+    .theory-anim-sub {
+      font-size: 13px;
+      color: var(--foundation-secondary);
+      line-height: 1.4;
+    }
+    .theory-replay-btn {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      color: var(--foundation-primary);
+      padding: 6px 14px;
+      border-radius: var(--radius-default);
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 150ms var(--ease);
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .theory-replay-btn:hover {
+      background: var(--foundation-primary);
+      color: #ffffff;
+      border-color: var(--foundation-primary);
+    }
+    .theory-svg-wrap {
+      width: 100%;
+      max-width: 760px;
+      margin: 12px auto 0;
+      background: var(--bg-surface);
+      border-radius: var(--radius-default);
+      padding: 16px;
+      border: 1px solid var(--border);
+    }
+    .theory-svg-wrap svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .theory-metrics-row {
+      display: flex;
+      gap: 16px;
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+    }
+    .theory-metric-item {
+      flex: 1;
+    }
+    .theory-metric-val {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--foundation-black);
+      font-family: var(--font-mono);
+    }
+    .theory-metric-lbl {
+      font-size: 11px;
+      color: var(--foundation-secondary);
+    }
+
+</style>
 </head>
 <body>
 
@@ -1277,7 +1819,9 @@ function renderTab() {
   const area = document.getElementById("content-area");
 
   if (currentTab === "readme") {
-    area.innerHTML = '<div class="md-view">' + renderMd(mod.readme) + markCompleteBtn(mod.id) + '</div>';
+    const theoryViz = getTheoryAnimationHtml(mod.id);
+    area.innerHTML = '<div class="md-view">' + theoryViz + renderMd(mod.readme) + markCompleteBtn(mod.id) + '</div>';
+    setTimeout(() => initTheoryAnimation(mod.id), 20);
   } else if (currentTab === "lessons") {
     renderLessons(mod);
   } else if (currentTab === "quiz") {
