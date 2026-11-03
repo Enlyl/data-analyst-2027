@@ -924,6 +924,197 @@
       color: var(--foundation-secondary);
       margin-top: 8px;
     }
+
+    /* ===== STICKY NOTEBOOK TABS ===== */
+    .lesson-header {
+      position: sticky !important;
+      top: -32px !important;
+      margin: -32px -32px 24px -32px !important;
+      padding: 16px 32px 14px 32px !important;
+      background: var(--foundation-white) !important;
+      border-bottom: 2px solid var(--border) !important;
+      box-shadow: 0 4px 16px rgba(10, 10, 10, 0.08) !important;
+      z-index: 100 !important;
+    }
+    .lesson-colab-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+    .lesson-active-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(23, 121, 186, 0.08);
+      border: 1px solid rgba(23, 121, 186, 0.25);
+      color: var(--foundation-primary);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .badge-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--foundation-primary);
+      animation: pulseDot 1.8s infinite;
+    }
+    @keyframes pulseDot {
+      0% { opacity: 0.5; transform: scale(0.9); }
+      50% { opacity: 1; transform: scale(1.25); }
+      100% { opacity: 0.5; transform: scale(0.9); }
+    }
+    .nb-tabs-scroll {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 2px 2px 6px 2px;
+      scrollbar-width: thin;
+    }
+    .nb-tab-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-default);
+      padding: 8px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--foundation-black);
+      cursor: pointer;
+      transition: all 150ms var(--ease);
+      white-space: nowrap;
+      user-select: none;
+    }
+    .nb-tab-btn:hover {
+      background: rgba(23, 121, 186, 0.08);
+      border-color: var(--foundation-primary);
+      color: var(--foundation-primary);
+    }
+    .nb-tab-btn .tab-idx {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--border);
+      color: var(--foundation-secondary);
+      font-size: 11px;
+      font-weight: 700;
+    }
+    .nb-tab-btn.active {
+      background: var(--foundation-primary) !important;
+      border-color: var(--foundation-primary) !important;
+      color: #ffffff !important;
+      box-shadow: 0 2px 8px rgba(23, 121, 186, 0.35) !important;
+    }
+    .nb-tab-btn.active .tab-idx {
+      background: #ffffff !important;
+      color: var(--foundation-primary) !important;
+    }
+    .lesson-body {
+      max-width: 100%;
+    }
+
+    /* ===== LESSON VISUAL EXPLAINER CARDS ===== */
+    .lesson-explainer {
+      background: var(--foundation-white);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--foundation-primary);
+      border-radius: var(--radius-default);
+      padding: 20px 22px 16px;
+      margin-bottom: 24px;
+      box-shadow: 0 1px 4px rgba(10, 10, 10, 0.04);
+    }
+    .lesson-explainer-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 10px;
+      gap: 16px;
+    }
+    .lesson-explainer-badge {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--foundation-primary);
+      background: rgba(23, 121, 186, 0.08);
+      padding: 3px 8px;
+      border-radius: var(--radius-default);
+      margin-bottom: 4px;
+    }
+    .lesson-explainer-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--foundation-black);
+      margin-bottom: 2px;
+    }
+    .lesson-explainer-sub {
+      font-size: 12px;
+      color: var(--foundation-secondary);
+      line-height: 1.4;
+    }
+    .lesson-explainer-replay {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      color: var(--foundation-primary);
+      padding: 6px 12px;
+      border-radius: var(--radius-default);
+      font-size: 11px;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 150ms var(--ease);
+    }
+    .lesson-explainer-replay:hover {
+      background: var(--foundation-primary);
+      color: #fff;
+      border-color: var(--foundation-primary);
+    }
+    .lesson-explainer svg {
+      width: 100%;
+      height: auto;
+      max-height: 220px;
+      display: block;
+      background: var(--bg-surface);
+      border-radius: var(--radius-default);
+      border: 1px solid var(--border);
+      padding: 10px;
+      margin-top: 10px;
+    }
+    .lesson-explainer-takeaway {
+      display: flex;
+      gap: 16px;
+      margin-top: 12px;
+      padding-top: 10px;
+      border-top: 1px solid var(--border);
+      flex-wrap: wrap;
+    }
+    .lesson-explainer-takeaway-item {
+      flex: 1;
+      min-width: 140px;
+    }
+    .lesson-explainer-takeaway-val {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--foundation-black);
+      font-family: var(--font-mono);
+    }
+    .lesson-explainer-takeaway-lbl {
+      font-size: 10px;
+      color: var(--foundation-secondary);
+    }
 </style>
 </head>
 <body>
@@ -1386,21 +1577,46 @@ function renderTab() {
 }
 
 // ===== LESSONS (Notebooks) =====
+function formatLessonLabel(filename, idx) {
+  let name = filename.replace(".ipynb", "");
+  name = name.replace(/^lesson_\d+_/, "");
+  name = name.replace(/^project_\d+_/, "Проект: ");
+  name = name.replace(/_/g, " ");
+  return name.charAt(0).toUpperCase() + name.slice(1);
+}
+
 function renderLessons(mod) {
   const area = document.getElementById("content-area");
-  if (mod.notebooks.length === 0) {
-    area.innerHTML = '<p style="color:var(--text-muted)">Нет ноутбуков в этом модуле.</p>';
+  if (!mod.notebooks || mod.notebooks.length === 0) {
+    area.innerHTML = '<p style="color:var(--text-muted); padding: 20px;">В этом модуле нет практических тетрадей Colab.</p>';
     return;
+  }
+  if (currentNbIdx >= mod.notebooks.length) {
+    currentNbIdx = 0;
   }
   const nb = mod.notebooks[currentNbIdx];
   const colabUrl = GITHUB_BASE + "/" + nb.rel_path;
+  const currentTitle = formatLessonLabel(nb.filename, currentNbIdx);
 
-  let nbTabsHtml = '<div class="nb-tabs">';
+  let tabsHtml = '<div class="nb-tabs-scroll">';
   mod.notebooks.forEach((n, i) => {
-    const label = n.filename.replace(".ipynb", "").replace(/_/g, " ");
-    nbTabsHtml += `<div class="nb-tab${i === currentNbIdx ? ' active' : ''}" onclick="switchNb(${i})">${label}</div>`;
+    const isAct = (i === currentNbIdx);
+    const label = formatLessonLabel(n.filename, i);
+    tabsHtml += `
+      <button class="nb-tab-btn${isAct ? ' active' : ''}" onclick="switchNb(${i})" title="Перейти к уроку ${i + 1}: ${label}">
+        <span class="tab-idx">${i + 1}</span>
+        <span class="tab-txt">${label}</span>
+      </button>
+    `;
   });
-  nbTabsHtml += '</div>';
+  tabsHtml += '</div>';
+
+  let explainerHtml = "";
+  try {
+    explainerHtml = getLessonExplainerHtml(nb.filename);
+  } catch(e) {
+    console.error("Lesson explainer error:", e);
+  }
 
   let cellsHtml = "";
   nb.cells.forEach(cell => {
@@ -1410,7 +1626,7 @@ function renderLessons(mod) {
       const lang = cell.content.includes("SELECT") || cell.content.includes("CREATE") ? "sql" : "python";
       const escaped = escapeHtml(cell.content);
       cellsHtml += `<div class="cell cell-code">
-        <div class="cell-code-label"><span>Python</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+        <div class="cell-code-label"><span>${lang.toUpperCase()}</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
         <pre><code class="language-${lang}">${escaped}</code></pre>
       </div>`;
     }
@@ -1418,15 +1634,28 @@ function renderLessons(mod) {
 
   area.innerHTML = `
     <div class="lesson-header">
-      <a href="${colabUrl}" target="_blank" rel="noopener" class="colab-btn">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-        Запустить в Colab
-      </a>
-      ${nbTabsHtml}
+      <div class="lesson-colab-row">
+        <div class="lesson-active-badge">
+          <span class="badge-dot"></span>
+          <span>Урок ${currentNbIdx + 1} из ${mod.notebooks.length}: <strong>${currentTitle}</strong></span>
+        </div>
+        <a href="${colabUrl}" target="_blank" rel="noopener" class="colab-btn" style="margin-bottom:0;">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+          Запустить в Colab
+        </a>
+      </div>
+      ${tabsHtml}
     </div>
-    ${cellsHtml}
-    ${markCompleteBtn(mod.id)}
+    <div class="lesson-body">
+      ${explainerHtml}
+      ${cellsHtml}
+      ${markCompleteBtn(mod.id)}
+    </div>
   `;
+
+  setTimeout(() => {
+    try { initLessonExplainer(nb.filename); } catch(e) { console.error("Init explainer error:", e); }
+  }, 50);
 }
 
 function switchNb(i) {
@@ -1679,13 +1908,1372 @@ function startRandomQuiz() {
   area.scrollTop = 0;
 }
 
+// =====================================================================
+// COMPLETE 66-LESSON VISUAL EXPLAINERS (EDUCATIONAL & PRACTICAL)
+// =====================================================================
 
+const LESSON_EXPLAINERS = {
+  // ───── MODULE 00: ONBOARDING (3 LESSONS) ─────
+  "lesson_01_what_is_data_analyst.ipynb": {
+    badge: "Роль аналитика",
+    title: "Мост между сырыми данными и решениями бизнеса",
+    sub: "Аналитик превращает неструктурированные логи в ROI и понятные управленческие шаги",
+    takeaways: [
+      { val: "Бизнес-вопрос → Решение", lbl: "Сквозной процесс анализа" },
+      { val: "55% времени", lbl: "Сбор и очистка данных" }
+    ],
+    draw: (svg) => {
+      const steps = [
+        { l: "Бизнес-вопрос", x: 40, c: LF.PRIMARY },
+        { l: "Сырые данные", x: 120, c: LF.WARNING },
+        { l: "Инсайт", x: 200, c: LF.ALERT },
+        { l: "ROI Решение", x: 275, c: LF.SUCCESS }
+      ];
+      LF.el(svg, "line", { x1: 40, y1: 75, x2: 275, y2: 75, stroke: LF.GRID, "stroke-width": 1.5, "stroke-dasharray": "4 3" });
+      steps.forEach((s, i) => {
+        LF.el(svg, "circle", { cx: s.x, cy: 75, r: 20, fill: s.c, opacity: "0.15", stroke: s.c, "stroke-width": 1.5, class: "lf-pop", style: `animation-delay:${i*80}ms;` });
+        LF.txt(svg, { x: s.x, y: 79, "text-anchor": "middle", "font-size": "11", "font-weight": "700", fill: s.c }, i+1);
+        LF.txt(svg, { x: s.x, y: 115, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: "currentColor" }, s.l);
+      });
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Главная ценность: рост выручки и сокращение издержек бизнеса");
+    }
+  },
+  "lesson_02_environment_setup_colab_ai.ipynb": {
+    badge: "Среда разработки",
+    title: "Облачная архитектура Google Colab и AI-ассистентов",
+    sub: "Удаленная виртуальная машина Linux, бесплатный GPU и интеграция с LLM",
+    takeaways: [
+      { val: "Cloud Runtime", lbl: "Zero-install запуск" },
+      { val: "Shift + Enter", lbl: "Выполнение ячейки" }
+    ],
+    draw: (svg) => {
+      const blocks = [
+        { l: "Браузер (UI)", x: 25, y: 40, w: 75, c: LF.PRIMARY },
+        { l: "Colab VM (Kernel)", x: 125, y: 40, w: 90, c: LF.WARNING },
+        { l: "GPU / RAM 12GB", x: 125, y: 95, w: 90, c: LF.SUCCESS },
+        { l: "AI Code Copilot", x: 235, y: 40, w: 75, c: LF.ALERT }
+      ];
+      LF.el(svg, "path", { d: "M 100 55 L 125 55 M 215 55 L 235 55 M 170 70 L 170 95", stroke: LF.MUTED, "stroke-width": 1.5, fill: "none", "stroke-dasharray": "3 2" });
+      blocks.forEach((b, i) => {
+        LF.el(svg, "rect", { x: b.x, y: b.y, width: b.w, height: 30, rx: 4, fill: b.c, opacity: "0.15", stroke: b.c, "stroke-width": 1.5, class: "lf-pop", style: `animation-delay:${i*80}ms;` });
+        LF.txt(svg, { x: b.x + b.w/2, y: b.y + 19, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: b.c }, b.l);
+      });
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Код выполняется на сервере Google, а не на вашем ноутбуке");
+    }
+  },
+  "lesson_03_analytical_thinking_crisp_dm.ipynb": {
+    badge: "Методология",
+    title: "CRISP-DM: 6 фаз с петлями валидации",
+    sub: "Итеративный фреймворк: при ошибке валидации возврат к подготовке данных",
+    takeaways: [
+      { val: "CRISP-DM", lbl: "Мировой стандарт анализа" },
+      { val: "Feedback Loops", lbl: "Возврат к данным" }
+    ],
+    draw: (svg) => {
+      const phases = ["Бизнес", "Данные", "Очистка", "Модель", "Оценка", "Деплой"];
+      phases.forEach((p, i) => {
+        const a = -Math.PI/2 + i * (2*Math.PI/6);
+        const cx = 160 + 68 * Math.cos(a);
+        const cy = 80 + 50 * Math.sin(a);
+        LF.el(svg, "rect", { x: cx-30, y: cy-12, width: 60, height: 24, rx: 3, fill: LF.L[i%6] || LF.PRIMARY, opacity: "0.2", stroke: LF.L[i%6] || LF.PRIMARY, "stroke-width": 1.5, class: "lf-pop", style: `animation-delay:${i*70}ms;` });
+        LF.txt(svg, { x: cx, y: cy+4, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: "currentColor" }, p);
+      });
+      LF.txt(svg, { x: 160, y: 84, "text-anchor": "middle", "font-size": "10", "font-weight": "700", fill: LF.ALERT }, "↺ Валидация");
+    }
+  },
 
-// ===== THEORETICAL ANIMATIONS ENGINE (LIEFLAT CHARTS) =====
+  // ───── MODULE 01: EXCEL (5 LESSONS) ─────
+  "lesson_01_interface_basics_formatting.ipynb": {
+    badge: "Excel основы",
+    title: "Умные таблицы (Ctrl+T) и условное форматирование",
+    sub: "Абсолютные $A$1 ссылки фиксируют множитель, форматирование подсвечивает тренды",
+    takeaways: [
+      { val: "Ctrl + T", lbl: "Динамическая таблица" },
+      { val: "$A$1", lbl: "Фиксация адреса ячейки" }
+    ],
+    draw: (svg) => {
+      for (let r = 0; r < 4; r++) {
+        for (let c = 0; c < 5; c++) {
+          const val = Math.round(20 + (r*5+c)*3.8);
+          const alpha = (val / 100);
+          LF.el(svg, "rect", { x: 30+c*52, y: 35+r*25, width: 48, height: 21, rx: 2, fill: LF.PRIMARY, opacity: alpha.toFixed(2), class: "lf-fade", style: `animation-delay:${(r*5+c)*30}ms;` });
+          LF.txt(svg, { x: 30+c*52+24, y: 35+r*25+14, "text-anchor": "middle", "font-size": "10", "font-weight": "600", fill: alpha > 0.5 ? "#fff" : "currentColor" }, val);
+        }
+      }
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Цветовая шкала мгновенно выделяет пиковые значения в таблице");
+    }
+  },
+  "lesson_02_formulas_functions_xlookup.ipynb": {
+    badge: "Функции поиска",
+    title: "XLOOKUP: прямой поиск ключа без хрупкости VLOOKUP",
+    sub: "Поиск в любом направлении: диапазон ключей → диапазон результатов",
+    takeaways: [
+      { val: "XLOOKUP(ключ, где, что)", lbl: "3 главных аргумента" },
+      { val: "Вставка колонок", lbl: "Не ломает вычисление" }
+    ],
+    draw: (svg) => {
+      LF.el(svg, "rect", { x: 35, y: 35, width: 95, height: 95, rx: 4, fill: LF.PRIMARY, opacity: "0.1", stroke: LF.PRIMARY, "stroke-width": 1.5 });
+      LF.txt(svg, { x: 82, y: 26, "text-anchor": "middle", "font-size": "10", "font-weight": "700", fill: LF.PRIMARY }, "ID Клиента");
+      LF.el(svg, "rect", { x: 190, y: 35, width: 95, height: 95, rx: 4, fill: LF.SUCCESS, opacity: "0.1", stroke: LF.SUCCESS, "stroke-width": 1.5 });
+      LF.txt(svg, { x: 237, y: 26, "text-anchor": "middle", "font-size": "10", "font-weight": "700", fill: LF.SUCCESS }, "LTV / Выручка");
+      [48, 70, 92, 114].forEach((y, i) => {
+        const act = i === 1;
+        LF.el(svg, "rect", { x: 42, y, width: 81, height: 16, rx: 2, fill: act ? LF.PRIMARY : LF.GRID, opacity: act ? "0.9" : "0.4" });
+        LF.el(svg, "rect", { x: 197, y, width: 81, height: 16, rx: 2, fill: act ? LF.SUCCESS : LF.GRID, opacity: act ? "0.9" : "0.4" });
+      });
+      LF.el(svg, "path", { d: "M 130 78 L 190 78", stroke: LF.WARNING, "stroke-width": 3, fill: "none", class: "lf-draw", "stroke-dasharray": "60", "stroke-dashoffset": "60" });
+      LF.txt(svg, { x: 160, y: 70, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: LF.WARNING }, "Точное 1:1");
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "XLOOKUP ищет слева направо и справа налево");
+    }
+  },
+  "lesson_03_pivot_tables_aggregations.ipynb": {
+    badge: "Сводные таблицы",
+    title: "Pivot: агрегация тысяч транзакций в категории",
+    sub: "Сжатие массива строк в матрицу Строки × Столбцы × Значения",
+    takeaways: [
+      { val: "SUM / AVG / COUNT", lbl: "Агрегатные функции" },
+      { val: "Срезы (Slicers)", lbl: "Интерактивные фильтры" }
+    ],
+    draw: (svg) => {
+      LF.txt(svg, { x: 30, y: 35, "font-size": "9", "font-weight": "700", fill: LF.MUTED }, "10,000 строк → Сводка:");
+      const cats = [
+        { l: "Электроника", v: 160, c: LF.PRIMARY, val: "$160k" },
+        { l: "Одежда", v: 110, c: LF.L[1], val: "$110k" },
+        { l: "Дом и сад", v: 75, c: LF.WARNING, val: "$75k" },
+        { l: "Спорт", v: 45, c: LF.SUCCESS, val: "$45k" }
+      ];
+      cats.forEach((cat, i) => {
+        const y = 48 + i * 24;
+        LF.txt(svg, { x: 30, y: y + 13, "font-size": "10", "font-weight": "600", fill: "currentColor" }, cat.l);
+        LF.el(svg, "rect", { x: 120, y, width: cat.v * 0.9, height: 16, rx: 2, fill: cat.c, class: "lf-pop", style: `animation-delay:${i*80}ms;` });
+        LF.txt(svg, { x: 120 + cat.v * 0.9 + 6, y: y + 13, "font-size": "10", "font-weight": "700", fill: cat.c }, cat.val);
+      });
+      LF.txt(svg, { x: 160, y: 160, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Мгновенный расчет доли категории в общем объеме продаж");
+    }
+  },
+  "lesson_04_visualization_data_story.ipynb": {
+    badge: "Визуализация",
+    title: "Выбор правильной диаграммы для бизнес-отчета",
+    sub: "Динамика во времени — график, сравнение — столбцы, состав — структура",
+    takeaways: [
+      { val: "1 график = 1 мысль", lbl: "Фокус внимания" },
+      { val: "Без 3D эффектов", lbl: "Чистота данных" }
+    ],
+    draw: (svg) => {
+      const vals = [32, 48, 42, 68, 62, 85, 78, 92];
+      LF.el(svg, "line", { x1: 25, y1: 135, x2: 295, y2: 135, stroke: LF.GRID, "stroke-width": 1.5 });
+      vals.forEach((v, i) => {
+        LF.el(svg, "rect", { x: 35+i*32, y: 135-v, width: 22, height: v, rx: 3, fill: LF.L[i%7] || LF.PRIMARY, class: "lf-pop", style: `animation-delay:${i*50}ms;` });
+      });
+      let d = "M " + vals.map((v, i) => `${46+i*32} ${135-v}`).join(" L ");
+      LF.el(svg, "path", { d, stroke: LF.ALERT, "stroke-width": 2.2, fill: "none", class: "lf-draw", "stroke-dasharray": "350", "stroke-dashoffset": "350" });
+      LF.txt(svg, { x: 160, y: 160, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Столбцы показывают факт, линия тренда — вектор развития");
+    }
+  },
+  "lesson_05_ai_copilot_excel_formulas.ipynb": {
+    badge: "AI Copilot в Excel",
+    title: "Генерация формул через LLM и обязательный тест",
+    sub: "Промпт естественным языком → сложная формула → стресс-тест на краевых случаях",
+    takeaways: [
+      { val: "Промпт с контекстом", lbl: "Указывай имена столбцов" },
+      { val: "Проверка формулы", lbl: "Тестируй на пустых строках" }
+    ],
+    draw: (svg) => {
+      const flow = [
+        { l: "ТЗ текстом", x: 40, c: LF.PRIMARY },
+        { l: "AI Промпт", x: 120, c: LF.WARNING },
+        { l: "Формула", x: 200, c: LF.SUCCESS },
+        { l: "Аудит", x: 275, c: LF.ALERT }
+      ];
+      LF.el(svg, "line", { x1: 40, y1: 70, x2: 275, y2: 70, stroke: LF.GRID, "stroke-width": 1.5, "stroke-dasharray": "3 3" });
+      flow.forEach((s, i) => {
+        LF.el(svg, "rect", { x: s.x-30, y: 55, width: 60, height: 32, rx: 4, fill: s.c, opacity: "0.15", stroke: s.c, "stroke-width": 1.5, class: "lf-pop", style: `animation-delay:${i*80}ms;` });
+        LF.txt(svg, { x: s.x, y: 75, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: s.c }, s.l);
+      });
+      LF.txt(svg, { x: 160, y: 130, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.ALERT }, "Правило: AI пишет формулу, человек проверяет делитель на ноль и NULL");
+    }
+  },
+
+  // ───── MODULE 02: SQL (7 LESSONS) ─────
+  "lesson_01_db_intro_select_filtering.ipynb": {
+    badge: "SQL SELECT",
+    title: "Реляционная фильтрация: проекция колонок и предикат WHERE",
+    sub: "База данных сканирует миллионы строк и возвращает только удовлетворяющие условию",
+    takeaways: [
+      { val: "SELECT col1, col2", lbl: "Только нужные поля" },
+      { val: "WHERE col > 100", lbl: "Предикат отсева" }
+    ],
+    draw: (svg) => {
+      for (let r = 0; r < 5; r++) {
+        const act = r === 1 || r === 3;
+        for (let c = 0; c < 4; c++) {
+          LF.el(svg, "rect", { x: 30+c*65, y: 35+r*20, width: 58, height: 16, rx: 2, fill: act ? LF.SUCCESS : LF.GRID, opacity: act ? "0.75" : "0.3", class: act ? "lf-pop" : "", style: act ? `animation-delay:${r*60}ms;` : "" });
+        }
+      }
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.SUCCESS }, "Зеленые строки прошли фильтр WHERE status = 'active' AND sum > 1000");
+    }
+  },
+  "lesson_02_aggregations_group_by_having.ipynb": {
+    badge: "GROUP BY & HAVING",
+    title: "Агрегация данных и фильтрация результатов HAVING",
+    sub: "Сжатие сырых строк в категории и фильтрация уже ПОСЛЕ группировки",
+    takeaways: [
+      { val: "WHERE до агрегации", lbl: "Фильтрует строки" },
+      { val: "HAVING после", lbl: "Фильтрует группы" }
+    ],
+    draw: (svg) => {
+      const groups = [
+        { l: "Сегмент A", dots: 7, sum: 140, c: LF.PRIMARY, pass: true },
+        { l: "Сегмент B", dots: 4, sum: 85, c: LF.L[1], pass: true },
+        { l: "Сегмент C", dots: 2, sum: 30, c: LF.GRID, pass: false }
+      ];
+      groups.forEach((g, gi) => {
+        const y = 35 + gi * 38;
+        LF.txt(svg, { x: 25, y: y + 14, "font-size": "10", "font-weight": "700", fill: "currentColor" }, g.l);
+        for (let d = 0; d < g.dots; d++) {
+          LF.el(svg, "circle", { cx: 95 + d*12, cy: y + 8, r: 4, fill: g.c, opacity: "0.5", class: "lf-dot-pop", style: `animation-delay:${(gi*6+d)*25}ms;` });
+        }
+        LF.el(svg, "rect", { x: 190, y, width: g.sum * 0.65, height: 16, rx: 2, fill: g.pass ? g.c : LF.ALERT, class: "lf-pop", style: `animation-delay:${gi*120+150}ms;` });
+        LF.txt(svg, { x: 190 + g.sum*0.65 + 6, y: y + 13, "font-size": "9", "font-weight": "700", fill: g.pass ? g.c : LF.ALERT }, "SUM=" + g.sum);
+      });
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.ALERT }, "HAVING SUM > 50 отбросил Сегмент C");
+    }
+  },
+  "lesson_03_joins_deep_dive.ipynb": {
+    badge: "SQL JOIN",
+    title: "Механика INNER, LEFT, RIGHT и FULL OUTER JOIN",
+    sub: "Сопоставление строк двух таблиц по первичному и внешнему ключу",
+    takeaways: [
+      { val: "INNER JOIN", lbl: "Только пересечение" },
+      { val: "LEFT JOIN", lbl: "Все строки левой таблицы" }
+    ],
+    draw: (svg) => {
+      LF.el(svg, "circle", { cx: 110, cy: 75, r: 50, fill: LF.PRIMARY, opacity: "0.2", stroke: LF.PRIMARY, "stroke-width": 1.5 });
+      LF.el(svg, "circle", { cx: 195, cy: 75, r: 50, fill: LF.WARNING, opacity: "0.2", stroke: LF.WARNING, "stroke-width": 1.5 });
+      LF.el(svg, "ellipse", { cx: 152, cy: 75, rx: 20, ry: 42, fill: LF.SUCCESS, opacity: "0.4", class: "lf-fade" });
+      LF.txt(svg, { x: 85, y: 78, "text-anchor": "middle", "font-size": "11", "font-weight": "700", fill: LF.PRIMARY }, "Users");
+      LF.txt(svg, { x: 220, y: 78, "text-anchor": "middle", "font-size": "11", "font-weight": "700", fill: LF.WARNING }, "Orders");
+      LF.txt(svg, { x: 152, y: 78, "text-anchor": "middle", "font-size": "10", "font-weight": "700", fill: LF.SUCCESS }, "INNER");
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "LEFT JOIN сохранит пользователей даже без заказов (с NULL в полях заказов)");
+    }
+  },
+  "lesson_04_subqueries_and_cte.ipynb": {
+    badge: "CTE & WITH",
+    title: "WITH CTE: структурирование многошаговых вычислений",
+    sub: "Разбиение 100-строчного монстр-запроса на понятные именованные шаги",
+    takeaways: [
+      { val: "WITH cte_name AS ()", lbl: "Именованный шаг" },
+      { val: "Декомпозиция", lbl: "Легко отлаживать" }
+    ],
+    draw: (svg) => {
+      const steps = [
+        { l: "WITH raw_orders AS", x: 50, c: LF.PRIMARY },
+        { l: "user_totals AS", x: 160, c: LF.WARNING },
+        { l: "SELECT * final", x: 265, c: LF.SUCCESS }
+      ];
+      LF.el(svg, "line", { x1: 50, y1: 75, x2: 265, y2: 75, stroke: LF.GRID, "stroke-width": 1.5, "stroke-dasharray": "3 3" });
+      steps.forEach((s, i) => {
+        LF.el(svg, "rect", { x: s.x-45, y: 55, width: 90, height: 38, rx: 4, fill: s.c, opacity: "0.15", stroke: s.c, "stroke-width": 1.5, class: "lf-pop", style: `animation-delay:${i*90}ms;` });
+        LF.txt(svg, { x: s.x, y: 77, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: s.c }, s.l);
+      });
+      LF.txt(svg, { x: 160, y: 145, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Каждый CTE читается как независимый логический параграф");
+    }
+  },
+  "lesson_05_window_functions_advanced.ipynb": {
+    badge: "Оконные функции",
+    title: "Аналитическое окно OVER(): расчет без потери детализации строк",
+    sub: "ROW_NUMBER, LAG, LEAD и скользящие суммы без объединения строк",
+    takeaways: [
+      { val: "PARTITION BY", lbl: "Группа расчета окна" },
+      { val: "ORDER BY", lbl: "Направление бега окна" }
+    ],
+    draw: (svg) => {
+      const rows = [
+        { d: "01.03", v: 110, cum: 110 },
+        { d: "02.03", v: 85, cum: 195 },
+        { d: "03.03", v: 140, cum: 335 },
+        { d: "04.03", v: 95, cum: 430 }
+      ];
+      LF.txt(svg, { x: 35, y: 30, "font-size": "9", "font-weight": "700", fill: LF.MUTED }, "Дата");
+      LF.txt(svg, { x: 110, y: 30, "font-size": "9", "font-weight": "700", fill: LF.MUTED }, "Сумма чека");
+      LF.txt(svg, { x: 220, y: 30, "font-size": "9", "font-weight": "700", fill: LF.SUCCESS }, "SUM() OVER (ORDER BY)");
+      rows.forEach((r, i) => {
+        const y = 42 + i * 24;
+        LF.txt(svg, { x: 35, y: y + 14, "font-size": "10", "font-weight": "600", fill: "currentColor" }, r.d);
+        LF.txt(svg, { x: 110, y: y + 14, "font-size": "10", "font-weight": "600", fill: "currentColor" }, "$" + r.v);
+        LF.el(svg, "rect", { x: 180, y, width: 100, height: 18, rx: 3, fill: LF.SUCCESS, opacity: "0.15", class: "lf-pop", style: `animation-delay:${i*90}ms;` });
+        LF.txt(svg, { x: 230, y: y + 14, "text-anchor": "middle", "font-size": "10", "font-weight": "700", fill: LF.SUCCESS }, "$" + r.cum);
+      });
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Строки не схлопнуты, но кумулятивный итог доступен в каждой строке");
+    }
+  },
+  "lesson_06_sql_patterns_retention_funnels.ipynb": {
+    badge: "SQL паттерны",
+    title: "Когортное удержание и сквозные воронки в SQL",
+    sub: "Расчет разницы месяцев DATEDIFF и группировка пользователей по когортам",
+    takeaways: [
+      { val: "M0 → M1 → M2", lbl: "Кривая возврата" },
+      { val: "CASE WHEN в SUM", lbl: "Условный подсчет шагов" }
+    ],
+    draw: (svg) => {
+      const matrix = [[100, 52, 36, 28], [100, 55, 41], [100, 60]];
+      const names = ["Янв", "Фев", "Мар"];
+      ["M0", "M1", "M2", "M3"].forEach((m, c) => {
+        LF.txt(svg, { x: 95 + c * 52, y: 28, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: LF.MUTED }, m);
+      });
+      matrix.forEach((row, r) => {
+        LF.txt(svg, { x: 35, y: 50 + r * 30, "font-size": "10", "font-weight": "600", fill: "currentColor" }, names[r]);
+        row.forEach((v, c) => {
+          const alpha = (v / 100);
+          LF.el(svg, "rect", { x: 72 + c * 52, y: 36 + r * 30, width: 46, height: 22, rx: 3, fill: LF.PRIMARY, opacity: alpha.toFixed(2), class: "lf-fade", style: `animation-delay:${(r*4+c)*40}ms;` });
+          LF.txt(svg, { x: 95 + c * 52, y: 51 + r * 30, "text-anchor": "middle", "font-size": "10", "font-weight": "700", fill: alpha > 0.45 ? "#fff" : "currentColor" }, v + "%");
+        });
+      });
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Когортная матрица позволяет вовремя обнаружить падение удержания");
+    }
+  },
+  "lesson_07_prompt_engineering_for_sql_and_validation.ipynb": {
+    badge: "Text-to-SQL",
+    title: "Генерация SQL через AI с валидацией схемы",
+    sub: "Подача DDL структуры таблиц в системный промпт исключает неверные джойны",
+    takeaways: [
+      { val: "DDL контекст", lbl: "Схема таблиц в промпте" },
+      { val: "EXPLAIN проверка", lbl: "Тест стоимости запроса" }
+    ],
+    draw: (svg) => {
+      const flow = [
+        { l: "DDL Схема", x: 40, c: LF.PRIMARY },
+        { l: "Промпт", x: 120, c: LF.WARNING },
+        { l: "SQL Запрос", x: 200, c: LF.SUCCESS },
+        { l: "EXPLAIN", x: 275, c: LF.ALERT }
+      ];
+      LF.el(svg, "line", { x1: 40, y1: 70, x2: 275, y2: 70, stroke: LF.GRID, "stroke-width": 1.5, "stroke-dasharray": "3 3" });
+      flow.forEach((s, i) => {
+        LF.el(svg, "rect", { x: s.x-30, y: 55, width: 60, height: 32, rx: 4, fill: s.c, opacity: "0.15", stroke: s.c, "stroke-width": 1.5, class: "lf-pop", style: `animation-delay:${i*80}ms;` });
+        LF.txt(svg, { x: s.x, y: 75, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: s.c }, s.l);
+      });
+      LF.txt(svg, { x: 160, y: 135, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.SUCCESS }, "100% точность генерации SQL достигается только при передаче DDL");
+    }
+  },
+
+  // ───── MODULE 03: PYTHON (5 LESSONS) ─────
+  "lesson_01_python_no_syntax_memorization.ipynb": {
+    badge: "Python базы",
+    title: "Синтаксис Python для аналитика: переменные и структуры",
+    sub: "Списки для рядов, словари для сопоставления ключей, срезы для выбора",
+    takeaways: [
+      { val: "list & dict", lbl: "Основные структуры" },
+      { val: "Zero-based", lbl: "Индексация с 0" }
+    ],
+    draw: (svg) => {
+      const types = [
+        { l: "int / float", ex: "42, 3.1415", c: LF.PRIMARY },
+        { l: "str", ex: '"cohort_jan_2027"', c: LF.L[1] },
+        { l: "list", ex: "[120, 240, 360]", c: LF.WARNING },
+        { l: "dict", ex: '{"user_id": 402, "ltv": 1500}', c: LF.SUCCESS }
+      ];
+      types.forEach((t, i) => {
+        const y = 30 + i * 26;
+        LF.el(svg, "rect", { x: 25, y, width: 75, height: 18, rx: 3, fill: t.c, opacity: "0.15", stroke: t.c, "stroke-width": 1.2, class: "lf-pop", style: `animation-delay:${i*70}ms;` });
+        LF.txt(svg, { x: 62, y: y + 13, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: t.c }, t.l);
+        LF.txt(svg, { x: 110, y: y + 13, "font-size": "10", "font-weight": "600", fill: "currentColor", "font-family": "monospace" }, t.ex);
+      });
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "AI формулирует синтаксис — аналитик задает структуры данных");
+    }
+  },
+  "lesson_02_pandas_dataframes_indexing.ipynb": {
+    badge: "Pandas Indexing",
+    title: "Координатная сетка DataFrame: loc[] и iloc[]",
+    sub: "df.loc по меткам колонок и индексов, df.iloc по целочисленным позициям",
+    takeaways: [
+      { val: "df.loc['row', 'col']", lbl: "По именам" },
+      { val: "df.iloc[0:5, 1:3]", lbl: "По номерам среза" }
+    ],
+    draw: (svg) => {
+      const cols = ["user_id", "country", "orders_cnt", "mrr_usd"];
+      cols.forEach((c, i) => { LF.txt(svg, { x: 35+i*68, y: 35, "font-size": "9", "font-weight": "700", fill: LF.PRIMARY }, c); });
+      for (let r = 0; r < 4; r++) {
+        const act = r === 1;
+        for (let c = 0; c < 4; c++) {
+          LF.el(svg, "rect", { x: 25+c*68, y: 44+r*20, width: 62, height: 16, rx: 2, fill: act ? LF.SUCCESS : LF.GRID, opacity: act ? "0.6" : "0.3", class: act ? "lf-pop" : "", style: act ? "animation-delay:100ms;" : "" });
+        }
+      }
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.SUCCESS }, "df.loc[1, :] извлекает полную строку пользователя с атрибутами");
+    }
+  },
+  "lesson_03_pandas_aggregations_merge.ipynb": {
+    badge: "Pandas Transform",
+    title: "Split-Apply-Combine: groupby() и объединение pd.merge()",
+    sub: "Параллельная группировка и реляционное объединение таблиц в памяти",
+    takeaways: [
+      { val: ".groupby().agg()", lbl: "Агрегаты" },
+      { val: "pd.merge(how='left')", lbl: "Обогащение новыми признаками" }
+    ],
+    draw: (svg) => {
+      const cats = [
+        { l: "1. Split", sub: "Разделение на группы", c: LF.PRIMARY, x: 50 },
+        { l: "2. Apply", sub: "Расчет SUM/AVG", c: LF.WARNING, x: 160 },
+        { l: "3. Combine", sub: "Сборка в DataFrame", c: LF.SUCCESS, x: 265 }
+      ];
+      LF.el(svg, "line", { x1: 50, y1: 75, x2: 265, y2: 75, stroke: LF.GRID, "stroke-width": 1.5, "stroke-dasharray": "3 3" });
+      cats.forEach((c, i) => {
+        LF.el(svg, "rect", { x: c.x-45, y: 55, width: 90, height: 38, rx: 4, fill: c.c, opacity: "0.15", stroke: c.c, "stroke-width": 1.5, class: "lf-pop", style: `animation-delay:${i*90}ms;` });
+        LF.txt(svg, { x: c.x, y: 72, "text-anchor": "middle", "font-size": "10", "font-weight": "700", fill: c.c }, c.l);
+        LF.txt(svg, { x: c.x, y: 84, "text-anchor": "middle", "font-size": "8", "font-weight": "600", fill: LF.MUTED }, c.sub);
+      });
+      LF.txt(svg, { x: 160, y: 145, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Классическая парадигма Split-Apply-Combine лежит в основе groupby");
+    }
+  },
+  "lesson_04_visualization_seaborn_matplotlib.ipynb": {
+    badge: "Seaborn / Plot",
+    title: "Иерархия объектов Matplotlib: Figure и Axes",
+    sub: "Полный программный контроль: сетка subplots, цветовые палитры и стили",
+    takeaways: [
+      { val: "fig, ax = plt.subplots()", lbl: "Инициализация осей" },
+      { val: "sns.scatterplot()", lbl: "Статистический график" }
+    ],
+    draw: (svg) => {
+      LF.el(svg, "line", { x1: 30, y1: 130, x2: 290, y2: 130, stroke: LF.GRID, "stroke-width": 1.5 });
+      LF.el(svg, "line", { x1: 30, y1: 130, x2: 30, y2: 30, stroke: LF.GRID, "stroke-width": 1.5 });
+      const pts = [[50,110],[75,95],[95,102],[120,80],[145,85],[170,65],[195,58],[225,50],[255,42],[280,35]];
+      pts.forEach((p, i) => { LF.el(svg, "circle", { cx: p[0], cy: p[1], r: 4, fill: LF.PRIMARY, opacity: "0.6", class: "lf-dot-pop", style: `animation-delay:${i*35}ms;` }); });
+      LF.el(svg, "line", { x1: 40, y1: 115, x2: 285, y2: 32, stroke: LF.ALERT, "stroke-width": 2.2, class: "lf-draw", "stroke-dasharray": "300", "stroke-dashoffset": "300" });
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Seaborn автоматически рассчитывает доверительный интервал регрессии");
+    }
+  },
+  "lesson_05_code_review_ai_validation.ipynb": {
+    badge: "Тесты и качество кода",
+    title: "Валидация аналитического кода: инварианты и assert",
+    sub: "Проверка: отсутствие дубликатов ключей, сумма вероятностей = 1, нет утечек памяти",
+    takeaways: [
+      { val: "assert df['id'].is_unique", lbl: "Гарантия уникальности" },
+      { val: "assert (p >= 0).all()", lbl: "Физические границы метрик" }
+    ],
+    draw: (svg) => {
+      const checks = [
+        { l: "Проверка уникальности ID", ok: true },
+        { l: "Контроль суммы долей = 100%", ok: true },
+        { l: "Проверка на отрицательные цены", ok: false },
+        { l: "Сохранение общего числа строк", ok: true }
+      ];
+      checks.forEach((ch, i) => {
+        const y = 30 + i * 26;
+        LF.el(svg, "circle", { cx: 40, cy: y + 8, r: 8, fill: ch.ok ? LF.SUCCESS : LF.ALERT, opacity: "0.2", stroke: ch.ok ? LF.SUCCESS : LF.ALERT, "stroke-width": 1.5, class: "lf-pop", style: `animation-delay:${i*80}ms;` });
+        LF.txt(svg, { x: 40, y: y + 12, "text-anchor": "middle", "font-size": "10", "font-weight": "700", fill: ch.ok ? LF.SUCCESS : LF.ALERT }, ch.ok ? "✓" : "!");
+        LF.txt(svg, { x: 60, y: y + 12, "font-size": "10", "font-weight": "600", fill: "currentColor" }, ch.l);
+      });
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.ALERT }, "Код без ассертов инвариантов не допускается в продакшн");
+    }
+  },
+
+  // ───── MODULE 04: DATA CLEANING (4 LESSONS) ─────
+  "lesson_01_dirty_data_types_missing_values.ipynb": {
+    badge: "Data Quality",
+    title: "Типология дефектов данных: пропуски MCAR, MAR, MNAR",
+    sub: "Случайные пропуски заполняются медианой, неслучайные требуют исследования причины",
+    takeaways: [
+      { val: "MCAR / MAR / MNAR", lbl: "Тип природы пропуска" },
+      { val: "df.isnull().mean()", lbl: "Процент пропусков" }
+    ],
+    draw: (svg) => {
+      const issues = [
+        { l: "Случайный пропуск (MCAR)", pct: 40, c: LF.PRIMARY, act: "Импутация" },
+        { l: "Системный сбой датчика (MAR)", pct: 25, c: LF.WARNING, act: "Моделирование" },
+        { l: "Отказ отвечать (MNAR)", pct: 15, c: LF.ALERT, act: "Отдельная категория" }
+      ];
+      issues.forEach((is, i) => {
+        const y = 35 + i * 32;
+        LF.txt(svg, { x: 25, y: y + 12, "font-size": "10", "font-weight": "600", fill: "currentColor" }, is.l);
+        LF.el(svg, "rect", { x: 180, y, width: is.pct * 2.5, height: 16, rx: 2, fill: is.c, class: "lf-pop", style: `animation-delay:${i*80}ms;` });
+        LF.txt(svg, { x: 180 + is.pct * 2.5 + 6, y: y + 13, "font-size": "9", "font-weight": "700", fill: is.c }, is.act);
+      });
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Не удаляйте строки вслепую: потеря 30% данных искажает выводы");
+    }
+  },
+  "lesson_02_duplicates_string_cleaning_regex.ipynb": {
+    badge: "Нормализация",
+    title: "Регулярные выражения и чистка текстовых полей",
+    sub: "Удаление лишних пробелов, унификация номеров телефонов и e-mail адресов",
+    takeaways: [
+      { val: "r'\d{10}'", lbl: "Regex паттерны" },
+      { val: "fuzzy matching", lbl: "Нечеткое сравнение названий" }
+    ],
+    draw: (svg) => {
+      const before = ['" +7 (999) 123-45-67 "', "'89991234567'", '"79991234567 "'];
+      before.forEach((b, i) => {
+        const y = 35 + i * 28;
+        LF.el(svg, "rect", { x: 25, y, width: 115, height: 20, rx: 2, fill: LF.ALERT, opacity: "0.15", stroke: LF.ALERT, "stroke-width": 1 });
+        LF.txt(svg, { x: 82, y: y + 14, "text-anchor": "middle", "font-size": "9", fill: LF.ALERT, "font-family": "monospace" }, b);
+      });
+      LF.el(svg, "path", { d: "M 148 65 L 180 65", stroke: LF.SUCCESS, "stroke-width": 2.5, fill: "none", class: "lf-draw" });
+      LF.el(svg, "rect", { x: 185, y: 50, width: 105, height: 30, rx: 3, fill: LF.SUCCESS, opacity: "0.2", stroke: LF.SUCCESS, "stroke-width": 1.5, class: "lf-pop" });
+      LF.txt(svg, { x: 237, y: 69, "text-anchor": "middle", "font-size": "10", "font-weight": "700", fill: LF.SUCCESS, "font-family": "monospace" }, "+79991234567");
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Нормализованный формат ключа — залог точного объединения таблиц");
+    }
+  },
+  "lesson_03_outliers_anomaly_detection.ipynb": {
+    badge: "Детекция аномалий",
+    title: "Межквартильный фильтр Тьюки и Isolation Forest",
+    sub: "Отсечение выбросов по размаху Q1 - 1.5·IQR и многомерный поиск аномалий",
+    takeaways: [
+      { val: "[Q1-1.5·IQR, Q3+1.5·IQR]", lbl: "Классический интервал" },
+      { val: "Isolation Forest", lbl: "Многомерный ML поиск" }
+    ],
+    draw: (svg) => {
+      const baseY = 80;
+      LF.el(svg, "line", { x1: 45, y1: baseY, x2: 230, y2: baseY, stroke: LF.MUTED, "stroke-width": 2 });
+      LF.el(svg, "line", { x1: 45, y1: baseY-16, x2: 45, y2: baseY+16, stroke: LF.MUTED, "stroke-width": 2 });
+      LF.el(svg, "line", { x1: 230, y1: baseY-16, x2: 230, y2: baseY+16, stroke: LF.MUTED, "stroke-width": 2 });
+      LF.el(svg, "rect", { x: 95, y: baseY-25, width: 85, height: 50, rx: 3, fill: LF.PRIMARY, opacity: "0.25", stroke: LF.PRIMARY, "stroke-width": 2, class: "lf-pop" });
+      LF.el(svg, "line", { x1: 135, y1: baseY-25, x2: 135, y2: baseY+25, stroke: LF.PRIMARY, "stroke-width": 2.5 });
+      [255, 275].forEach((ox, i) => {
+        LF.el(svg, "circle", { cx: ox, cy: baseY, r: 5, fill: LF.ALERT, stroke: "#fff", "stroke-width": 1.5, class: "lf-dot-pop", style: `animation-delay:${200+i*80}ms;` });
+      });
+      LF.txt(svg, { x: 265, y: baseY + 26, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: LF.ALERT }, "Выбросы");
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Выбросы искажают среднее значение в 3-5 раз сильнее, чем медиану");
+    }
+  },
+  "lesson_04_automated_cleaning_pipelines.ipynb": {
+    badge: "Пайплайны очистки",
+    title: "Идемпотентные конвейеры очистки данных",
+    sub: "Функциональная композиция df.pipe(): исходные данные неизменны, результат reproducible",
+    takeaways: [
+      { val: "df.pipe(step1).pipe(step2)", lbl: "Цепочка чистых функций" },
+      { val: "Идемпотентность", lbl: "f(f(x)) = f(x)" }
+    ],
+    draw: (svg) => {
+      const steps = [
+        { l: "Сырой CSV", x: 40, c: LF.PRIMARY },
+        { l: "Типы", x: 110, c: LF.L[1] },
+        { l: "Пропуски", x: 180, c: LF.WARNING },
+        { l: "Витрина", x: 255, c: LF.SUCCESS }
+      ];
+      LF.el(svg, "line", { x1: 40, y1: 75, x2: 255, y2: 75, stroke: LF.GRID, "stroke-width": 1.5, "stroke-dasharray": "3 3" });
+      steps.forEach((s, i) => {
+        LF.el(svg, "rect", { x: s.x-30, y: 55, width: 60, height: 36, rx: 4, fill: s.c, opacity: "0.15", stroke: s.c, "stroke-width": 1.5, class: "lf-pop", style: `animation-delay:${i*80}ms;` });
+        LF.txt(svg, { x: s.x, y: 77, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: s.c }, s.l);
+      });
+      LF.txt(svg, { x: 160, y: 145, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.SUCCESS }, "Пайплайн запускается автоматически при поступлении каждого нового файла");
+    }
+  },
+
+  // ───── MODULE 05: STATISTICS (6 LESSONS) ─────
+  "lesson_01_descriptive_stats_outliers.ipynb": {
+    badge: "Описательная статистика",
+    title: "Асимметрия распределения: разрыв среднего и медианы",
+    sub: "При наличии хвоста богатых пользователей среднее улетает вверх, медиана остается реалистичной",
+    takeaways: [
+      { val: "Mean > Median", lbl: "Правосторонняя асимметрия" },
+      { val: "IQR и дисперсия", lbl: "Меры разброса" }
+    ],
+    draw: (svg) => {
+      LF.el(svg, "line", { x1: 25, y1: 130, x2: 295, y2: 130, stroke: LF.GRID, "stroke-width": 1.5 });
+      const bars = [8, 18, 38, 70, 95, 65, 38, 22, 12, 6, 3, 2];
+      bars.forEach((h, i) => {
+        LF.el(svg, "rect", { x: 30+i*22, y: 130-h, width: 18, height: h, rx: 2, fill: LF.PRIMARY, opacity: "0.5", class: "lf-pop", style: `animation-delay:${i*35}ms;` });
+      });
+      LF.el(svg, "line", { x1: 135, y1: 25, x2: 135, y2: 130, stroke: LF.SUCCESS, "stroke-width": 2, "stroke-dasharray": "3 3" });
+      LF.txt(svg, { x: 135, y: 18, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: LF.SUCCESS }, "Медиана $50k");
+      LF.el(svg, "line", { x1: 175, y1: 25, x2: 175, y2: 130, stroke: LF.ALERT, "stroke-width": 2, "stroke-dasharray": "3 3" });
+      LF.txt(svg, { x: 185, y: 18, "font-size": "9", "font-weight": "700", fill: LF.ALERT }, "Среднее $82k");
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Зарплаты, чеки и LTV всегда скошены вправо — ориентируйтесь на медиану");
+    }
+  },
+  "lesson_02_probability_bayes_law_of_large_numbers.ipynb": {
+    badge: "Теория вероятностей",
+    title: "Закон больших чисел и байесовское обновление априорных данных",
+    sub: "С увеличением выборки частота сходится к вероятности, новые данные уточняют гипотезу",
+    takeaways: [
+      { val: "P(H|E) ∝ P(E|H)·P(H)", lbl: "Байесовское обновление" },
+      { val: "LLN Сходимость", lbl: "Стабилизация частоты" }
+    ],
+    draw: (svg) => {
+      LF.el(svg, "line", { x1: 30, y1: 80, x2: 290, y2: 80, stroke: LF.SUCCESS, "stroke-width": 1.5, "stroke-dasharray": "4 3" });
+      LF.txt(svg, { x: 290, y: 72, "text-anchor": "end", "font-size": "9", "font-weight": "700", fill: LF.SUCCESS }, "Истинная p = 0.5");
+      const pts = [[35,45],[60,110],[90,65],[120,95],[160,72],[200,86],[240,78],[280,80]];
+      let d = "M " + pts.map(p => `${p[0]} ${p[1]}`).join(" L ");
+      LF.el(svg, "path", { d, stroke: LF.PRIMARY, "stroke-width": 2.5, fill: "none", class: "lf-draw", "stroke-dasharray": "400", "stroke-dashoffset": "400" });
+      pts.forEach((p, i) => { LF.el(svg, "circle", { cx: p[0], cy: p[1], r: 3.5, fill: LF.PRIMARY, class: "lf-dot-pop", style: `animation-delay:${i*50}ms;` }); });
+      LF.txt(svg, { x: 160, y: 150, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Малые выборки дают сильный разброс — не делайте выводов по 10 наблюдениям");
+    }
+  },
+  "lesson_03_distributions_clt_confidence_intervals.ipynb": {
+    badge: "ЦПТ и Гаусс",
+    title: "Центральная предельная теорема: рождение нормального закона",
+    sub: "Сумма независимых случайных величин стремится к колоколу Гаусса при любом распределении",
+    takeaways: [
+      { val: "N(μ, σ²/n)", lbl: "Дисперсия сжата в n раз" },
+      { val: "95% CI: [μ - 1.96σ, μ + 1.96σ]", lbl: "Доверительный интервал" }
+    ],
+    draw: (svg) => {
+      LF.el(svg, "line", { x1: 25, y1: 130, x2: 295, y2: 130, stroke: LF.GRID, "stroke-width": 1.5 });
+      let d = "M 25 128 ";
+      for (let x = 25; x <= 295; x += 5) {
+        const z = (x - 160) / 40;
+        const y = 130 - (100 * Math.exp(-0.5 * z * z));
+        d += `L ${x} ${y.toFixed(1)} `;
+      }
+      LF.el(svg, "path", { d, fill: "none", stroke: LF.PRIMARY, "stroke-width": 2.8, class: "lf-draw", "stroke-dasharray": "500", "stroke-dashoffset": "500" });
+      LF.el(svg, "line", { x1: 82, y1: 30, x2: 82, y2: 130, stroke: LF.ALERT, "stroke-width": 1.5, "stroke-dasharray": "3 3" });
+      LF.el(svg, "line", { x1: 238, y1: 30, x2: 238, y2: 130, stroke: LF.ALERT, "stroke-width": 1.5, "stroke-dasharray": "3 3" });
+      LF.txt(svg, { x: 160, y: 70, "text-anchor": "middle", "font-size": "11", "font-weight": "700", fill: LF.PRIMARY }, "95% вероятности");
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "95% выборочных средних попадают в диапазон ±1.96 стандартной ошибки");
+    }
+  },
+  "lesson_04_hypothesis_testing_p_value_ttest_mann_whitney.ipynb": {
+    badge: "Проверка гипотез",
+    title: "t-тест Стьюдента и критерий Манна-Уитни: p-value на практике",
+    sub: "p-value — это вероятность получить такие же или более экстремальные данные при верной H0",
+    takeaways: [
+      { val: "p < 0.05", lbl: "Статистически значимо" },
+      { val: "Манн-Уитни", lbl: "Для ненормальных распределений" }
+    ],
+    draw: (svg) => {
+      LF.el(svg, "line", { x1: 25, y1: 130, x2: 295, y2: 130, stroke: LF.GRID, "stroke-width": 1.5 });
+      let d = "M 25 128 ";
+      for (let x = 25; x <= 295; x += 5) {
+        const z = (x - 160) / 40;
+        const y = 130 - (95 * Math.exp(-0.5 * z * z));
+        d += `L ${x} ${y.toFixed(1)} `;
+      }
+      LF.el(svg, "path", { d, fill: "none", stroke: LF.MUTED, "stroke-width": 2 });
+      LF.el(svg, "rect", { x: 25, y: 90, width: 55, height: 40, rx: 0, fill: LF.ALERT, opacity: "0.25", class: "lf-fade" });
+      LF.el(svg, "rect", { x: 240, y: 90, width: 55, height: 40, rx: 0, fill: LF.ALERT, opacity: "0.25", class: "lf-fade" });
+      LF.txt(svg, { x: 52, y: 82, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: LF.ALERT }, "Отвергаем H0");
+      LF.txt(svg, { x: 268, y: 82, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: LF.ALERT }, "Отвергаем H0");
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Критические хвосты α/2 = 0.025 с каждой стороны");
+    }
+  },
+  "lesson_05_correlation_and_regression_ols_logistic.ipynb": {
+    badge: "Регрессионный анализ",
+    title: "Линейная и логистическая регрессия: прогноз и оценка влияния",
+    sub: "Минимизация суммы квадратов остатков (OLS) и логит-функция вероятности ухода",
+    takeaways: [
+      { val: "y = β₀ + β₁x", lbl: "Линейная связь" },
+      { val: "R² от 0 до 1", lbl: "Качество аппроксимации" }
+    ],
+    draw: (svg) => {
+      LF.el(svg, "line", { x1: 30, y1: 130, x2: 290, y2: 130, stroke: LF.GRID, "stroke-width": 1.5 });
+      LF.el(svg, "line", { x1: 30, y1: 130, x2: 30, y2: 25, stroke: LF.GRID, "stroke-width": 1.5 });
+      const pts = [[45,115],[65,100],[90,95],[115,85],[140,75],[170,72],[200,55],[230,48],[260,38],[285,32]];
+      pts.forEach((p, i) => { LF.el(svg, "circle", { cx: p[0], cy: p[1], r: 3.5, fill: LF.PRIMARY, opacity: "0.6", class: "lf-dot-pop", style: `animation-delay:${i*35}ms;` }); });
+      LF.el(svg, "line", { x1: 35, y1: 120, x2: 285, y2: 30, stroke: LF.ALERT, "stroke-width": 2.2, class: "lf-draw", "stroke-dasharray": "350", "stroke-dashoffset": "350" });
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Наклон линии β₁ показывает, на сколько рублей вырастет чек при росте стажа на 1 месяц");
+    }
+  },
+  "lesson_06_statistical_traps_in_business.ipynb": {
+    badge: "Бизнес-ловушки",
+    title: "Парадокс Симпсона и ошибка выжившего",
+    sub: "Как агрегация скрывает истинную картину и приводит к фатальным бизнес-ошибкам",
+    takeaways: [
+      { val: "Стратификация", lbl: "Анализируйте по сегментам" },
+      { val: "Конфаундеры", lbl: "Скрытые переменные" }
+    ],
+    draw: (svg) => {
+      LF.el(svg, "line", { x1: 30, y1: 130, x2: 290, y2: 130, stroke: LF.GRID, "stroke-width": 1.5 });
+      LF.el(svg, "line", { x1: 35, y1: 105, x2: 280, y2: 45, stroke: LF.SUCCESS, "stroke-width": 2.5, class: "lf-draw", "stroke-dasharray": "300", "stroke-dashoffset": "300" });
+      LF.txt(svg, { x: 280, y: 38, "font-size": "9", "font-weight": "700", fill: LF.SUCCESS }, "Агрегат ↑ (+24%)");
+      LF.el(svg, "line", { x1: 40, y1: 65, x2: 150, y2: 95, stroke: LF.ALERT, "stroke-width": 2, "stroke-dasharray": "3 3" });
+      LF.txt(svg, { x: 155, y: 100, "font-size": "9", "font-weight": "700", fill: LF.ALERT }, "Группа 1 ↓");
+      LF.el(svg, "line", { x1: 160, y1: 80, x2: 275, y2: 110, stroke: LF.WARNING, "stroke-width": 2, "stroke-dasharray": "3 3" });
+      LF.txt(svg, { x: 280, y: 115, "font-size": "9", "font-weight": "700", fill: LF.WARNING }, "Группа 2 ↓");
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Обе группы падают, но смена долей групп создает иллюзию общего роста");
+    }
+  },
+
+  // ───── MODULE 06: BI LOOKER STUDIO (5 LESSONS) ─────
+  "lesson_01_looker_studio_setup_and_data_sources.ipynb": {
+    badge: "BI Источники",
+    title: "Архитектура коннекторов: BigQuery, Sheets и SQL-витрины",
+    sub: "Прямое подключение к витринам данных с автообновлением по расписанию",
+    takeaways: [ { val: "Live Connection", lbl: "Всегда актуальные цифры" }, { val: "Data Modeling", lbl: "Типизация полей в источнике" } ],
+    draw: (svg) => {
+      const srcs = [{ l: "CRM Logs", x: 45, c: LF.PRIMARY },{ l: "Data Warehouse", x: 160, c: LF.WARNING },{ l: "Looker Studio", x: 270, c: LF.SUCCESS }];
+      LF.el(svg, "line", { x1: 45, y1: 75, x2: 270, y2: 75, stroke: LF.GRID, "stroke-width": 1.5, "stroke-dasharray": "3 3" });
+      srcs.forEach((s, i) => {
+        LF.el(svg, "rect", { x: s.x-40, y: 55, width: 80, height: 40, rx: 4, fill: s.c, opacity: "0.15", stroke: s.c, "stroke-width": 1.5, class: "lf-pop", style: `animation-delay:${i*90}ms;` });
+        LF.txt(svg, { x: s.x, y: 78, "text-anchor": "middle", "font-size": "10", "font-weight": "700", fill: s.c }, s.l);
+      });
+      LF.txt(svg, { x: 160, y: 150, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "BI подключается к готовой витрине, а не к сырым транзакционным логам");
+    }
+  },
+  "lesson_02_calculated_fields_and_parameters.ipynb": {
+    badge: "Вычисляемые поля",
+    title: "Бизнес-метрики на лету: формулы и параметры",
+    sub: "Расчет маржинальности, когортных коэффициентов и валютных конвертеров внутри BI",
+    takeaways: [ { val: "Margin = (Rev-Cost)/Rev", lbl: "Формулы уровня строки" }, { val: "Динамические параметры", lbl: "Сценарии 'Что если?'" } ],
+    draw: (svg) => {
+      const m = [{ l: "Выручка (Revenue)", v: 190, c: LF.PRIMARY, val: "$190k" },{ l: "Себестоимость (COGS)", v: 80, c: LF.ALERT, val: "$80k" },{ l: "Валовая маржа (58%)", v: 110, c: LF.SUCCESS, val: "$110k" }];
+      m.forEach((met, i) => {
+        const y = 35 + i * 34;
+        LF.txt(svg, { x: 25, y: y + 14, "font-size": "10", "font-weight": "600", fill: "currentColor" }, met.l);
+        LF.el(svg, "rect", { x: 145, y, width: met.v * 0.65, height: 18, rx: 2, fill: met.c, class: "lf-pop", style: `animation-delay:${i*80}ms;` });
+        LF.txt(svg, { x: 145 + met.v * 0.65 + 6, y: y + 14, "font-size": "10", "font-weight": "700", fill: met.c }, met.val);
+      });
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Параметры позволяют стейкхолдеру моделировать сценарии роста цен");
+    }
+  },
+  "lesson_03_data_blending_joins_in_bi.ipynb": {
+    badge: "Data Blending",
+    title: "Смешивание данных: реклама Facebook + заказы 1C",
+    sub: "Объединение разнородных источников по дате и UTM-меткам для сквозного расчета ROAS",
+    takeaways: [ { val: "Ключ: utm_campaign", lbl: "Связующее поле" }, { val: "Blended ROAS", lbl: "Окупаемость маркетинга" } ],
+    draw: (svg) => {
+      LF.el(svg, "rect", { x: 30, y: 40, width: 95, height: 35, rx: 4, fill: LF.PRIMARY, opacity: "0.15", stroke: LF.PRIMARY, "stroke-width": 1.5 });
+      LF.txt(svg, { x: 77, y: 62, "text-anchor": "middle", "font-size": "10", "font-weight": "700", fill: LF.PRIMARY }, "Маркетинг ($)");
+      LF.el(svg, "rect", { x: 30, y: 90, width: 95, height: 35, rx: 4, fill: LF.WARNING, opacity: "0.15", stroke: LF.WARNING, "stroke-width": 1.5 });
+      LF.txt(svg, { x: 77, y: 112, "text-anchor": "middle", "font-size": "10", "font-weight": "700", fill: LF.WARNING }, "Продажи CRM ($)");
+      LF.el(svg, "path", { d: "M 125 57 L 180 82 M 125 107 L 180 82", stroke: LF.MUTED, "stroke-width": 1.5 });
+      LF.el(svg, "rect", { x: 180, y: 65, width: 110, height: 38, rx: 4, fill: LF.SUCCESS, opacity: "0.2", stroke: LF.SUCCESS, "stroke-width": 1.5, class: "lf-pop" });
+      LF.txt(svg, { x: 235, y: 88, "text-anchor": "middle", "font-size": "11", "font-weight": "700", fill: LF.SUCCESS }, "Сквозной ROAS: 3.8x");
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Data Blending выполняет виртуальный JOIN в памяти визуализации");
+    }
+  },
+  "lesson_04_dashboard_ui_ux_for_executives.ipynb": {
+    badge: "Дашборды C-Level",
+    title: "Правило 5 секунд: как строить экраны для топ-менеджмента",
+    sub: "Ключевой KPI в левом верхнем углу, динамика в центре, детали внизу",
+    takeaways: [ { val: "5-Second Rule", lbl: "Понятно без пояснений" }, { val: "F-паттерн взгляда", lbl: "Естественное чтение" } ],
+    draw: (svg) => {
+      LF.el(svg, "rect", { x: 25, y: 30, width: 270, height: 42, rx: 4, fill: LF.PRIMARY, opacity: "0.1", stroke: LF.PRIMARY, "stroke-width": 1.5, class: "lf-pop" });
+      LF.txt(svg, { x: 160, y: 56, "text-anchor": "middle", "font-size": "15", "font-weight": "700", fill: LF.PRIMARY }, "MRR: $184,200 (+14.2% YoY)");
+      LF.el(svg, "rect", { x: 25, y: 82, width: 130, height: 36, rx: 3, fill: LF.GRID, opacity: "0.4", class: "lf-fade", style: "animation-delay:150ms;" });
+      LF.txt(svg, { x: 90, y: 104, "text-anchor": "middle", "font-size": "10", "font-weight": "600", fill: LF.MUTED }, "График динамики");
+      LF.el(svg, "rect", { x: 165, y: 82, width: 130, height: 36, rx: 3, fill: LF.GRID, opacity: "0.4", class: "lf-fade", style: "animation-delay:250ms;" });
+      LF.txt(svg, { x: 230, y: 104, "text-anchor": "middle", "font-size": "10", "font-weight": "600", fill: LF.MUTED }, "Факторы роста");
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Руководитель не должен искать главную цифру дольше 5 секунд");
+    }
+  },
+  "lesson_05_interactive_filters_controls.ipynb": {
+    badge: "Интерактивность",
+    title: "Кросс-фильтрация и динамические срезы данных",
+    sub: "Клик на столбец диаграммы фильтрует все остальные графики отчета",
+    takeaways: [ { val: "Cross-filtering", lbl: "Взаимосвязь графиков" }, { val: "Date Range Control", lbl: "Глобальный календарь" } ],
+    draw: (svg) => {
+      const filters = [{ l: "Дата: Q1 2027", c: LF.PRIMARY },{ l: "Категория: B2B", c: LF.WARNING },{ l: "Регион: EMEA", c: LF.SUCCESS }];
+      filters.forEach((f, i) => {
+        LF.el(svg, "rect", { x: 25+i*90, y: 50, width: 85, height: 28, rx: 14, fill: f.c, opacity: "0.15", stroke: f.c, "stroke-width": 1.5, class: "lf-pop", style: `animation-delay:${i*80}ms;` });
+        LF.txt(svg, { x: 67+i*90, y: 68, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: f.c }, f.l);
+      });
+      LF.txt(svg, { x: 160, y: 120, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Каждый фильтр синхронно пересчитывает все агрегаты отчета");
+    }
+  },
+
+  // ───── MODULE 07: A/B TESTING (5 LESSONS) ─────
+  "lesson_01_ab_testing_framework_and_mde.ipynb": {
+    badge: "A/B Дизайн",
+    title: "Расчет размера выборки: MDE, мощность и уровень значимости",
+    sub: "Чем меньше ожидаемый эффект (MDE), тем больше наблюдений требуется накопить",
+    takeaways: [ { val: "MDE (Min Detectable Effect)", lbl: "Чувствительность теста" }, { val: "Power = 80%", lbl: "Вероятность обнаружить эффект" } ],
+    draw: (svg) => {
+      const mde = [{ l: "MDE = 5% (крупный)", n: 3100, w: 60, c: LF.SUCCESS },{ l: "MDE = 2% (средний)", n: 19500, w: 140, c: LF.WARNING },{ l: "MDE = 0.5% (тонкий)", n: 312000, w: 230, c: LF.ALERT }];
+      mde.forEach((m, i) => {
+        const y = 35 + i * 34;
+        LF.txt(svg, { x: 25, y: y + 13, "font-size": "10", "font-weight": "600", fill: "currentColor" }, m.l);
+        LF.el(svg, "rect", { x: 155, y, width: m.w, height: 16, rx: 2, fill: m.c, class: "lf-pop", style: `animation-delay:${i*90}ms;` });
+        LF.txt(svg, { x: 155 + m.w + 6, y: y + 13, "font-size": "9", "font-weight": "700", fill: m.c }, "N=" + m.n.toLocaleString());
+      });
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Поиск эффекта в 0.5% требует в 100 раз больше трафика");
+    }
+  },
+  "lesson_02_splitting_aa_tests_srm.ipynb": {
+    badge: "Сплитование & SRM",
+    title: "Sample Ratio Mismatch (SRM) и калибровка A/A тестом",
+    sub: "Если трафик разделился 51/49 вместо 50/50 — тест сломан, результаты невалидны",
+    takeaways: [ { val: "Хи-квадрат критерий", lbl: "Тест равномерности сплита" }, { val: "A/A тест", lbl: "Калибровка ошибки I рода" } ],
+    draw: (svg) => {
+      LF.el(svg, "rect", { x: 30, y: 40, width: 125, height: 45, rx: 4, fill: LF.PRIMARY, opacity: "0.2", stroke: LF.PRIMARY, "stroke-width": 1.5 });
+      LF.txt(svg, { x: 92, y: 62, "text-anchor": "middle", "font-size": "11", "font-weight": "700", fill: LF.PRIMARY }, "Группа A (50.1%)");
+      LF.txt(svg, { x: 92, y: 75, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "50,120 юзеров");
+      LF.el(svg, "rect", { x: 165, y: 40, width: 125, height: 45, rx: 4, fill: LF.SUCCESS, opacity: "0.2", stroke: LF.SUCCESS, "stroke-width": 1.5 });
+      LF.txt(svg, { x: 227, y: 62, "text-anchor": "middle", "font-size": "11", "font-weight": "700", fill: LF.SUCCESS }, "Группа B (49.9%)");
+      LF.txt(svg, { x: 227, y: 75, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "49,880 юзеров");
+      LF.txt(svg, { x: 160, y: 120, "text-anchor": "middle", "font-size": "10", "font-weight": "700", fill: LF.SUCCESS }, "SRM p-value = 0.44 (Сплит корректен)");
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.ALERT }, "При SRM p < 0.001 эксперимент немедленно останавливается");
+    }
+  },
+  "lesson_03_evaluating_metrics_proportions_means.ipynb": {
+    badge: "Метрики теста",
+    title: "Оценка метрик: конверсия (Z-тест) vs выручка ARPU (Bootstrap)",
+    sub: "Биномиальные пропорции проверяются Z-тестом, непрерывные чеки с выбросами — бутстрапом",
+    takeaways: [ { val: "Биномиальный Z-тест", lbl: "Для конверсий 0/1" }, { val: "10,000 ресемплов", lbl: "Бутстрап для выручки" } ],
+    draw: (svg) => {
+      const bars = [{ l: "Контроль (A)", v: 4.2, c: LF.PRIMARY },{ l: "Вариант (B)", v: 4.8, c: LF.SUCCESS }];
+      bars.forEach((b, i) => {
+        const y = 40 + i * 40;
+        LF.txt(svg, { x: 30, y: y + 16, "font-size": "11", "font-weight": "700", fill: "currentColor" }, b.l);
+        LF.el(svg, "rect", { x: 130, y, width: b.v * 24, height: 24, rx: 3, fill: b.c, class: "lf-pop", style: `animation-delay:${i*100}ms;` });
+        LF.txt(svg, { x: 130 + b.v * 24 + 8, y: y + 17, "font-size": "12", "font-weight": "700", fill: b.c }, b.v + "%");
+      });
+      LF.txt(svg, { x: 160, y: 145, "text-anchor": "middle", "font-size": "10", "font-weight": "700", fill: LF.SUCCESS }, "Uplift +14.3% · p-value = 0.012 (Значимо)");
+    }
+  },
+  "lesson_04_p_hacking_peeking_problem.ipynb": {
+    badge: "Peeking Problem",
+    title: "Ловушка подглядывания: раздувание ошибки I рода",
+    sub: "Ежедневная проверка p-value раздувает реальную ошибку альфа с 5% до 36.2%",
+    takeaways: [ { val: "Альфа-инфляция", lbl: "36% ложных побед" }, { val: "mSPRT / Group Sequential", lbl: "Коррекция границ" } ],
+    draw: (svg) => {
+      LF.el(svg, "line", { x1: 30, y1: 130, x2: 290, y2: 130, stroke: LF.GRID, "stroke-width": 1.5 });
+      LF.el(svg, "line", { x1: 30, y1: 110, x2: 290, y2: 110, stroke: LF.SUCCESS, "stroke-width": 1.5, "stroke-dasharray": "4 4" });
+      LF.txt(svg, { x: 30, y: 104, "font-size": "9", "font-weight": "700", fill: LF.SUCCESS }, "Номинальная α = 5%");
+      const pts = [[30,110],[70,98],[110,82],[150,68],[190,52],[240,38],[285,25]];
+      let d = "M " + pts.map(p => `${p[0]} ${p[1]}`).join(" L ");
+      LF.el(svg, "path", { d, stroke: LF.ALERT, "stroke-width": 2.8, fill: "none", class: "lf-draw", "stroke-dasharray": "350", "stroke-dashoffset": "350" });
+      pts.forEach((p, i) => { LF.el(svg, "circle", { cx: p[0], cy: p[1], r: 3.5, fill: LF.ALERT, class: "lf-dot-pop", style: `animation-delay:${i*60}ms;` }); });
+      LF.txt(svg, { x: 285, y: 18, "text-anchor": "end", "font-size": "10", "font-weight": "700", fill: LF.ALERT }, "FPR: 36.2% (День 30)");
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Фиксируйте длительность теста ДО запуска или используйте Sequential Testing");
+    }
+  },
+  "lesson_05_business_decision_rollout.ipynb": {
+    badge: "Внедрение фичи",
+    title: "Матрица решения о раскатке: статзначимость vs бизнес-эффект",
+    sub: "Статистически значимый рост на 0.01% может не окупать стоимость поддержки кода",
+    takeaways: [ { val: "Stat Sig ≠ Business Sig", lbl: "Оценивайте ROI фичи" }, { val: "Guardrail метрики", lbl: "Контроль тех. сбоев" } ],
+    draw: (svg) => {
+      const metrics = [{ l: "Целевая: Конверсия в чек", v: "+4.2%", pass: true },{ l: "Guardrail: Задержка страницы", v: "+15ms (норма)", pass: true },{ l: "Guardrail: Отток в корзине", v: "-0.8% (улучшение)", pass: true }];
+      metrics.forEach((m, i) => {
+        const y = 35 + i * 32;
+        LF.el(svg, "circle", { cx: 35, cy: y + 10, r: 8, fill: LF.SUCCESS, opacity: "0.2", stroke: LF.SUCCESS, "stroke-width": 1.5, class: "lf-pop", style: `animation-delay:${i*80}ms;` });
+        LF.txt(svg, { x: 35, y: y + 14, "text-anchor": "middle", "font-size": "10", "font-weight": "700", fill: LF.SUCCESS }, "✓");
+        LF.txt(svg, { x: 55, y: y + 14, "font-size": "10", "font-weight": "600", fill: "currentColor" }, m.l);
+        LF.txt(svg, { x: 285, y: y + 14, "text-anchor": "end", "font-size": "10", "font-weight": "700", fill: LF.SUCCESS }, m.v);
+      });
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.SUCCESS }, "Решение: 100% Rollout на всю аудиторию");
+    }
+  },
+
+  // ───── MODULE 08: PROMPT ENGINEERING (4 LESSONS) ─────
+  "lesson_01_prompt_engineering_fundamentals.ipynb": {
+    badge: "Промпт структура",
+    title: "Анатомия эффективного промпта для аналитики",
+    sub: "Роль + Контекст данных + Задача + Ограничения схемы + Примеры Few-Shot",
+    takeaways: [ { val: "Роль + Схема + ТЗ", lbl: "Обязательный каркас" }, { val: "Few-Shot примеры", lbl: "Удвоение точности" } ],
+    draw: (svg) => {
+      const parts = [{ l: "1. Роль (Senior SQL)", c: LF.PRIMARY },{ l: "2. DDL Схема", c: LF.L[1] },{ l: "3. Задача", c: LF.WARNING },{ l: "4. JSON Ограничения", c: LF.SUCCESS }];
+      parts.forEach((p, i) => {
+        const y = 30 + i * 28;
+        LF.el(svg, "rect", { x: 25, y, width: 270, height: 22, rx: 3, fill: p.c, opacity: "0.15", stroke: p.c, "stroke-width": 1.2, class: "lf-pop", style: `animation-delay:${i*70}ms;` });
+        LF.txt(svg, { x: 35, y: y + 15, "font-size": "10", "font-weight": "700", fill: p.c }, p.l);
+      });
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Четкие ограничения формата исключают текстовые пояснения от LLM");
+    }
+  },
+  "lesson_02_chain_of_thought_for_analytics.ipynb": {
+    badge: "Chain-of-Thought",
+    title: "Пошаговые рассуждения CoT в сложных финансовых расчетах",
+    sub: "Генерация промежуточных скрытых шагов рассуждений снижает ошибки в 16 раз",
+    takeaways: [ { val: "Direct: 38% точность", lbl: "Сбои в математике" }, { val: "CoT: 94% точность", lbl: "Пошаговый расчет" } ],
+    draw: (svg) => {
+      const bars = [{ l: "Прямой ответ (Zero-Shot)", v: 38, c: LF.ALERT },{ l: "Few-Shot (Примеры)", v: 65, c: LF.WARNING },{ l: "Chain-of-Thought (CoT)", v: 94, c: LF.SUCCESS }];
+      bars.forEach((b, i) => {
+        const y = 35 + i * 36;
+        LF.txt(svg, { x: 25, y: y + 12, "font-size": "10", "font-weight": "600", fill: "currentColor" }, b.l);
+        LF.el(svg, "rect", { x: 25, y: y + 16, width: 220, height: 14, rx: 3, fill: LF.GRID, opacity: "0.4" });
+        LF.el(svg, "rect", { x: 25, y: y + 16, width: (b.v/100)*220, height: 14, rx: 3, fill: b.c, class: "lf-pop", style: `animation-delay:${i*100}ms;` });
+        LF.txt(svg, { x: 260, y: y + 27, "text-anchor": "start", "font-size": "10", "font-weight": "700", fill: b.c }, b.v + "%");
+      });
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Инструкция 'Рассуждай шаг за шагом' активирует пошаговый расчет");
+    }
+  },
+  "lesson_03_prompting_for_sql_and_python.ipynb": {
+    badge: "Кодогенерация",
+    title: "Генерация скриптов анализа данных без синтаксических ошибок",
+    sub: "Контекстная инъекция заголовков df.head() и типов df.dtypes в системный промпт",
+    takeaways: [ { val: "df.dtypes в промпте", lbl: "Исключает несовпадение типов" }, { val: "Только код без markdown", lbl: "Чистый Python вывод" } ],
+    draw: (svg) => {
+      LF.el(svg, "rect", { x: 25, y: 35, width: 120, height: 80, rx: 4, fill: LF.PRIMARY, opacity: "0.1", stroke: LF.PRIMARY, "stroke-width": 1.5 });
+      LF.txt(svg, { x: 85, y: 55, "text-anchor": "middle", "font-size": "10", "font-weight": "700", fill: LF.PRIMARY }, "Промпт + DDL");
+      LF.txt(svg, { x: 85, y: 75, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "+ примеры");
+      LF.el(svg, "path", { d: "M 150 75 L 180 75", stroke: LF.SUCCESS, "stroke-width": 2.5, fill: "none", class: "lf-draw" });
+      LF.el(svg, "rect", { x: 185, y: 35, width: 110, height: 80, rx: 4, fill: LF.SUCCESS, opacity: "0.15", stroke: LF.SUCCESS, "stroke-width": 1.5 });
+      LF.txt(svg, { x: 240, y: 65, "text-anchor": "middle", "font-size": "10", "font-weight": "700", fill: LF.SUCCESS }, "100% Валидный");
+      LF.txt(svg, { x: 240, y: 85, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.SUCCESS }, "SQL / Python");
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Никаких галлюцинаций с именами колонок при передаче схемы");
+    }
+  },
+  "lesson_04_debugging_and_root_cause_prompts.ipynb": {
+    badge: "Отладка промптами",
+    title: "Root Cause Analysis: локализация ошибок и сбоев данных",
+    sub: "Подача stack trace и ожидаемого инварианта в LLM для мгновенного патча",
+    takeaways: [ { val: "Stack trace + Expected", lbl: "Полный контекст бага" }, { val: "Тест регрессии", lbl: "Проверка фикса" } ],
+    draw: (svg) => {
+      const errs = [{ l: "1. Трейс ошибки в логах", c: LF.ALERT },{ l: "2. LLM декомпозирует сбой", c: LF.WARNING },{ l: "3. Готовый патч с тестом", c: LF.SUCCESS }];
+      errs.forEach((e, i) => {
+        const y = 35 + i * 32;
+        LF.el(svg, "rect", { x: 25, y, width: 270, height: 24, rx: 3, fill: e.c, opacity: "0.15", stroke: e.c, "stroke-width": 1.2, class: "lf-pop", style: `animation-delay:${i*80}ms;` });
+        LF.txt(svg, { x: 40, y: y + 16, "font-size": "10", "font-weight": "700", fill: e.c }, e.l);
+      });
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Время поиска багов сокращается с 40 минут до 30 секунд");
+    }
+  },
+
+  // ───── MODULE 09: AI TOOLS DAILY (3 LESSONS) ─────
+  "lesson_01_cursor_vs_copilot_workflows.ipynb": {
+    badge: "AI IDE 2027",
+    title: "Cursor vs GitHub Copilot: архитектура агентных IDE",
+    sub: "Inline автодополнение против многофайлового агентного редактирования @codebase",
+    takeaways: [ { val: "@codebase индексация", lbl: "Знание всего проекта" }, { val: "Cmd + K / Composer", lbl: "Агентное редактирование" } ],
+    draw: (svg) => {
+      LF.el(svg, "rect", { x: 25, y: 35, width: 125, height: 75, rx: 4, fill: LF.PRIMARY, opacity: "0.15", stroke: LF.PRIMARY, "stroke-width": 1.5 });
+      LF.txt(svg, { x: 87, y: 60, "text-anchor": "middle", "font-size": "11", "font-weight": "700", fill: LF.PRIMARY }, "Copilot");
+      LF.txt(svg, { x: 87, y: 78, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Строка за строкой");
+      LF.el(svg, "rect", { x: 170, y: 35, width: 125, height: 75, rx: 4, fill: LF.SUCCESS, opacity: "0.15", stroke: LF.SUCCESS, "stroke-width": 1.5 });
+      LF.txt(svg, { x: 232, y: 60, "text-anchor": "middle", "font-size": "11", "font-weight": "700", fill: LF.SUCCESS }, "Cursor Agent");
+      LF.txt(svg, { x: 232, y: 78, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.SUCCESS }, "Весь репозиторий");
+      LF.txt(svg, { x: 160, y: 150, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Cursor анализирует связи между таблицами и моделями во всем проекте");
+    }
+  },
+  "lesson_02_claude_chatgpt_data_interpreter.ipynb": {
+    badge: "Data Interpreter",
+    title: "Advanced Data Analysis: Python песочницы Claude и ChatGPT",
+    sub: "Загрузка CSV, запуск кода в изолированной песочнице и возврат готовых графиков",
+    takeaways: [ { val: "Python Sandbox", lbl: "Выполнение кода в облаке" }, { val: "Ad-hoc инсайты", lbl: "Быстрый EDA датасета" } ],
+    draw: (svg) => {
+      const flow = [{ l: "CSV Датасет", x: 45, c: LF.PRIMARY },{ l: "Песочница Python", x: 160, c: LF.WARNING },{ l: "Инсайт + График", x: 270, c: LF.SUCCESS }];
+      LF.el(svg, "line", { x1: 45, y1: 75, x2: 270, y2: 75, stroke: LF.GRID, "stroke-width": 1.5, "stroke-dasharray": "3 3" });
+      flow.forEach((s, i) => {
+        LF.el(svg, "rect", { x: s.x-40, y: 55, width: 80, height: 38, rx: 4, fill: s.c, opacity: "0.15", stroke: s.c, "stroke-width": 1.5, class: "lf-pop", style: `animation-delay:${i*80}ms;` });
+        LF.txt(svg, { x: s.x, y: 78, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: s.c }, s.l);
+      });
+      LF.txt(svg, { x: 160, y: 150, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Идеально для первичного разведочного анализа данных за 2 минуты");
+    }
+  },
+  "lesson_03_ai_validation_framework_hallucinations.ipynb": {
+    badge: "Антигаллюцинации",
+    title: "Фреймворк защиты от галлюцинаций в аналитических выводах",
+    sub: "Перекрестная проверка двумя независимыми моделями и сравнение с сырым SQL",
+    takeaways: [ { val: "Двойной контур", lbl: "Верификация разными моделями" }, { val: "Ground Truth", lbl: "Сверка с сырой БД" } ],
+    draw: (svg) => {
+      const checks = [
+        { l: "1. Проверка SQL запроса на пустые строки", ok: true },
+        { l: "2. Сверка суммы с бухгалтерской витриной", ok: true },
+        { l: "3. Проверка логических противоречий", ok: true }
+      ];
+      checks.forEach((ch, i) => {
+        const y = 35 + i * 32;
+        LF.el(svg, "circle", { cx: 35, cy: y + 10, r: 8, fill: LF.SUCCESS, opacity: "0.2", stroke: LF.SUCCESS, "stroke-width": 1.5, class: "lf-pop", style: `animation-delay:${i*80}ms;` });
+        LF.txt(svg, { x: 35, y: y + 14, "text-anchor": "middle", "font-size": "10", "font-weight": "700", fill: LF.SUCCESS }, "✓");
+        LF.txt(svg, { x: 55, y: y + 14, "font-size": "10", "font-weight": "600", fill: "currentColor" }, ch.l);
+      });
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.SUCCESS }, "Ни один вывод LLM не передается руководству без сверки контрольных сумм");
+    }
+  },
+
+  // ───── MODULE 10: LLM API (4 LESSONS) ─────
+  "lesson_01_calling_llm_apis_python.ipynb": {
+    badge: "LLM API Python",
+    title: "Клиентские вызовы API: messages, temperature и токены",
+    sub: "Работа с официальными SDK OpenAI/Anthropic/Google: контроль контекста и стоимости",
+    takeaways: [ { val: "temperature = 0.0", lbl: "Детерминированный анализ" }, { val: "tokens in/out", lbl: "Учет затрат на запрос" } ],
+    draw: (svg) => {
+      LF.el(svg, "rect", { x: 25, y: 40, width: 85, height: 65, rx: 4, fill: LF.PRIMARY, opacity: "0.15", stroke: LF.PRIMARY, "stroke-width": 1.5 });
+      LF.txt(svg, { x: 67, y: 68, "text-anchor": "middle", "font-size": "10", "font-weight": "700", fill: LF.PRIMARY }, "Python SDK");
+      LF.txt(svg, { x: 67, y: 84, "text-anchor": "middle", "font-size": "8", "font-weight": "600", fill: LF.MUTED }, "client.chat()");
+      LF.el(svg, "path", { d: "M 115 72 L 195 72", stroke: LF.SUCCESS, "stroke-width": 2.5, fill: "none", class: "lf-draw" });
+      LF.el(svg, "rect", { x: 200, y: 40, width: 95, height: 65, rx: 4, fill: LF.SUCCESS, opacity: "0.15", stroke: LF.SUCCESS, "stroke-width": 1.5 });
+      LF.txt(svg, { x: 247, y: 68, "text-anchor": "middle", "font-size": "10", "font-weight": "700", fill: LF.SUCCESS }, "LLM Cloud");
+      LF.txt(svg, { x: 247, y: 84, "text-anchor": "middle", "font-size": "8", "font-weight": "600", fill: LF.SUCCESS }, "Tokens Out");
+      LF.txt(svg, { x: 160, y: 145, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Температура 0.0 гарантирует воспроизводимость аналитических вычислений");
+    }
+  },
+  "lesson_02_parsing_unstructured_data.ipynb": {
+    badge: "Неструктурированные данные",
+    title: "Извлечение сущностей из отзывов, писем и логов",
+    sub: "Превращение хаотичного текста в структурированные столбцы категории, тональности и суммы",
+    takeaways: [ { val: "Текст → Таблица", lbl: "NLP трансформация" }, { val: "Атрибуты заказа", lbl: "Чистые фичи" } ],
+    draw: (svg) => {
+      LF.el(svg, "rect", { x: 25, y: 35, width: 110, height: 80, rx: 3, fill: LF.ALERT, opacity: "0.1", stroke: LF.ALERT, "stroke-width": 1 });
+      LF.txt(svg, { x: 80, y: 55, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.ALERT }, "Сырой отзыв:");
+      LF.txt(svg, { x: 80, y: 75, "text-anchor": "middle", "font-size": "8", "font-style": "italic", fill: "currentColor" }, '"Купил за 5к, сломался"');
+      LF.el(svg, "path", { d: "M 140 75 L 175 75", stroke: LF.SUCCESS, "stroke-width": 2, fill: "none", class: "lf-draw" });
+      LF.el(svg, "rect", { x: 180, y: 35, width: 115, height: 80, rx: 3, fill: LF.SUCCESS, opacity: "0.15", stroke: LF.SUCCESS, "stroke-width": 1.2 });
+      LF.txt(svg, { x: 237, y: 55, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: LF.SUCCESS }, "price: 5000");
+      LF.txt(svg, { x: 237, y: 72, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: LF.ALERT }, "sentiment: negative");
+      LF.txt(svg, { x: 237, y: 89, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: LF.PRIMARY }, "defect: true");
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Сырой текст становится признаками для когортного анализа и оттока");
+    }
+  },
+  "lesson_03_structured_outputs_pydantic_json.ipynb": {
+    badge: "Structured Outputs",
+    title: "Гарантированная валидность JSON через схемы Pydantic",
+    sub: "Принудительное маскирование логитов токенов по строгой грамматике схемы данных",
+    takeaways: [ { val: "BaseModel Pydantic", lbl: "Типизированный контракт" }, { val: "0% ошибок парсинга", lbl: "100% стабильный ETL" } ],
+    draw: (svg) => {
+      const bars = [{ l: "Обычный промпт (regex парсер)", err: 18.5, c: LF.ALERT },{ l: "JSON Mode (подсказка в промпте)", err: 6.2, c: LF.WARNING },{ l: "Pydantic Schema (маскирование)", err: 0.0, c: LF.SUCCESS }];
+      bars.forEach((b, i) => {
+        const y = 35 + i * 36;
+        LF.txt(svg, { x: 25, y: y + 12, "font-size": "10", "font-weight": "600", fill: "currentColor" }, b.l);
+        LF.el(svg, "rect", { x: 25, y: y + 16, width: 220, height: 14, rx: 3, fill: LF.GRID, opacity: "0.4" });
+        const w = (b.err / 20) * 220;
+        LF.el(svg, "rect", { x: 25, y: y + 16, width: Math.max(w, 4), height: 14, rx: 3, fill: b.c, class: "lf-pop", style: `animation-delay:${i*100}ms;` });
+        LF.txt(svg, { x: 260, y: y + 27, "text-anchor": "start", "font-size": "10", "font-weight": "700", fill: b.c }, b.err + "% сбоев");
+      });
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Structured Outputs делают интеграцию LLM в базы данных надежной");
+    }
+  },
+  "lesson_04_batch_processing_and_costs.ipynb": {
+    badge: "Экономика API",
+    title: "Пакетная ночная обработка Batch API и маршрутизация",
+    sub: "Экономия 50% бюджета через Batch очереди и маршрутизация 90% запросов на дешевые Flash модели",
+    takeaways: [ { val: "Batch API: -50% Cost", lbl: "Скидка на ночные задачи" }, { val: "Flash Routing", lbl: "$0.10 за 1M токенов" } ],
+    draw: (svg) => {
+      const models = [{ l: "Flash ($0.10)", x: 70, y: 110, c: LF.SUCCESS },{ l: "Batch (-50%)", x: 160, y: 110, c: LF.PRIMARY },{ l: "Pro ($2.50)", x: 240, y: 40, c: LF.ALERT }];
+      LF.el(svg, "line", { x1: 40, y1: 125, x2: 280, y2: 125, stroke: LF.GRID, "stroke-width": 1.5 });
+      LF.el(svg, "line", { x1: 40, y1: 125, x2: 40, y2: 25, stroke: LF.GRID, "stroke-width": 1.5 });
+      models.forEach((m, i) => {
+        LF.el(svg, "circle", { cx: m.x, cy: m.y, r: 7, fill: m.c, stroke: "#fff", "stroke-width": 1.5, class: "lf-dot-pop", style: `animation-delay:${i*90}ms;` });
+        LF.txt(svg, { x: m.x, y: m.y - 12, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: m.c }, m.l);
+      });
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Умная маршрутизация снижает ежемесячный счет за LLM в 8-10 раз");
+    }
+  },
+
+  // ───── MODULE 11: RAG & VECTOR DB (4 LESSONS) ─────
+  "lesson_01_embeddings_and_vector_space.ipynb": {
+    badge: "Эмбеддинги",
+    title: "Векторные пространства: Cosine Similarity семантики",
+    sub: "Превращение слов в 1536-мерные числовые векторы: близкий смысл = малый угол θ",
+    takeaways: [ { val: "cos(θ) = (u·v)/(||u||·||v||)", lbl: "Формула близости" }, { val: "Dense Vectors", lbl: "Плотные векторы смыслов" } ],
+    draw: (svg) => {
+      const ox = 45, oy = 130;
+      LF.el(svg, "line", { x1: ox, y1: oy, x2: 280, y2: oy, stroke: LF.GRID, "stroke-width": 1.5 });
+      LF.el(svg, "line", { x1: ox, y1: oy, x2: ox, y2: 25, stroke: LF.GRID, "stroke-width": 1.5 });
+      LF.el(svg, "line", { x1: ox, y1: oy, x2: 190, y2: 55, stroke: LF.PRIMARY, "stroke-width": 2.5, class: "lf-draw" });
+      LF.txt(svg, { x: 195, y: 52, "font-size": "10", "font-weight": "700", fill: LF.PRIMARY }, "Запрос: 'LTV отток'");
+      LF.el(svg, "line", { x1: ox, y1: oy, x2: 220, y2: 70, stroke: LF.SUCCESS, "stroke-width": 2, class: "lf-draw" });
+      LF.txt(svg, { x: 225, y: 75, "font-size": "9", "font-weight": "700", fill: LF.SUCCESS }, "Чанк 1 (cos=0.94)");
+      LF.el(svg, "line", { x1: ox, y1: oy, x2: 100, y2: 45, stroke: LF.ALERT, "stroke-width": 1.5, "stroke-dasharray": "3 3" });
+      LF.txt(svg, { x: 100, y: 38, "font-size": "9", "font-weight": "600", fill: LF.ALERT }, "Чанк 2 (cos=0.25)");
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Семантический поиск находит нужный ответ даже без совпадения точных слов");
+    }
+  },
+  "lesson_02_vector_databases_chromadb.ipynb": {
+    badge: "Векторные БД",
+    title: "ChromaDB: HNSW графы и быстрый приближенный поиск",
+    sub: "Поиск ближайших соседей (ANN) среди миллионов документов за доли миллисекунды",
+    takeaways: [ { val: "HNSW граф", lbl: "Иерархическая структура" }, { val: "ChromaDB", lbl: "Локальная векторная БД" } ],
+    draw: (svg) => {
+      const pts = [[60,50],[110,80],[90,110],[170,60],[220,85],[200,120],[260,60]];
+      pts.forEach((p, i) => {
+        LF.el(svg, "circle", { cx: p[0], cy: p[1], r: 5, fill: LF.PRIMARY, opacity: "0.4", class: "lf-dot-pop", style: `animation-delay:${i*50}ms;` });
+      });
+      LF.el(svg, "path", { d: "M 60 50 L 110 80 M 110 80 L 170 60 M 170 60 L 220 85 M 220 85 L 260 60", stroke: LF.SUCCESS, "stroke-width": 2, fill: "none", class: "lf-draw" });
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "HNSW перескакивает через слои графа, сокращая число сравнений с O(N) до O(log N)");
+    }
+  },
+  "lesson_03_building_rag_pipeline_analyst.ipynb": {
+    badge: "RAG Пайплайн",
+    title: "Сквозной пайплайн Retrieval-Augmented Generation",
+    sub: "Чанкование PDF отчетов → эмбеддинги → векторный поиск → промпт с фактами",
+    takeaways: [ { val: "Чанк 500 токенов", lbl: "Оптимальный размер фрагмента" }, { val: "Top-K чанков", lbl: "Контекст в промпт" } ],
+    draw: (svg) => {
+      const steps = [
+        { l: "1. PDF/Docs", x: 40, c: LF.PRIMARY },
+        { l: "2. Чанки", x: 110, c: LF.L[1] },
+        { l: "3. Вектор БД", x: 180, c: LF.WARNING },
+        { l: "4. LLM Ответ", x: 255, c: LF.SUCCESS }
+      ];
+      LF.el(svg, "line", { x1: 40, y1: 75, x2: 255, y2: 75, stroke: LF.GRID, "stroke-width": 1.5, "stroke-dasharray": "3 3" });
+      steps.forEach((s, i) => {
+        LF.el(svg, "rect", { x: s.x-30, y: 55, width: 60, height: 36, rx: 4, fill: s.c, opacity: "0.15", stroke: s.c, "stroke-width": 1.5, class: "lf-pop", style: `animation-delay:${i*80}ms;` });
+        LF.txt(svg, { x: s.x, y: 77, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: s.c }, s.l);
+      });
+      LF.txt(svg, { x: 160, y: 145, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.SUCCESS }, "LLM отвечает строго на основе извлеченных из базы фактов");
+    }
+  },
+  "lesson_04_text_to_sql_rag_assistant.ipynb": {
+    badge: "RAG + SQL",
+    title: "Ассистент Text-to-SQL с динамическим извлечением схемы",
+    sub: "Поиск только релевантных таблиц среди сотен витрин и подача их DDL в контекст LLM",
+    takeaways: [ { val: "Dynamic Schema Injection", lbl: "Экономия контекста" }, { val: "Gold Queries", lbl: "Примеры запросов из базы знаний" } ],
+    draw: (svg) => {
+      LF.el(svg, "rect", { x: 25, y: 40, width: 115, height: 60, rx: 4, fill: LF.PRIMARY, opacity: "0.15", stroke: LF.PRIMARY, "stroke-width": 1.5 });
+      LF.txt(svg, { x: 82, y: 65, "text-anchor": "middle", "font-size": "10", "font-weight": "700", fill: LF.PRIMARY }, "Вопрос юзера");
+      LF.txt(svg, { x: 82, y: 82, "text-anchor": "middle", "font-size": "8", "font-weight": "600", fill: LF.MUTED }, "+ RAG Схема");
+      LF.el(svg, "path", { d: "M 145 70 L 175 70", stroke: LF.SUCCESS, "stroke-width": 2.5, fill: "none", class: "lf-draw" });
+      LF.el(svg, "rect", { x: 180, y: 40, width: 115, height: 60, rx: 4, fill: LF.SUCCESS, opacity: "0.15", stroke: LF.SUCCESS, "stroke-width": 1.5 });
+      LF.txt(svg, { x: 237, y: 65, "text-anchor": "middle", "font-size": "10", "font-weight": "700", fill: LF.SUCCESS }, "Точный SQL");
+      LF.txt(svg, { x: 237, y: 82, "text-anchor": "middle", "font-size": "8", "font-weight": "600", fill: LF.SUCCESS }, "Без лишних JOIN");
+      LF.txt(svg, { x: 160, y: 145, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "RAG извлекает 3 нужные таблицы из каталога в 500 таблиц корпоративного хранилища");
+    }
+  },
+
+  // ───── MODULE 12: AI AGENTS (4 LESSONS) ─────
+  "lesson_01_agentic_workflows_concept.ipynb": {
+    badge: "Паттерн ReAct",
+    title: "Автономные агенты: цикл Thought → Action → Observation",
+    sub: "Агент сам решает, какую функцию вызвать, оценивает результат и исправляет ошибки",
+    takeaways: [ { val: "ReAct Паттерн", lbl: "Рассуждение + Действие" }, { val: "Tool Calling", lbl: "Вызов SQL, Python, API" } ],
+    draw: (svg) => {
+      const nodes = [
+        { l: "1. Thought (План)", x: 160, y: 40, c: LF.PRIMARY },
+        { l: "2. Action (SQL)", x: 245, y: 100, c: LF.WARNING },
+        { l: "3. Observation (Данные)", x: 75, y: 100, c: LF.SUCCESS }
+      ];
+      LF.el(svg, "path", { d: "M 160 55 C 220 55, 245 75, 245 90 M 245 115 C 245 135, 75 135, 75 115 M 75 90 C 75 75, 100 55, 160 55", stroke: LF.MUTED, "stroke-width": 1.5, "stroke-dasharray": "3 3", fill: "none" });
+      nodes.forEach((n, i) => {
+        LF.el(svg, "rect", { x: n.x-60, y: n.y-14, width: 120, height: 28, rx: 4, fill: n.c, opacity: "0.15", stroke: n.c, "stroke-width": 1.5, class: "lf-pop", style: `animation-delay:${i*90}ms;` });
+        LF.txt(svg, { x: n.x, y: n.y + 4, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: n.c }, n.l);
+      });
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Если запрос упал с ошибкой, агент анализирует трейс и сам переписывает SQL");
+    }
+  },
+  "lesson_02_langchain_llamaindex_for_analytics.ipynb": {
+    badge: "Агентные фреймворки",
+    title: "Оркестрация агентов: LangChain и LlamaIndex",
+    sub: "Связывание инструментов аналитика: доступ к PostgreSQL, генерация графиков и память сессии",
+    takeaways: [ { val: "Tool Binds", lbl: "Безопасные интерфейсы функций" }, { val: "Memory State", lbl: "Сохранение контекста диалога" } ],
+    draw: (svg) => {
+      const cx = 160, cy = 65;
+      LF.el(svg, "circle", { cx, cy, r: 26, fill: LF.PRIMARY, opacity: "0.2", stroke: LF.PRIMARY, "stroke-width": 1.5 });
+      LF.txt(svg, { x: cx, y: cy + 4, "text-anchor": "middle", "font-size": "10", "font-weight": "700", fill: LF.PRIMARY }, "Agent Core");
+      const tools = [{ l: "SQL Query", x: 60, y: 125, c: LF.WARNING },{ l: "Plotly Chart", x: 160, y: 125, c: LF.SUCCESS },{ l: "Send Report", x: 260, y: 125, c: LF.ALERT }];
+      tools.forEach((t, i) => {
+        LF.el(svg, "line", { x1: cx, y1: cy + 26, x2: t.x, y2: t.y - 14, stroke: LF.MUTED, "stroke-width": 1.5, "stroke-dasharray": "2 2" });
+        LF.el(svg, "rect", { x: t.x-42, y: t.y-12, width: 84, height: 24, rx: 3, fill: t.c, opacity: "0.15", stroke: t.c, "stroke-width": 1.5 });
+        LF.txt(svg, { x: t.x, y: t.y + 4, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: t.c }, t.l);
+      });
+      LF.txt(svg, { x: 160, y: 160, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Фреймворк безопасно изолирует вызовы к базе от непосредственного пользователя");
+    }
+  },
+  "lesson_03_automated_data_collection_agent.ipynb": {
+    badge: "Автосбор данных",
+    title: "Агент сбора данных: парсинг внешних API и валидация",
+    sub: "Автоматический опрос внешних REST API, обработка таймаутов и сохранение чистых Parquet файлов",
+    takeaways: [ { val: "Retry Exponential Backoff", lbl: "Устойчивость к сбоям API" }, { val: "Parquet витрина", lbl: "Быстрое бинарное хранение" } ],
+    draw: (svg) => {
+      const steps = [
+        { l: "REST API", x: 45, c: LF.PRIMARY },
+        { l: "Retry Logic", x: 120, c: LF.WARNING },
+        { l: "Schema Val", x: 200, c: LF.ALERT },
+        { l: "Parquet", x: 275, c: LF.SUCCESS }
+      ];
+      LF.el(svg, "line", { x1: 45, y1: 75, x2: 275, y2: 75, stroke: LF.GRID, "stroke-width": 1.5, "stroke-dasharray": "3 3" });
+      steps.forEach((s, i) => {
+        LF.el(svg, "rect", { x: s.x-30, y: 55, width: 60, height: 36, rx: 4, fill: s.c, opacity: "0.15", stroke: s.c, "stroke-width": 1.5, class: "lf-pop", style: `animation-delay:${i*80}ms;` });
+        LF.txt(svg, { x: s.x, y: 77, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: s.c }, s.l);
+      });
+      LF.txt(svg, { x: 160, y: 145, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Агент работает по расписанию cron без участия человека");
+    }
+  },
+  "lesson_04_llm_evaluation_and_monitoring.ipynb": {
+    badge: "LLM Мониторинг",
+    title: "Оценка качества агентов: LLM-as-a-Judge и метрики",
+    sub: "Автоматическая оценка точности ответов агента старшей моделью по эталонному датасету",
+    takeaways: [ { val: "LLM-as-a-Judge", lbl: "Автоматическое судейство" }, { val: "SLA < 3.0 sec", lbl: "Контроль времени отклика" } ],
+    draw: (svg) => {
+      const metrics = [
+        { l: "Точность SQL (Execution Accuracy)", v: 96.5, c: LF.SUCCESS },
+        { l: "Полнота бизнес-ответа (Faithfulness)", v: 92.0, c: LF.SUCCESS },
+        { l: "Доля галлюцинаций", v: 0.8, c: LF.ALERT }
+      ];
+      metrics.forEach((m, i) => {
+        const y = 35 + i * 34;
+        LF.txt(svg, { x: 25, y: y + 13, "font-size": "10", "font-weight": "600", fill: "currentColor" }, m.l);
+        LF.el(svg, "rect", { x: 25, y: y + 17, width: 220, height: 12, rx: 2, fill: LF.GRID, opacity: "0.4" });
+        LF.el(svg, "rect", { x: 25, y: y + 17, width: (m.v / 100) * 220, height: 12, rx: 2, fill: m.c, class: "lf-pop", style: `animation-delay:${i*90}ms;` });
+        LF.txt(svg, { x: 255, y: y + 27, "font-size": "10", "font-weight": "700", fill: m.c }, m.v + "%");
+      });
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Бенчмарк из 100 вопросов проверяется перед каждым обновлением промпта");
+    }
+  },
+
+  // ───── MODULE 13: SOFT SKILLS (4 LESSONS) ─────
+  "lesson_01_business_metrics_unit_economics.ipynb": {
+    badge: "Юнит-экономика",
+    title: "Дерево бизнес-метрик: LTV, CAC, Churn, Payback",
+    sub: "Декомпозиция чистой прибыли: от конверсии рекламы до пожизненной ценности когорты",
+    takeaways: [ { val: "LTV / CAC ≥ 3.0x", lbl: "Здоровый бизнес" }, { val: "Payback < 12 мес", lbl: "Быстрый возврат затрат" } ],
+    draw: (svg) => {
+      const tree = [
+        { l: "Прибыль", x: 160, y: 35, c: LF.PRIMARY },
+        { l: "Выручка (LTV × N)", x: 90, y: 85, c: LF.SUCCESS },
+        { l: "Затраты (CAC + COGS)", x: 230, y: 85, c: LF.ALERT }
+      ];
+      LF.el(svg, "line", { x1: 160, y1: 45, x2: 90, y2: 85, stroke: LF.GRID, "stroke-width": 1.5 });
+      LF.el(svg, "line", { x1: 160, y1: 45, x2: 230, y2: 85, stroke: LF.GRID, "stroke-width": 1.5 });
+      tree.forEach((t, i) => {
+        LF.el(svg, "rect", { x: t.x-55, y: t.y-14, width: 110, height: 28, rx: 3, fill: t.c, opacity: "0.15", stroke: t.c, "stroke-width": 1.5, class: "lf-pop", style: `animation-delay:${i*80}ms;` });
+        LF.txt(svg, { x: t.x, y: t.y + 4, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: t.c }, t.l);
+      });
+      LF.txt(svg, { x: 160, y: 145, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Любая аналитическая гипотеза должна влиять на одну из ветвей дерева");
+    }
+  },
+  "lesson_02_problem_framing_for_ai.ipynb": {
+    badge: "Постановка задач",
+    title: "MECE декомпозиция аналитической проблемы",
+    sub: "Mutually Exclusive, Collectively Exhaustive — взаимно исключающие, совместно исчерпывающие факторы",
+    takeaways: [ { val: "MECE Стандарт McKinsey", lbl: "Без пересечений и белых пятен" }, { val: "Гипотеза до данных", lbl: "Целенаправленный поиск" } ],
+    draw: (svg) => {
+      const branches = [
+        { l: "Фактор 1: Цены (+12%)", c: LF.PRIMARY },
+        { l: "Фактор 2: Объем заказов (-5%)", c: LF.WARNING },
+        { l: "Фактор 3: Микс продуктов (+8%)", c: LF.SUCCESS }
+      ];
+      branches.forEach((b, i) => {
+        const y = 35 + i * 34;
+        LF.el(svg, "rect", { x: 30, y, width: 260, height: 24, rx: 3, fill: b.c, opacity: "0.15", stroke: b.c, "stroke-width": 1.2, class: "lf-pop", style: `animation-delay:${i*80}ms;` });
+        LF.txt(svg, { x: 45, y: y + 16, "font-size": "10", "font-weight": "700", fill: b.c }, b.l);
+      });
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "MECE гарантирует, что ни одна возможная причина сбоя не упущена");
+    }
+  },
+  "lesson_03_minto_pyramid_and_c_level_presentations.ipynb": {
+    badge: "Пирамида Минто",
+    title: "Инвертированная пирамида Минто: принцип BLUF",
+    sub: "Bottom Line Up Front: управленческий вывод в первые 30 секунд, доказательства — следом",
+    takeaways: [ { val: "BLUF: Вывод в заголовок", lbl: "Экономия времени CEO" }, { val: "SCR Framework", lbl: "Situation → Complication → Resolution" } ],
+    draw: (svg) => {
+      const layers = [
+        { l: "1. Главное бизнес-решение (BLUF)", w: 260, c: LF.PRIMARY },
+        { l: "2. Три ключевых аргумента", w: 180, c: LF.L[1] },
+        { l: "3. Данные и детальные графики", w: 110, c: LF.MUTED }
+      ];
+      layers.forEach((ly, i) => {
+        const y = 35 + i * 36;
+        const x = 160 - ly.w / 2;
+        LF.el(svg, "rect", { x, y, width: ly.w, height: 26, rx: 3, fill: ly.c, opacity: "0.2", stroke: ly.c, "stroke-width": 1.5, class: "lf-pop", style: `animation-delay:${i*90}ms;` });
+        LF.txt(svg, { x: 160, y: y + 17, "text-anchor": "middle", "font-size": "10", "font-weight": "700", fill: "currentColor" }, ly.l);
+      });
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Никогда не начинайте доклад с 'как мы чистили данные' — начинайте с эффекта для бизнеса");
+    }
+  },
+  "lesson_04_data_storytelling_case_study.ipynb": {
+    badge: "Data Storytelling",
+    title: "Драматургия презентации аналитического кейса",
+    sub: "Нарративная дуга: от комфортного статуса-кво через проблему к цифровому решению",
+    takeaways: [ { val: "Эмоция + Цифра", lbl: "Убедительная подача" }, { val: "Actionable Next Steps", lbl: "Конкретные ответственные" } ],
+    draw: (svg) => {
+      const pts = [[35, 120], [90, 110], [150, 45], [210, 60], [280, 30]];
+      let d = "M " + pts.map(p => `${p[0]} ${p[1]}`).join(" L ");
+      LF.el(svg, "path", { d, stroke: LF.PRIMARY, "stroke-width": 2.8, fill: "none", class: "lf-draw", "stroke-dasharray": "350", "stroke-dashoffset": "350" });
+      const labels = ["Контекст", "Тревога", "Сбой (-18%)", "Анализ причин", "Рост (+25%)"];
+      pts.forEach((p, i) => {
+        LF.el(svg, "circle", { cx: p[0], cy: p[1], r: 4, fill: i === 2 ? LF.ALERT : (i === 4 ? LF.SUCCESS : LF.PRIMARY), class: "lf-dot-pop", style: `animation-delay:${i*70}ms;` });
+        LF.txt(svg, { x: p[0], y: p[1] - 10, "text-anchor": "middle", "font-size": "8", "font-weight": "700", fill: "currentColor" }, labels[i]);
+      });
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "История запоминается в 22 раза лучше, чем сухая таблица с цифрами");
+    }
+  },
+
+  // ───── MODULE 14: PORTFOLIO 1 (1 LESSON) ─────
+  "project_1_ecommerce_analytics.ipynb": {
+    badge: "Портфолио Проект 1",
+    title: "E-Commerce 360°: Сквозной когортный аудит 15,000 заказов",
+    sub: "От сырых логов PostgreSQL до RFM-сегментации, когортного удержания и детекции утечек MRR",
+    takeaways: [ { val: "15,000+ заказов", lbl: "Реальный масштаб БД" }, { val: "+14.2% MRR", lbl: "Найденная утечка в чекауте" } ],
+    draw: (svg) => {
+      const steps = [
+        { l: "Postgres", x: 40, c: LF.PRIMARY },
+        { l: "dbt Clean", x: 110, c: LF.L[1] },
+        { l: "RFM / LTV", x: 190, c: LF.WARNING },
+        { l: "BI Report", x: 270, c: LF.SUCCESS }
+      ];
+      LF.el(svg, "line", { x1: 40, y1: 75, x2: 270, y2: 75, stroke: LF.GRID, "stroke-width": 1.5, "stroke-dasharray": "3 3" });
+      steps.forEach((s, i) => {
+        LF.el(svg, "rect", { x: s.x-30, y: 55, width: 60, height: 38, rx: 4, fill: s.c, opacity: "0.15", stroke: s.c, "stroke-width": 1.5, class: "lf-pop", style: `animation-delay:${i*80}ms;` });
+        LF.txt(svg, { x: s.x, y: 77, "text-anchor": "middle", "font-size": "9", "font-weight": "700", fill: s.c }, s.l);
+      });
+      LF.txt(svg, { x: 160, y: 145, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.SUCCESS }, "Проект 1 доказывает работодателю владение SQL, когортами и финансовым аудитом");
+    }
+  },
+
+  // ───── MODULE 15: PORTFOLIO 2 (1 LESSON) ─────
+  "project_2_saas_product_analytics.ipynb": {
+    badge: "Портфолио Проект 2",
+    title: "SaaS Product & Churn: Модель оттока и оценка A/B эксперимента",
+    sub: "Анализ воронки активации 2,000 пользователей, t-тест фичи и ML интерпретация факторов оттока SHAP",
+    takeaways: [ { val: "ROC-AUC = 0.89", lbl: "Точность модели оттока" }, { val: "A/B Uplift +8.4%", lbl: "Статзначимый рост" } ],
+    draw: (svg) => {
+      const cells = [
+        { l: "TP: 420", sub: "Верно ушли", c: LF.SUCCESS, x: 50, y: 35 },
+        { l: "FP: 45", sub: "Ложная тревога", c: LF.WARNING, x: 165, y: 35 },
+        { l: "FN: 60", sub: "Пропуск оттока", c: LF.ALERT, x: 50, y: 85 },
+        { l: "TN: 1475", sub: "Верно лояльны", c: LF.PRIMARY, x: 165, y: 85 }
+      ];
+      cells.forEach((cl, i) => {
+        LF.el(svg, "rect", { x: cl.x, y: cl.y, width: 105, height: 42, rx: 3, fill: cl.c, opacity: "0.15", stroke: cl.c, "stroke-width": 1.5, class: "lf-pop", style: `animation-delay:${i*60}ms;` });
+        LF.txt(svg, { x: cl.x + 52, y: cl.y + 18, "text-anchor": "middle", "font-size": "11", "font-weight": "700", fill: cl.c }, cl.l);
+        LF.txt(svg, { x: cl.x + 52, y: cl.y + 32, "text-anchor": "middle", "font-size": "8", "font-weight": "600", fill: LF.MUTED }, cl.sub);
+      });
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.MUTED }, "Проект 2 подтверждает навыки продуктовой аналитики и машинного обучения");
+    }
+  },
+
+  // ───── MODULE 16: PORTFOLIO 3 (1 LESSON) ─────
+  "project_3_ai_driven_bi_pipeline.ipynb": {
+    badge: "Портфолио Проект 3",
+    title: "AI-Driven Pipeline: Автономный конвейер Text-to-Insight",
+    sub: "Сквозная обработка 800+ отзывов через LLM API, категоризация болей и синхронизация с дашбордом",
+    takeaways: [ { val: "225x ускорение", lbl: "12 сек вместо 45 мин" }, { val: "100% автономия", lbl: "Сквозной пайплайн" } ],
+    draw: (svg) => {
+      const blocks = [
+        { l: "User Prompt", x: 45, c: LF.PRIMARY },
+        { l: "LLM Schema", x: 120, c: LF.WARNING },
+        { l: "Sandbox Exec", x: 200, c: LF.ALERT },
+        { l: "BI Widget", x: 275, c: LF.SUCCESS }
+      ];
+      LF.el(svg, "line", { x1: 45, y1: 75, x2: 275, y2: 75, stroke: LF.GRID, "stroke-width": 1.5, "stroke-dasharray": "3 3" });
+      blocks.forEach((b, i) => {
+        LF.el(svg, "circle", { cx: b.x, cy: 75, r: 20, fill: b.c, opacity: "0.15", stroke: b.c, "stroke-width": 1.5, class: "lf-pop", style: `animation-delay:${i*70}ms;` });
+        LF.txt(svg, { x: b.x, y: 79, "text-anchor": "middle", "font-size": "10", "font-weight": "700", fill: b.c }, i+1);
+        LF.txt(svg, { x: b.x, y: 112, "text-anchor": "middle", "font-size": "8", "font-weight": "600", fill: "currentColor" }, b.l);
+      });
+      LF.txt(svg, { x: 160, y: 155, "text-anchor": "middle", "font-size": "9", "font-weight": "600", fill: LF.SUCCESS }, "Проект 3 выделяет кандидата в топ-1% как специалиста эпохи AI 2027");
+    }
+  }
+};
+
+function getLessonExplainerHtml(filename) {
+  const cfg = LESSON_EXPLAINERS[filename];
+  if (!cfg || !cfg.draw) return "";
+
+  const svgId = "lessonSvg_" + filename.replace(/[^a-zA-Z0-9]/g, "_");
+
+  let takeawayHtml = "";
+  if (cfg.takeaways && cfg.takeaways.length > 0) {
+    takeawayHtml = '<div class="lesson-explainer-takeaway">' +
+      cfg.takeaways.map(t => `<div class="lesson-explainer-takeaway-item"><div class="lesson-explainer-takeaway-val">${t.val}</div><div class="lesson-explainer-takeaway-lbl">${t.lbl}</div></div>`).join("") +
+      '</div>';
+  }
+
+  return `
+    <div class="lesson-explainer">
+      <div class="lesson-explainer-header">
+        <div>
+          <div class="lesson-explainer-badge">${cfg.badge}</div>
+          <div class="lesson-explainer-title">${cfg.title}</div>
+          <div class="lesson-explainer-sub">${cfg.sub}</div>
+        </div>
+        <button class="lesson-explainer-replay" onclick="replayLessonExplainer('${filename}')" title="Кликните для повтора анимации">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path></svg>
+          Повтор
+        </button>
+      </div>
+      <svg id="${svgId}" viewBox="0 0 320 180" preserveAspectRatio="xMidYMid meet"></svg>
+      ${takeawayHtml}
+    </div>
+  `;
+}
+
+function initLessonExplainer(filename) {
+  const cfg = LESSON_EXPLAINERS[filename];
+  if (!cfg || !cfg.draw) return;
+  const svgId = "lessonSvg_" + filename.replace(/[^a-zA-Z0-9]/g, "_");
+  const svg = document.getElementById(svgId);
+  if (!svg) return;
+  svg.innerHTML = "";
+  try { cfg.draw(svg); } catch(e) { console.error("Lesson explainer error:", e); }
+}
+
+function replayLessonExplainer(filename) {
+  initLessonExplainer(filename);
+}
+
 // =================================================================
 // LIEFLAT THEORY ANIMATIONS FOR COURSE MODULES (EXACT HERO STYLE)
 // =================================================================
-
 const THEORY_MODULES = {
   "module_00_onboarding": {
     badge: "Методология",
