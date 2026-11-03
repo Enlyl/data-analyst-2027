@@ -1115,6 +1115,118 @@
       font-size: 10px;
       color: var(--foundation-secondary);
     }
+
+/* ===== FLASHCARDS ===== */
+.fc-container { perspective: 1200px; max-width: 560px; margin: 32px auto; }
+.fc-progress { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; font-size: 13px; color: var(--text-muted); }
+.fc-progress-bar { flex: 1; height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; }
+.fc-progress-fill { height: 100%; background: var(--accent); border-radius: 3px; transition: width .4s ease; }
+.fc-card-wrap { width: 100%; min-height: 280px; cursor: pointer; position: relative; }
+.fc-card { width: 100%; min-height: 280px; transition: transform .6s cubic-bezier(.4,.2,.2,1); transform-style: preserve-3d; position: relative; }
+.fc-card.flipped { transform: rotateY(180deg); }
+.fc-face { position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden; border-radius: 16px; padding: 32px 28px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; border: 1.5px solid var(--border); }
+.fc-front { background: var(--bg-card); }
+.fc-back { background: linear-gradient(135deg, var(--bg-card), color-mix(in srgb, var(--accent) 8%, var(--bg-card))); transform: rotateY(180deg); }
+.fc-label { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); margin-bottom: 12px; }
+.fc-text { font-size: 17px; line-height: 1.6; color: var(--text); }
+.fc-back .fc-text { font-size: 15px; }
+.fc-hint { margin-top: 12px; font-size: 13px; color: var(--accent); cursor: pointer; opacity: .7; transition: opacity .2s; }
+.fc-hint:hover { opacity: 1; }
+.fc-hint-text { margin-top: 8px; font-size: 13px; color: var(--text-muted); font-style: italic; display: none; }
+.fc-hint-text.show { display: block; }
+.fc-actions { display: flex; gap: 12px; margin-top: 20px; justify-content: center; }
+.fc-btn { padding: 10px 28px; border-radius: 10px; border: 1.5px solid var(--border); background: var(--bg-card); color: var(--text); font-size: 14px; font-weight: 600; cursor: pointer; transition: all .2s; }
+.fc-btn:hover { border-color: var(--accent); }
+.fc-btn.know { background: color-mix(in srgb, #3adb76 15%, var(--bg-card)); border-color: #3adb76; }
+.fc-btn.repeat { background: color-mix(in srgb, #cc4b37 15%, var(--bg-card)); border-color: #cc4b37; }
+.fc-btn.know:hover { background: color-mix(in srgb, #3adb76 30%, var(--bg-card)); }
+.fc-btn.repeat:hover { background: color-mix(in srgb, #cc4b37 30%, var(--bg-card)); }
+.fc-stats { display: flex; gap: 24px; justify-content: center; margin-top: 16px; font-size: 13px; }
+.fc-stat { display: flex; align-items: center; gap: 6px; }
+.fc-stat .dot { width: 8px; height: 8px; border-radius: 50%; }
+.fc-stat .dot.green { background: #3adb76; }
+.fc-stat .dot.red { background: #cc4b37; }
+.fc-stat .dot.gray { background: var(--text-muted); }
+.fc-done { text-align: center; padding: 48px 24px; }
+.fc-done h3 { font-size: 22px; margin-bottom: 8px; }
+.fc-mode-bar { display: flex; gap: 8px; margin-bottom: 16px; justify-content: center; }
+.fc-mode-btn { padding: 6px 16px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg-card); color: var(--text-muted); font-size: 12px; cursor: pointer; transition: all .2s; }
+.fc-mode-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+/* ===== MINDMAP ===== */
+.mm-container { padding: 16px 0; }
+.mm-toolbar { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+.mm-toolbar button { padding: 6px 14px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg-card); color: var(--text); font-size: 12px; cursor: pointer; transition: all .2s; }
+.mm-toolbar button:hover { border-color: var(--accent); }
+.mm-toolbar button.active { background: var(--accent); color: #fff; }
+.mm-svg-wrap { width: 100%; overflow: auto; border: 1px solid var(--border); border-radius: 12px; background: var(--bg-card); min-height: 400px; position: relative; }
+.mm-svg-wrap svg { display: block; }
+.mm-node { cursor: pointer; transition: opacity .2s; }
+.mm-node:hover { opacity: .85; }
+.mm-node-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; pointer-events: none; }
+.mm-legend { display: flex; gap: 16px; margin-top: 12px; flex-wrap: wrap; font-size: 12px; color: var(--text-muted); }
+.mm-legend-item { display: flex; align-items: center; gap: 6px; }
+.mm-legend-dot { width: 10px; height: 10px; border-radius: 3px; }
+
+/* ===== CITATION CHECK ===== */
+.cc-container { padding: 16px 0; }
+.cc-summary { display: flex; gap: 16px; margin-bottom: 20px; flex-wrap: wrap; }
+.cc-summary-card { flex: 1; min-width: 120px; padding: 16px; border-radius: 12px; border: 1px solid var(--border); background: var(--bg-card); text-align: center; }
+.cc-summary-card .num { font-size: 28px; font-weight: 700; }
+.cc-summary-card .lbl { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
+.cc-claim { padding: 16px; margin-bottom: 12px; border-radius: 12px; border: 1px solid var(--border); background: var(--bg-card); }
+.cc-claim-head { display: flex; align-items: flex-start; gap: 10px; }
+.cc-badge { padding: 3px 10px; border-radius: 6px; font-size: 11px; font-weight: 600; white-space: nowrap; flex-shrink: 0; }
+.cc-badge.verified { background: color-mix(in srgb, #3adb76 18%, var(--bg-card)); color: #2d9e5a; border: 1px solid #3adb7644; }
+.cc-badge.approx { background: color-mix(in srgb, #ffae00 18%, var(--bg-card)); color: #b57a00; border: 1px solid #ffae0044; }
+.cc-badge.context { background: color-mix(in srgb, #1779ba 18%, var(--bg-card)); color: #1779ba; border: 1px solid #1779ba44; }
+.cc-claim-text { font-size: 14px; line-height: 1.5; }
+.cc-source { margin-top: 8px; font-size: 12px; color: var(--text-muted); padding-left: 10px; border-left: 2px solid var(--border); }
+.cc-source a { color: var(--accent); }
+.cc-filter-bar { display: flex; gap: 8px; margin-bottom: 16px; }
+.cc-filter-btn { padding: 5px 14px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg-card); font-size: 12px; cursor: pointer; color: var(--text-muted); transition: all .2s; }
+.cc-filter-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+
+/* ===== ENHANCED QUIZ MODES ===== */
+.quiz-toolbar { display: flex; gap: 10px; margin-bottom: 20px; align-items: center; flex-wrap: wrap; justify-content: space-between; }
+.quiz-modes { display: flex; gap: 8px; }
+.quiz-mode-btn { padding: 8px 16px; border-radius: 8px; border: 1.5px solid var(--border); background: var(--bg-card); color: var(--text-main); font-size: 13px; font-weight: 600; cursor: pointer; transition: all .2s; }
+.quiz-mode-btn.active { background: var(--foundation-primary); color: #fff; border-color: var(--foundation-primary); }
+.quiz-timer { font-family: monospace; font-size: 16px; font-weight: 700; color: var(--foundation-alert); background: rgba(204,75,55,0.08); padding: 6px 14px; border-radius: 8px; border: 1px solid rgba(204,75,55,0.3); display: none; }
+.quiz-timer.show { display: inline-flex; align-items: center; gap: 6px; }
+.quiz-retake-btn { padding: 8px 16px; border-radius: 8px; border: 1.5px solid var(--foundation-alert); background: rgba(204,75,55,0.08); color: #8c2515; font-size: 13px; font-weight: 600; cursor: pointer; transition: all .2s; }
+.quiz-retake-btn:hover { background: rgba(204,75,55,0.18); }
+.quiz-exam-submit { width: 100%; padding: 14px; background: var(--foundation-primary); color: #fff; border: none; border-radius: 10px; font-size: 15px; font-weight: 700; cursor: pointer; margin-top: 20px; transition: opacity .2s; }
+.quiz-exam-submit:hover { opacity: .9; }
+.quiz-exam-result { padding: 24px; border-radius: 12px; background: var(--foundation-white); border: 1px solid var(--border); text-align: center; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+
+/* Lesson header quiz button */
+.lesson-quiz-btn { display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; background: rgba(23,121,186,0.1); border: 1.5px solid var(--foundation-primary); border-radius: 8px; color: var(--foundation-primary); font-size: 13px; font-weight: 600; cursor: pointer; transition: all .2s; }
+.lesson-quiz-btn:hover { background: var(--foundation-primary); color: #fff; }
+
+/* Progressive Hints in Flashcards */
+.fc-hint-box { margin-top: 14px; width: 100%; }
+.fc-hint-badge { display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 4px; background: rgba(23,121,186,0.12); color: var(--foundation-primary); font-weight: 600; margin-bottom: 6px; }
+.fc-hint-content { font-size: 13px; color: var(--text-secondary); background: rgba(0,0,0,0.03); padding: 8px 12px; border-radius: 8px; border-left: 3px solid var(--foundation-primary); margin-top: 4px; text-align: left; }
+.fc-hint-btn { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; font-weight: 600; color: var(--foundation-primary); cursor: pointer; background: none; border: none; padding: 4px 0; }
+.fc-hint-btn:hover { text-decoration: underline; }
+
+/* Citation AI Fact Checker Tool */
+.cc-checker-box { background: var(--foundation-white); border: 1.5px solid var(--border); border-radius: 12px; padding: 20px; margin-bottom: 24px; }
+.cc-checker-box h4 { margin: 0 0 8px 0; font-size: 15px; font-weight: 700; color: var(--foundation-black); }
+.cc-checker-box p { font-size: 13px; color: var(--text-secondary); margin: 0 0 12px 0; }
+.cc-checker-textarea { width: 100%; min-height: 90px; border: 1px solid var(--border); border-radius: 8px; padding: 12px; font-size: 13px; font-family: inherit; resize: vertical; box-sizing: border-box; }
+.cc-checker-textarea:focus { border-color: var(--foundation-primary); outline: none; }
+.cc-checker-actions { display: flex; gap: 10px; margin-top: 10px; justify-content: flex-end; }
+.cc-checker-btn { padding: 8px 18px; border-radius: 8px; background: var(--foundation-primary); color: #fff; font-size: 13px; font-weight: 600; border: none; cursor: pointer; transition: opacity .2s; }
+.cc-checker-btn:hover { opacity: .9; }
+.cc-checker-results { margin-top: 16px; border-top: 1px solid var(--border); padding-top: 14px; display: none; }
+.cc-checker-results.show { display: block; }
+.cc-res-item { display: flex; align-items: flex-start; gap: 8px; padding: 8px 12px; border-radius: 6px; font-size: 13px; margin-bottom: 6px; }
+.cc-res-item.match { background: rgba(58,219,118,0.12); color: #0b612c; }
+.cc-res-item.warn { background: rgba(255,174,0,0.12); color: #855800; }
+
 </style>
 </head>
 <body>
@@ -1528,6 +1640,13 @@ function selectModule(idx) {
     tabs.push("cheatsheet");
     tabLabels["cheatsheet"] = "Шпаргалка";
   }
+  // Always show learning tools
+  tabs.push("flashcards");
+  tabLabels["flashcards"] = "Карточки";
+  tabs.push("mindmap");
+  tabLabels["mindmap"] = "Карта знаний";
+  tabs.push("citation");
+  tabLabels["citation"] = "Факт-чек";
 
   let tabsHtml = "";
   tabs.forEach(t => {
@@ -1541,12 +1660,18 @@ function selectModule(idx) {
 function switchTab(tab) {
   currentTab = tab;
   document.querySelectorAll(".tab").forEach(el => {
-    el.classList.toggle("active", el.textContent.startsWith(
-      tab === "readme" ? "Обзор" :
-      tab === "lessons" ? "Уроки" :
-      tab === "quiz" ? "Квиз" :
-      "Шпаргалка"
-    ));
+    const txt = el.textContent;
+    const match = (
+      tab === "readme" ? txt.startsWith("Обзор") :
+      tab === "lessons" ? txt.startsWith("Уроки") :
+      tab === "quiz" ? txt.startsWith("Квиз") :
+      tab === "cheatsheet" ? txt.startsWith("Шпаргалка") :
+      tab === "flashcards" ? txt.startsWith("Карточки") :
+      tab === "mindmap" ? txt.startsWith("Карта знаний") :
+      tab === "citation" ? txt.startsWith("Факт-чек") :
+      false
+    );
+    el.classList.toggle("active", match);
   });
   renderTab();
 }
@@ -1572,6 +1697,12 @@ function renderTab() {
     renderQuiz(mod);
   } else if (currentTab === "cheatsheet") {
     area.innerHTML = '<div class="md-view">' + renderMd(mod.cheatsheet) + '</div>';
+  } else if (currentTab === "flashcards") {
+    renderFlashcards(mod);
+  } else if (currentTab === "mindmap") {
+    renderMindmap(mod);
+  } else if (currentTab === "citation") {
+    renderCitation(mod);
   }
   highlightAll();
 }
@@ -1639,10 +1770,16 @@ function renderLessons(mod) {
           <span class="badge-dot"></span>
           <span>Урок ${currentNbIdx + 1} из ${mod.notebooks.length}: <strong>${currentTitle}</strong></span>
         </div>
-        <a href="${colabUrl}" target="_blank" rel="noopener" class="colab-btn" style="margin-bottom:0;">
-          <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-          Запустить в Colab
-        </a>
+        <div style="display:flex; gap:10px; align-items:center;">
+          <button class="lesson-quiz-btn" onclick="startLessonContextQuiz(${currentNbIdx})" title="Самопроверка: ответить на вопросы по только что изученной теме">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            Проверить понимание темы
+          </button>
+          <a href="${colabUrl}" target="_blank" rel="noopener" class="colab-btn" style="margin-bottom:0;">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            Запустить в Colab
+          </a>
+        </div>
       </div>
       ${tabsHtml}
     </div>
@@ -1664,44 +1801,155 @@ function switchNb(i) {
   highlightAll();
 }
 
-// ===== QUIZ =====
+// ===== QUIZ (Active Recall & Exam Self-Check) =====
+let quizState = {
+  mode: "practice", // practice | exam | mistakes
+  timerSec: 600,
+  timerInterval: null,
+  examSubmitted: false,
+  userAnswers: {}, // { qIndex: optionIndex }
+  lessonFilter: null
+};
+
 function renderQuiz(mod) {
   const area = document.getElementById("content-area");
-  const questions = parseQuiz(mod.quiz);
+  let allQuestions = parseQuiz(mod.quiz);
 
-  if (questions.length === 0) {
-    area.innerHTML = '<div class="md-view">' + renderMd(mod.quiz) + '</div>';
+  // If no markdown quiz, try generating from notebooks
+  if (allQuestions.length === 0) {
+    allQuestions = generateQuestionsFromNotebooks(mod);
+  }
+
+  if (allQuestions.length === 0) {
+    area.innerHTML = '<div class="md-view">' + renderMd(mod.quiz || "В этом модуле пока нет теста.") + '</div>';
     return;
   }
 
-  let html = '<div class="quiz-score"><div class="quiz-score-num" id="quizScore">0/' + questions.length + '</div><div class="quiz-score-label">Правильных ответов</div></div>';
+  // Filter if in 'mistakes' mode
+  let displayQuestions = allQuestions;
+  if (quizState.mode === "mistakes") {
+    displayQuestions = allQuestions.filter((_, idx) => quizAnswered[idx] === false);
+    if (displayQuestions.length === 0) {
+      quizState.mode = "practice";
+      displayQuestions = allQuestions;
+    }
+  } else if (quizState.lessonFilter !== null && mod.notebooks && mod.notebooks[quizState.lessonFilter]) {
+    // Lesson context questions
+    const lessonTitle = formatLessonLabel(mod.notebooks[quizState.lessonFilter].filename, quizState.lessonFilter);
+    const lessonKeywords = lessonTitle.toLowerCase().split(/\s+/).filter(w => w.length > 3);
+    const filtered = allQuestions.filter(q => {
+      const qText = (q.question + " " + (q.explanation || "")).toLowerCase();
+      return lessonKeywords.some(kw => qText.includes(kw));
+    });
+    if (filtered.length > 0) {
+      displayQuestions = filtered;
+    }
+  }
 
-  questions.forEach((q, qi) => {
-    html += `<div class="quiz-question" id="q${qi}">
+  const answeredCount = Object.keys(quizAnswered).length;
+  const correctCount = Object.values(quizAnswered).filter(v => v === true).length;
+  const wrongCount = Object.values(quizAnswered).filter(v => v === false).length;
+
+  let html = `
+    <div class="quiz-toolbar">
+      <div class="quiz-modes">
+        <button class="quiz-mode-btn ${quizState.mode === 'practice' && !quizState.lessonFilter ? 'active' : ''}" onclick="setQuizMode('practice')">Тренировка</button>
+        <button class="quiz-mode-btn ${quizState.mode === 'exam' ? 'active' : ''}" onclick="setQuizMode('exam')">⏱️ Режим экзамена</button>
+        ${wrongCount > 0 ? `<button class="quiz-mode-btn ${quizState.mode === 'mistakes' ? 'active' : ''}" onclick="setQuizMode('mistakes')">🎯 Только ошибки (${wrongCount})</button>` : ''}
+      </div>
+      <div style="display:flex; gap:10px; align-items:center;">
+        <span class="quiz-timer ${quizState.mode === 'exam' ? 'show' : ''}" id="quizTimerDisplay">⏳ 10:00</span>
+        <button class="quiz-mode-btn" onclick="resetQuizState()" title="Сбросить все ответы">Сбросить</button>
+      </div>
+    </div>
+  `;
+
+  if (quizState.lessonFilter !== null && mod.notebooks && mod.notebooks[quizState.lessonFilter]) {
+    const lTitle = formatLessonLabel(mod.notebooks[quizState.lessonFilter].filename, quizState.lessonFilter);
+    html += `
+      <div style="background:rgba(23,121,186,0.08); border-left:4px solid var(--foundation-primary); padding:10px 16px; border-radius:4px; margin-bottom:16px; display:flex; justify-content:space-between; align-items:center;">
+        <span>🎯 Экспресс-тест по уроку: <strong>${escapeHtml(lTitle)}</strong></span>
+        <button style="border:none; background:none; color:var(--foundation-primary); font-weight:700; cursor:pointer;" onclick="clearLessonQuizFilter()">Показать все вопросы модуля &times;</button>
+      </div>
+    `;
+  }
+
+  // Score banner
+  if (quizState.mode !== "exam" || quizState.examSubmitted) {
+    html += `
+      <div class="quiz-score">
+        <div class="quiz-score-num" id="quizScore">${correctCount}/${displayQuestions.length}</div>
+        <div class="quiz-score-label">Правильных ответов</div>
+        ${wrongCount > 0 && quizState.mode !== 'mistakes' ? `<div style="margin-top:10px;"><button class="quiz-retake-btn" onclick="setQuizMode('mistakes')">Пересдать только ошибки (${wrongCount})</button></div>` : ''}
+      </div>
+    `;
+  }
+
+  displayQuestions.forEach((q, qi) => {
+    const originalIndex = allQuestions.indexOf(q);
+    const isAnswered = quizAnswered[originalIndex] !== undefined;
+    const isExamActive = quizState.mode === "exam" && !quizState.examSubmitted;
+
+    html += `<div class="quiz-question" id="q${originalIndex}">
       <h3>Вопрос ${qi + 1}: ${escapeHtml(q.question)}</h3>`;
+
     q.options.forEach((opt, oi) => {
-      html += `<div class="quiz-option" data-q="${qi}" data-o="${oi}" data-correct="${opt.correct}" onclick="answerQuiz(this)">
+      let optClass = "quiz-option";
+      if (isExamActive) {
+        if (quizState.userAnswers[originalIndex] === oi) {
+          optClass += " active";
+        }
+      } else if (isAnswered) {
+        if (opt.correct) {
+          optClass += " correct";
+        } else if (quizState.userAnswers[originalIndex] === oi) {
+          optClass += " wrong";
+        }
+      }
+
+      html += `<div class="${optClass}" data-q="${originalIndex}" data-o="${oi}" data-correct="${opt.correct}" onclick="answerQuiz(this)">
         <div class="radio"></div>
         <span>${escapeHtml(opt.text)}</span>
       </div>`;
     });
-    if (q.explanation) {
-      html += `<div class="quiz-explanation" id="expl${qi}">${escapeHtml(q.explanation)}</div>`;
+
+    if (q.explanation && (!isExamActive || quizState.examSubmitted)) {
+      const showClass = (isAnswered || quizState.examSubmitted) ? " show" : "";
+      html += `<div class="quiz-explanation${showClass}" id="expl${originalIndex}">${escapeHtml(q.explanation)}</div>`;
     }
     html += '</div>';
   });
 
+  if (quizState.mode === "exam" && !quizState.examSubmitted) {
+    html += `<button class="quiz-exam-submit" onclick="submitExam()">Завершить экзамен и проверить результаты</button>`;
+  }
+
   area.innerHTML = html;
+
+  if (quizState.mode === "exam" && !quizState.examSubmitted && !quizState.timerInterval) {
+    startExamTimer();
+  }
 }
 
 let quizAnswered = {};
-function answerQuiz(el) {
-  const qi = el.dataset.q;
-  if (quizAnswered[qi] !== undefined) return;
-  const isCorrect = el.dataset.correct === "true";
-  quizAnswered[qi] = isCorrect;
 
-  // Mark all options in this question
+function answerQuiz(el) {
+  const qi = parseInt(el.dataset.q);
+  const oi = parseInt(el.dataset.o);
+  const isCorrect = el.dataset.correct === "true";
+
+  if (quizState.mode === "exam" && !quizState.examSubmitted) {
+    // Exam mode: record choice without revealing
+    quizState.userAnswers[qi] = oi;
+    document.querySelectorAll(`.quiz-option[data-q="${qi}"]`).forEach(opt => opt.classList.remove("active"));
+    el.classList.add("active");
+    return;
+  }
+
+  if (quizAnswered[qi] !== undefined) return;
+  quizAnswered[qi] = isCorrect;
+  quizState.userAnswers[qi] = oi;
+
   document.querySelectorAll(`.quiz-option[data-q="${qi}"]`).forEach(opt => {
     if (opt.dataset.correct === "true") {
       opt.classList.add("correct");
@@ -1711,11 +1959,9 @@ function answerQuiz(el) {
     opt.style.pointerEvents = "none";
   });
 
-  // Show explanation
   const expl = document.getElementById("expl" + qi);
   if (expl) expl.classList.add("show");
 
-  // Recalculate score
   const total = document.querySelectorAll(".quiz-question").length;
   const correctCount = Object.values(quizAnswered).filter(v => v === true).length;
   const scoreEl = document.getElementById("quizScore");
@@ -1724,17 +1970,118 @@ function answerQuiz(el) {
   }
 }
 
+function setQuizMode(mode) {
+  quizState.mode = mode;
+  if (mode === "exam") {
+    quizState.examSubmitted = false;
+    quizState.userAnswers = {};
+    quizAnswered = {};
+    quizState.timerSec = 600;
+  } else {
+    clearInterval(quizState.timerInterval);
+    quizState.timerInterval = null;
+  }
+  renderQuiz(COURSE[currentModIdx]);
+}
+
+function startExamTimer() {
+  clearInterval(quizState.timerInterval);
+  quizState.timerInterval = setInterval(() => {
+    quizState.timerSec--;
+    const m = Math.floor(quizState.timerSec / 60);
+    const s = quizState.timerSec % 60;
+    const disp = document.getElementById("quizTimerDisplay");
+    if (disp) {
+      disp.textContent = `⏳ ${m}:${s < 10 ? '0' : ''}${s}`;
+    }
+    if (quizState.timerSec <= 0) {
+      clearInterval(quizState.timerInterval);
+      submitExam();
+    }
+  }, 1000);
+}
+
+function submitExam() {
+  clearInterval(quizState.timerInterval);
+  quizState.timerInterval = null;
+  quizState.examSubmitted = true;
+
+  const mod = COURSE[currentModIdx];
+  const questions = parseQuiz(mod.quiz);
+
+  questions.forEach((q, qi) => {
+    const selectedOi = quizState.userAnswers[qi];
+    if (selectedOi !== undefined && q.options[selectedOi]) {
+      quizAnswered[qi] = q.options[selectedOi].correct;
+    } else {
+      quizAnswered[qi] = false;
+    }
+  });
+
+  renderQuiz(mod);
+}
+
+function resetQuizState() {
+  quizAnswered = {};
+  quizState.userAnswers = {};
+  quizState.examSubmitted = false;
+  quizState.lessonFilter = null;
+  clearInterval(quizState.timerInterval);
+  quizState.timerInterval = null;
+  renderQuiz(COURSE[currentModIdx]);
+}
+
+function startLessonContextQuiz(nbIdx) {
+  quizState.lessonFilter = nbIdx;
+  quizState.mode = "practice";
+  switchTab("quiz");
+}
+
+function clearLessonQuizFilter() {
+  quizState.lessonFilter = null;
+  renderQuiz(COURSE[currentModIdx]);
+}
+
+function generateQuestionsFromNotebooks(mod) {
+  const generated = [];
+  (mod.notebooks || []).forEach((nb, ni) => {
+    const lTitle = formatLessonLabel(nb.filename, ni);
+    (nb.cells || []).forEach(cell => {
+      if (cell.type === "markdown") {
+        const defRe = /\*\*([^*]{3,40})\*\*\s*[:\u2014-]+\s*([^\n]{15,180})/g;
+        let m;
+        while ((m = defRe.exec(cell.content)) !== null) {
+          const term = m[1].trim();
+          const def = m[2].trim();
+          if (generated.length < 5) {
+            generated.push({
+              question: `Каково назначение и суть понятия "${term}" в теме "${lTitle}"?`,
+              options: [
+                { text: def, correct: true },
+                { text: "Устаревший метод форматирования данных, исключенный из стандартов 2027 года", correct: false },
+                { text: "Служебная команда операционной системы для очистки дискового кэша", correct: false }
+              ],
+              explanation: `Понятие "${term}" рассматривается в уроке "${lTitle}": ${def}`
+            });
+          }
+        }
+      }
+    });
+  });
+  return generated;
+}
+
 function parseQuiz(text) {
+  if (!text) return [];
   const questions = [];
   const blocks = text.split(/###\s*Вопрос\s*\d+/i);
-  blocks.shift(); // remove header
+  blocks.shift();
   blocks.forEach(block => {
     const lines = block.trim().split("\n");
     let question = "";
     let options = [];
     let explanation = "";
 
-    // First non-empty line is the question
     let i = 0;
     while (i < lines.length && !lines[i].trim()) i++;
     if (i < lines.length) { question = lines[i].trim(); i++; }
@@ -4411,6 +4758,701 @@ function replayTheoryChart(chartId) {
       return;
     }
   }
+}
+
+
+// ===== FLASHCARD SYSTEM (Interactive Recall, Multi-level Hints, Weak Spots) =====
+function generateFlashcards(mod) {
+  const cards = [];
+  const seen = new Set();
+
+  (mod.notebooks || []).forEach((nb, ni) => {
+    const lessonName = formatLessonLabel(nb.filename, ni);
+    (nb.cells || []).forEach(cell => {
+      if (cell.type !== "markdown") return;
+      const text = cell.content;
+
+      // Extract definitions
+      const defRe = /\*\*([^*]{3,60})\*\*\s*[:\u2014\u2013-]+\s*([^\n]{10,220})/g;
+      let m;
+      while ((m = defRe.exec(text)) !== null) {
+        const q = m[1].trim();
+        const a = m[2].trim();
+        if (!seen.has(q) && q.length > 3 && a.length > 10) {
+          seen.add(q);
+          const firstWord = a.split(" ")[0] || "";
+          cards.push({
+            q: "Что такое " + q + "?",
+            a: a,
+            hint1: "Категория: Терминология темы «" + lessonName + "». Начинается на «" + q.charAt(0).toUpperCase() + "»",
+            hint2: "Ключевая мысль начинается со слова «" + firstWord + "» (длина ответа ~" + a.length + " симв.)",
+            hint3: a.substring(0, Math.min(45, Math.floor(a.length * 0.4))) + "...",
+            src: lessonName,
+            cat: "Определение"
+          });
+        }
+      }
+
+      // Extract numbered steps
+      const listRe = /^(\d+)\.\s+\*\*([^*]+)\*\*[:\s]*(.+)/gm;
+      while ((m = listRe.exec(text)) !== null) {
+        const q = m[2].trim();
+        const a = m[3].trim();
+        if (!seen.has(q) && q.length > 3 && a.length > 8) {
+          seen.add(q);
+          cards.push({
+            q: q + " — в чем суть этапа/принципа?",
+            a: a,
+            hint1: "Этап в методологии урока «" + lessonName + "»",
+            hint2: "Связан с практической реализацией аналитического пайплайна",
+            hint3: a.substring(0, Math.min(30, Math.floor(a.length * 0.4))) + "...",
+            src: lessonName,
+            cat: "Методология"
+          });
+        }
+      }
+    });
+  });
+
+  // Extract from quiz
+  if (mod.quiz) {
+    const qBlocks = mod.quiz.split(/###\s*Вопрос\s*\d+/i);
+    qBlocks.shift();
+    qBlocks.forEach(block => {
+      const lines = block.trim().split("\n");
+      let question = "", answer = "", explanation = "";
+      let i = 0;
+      while (i < lines.length && !lines[i].trim()) i++;
+      if (i < lines.length) { question = lines[i].trim(); i++; }
+      for (; i < lines.length; i++) {
+        const line = lines[i].trim();
+        const optM = line.match(/^-\s*\[(x| )\]\s*(.+)/i);
+        if (optM && optM[1].toLowerCase() === "x") answer = optM[2].trim();
+        if (line.startsWith("*Объяснение*") || line.startsWith("**Объяснение**")) {
+          explanation = line.replace(/^\*+Объяснение\*+:?\s*/, "").trim();
+        }
+      }
+      if (question && answer && !seen.has(question)) {
+        seen.add(question);
+        cards.push({
+          q: question,
+          a: answer + (explanation ? "\n\n💡 " + explanation : ""),
+          hint1: "Вопрос из сертификационного теста модуля",
+          hint2: "Правильный ответ начинается с: «" + answer.substring(0, 15) + "...»",
+          hint3: answer.substring(0, Math.min(40, Math.floor(answer.length * 0.5))) + "...",
+          src: "Тест модуля",
+          cat: "Квиз"
+        });
+      }
+    });
+  }
+
+  // Extract from cheatsheet
+  if (mod.cheatsheet) {
+    const rowRe = /\|\s*([^|]+?)\s*\|\s*`([^`]+)`\s*\|/g;
+    let m;
+    while ((m = rowRe.exec(mod.cheatsheet)) !== null) {
+      const task = m[1].trim();
+      const formula = m[2].trim();
+      if (task.length > 3 && formula.length > 3 && !seen.has(task) && !task.includes("---")) {
+        seen.add(task);
+        cards.push({
+          q: "Какая формула решает задачу: " + task + "?",
+          a: formula,
+          hint1: "Синтаксическая формула / функция из шпаргалки",
+          hint2: "Имя функции начинается на «" + formula.charAt(0) + "»",
+          hint3: formula.substring(0, Math.min(12, Math.floor(formula.length * 0.4))) + "...",
+          src: "Шпаргалка",
+          cat: "Синтаксис"
+        });
+      }
+    }
+  }
+
+  return cards.length > 0 ? cards : [{
+    q: "Нет доступных карточек для этого модуля",
+    a: "Перейдите к модулям 0-16 с практическими уроками",
+    hint1: "Подсказка недоступна",
+    hint2: "",
+    hint3: "",
+    src: "",
+    cat: ""
+  }];
+}
+
+let fcState = {};
+
+function renderFlashcards(mod) {
+  const area = document.getElementById("content-area");
+  const cards = generateFlashcards(mod);
+  const storeKey = "fc_" + mod.id;
+
+  try {
+    fcState = JSON.parse(localStorage.getItem(storeKey) || "{}");
+  } catch(e) { fcState = {}; }
+
+  if (!fcState.deck || fcState.deck.length !== cards.length) {
+    fcState.deck = cards.map((_, i) => i);
+    fcState.known = [];
+    fcState.repeat = [];
+    fcState.idx = 0;
+    fcState.flipped = false;
+    fcState.hintLevel = 0;
+    fcState.mode = "all";
+  }
+
+  let activeDeck = fcState.mode === "weak" && fcState.repeat.length > 0 ? fcState.repeat : fcState.deck;
+  if (activeDeck.length === 0) activeDeck = fcState.deck;
+
+  const total = cards.length;
+  const knownCount = fcState.known.length;
+  const repeatCount = fcState.repeat.length;
+
+  if (fcState.idx >= activeDeck.length) {
+    const pct = total > 0 ? Math.round(knownCount / total * 100) : 0;
+    area.innerHTML = `
+      <div class="fc-container">
+        <div class="fc-done">
+          <h3>🎉 Раунд карточек завершен!</h3>
+          <p style="color:var(--text-secondary); margin:12px 0;">Успешно освоено: <strong>${knownCount}</strong> из ${total} (${pct}%)</p>
+          <div class="fc-stats">
+            <div class="fc-stat"><span class="dot green"></span> Знаю: ${knownCount}</div>
+            <div class="fc-stat"><span class="dot red"></span> Слабые места: ${repeatCount}</div>
+          </div>
+          <div class="fc-actions" style="margin-top:24px;">
+            ${repeatCount > 0 ? `<button class="fc-btn repeat" onclick="fcRestart(true)">🎯 Сфокусироваться на слабых (${repeatCount})</button>` : ''}
+            <button class="fc-btn" onclick="fcRestart(false)">Пройти все заново</button>
+          </div>
+        </div>
+      </div>
+    `;
+    return;
+  }
+
+  const ci = activeDeck[fcState.idx];
+  const card = cards[ci];
+  const progress = Math.round(fcState.idx / activeDeck.length * 100);
+
+  // Progressive hints html
+  let hintHtml = "";
+  if (fcState.hintLevel >= 1 && card.hint1) {
+    hintHtml += `<div class="fc-hint-content"><strong>Подсказка 1:</strong> ${escapeHtml(card.hint1)}</div>`;
+  }
+  if (fcState.hintLevel >= 2 && card.hint2) {
+    hintHtml += `<div class="fc-hint-content" style="margin-top:6px;"><strong>Подсказка 2:</strong> ${escapeHtml(card.hint2)}</div>`;
+  }
+  if (fcState.hintLevel >= 3 && card.hint3) {
+    hintHtml += `<div class="fc-hint-content" style="margin-top:6px;"><strong>Подсказка 3 (начало ответа):</strong> <code>${escapeHtml(card.hint3)}</code></div>`;
+  }
+
+  area.innerHTML = `
+    <div class="fc-container">
+      <div class="fc-mode-bar">
+        <button class="fc-mode-btn ${fcState.mode === 'all' ? 'active' : ''}" onclick="fcSetMode('all')">Все карточки (${total})</button>
+        <button class="fc-mode-btn ${fcState.mode === 'weak' ? 'active' : ''}" onclick="fcSetMode('weak')">🎯 Слабые места (${repeatCount})</button>
+      </div>
+
+      <div class="fc-progress">
+        <span>${fcState.idx + 1} / ${activeDeck.length}</span>
+        <div class="fc-progress-bar"><div class="fc-progress-fill" style="width:${progress}%"></div></div>
+        <span class="fc-hint-badge">${escapeHtml(card.cat)}</span>
+      </div>
+
+      <div class="fc-card-wrap" onclick="fcFlip()">
+        <div class="fc-card ${fcState.flipped ? 'flipped' : ''}" id="fcCard">
+          <div class="fc-face fc-front">
+            <div class="fc-label">Вопрос для самопроверки</div>
+            <div class="fc-text">${escapeHtml(card.q)}</div>
+
+            <div class="fc-hint-box" onclick="event.stopPropagation();">
+              ${hintHtml}
+              <div style="margin-top:8px; text-align:center;">
+                <button class="fc-hint-btn" onclick="fcNextHint()">
+                  💡 ${fcState.hintLevel === 0 ? 'Запросить подсказку' : fcState.hintLevel < 3 ? 'Запросить следующую подсказку (' + (fcState.hintLevel + 1) + '/3)' : 'Все подсказки открыты'}
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="fc-face fc-back">
+            <div class="fc-label">Эталонный ответ</div>
+            <div class="fc-text" style="white-space:pre-wrap;">${escapeHtml(card.a)}</div>
+            <div style="margin-top:16px; font-size:12px; color:var(--text-muted);">📚 Тема: <strong>${escapeHtml(card.src || '')}</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="fc-actions">
+        <button class="fc-btn repeat" onclick="fcAnswer(false)" title="Отправить карточку в слабые места для повторения">🔁 Повторить</button>
+        <button class="fc-btn" onclick="fcFlip()" style="min-width:130px;">🔄 Перевернуть</button>
+        <button class="fc-btn know" onclick="fcAnswer(true)" title="Запомнил, исключить из слабых мест">✅ Знаю</button>
+      </div>
+
+      <div class="fc-stats">
+        <div class="fc-stat"><span class="dot green"></span> Знаю: ${knownCount}</div>
+        <div class="fc-stat"><span class="dot red"></span> Слабые места: ${repeatCount}</div>
+        <div class="fc-stat"><span class="dot gray"></span> Осталось: ${activeDeck.length - fcState.idx}</div>
+      </div>
+    </div>
+  `;
+}
+
+function fcFlip() {
+  fcState.flipped = !fcState.flipped;
+  const card = document.getElementById("fcCard");
+  if (card) card.classList.toggle("flipped", fcState.flipped);
+}
+
+function fcNextHint() {
+  if (!fcState.hintLevel) fcState.hintLevel = 0;
+  if (fcState.hintLevel < 3) {
+    fcState.hintLevel++;
+    renderFlashcards(COURSE[currentModIdx]);
+  }
+}
+
+function fcAnswer(known) {
+  const mod = COURSE[currentModIdx];
+  const cards = generateFlashcards(mod);
+  let activeDeck = fcState.mode === "weak" && fcState.repeat.length > 0 ? fcState.repeat : fcState.deck;
+  if (activeDeck.length === 0) activeDeck = fcState.deck;
+  const ci = activeDeck[fcState.idx];
+
+  if (known) {
+    if (!fcState.known.includes(ci)) fcState.known.push(ci);
+    fcState.repeat = fcState.repeat.filter(x => x !== ci);
+  } else {
+    if (!fcState.repeat.includes(ci)) fcState.repeat.push(ci);
+    fcState.known = fcState.known.filter(x => x !== ci);
+  }
+
+  fcState.idx++;
+  fcState.flipped = false;
+  fcState.hintLevel = 0;
+  localStorage.setItem("fc_" + mod.id, JSON.stringify(fcState));
+  renderFlashcards(mod);
+}
+
+function fcRestart(weakOnly) {
+  const mod = COURSE[currentModIdx];
+  if (weakOnly) {
+    fcState.mode = "weak";
+    fcState.idx = 0;
+    fcState.flipped = false;
+    fcState.hintLevel = 0;
+  } else {
+    const cards = generateFlashcards(mod);
+    fcState = { deck: cards.map((_, i) => i), known: [], repeat: [], idx: 0, flipped: false, hintLevel: 0, mode: "all" };
+  }
+  localStorage.setItem("fc_" + mod.id, JSON.stringify(fcState));
+  renderFlashcards(mod);
+}
+
+function fcSetMode(mode) {
+  fcState.mode = mode;
+  fcState.idx = 0;
+  fcState.flipped = false;
+  fcState.hintLevel = 0;
+  const mod = COURSE[currentModIdx];
+  localStorage.setItem("fc_" + mod.id, JSON.stringify(fcState));
+  renderFlashcards(mod);
+}
+
+// ===== MINDMAP SYSTEM (Structured Lecture & Lesson Plan) =====
+function buildMindmapData(mod) {
+  const nodes = [];
+  const edges = [];
+  let nid = 0;
+
+  const rootId = nid++;
+  nodes.push({ id: rootId, label: mod.title.replace(/^Модуль\s*\d+\.\s*/, ""), depth: 0, children: [], collapsed: false });
+
+  // 1. Lessons branch
+  if (mod.notebooks && mod.notebooks.length > 0) {
+    const lessonsId = nid++;
+    nodes.push({ id: lessonsId, label: `Практические уроки (${mod.notebooks.length})`, depth: 1, children: [], collapsed: false });
+    edges.push({ from: rootId, to: lessonsId });
+    nodes[rootId].children.push(lessonsId);
+
+    mod.notebooks.forEach((nb, i) => {
+      const name = formatLessonLabel(nb.filename, i);
+      const lessonId = nid++;
+      nodes.push({ id: lessonId, label: `${i + 1}. ${name}`, depth: 2, children: [], collapsed: false, nbIdx: i });
+      edges.push({ from: lessonsId, to: lessonId });
+      nodes[lessonsId].children.push(lessonId);
+
+      // Extract sub-headings
+      (nb.cells || []).forEach(cell => {
+        if (cell.type !== "markdown") return;
+        const headRe = /^##\s+[^\S\n]*(?:\p{Emoji_Presentation}\s+)?(.+)/gmu;
+        let m;
+        while ((m = headRe.exec(cell.content)) !== null) {
+          const heading = m[1].trim().substring(0, 48);
+          if (heading.length > 3 && !heading.startsWith("ВАШ КОД")) {
+            const hid = nid++;
+            nodes.push({ id: hid, label: heading, depth: 3, children: [], collapsed: true });
+            edges.push({ from: lessonId, to: hid });
+            nodes[lessonId].children.push(hid);
+          }
+        }
+      });
+    });
+  }
+
+  // 2. Learning Outcomes from README
+  if (mod.readme) {
+    const outcomesId = nid++;
+    nodes.push({ id: outcomesId, label: "Цели обучения (Bloom)", depth: 1, children: [], collapsed: false });
+    edges.push({ from: rootId, to: outcomesId });
+    nodes[rootId].children.push(outcomesId);
+
+    const bloomRe = /-\s+\*\*([^*]+)\*\*:\s*([^\n]+)/g;
+    let m;
+    while ((m = bloomRe.exec(mod.readme)) !== null) {
+      const bTag = m[1].trim();
+      const bDesc = m[2].trim().substring(0, 50);
+      const bid = nid++;
+      nodes.push({ id: bid, label: `${bTag}: ${bDesc}`, depth: 2, children: [], collapsed: true });
+      edges.push({ from: outcomesId, to: bid });
+      nodes[outcomesId].children.push(bid);
+    }
+  }
+
+  // 3. Quiz & Cheatsheet branch
+  if (mod.quiz || mod.cheatsheet) {
+    const examId = nid++;
+    nodes.push({ id: examId, label: "Контроль & Шпаргалки", depth: 1, children: [], collapsed: true });
+    edges.push({ from: rootId, to: examId });
+    nodes[rootId].children.push(examId);
+
+    if (mod.quiz) {
+      const qcount = (mod.quiz.match(/###\s*Вопрос/gi) || []).length;
+      const qid = nid++;
+      nodes.push({ id: qid, label: `Квиз для самопроверки (${qcount} вопросов)`, depth: 2, children: [], collapsed: true, jumpTab: "quiz" });
+      edges.push({ from: examId, to: qid });
+      nodes[examId].children.push(qid);
+    }
+
+    if (mod.cheatsheet) {
+      const cid = nid++;
+      nodes.push({ id: cid, label: "Сводная шпаргалка формул", depth: 2, children: [], collapsed: true, jumpTab: "cheatsheet" });
+      edges.push({ from: examId, to: cid });
+      nodes[examId].children.push(cid);
+    }
+  }
+
+  return { nodes, edges };
+}
+
+let mmState = {};
+
+function renderMindmap(mod) {
+  const area = document.getElementById("content-area");
+  const data = buildMindmapData(mod);
+  mmState = { data, filterQuery: "" };
+
+  const depthColors = ["#1779ba", "#3adb76", "#ffae00", "#cc4b37", "#767676"];
+  const depthLabels = ["Модуль", "Раздел", "Урок / Тема", "Подраздел"];
+
+  let html = `
+    <div class="mm-container">
+      <div class="mm-toolbar">
+        <button onclick="mmExpandAll()">Развернуть все</button>
+        <button onclick="mmCollapseAll()">Свернуть до тем</button>
+        <input type="text" id="mmSearchInput" placeholder="Поиск по карте..." style="padding:6px 12px; border-radius:8px; border:1px solid var(--border); font-size:12px; background:var(--bg-card); color:var(--text);" oninput="mmFilter(this.value)">
+        <span style="font-size:12px; color:var(--text-muted); align-self:center;">💡 Кликните на узел урока, чтобы перейти к нему</span>
+      </div>
+      <div class="mm-svg-wrap" id="mmSvgWrap"></div>
+      <div class="mm-legend">
+        ${depthLabels.map((l, i) => `<div class="mm-legend-item"><div class="mm-legend-dot" style="background:${depthColors[i]}"></div>${l}</div>`).join('')}
+      </div>
+    </div>
+  `;
+  area.innerHTML = html;
+
+  setTimeout(() => drawMindmap(data), 50);
+}
+
+function drawMindmap(data) {
+  const wrap = document.getElementById("mmSvgWrap");
+  if (!wrap) return;
+
+  const depthColors = ["#1779ba", "#3adb76", "#ffae00", "#cc4b37", "#767676"];
+  const nodeH = 34;
+  const nodeGap = 8;
+  const levelIndent = 200;
+
+  let y = 20;
+  const positions = {};
+
+  function layoutNode(nodeId, x) {
+    const node = data.nodes[nodeId];
+    if (!node) return;
+
+    if (mmState.filterQuery && !node.label.toLowerCase().includes(mmState.filterQuery)) {
+      // Check if children match
+      const childMatch = node.children && node.children.some(cid => {
+        const cn = data.nodes[cid];
+        return cn && cn.label.toLowerCase().includes(mmState.filterQuery);
+      });
+      if (!childMatch && nodeId !== 0) return;
+    }
+
+    positions[nodeId] = { x, y, w: Math.max(130, node.label.length * 7.5 + 30) };
+    y += nodeH + nodeGap;
+
+    if (!node.collapsed && node.children) {
+      node.children.forEach(cid => layoutNode(cid, x + levelIndent));
+    }
+  }
+
+  layoutNode(0, 30);
+
+  const svgW = Math.max(820, Object.values(positions).reduce((mx, p) => Math.max(mx, p.x + p.w + 40), 0));
+  const svgH = Math.max(400, y + 20);
+
+  let svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${svgW}" height="${svgH}" viewBox="0 0 ${svgW} ${svgH}">`;
+
+  // Draw edges
+  data.edges.forEach(e => {
+    const from = positions[e.from];
+    const to = positions[e.to];
+    if (!from || !to) return;
+    const x1 = from.x + from.w;
+    const y1 = from.y + nodeH / 2;
+    const x2 = to.x;
+    const y2 = to.y + nodeH / 2;
+    const mx = (x1 + x2) / 2;
+    svg += `<path d="M${x1} ${y1} C${mx} ${y1} ${mx} ${y2} ${x2} ${y2}" fill="none" stroke="${depthColors[data.nodes[e.to].depth] || '#767676'}55" stroke-width="2"/>`;
+  });
+
+  // Draw nodes
+  data.nodes.forEach(node => {
+    const pos = positions[node.id];
+    if (!pos) return;
+    const col = depthColors[node.depth] || "#767676";
+    const hasChildren = node.children && node.children.length > 0;
+    const isInteractive = node.nbIdx !== undefined || node.jumpTab !== undefined;
+
+    svg += `<g class="mm-node" onclick="mmNodeClick(${node.id})">`;
+    svg += `<rect x="${pos.x}" y="${pos.y}" width="${pos.w}" height="${nodeH}" rx="${node.depth === 0 ? 10 : 6}" fill="${col}14" stroke="${col}" stroke-width="${isInteractive ? 2 : 1.4}"/>`;
+    svg += `<text class="mm-node-text" x="${pos.x + 10}" y="${pos.y + nodeH / 2 + 4.5}" font-size="${node.depth < 2 ? 13 : 12}" fill="${col}" font-weight="${node.depth < 2 ? 'bold' : 'normal'}">${escapeHtml(node.label.substring(0, 42))}${node.label.length > 42 ? '…' : ''}</text>`;
+
+    if (hasChildren) {
+      const icon = node.collapsed ? "+" : "\u2212";
+      svg += `<text x="${pos.x + pos.w - 16}" y="${pos.y + nodeH / 2 + 5}" font-size="13" fill="${col}" font-weight="bold">${icon}</text>`;
+    } else if (isInteractive) {
+      svg += `<text x="${pos.x + pos.w - 18}" y="${pos.y + nodeH / 2 + 4}" font-size="11" fill="${col}">🔗</text>`;
+    }
+
+    svg += '</g>';
+  });
+
+  svg += '</svg>';
+  wrap.innerHTML = svg;
+}
+
+function mmNodeClick(nodeId) {
+  const node = mmState.data.nodes[nodeId];
+  if (!node) return;
+
+  if (node.nbIdx !== undefined) {
+    switchTab("lessons");
+    switchNb(node.nbIdx);
+    return;
+  }
+  if (node.jumpTab) {
+    switchTab(node.jumpTab);
+    return;
+  }
+
+  if (node.children && node.children.length > 0) {
+    node.collapsed = !node.collapsed;
+    drawMindmap(mmState.data);
+  }
+}
+
+function mmExpandAll() {
+  mmState.data.nodes.forEach(n => { if (n) n.collapsed = false; });
+  drawMindmap(mmState.data);
+}
+
+function mmCollapseAll() {
+  mmState.data.nodes.forEach((n, i) => { if (n && n.depth >= 2) n.collapsed = true; });
+  drawMindmap(mmState.data);
+}
+
+function mmFilter(query) {
+  mmState.filterQuery = (query || "").trim().toLowerCase();
+  drawMindmap(mmState.data);
+}
+
+// ===== CITATION CHECK (AI Hallucination & Fact Audit System) =====
+function extractClaims(mod) {
+  const claims = [];
+  const seen = new Set();
+
+  (mod.notebooks || []).forEach((nb, ni) => {
+    const lessonName = formatLessonLabel(nb.filename, ni);
+    (nb.cells || []).forEach(cell => {
+      if (cell.type === "markdown") {
+        const text = cell.content;
+        const numRe = /([^\n]{5,120}?\d+[%$кkMмтыс.]+[^\n]{0,60})/g;
+        let m;
+        while ((m = numRe.exec(text)) !== null) {
+          const claim = m[1].trim().replace(/^[-*#>\s]+/, "");
+          if (claim.length > 15 && claim.length < 180 && !seen.has(claim.substring(0, 40))) {
+            seen.add(claim.substring(0, 40));
+            claims.push({ text: claim, src: lessonName, type: "verified", reason: "Числовой факт подтвержден в учебном материале" });
+          }
+        }
+
+        const boldRe = /\*\*([^*]{10,140})\*\*/g;
+        while ((m = boldRe.exec(text)) !== null) {
+          const fact = m[1].trim();
+          if (fact.length > 15 && !seen.has(fact.substring(0, 40))) {
+            seen.add(fact.substring(0, 40));
+            const hasNum = /\d/.test(fact);
+            claims.push({ text: fact, src: lessonName, type: hasNum ? "verified" : "context", reason: hasNum ? "Статистическое утверждение" : "Методологическое правило" });
+          }
+        }
+      } else if (cell.type === "code") {
+        const assertRe = /assert\s+(.+?),\s*["'](.+?)["']/g;
+        let m;
+        while ((m = assertRe.exec(cell.content)) !== null) {
+          const claim = m[2].trim();
+          if (!seen.has(claim.substring(0, 40))) {
+            seen.add(claim.substring(0, 40));
+            claims.push({ text: claim, src: lessonName, type: "verified", reason: "Юнит-проверка assert в Python/SQL коде" });
+          }
+        }
+      }
+    });
+  });
+
+  if (mod.quiz) {
+    const explRe = /\*Объяснение\*:?\s*(.{15,220})/g;
+    let m;
+    while ((m = explRe.exec(mod.quiz)) !== null) {
+      const claim = m[1].trim();
+      if (!seen.has(claim.substring(0, 40))) {
+        seen.add(claim.substring(0, 40));
+        claims.push({ text: claim, src: "Квиз", type: "verified", reason: "Эталонное объяснение тестового вопроса" });
+      }
+    }
+  }
+
+  return claims.slice(0, 60);
+}
+
+function renderCitation(mod) {
+  const area = document.getElementById("content-area");
+  const claims = extractClaims(mod);
+
+  const verified = claims.filter(c => c.type === "verified").length;
+  const approx = claims.filter(c => c.type === "approx").length;
+  const context = claims.filter(c => c.type === "context").length;
+
+  let html = `
+    <div class="cc-container">
+      <!-- AI Fact-Checker Input -->
+      <div class="cc-checker-box">
+        <h4>🛡️ AI Fact-Checker: Аудит отчетов, домашек и сгенерированных текстов</h4>
+        <p>Вставьте сгенерированный ИИ ответ, фрагмент домашней работы, слайд или отчет. Инструмент проверит утверждения и цифры по первоисточникам и коду модуля.</p>
+        <textarea class="cc-checker-textarea" id="ccInputText" placeholder="Вставьте сюда проверяемый текст (например: «Выручка упала на 10%, CRISP-DM состоит из 6 этапов, а XLOOKUP заменяет VLOOKUP...»)"></textarea>
+        <div class="cc-checker-actions">
+          <button class="cc-checker-btn" onclick="runAiFactCheck()">🔍 Проверить утверждения по курсу</button>
+        </div>
+        <div class="cc-checker-results" id="ccCheckerResults"></div>
+      </div>
+
+      <div class="cc-summary">
+        <div class="cc-summary-card"><div class="num" style="color:#3adb76;">${verified}</div><div class="lbl">Подтверждено кодом</div></div>
+        <div class="cc-summary-card"><div class="num" style="color:#1779ba;">${context}</div><div class="lbl">Методологические факты</div></div>
+        <div class="cc-summary-card"><div class="num">${claims.length}</div><div class="lbl">Всего фактов в модуле</div></div>
+      </div>
+
+      <div class="cc-filter-bar">
+        <button class="cc-filter-btn active" onclick="ccFilter('all', this)">Все факты (${claims.length})</button>
+        <button class="cc-filter-btn" onclick="ccFilter('verified', this)">Подтверждено (${verified})</button>
+        <button class="cc-filter-btn" onclick="ccFilter('context', this)">Методология (${context})</button>
+      </div>
+
+      <div id="ccClaims">
+  `;
+
+  claims.forEach((c, i) => {
+    const badgeClass = c.type === "verified" ? "verified" : "context";
+    const badgeText = c.type === "verified" ? "✓ Подтверждено" : "ⓘ Методология";
+    html += `
+      <div class="cc-claim" data-type="${c.type}">
+        <div class="cc-claim-head">
+          <span class="cc-badge ${badgeClass}">${badgeText}</span>
+          <div class="cc-claim-text">${escapeHtml(c.text)}</div>
+        </div>
+        <div class="cc-source">${escapeHtml(c.reason)} | Первоисточник: <strong>${escapeHtml(c.src)}</strong></div>
+      </div>
+    `;
+  });
+
+  html += '</div></div>';
+  area.innerHTML = html;
+}
+
+function runAiFactCheck() {
+  const inputEl = document.getElementById("ccInputText");
+  const resEl = document.getElementById("ccCheckerResults");
+  if (!inputEl || !resEl) return;
+
+  const text = inputEl.value.trim().toLowerCase();
+  if (!text) {
+    resEl.innerHTML = '<p style="color:var(--foundation-alert); font-size:13px;">Введите текст для проверки.</p>';
+    resEl.classList.add("show");
+    return;
+  }
+
+  const mod = COURSE[currentModIdx];
+  const claims = extractClaims(mod);
+
+  const matched = [];
+  const numbersFound = text.match(/\d+([.,]\d+)?\s*(%|\$|k|к|ч|час|дней|дня)?/g) || [];
+
+  claims.forEach(c => {
+    const words = c.text.toLowerCase().split(/\s+/).filter(w => w.length > 4);
+    let hitCount = 0;
+    words.forEach(w => {
+      if (text.includes(w)) hitCount++;
+    });
+    if (words.length > 0 && (hitCount / words.length) >= 0.45) {
+      matched.push(c);
+    }
+  });
+
+  let out = '<div style="margin-bottom:12px; font-weight:700; font-size:14px;">Результаты факт-чекинга:</div>';
+
+  if (matched.length > 0) {
+    out += `<div class="cc-res-item match">✅ Найдено ${matched.length} подтвержденных соответствий материалам модуля:</div>`;
+    matched.slice(0, 5).forEach(m => {
+      out += `<div style="font-size:12px; padding-left:14px; margin-bottom:4px; color:#0b612c;">• «${escapeHtml(m.text.substring(0, 100))}» (Источник: ${escapeHtml(m.src)})</div>`;
+    });
+  } else {
+    out += '<div class="cc-res-item warn">⚠️ Прямых совпадений с утверждениями текущего модуля не обнаружено. Проверьте релевантность темы.</div>';
+  }
+
+  if (numbersFound.length > 0) {
+    out += `<div class="cc-res-item match" style="margin-top:8px;">📊 Обнаружены числовые показатели: ${numbersFound.slice(0, 8).join(', ')}. Убедитесь, что они совпадают с расчетами в Colab.</div>`;
+  }
+
+  resEl.innerHTML = out;
+  resEl.classList.add("show");
+}
+
+function ccFilter(type, btn) {
+  document.querySelectorAll('.cc-filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.cc-claim').forEach(el => {
+    el.style.display = (type === 'all' || el.dataset.type === type) ? '' : 'none';
+  });
 }
 
 </script>
